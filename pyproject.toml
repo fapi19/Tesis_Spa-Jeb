@@ -1,0 +1,16 @@
+[project]
+name = "tesis-embeddings-esp-shiwilu"
+version = "0.1.0"
+description = "Pipeline de procesamiento y generación de embeddings bilingüe español-shiwilu"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
