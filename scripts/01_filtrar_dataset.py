@@ -6,8 +6,8 @@ valores válidos en ambas columnas: ESP y SHIWILU.
 Genera trazabilidad de filas removidas y asigna pair_id único.
 
 Entrada:  data/raw/flashcards2.csv
-Salida:   data/intermediate/dataset_filtrado.csv
-          reports/rows_removed_01_filtrado.csv
+Salida:   data/intermediate/01_filtrado/dataset_filtrado.csv
+          reports/01_filtrado/rows_removed.csv
 """
 
 from datetime import datetime, timezone
@@ -17,12 +17,12 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
-INTERMEDIATE_DIR = PROJECT_ROOT / "data" / "intermediate"
-REPORTS_DIR = PROJECT_ROOT / "reports"
+INTERMEDIATE_DIR = PROJECT_ROOT / "data" / "intermediate" / "01_filtrado"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "01_filtrado"
 
 INPUT_FILE = RAW_DIR / "flashcards2.csv"
 OUTPUT_FILE = INTERMEDIATE_DIR / "dataset_filtrado.csv"
-REMOVED_LOG_FILE = REPORTS_DIR / "rows_removed_01_filtrado.csv"
+REMOVED_LOG_FILE = REPORTS_DIR / "rows_removed.csv"
 
 
 def load_raw_data(filepath: Path) -> pd.DataFrame:

@@ -5,13 +5,13 @@ Pipeline de normalización no destructiva del corpus español-shiwilu.
 Mantiene columnas originales y crea versiones normalizadas.
 Registra todas las transformaciones aplicadas en bitácora.
 
-Entrada:  data/intermediate/dataset_filtrado.csv
+Entrada:  data/intermediate/01b_unificado/dataset_unificado.csv
           config/normalization_rules.json
 
-Salida:   data/intermediate/dataset_auditado.csv
-          reports/normalization_log.csv
-          reports/rows_removed_02_depuracion.csv
-          reports/preprocessing_summary.json
+Salida:   data/intermediate/02_normalizado/dataset_normalizado.csv
+          reports/02_normalizacion/normalization_log.csv
+          reports/02_normalizacion/rows_removed.csv
+          reports/02_normalizacion/summary.json
 """
 
 import json
@@ -24,17 +24,18 @@ from typing import Any
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-INTERMEDIATE_DIR = PROJECT_ROOT / "data" / "intermediate"
-REPORTS_DIR = PROJECT_ROOT / "reports"
+INPUT_DIR = PROJECT_ROOT / "data" / "intermediate" / "01b_unificado"
+OUTPUT_DIR = PROJECT_ROOT / "data" / "intermediate" / "02_normalizado"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "02_normalizacion"
 CONFIG_DIR = PROJECT_ROOT / "config"
 
-INPUT_FILE = INTERMEDIATE_DIR / "dataset_filtrado.csv"
-OUTPUT_FILE = INTERMEDIATE_DIR / "dataset_auditado.csv"
+INPUT_FILE = INPUT_DIR / "dataset_unificado.csv"
+OUTPUT_FILE = OUTPUT_DIR / "dataset_normalizado.csv"
 CONFIG_FILE = CONFIG_DIR / "normalization_rules.json"
 
 NORMALIZATION_LOG_FILE = REPORTS_DIR / "normalization_log.csv"
-REMOVED_LOG_FILE = REPORTS_DIR / "rows_removed_02_depuracion.csv"
-SUMMARY_FILE = REPORTS_DIR / "preprocessing_summary.json"
+REMOVED_LOG_FILE = REPORTS_DIR / "rows_removed.csv"
+SUMMARY_FILE = REPORTS_DIR / "summary.json"
 
 MULTI_SPACE_PATTERN = re.compile(r"\s{2,}")
 
@@ -195,13 +196,20 @@ def process_dataset(
     df_out["ESP_normalizado"] = esp_normalized
     df_out["SHIWILU_normalizado"] = shi_normalized
     
-    df_out = df_out[[
+    output_columns = [
         "pair_id",
         "ESP_original",
         "SHIWILU_original",
         "ESP_normalizado",
         "SHIWILU_normalizado"
-    ]]
+    ]
+    
+    if "source" in df_out.columns:
+        output_columns.append("source")
+    if "source_pair_id" in df_out.columns:
+        output_columns.append("source_pair_id")
+    
+    df_out = df_out[output_columns]
     
     stats = {
         "total_rows": len(df_out),
@@ -229,7 +237,7 @@ def save_outputs(
     config: dict
 ) -> None:
     """Guarda todas las salidas del pipeline."""
-    INTERMEDIATE_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")

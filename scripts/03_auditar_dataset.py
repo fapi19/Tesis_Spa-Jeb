@@ -5,11 +5,11 @@ Auditoría estructural del corpus español-shiwilu.
 Detecta problemas potenciales y genera reportes detallados.
 Produce el dataset final listo para embeddings.
 
-Entrada:  data/intermediate/dataset_auditado.csv
+Entrada:  data/intermediate/02_normalizado/dataset_normalizado.csv
 
-Salida:   reports/audit_problem_rows.csv
-          reports/audit_summary.json
-          data/processed/dataset_pre_embeddings.csv
+Salida:   reports/03_auditoria/problem_rows.csv
+          reports/03_auditoria/summary.json
+          data/processed/03_pre_embeddings/dataset_pre_embeddings.csv
 """
 
 import json
@@ -23,13 +23,13 @@ from typing import Any
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-INTERMEDIATE_DIR = PROJECT_ROOT / "data" / "intermediate"
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-REPORTS_DIR = PROJECT_ROOT / "reports"
+INPUT_DIR = PROJECT_ROOT / "data" / "intermediate" / "02_normalizado"
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "03_auditoria"
 
-INPUT_FILE = INTERMEDIATE_DIR / "dataset_auditado.csv"
-PROBLEM_ROWS_FILE = REPORTS_DIR / "audit_problem_rows.csv"
-SUMMARY_FILE = REPORTS_DIR / "audit_summary.json"
+INPUT_FILE = INPUT_DIR / "dataset_normalizado.csv"
+PROBLEM_ROWS_FILE = REPORTS_DIR / "problem_rows.csv"
+SUMMARY_FILE = REPORTS_DIR / "summary.json"
 OUTPUT_FILE = PROCESSED_DIR / "dataset_pre_embeddings.csv"
 
 PARENTHESIS_PATTERN = re.compile(r"\(.*?\)")

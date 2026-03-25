@@ -1,0 +1,29 @@
+{
+  "_description": "Registro de fuentes de datos para el corpus shiwilu-castellano. Agregar nuevas fuentes aquí sin modificar código.",
+  "_version": "1.0.0",
+  
+  "sources": [
+    {
+      "name": "flashcards",
+      "description": "Vocabulario y frases de flashcards Anki",
+      "path": "data/intermediate/01_filtrado/dataset_filtrado.csv",
+      "esp_column": "ESP",
+      "shiwilu_column": "SHIWILU",
+      "pair_id_column": "pair_id",
+      "enabled": true
+    },
+    {
+      "name": "pdf_textos",
+      "description": "Textos bilingües extraídos de II_TEXTOS_SHIWILU.pdf",
+      "path": "data/intermediate/00_pdf/dataset_extraido_pdf.csv",
+      "esp_column": "ESP",
+      "shiwilu_column": "SHIWILU",
+      "pair_id_column": "pair_id",
+      "filter": {
+        "column": "quality_flag",
+        "keep": ["ok", "fallback_last_line_as_spanish"]
+      },
+      "enabled": true
+    }
+  ]
+}

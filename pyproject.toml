@@ -6,6 +6,7 @@ requires-python = ">=3.12"
 dependencies = [
     "pandas>=2.2",
     "matplotlib>=3.9",
+    "pypdf>=5.4",
 ]
 
 [tool.poetry]

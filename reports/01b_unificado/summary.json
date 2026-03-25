@@ -1,0 +1,13 @@
+{
+  "pipeline": "01b_unificar_fuentes",
+  "timestamp": "2026-03-25T21:38:22.077274+00:00",
+  "config_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\config\\sources.json",
+  "output_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\01b_unificado\\dataset_unificado.csv",
+  "sources": {
+    "flashcards": 2251,
+    "pdf_textos": 956
+  },
+  "total_rows": 3207,
+  "cross_source_duplicates": 0,
+  "unique_sources": 2
+}

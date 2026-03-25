@@ -1,0 +1,14 @@
+{
+  "pipeline": "00_extraer_dataset_pdf",
+  "timestamp": "2026-03-25T21:37:58.708160+00:00",
+  "input_pdf": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\raw\\II_TEXTOS_SHIWILU.pdf",
+  "output_csv": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\00_pdf\\dataset_extraido_pdf.csv",
+  "total_numbered_items": 956,
+  "total_rows_exported": 956,
+  "rows_with_ok_flag": 867,
+  "rows_with_flags": 89,
+  "quality_flag_counts": {
+    "ok": 867,
+    "fallback_last_line_as_spanish": 89
+  }
+}

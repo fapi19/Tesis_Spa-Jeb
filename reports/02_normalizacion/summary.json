@@ -1,11 +1,11 @@
 {
   "pipeline": "02_depurar_dataset",
-  "timestamp": "2026-03-25T20:49:37.221582+00:00",
-  "input_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\dataset_filtrado.csv",
-  "output_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\dataset_auditado.csv",
+  "timestamp": "2026-03-25T21:38:28.058101+00:00",
+  "input_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\01b_unificado\\dataset_unificado.csv",
+  "output_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\02_normalizado\\dataset_normalizado.csv",
   "config_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\config\\normalization_rules.json",
   "statistics": {
-    "total_rows": 2251,
+    "total_rows": 3207,
     "rules_applied": [
       "unicode_nfc",
       "trim",
@@ -13,17 +13,17 @@
       "normalize_comma_space",
       "lowercase"
     ],
-    "rows_with_changes": 2251,
-    "total_transformations": 4533,
+    "rows_with_changes": 3109,
+    "total_transformations": 6223,
     "transformations_by_rule": {
-      "lowercase": 4502,
+      "lowercase": 6192,
       "trim": 23,
       "collapse_spaces": 3,
       "normalize_comma_space": 5
     },
     "transformations_by_column": {
-      "ESP": 2255,
-      "SHIWILU": 2278
+      "ESP": 3100,
+      "SHIWILU": 3123
     }
   },
   "config_snapshot": {

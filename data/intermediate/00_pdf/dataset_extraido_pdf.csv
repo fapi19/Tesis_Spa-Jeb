@@ -1,0 +1,957 @@
+﻿pair_id,texto_id,item_number,SHIWILU,ESP,quality_flag
+T001_N001,1,1,Kui’na Shiwilulunku.,Yo soy Jeberina.,fallback_last_line_as_spanish
+T001_N002,1,2,kua asek wilawañun awawek.,Aquí me engendró mi madre.,ok
+T001_N003,1,3,"Nanpipakun tatawek ima wilawañinerku, wadekllinerku, asek i’la susulek.","Conviviendo con mi padre me engendraron, me parieron y aquí mismo crecí.",ok
+T001_N004,1,4,"Iskun duker a’ña’seku awawek chiminlapillun, amishawek teksusullun.",Cuando tenía nueve meses murió mi madre y me crió mi abuelita.,ok
+T001_N005,1,5,Tatawek ekdusipen ñilli.,Mi padre quedó viudo.,ok
+T001_N006,1,6,Nanekla nanapu’si’la nanpipan tatawek ali’la ku’aper kanañi.,Después vivendo (solo) nuevamente mi padre encontró otra mujer.,ok
+T001_N007,1,7,Ali’la ku’apellek nanpillina’ musu’.,Con otra mujer vivían bien.,ok
+T001_N008,1,8,Kui’na a’pinta’ musu’ eknanpi’ñu tatawek.,Pero a mí ya no me quería bien mi padre.,ok
+T001_N009,1,9,Nu’amu amishawekkek pipetchulek.,Por eso me arrimé donde mi abuelita.,ok
+T001_N010,1,10,Ku’apenñenleksa’ musu’ nanpillina’ tatawek.,Mi padre con su mujer nomás vivían bien.,ok
+T001_N011,1,11,Kudei’na ma’sha musu’ kankanwapei’ñundek a’pinta’ tatawek.,A nosotras mi padre ya no nos ha querido.,ok
+T001_N012,1,12,Nu’amui’na i’pa amishawek teksusullun wilaluntulek.,Por eso me crió mi abuelita y me hice señorita.,ok
+T001_N013,1,13,Wilaluntamu sudawek kananek.,Siendo señorita encontré marido.,ok
+T001_N014,1,14,Nanpiapamu wilawanek.,Al convivir salí embarazada.,ok
+T001_N015,1,15,Nu’amui’na wadeklek wilaweklusa’.,Después tuve mis hijos.,ok
+T001_N016,1,16,"Wadeklek, susullina’.",Los parí y crecieron.,ok
+T001_N017,1,17,Teksusupa’nku tatanenna’ chiminlapillun.,Ayudándome a criarlos su padre murió y quedé sola.,ok
+T001_N018,1,18,"Ipa’li’na wilaweklusa’ nanapu’si’la luwektapallinerku,","Ahora mis hijos a su vez me están sirviendo,",ok
+T001_N019,1,19,enmu’pinenwawalusa’ nu’an ku’aperwawalusa’ luwektapallinerku.,mis hijos varones y también mis hijas mujeres me están sirviendo.,ok
+T001_N020,1,20,"Ñinchillintulusa’ ñanna’ nu’unta’ nawa’ enka’pallinerku ka’a’kasu’,","Como varios de ellos han estudiado ellos me dan mi comida,",ok
+T001_N021,1,21,"kutunshawek a’ña’kasu’, dudinpu’ enka’pallinerku.","la ropita que tengo, me dan de todo.",ok
+T001_N022,1,22,A’pinta’ luwektapa’nkusui’na ku’aperwawa suda’su’.,La que más me cuida es mi hija que es casada.,ok
+T001_N023,1,23,Ala’sa’ ku’aperwawa luwektapallun.,Una hija mujer me está sirviendo.,ok
+T001_N024,1,24,Mikekweklek i’la we’chimu1 mukankanlusa’.,Con mi yerno ambos son de buen corazón.,ok
+T001_N025,1,25,Nu’anna’ nawa’ eknanpipallinerku.,Así ellos me acompañan.,ok
+T001_N026,1,26,A’pinta’ ku’aperwawalusa’ musu’ eknanpipallun.,Más son las mujeres las que me acompañan.,ok
+T001_N027,1,27,Nu’amui’na kuanta’ musu’ nanpiapalek.,Así yo también vivo bien.,ok
+T001_N028,1,28,"Ipa’la asu’ kai kua wei ñinanlukla weklli, senñula’.","Ahora esta hermana ha venido desde un pueblo lejano, la señora.",ok
+T001_N029,1,29,"Llimaklan wek’an asek nananta’ yañinchitulli,","Viniendo de Lima aquí ella también quiere aprender,",ok
+T001_N030,1,30,Shiwilu la’la’ yañinchitulli.,quiere aprender el idioma shiwilu.,fallback_last_line_as_spanish
+T001_N031,1,31,Namasu’ la’leklan luntetchek.,De esta lengua le voy a hablar.,ok
+T001_N032,1,32,"“A’lek’erken, ekpanta’n kenmanta’ ñinchiter.","“Te voy a enseñar, llévala tú también y aprende.",ok
+T001_N033,1,33,"Nanalupa’ wei ñinanluk ekpanter, awá”, itamu a’lek’apalek.","Llévala por ahí a un pueblo lejano, madre”, diciendo así le estoy enseñando.",ok
+T001_N034,1,34,"Ipa’la nanalek nana a’lachik’apilalek, nananta’ a’lachik’apilallun kua.",Ahora con el idioma le estoy enseñando y ella también está enseñándome a mí.,ok
+T001_N035,1,35,Nerpi’pu’ innichi’nek lli’inuta’kasu’ lunpa’kasu’.,A veces no puedo recordar lo que estoy hablando.,ok
+T001_N036,1,36,Nerpi’pu’ pinanetllek.,A veces me olvido.,ok
+T001_N037,1,37,Nananta’ a’lek’apilallun.,Ella también me está enseñando.,ok
+T001_N038,1,38,We’chimu luntulek senñula’ enpi’pu’ lunchinpu’a’kasu’.,Bonito le hablo a esta señora con quien nunca antes había conversado.,ok
+T001_N039,1,39,Ipa’la mula’si’la weklli.,Ahora felizmente ha venido.,ok
+T001_N040,1,40,"Nana ekpanta’i, ekpanta’i nerñinanluk,","Ella que lleve (mi palabra) a otro pueblo,",ok
+T001_N041,1,41,"nananta’ a’lekchii, ñinchichii,","ella también que enseñe para que (otros) la aprendan,",ok
+T001_N042,1,42,ma’sha asek i’la ta’wanchinpu’kek.,para que aquí nomás no se termine.,ok
+T001_N043,1,43,A’pinta’ tupichina’ nawa’.,Más que sigan ellos (difundiéndola).,ok
+T001_N044,1,44,"Nerñinanluk ñinchichinna’ nawa’nta’ Shiwilu,","En otros pueblos que conozcan también el shiwilu,",ok
+T001_N045,1,45,"napi’ Shiwilu,","el shiwilu de antes,",ok
+T001_N046,1,46,"nanpikudeksu’,","nuestras costumbres,",fallback_last_line_as_spanish
+T001_N047,1,47,"napi’ nanpirkasu’ papinkuku’lusa’, amiku’lusa’.","lo que vivieron antes nuestros abuelos ya fallecidos, las abuelas finadas.",ok
+T001_N048,1,48,Wilaweklusa’pa’ ma’sha a’lekdek’i’nek.,Ya que a mis hijos no les enseñé.,ok
+T001_N049,1,49,Ñienkasu’ wilaweklusa’ lachek’i’ñina’.,Ninguno de mis hijos entiende.,ok
+T001_N050,1,50,"U’dun wawalu’ wadek’a’kasu’, u’dun wawalu’ kua teksusu’kasu’.","Hartos hijos he parido, hartos hijos he criado.",fallback_last_line_as_spanish
+T001_N051,1,51,Ñienkasu’ ñinchichillina’ namasu’ la’lekla lunchinpu’dek’a’kasu’ malek.,Ninguno sabe de esta lengua porque no les he hablado.,ok
+T001_N052,1,52,¿Ma’ki’na ñinchichi’ñina’?,¿Por qué no entienden?,ok
+T001_N053,1,53,kua usha’wanek a’lek’inpu’dek’amu wilaweklusa’.,Yo tengo la culpa de no haberles enseñado a mis hijos.,ok
+T001_N054,1,54,Ipa’li’na nawa’ yañinchituwiñina’ saka’dek.,Ahora ellos quisieran aprender pero es difícil.,ok
+T001_N055,1,55,"Kui’na usha’wanek wilaweklusa’ a’lek’inpu’dek’amu,","Yo sí que tengo la culpa por no enseñarles a mis hijos,",ok
+T001_N056,1,56,"iñer ñinchita’kudeksu’ napi’ku’lusa’ki,","todo lo que sabemos de los antiguos,",ok
+T001_N057,1,57,"kaikku’lusa’ki,","de las mujeres ya fallecidas,",ok
+T001_N058,1,58,inetchaku’lusa’ki.,de las tías (paternas) finadas.,ok
+T001_N059,1,59,Taker’apilallina’ iñer.,Van consumiéndose todos.,ok
+T001_N060,1,60,Shiwilu la’la’ ta’wantapilalli.,El idioma Shiwilu se está terminando.,ok
+T001_N061,1,61,"Mula’si’la asu’ kai kua nerñinanlukla,","Para bien esta hermana desde otro pueblo,",fallback_last_line_as_spanish
+T001_N062,1,62,kupin ñinanlukla weklli.,desde una ciudad grande ha venido.,fallback_last_line_as_spanish
+T001_N063,1,63,"Nanima yañinchitulli,","Ella dice que quiere aprender (mi idioma),",ok
+T001_N064,1,64,nana a’lek’apalek.,le estoy enseñando.,fallback_last_line_as_spanish
+T001_N065,1,65,"Ekpanta’n nananta’ a’lekchii, a’lektan nanalupa’",Llevándolo ella también que enseñe por otros lugares,ok
+T001_N066,1,66,ta’wanchinpu’ek asu’lupa namasu’ la’la’ lu’nkawasu’.,para que no se acabe aquí esta lengua que hablamos.,ok
+T001_N067,1,67,Ta’wanchinpu’ek asek tulek kua.,Para que no se acabe aquí digo yo.,ok
+T001_N068,1,68,"Iñer asek ñapalusa’,","Todos los que están aquí,",ok
+T001_N069,1,69,"wilalusa’,","niños,",fallback_last_line_as_spanish
+T001_N070,1,70,"nadi’neklusa’,","jóvenes,",ok
+T001_N071,1,71,"wilalunlusa’, ñi ñinchichi’ñina’ namasu’ la’la’mapu’wa’,","muchachas, no saben pues esta lengua nuestra,",ok
+T001_N072,1,72,"Shiwilu la’la’,","la lengua shiwilu,",fallback_last_line_as_spanish
+T001_N073,1,73,Shiwilu lu’nkasu’ ñinchichi’ñina’.,el shiwilu que yo hablo no lo saben.,ok
+T001_N074,1,74,Ma’sha.,No.,ok
+T001_N075,1,75,"Wilalusa’ ipa’la Kaschilla’ la’leklansa’ lunna’,",Los niños ahora hablan sólo el castellano,ok
+T001_N076,1,76,ipa’li’na Shiwilu la’la’ pinanetllina’.,y han olvidado la lengua shiwilu.,ok
+T001_N077,1,77,"Ñi luwanchi’ñina’,","No quieren (saber) nada,",fallback_last_line_as_spanish
+T001_N078,1,78,"ñi yalui’ñina’,","no les importa,",ok
+T001_N079,1,79,innichi’ñina’ lu’nkasu’.,no pueden hablar.,ok
+T001_N080,1,80,Nu’amu kua wa’inutulek.,Por eso tengo pena.,fallback_last_line_as_spanish
+T001_N081,1,81,"Ñinchilu’nkudeksu’ taker’apilallidek,","Los que sabemos hablar nos estamos extinguiendo,",ok
+T001_N082,1,82,chimianpilallidek.,nos estamos muriendo.,fallback_last_line_as_spanish
+T001_N083,1,83,Iñer ta’wantapilallina’.,"Todo se está terminando. Jeberos, 25 de julio del 2005",ok
+T002_N001,2,1,"Ipa’li’na kai kuaweklusa’, senñula’lusa’, wintetchenma’","Ahora mis hermanas menores, señoras, les voy a contar,",fallback_last_line_as_spanish
+T002_N002,2,2,a’lek’etchenma’ kuda ukluta’kudeksu’.,les voy a enseñar la elaboración de la chicha punta.,ok
+T002_N003,2,3,Uklupidekkin yañinchitulama’.,De la chicha punta quieren conocer.,ok
+T002_N004,2,4,"Yañinchitulama’ kenmama’nta’ ma’pu’si’pa’ nu’tulek,","Ustedes también quieren aprender de qué manera se hace,",ok
+T002_N005,2,5,uklutulek.,cómo se prepara la bebida.,ok
+T002_N006,2,6,Nu’tulek u’su’.,Se hace así.,ok
+T002_N007,2,7,"Nanentu ker’ manta’lek menmikda’,","Primero se va a traer yuca de la chacra,",ok
+T002_N008,2,8,"uka’lek, eksu’lek.","se la extrae, se la pela.",ok
+T002_N009,2,9,"Eksu’, kencha’lek pidik, aku’lek.","Pelada, se trae a la casa y se la guarda.",ok
+T002_N010,2,10,"Ukllinantusik ipa’linchi pamu’lek, a’du’lek uktak.",Cuando amanece entonces se lava (la yuca) y se la pone en una olla.,ok
+T002_N011,2,11,Dintuntulek wa’naukta ukluka’lli.,Se junta la leña (para el fuego) debajo de la olla de aluminio y se hierve.,ok
+T002_N012,2,12,Ukluka’pasik kenmu’nta’ inyalalatulek chitetlla.,Mientras está hirviendo se tuesta el maíz desgranado.,ok
+T002_N013,2,13,Ala’ kilu inyalek chiter inyalalanantekkek.,Un kilo de maíz se tuesta en una tostadora.,ok
+T002_N014,2,14,Inyek ipa’linchi peksanek.,Una vez tostado se lo muele.,ok
+T002_N015,2,15,Pitak aku’n peksantunanlek napi’ku’lusa’ peksantullina’.,Poniéndolo en el batán los antiguos molían con moledor de palo.,ok
+T002_N016,2,16,Ipa’li’na nui’ñina’.,Ahora ya no hacen así.,ok
+T002_N017,2,17,Ipa’li’na makinak peksanpallina’ damellu’shasu’.,Ahora a máquina muelen bien menudito.,ok
+T002_N018,2,18,Peksantapamu nana inkaluner ker’unta’ a’ler’apalek alei’teklundan.,"Mientras muelo voy asando también la yuca, cinco yucas enteras.",ok
+T002_N019,2,19,Ipa’linchi chitetllu’ kellu’lek seklekka’lek.,"Después, al maíz pulverizado y la yuca asada desmenuzada se los apiacha (se mezclan a mano formando una masa).",ok
+T002_N020,2,20,Nanekpi’la a’kasetllek asukallek.,Ahí nomás se endulza con azúcar.,ok
+T002_N021,2,21,"Nanekla mushasu’ inkawilalek, inpamu’lateklek.",Después bonito se lava uno la boca y se lava los dientes.,ok
+T002_N022,2,22,Ipa’linchi ukdinu’tulek.,Entonces se empieza a mascar formando líquido.,ok
+T002_N023,2,23,Ipa’linchi katennek.,Luego se pone en la boca.,ok
+T002_N024,2,24,"Katentapek walek, ukluka’palli wa’naukta kellek.","Mientras se masca en la boca, ya está hirviendo la olla de aluminio con la yuca.",ok
+T002_N025,2,25,Ukluka’sik pata’lek unmellinpa’ta’kasu’.,Cuando hierve se tantea para estar segura de que esté suave.,ok
+T002_N026,2,26,"Patak ipa’linchi u’deklek,","Una vez tanteado entonces se chanca,",ok
+T002_N027,2,27,"wa’nauktak i’la u’deklek, pitawilek,","en la misma olla se chanca y se va batiendo,",ok
+T002_N028,2,28,pitawilek ma’ilek nerku’teklek pitawilek.,se lo va batiendo con este.... con un remo se lo bate.,ok
+T002_N029,2,29,Napi’ i’na amiku’lusa’ utawitunanteklek utawillina’.,Pero anteriormente las abuelas finadas batían con el batidor “utawitunantek”.,ok
+T002_N030,2,30,"Mu’ka mu’ka mu’katapasik,","Cuando está humeando, humeando, humeando,",ok
+T002_N031,2,31,"ukluka’sik, ali’lak kupin uktak pekdu’a’kasu’ upellek.",cuando hierve se lo echa en otra olla de barro grande que está enterrada (hasta la mitad).,ok
+T002_N032,2,32,Ipa’la a’pinta’ kupin ukta lli’tapi’ñi.,Ahora ya no se ven las ollas grandes de barro.,ok
+T002_N033,2,33,Ipa’li’na nana wa’napi “tinpu” iterkasu’,Ahora a ese recipiente (grande de plástico) que le llaman“timbu”,ok
+T002_N034,2,34,nana a’duk ipa’linchi nanek upellek.,se lo sienta y entonces ahí se vacea (el líquido para ser guardado).,ok
+T002_N035,2,35,"Uper’apilalek, uper’apilalek.","Se sigue trasladando el líquido, se sigue vaciando (la yuca disuelta).",ok
+T002_N036,2,36,Ipa’linchi ta’wantununta’sik nu’nipi’la ñapalli ker‘ ukluka’sik upetñunta’lek.,"Entonces cuando se termina, nuevamente la yuca sobrante se hierve (con el agua nueva que ha puesto) y se vuelve a trasladar.",ok
+T002_N037,2,37,Nu’sik upetchununta’lek deklek.,Luego se vuelve a agregar agua.,ok
+T002_N038,2,38,"Ukluka’nunta’sik, utawinunta’lek...",Cuando vuelve a hervir se vuelve a batir....,ok
+T002_N039,2,39,"Ipa’linchi katentamupu’su’ pitawitapalek, ka’latulek.",Entonces mientras se va masticando se va batiendo el líquido y se masca el afrecho (lo último de la yuca disuelta).,ok
+T002_N040,2,40,"Iñer ka’latak saneksik,",Cuando todo está mascado y enfriado,ok
+T002_N041,2,41,nana di’din er’washinchi a’kasekchulek mi’len ulen’ak:,ese líquido al anochecer se lo endulza discursando a la abeja “mi’len”2:,ok
+T002_N042,2,42,"“Mi’lencháaaa, kenmapa ñenpi’ laki’dek uwapi’naaa.","“Abeja mi’len, tú sí que nunca has hecho una chicha insípida.",fallback_last_line_as_spanish
+T002_N043,2,43,"Mi’lencháaa, kenma enpu’nipi’nta’ uklutetchu iñer a’kaser apalaaa.","Abeja mi’len, tú qué cantidad de chicha que hagas siempre la endulzas.",ok
+T002_N044,2,44,kuanta’ uklupidekwek pekkuituu”.,La mía también icáramela”.,ok
+T002_N045,2,45,Chiter nanpi peksanpi nananta’ ali’la uktak a’ukluka’lek.,Maíz crudo molido también se hierve en otra olla.,ok
+T002_N046,2,46,Nu’sik ker’ su’watek nananta’ a’ukluka’lek ali’la uktak.,Así también yuca cruda rallada también se hierve en otra olla.,ok
+T002_N047,2,47,Ala’sa’ kupin uktaksa’ iñer nana kaladaper uktakda’ sekdunek.,En una sola olla grande se mezcla todo lo de esas tres ollas.,ok
+T002_N048,2,48,Ipa’linchi ukdinu’ta’kasu’lek a’kasetllek.,"Entonces con lo que se ha mascado (entre varias mujeres) se endulza. 2 “ramichi”, en español regional.",ok
+T002_N049,2,49,A’kaser’a’kasu’ supinak ukllinkek sulatulek.,"Después de endulzar (el líquido con el mascado), se cierne en la sedama (cernidor).",ok
+T002_N050,2,50,Napi’ amishaku’lusa’ nu’tullina’ ukllin ma’alanlankekla.,Antes las abuelitas ya finadas hacían sedama de los tallos de la palmera “ma’a”.,ok
+T002_N051,2,51,Dasu’dekpilli yunsa’nnunta’lek ya’pi’dektak.,A la madrugada siguiente una se levanta nuevamente para cutipar (haciéndole hervir otra vez).,ok
+T002_N052,2,52,Ipa’linchi a’pi’dektapa’sik ukllapilelli.,Entonces cuando se está cutipando (se está haciendo hervir nuevamente) está amaneciendo.,ok
+T002_N053,2,53,A’pi’dekta’kasu’ supinak a’du’dektulek kupin uktak.,"Después de cutipar, se deposita (la bebida) en una olla grande (que está enterrada hasta la mitad).",ok
+T002_N054,2,54,"Nu’tak, lanchimeklek atantulek.","Hecho esto, se cubre con esteras (formando un techo).",ok
+T002_N055,2,55,Nanek sanek’i nanasa’.,Ahí se enfría sola.,ok
+T002_N056,2,56,Ñidenler pata’pi’ñi aper’inpu’ek.,Nadie la toca para que no se malogre.,ok
+T002_N057,2,57,"Ínkatu’ uklli nakusik, deksik, ullidek.","Cuando pasan cuatro días, cuando fermenta, bebemos.",ok
+T002_N058,2,58,Uklu’pidekdinpunen ma’lusa’ wa’danlusa’ uwerkasu’pu’lli.,La espuma de la chicha punta se parece a la bebida que toman los wiracochas (cerveza).,ok
+T002_N059,2,59,"Nu’tulek kai kualusa’, senñula’lusa’,","Así se hace hermanas, señoras,",ok
+T002_N060,2,60,napi’ amiku’lusa’pu’su’.,como hacían antes las abuelas ya finadas.,ok
+T003_N001,3,1,Enta’ten i’na lunterkenma’.,"A ver, pues, vamos a conversar.",fallback_last_line_as_spanish
+T003_N002,3,2,Kenma senñula’ yañinchitula asu’ Shiwilu la’la’mapu’wa’.,Usted señora quiere aprender esta nuestra lengua shiwilu.,fallback_last_line_as_spanish
+T003_N003,3,3,Shiwilu la’la’mapu’wa’ u’chimusha.,Nuestra lengua shiwilu es bonita.,fallback_last_line_as_spanish
+T003_N004,3,4,"Lachek’erkasu’ lachekllina’, lachek’inpu’erkasui’na innichi’ñina’ lachek’erkasu’.","Los que la entienden, la entienden, pero los que no la entienden no pueden entender.",ok
+T003_N005,3,5,"Wilalusa’ ipa’la ñi lachek’i’ñina’, ipa’li’na Shiwilu la’la’mapu’wa’ nawa’ lachek’i’ñina’.","Los niños ahora no la entienden, ahora sí que ellos ya no comprenden nuestra lengua shiwilu.",ok
+T003_N006,3,6,Napi’ wilashakuñamu asu’ Shiwilu la’la’ mushasu’ lunek.,Antes cuando era niñita hablaba bonito el shiwilu.,fallback_last_line_as_spanish
+T003_N007,3,7,Ipa’li’na a’metcha yateknellek.,"Ahora, en cambio, un poco la quiero desviar.",ok
+T003_N008,3,8,"Ma’shi’na teknerinek, ñinchitapalek i’la.","Pero no la desvío, todavía la sé bien.",ok
+T003_N009,3,9,"Musu’ lunpalek i’la Shiwilu la’la’mapu’wa’, kuaki Shiwilu la’la’ musu’ lunpalek i’la. Todavía hablo bien nuestra lengua shiwilu, mi idioma shiwilu todavía",lo domino.,fallback_last_line_as_spanish
+T003_N010,3,10,"Asu’ yekpantan wei ali’la ñinanluk yañinchitula, ma’pu’sui’pa nanpilek kua asu’ Shiwiluk.","Esto queriendo llevar lejos, a otro pueblo, quieres aprender, de qué manera vivo aquí en Jeberos.",ok
+T003_N011,3,11,Shiwiluwekkek wilaweklusa’ teksusudeklek papina’ nanpipasik.,En mi Jeberos a mis hijos he criado cuando su padre vivía.,ok
+T003_N012,3,12,Napi’ sudawek sudatulek.,Hace tiempo me casé con mi esposo.,ok
+T003_N013,3,13,Sudawamu wilawanek.,Después de casarme tuve hijos.,ok
+T003_N014,3,14,Nawa’ ipa’la lli’apallinerku.,Ellos ahora ven por mí.,ok
+T003_N015,3,15,Kaluwi’tekku ipa’la ñaseku nawa’ luwektapallinerku.,Ahora que soy una mujer enferma ellos me cuidan.,ok
+T003_N016,3,16,Mula’si’la wilawanek.,Felizmente tengo hijos.,fallback_last_line_as_spanish
+T003_N017,3,17,"Wilawi’nek’ipa’ chiminpinek, uki’la di’tunansinku, kaluwi’ uki’la di’tunansinku.","Si no tuviera hijos ya me habría muerto, el hambre me hubiera matado, la enfermedad y el hambre me hubieran matado.",ok
+T003_N018,3,18,"Wilawamui’na nawa’ lli’apallinerku, uran’ukeklan3, uweklan, iñerkeklan lli’apallinerku wilaweklusa’.","Pero como tengo hijos ellos me están viendo, de mi comida, de mi bebida, de todo me están viendo mis hijos.",ok
+T003_N019,3,19,Ipa’la Shiwiluwekkek ñi a’pinta’ lunpi’ñina’ asu’ Shiwilu la’la’mapu’wa’.,Ahora en mi Jeberos ya no hablan más esta nuestra lengua shiwilu.,ok
+T003_N020,3,20,"A’pinta’ Kaschilleklansa’ lunna’, ñi a’pinta’ Shiwilu la’la’ lunpi’ñina’.",Hablando más en castellano ya no hablan shiwilu.,ok
+T003_N021,3,21,Nu’unta’shasi’pa’ wilaweklusa’ lachek’apilanti’ñina’.,"Algunitos de mis hijos quizás me estén entendiendo, pero ya no entienden bien.4",ok
+T003_N022,3,22,"Ma’atana kai kuawek Florencia, kai kuawek María, nawa’lekku lunpalek.","Ahí están mi hermana menor Florencia, mi hermana menor María, con ellas hablo.",ok
+T003_N023,3,23,Nu’anna’ itullinerku,Así ellas me dicen.,ok
+T003_N024,3,24,"- “Ñapala, ñañá?” itukellu.","“¿Estás aquí, hermana?” me viene a decir. 3 Una forma alternativa es weranwekkeklan. 4 Se refiere a sus hijos presentes durante la sesión de grabación.",ok
+T003_N025,3,25,"- “Ajá, ñapalek, ñañá. Uker lli’ker’ú”.","“Sí, aquí estoy, hermana. Ven a visitarme”.",fallback_last_line_as_spanish
+T003_N026,3,26,- “Uk’apincha’lek yalli’amun. Pa’amu menmik u’dun uklli lli’ker’i’ñen”.,“Estoy viniendo queriendo verte. Como fui a la chacra tantos días no te he visitado”.,ok
+T003_N027,3,27,- “Nu’amuntana luwanpallen. ¿Ma’pun a’cha kai kuawek lli’ker’i’ñu?” tapalek.,“Por eso te estoy echando de menos. ¿Qué teniendo mi hermana no me visita?” estoy diciendo.,ok
+T003_N028,3,28,Kenma ten mudinupan menmik pa’apala.,Al fin tú como estás sana te vas a la chacra.,ok
+T003_N029,3,29,Kui’na kaluwi’mu innichi’nek ñi enñupa’ pa’a’kasu’.,En cambio yo por estar enferma no puedo ir a ninguna parte.,ok
+T003_N030,3,30,Ñapamu erwatapalek.,Postrada me la paso.,ok
+T003_N031,3,31,Wilaweklusa’ menmik chiketllapipallinerku.,Mis hijos se van todos a la chacra y me dejan sola.,ok
+T003_N032,3,32,kuashasa’ du’wimu willeklek.,Yo solita sentada me pongo a llorar.,ok
+T003_N033,3,33,Willeklek wilaweklusa’ chiketllapitapallinerku menmik.,Lloro porque mis hijos se van todos a la chacra y me quedo sola.,ok
+T003_N034,3,34,"Du’anpamu erwatulek, erwa uncha’llina’.","Sentada me la paso, tarde llegan.",ok
+T003_N035,3,35,"Ali’la uncha’lli, ali’la uncha’lli....",Uno a uno van llegando.....,fallback_last_line_as_spanish
+T003_N036,3,36,"“¿Nauncha’lama’? Kaschilleklan itulek, “¿Ya han venido, hijos?” itudeklek.","“¿Recién vienen?” les digo en castellano, “¿Ya han venido, hijos?” les digo.",ok
+T003_N037,3,37,"Yunsamu innichinpu’la’wimu, uklulu’sha manta’mu.","Me levanto pueda o no pueda, masatito te voy a traer (pensando).",ok
+T003_N038,3,38,"- “Uker, hijito” itudeklek.","“Bebe, hijito” les digo.",fallback_last_line_as_spanish
+T003_N039,3,39,"- “Kudinchi madektupatekkudek, uwetchidek, mamá. Kudinchi mapatekkudek uklulu’ uwetchidek” itullinerku.","“Nosotros mismos vamos a servirnos masato y vamos a beber, mamá” me dicen. “Nosotros mismos vamos a servirnos”.",ok
+T003_N040,3,40,Nu’su’ nanpipalek wilaweklusa’lek.,Así vivo con mis hijos.,ok
+T003_N041,3,41,"U’chimu wilaweklusa’, iñerdaper mukankañina’ wilaweklusa’.","Buenos son mis hijos, todos mis hijos son buenos.",fallback_last_line_as_spanish
+T003_N042,3,42,"Mula’si’la u’chimusha teksusudeklek wilaweklusa’, papinalek.","Felizmente bonito les he criado a mis hijos, con su padre.",ok
+T003_N043,3,43,Ñi wilanwanpa’tamu ñi’nek.,Yo nunca he tenido hijos sin haberme esposado.,ok
+T003_N044,3,44,Papinalek teksusudeklek.,Con su padre les he criado.,ok
+T003_N045,3,45,Nanekla papina chiminlapillun.,Después su padre murió dejándome sola.,ok
+T003_N046,3,46,"Nawa’lekku ipa’la nanpiapalek, wilaweklusa’lek.","Con ellos ahora vivo, con mis hijos.",ok
+T003_N047,3,47,Ma’ata’na katu’ta’shadaper ku’tinweklusa’.,Ahí están doscitas mis hijas.,ok
+T003_N048,3,48,Nawa’ lli’apallinerku.,Ellas me cuidan.,ok
+T003_N049,3,49,"Nawa’ katu’shadaper, katu’ta’ ku’aperwawalusa’.","Ellas son doscitas, dos hijas mujeres.",fallback_last_line_as_spanish
+T003_N050,3,50,"Nawa’sa’ lli’apallinerku, peksaduintullinerku.","Sólo ellas me cuidan, me lavan la ropa.",ok
+T003_N051,3,51,"Akusutuker’anna’ a’ka’llinerku, a’uranñinerku.","Preparando la comida me dan de comer, me alimentan.",ok
+T003_N052,3,52,"- “Mamá, menmik yapa’llidek”.","“Mamá, queremos ir a la chacra”.",ok
+T003_N053,3,53,"- “Ah, pakuuu kenmamá’. Lliinuta’mama’su’ yasaka’tulama’” itudeklek. “Ah, vayan ustedes, conforme acordaron van a",trabajar” les digo.,fallback_last_line_as_spanish
+T003_N054,3,54,Pa’llina’. Pa’anna’ erwa uncha’llina’.,Se van. Luego de ir vienen tarde.,ok
+T003_N055,3,55,"- “Mamá, uk’apincha’lek menmiklan”.","“Mamá, estoy viniendo de la chacra”.",ok
+T003_N056,3,56,"- “¿Ah, ipa’cha uncha’la?”","“¿Ah, ya has venido?”",ok
+T003_N057,3,57,"- “Ipa uncha’lek, mamá. Uklulu’ a’werken, mamá”.","“Ya he venido, mamá. Te voy a servir masato, mamá”.",ok
+T003_N058,3,58,"- “Ah, enta’n’i’na dasu’laklanek uwi’nek”.","“Ah, a ver pues, desde la mañana no he bebido nada”.",fallback_last_line_as_spanish
+T003_N059,3,59,Ma’pu’sui’na ikellandu’mu innichi’nek dekkunta’kasu’.,Como ahora con este dolor de pierna no puedo caminar.,ok
+T003_N060,3,60,Nu’amu du’apalek.,Por eso estoy sentada.,ok
+T003_N061,3,61,Madettanna’ a’ullinerku.,Recogiendo (masato) de la tinaja me dan de beber.,ok
+T003_N062,3,62,"Nanasa’, kupin uwapi’nek, u’nisha iyumu uwapalek,","Eso nomás, no tomo mucho, poquito cuando tengo sed bebo,",ok
+T003_N063,3,63,ñi napi’pu’su’ kupin uwapawinek.,no como antes que bebía bastante.,ok
+T003_N064,3,64,Nu’la’su’ nanpipalek ipa’la asek kua.,Así nomás vivo ahora yo aquí. 24 de julio del 2005,ok
+T004_N001,4,1,Kui’na llillinwek Kishu.,Yo me llamo Jesús.,ok
+T004_N002,4,2,Wintetchenma’ lantekpi dekkunta’su’ napi’.,Les voy a contar del canasto que caminaba antiguamente.,fallback_last_line_as_spanish
+T004_N003,4,3,Nana lantekpi dekkuntulli.,El canasto caminaba.,fallback_last_line_as_spanish
+T004_N004,4,4,"U’ñikuchu’chekshalima, kunsek kutu’,","Sus piernitas eran muy flaquitas, piernas chuecas,",fallback_last_line_as_spanish
+T004_N005,4,5,madupu’su’ dekkuntuwiñi.,como el motelo caminaba.,ok
+T004_N006,4,6,Napi’ku’lusa’ler ekpa’llina’ menminennak.,Los antiguos lo llevaban a sus chacras.,ok
+T004_N007,4,7,"Ker’ uka’nna’ kala’tullina’,","Sacando yuca la depositaban,",ok
+T004_N008,4,8,"pi’murllina’, a’du’llina’.",llenaban el canasto y lo sentaban.,fallback_last_line_as_spanish
+T004_N009,4,9,"Wa’anler imi’na itulli “ ¡Pa’apilanter, kenmá!”",Su dueño dice le decía “¡Tú vete yendo!”,ok
+T004_N010,4,10,Nu’su’ lantekpi dekkuntuwiñi napi’.,Así el canasto caminaba antiguamente.,fallback_last_line_as_spanish
+T004_N010,4,10,Ala’lu’sa’ katu’ta’ wilalunlusa’ katu’ta’ yuyu’walusa’ler kaper’anna’ lumellina’.,Un día dos muchachas y dos muchachos encontrándolo (en el camino) se burlaron de él.,ok
+T004_N011,4,11,Dakutan inchilalak anu’lli nana lantekpi.,"Avergonzado, en un desnivel del camino se cayó el canasto.",ok
+T004_N012,4,12,"Ipa’lalek, ipa’la walek yunsi’ñi.","Hasta hoy, hasta ahora no se levanta.",ok
+T004_N013,4,13,Nana lantekpi luñi “¿Ma’ki’na kenmama’ lumellama’u’ku?,El canasto habló “¿Por qué ustedes se burlaron de mí?,ok
+T004_N014,4,14,Ipa’la’ka enpi’pu’sha dekkunchi’nchek.,Ahora sí nunca más voy a caminar.,ok
+T004_N015,4,15,"Pipektapapachenma’ chiminchuma’, nanpia’mama’ walek.”","Cargando (toda su vida) van a morir, todo el tiempo que vivan.” Jeberos, julio 2007",ok
+T005_N001,5,1,kua Shiwilulunku nuka’ka.,Yo soy jeberina auténtica.,ok
+T005_N002,5,2,Nanek wadekllun awawek Shiwiluk.,Ahí me alumbró mi madre en Jeberos.,ok
+T005_N003,5,3,Tekkinchintana kua ñinchitulek Shiwilu la’la’.,Verdaderamente yo he aprendido la lengua shiwilu.,ok
+T005_N004,5,4,"Nanalek tatawek awawek teksusullun, kua nana lu’nkasu’.","Con ella mi padre y mi madre me criaron, yo la hablo.",ok
+T005_N005,5,5,"kua asu’ senñula’ a’lunpallun,","A mí esta señora me está hacienda hablar,",ok
+T005_N006,5,6,"ma’i, ma’pu’si’pa’ kua wilaweklusa’ teksudeklek,","este, tal vez sobre cómo he criado a mis hijos,",ok
+T005_N007,5,7,"ma’pu’a’kasu’ asek weklek Yurimawek,",a qué he venido a Yurimaguas.,ok
+T005_N008,5,8,Nanadaper iñer asu’ senñula’ yañinchitulli.,Todo eso quiere saber esta señora.,fallback_last_line_as_spanish
+T005_N009,5,9,Kui’na enpu’nipa’ insekluten’a’kasu’ nanpi’kasu’.,Yo he sufrido mucho en mi vida.,ok
+T005_N010,5,10,kua napi’ Simirkek nanpilek.,Hace mucho yo viví en Varadero.,ok
+T005_N011,5,11,Shunka’ ekkilala a’ñamu Shiwiluklan yunsu’lek.,Cuando tenía diez años he salido de Jeberos.,ok
+T005_N012,5,12,Tanak pa’an tatawek ilantulli.,Yendo al monte mi padre baleaba (animales).,ok
+T005_N013,5,13,"Pa’an amantek ilañi, laman ilañi.","Yendo baleaba sajino, baleaba huangana.",fallback_last_line_as_spanish
+T005_N014,5,14,Nana ka’amu susulek.,Comiendo eso he crecido.,fallback_last_line_as_spanish
+T005_N015,5,15,Awawek tatawek chimiñina’ Simirkek.,Mi madre y mi padre murieron en Varadero.,ok
+T005_N016,5,16,Da’wanler kiteklli tatawek.,La víbora mordió a mi padre.,ok
+T005_N017,5,17,Ipa’la tatawek awawek chiminsik i’na dinsuwilallidek.,"Ahora, cuando murieron mis padres nos hemos quedado huérfanos.",ok
+T005_N018,5,18,“¿Ma’pu’si’pa’ nanpichek tatawek chiminsik?” tulek.,“¿Cómo viviré ahora que ha muerto mi padre?” me preguntaba.,ok
+T005_N019,5,19,Kaikshawekleksa’ llia’lek.,Con mi hermana mayor nomás me quedé.,ok
+T005_N020,5,20,Nanekla nanpipawinek Simirkek i’la.,De ahí seguía viviendo en Varadero mismo.,ok
+T005_N021,5,21,Nanekla yunsu’lek Yurimawek.,Después he salido a Yurimaguas.,ok
+T005_N022,5,22,kua wek’amu suktasa’ willaweklusa’ a’ñilek.,Viniendo he tenido sólo seis hijos.,ok
+T005_N023,5,23,Wilaweklusa’ ya’ñinchillintudek’amu enpu’nipa’ saka’tulek.,Para hacer estudiar a mis hijos he trabajado bastante.,ok
+T005_N024,5,24,Iya’linchi muinchi kua insekluten’amu wilaweklusa’ a’ñinchillintudeklek.,"Entonces, mucho he sufrido para hacer educar a mis hijos.",ok
+T005_N025,5,25,Ipa’la nu’amu asek ñapalek.,Por eso ahora estoy aquí.,ok
+T005_N026,5,26,Nanekla amitullinerku.,Después me hicieron abuela.,ok
+T005_N027,5,27,Nanek kua wek’amu ipa’la asek asu’ senñula’ a’lunpallun.,Entonces a mí viniendo ahora esta señora me está haciendo contar.,ok
+T005_N028,5,28,Senñula’ “¿Ma’pu’su’cha nanpipala?” itullun.,La señora me preguntó “¿Cómo vives?”,ok
+T005_N029,5,29,"kuashasa’ ñienkasu’ patunwi’nek,","Yo solita vivo, no tengo parientes,",ok
+T005_N030,5,30,asek kua patun a’ñinekta’la.,acá no tengo ningún familiar.,ok
+T005_N031,5,31,Ipa’la asu’ senñula’ itullun “¡Lunker Shiwilu la’la’!”,Ahora esta señora me pidió “¡Habla la lengua shiwilu!”,ok
+T005_N032,5,32,“Ñinchilu’nma’su’ ñilli inluntunansu’”.,“Si usted supiera hablar conversaríamos”.,fallback_last_line_as_spanish
+T005_N033,5,33,Ma’sha nana lauk’api’ñi.,Pero ella no entiende.,ok
+T005_N034,5,34,Nananti’mi’na yañinchitulli.,Ella también quiere aprender.,ok
+T005_N035,5,35,A’lek’apalek kualer.,Yo le estoy enseñando.,ok
+T005_N036,5,36,kualer a’lek’etchek iñer ñinchita’kasu’.,Yo le voy a enseñar todo lo que sé.,ok
+T005_N037,5,37,kua nanasa’ lunek.,"Sólo eso he hablado. Yurimaguas, Julio 2005",ok
+T006_N001,6,1,Ipa’la lunchek ma’pu’si’pa’ napi’ uketllin asu’ Panpadek ukuchinlusa’.,Ahora les voy a contar cómo antiguamente se quemaron estas riberas del río Pampayacu.,ok
+T006_N002,6,2,Napi’ ima wa’an yunsa’n luñi:,Cuentan que antiguamente el gobernante (de Jeberos) se levantó y habló:,ok
+T006_N003,6,3,"“Ipa’ ekkilala pilli’ncha’lli. ¡Enchuku’ pur’awa’ nadi’neklusa’, wilalunlusa’!” itudekllima.",“Ya el verano empezó. ¡Vamos a pescar muchachos y muchachas!” les dijo.,ok
+T006_N004,6,4,Ipa’linchi iñerdaper inlli’inutullina’ “¡Enchuku’ purkunwa’!” tanni’ma pa’llina’.,Entonces sí todos se pusieron de acuerdo. Dijeron “¡Vamos a pescar” y se fueron.,ok
+T006_N005,6,5,Nanimi’na napi’pui’mi’na wa’anen nanpi’pawiñinpi’la nana Panpadek ukuchinkek.,Dicen que en ese tiempo el dueño (del Pampayacu) todavía vivía ahí en esa ribera del río.,ok
+T006_N006,6,6,"Ipa’linchi nawa’ ektu’na’ palenñantullina’, puñañin llisantullina’.","Entonces los hombres llegaron y construyeron tambo, chancaron barbasco.",ok
+T006_N007,6,7,Nu’anna’ “eklli pur’awa’” tullini’ma.,"Luego de hacer eso, dijeron “pesquemos mañana”.",fallback_last_line_as_spanish
+T006_N008,6,8,"Nanek’ima ipa’linchi nu’wencha’lli ala’sa’ sasa’lunpu’a’su’, asu’ silakun.","Dicen que en ese momento bajó un catalán como hembra, este era una unchala5.",ok
+T006_N009,6,9,Nana wa’an wala’wanen.,Este era asistente del gobernante.,fallback_last_line_as_spanish
+T006_N010,6,10,"Nanima pennu’pilenchan, unchan itudeklli:","Ahí vino volando, bajó y le dijo (a la gente):",ok
+T006_N011,6,11,“Asu’ tanan ima di’setchetchuna’” itudekllima ñima latekchiñina’.,"“Dicen que este monte lo van a quemar”, pero no le creyeron.",ok
+T006_N012,6,12,"Napi’pui’mi’na wa’an ñapawiñi asu’ Kuntek, Kuntek wa’an.","Dicen que en esos tiempos el gobernante (de Jeberos) era el Pelejo, el Pelejo era gobernante.",ok
+T006_N013,6,13,"Naneklima ipa’linchi ukllinantanna’, apu’pa’ser puñañin,","Ahí dice, en ese momento, amaneciendo cuando echaban el barbasco,",ok
+T006_N014,6,14,ektu’lli katu’ta’ wila suwilalusa’ iñer ima sa’la’ta’ser.,5 Se trata de un ave de malagüero. llegaron dos niños huérfanos todo cubiertos de chupos (viruela).,ok
+T006_N015,6,15,Sa’la’wenkasu’ malek ima itudekllina’:,Dice que como estaban cubiertos de chupos les dijeron:,ok
+T006_N016,6,16,“¿Ma’ki’na kenmama’ asu’lupa’ uklama’? Sa’la’ a’dantetchenmu’wa’.,“¿Por qué ustedes han venido por acá? Nos van a contagiar la viruela.,ok
+T006_N017,6,17,"¡Dinsuludekku’, adanti’na’!” itudekllima.","¡Bótenlos, que se regresen!” les dijeron.",ok
+T006_N018,6,18,Wala’wanlusa’ler pa’an samenñenna’ siwetchudek’an,"Los policías fueron (hacia los niños enfermos), les quitaron sus pescados y les dijeron:",ok
+T006_N019,6,19,"“!Paku’, adanta’ku’!” itudekllini’ma’.","“¡Váyanse, regrésense por donde vinieron!”.",ok
+T006_N020,6,20,"Wilalusa’ wellek’apilenchan ima, uk’apilenchani’ma,","Los niños se venían llorando y cuando regresaban, dice, The children left, crying, and on their way back,",ok
+T006_N021,6,21,"ipi’ma nana ukalu’ yata’wanta’su’lupa’ ima, uk’apilincha’, nanek kapeklli ala’sa’ enmu’pinen nadi’nek piperunkallu’la’su’, pipelladasu’. cuando iban terminando ese bajial, cuando venían, allí encontraron a",un hombre joven de cuello colorado y cara colorada.,ok
+T006_N022,6,22,"- “¿Ma’kin adanpilenchalama’, wilashala?” itudekllima.",“¿Por qué regresan muchachitos?” les preguntó.,ok
+T006_N023,6,23,"- Pu’yek aperku’tullinerkudek,",(Los hombres de Jeberos) nos mezquinaron la pesca.,ok
+T006_N024,6,24,samer mapa’sekudek dinsulullinerkudek asu’ sa’la’ a’kudeksu’ malek.,Cuando estábamos agarrando pescado nos botaron porque tenemos esta enfermedad sa’la’.,ok
+T006_N025,6,25,"Alla’shasa’ samer kencha’lek, yalli’washawek’unta’ alla’shasa’pi’la” itullima.","Un pescadito nomás he traído, mi hermanito también unito nomás” le respondió.",ok
+T006_N026,6,26,- “¿Uki’lalama’ a’cha? Lauk’a’seku asu’ katu’ta’ samer i’la dekwa’ku’ la’la’wekkek.,“¿Tienen hambre? Cuando abra mi boca metan los dos pescados.,ok
+T006_N027,6,27,Inlasiser’chek. Lauknunta’ asek kui’na usunma’ ka’ku’.,Voy a cerrar mi boca fuerte. Cuando vuelva a abrirla y saque (los pescados) coman.,ok
+T006_N028,6,28,"Ka’a’mamasu’ supinak ala’sa’ dekshadek kanenchuma’ inchilalak,","Después de comer van a encontrar una quebradita en el camino,",ok
+T006_N029,6,29,enpu’ni dadapudekshipa’ enpu’ni pektudekshipa’ kanenchuma’.,agua blanquísima y cristalina van a encontrar.,ok
+T006_N030,6,30,Nana iteklashapenma’lek inshen’anma’ ukku’.,Recojan eso con sus manitos y beban.,ok
+T006_N031,6,31,"Nu’anma’ nanalek i’la inpamu’pi’ku’, inpanka’pi’ku’.",Entonces con eso mismo lávense y frótense sus cuerpos.,ok
+T006_N032,6,32,Nanek iñer asu’ sa’la’ apu’tetchun” itudekllima.,Ahí toda esta enfermedad sa’la’ va a desaparecer” les dijo.,fallback_last_line_as_spanish
+T006_N033,6,33,- “Nanekla yunsanma’ tekka’nta’ku’ ala’sa’ nala inner’apek walek.,“Después levántense y corran hasta un árbol inclinado.,ok
+T006_N034,6,34,"Nanekla, nanekla’nka pi’shek’anma’ lli’ku’.",De ahí sí voltéense y miren.,ok
+T006_N035,6,35,"Ma’pu’si’pa’ lli’etchuma’ kenmama’, ñienpi’ lli’npu’a’mama’su’” itudekllima wilalusa’”.","A ver qué cosa van a ver ustedes, algo que nunca antes han visto” les dijo a los niños”.",ok
+T006_N036,6,36,Tekkinchi tekka’llini’ma nawa’ saka’terkek walek.,De veras corrieron ellos hasta que se cansaron.,ok
+T006_N037,6,37,“Ma’atasu’ nala inner’apalli. ¡Wanera!”,“Aquí está el árbol inclinado. ¡Detengámonos!”,ok
+T006_N038,6,38,Waneranni’ma pi’shekllina’.,Se detuvieron y miraron atrás.,ok
+T006_N039,6,39,Enpu’nipi’ma ituwetchapalli ulunta’su’.,Enorme se levantaba el ardor.,ok
+T006_N040,6,40,"Nalamulu’lusa’ nakutusu’, kekkilu’tek kawima uluntulli.","Sobrepasaba las copas de los árboles, muy cerca del cielo ardía.",ok
+T006_N041,6,41,Nana wilalusa’ wanererkek walek ima uketlli.,"Hasta donde se detuvieron los niños, dice, ardió todo.",ok
+T006_N042,6,42,Kala ekkilala ima uketlli.,Cuentan que tres años ardió.,ok
+T006_N043,6,43,"Nana wilalusa’shima ektu’ntanna’, wa’an wintunta’llina’:","Cuando los niños llegaron (a Jeberos), le contaron al gobernante:",fallback_last_line_as_spanish
+T006_N044,6,44,"“Wa’an, Panpadek di’setchullina’, iñer uki’tapilallina’.... purwanlusa’” itullima.","“Jefe, han quemado Pampayacu, todos están pereciendo quemados... los que pescaban” dijeron.",ok
+T006_N045,6,45,"Wala’wanlusi’ma a’idiuntundek’an, indiuntunser a’panta’deklli lli’unta’llina’.","(El Jefe) hizo reunir a los policías, y cuando se reunieron les mandó que se vayan a ver y ellos vieron.",ok
+T006_N046,6,46,"“Tekkinchi uluntapallinpi’la, innichi’ñi tashu’nsu’.","“De verdad está ardiendo todavía, no se puede apagar el fuego.",ok
+T006_N047,6,47,"Nala pendakilanenlusa’ musu’ ukpendalu’tek walek ima uketlli”,",Los carbones de los árboles se quemaron bien hasta convertirse en ceniza”.,ok
+T006_N048,6,48,Kala ekkilala uketlli.,Tres años ardió (Pampayacu).,ok
+T006_N049,6,49,Nu’sui’ma napi’ nakulli.,Cuentan que así sucedió hace mucho tiempo.,ok
+T006_N050,6,50,"Naneklima luna’tullina’, ñi a’pinta’ pur’i’ñina’.","Entonces (los jeberinos) se arrepintieron, no pescaron más.",ok
+T006_N051,6,51,"Tek kuanna’, ta’ser kuda lauktullidek papinkuku’lusa’ du’anna’ adipik kallilalak,","Atemorizados, cuando contaban nosotros (los jóvenes) los hemos oído a los viejos ya finados sentados en la calle,",ok
+T006_N052,6,52,uklulu’nenna’ uwanna’pu’su’... sinanpachinenna’ pilli’tanna’.,mientras bebían su masato....empuñando sus mocahuas.,ok
+T006_N053,6,53,"Amilusa’ wa’inutullina’, willekllina’.",Las viejitas tenían mucha pena y lloraban.,ok
+T006_N054,6,54,"Wilalunlusa’nta kuten’anna’, kekkilu’tek lli’anna’, tandulalusa’ lli’anna’, willekllina’.","Las jóvenes también, alzando la vista, mirando al cielo, mirando las estrellas, lloraban.",ok
+T006_N055,6,55,Nu’si’pa’ papinkuku’lusa’ taketllina’.,De esa manera quizá los antiguos perecieron.,ok
+T006_N056,6,56,Nana malek dansu’lusa’ tullina’:,Por eso los sobrevivientes dijeron:,ok
+T006_N057,6,57,“Kenmu’wa’ a’pinta’ tu’aper’interwa’. Kenmu’wa’ a’pinta’ usha’winterwa’.,“Nosotros no vamos a equivocarnos más. Nosotros no vamos a pecar más.,ok
+T006_N058,6,58,Aperkwi’nterwa’. ¡Aner yaperku’tama’! Aperku’teklusa’ ñerkasu’ malek nana nu’tudekllina’”.,No vamos a mezquinar. ¡No sean mezquinos! Por ser miserables les hicieron eso”.,ok
+T006_N059,6,59,"Ipa’la walek lauk’apallidek, lli’apallidek wa’dantek pekla’su’,","Hasta ahora escuchamos y vemos gallos que cantan,",ok
+T006_N060,6,60,"ñiñi’wa pekla’su’, wawaser willek’a’su’, llise’nkasu’, diwek’erkasu’, peklu’terkasu’.","perros que ladran, bebes que lloran, (gente) que chanca barbasco, que cortan leña, que se llaman.",ok
+T006_N061,6,61,"Nanadaper panta’mudek wichi’nta’mudek, ikineklli’ nanpincha’mudek laukllidek. Todas esas cosas cuando nos vamos a dormir, a medianoche",despertamos y escuchamos.,ok
+T006_N062,6,62,"Nerpi’pu’ uchinañinerkudek lauk’a’kudek, imanankankantullidek lauk’amudek.",A veces nos despiertan para que escuchemos y nos asustamos6 cuando escuchamos.,ok
+T006_N063,6,63,Nanadaper tekkinchinen luñina’ taserpilusa’ pantanna’ lauk’erkasu’.,Todas esas cosas verdad es lo que contaron los viejos que escuchaban cuando iban (a Pampayacu).,ok
+T006_N064,6,64,"Nu’sik sunka’teklusa’, sunkapilusa’ kananpallina’, ama’nna’pu’su’ dadektanna’ usu’pallina’.","También hallaban restos de cerámica, restos de adobe para parar las ollas, al bañarse, al bucear sacaban.",ok
+T006_N065,6,65,"Ta’ser kuanta’ papinkuku’lusa’ laukdeklek, wilakuñamu,",Cuando contaban yo también a los abuelos ya finados les he escuchado.,ok
+T006_N066,6,66,"Wilaku ñamu kawitulek, du’pa’tamu laweklek lunpa’ser.","Cuando era niño me acercaba, sentándome cerca les escuchaba contar. 6 Se expresa en shiwilu como ”late nuestro hígado”.",ok
+T006_N067,6,67,Nanekla’nka lawektapamudek kudanta’ ipa’la walek lli’inutapallidek nana lunka’su’.,"De ahí, escuchándoles, nosotros también hasta ahora nos acordamos de eso que hablaban.",ok
+T006_N068,6,68,Nu’sui’ma asu’ Panpadek uksu’ketchulli.,Así dicen que Pampayacu se quemó.,ok
+T006_N069,6,69,"Ipa’la itullenma’ nanek waleksa’, iñer Panpadekkin lunek.","Ahora les digo hasta ahí nomás, todo lo de Pampayacu les he contado.",ok
+T006_N070,6,70,"Yuspainek’etchun, senñula’lusa’. Muchas gracias, señoras.","Jeberos, julio 2007",fallback_last_line_as_spanish
+T007_N001,7,1,Ipa’la lunchek Arakayu ma’pu’si’pa’ nanpilli Panpadek ukuchik.,Ahora voy a contar de qué manera vivió Arákayu en la ribera del río Pampayacu.,ok
+T007_N002,7,2,Papinkuku’lusa’ tullina’ napi’ ima nawa’ luwer’inpu’wiñina’ Panpadek ukuchin.,Los antiguos finados contaron que antes ellos no conocían la ribera del Pampayacu.,ok
+T007_N003,7,3,"Nawi’mi’na’ panta’nna’, ala’lusa’, sekllintanni’ma panta’nna’, lli’llini’ma mu’katapasik.","Dice que ellos (los shawalas) yendo una vez, abriendo trocha yendo, vieron que estaba humeando.",ok
+T007_N004,7,4,Penwanpasik pidekñik.,Alguien estaba haciendo fuego en su casa.,ok
+T007_N005,7,5,“¿Den a’ta’ chi?” tanna’ imanankankantullina’.,“¿Quién será?” dijeron y se sorprendieron.,ok
+T007_N006,7,6,Tanni’mi’na “¡Enchuku’ luwetchunta’wa’ den’ipa’tek!”,Dijeron “¡Vamos a conocer quién será!”,ok
+T007_N007,7,7,Tanni’ma kawinta’llini’ma yunsu’lli pidekñikla. Lli’dek’an peklu’deklli:,Diciendo (eso) se acercaron y (Arákayu) salió de su casa (a encontrarlos). Al verlos los llamó:,ok
+T007_N008,7,8,"- “¡Uku’ chai alli’shalusa’, yalli’walusa’! ¿Enñupa’ a’cha pa’apilalama’?”","“¡Vengan pues (caramba me alegra) hermanos mayores, hermanos menores! ¿A dónde van?”",ok
+T007_N009,7,9,"- “Sekllintamudek asu’ tanak yunek’amudekpu’su’,","“Nosotros abriendo trocha en el monte estamos cazando,",ok
+T007_N010,7,10,"asu’lupa’ pekpikellidek, luwer’inpu’la’pi’mudek,","por este lugar hemos salido sin saber dónde,",ok
+T007_N011,7,11,lli’amudek mu’katapa’su’ penpen”.,divisando lo que levanta humo tu candela”.,ok
+T007_N012,7,12,Nu’amudek i’na’ “¡Enchu lli’kunwa’ nana den ipa’ nanpipalli!” tamudek pekpiwatukellillen itullini’ma.,Haciendo eso nosotros dijimos “¡Vamos a ver quiénes son esos que viven!” y vinimos a salir (del monte).,ok
+T007_N013,7,13,Tulli “Ma’pu’mi’na’ peklu’chi’nama’ weilan lauk’a’killek” tullima Arakayu.,Entonces dijo Arákayu“¿Por qué no llamaron de lejos para oírlos?”,ok
+T007_N014,7,14,Nu’an ima Arakayu sakeklli.,Después dice que Arákayu se alegró.,ok
+T007_N015,7,15,Nu’an ima Arakayu sakek’an peklu’deklli inyulateknen ima.,Luego alegrándose los invitó a su patio exterior.,ok
+T007_N016,7,16,U’chimu mushasu’ pilu’pi witekwanpi.,"Dice que bonito, bien deshierbado y barrido estaba su patio.",ok
+T007_N017,7,17,Lli’llini’ma nana dekshadek asu’ Panpadek.,De ahí vieron esa quebrada de Pampayacu.,ok
+T007_N018,7,18,- “¿Ma’dek a’cha asu’?” itullini’mi’na’.,“¿Cómo se llama esta quebrada?” preguntaron.,ok
+T007_N019,7,19,"- “Asui’na asu’lupa’ da’kellek kua samer yapektawamu, Panpadek nuka’a” tullima.","“Por acá he entrado yo para criar peces, se llama Pampayacu” Arákayu les respondió",ok
+T007_N020,7,20,- “Nu’pachi yalli’llen. Yaluwerpidektullen”.,“Entonces te queremos visitar. Queremos conocer tu casa”.,fallback_last_line_as_spanish
+T007_N021,7,21,"- “Ma’sha, kunetlla’ku’, pidekwek sekllanen, pidekwek dunsanen kunetchuku’, ñi’na da’i’nchuma’.","“No, sólo vayan alrededor, por la vereda de mi casa nomás, por los cantos de mi casa den la vuelta, pero no vayan a entrar.",ok
+T007_N022,7,22,Da’pachenma’ kenmama’ tekwetchuma’” itudekllima. Si entran ustedes van a tener miedo” les dijo.,Arakayu.,fallback_last_line_as_spanish
+T007_N023,7,23,Ñima ya’da’dek’i’ñi pidekñik.,No le permitía a nadie entrar a su casa.,ok
+T007_N024,7,24,Nu’anni’ma iñer inyulatekkeksa’ llia’llina’.,Por eso todos en el patio nomás se quedaron.,ok
+T007_N025,7,25,Naneklima Shawalalusa’ler itullina’:,De ahí los shawala le dijeron:,ok
+T007_N026,7,26,"- “¿Samerwanpala’ncha, alli’shá?”","“¿Tienes pescado, hermano mayor?”",ok
+T007_N027,7,27,- “A’ñapalek wapu’. Enchu luwetchukerku’”.,“Tengo abundante. Vengan a conocer”.,fallback_last_line_as_spanish
+T007_N028,7,28,"Peklu’dekllima, intekdudui’su’ samellusa’ yunsu’lli.",Y los llamó (a los peces) y toda clase de peces salieron.,ok
+T007_N029,7,29,Nanek ima imanankankantullina’.,Ahí dice se sorprendieron.,ok
+T007_N030,7,30,“¿Ma’pu’a’su’ asu’ yalli’ samerunta’ pektawapallinchi?,“¿Qué clase de (gente) es este hermano que hasta pescados cría?,ok
+T007_N031,7,31,- “Panuudek sametchapen. Uki’lallidek”.,“Regálanos tus pescaditos. Tenemos hambre”.,ok
+T007_N032,7,32,¿Pen a’cha a’ñapalama’?”,¿Tienen candela?”,ok
+T007_N033,7,33,- “Ñi asu’ penweklek akusuchi’nchuma’.,“Con mi candela no van a cocinar.,ok
+T007_N034,7,34,Penwek i’na nerpi’la.,Mi candela es diferente.,ok
+T007_N035,7,35,"Aper’etchuma’, wer’etchuma’.","Se van a confundir, se van a extraviar.",ok
+T007_N036,7,36,Nana malek asu’ penweklek penwei’nchuma’.,Por eso con mi candela no van a cocinar.,ok
+T007_N037,7,37,"Penwanku’ kenmama’, kenmami’nchi penpenma’lek.","Hagan candela ustedes, ustedes mismos con su candela.",ok
+T007_N038,7,38,¿Pen ipa’ kellama’?,¿Han traído candela?,ok
+T007_N039,7,39,"Nanalek pen a’tentanma’, diuk’anma’, dintunma’, kalu’tanma’, uranku’” tullima Arakayu.","Con esa candela enciendan, corten leña, junten los palos para hacer fogata, hiervan y coman (su chilcano)” dijo Arákayu.",ok
+T007_N040,7,40,"Nawi’mi’na, Shawalalusa’, indiuntunna’ luñina’.","Dicen que ellos, los shawala, se reunieron y comentaron.",ok
+T007_N041,7,41,“¿Ma’pu’a’su’ asu’ yalli’ i’na nanashasa’ nanpipalli?,“¿Por qué este hermano vive solo?,ok
+T007_N042,7,42,"Ñi ma’wi’ñi, wilawi’ñi, ñi ñiñi’wi’ñi, wa’dantekwi’ñi, ñi ma’wi’ñi”.","No tiene nada, no tiene hijos, no tiene perro, no tiene gallinas, no tiene nada”.",ok
+T007_N043,7,43,"“Ma’sha” tullima ala’sa’ taserpi,","“No” dijo un viejo,",ok
+T007_N044,7,44,"“ñi nana wa’dantek pektawapi’ñi, ñi laman pektawapi’ñi, ñi ma’nen nanadaper.","“él no cría gallinas, no cría huanganas, nada de esos animales.",ok
+T007_N045,7,45,Nani’na asi’na samersa’ pektawa’su’ nuka’a.,"Él es, éste es criador de peces exclusivamente.",ok
+T007_N046,7,46,Nu’pachi munu’tawa’ nananta’ munu’ta’kudik” tullima ala’sa’ taserpi.,Entonces tratémosle bien para que él también nos trate bien” dijo un viejo.,ok
+T007_N047,7,47,Tekkinchima itulli:,En verdad le dijeron:,ok
+T007_N048,7,48,"“Sametchapen panula’udek, chai, yallí’” itullima.","“Tus pececitos regálanos, por favor, hermano” le dijeron.",ok
+T007_N049,7,49,“¿Ma’lusa’ samellusa’cha luwantulama’?”,“¿Qué tipo de peces quieren?”,ok
+T007_N050,7,50,"Napi’pui’mi’na ñi nawa’, asu’ Shiwiluku’lusa’, samerunta’ luwetchi’ñina’.","Dicen que en esa época ellos, los shiwilu finados, no conocían (todos) los peces.",ok
+T007_N051,7,51,"Pektalusa’sa’, adu, a’lanan, punkapi, asu’ pupunlusa’, nanasi’ma luwetchullina’.","Solamente las mojarras, bujurquis, fasacos, shirui grande, los pucahuicsa, sólo eso conocían.",ok
+T007_N052,7,52,"Ñimi’na luwetchi’ñina’ iker’adu,","Pero dice que no conocían el acarahuasú,",ok
+T007_N053,7,53,"ñi luwetchi’ñina’ asu’ tukuner,","no conocían el tucunaré,",ok
+T007_N054,7,54,"ñi dunan,","ni la piraña,",fallback_last_line_as_spanish
+T007_N055,7,55,"ñi luwetchi’ñina’ asu’ unma’,","no conocían el paiche,",ok
+T007_N056,7,56,panwalalan.,la vacamarina.,fallback_last_line_as_spanish
+T007_N057,7,57,"Arakayu ima peklu’deklli, itudeklli:",Dice que Arákayu llamó (a los peces) y le dijo (a la gente):,ok
+T007_N058,7,58,"- “¡Anetlla yatek kuatama’,","“No corran,",ok
+T007_N059,7,59,"aner yatek kuatama’,","no tengan miedo,",ok
+T007_N060,7,60,aner yawellektama’!,no lloren!,ok
+T007_N061,7,61,Uketchu samellusa’”.,Van a venir los peces”.,ok
+T007_N062,7,62,"Inpikanpiler’an ima unma’ uklli,","Dicen que revolcándose vino el paiche,",ok
+T007_N063,7,63,"panwalalan uklli,","vino la vacamarina,",fallback_last_line_as_spanish
+T007_N064,7,64,"tukuner uklli,","vino el tucunaré,",ok
+T007_N065,7,65,"da’wanser uklli,","vino la doncella,",ok
+T007_N066,7,66,"dunanser uklli,","vino la gamitana,",fallback_last_line_as_spanish
+T007_N067,7,67,"lapi’samer uklli,","vino la corvina,",fallback_last_line_as_spanish
+T007_N068,7,68,dudinpu’ samer.,todo tipo de peces.,ok
+T007_N069,7,69,"Mapapa’, damer’ita, puka’ yunchinkelli.","La matamata, la taricaya, la charapa salieron del agua.",ok
+T007_N070,7,70,“Asu’ u’su kua pektawapalek.,“Esto así estoy criando.,ok
+T007_N071,7,71,¿Ma’nen ila’cha luwantekchuma’ kenmama’?”,¿Qué más van a necesitar ustedes?”,ok
+T007_N072,7,72,Tullina’ nana yalli’lusa’ pa’lusa’:,(Entonces) preguntaron esos hermanos (shawala) que habían ido:,ok
+T007_N073,7,73,- “¿Asu’ ma’nen samer a’cha? itullina’.,“¿Estos qué peces son?”,ok
+T007_N074,7,74,"- “Nansek, asui’na iker’adu, asui’na ..ma’i.. a’lanan, asu’ nerkala, terek, dunanser....” itudekllima.","“Sábalo, y este es acarahuasú, y este es …este... fasaco, este es lisa, palometa, gamitana....” les dijo.",ok
+T007_N075,7,75,"Wadunni’ma chintanna’, adenchanna’ ñinanluk luncha’llina’.","Escogieron (el pescado) y lo ahumaron, regresaron al pueblo y contaron (lo que había sucedido).",ok
+T007_N076,7,76,Lawinñini’ma Arakayu.,Se corrió la voz sobre Arákayu.,ok
+T007_N077,7,77,"Napi’pu’ “Arakayu ima nanpipalli, samerwanpalli.",En ese tiempo (comentaron) “Dicen que existe un tal Arákayu y tiene peces.,ok
+T007_N078,7,78,¡Enchuku’ pa’awa’!” nupullini’ma ñinanluklan.,¡Vayamos!” y salieron en grupos desde el pueblo.,ok
+T007_N079,7,79,Lli’kuñini’ma.,Dice que fueron a mirar.,ok
+T007_N080,7,80,“Tekkinchi enpu’ni mukankeinpi’ma nana Arakayu.,“En verdad muy buen hombre es este Arákayu.,ok
+T007_N081,7,81,Panutapalli.,Está regalando (pescado).,ok
+T007_N082,7,82,Ñimi’na pidekñik ñiden ya’da’i’ñi.,Pero dicen que no permite que nadie entre a su casa.,ok
+T007_N083,7,83,"Adipi wichi’llina’, inyulatekkek”.","Afuera dormía la gente, en el patio exterior”.",ok
+T007_N084,7,84,"Nu’sui’ma pa’apan, ala’lu’sa’ wa’anler a’peklu’tulli.","Así dice cuando estaba transcurriendo, una vez el gobernante le hizo llamar.",ok
+T007_N085,7,85,Wintunta’llima wala’wanlusa’ler:,Le fueron a decir los policías:,ok
+T007_N086,7,86,"- “Arakayú, wa’an tulli chu’kenpa’tunter ima asu’ mitanpi’”.","“Arákayu, el gobernante ha dicho que te vayas a pandillar para el carnaval”.",ok
+T007_N087,7,87,"- “Nu’pachi pantetchek” tan ima, “mitan uklliñik’inchima”.","“Entonces voy a ir” respondió (Arákayu), “el día central del carnaval”.",ok
+T007_N088,7,88,Asu’ musenkek sellawalusi’ma chu’kenapa’ser lli’tencha’lli Arakayu. Cuando las golondrinas revoloteaban pandillando arriba vino a,aparecer Arákayu.,ok
+T007_N089,7,89,Arakayu ima tulli “Asu’ sellawa i’na kualer pektawapalek.,Arákayu dijo “A estas golondrinas yo las estoy criando.,ok
+T007_N090,7,90,Sellawa kualer a’uk’apencha’deklek.,A las golondrinas yo las envío.,ok
+T007_N091,7,91,Nawi’na wintapanta’llinerku ma’pu’si’pa mitan nakulama’” tullima Arakayu.,Ellas se van a contarme de qué manera celebraron el carnaval” dijo Arákayu.,ok
+T007_N092,7,92,Arakayu ima luntulli wa’anler.,A Arákayu le habló el gobernante.,ok
+T007_N093,7,93,"Ya’ullini’ma uklulu’, Arakayu iyui’ñi.",Quisieron hacerle tomar chicha punta pero Arákayu no quiso tomar.,ok
+T007_N094,7,94,Yaaurañini’ma Arakayu luwanchiñi.,Quisieron hacerle comer pero Arákayu no quiso.,ok
+T007_N095,7,95,Sadinleksi’ma chu’kenñi.,Sólo con su mujer pandillaba.,ok
+T007_N096,7,96,Lli’llini’mi’na lanteknen pi’sheksu’ ali’la piteknenunta’ merpinen.,Dice que le vieron sus pies con los dedos hacia atrás y su espalda era barriga. the front and his belly where his back should be.,ok
+T007_N097,7,97,“¿Ma’pu’lusa’ asu’ muda’ ñan i’na asu’ Arakayu u’lli?” tullini’ma nana ñinanlu’wanlusa’.,"“¿Qué tipo de hombre es este, Arákayu?” dijeron los pobladores.",ok
+T007_N098,7,98,Nu’an ima chu’kenpa’tan adanta’lli Arakayu.,Y después de pandillar regresó Arákayu.,ok
+T007_N099,7,99,Ali’ladaper tullini’ma “Asu’ Arakayu samer luwektapalli.,Otros dijeron “Este Arákayu cuida los peces.,ok
+T007_N100,7,100,A’pimuchun kenmu’wa’ki ñii asu’ samer.,Será mejor que nos apropiemos de estos peces.,ok
+T007_N101,7,101,"Di’serpidektawa’ asu’ Arakayu,","Quemémosle la casa a este Arákayu,",ok
+T007_N102,7,102,"nanapa yunsu’i kenmu’wa’kinsa’ ñii asu’ samer”,","para que salgan para nosotros nomás, para que sean para nosotros nomás estos peces”,",ok
+T007_N103,7,103,"tanni’ma di’ser’itullina’ tanpu’nen, pideknen.",dijeron y le quemaron su tambo y su casa.,ok
+T007_N104,7,104,Nana chu’kenpa’tapasik mitan ukllik’inchi sellawalusa’ chu’kenapallina’.,Mientras (Arákayu) estaba pandillando el día central de carnaval las golondrinas estaban también danzando.,ok
+T007_N105,7,105,Musenkek kekkilu’tek ima kunekchapallina’.,Arriba en el cielo dice estaban dando vueltas.,ok
+T007_N106,7,106,Nana nu’apasik ima di’serpidektullina’.,Mientras pasaba eso dice quemaron la casa.,ok
+T007_N107,7,107,"Arakayu ima adanta’n,","Entonces Arákayu regresó,",ok
+T007_N108,7,108,"mitan nakusik ima adanta’n,","cuando pasó el carnaval regresó,",ok
+T007_N109,7,109,"Arakayu lli’unta’llima enpu’ni wa’inuipa’ nana pideknen uksuketchulli,",and he saw that his house had been completely burned.,fallback_last_line_as_spanish
+T007_N110,7,110,dudinpu’nen uketlli.,todas sus cosas se habían quemado.,ok
+T007_N111,7,111,Nu’an ima ipa’linchi Arakayu yulli.,Por eso dice Arákayu se enojó mucho.,ok
+T007_N112,7,112,“¿Kenmama’ a’cha u’pidekta’mama’u’kusu’ kua musu’ nu’tapallenma’?”,“¿Quiénes son ustedes para que hagan esto a mi casa a pesar de que yo les trataba bien?”,ok
+T007_N113,7,113,lukatullima Arakayu.,gritó Arákayu.,ok
+T007_N114,7,114,"Yulli, willeklli, wa’inutulli Arakayu.","Se rabió, lloró, tuvo mucha pena Arákayu.",ok
+T007_N115,7,115,Nu’an ima waneran tulli:,Después poniéndose de pie dijo:,ok
+T007_N116,7,116,"“Ipa’laka kenmama’ uki’la nakuchuma’,","“Ahora sí ustedes sufrirán hambre,",ok
+T007_N117,7,117,uki’lasa’ nanpichuma’.,de hambre nomás pasarán sus vidas.,ok
+T007_N118,7,118,Iñer pektawawek ekpantetchek Ukayerlupa’”,Todos (los animales) que crío me los llevaré al Ucayali”,ok
+T007_N119,7,119,tan ima Arakayu nu’wanta’lli.,diciendo esto Arákayu se fue río abajo.,ok
+T007_N120,7,120,Sekkankatan indi’dektulli sadinlek.,Dando un brinco se lanzó al agua con su señora.,ok
+T007_N121,7,121,Wanersu’ anu’dektullina’.,De pie cayeron al agua.,fallback_last_line_as_spanish
+T007_N122,7,122,Yamer’apila’su’pi’la dankumer’apilalli.,Conforme iba riéndose se iba sumergiendo.,ok
+T007_N123,7,123,Tuna’sik wetlli.,Cuando se silenció desapareció.,ok
+T007_N124,7,124,Sapana’lusa’sa’ pekpillina’.,Sólo los bufeos salieron.,ok
+T007_N125,7,125,Nana nu’tan Arakayu nu’wanta’lli.,Eso hizo Arákayu y se fue río abajo.,ok
+T007_N126,7,126,"Nu’wanta’sik ima sameller tupitunta’lli,","Dice que cuando iba río abajo los peces lo siguieron,",ok
+T007_N127,7,127,iñer samer ekpanta’lli.,todos los peces se llevó.,ok
+T007_N128,7,128,"Nana yapanti’npu’lusa’, enpu’dunshipa’ llia’llina’.","Los que no quisieron ir río abajo, unos cuantos se quedaron.",ok
+T007_N129,7,129,Nu’siklima’ka asu’ samer chiketllapillenmu’wa’.,De esta manera los peces nos dejaron.,ok
+T007_N130,7,130,"Sennanlusa’nta’ enñi,","También los lagos se secaron,",ok
+T007_N131,7,131,"shidek enñi,","los lagos grandes se secaron,",ok
+T007_N132,7,132,"Ukilasu’tundek enñi,","el “Rayo Caño” se secó,",ok
+T007_N133,7,133,"Kundetchek enñi,","el lago “Junto al Pelejo” se secó,",ok
+T007_N134,7,134,U’lan Untunan enñi.,el “Puerto de Lluvia” se secó.,ok
+T007_N135,7,135,Arakayuler pekkun pa’lapinta’lli.,Arakayú icaró y se fue dejándolos.,ok
+T007_N136,7,136,Arakayuler pilleklli.,Arákayu shinguró7 (los lagos).,ok
+T007_N137,7,137,Arakayu ima pillektutek.,"Arákayu, dice, era un shingurador.",ok
+T007_N138,7,138,"Nu’an imaka samellusa’ yu’nketllina’,","Por eso dice los peces salieron,",ok
+T007_N139,7,139,tullina’ “¡Yu’nker’awa’!”,dijeron “Salgamos todos”.,fallback_last_line_as_spanish
+T007_N140,7,140,"Nanek ima leklun panta’lli, Arakayu ima yupasik.","Dicen que una joven que mestruaba por primera vez se había ido ahí, cuando Arákayu estaba enojado.",ok
+T007_N141,7,141,"Yun pa’lapinta’lli, pekkun pa’lapinta’lli.","Enojándose (Arákayu) se fue dejándolos, tras icarar se fue y los dejó.",ok
+T007_N142,7,142,"Kuntetchek Arakayuler pekkusik nana leklun ta’wantulli,","Cuando Arákayu icaró al lago “Junto al Pelejo” la joven de primera menstruación se acabó,",ok
+T007_N143,7,143,"nanek wetlli,","ahí desapareció (en el agua),",ok
+T007_N144,7,144,dankumelli Arakayuler lli’apasik.,se hundió mientras Arákayu la estaba mirando.,ok
+T007_N145,7,145,Ipa’la peklu’lek “Leklun Pitun”.,Ahora le llamamos a ese lugar “La Poza de la Niña”.,ok
+T007_N146,7,146,Nu’an ipa’ yunsu’n panta’lli. 7 Hizo daño.,"Ocurrido esto, (Arákayu) salió del lugar y se fue.",ok
+T007_N147,7,147,Nanek ima ipa’linchi Tanpen peklu’lli.,Entonces dice que ahí llamó al Hombre Candela.,ok
+T007_N148,7,148,Arakayuler Tanpen peklu’n itulli,Arakáyu llamó al Hombre Candela y le dijo,ok
+T007_N149,7,149,"“Tanpen, enpulula’ yapur’anna’ uncha’a’ser di’setchudekker. “Hombre Candela, cuando alguna vez queriendo pescar vengan,",quémalos.,ok
+T007_N150,7,150,"Di’setchudekker muinpu’lusa’,","Quémalos a los malos,",ok
+T007_N151,7,151,"mukankinpu’lusa’ uksu’ketchina’,","los de mal corazón que se quemen bien,",ok
+T007_N152,7,152,mukankanlusa’sa’ dansu’chuna’.,sólo los de buen corazón sobrevivirán.,ok
+T007_N153,7,153,Nawa’sa’ nanpichuna’.,Sólo ellos van a poblar de nuevo.,ok
+T007_N154,7,154,Nawa’ ñinanlu’nenna’ a’llupitununtekchuna’” itullima Tanpen muda’.,Sólo el pueblo de ellos se reproducirá” le dijo al Hombre Candela.,ok
+T007_N155,7,155,"Tanpen mudei’ma shipen,","Dicen que el Hombre Candela era alto,",ok
+T007_N156,7,156,"piper’unkellu’, pipelladasu’.","de cuello colorado, de cara colorada.",ok
+T007_N157,7,157,Nu’an yupasik ima ipa’ ipa’linchi ñinanlu’ indiuntunñina’.,"En eso que estaba enojado (Arákayu), dice que el pueblo se reunió.",ok
+T007_N158,7,158,"Ipa’linchi ñinanlu’ indiuntun tulli,","Entonces el pueblo en asamblea dijo,",ok
+T007_N159,7,159,"wa’an wintullina’,","al gobernante le dijeron,",fallback_last_line_as_spanish
+T007_N160,7,160,"- “¡Wa’an, enchuku’ pur’awa’!”","“¡Gobernante, vamos a hacer pesca con barbasco!”",ok
+T007_N161,7,161,"- “¡Nu’ku’ nu’pachi kenmama’, pur’unta’ku’!”","“¡Así hagan entonces ustedes, vayan a hacer la pesca!”",ok
+T007_N162,7,162,nana yadi’setchusik.,cuando ya iba a empezar el fuego.,ok
+T007_N163,7,163,Ipa’linchi Arakayu ima pekkutulli naneklanek dekshadeklusa’ samerwa’nsu’.,Entonces dicen que Arákayu icaró (con su saber) desde allí a los riachuelos que tenían peces.,ok
+T007_N164,7,164,"Iñerdaper yu’nkellapilli,","Todos (los peces) salieron,",ok
+T007_N165,7,165,"enpinantek’unta’llina’ dekshadeklusa’,","las cuencas de las quebradas se secaron,",ok
+T007_N166,7,166,enpinantekllina’ sennanlusa’.,se secaron las cochas.,ok
+T007_N167,7,167,"Unma’ yunsu’lli,","El paiche salió,",ok
+T007_N168,7,168,"puka’ yunsu’lli,","la charapa salió,",ok
+T007_N169,7,169,"damer’ita yunsu’lli,","la taricaya salió,",ok
+T007_N170,7,170,mapapa’ yunsu’lli.....,la mata-mata salió....,ok
+T007_N171,7,171,Nu’sui’ma napi’ Arakayu pillek’aminerkenmu’wa’ pa’lapinta’llinerkenmu’wa’.,Dicen que de esa manera antiguamente Arákayu nos maldijo y nos abandonó. a long time ago.,ok
+T007_N172,7,172,"Pillek’an, tanan, dankumelli a’pinta’ tanan.","Vengándose, el monte, se sumió más el monte.",ok
+T007_N173,7,173,"Iñer u’lan’ukllik wisunanpalli,","Todas las temporadas de lluvias inunda,",ok
+T007_N174,7,174,wisunanpalli enpu’nipa’ tanpennan ñapalli.,inunda bastante y se forman tahuampales.,ok
+T007_N175,7,175,Nana sennanlusa’ enñi.,Esas cochas se secaron.,ok
+T007_N176,7,176,"Sennanlusek ima nanpipallinpi’la wa’anen, kinekla.","En esos lagos, dice, todavía viven sus dueños, adentro.",ok
+T007_N177,7,177,"Kupiwanlusa’ ñapallinpi’la,","Las boas todavía están ahí,",ok
+T007_N178,7,178,matutada ñapalli.,los lagartos negros ahí están.,ok
+T007_N179,7,179,Nawa’nta’ insekkitula’su’ ñapalli.,Ellos también escondidos están.,ok
+T007_N180,7,180,Arakayuler itudeklli:,Arakayu les dijo:,fallback_last_line_as_spanish
+T007_N181,7,181,“Anetlla ya’lli’tapatama’ asu’ mukankinpu’lusek.,“No se dejen ver donde están estos malos.,ok
+T007_N182,7,182,"Asu’ mukankinpu’lusa’, ñi a’pinta’ ma’winpu’pachina’, tada ilakapi ka’achuna’.","Estos malos, cuando no tengan más que comer, hasta lagarto comerán.",ok
+T007_N183,7,183,"Ma’winpu’pachina’, kupiwan enpulu ka’achuna’”","Cuando no tengan nada, boa alguna vez van a comer”",fallback_last_line_as_spanish
+T007_N184,7,184,tan ima pillekllenmu’wa’ asu’ Arakayu.,eso exclamó y nos maldijo este Arákayu.,ok
+T007_N185,7,185,"“Arakayu yunsui’npu’a’su’ ñilli,","“Si Arakayu no hubiera salido (de Pampayacu),",ok
+T007_N186,7,186,"enpu’nipa’ kenmu’wa’ samerwanpanansu’wa’,","nosotros tendríamos muchísimo pescado,",ok
+T007_N187,7,187,ukuchin enpu’ni mushipa’ ñapa’su’.,la ribera se mantendría muy bonita.,ok
+T007_N188,7,188,Ipa’li’na tanantapilalli”,En cambio ahora crece la maleza”,ok
+T007_N189,7,189,"tullina’ napi’ku’lusa’ du’anna’,","dijeron los antiguos sentados,",ok
+T007_N190,7,190,adipi du’kunna’ wa’inutullina’.,yendo a sentarse afuera y sintieron pena.,fallback_last_line_as_spanish
+T007_N191,7,191,Iñerdaper “¿Ma’ki’nta’ nu’tullinerkenmu’wa’ ten?”,Todos dijeron “¿Por qué nos hicieron eso?”,ok
+T007_N192,7,192,tullina’ sha’walusa’.,dijeron las muchachas.,ok
+T007_N193,7,193,“¿Ma’kin nu’tullinerkenmu’wa’ chi”,“¿Por qué nos hicieron esto?”,ok
+T007_N194,7,194,tullina’ taserpiku’lusa’.,dijeron los viejos finados también con pena.,ok
+T007_N195,7,195,"Tanna’ nerpi’pu’, kumarinenna’lek inpilli’iteklatanna’,","Diciendo así a veces, con sus comadres agarrándose de las manos,",ok
+T007_N196,7,196,"inmusha’iteklatanna’, wellekllina’.","besándose las manos, lloraban.",ok
+T007_N197,7,197,"Ipa’la uki’lak aku’llinerkenmu’wa’,","Ahora esta hambruna nos dieron,",fallback_last_line_as_spanish
+T007_N198,7,198,Arakayu nenchullinerkenmu’wa’.,somos víctimas de (la ira de) Arákayu.,ok
+T007_N199,7,199,Nu’ak kua’ insekluten’apalekwa’.,Por eso estamos sufriendo.,ok
+T007_N200,7,200,"Wilalusa’ luwetchi’ñina’ unma’,","Los niños no conocen el paiche,",ok
+T007_N201,7,201,"wilalusa’ luwetchi’ñina’ panwalalan,","los niños no conocen la vacamarina,",ok
+T007_N202,7,202,"luwetchi’ñina’ panwala,","no conocen la huangana,",ok
+T007_N203,7,203,luwetchi’ñina’ asu’ kupin samellusa’:,no conocen los grandes peces:,ok
+T007_N204,7,204,"unma’, tukuner, dunantek.","paiche, tucunaré, arahuana.",fallback_last_line_as_spanish
+T007_N205,7,205,Samellusa’ iñer wetlli.,Todos los peces se extinguieron.,ok
+T007_N206,7,206,Nanekla kenmu’wa’pi’la usha’wanekwa’.,Por eso nosotros mismos somos culpables.,ok
+T007_N207,7,207,"Ñiden usha’wi’ñi ma’kinpa’,","Nadie más tiene la culpa,",ok
+T007_N208,7,208,nana mukankinpu’lalusa’ler Arakayu pideknen di’setchullina’.,porque los de mal corazón quemaron la casa de Arákayu.,ok
+T007_N209,7,209,Ta’ser kuanta’ taserpiku’lusa’ laukdeklek du’amu weilan.,"Cuando contaban yo también a los viejos ya finados les he escuchado, sentado desde cierta distancia.",ok
+T007_N210,7,210,Napi’ taserpiku’lusa’ luwanchiñina’ kawita’kasu’ wilakudek ña’sekkudek.,Antes los viejos ya finados no querían que nos acercáramos cuando éramos niños.,ok
+T007_N211,7,211,Itullinerkudek “¿Ma’nen i’na kenmama’ yalauklama’?,Nos decían “¿Qué quieren escuchar ustedes?,ok
+T007_N212,7,212,¡Paku’ tekchi wei!”.,"¡Váyanse, caramba, lejos!”",ok
+T007_N213,7,213,"Taserpi lunpasik, wilalusa’ kawichi’ñina’.",Cuando un viejo hablaba los niños no debían asomarse.,ok
+T007_N214,7,214,“¿Ma’ki’na kenmama’ u’lama’?” itullinerkudek.,“¿Por qué se portan así?” nos decían.,ok
+T007_N215,7,215,Kudi’na ta’tushala’mudek kawidekllidek yalaukdek’amudek.,Nosotros silenciosamente nos acercábamos queriendo escuchar.,ok
+T007_N216,7,216,Nanekla’nka kuanta’ ñinchitulek asu’ Arakayu ma’pu’si’pa’ nanpilli.,De ahí yo también he aprendido de qué manera vivió este Arákayu.,ok
+T007_N217,7,217,"Tasellunku’lusa’ papinkuku’lusa’ du’anna’, nana Arakayukin luñina’.",Las viejas finadas y los viejos finados se sentaban y hablaban de ese Arákayu.,ok
+T007_N218,7,218,"Nerpi’pu’ peklu’llina’, ulenñina’ Arakayu.","A veces le llamaban, le discursaban a Arákayu.",ok
+T007_N219,7,219,"“¡Arakayúuu, sametchapen apur pur’apalek asu’ uki’lamuuu!","“¡Arakayúuu, suelta tus pecesitos que estoy pescando porque tengo hambre!",ok
+T007_N220,7,220,¿Wilaweklusa’ ma’nen i’na a’ka’dek’etchek?” tanna’.,¿Qué les voy a dar de comer a mis hijos?” diciendo.,ok
+T007_N221,7,221,Tanna’ purllina’ napi’ku’lusa’.,Diciendo eso pescaban los antiguos.,ok
+T007_N222,7,222,Ipa’la walek kuda laukta’kudeksu’ ñinchitapallidek.,Hasta ahora nosotros los que hemos oído conocemos (de Arákayu).,ok
+T007_N223,7,223,Ñi’na ñiden kudaler yawinchi’ñidek latekchiñina’.,Pero a nadie queremos contarle porque no creen.,ok
+T007_N224,7,224,"Ipa’la a’pinta’ ñinchillintanna’,","Ahora aún más teniendo educación formal,",ok
+T007_N225,7,225,"ñinchillinsetchanna’,","sabiendo escribir,",fallback_last_line_as_spanish
+T007_N226,7,226,"ñinchilli’anna’ kerka’ña,","sabiendo leer,",fallback_last_line_as_spanish
+T007_N227,7,227,ñi a’pinta’ nanadaper lli’inuchi’ñina’.,(los jóvenes) ya no valoran esas cosas.,ok
+T007_N228,7,228,Nu’sikla’nka asu’ Panpadek sennanlusa’ wetlli.,De esa manera estos lagos de Pampayacu desaparecieron.,ok
+T007_N229,7,229,Nu’su’ wer’sik i’pa kuda ñillidek.,"Así, cuando ya habían desaparecido, nosotros vinimos a este mundo.",ok
+T007_N230,7,230,"¡Enpi’pui’pa’ nana nu’su’ ña’su’,","¡Cuándo habrá sucedido eso,",ok
+T007_N231,7,231,enpu’dun waranka ekkilaleipa’ ñilli nana nu’su’ ña’su’!,hace cuántos miles de años habrá pasado eso lo que ha sido así!,ok
+T007_N232,7,232,"Ta’ser lauktulek papinkuku’lusa’, amiku’lusa’ luñina’.","Cuando contaron los he escuchado, los antiguos viejos y las abuelas finadas hablaban.",ok
+T007_N233,7,233,"Dudinpu’ asu’ lupek pa’a’su’daper ilakapi chiketchullina’, wei pa’llina’.","Todos los animales, hasta los terrestres, se han ido por su lado, se han alejado.",ok
+T007_N234,7,234,Ipa’la a’pinta’ lliwaitullina’.,Ahora los han espantado más lejos.,ok
+T007_N235,7,235,Nanasa’ winterkenma’ Arakayuki.,Eso nomás les he contado sobre Arákayu.,ok
+T007_N236,7,236,Nanek ta’wantulli.,Aquí termina.,fallback_last_line_as_spanish
+T009_N001,9,1,Shiwiluku’lusa’ ipa’la ita’kawa’su’ “Kanpana’ Pitun” napi’ i’na itullina’ “Lanla’ Pitun”.,Los finados shiwilu a la que llamamos ahora “Campana Poza” antes la llamaban “Ballena Poza”.,ok
+T009_N002,9,2,Nanek ima lanla’ ñilli.,Allí dice vivía una ballena.,fallback_last_line_as_spanish
+T009_N003,9,3,Arakayu ima lanla’ akun yunsu’lli.,Dicen que Arákayu puso una ballena y salió (de la región).,ok
+T009_N004,9,4,“Asu’ler pekdadek’etchu mukankinpu’lusa’”,“Esto les va a devorar a todos los malos”,ok
+T009_N005,9,5,tan ima Arakayu nana lanla’ aku’lli.,dijo Arákayu y puso la ballena.,ok
+T009_N006,9,6,Ipa’la “Lanla’ Pitun” itullina’ napi’ ipa’li’na “Kanpana’ Pitun” itullina’.,Ahora a la que antes llamaban “Ballena Poza” la llaman “Campana Poza”.,ok
+T009_N007,9,7,Nanadaper ima’ka Arakayu yun pa’lapinantullinerkudek.,Dicen que todas estas cosas Arákayu enojándose nos ha dejado al irse.,ok
+T009_N008,9,8,"Lanla’ i’na di’tulli Marceller,","A la ballena la mató Marcel,",ok
+T009_N009,9,9,di’tulli lanla’.,él mató a la ballena.,ok
+T009_N010,9,10,Marcel ima pachishak nu’wantan lanla’ler lanpi’tulli.,Dicen que cuando Marcel bajaba el río en un patecito la ballena se lo tragó.,ok
+T009_N011,9,11,Nanek da’an lli’itulli dinlupinen.,"Ahí entrando (dentro de la ballena, Marcel) le vio su corazón.",ok
+T009_N012,9,12,“Di’tetchek” tan dinlupinen dektuintulli.,“La mataré” dijo y le trozó el corazón.,ok
+T009_N013,9,13,"Naneklima yunsu’lli dellutekkek, yunsu’n chimiñi.",Ahí dice (la ballena) salió a la playa y saliendo murió.,ok
+T009_N014,9,14,Nanek tawetchulli.,Ahí se pudrió.,ok
+T009_N015,9,15,Naneklimaka asu’ nana Lanla’ Pitunta’ uwentunta’lli.,"De ahí, esta la “Ballena Poza” se redujo.",ok
+T009_N016,9,16,A’llupima ñiwiñi napi’ Lanla’ Pitun.,Dicen que antes era grande Ballena Poza.,fallback_last_line_as_spanish
+T010_N001,10,1,Enta’n lunchek ipa’la asu’ ma’pu’sui’pa’ kankantanna’ Shiwiluku’lusa’ Muyunpa yaluwetchullina’.,"A ver pues, voy a contar ahora cómo se les habrá ocurrido a los shiwilu finados conocer Moyobamba.",ok
+T010_N002,10,2,"Nanek ima ñinanlu’ indiuntuñina’ nanentu, wa’anler peklu’deklli.","Ahí, dice, las personas del pueblo se concentraron primero, el jefe les llamó:",ok
+T010_N003,10,3,"“Enchuku’ nermuda’ luwetchawa’ kenmu’wa’nta’,","“Vamos a conocer a otro tipo de gente nosotros también,",ok
+T010_N004,10,4,"ñinchitapalekwa’ ali’ladaperunta’ nanpi’perkasu’, ñi’na ñienpi’ lli’dek’i’nekwa’.","sabemos que otros también viven, pero nunca les hemos visto.",ok
+T010_N005,10,5,"Nu’akkui’na kenmu’wa’ ipa’la tapalekwa’ ali’la muda’nti’pa’ nanpipalli,","Por eso nosotros ahora decimos otra gente también quizá vivirán,",ok
+T010_N006,10,6,"nerpi’la la’la’ ipa’ lunpallina’, ta’kawa’su’.","diferente lengua hablarán, decimos.",ok
+T010_N007,10,7,Ñinchichi’nekwa’.,No sabemos.,ok
+T010_N008,10,8,"Nu’akkui’na ipa’la yalli’lusa’, sha’walusa’ enchuku’ Muyunpa luwetchawa’ kenmu’wa’nta’, ma’pu’si’pa’ nana ñinanlu’”.","Por eso ahora hermanos y hermanas vamos a conocer Moyobamba nosotros también, qué tal será esa ciudad”.",ok
+T010_N009,10,9,Napi’ wa’latulusa’ tullina’ “Ina asu’ kekki da’asu’lupa’ ala’sa’ ñinanlu’ ñapalli.,Antes los soñadores decían “Por ahí por donde el sol se oculta hay un pueblo.,ok
+T010_N010,10,10,Nerpi’la la’la’ lunpallina’ nawa’.,Diferente lengua hablan ellos.,fallback_last_line_as_spanish
+T010_N011,10,11,"Tanna’ pellunna’ ipa’ takerllina’ nawa’, ipa’li’na kenmu’wa’nta’ nani’la lli’inutapalekwa’.","Diciendo eso se cansaron de hablar y ya perecieron ellos, ahora nosotros también eso mismo estamos recordando.",ok
+T010_N012,10,12,"A’pimuchun enchuku’ paku’ kenmama’nta’ yalli’lusa’ sha’walusa’, setllintuku’ ektu’a’kawek Muyunpak”, tullima wa’an.","Mejor vayan (un grupo de) ustedes hermanos y hermanas, abran trocha para llegar a Moyobamba” dijo el gobernante.",ok
+T010_N013,10,13,"Nanek ima ala’sa’ taserpi yunsa’n tulli, iteklanen ima usañin musenkek aku’n tulli.","Ahí dice un viejo se levantó y dijo, levantó su mano en alto y dijo:",ok
+T010_N014,10,14,“Kenmu’wi’na nanalupa’ anaka’terwa’.,“Nosotros por ahí vamos a ser atrapados por las fieras.,ok
+T010_N015,10,15,"¡Ma’nen ilipa’ ñapalli anaka’lusa’, nana inchilala yekketcha’kawa’su’lupa’!","¡Qué fieras habrán ahí, por donde vamos a abrir el camino!",ok
+T010_N016,10,16,kua ipa’ wa’latulek”.,Yo ya he soñado”.,ok
+T010_N017,10,17,Ali’la taserpima tununta’llin pitan “¡Ma’sha aner yatek kuatama’! ¿Kenmu’shasa’ a’ta’ pa’aterwa’?,Dicen que otro viejo se levantó y dijo también “¡No teman! ¿Acaso vamos a ir solos?,ok
+T010_N018,10,18,Wapu’mu’wa’ pa’aterwa’.,Hartos de nosotros vamos a ir.,ok
+T010_N019,10,19,"Amana’ ñichu di’tawa’, ali’la erpilu’ kupiwan ñipachi nananta’ di’tawa’.","Si hay tigre se lo mata, si hay anaconda de altura a esa también se la mata.",ok
+T010_N020,10,20,Nanadaper a’ka di’tupatekwa’ musu’ pa’aterwa’.,A todos ellos matándolos bien vamos a ir.,ok
+T010_N021,10,21,"Ñi anaki’nterwa’, ñi tekkwi’nterwa’”.","No vamos a perecer atrapados por ningún animal, no vamos a temer nada”.",ok
+T010_N022,10,22,Nanek ima ali’la taserpi wa’lata’su’ tulli:,Entonces otro viejo soñador dijo:,fallback_last_line_as_spanish
+T010_N023,10,23,“Nanentu pa’erkasu’ anaker’chuna’ iñerdaper.,“Los que van a ir primero (el primer grupo) van a perecer todos devorados por las fieras.,ok
+T010_N024,10,24,"Naneklan, pa’nunta’lusa’ nawa’ a’ka di’tetchuna’ nana anaka’.”","Después, los que van de nuevo (el segundo grupo) ellos sí van a matar a las fieras”.",ok
+T010_N025,10,25,"tullima nana ala’sa’ taserpi wa’lata’su’, lunanpichita’su’.","dijo ese viejo soñador, que predecía lo que iba a suceder.",ok
+T010_N026,10,26,"Naneklima, ali’la taserpi tulli “Nana tapa’mamasu’ ñi da’pininpu’,","Después, dice otro viejo dijo: “Eso lo que están hablando no es falso,",ok
+T010_N027,10,27,kenmu’wa’ takeraterwa’ nu’unta’nmu’wa’.,uno de nosotros va a perecer.,ok
+T010_N028,10,28,Nu’unta’nmu’wa’ ipa’ Muyunpa luwetchaterwa’.,Tal vez algunos de nosotros vamos a conocer Moyobamba.,ok
+T010_N029,10,29,Nanentu saka’tulusui’pa’ Muyunpak walek ektui’nchuna’” tullima ali’la taserpi.,Tal vez los que primero están abriendo trocha lleguen hasta Moyobamba” dijo el otro viejo.,ok
+T010_N030,10,30,Naneklima ali’la yunsa’n tulli:,Después se levantó otro y dijo:,ok
+T010_N031,10,31,"“Enchuku’, inlli’inuku’la’ yalli’lusa’ enpu’ninchi yawichi’tama’ nanpiladaku’.","“Vamos, prevénganse hermanos, no duerman mucho, han de velar en la noche.",ok
+T010_N032,10,32,"Ala’musun wicha’pai, ali’la musui’na nanpiladapai.",Un grupo que vaya durmiendo y el otro grupo que haga guardia.,ok
+T010_N033,10,33,Nanpincha’a’ser nawa’ nanpiladaperkek walek ali’la musun’unta’ wichi’chu’.,"Cuando se despierten los unos, hasta que estén despiertos ellos los otros que duerman.",ok
+T010_N034,10,34,"Dasu’la yunsa’nma’, lunku’ ma’pu’sui’pa’ wa’latulama’.","En la mañana, cuando salgan (de su mosquitero), todos ustedes cuenten qué han soñado.",ok
+T010_N035,10,35,"Nanapu’a’su’ taserpilusa’ ñinchia’lachekterkasu’, ñinchilawer’erkasu’ a’lachektetchuna’, laweretchuna’ ma’tusui’pa’ wa’lata’kawa’su’.","Eso los viejos que saben hacer entender, que saben interpretar, van a hacerles entender nuestros sueños,",ok
+T010_N036,10,36,"nana wintupatekwa’ nana tetchu,","cuando le contemos el viejo va a decir,",ok
+T010_N037,10,37,"nana wa’lata’masui’na tusu’ tusu’ nu’aterwa’, nana malek i’na nasu’ku’ wilalusa’ nasu’” tullima ala’sa’ taserpi.","que eso que has soñado así así va a suceder, por eso estén alertas muchachos” dijo un viejo.",ok
+T010_N038,10,38,"Tanni’ma insekdipellina’, uklulu’nenna’ a’nu’tullina’ sadina’ yekpanna’.","Dijeron esto y se alistaron, mandaron a hacer masato a sus señoras para llevar.",ok
+T010_N039,10,39,Tekkinchima ala’simana’ sekllintapilanna’ ektu’llina’ ala’sa’ kupin mutupi.,De verdad una semana iban abriendo trocha y llegaron a una loma grande.,ok
+T010_N040,10,40,Nana sakanlupi’mi’na lli’llina’ pen mukatapa’su’.,En esa bajada vieron humo.,ok
+T010_N041,10,41,Nana ala’sa’ nadi’nek ima tulli “¿Nanek den ipa’ nanpipalli? enta’n lli’kunchek i’na” tan ima pa’lli.,Cuentan que un joven dijo “¿Ahí quién vivirá? A ver voy a ver” dijo y se fue.,ok
+T010_N042,10,42,Pa’an ima lli’kuñi pilenñantapalli.,Yendo vio a alguien tocando flauta (era el duende).,ok
+T010_N043,10,43,"Iñer ima dullinen adipi, ukunpala’lli, ñi chipitekwi’ñi.","Todos sus intestinos estaban fuera colgados, no tenía piel.",ok
+T010_N044,10,44,Naneklima itulli:,De ahí le dijo:,ok
+T010_N045,10,45,"- “¿Ukla’ncha, yalli’wá?”","“¿Has venido, hermano menor?” (duende)",ok
+T010_N046,10,46,"- “Uklek, alli’sha. Penshapen luwanpa’llen”.","“Sí, he venido, hermano. Tú candelita necesito”. (joven)",ok
+T010_N047,10,47,"- “¡Ma’ata’na, ekpanter!","“¡Ahí está, lleva! (duende)",ok
+T010_N048,10,48,Dekpilli lli’kunchenma’ lunpawa’”.,En la noche les voy a visitar para conversar”. (duende),ok
+T010_N049,10,49,"- “Ta’iter, alli’shá”.","“Muy bien, hermano”. (joven)",fallback_last_line_as_spanish
+T010_N050,10,50,Tanni’ma adenchanna’ lunchallina’ da’mupa’ser nana musun.,Dijeron eso y regresando (el joven y otros) vinieron a contar al grupo de personas.,ok
+T010_N051,10,51,"Naneklima luncha’llina’ “Asu’lupa’ lansi’sa’ ala’sa’ ya’lli, dullinen iñer ukunpala’lli,","Entonces contaron “Por acá hay un hombre puro hueso y sus intestinos le cuelgan,",ok
+T010_N052,10,52,kankanen ukunpala’lli”.,su higado está colgado nomás”.,ok
+T010_N053,10,53,"“Inlli’inuku’la’, wilalusa’” tullima ala’sa’ taserpi.","“Mucho cuidado, muchachos” dijo un viejo.",ok
+T010_N054,10,54,Aner enpu’ninchi yawichi’tama’”.,No vayan a dormir mucho”.,ok
+T010_N055,10,55,"Tan ipa’linchi penwañina’ nana, ma’i, Lansi’ Wa’dan pennenlek.","Dijeron eso e hicieron fuego con la candela de, este, el Duende Puro Hueso.",ok
+T010_N056,10,56,Nanek ima wa’ki’lleklli urankasu’ supinak ima.,"De ahí, dice, (el duende) les hizo dormir después de que comieron.",ok
+T010_N057,10,57,Ipa’ yawichi’llina’ uranpanni’ma nu’unta’ anu’la’lli.,Tenían sueño y mientras comían algunos cayeron.,ok
+T010_N058,10,58,Ala’sa’ taserpiler ima pinter setmun a’u’deklli.,"Un viejo, dice, diluyó tabaco y les dio de beber (para que se despierten).",ok
+T010_N059,10,59,A’metcha nanpiladencha’llina’.,Poquito les quitó el sueño.,ok
+T010_N060,10,60,Nanek ima inpinanerllanna’ pek kuallina’.,Ahí dice se olvidaron y se acostaron.,ok
+T010_N061,10,61,Wichi’a’ser ima tekkinchi Lansi’ Wa’dan uk’an iñer ima laki’kerdeklli.,"Cuando se durmieron, dice que de veras vino el Duende Puro Hueso y a toditos los mató mordiéndoles el cuello,",ok
+T010_N062,10,62,"Nu’tan, pidekñik sichi’dandek’an iñer urañi.","Después de hacer eso, los acarreó a su casa (a todos los cadáveres) y se los comió.",ok
+T010_N063,10,63,Nanek ima nana pa’lusa’ sadinai’ma wa’apetchullina’.,Dice que ahí las esposas de los que se habían ido tuvieron un mal sueño.,ok
+T010_N064,10,64,Nu’sik ima lli’llina’ er’washinchi ekdulunlu’tek.,"Después, cuando se puso el sol, vieron nubes de viuda en el cielo.",ok
+T010_N065,10,65,"“¿Denkenmu’wa’ ekdulunterwa’, ten”","“¿Ay, quién de nosotras irá a quedar viuda?”",ok
+T010_N066,10,66,tullima ala’sa’ shaya’.,dijo una mujer con pena.,fallback_last_line_as_spanish
+T010_N067,10,67,"“Ma’shipa’, yu’lanla’pi’ nuka’a”.","“Quizás no, quizas es un anuncio de lluvias”.",ok
+T010_N068,10,68,“Nu’an asu’ kekkilu’tek yunsu’lli ya’lli’minmu’wa’ yapekkiwantanminmu’wa’”,“Quizás aparecieron estas nubes para pronosticarnos mal agüero”,ok
+T010_N069,10,69,tullini’ma ali’ladaper.,dijeron otras.,fallback_last_line_as_spanish
+T010_N070,10,70,Nanek ima nu’unta’ ipa’ wa’latapallina’.,"Dice que ahí otras estaban soñando,",ok
+T010_N071,10,71,Nu’unta’ ipa’ wa’danwañi nana pidik:,Ya algunos de los espíritus de los esposos muertos penaban en sus casas:,ok
+T010_N072,10,72,"Llipu’lli, unkunan ekketchulli, pata’tulli kusinek.","Golpea, abre la puerta, toca una y otra cosa en la cocina.",ok
+T010_N073,10,73,Nu’apa’ser ima ipa’ ektu’nchalli dukerñenna’ yadencha’erkasu’.,"En lo que eso iba sucediendo, se cumplió un mes y el momento en que debían regresar.",ok
+T010_N074,10,74,"Kala ukllima lli’chinpu’a’ser, wa’an peklu’deklli ñinanlu’ nanapu’si’la.","Como después de tres días no aparecieron, el gobernante convocó al pueblo.",ok
+T010_N075,10,75,“¿Den ilanma’ a’cha yapa’etchunma’?,“¿Quiénes de ustedes quisieran ir (a buscar a los otros hombres)?,ok
+T010_N076,10,76,¡Nana saka’tapalusa’ lli’kunchunma’”.,A esos que están trabajando (abriendo trocha) vayan a verlos!”,ok
+T010_N077,10,77,“ kua” tullima ali’ladaper.,“Yo” dijeron los otros.,ok
+T010_N078,10,78,A’pa’deklli.,(El gobernante) les mandó.,ok
+T010_N079,10,79,Chipetcheknenna’si’ma’ pektentapalli.,(Al llegar vieron que) Solamente sus mosquiteros estaban templados.,ok
+T010_N080,10,80,"Adenchanna’ wa’an wintullina’, ñinanlu’ peklu’lli.","Regresaron y le contaron al gobernante, quien convocó al pueblo.",ok
+T010_N081,10,81,Nanek ima ala’sa’ taserpi wa’latutek tulli:,Cuentan que ahí un viejo soñador dijo:,ok
+T010_N082,10,82,"“¡Ma’sha, ñinanlu’ iñer pa’i’nchu.","“¡No, no va a ir todo el pueblo.",ok
+T010_N083,10,83,A’pimuchun ali’la musun dunkerku’!,Más bien propongan otro grupo!,ok
+T010_N084,10,84,Nawa’ler a’ka di’tetchuna’ nana anaka’.,Ellos sí van a matar a esa fiera.,ok
+T010_N085,10,85,"Nana anaka’ler pekdadeklli” tan ima a’insekdiperdeklli, musu pilendek’anna’:",Esa fiera les comió a todos” dijo eso y (el gobernador) hizo que se preparen y les aconsejaron:,ok
+T010_N086,10,86,"“¡Nasu’ku’la’. Nasu’ku’la’, wilalusa’!","“¡En acción. En acción, muchachos!",ok
+T010_N087,10,87,"¡Aner yatek kuatama’, sunkiwanpalama’, pasektuku’ nanalek!”","¡No teman, ustedes tienen machetes, píquen con eso (a las fieras)!”",ok
+T010_N088,10,88,Tekkinchima pa’llina’.,De veras se fueron.,ok
+T010_N089,10,89,Lli’kuñina’ chipetcheklusa’sa’ pektentapa’ser nanek.,Vieron solamente los mosquiteros templados ahí.,ok
+T010_N090,10,90,Ipa’linchi itudeklli “Asi’na anaka’llina’”.,Entonces dijeron “Estos fueron atrapados por las fieras”.,ok
+T010_N091,10,91,Pinter ima sekmu’lli papinku.,Diluyó tabaco el viejo.,ok
+T010_N092,10,92,"Nanek ima nawa’nta’ lli’llina’ mu’katapa’su’ pen, pa’anna’ lli’kuñina’.",Dice que ahí divisaron ellos también humo de candela y se fueron a ver.,ok
+T010_N093,10,93,"Pennen alañina’, lli’llina’ dullinen ukunpalalli.",Le pidieron su candela (al duende) y se dieron cuenta de que sus intestinos estaban colgados.,ok
+T010_N094,10,94,Ektu’a’ser ima itudeklli:,Dice que cuando llegaron les dijo (el duende):,ok
+T010_N095,10,95,- “¿Uklama’ a’cha nanapu’si’la?”.,“¿Vinieron otra vez?”,ok
+T010_N096,10,96,"- “Ukllidek, alli’sha”.","“Hemos venido, hermano”.",fallback_last_line_as_spanish
+T010_N097,10,97,"- “Enta’n, er’washinchi lli’kunkenma’”.","“A ver, por la tarde les voy a ir a visitar”.",ok
+T010_N098,10,98,- “Pen luwanpa’lliyen”.,“Necesitamos tu candela”.,fallback_last_line_as_spanish
+T010_N099,10,99,- “¡Ma’ata’na pen maku’!”,"“¡Ahí está, la candela agarren!”",ok
+T010_N100,10,100,Ekpantasik ima taserpiler pilli’tan lutu’lli.,"Cuando se la llevaron, el viejo la agarró y la detectó.",ok
+T010_N101,10,101,“Asui’na mui’ñi asu’ pen.,“Esta candela no es buena.,fallback_last_line_as_spanish
+T010_N102,10,102,"Asu’lek penkwanna’, akusutanna’, uranna’ wa’ki’deklli Lansi’ Wa’danler”.","Con esto prendieron fuego (los del primer grupo), cocinaron, comieron y así les hizo dormir el Duende Puro Hueso”.",ok
+T010_N103,10,103,"Tullima nana lunanpichita’su’, tullima nana wa’lata’su’:","Cuentan que dijo así el hombre que detectó, eso dijo ese soñador:",ok
+T010_N104,10,104,"“Lauk’apetchuma’, ipa’la u’etchu. ¡Idenmaku’la’!",“Van a escuchar (ruido) y en ese momento va a venir. ¡Peleen!,ok
+T010_N105,10,105,"Nasu’ku’ ipia’laklanek” itudekllima wilalusa’,","Desde ahora pónganse en acción” les dijo a los muchachos,",ok
+T010_N106,10,106,nana nadi’neklusi’ma.,a esos jóvenes.,ok
+T010_N107,10,107,"Ali’ladaper nalatuntun llituntullina’, chipetcheknenna’ lalak yakala’nna’.",Unos cortaron trozos de madera para meterlos dentro de sus mosquiteros (y hacerle creer al duende que eran ellos durmiendo).,ok
+T010_N108,10,108,Nu’anna’ insekkitullina’.,Después se escondieron.,ok
+T010_N109,10,109,"Nanek nuka’ uklullina’, pinter katenñina’, pinchiyek nu’tanna’ ullina’ wichi’inpu’erkek.","Ahí mascaron ají, pusieron tabaco en su boca, tomaron tabaco diluido para no dormirse.",ok
+T010_N110,10,110,Nanek ima tekkinchi lupa’ lenmeklli.,Dice que de verdad la tierra tembló (debido a que el duende venía).,ok
+T010_N111,10,111,Nana lupa’ lenmek’a’su’ supinak nalalusi’ma pada’sa’tulli.,Cuando calmó el temblor los árboles se sacudieron.,ok
+T010_N112,10,112,Llinanlusi’ma tanpa’nen ukunñina’.,Las ramas de las lupunas quebradas se mantenían colgadas (ya el duende los estaba hipnotizando).,ok
+T010_N113,10,113,“!Enta’n lli’ku’!,“¡Más miren!,ok
+T010_N114,10,114,"¡Nantapiku’la’, nasu’ku’, wilalusa’!” itudekllima.","¡Ánimo muchachos, tengan valor, en acción!” les dijo.",ok
+T010_N115,10,115,"Nanek ima ipa’linchi ma’i... nanek tekkinchi uksik idenmallini’ma, enpu’nipi’ma idenmallina’.","Entonces de verdad cuando llegó (el duende) pelearon, pelearon mucho rato.",ok
+T010_N116,10,116,"Da’pinima lansi’sa’, enpu’ni nantapillinpi’ma.","En vano era puro hueso, pues tenía mucha fuerza.",ok
+T010_N117,10,117,"Dei'tanna', pen dintunna', aku'lalatullina'.","Lo mataron, atizaron la candela y lo metieron (al fuego).",ok
+T010_N118,10,118,Chiminla'pi'n ima lunpalli:,Aunque había muerto hablaba:,ok
+T010_N119,10,119,"“Ipa' dei'tulamau'ku, ipa' kekkapalama'u'ku lli'chinpuek a'pinta'.","""Ya me han muerto, ya me están quemando para que no vea más nada.",ok
+T010_N120,10,120,"Da'ilek i'na kua tekpa ñichek, ñichek iyun, tunka, etchu, lu'wellu, isekpila ñichek, ukladekpenma' uwapetchekpi'la enpi’walekpi'nta’”,","“Por eso me voy a convertir en garrapata, voy a ser zancudo, tábano, tabanillo negro, mosquito, mosca grandecita voy a ser, voy a estar tomando su sangre por siempre"",",ok
+T010_N121,10,121,tullima Lansi' Wa'dan uker'apan.,dijo el Duende Puro Hueso mientras se quemaba.,ok
+T010_N122,10,122,"Musui'ma ukllishin uksuketchulli, pendalu'sa' llia'lli.","Bien ardió hasta el amanecer, quedó pura ceniza.",ok
+T010_N123,10,123,Nana chida’su'la’sui’mi’na ñi illi’inui’ñi winter’kasu’.,Uno que madrugó no se acordó nada de lo que le habían advertido (que no ventee la candela antes de que la icaren).,ok
+T010_N124,10,124,"Nanek ima dasu'la yunsa’n a’uluntulli, tekkinchima nanekla yunkelli iyun, tunka, etchu, dudinpu’ lli’la muinpu’a’su’.","Dice que de madrugada, al levantarse, venteó la ceniza con abanico y de ahí salieron zancudos, tábanos, tabanillos negros, toda clase de insectos que no valen.",ok
+T010_N125,10,125,"Nu’unta’ ima lanpi’tasu’ nana pendalu’ penlu’pasu’. Nanekla ima ñilli kuwer’, tuner, dudinpu’ kaluwi’ ñilli merpimapu’wek tullina’.","Algunos percibieron la ceniza que volaba. Dicen que de ahí se originó la lombriz, el iluli, toda clase de enfermedades que hay en nuestro estómago, dijeron.",ok
+T010_N126,10,126,"Naneklima ali’la musun pa’an, sekllintan ima simana’ ima sekllintullina’.","De ahí otro grupo se fue, trochando semanas, han hecho trocha.",ok
+T010_N127,10,127,Ali’ladaper ima ker’ aku’pakuñina’.,"Otros, dice, fueron a poner más yuca (para aprovisionarse).",ok
+T010_N128,10,128,Uk’apinlencha’ni’ma kelluluñiñi’ kanañina’.,"En lo que estaban llevando, encontraron al tigre negro.",ok
+T010_N129,10,129,"Ekkadek pektañina’, a’ukluka’llina’, wa’tenñina’.","Sangraron lechecaspi, la hicieron hervir y lo esperaron.",ok
+T010_N130,10,130,"Ukkapinchasik, uktalek i’la pidanantullina’ mutu’ñik.","Cuando venía (el tigre negro), con la olla de barro y todo se lo echaron en su cabeza.",ok
+T010_N131,10,131,"Ukta nudektulli ama’ladatulli nana, ma’i, kelluluñiñi’.","La olla se rompió y le bañó toda la cara al, este, tigre negro.",ok
+T010_N132,10,132,"Nana inpikanpasik ima, pa’anna’, pasek pasekka’tullina’, paki’tullina’.","Dice que mientras (el tigre negro) se revolcaba, (los hombres) se acercaron, lo picaron varias veces y lo mataron violentamente.",ok
+T010_N133,10,133,Ipa’la’ka tullima ala’sa’ taserpi “Ipa’ asu’nta’ka ka’nansinmu’wa’ kenmu’wa’ inlli’inuinpu’a’kawa’su’ ñilli.,"Entonces un hombre viejo dijo: ""Ahora sí éste ya nos hubiera comido a nosotros si no nos hubiéramos prevenido.",ok
+T010_N134,10,134,Ma’pu’a’ka’wasui’pa’ ñak kua’” tullima. “Ipi’na dei’tulekwa’ kelluluñiñi’.,"¡Qué clase (de personas) quizá somos!"" dijo (pues nos debimos prevenir desde un principio). ""Pero ya le hemos muerto al tigre negro"".",ok
+T010_N135,10,135,“Ku’apenñen nanpipalli” tan ima.,"""Su hembra vive"" dijeron.",fallback_last_line_as_spanish
+T010_N136,10,136,"Sekllintulli iñer uklli, ala’ simana’, katu’ simana’, kala simana’, ala’ dukerkek ima ektu’llina’ Muyunpak. Hicieron trocha todos los días, una semana, dos semanas, tres","semanas, un mes y llegaron a Moyobamba.",ok
+T010_N137,10,137,"Lli’kuñini’ma panpateklu’lusa’. ""Ma’lusa’ asu’?"" tullini’ma panpateklu’ lli’anna’.","Dice que se fueron a ver los pastos. “¿Qué es esto?"" dijeron viendo el pasto.",ok
+T010_N138,10,138,Ta’tushalai’ni’ma nakutullina’ (tanluwa ima yunsanpalli lamapu’nna’ nakuerkasu’).,"Calladitos pasaron (el viento se levanta, dice, cuando se pasa haciendo bulla).",ok
+T010_N139,10,139,"Nawei’mi’na nana malek ima nawa’ ta’tushalanna’ pa’llina’, ta’tushalanni’ma dekkuntullina’.","Por eso ellos se fueron calladitos, caminaron cuidadosamente sin hacer ruido.",ok
+T010_N140,10,140,"Naku’tanni’ma, ukllinantanna’, ektu’llina’ Muyunpak.","Después de pasar (ese lugar peligroso), amaneciéndose, llegaron a Moyobamba.",ok
+T010_N141,10,141,"Ektu’sik ima Muyunpak, nana Inka’ la’la’ lunlusa’ler ima, yadi’tudeklli.",Cuentan que cando llegaron a Moyobamba los que hablaban en lengua Inca los quisieron matar.,ok
+T010_N142,10,142,Da'ilek ala'si'mi'na lachik'apalli asu' Shiwilu la'la'.,"Entonces, dice que había uno que entendía la lengua shiwilu.",ok
+T010_N143,10,143,"Naneima a’lachiktulli ""Aner yanu’tudektama’ asu’ yadi’tudektama’, nawa’ uk’i’ñina’ ya’di’nna’"" tullima nana a’lachikta’su’.","Él ha explicado: ""A ellos no los traten así, a ellos no los maten, ellos no han venido a matar"" dijo el intérprete.",ok
+T010_N144,10,144,"Wa'an tullima nanek, nanek wa’an ñiwiñi.","Dice que ahí había una autoridad, ahí había gobernante.",ok
+T010_N145,10,145,"Nana wa’anler peklu’deklli, peklu’dek’an itulli: -""¿Ma’i’na luwantanma’ uklama’?”.","El gobernante los llamó y tras llamarles les preguntó: -""¿Qué cosa queriendo han venido?",ok
+T010_N146,10,146,"-""Yaluwer’amudek ukllidek.","-""Queriendo conocer hemos venido.",fallback_last_line_as_spanish
+T010_N147,10,147,Ali’la muda’ nerñinanluklan weklusa’ yalli’dekllidek Dadapu muda’lusa’.,"A otra gente que han venido de otros pueblos queremos verles, a la gente blanca.",ok
+T010_N148,10,148,"""Nana nu’amudek ukllidek"" itullini’ma.","Por eso hemos venido"" dijeron.",ok
+T010_N149,10,149,"Tekkinchi ala’sa’ Dadapu mudi’ma lli’tulli. Lli'anna’ imanantullina’, lli’anna’ ñi enpi’ lli’inpu’erkasu’.",Ahí efectivamente apareció un hombre blanco. Al verlo se asustaron de ver lo que nunca antes habían visto.,ok
+T010_N150,10,150,"Nanek ukllinantanna', ali'la uklli ukllinantununta'nna' tullina' ""Yadanta'llidek.","Entonces cuando amanecieron, otro día cuando amanecieron nuevamente dijeron ""Ya queremos volver"".",ok
+T010_N151,10,151,"Adencha'nni'ma luncha'llina': ""Enpu'nipa' ali'la ñinanluk lupa'paperpidek'wañina'.","Tras volver (a Jeberos) contaron: ""Mucho en otros pueblos tienen casa embarrada (tarrajeada).",ok
+T010_N152,10,152,"Kenmu'wi'na asek ñiden lupa'paperwi'ñi"" tullima nana lli'tukunlusa'.","Sin embargo, aquí ninguno de nosotros tiene casa embarrada"" así dijeron los que se habían ido a ver.",ok
+T010_N153,10,153,Nanekla ali'la musun pa'nunta'lli pentunanlusa' aku'pilan.,"De ahí, otro grupo se fue otra vez colocando puentes.",ok
+T010_N154,10,154,Naneklaka insichidañina'.,"Después de eso, nuevamente se fueron otros más.",ok
+T010_N155,10,155,"Nanekla ñi a’pinta’ yapitetchi’ñina’, ñi ananchi’ñina', ñi asu’ pankuellinchi’ñina’.","De ahí ya no quisieron hilar, ya no desmotaban el algodón, ya no hacían ovillo.",ok
+T010_N156,10,156,Pitetchi’ñina’ ipa' nana kapiña’su’ lli’anna’.,Ya no hilaban porque habían visto las telas (en Moyobamba).,ok
+T010_N157,10,157,Maweklima kanana kenmu’wa’ pitetcha’kawa’su’ ta’wantulli.,"Al descrubir eso, lo que hilábamos se terminó.",ok
+T010_N158,10,158,"Nanekla adenchenna' luncha'llina' “Nanalupa' Dadapu muda' nanpipalli, kañellu'ladatusu, adawa'ladatusu.","Al regresar de allí hablaron “Por ahí vive gente blanca, de ojos azules, de ojos claros.",ok
+T010_N159,10,159,"Un’unta’ ma’lusa’ ladawi’ñinpu’su’ lli’tulli, nerñinanlukla nanna’"" tullina’ napi’.","Algunos parece que no tuvieran ojos, porque son de otra raza"" dijeron antes.",ok
+T010_N160,10,160,"Naneklimaka, pacher kencha’llina’ apetchanna’ dekpilli.",Cuentan que de ahí se trajeron al cura raptándolo por la noche.,ok
+T010_N161,10,161,"Nana inchilalalupa’ adencha’nni’ma luncha’llina’: ""Enpu’nipa’ uran ñilli nana inchilalalupa’, dudinpu’ ñapalli.","Regresando por ese camino dijeron: ""Por ese camino hay bastante comida, hay de todo"".",ok
+T010_N162,10,162,"Ali'la musu'nti'ma pa'lli nanalupa'pi'la, yaluwerkun. Adencha'n nananta' luncha'lli.",Otro grupo se fue por ahí mismo queriendo conocer. Volviendo ellos también hablaron.,ok
+T010_N163,10,163,"Nanek ima ala’sa’ taserpi waneran tulli ""Ipa’la’ka ali’la ñinanlu’ luwetchulekwa’. Ipa’ wer’uklli kawi’ta’su malek u’apalekwa’"".","Dice que ahí se puso de pie un viejo y dijo: ""Ahora sí hemos conocido otro pueblo. Porque ya se aproxima el día del perecimiento (el día del fin) estamos así.",ok
+T010_N164,10,164,"Tulli ala’sa’ tasellunsha, nanima wa’adik tulli, wa’datulli, enpu’ninchipa’ kaluwi’ ektu’kerechu.","Dijo una viejita, ella tuvo una visión, soñó que seguramente muchas enfermedades llegarían.",ok
+T010_N165,10,165,"“Nerpi’lantetchuna’ asu’ kaiklusa’, nadi’neklusa’, taserpilusa', papinkulusa’"" tullima.","“Van a experimentar cambios estas mujeres, los jóvenes, los viejos, los abuelos"" dijo.",ok
+T010_N166,10,166,"Tekkinchima nana inchilalalupei'ma ukllina' luwerkellusa', wa'danlusa', Dadapu muda'lusa'.","Cuentan que de verdad por ese camino llegaron los que vinieron a conocer (Jeberos), los wiracochas, los blancos.",ok
+T010_N167,10,167,Nu'siklimaka asu’ Muyunpa inchilala nu’tullina’.,De esa manera construyeron el camino de Moyobamba.,ok
+T010_N168,10,168,"Tullina’ amiku’lusa’ ""Kuda usha’wañidek asu’ ipa’la wa’danlusa’ uk’anna’ llikanerchi’ñinerkenmu’wa’.","Las abuelas ya finadas dijeron: ""Nosotros somos los culpables de que ahora los señores vengan y nos hagan la vida imposible sin motivo"".",ok
+T010_N169,10,169,"Ma'lusa', nu'unta' willina' llikanetchi'ñina' nanapu’tullinerkenmu’wa’, asu’ katu’shadaper"" tullina' ima idiuntunna' lunna'.","Así como algunos maltratan a sus hijos a cada instante, así estas dos personas (nos maltratan a nosotros)8"" dijeron en una reunion hablando.",ok
+T010_N170,10,170,"Inwellektanna', inmusha'iteklanna', tullini'ma kunpallinenna' luntanna'pu'su'. Nanek uwanna', tusu'sa' luñina'.","Lloraron entre ellos, se besaron las manos, así dijeron como dialogando con sus compadres. Ahí bebiendo todas estas cosas hablaban. 8 Probablemente el narrador hace alusión a los espa ñoles conocidos como Apu’tek y Sekputchek. Véanse las narraciones siguientes.",ok
+T010_N171,10,171,Nawa' lu'rnka'su' kudanta' laukta'kudeksu' wilakudek ñamudek lunpallidek.,Lo que ellos hablaron y nosotros escuchamos cuando éramos niños eso estamos contando.,ok
+T010_N172,10,172,"Nu'sik nu'eklima nana Muyunpak ektu'llina'"" tullina' papinkuku'lusa'.","Así, de esa manera, llegaron a Moyobamba"" decían los abuelos ya finados.",ok
+T010_N173,10,173,"Nanek ima nu'unta' itudekllina' ""Kerku' sha'wapenma' uku'lakeru'kudek"".","Dice que ahí algunos (españoles) les decían (a los shiwilu) ""Traigan a sus hermanas para vendérnoslas"".",ok
+T010_N174,10,174,"Nu'unta' latekta'sui'ma ekpa'n sha'wan uku'latukun, enpu'nipa' kulliker enka'llina'.","Algunos que obedecieron llevaron a sus hermanas, las llevaron a vender, y les dieron mucho dinero.",ok
+T010_N175,10,175,"Shunka' ekkilala, shunka' ínkatu', shunka' alei'teklun ku'apellusa'pu'su' pa'llina'. Iñer uku'latukun.","Diez años, catorce, quince, como mujeres (de los españoles) se fueron. A todas las fueron a vender.",ok
+T010_N176,10,176,"Uku'latudek'anna', insekkilapidek'anna', uk'lapincha'dekllina' nana.","Una vez que las vendían, (los hermanos) se escondían y las abandonaban, se venían (a Jeberos) dejándolas.",ok
+T010_N177,10,177,Wellek'apawi'ni'ma tekkiyallina'.,(Las mujeres) lloraban bastante y después se acostumbraban.,ok
+T010_N178,10,178,"Katu' shunka' ekkilala ñisik ima ""Ipa'a'ka panta'ku' ñinanlu'penmek"", itudekllina' nana taserpiku'lusa', ma'i, mukankinpu'lusa'.","Cuando ya pasaban veinte años ""Ahora sí, vayan a su pueblo"", les decían los viejos, este, los que tenían mal corazón.",ok
+T010_N179,10,179,"Nu'siklimaka ipa'la asu' ñinanlu'mapu'wa' susulli, nerpi'la muda'lusa' nanpillina', nerpi'la ku'aper uk'apalli, kaluwi' ker'apallina'.","De esa manera ahora nuestro pueblo ha crecido, gentes de otros lugares viven, otras mujeres vienen, traen enfermedades.",ok
+T010_N180,10,180,"Nanadaper ima, Yus luwanta'su' malek, nana nu'apilalekwa'.","Todas esas cosas, porque Dios quiere, estamos cambiando.",ok
+T010_N181,10,181,Ipa'la asu' shaya'lusa' inllinsellina' asu' ladanenna'.,Ahora las mujeres se pintan sus caras.,ok
+T010_N182,10,182,Nana usha'wañen Muyunpa inchilala ekketcherka'su'.,Los culpables son los que abrieron el camino a Moyobamba.,ok
+T010_N183,10,183,"Da'ilek, ipa'la tulekwa' ""Mullin, nanekla nana’ka lli’akwa’ kenmu'wa'nta' ipa'la enchekmapu'wa' dektuntulekwa', lunekwa' asu' Kaschilla'"", tullina' papinkuku'lusa'.","Sin embargo, ahora decimos ""Está bien, eso sí viéndoles nosotros también nos cortamos nuestros cabellos, hablamos el castellano"" dijeron los abuelos ya finados.",ok
+T010_N184,10,184,"Du'anna', wa'inutanna', nerpi'pu' ñiper'dekllina' nana pa'lusa'.","Se sentaban, sentían pena y a veces insultaban a los que habían ido (por primera vez a Moyobamba).",ok
+T010_N185,10,185,"""Aner nanalupa' yapa'tama"" tullima ala'sa' papinkusha.","""No se vayan por ese camino"" decía un abuelito.",ok
+T010_N186,10,186,"Da'ilek, ali'ladaper tullina' ""Saka'tunan dunkerpatekkudek nanalupa' pa'achidek"", tullima. Sin embargo, otros opinaban ""A buscar trabajo tenemos que ir por","allá"", decían.",ok
+T010_N187,10,187,Nu'apileklima kencha'llina' inalupa' ku'apellusa' kullikerwanlusa'.,Así seguía hasta que trajeron por acá (por Jeberos) mujeres adineradas.,ok
+T010_N188,10,188,Pipekdek'anni'ma kencha'dekllina' ya'luwerdek'anna'.,Dice que cargadas en la espalda las trajeron queriendo hacerles conocer.,ok
+T010_N189,10,189,"Pacher’ pipek'anna' kerapencha'llina' ""¿Ipa'li’na denler pacher’ pipek'apetchu?"", tullina'.","Al cura cargándolo en la espalda lo traían ""¿Ahora quién va a estar cargando al cura?"", dijeron.",ok
+T010_N190,10,190,"“Napi’, kuanta’ wilakuñamu laukta’kasu’ nana Muyunpa inchilalak taker’llina’, Lansi’ Wa’danler ka’deklli” tullina’.","“Antes cuando yo era niño he escuchado que en ese camino de Moyobamba perecieron, el Duende Puro Hueso les comió” dijeron.",ok
+T010_N191,10,191,"Nu'unti'ma kelluluñiñi'ler ka'deklli, pa'nunta'nni'ma ipa' di'tullina'.","A algunos se los comió el tigre negro, cuando volvieron a ir los mataron.",ok
+T010_N192,10,192,"Ipa'linchi kelluluñiñi'pa' ñapa'n, inlli'inuku', ya'nlli'tapi'ñi a'pinta'.","Ahora tal vez sólo el tigre negro hay, tengan mucho cuidado, no se deja ver más.",ok
+T010_N193,10,193,"Ñidenler lli'api'ñi, yaya’nlli’chi’ñi, nu’su’.","Nadie lo ve, no se deja que lo vean, así.",ok
+T010_N194,10,194,"Ipa'la a'pinta' asunwekwañina', miduwañina', kerka' ñinchillintullina'. Nu’unta’ kulliker’wañi.","Ahora más tienen aretes, tienen collar, aprendieron a leer y escribir. Algunos tienen dinero.",ok
+T010_N195,10,195,Amiku'lusa' lu’rnka'su'pi'la nana ipa' innitapallin ipa'la.,Lo que hablaron las abuelitas ya finadas se esta cumpliendo ahora.,ok
+T010_N196,10,196,"Enta'n, nawa' kerka' ñinchilli'npu'la'pi'na'.","¡Imaginate, ellos sin saber leer!",fallback_last_line_as_spanish
+T010_N197,10,197,"Da'ilek i'na, pi'tandulalusa' lli'anna', ""Lli'ker, ma’pu’n ipa’ asu’ tandula ulu’ ulu’tulli, nu’an pennu’lli.","Sin embargo, ellos viendo a los astros (decían) ""Miren por qué reverbean las estrellas, después se vuelan (las estrellas fugaces).",ok
+T010_N198,10,198,"Nani'na kenmu'wa' itapallinerkenmu'wa' ""U'su' pennu'chuma' kenmama'nta' enpi' uklli”, tullina' ima amiku'lusa'.","Eso a nosotros nos está diciendo ""Así van a volar ustedes también algún día"", cuentan que dijeron las abuelas ya finadas.",ok
+T010_N199,10,199,Enpi' uklli pen ala'sa' wa'natek pennu'a'su' kenmama'nta' pa'achuma'.,Algún día en un fierro viejo que vuela ustedes también van a viajar.,ok
+T010_N200,10,200,"Ali'la wa'natek tekka'a'su' nanek kenmanta', kenmama'nta' pa'achuma' kuda ipa' chimiansekudek”, tullina' amishala.","En otro fierro que corre también tú, ustedes van a viajar cuando nosotros perezcamos"", decían las abuelitas.",ok
+T010_N201,10,201,"Nana nani'na itullina' ""Ma'pu'si'pa' insekluteñek Muyunpa inchilala yaekketchakwa' tullina'.","A eso dijeron ""¡Cuánto hemos sufrido para abrir el camino a Moyobamba!"" dijeron.",ok
+T010_N202,10,202,"Ipa’la’ka luwetchudekllina' ali'la muda'lusa', luwetchudekñina' nerpi'la lunlusa'.","Ahora conocemos a otras gentes, conocemos a los que hablan otra lengua.",ok
+T010_N203,10,203,"Nu’unti’ma aper’kulli. Yalun’i’ñi uncha'n Muyunpakla ma'pu'si'pa' lli'lli senñulalusa', ñima nanapinta' yalun’i’ñi, ta'tula'nna' pa'llina'.","Algunos mezquinaban. Volviendo de Moyobamba no querían contar cómo habían visto a las señoras, ni querian contar más, sin despedirse se iban.",ok
+T010_N204,10,204,"Nanekla, ipa'li'na iñer inapu'su' pa'akwa' luwetllekwa'.","Desde entonces, ahora todos uno y otro lugar nos vamos a conocer.",ok
+T010_N205,10,205,Ter'kasu'pi'la papinkuku'lusa' “Enpi' uklli kenmama' awapenma'lek pa'api'nchuma'.,Lo que han anunciado los abuelos ya finados “Algún día ustedes con sus madres ya no van a estar caminando.,ok
+T010_N206,10,206,"¡Enñupa’ ñinanlu' ipa' pa'achuma'! Ali'la ñinanlu'lupa' pa'achuma', Muyunpalupa' a'pinta' pa'api'nchuma'.","¡A que ciudad quizá van a ir! A otra ciudad desconocida van a ir, a Moyobamba ya no van a ir más”.",ok
+T010_N207,10,207,"Nanekla tulli ali'la papinku ""Asu' pa'apalusa' enpulila keretchuna' nana wa'nakla nu'ter'kasu' pennu'pilerpachi uk'etchu” tullini'ma.","De ahí dijo un viejo ""Estos que están viajando en algún momento van a traer lo que hacen de fierro, volando va a venir” dijeron.",ok
+T010_N208,10,208,"Ipa'li'na ipa' lli'apalekwa'. Lli'apalekwa' ma'pu'si'lipa' nakupilalli ekkilalalusa', simana', duker, ekkilala.","Hoy estamos viendo. Estamos viendo todo lo que va aconteciendo años, semana, mes, año.",ok
+T010_N209,10,209,Kenmu'wa' chimiansikwa' ma'ilipa' lli'tetchu tullini'ma napi'.,Cuando nosotros perezcamos qué cosas quizá aparecerán dijeron antes.,ok
+T010_N210,10,210,"Muyunpak walek pa'anna', adencha'nna', indiuntunna' luñina'.","Se fueron hasta Moyobamba, regresaron, tuvieron reuniones y hablaron.",ok
+T010_N211,10,211,"Nu'aterwa' kenmu'wa', utekkwa'pu'llinerkenmu'wa'"" tullima ala'sa' papinku.","Así vamos a ser nosotros, nos van a perjudicar” dijo un abuelo.",ok
+T010_N212,10,212,"Nu'taminerkenmu'wa' nanadaper a'ka asu' kudanta' ñinchipa'tullidek wilakudek ñamudek, du'pa'dek'amudek.","Tratándonos así todas esas cosas nosotros hemos aprendido de otros cuando éramos niños, sentándonos muy cerca a su lado.",ok
+T010_N213,10,213,Laukdekllidek lu’rnkasu' nana asu' Muyunpa inchilala nu'ter'kasu'.,Hemos escuchado lo que han hablado aquellos que hicieron el camino a Moyobamba.,ok
+T010_N214,10,214,"Dudinpu' ñiwiñi nanek, ta'ser lauktulek.","Toda cosa había ahí, cuando han dicho he escuchado.",ok
+T010_N215,10,215,Nanasa' lunek. Ipa'li'na kua yunsanpateku nellupa' pa'achek.,Sólo eso he hablado. Ahora me voy a levantar y me voy a ir por otra parte.,ok
+T010_N216,10,216,¡Ma'allimi'na enpi' uklli llinserpi namasu' lunpa'kawa'su' ektu'nchinaa!,¡Ojalá alguna vez llegue escrito esto que estamos hablando!,ok
+T010_N217,10,217,"Wilawek wilamapu'wa'lusa' lli'erkek, nawa'nta' luwetcherkek.",Para que mis hijos y los hijos de todos nosotros lo lean y que ellos también conozcan.,ok
+T010_N218,10,218,Nu'sui'ma luñi taserpiku'lusa'.....,Así hablaron los antiguos….,ok
+T010_N219,10,219,"Duker nerpi’pu' wellekllina', inpilli'iteklatanna', inmusha'iteklanna', nanadaper malek wellekllina'.","Meses a veces lloraban, tomándose de las manos, besándose las manos, por todas esas cosas lloraban.",ok
+T010_N220,10,220,"Ta'ser lauktulek, asu' Muyunpa inchilala malek, nu'unta' taketllina'.","Lo que contaron he escuchado, que por causa del camino de Moyobamba algunos se terminaron.",ok
+T010_N221,10,221,Nanek waleksa' winterkenma' asu' Muyunpaki.,"Hasta aquí nomás les voy a contar sobre Moyobamba. Jeberos, julio 2007",ok
+T011_N001,11,1,"Ipa'la' winterkenma' ma'pu'si'pa’ napi’ Shawala kenma’ ñapanna’pi’la idenmalli'na' asu' nerñinalukla uklusa’lek, Kaschilla lunlusa’.","Ahora les voy a contar cómo quiza cuando vivían los antiguos indios Shawala pelearon contra los que vinieron de otro pueblo, los catellano- hablantes.",ok
+T011_N002,11,2,Enta' winterkenma'. ¡Lawekku'!,Entonces les voy a contar. ¡Escuchen!,ok
+T011_N003,11,3,"Napi' ima llikanetchudek'i'ñina', yutudekllini'ma, llipu'tudekllini'ma, er'washinchi walek a'saka'tudekllina'.","Dice que, antiguamente, (los españoles) los maltrataban, les reñían, los paleaban, los hacían trabajar hasta muy tarde.",ok
+T011_N004,11,4,"Nana malek imi'na, ala'sa' shaya' llillinen itullina' Malallina,","Por eso dice, una mujer llamada Malallina9,",fallback_last_line_as_spanish
+T011_N005,11,5,"Malallineima ñañashasa', ukllilek dekpilli'lek, uklulu' nu'ta'n, iñer pideknen a'muetchan,","Malallina solita, en el día y en la noche, elaboró su masato llenando toda su casa (con la bebida), 9 Malallina es la adaptación del nombre español Magdalena. En esta traducción hemos optado por mantener la forma shiwilu Malallina.",ok
+T011_N006,11,6,nakupila'ser yasaka'tanna' nana Kaschilla lu'nsu'lek peklu'dek'an itudeklli:,y cuando (los Shawala) estaban pasando a trabajar con esos castellano-hablantes los llamó y les dijo:,ok
+T011_N007,11,7,"""Yuyu'lusa', ¡da'kerku' u'ku!","""Señores, ¡vengan y pasen a beber!",ok
+T011_N008,11,8,"A'urkenma' uklupidek, dinpunen a'urkenma'.","Les voy a dar de beber la chicha punta, su espuma les voy a dar de beber"".",ok
+T011_N009,11,9,Itudek'an ima a'da'dekan ima itudeklli.,Diciéndoles así les ha hecho entrar y les dijo.,ok
+T011_N010,11,10,“¡Enchuku' di'tawa' asu' katu'ta'!,¡Vamos a matarlos a estos dos10!,ok
+T011_N011,11,11,"Kenmu'wa' wapu'mu'wa', ma'ki'na asu' katu'shadapersa'.","Nosotros somos bastantes, ellos son doscitos nomas.",fallback_last_line_as_spanish
+T011_N012,11,12,"Tukaner'chi'ñinerkenmu'wa', llikaner'chi'ñinerkenmu'wa', ¿nana’cha mulli?","No se cansan de reñirnos, no dejan de pegarnos, ¿acaso eso es bueno?",ok
+T011_N013,11,13,Musu' a’cha kankantulama' kenmama'.,¿Les gusta a eso a ustedes?,ok
+T011_N014,11,14,¡Wanerku' enmu'pinenpu'su'!,!Pónganse de pie como varones! 10 Se refiere a las autoridades españolas conocidos como Apu’tek y Sekputchek. Léase el texto siguiente.,ok
+T011_N015,11,15,"Ma'pu'si'na kua ku'aperku ñamu... Iñer itapallenma' wanerku', nu'su' waneretchuma', ma'ata'na.","Cómo yo siendo mujer (me rebelo), les estoy diciendo a todos párense, les pido a todos que se pongan de pie. Así se van a parar, ahí está.",ok
+T011_N016,11,16,Unkuenñan pek kua'palli. ¡Llisanala nu'tu'ku'!,Ahí está echado un shungo (palo sangre). ¡Hagan mazos.,ok
+T011_N017,11,17,Nana'lek llipu'mutu'tan dei'tawa' nana wa'dan!,Con eso vamos a golpear sus cabezas para matar a esos wiracochas!,ok
+T011_N018,11,18,"–“ ¿Ma'ki'na nu'taterwa?"", tullima ala'sa' taserpi.","-""¿Por qué vamos a matarlos?"", dijo un viejo.",ok
+T011_N019,11,19,"-""!Ma'sha, ta'tuler kenma! Kenmeipa' luwantula llikanerchapinpu'erkensu'","- “¡No, cállate tú! Quizás tú quieres que te sigan maltratando.",ok
+T011_N020,11,20,"Nanipa' luwantula' yalli'apalinpa' sadanpen, teklapinpen, erkunpenlusa' llipu'taperkasu'”.","Tal vez querrás estar viendo que a tu esposa, a tu hija, a tus hijos varones los estén azotando”.",ok
+T011_N021,11,21,"""Nu'awa' nu'pachi tanni'ma llisanala nu'tanna'.","""Así vamos a hacer entonces”, dijeron haciendo mazo.",ok
+T011_N022,11,22,Ma'i silutulusa' dunkerllina'.,Buscaron a los yupaneros.,ok
+T011_N023,11,23,Tuntunwanta'ser silututa'ser inkapetllina' Apu'tekku' unkunanñik'inchi.,"Cuando tenían todos sus tambores, cuando yupaneaban se encontraron en la misma puerta de Apu’tek.",ok
+T011_N024,11,24,Lli'an ima Apu’tekku' enpu'nipa' yupilerkasu'tekka'lli insekkitulli wicha'pek.,Viendo Apu’tek que estaban bien enojados corrió y se escondió en su dormitorio.,ok
+T011_N025,11,25,Nana Malallinalek ñapalusi'mi'na danker'kuñina' kani'ñina' Sekputcheksa'.,Los del grupo del Malallina entraron y encontraron solamente a Sekputchek.,ok
+T011_N026,11,26,Kananna' nanasa' llikantullina' dei'tullina'.,"Encontrándole, a él nomás lo revolcaron golpéandolo y lo mataron.",ok
+T011_N027,11,27,Nu'anna' yunsu'llina' yadunkeranna'.,Entonces salieron a buscarlo (a Apu’tek).,fallback_last_line_as_spanish
+T011_N028,11,28,"Lli'llini'ma tekka'pilasik Panpadeklupa', tupitullina' ñi kasek'i'ñina'.","Lo vieron corriendo hacia el Pampayacu, lo siguieron pero no lo alcanzaron.",ok
+T011_N029,11,29,"Adanda'nni'ma, nana katu'pa'chinpu'lusa' itudeklli ""¡Enchuku' di'tudekawa' asu' katu'pa'chinpu'lusa'!","Regresando, a los que no apoyaron la rebelión les dijeron “¡Vamos a matarlos a esos que no se han adherido"".",ok
+T011_N030,11,30,¡Ma'ki'na tek kualu'lusa' ta'wanchi!”,¡Que los cobardes se terminen!,ok
+T011_N031,11,31,¡Nantapiteklusa'sa' nanpii” tan ima asu' Chilenllupa' nanpilusa' lliketchuduwidillekllina'.,¡Que vivan puros fuerzudos!” diciendo a los que viven por el Barrio Bajo casi los han exterminado.,ok
+T011_N032,11,32,"Nanek ima chi'yek'erkasu' tekka'erkasu' ima, pa'llima mutupilupa' yananpinna', nanpikuñina'.","Entonces los que se escaparon, los que se corrieron, dice, se fueron a vivir por los cerros, se fueron a vivir.",ok
+T011_N033,11,33,"Katu'shunka' alei'teklun ekkilala ñisik ima, nana wa'anku’lusa' Malallinalek lu’rnkasu' nawei'ma ipa' chimia'ser adankenñunta'llina'.",Veinticinco años pasaron y cuando las autoridades que habían hablado con Malallina murieron volvieron (a Jeberos).,ok
+T011_N034,11,34,"Adencha'n ima wa'an lekllina' -""Adanpilencha'llidek kuda, ¿luwandetchuma' a’cha?"" Regresando le pidieron al gobernante -""Nosotros estamos volviendo,",¿nos van a querer?”,ok
+T011_N035,11,35,"-""Wencha'ku', ñinnanlu'penma' nuka'a.","-""Vengan, su pueblo es.",fallback_last_line_as_spanish
+T011_N036,11,36,Ipa’ Malallina chimiñi. Nana asu' luyuta'su'.,Ya Malalina ha muerto. Ella era la que sentía rencor.,ok
+T011_N037,11,37,"Ipa'li'na' kenmu'wa', ipa' asu' ñinanlu' katu'ta' ñillin: Chilen, Winen.","Ahora nosotros, ahora este pueblo se ha dividido en dos: Barrio Bajo y Barrio Alto.",ok
+T011_N038,11,38,"Nu'su' ipa'la ñaterwa', ñi kenmu'wa' ipa'la chu'kenapi'nterwa' iñer ñinanlu'.","Ahora vamos a vivir así, ahora ya no vamos a pandillar todo el pueblo.",ok
+T011_N039,11,39,"Ñinanlu'mapu'wa', Chilenkek ña'su', Chilenllupa' chu'kenetchu; Winenllupa' ña'su', Winenllupa’”, tanni'ma.","Nuestro pueblo, los que viven en el Barrio Bajo, van a pandillar por el Barrio Bajo; los que viven por el Barrio Alto, por el Barrio Alto"", dijeron.",ok
+T011_N040,11,40,"Ninanlu' aku'llina' wala'wan ikiñek ñinanlu'. Wala'wan Chilenki, wala'wan Winenki.",El pueblo puso policías en el medio del pueblo. Policía para el Barrio Bajo y policía para el Barrio Alto.,ok
+T011_N041,11,41,Nu'si'ma nanpillina' enpu'dun ekkilalei'pa'.,Así vivieron cuántos años quizás.,ok
+T011_N042,11,42,Ipa'leklanlek a'metchala nu'unta' Chilenñusa' yullina' Winenllusa' pa'a'ser nanalupa'.,"Desde entonces en adelante, poco a poco algunos barriobajinos se rabian cuando los barrioaltinos van por ahí.",ok
+T011_N043,11,43,"Chillenllusa' pa'a'ser Winenllupa', Winellun Winenpenllusa'nta' yullina'.","Cuando los barriobajinos van por el Barrio Alto, las mujeres y los hombres del Barrio Alto se rabian.",ok
+T011_N044,11,44,"""Ma'ki'na asu' Chilen nu'lli? ¿Kenmu'wa'ta’ nanalupa' pa'apalekwa'?"", tanna' yullina'.","“¿Por qué estos del Barrio Bajo son asi? ¿Acaso nosotros nos vamos por ahi (por donde ellos)?”, diciendo se rabian.",ok
+T011_N045,11,45,Inluyupallina'pi'la ipa'la walek.,Se desprecian hasta la actualidad.,ok
+T011_N046,11,46,"Ñi idenmapi'ñina', ñi'na musu' intantennapi'ñidek kuda.","No se están peleando, aunque no nos queremos mucho.",ok
+T011_N047,11,47,"kuanta' nu'apalek i'la. Chilenllusa' enpu'ninchi, enpu'ninchi ni luyuinpu'winek, ñi'na yaluntudek'i'nek.","Yo también soy así mismo. A los barriobajinos no los aborrezco mucho, pero tampoco quiero conversarles.",ok
+T011_N048,11,48,Nu'su' nanpillina' napi'.,Así han vivido antes.,ok
+T011_N049,11,49,"Malallina nana nu'su' aku'llundek,","Malallina es la que nos ha puesto así,",ok
+T011_N050,11,50,"Malallina nana nu'su' a'kankantullundek,","Malallina es la que nos ha hecho reflexionar,",fallback_last_line_as_spanish
+T011_N051,11,51,Malallina nu'su' a'lli'tullundek.,Malallina es la que nos ha hecho darnos cuenta.,ok
+T011_N052,11,52,Nana Malallinapu'wa'su' ñillin iñer enmu'pinen.,Todos los hombres deberían ser como Malallina.,ok
+T011_N053,11,53,"“Nana asu' Ishpaña la'la'lunlusa' lliketchudeknanta'ser”,","“Hubiéramos extinguido a todos los de habla española”,",ok
+T011_N054,11,54,"itullina' ali'la'la'leklan, asu' Kaschilla.",así les dicen en otro idioma al castellano.,ok
+T011_N055,11,55,"“Nawa' asu' a'lekllinerkenmu'wa' tumu'akawek, apetchakawek, di'akawek, nanadaper ima'ka.","“Ellos nos han enseñado a mentir, a robar, a matar, todas esas cosas.",fallback_last_line_as_spanish
+T011_N056,11,56,A'lliyanantulekwa' kenmu'wa' kankanmapu'wek”,Nos han hecho quedar a nosotros malos en nuestro corazón”,ok
+T011_N057,11,57,"tullina' napi' papinkuku'lusa', amiku'lusa', ikineklli walek uwenna'.","así han dicho antes los abuelos, las abuelas, tomando hasta la medianoche.",ok
+T011_N058,11,58,"Du'anna' adipi, uklulunenna' uwanna'pu'su', tusu' tullina', tandulalusa' lli'anna', pi’tandula lli’anna’.","Sentados afuera, como tomando su masato, así decían, mirando las estrellas, mirando los astros.",ok
+T011_N059,11,59,"Pi'tandulaler ima pata'kankañi asu' Malallina, tullina'nta'.","Dice que el astro le había tocado el corazón a Malallina, decían algunos.",ok
+T011_N060,11,60,"Nu'su' ali'ladaper llipetchullina',",Así a otros recriminan.,fallback_last_line_as_spanish
+T011_N061,11,61,“ ¿Ma'ki'nta' asu' Muyunpa inchilala ekketchullina'?,“¿Por qué pues han abierto ese camino a Moyobamaba?,ok
+T011_N062,11,62,Nanalupa' uk'anna' asu' utapakellinerkenmu'wa'”.,Viniendo por ahí nos están viniendo a hacer esto.,ok
+T011_N063,11,63,"Usha'wallina' nana inchilala ekketchulusa'"" tullini'ma' nu'unta'.","Ellos tienen la culpa, los que han abierto ese camino"" han dicho algunos.",ok
+T011_N064,11,64,"Nu'su' ñapilaterwa' enta' ipa'la, nermuda'lusi'pa' danker'kuñina' Shiwiluk.","Así vamos a estar viviendo pues ahora, otras gentes han entrado en Jeberos.",ok
+T011_N065,11,65,Nawa' ipa'la asu' Kaschilla la'la' a'lek’apallinerkudek.,Ellos ahora nos estan enseñando el castellano.,ok
+T011_N066,11,66,Asu' a'lektupideklusek ñinchitupideklusek nana Kaschillasa’ luñina’.,En la escuela primaria y secundaria soló hablan puro castellano.,ok
+T011_N067,11,67,Ipa'la nu'anna' ipa' Shiwilu la'la' pinaner'apilallina'.,De esta manera ahora están olvidando la lengua shiwilu.,ok
+T011_N068,11,68,"Nu'amudek i'na kua taserpiku' nuka'ka, kui’na kanchis shunka' ekkilalawantulek ipa'.","Yo soy viejo, tengo setenta años ya.",ok
+T011_N069,11,69,"Shunka' katu' ekkilala a'ñamu nana lunpa'kasu' ipa'la lauktulek, kuanta' supinawantamu amiwekku'.","Cuando tenia 12 años he escuchado lo que digo ahora, me ponía detrás de mi abuelita finada.",ok
+T011_N070,11,70,Nanek waleksa' winterkenma' asu' Malallina idenma'su' Ispaña la'la'lusa'lek.,Hasta acá nomás les he contado la lucha de Malallina con los españoles.,ok
+T011_N071,11,71,Pantetchek.,Ya me voy.,ok
+T012_N001,12,1,Enta' wintununterkenma' u'ñishata'la nana Ishpaña la'la' lunlusi'mi'na' pipekpi wekllina' Muyunpeklan asu' Shiwiluk.,Les voy a contar otro poquito sobre los de habla española que llegaron cargados desde Moyobamba acá a Jeberos.,ok
+T012_N002,12,2,"Lli'kerenni'ma tullina'ka nawa', nana a'lachekta'su', lawer'a'su' tulli:","Los que vinieron a ver dijeron, los que hacían comprender, los que interpretaban (la lengua) dijeron:",ok
+T012_N003,12,3,“ Asek ima u'chimu saka'takawek ketñala.,“El palo de yuca es bueno para trabajar.,ok
+T012_N004,12,4,A'teradek'awa' asu' kenma'lusa'.,Hay que hacerles sembrar a estos indios.,ok
+T012_N005,12,5,"Menmi a'nu'tudek'awa'"" tannima u'anna'.","Vamos a mandarles a hacer chacra"", diciendo vinieron (a Jeberos).",fallback_last_line_as_spanish
+T012_N006,12,6,Naneklima llia'lli asu' wa'dan panpateklu' ipa'la walek luwetchapalekwa'.,"De ahí, dice, ha quedado este pasto que hasta ahora conocemos.",ok
+T012_N007,12,7,"Apu’tek ima kullikerwa'su', Sekputchek imi'na saka'tulusa' luwekta'su' nanakin kelli.","Cuentan que Apu’tek tenía plata, mientras que a Sekputchek lo trajeron para que supervise a los trabajadores.",ok
+T012_N008,12,8,"Ishpañakla nananta', katu'daper i'la Shiwilu la'la', Inka' la'la' lui'nta'ser, lachekllini'mi'na.","Él era de España también, los dos mismos no hablaban la lengua shiwilu ni la lengua inka, pero entendían.",ok
+T012_N009,12,9,Nana Sekputchek ima nana mukankinpu'a'su'.,Sekputchek no era de buen corazón.,ok
+T012_N010,12,10,"Apu’tek i'mi'na ñinpu' ninchiluyuchi'ñi, ñi aperku'tekinpu'.","En cambio Apu’tek no sabía aborrecer mucho, no era miserable.",ok
+T012_N011,12,11,"Nana Sekputchek ima'ka nana aperku'tek ima, ñima luwanchi'ñi u'ñisha.","Ese Sekputchek era bien miserable, no se conformaba con poquito.",ok
+T012_N012,12,12,"Yenchenterka'su' saka'tapanna', iñer er’werwalek ipa' kasiserapilek walek ipa' asu' inkella “chanchanchan”.","No quería que (los shiwilu) se estiraran cuando trabajaban, hasta que se hacía bien tarde (los obligaban a trabajar), hasta que se hacía bien oscuro y el grillo (cantaba) ""chanchanchan"".",ok
+T012_N013,12,13,"Tusik ima ipa' tulli ipa' mulli'chinpu'a'ser ""Enchuku' adanta'wa'"", tullima.","Así dice, cuando no podían ver bien en la noche, ""Vamos a regresar"", decía (Sekputchek).",ok
+T012_N014,12,14,"U'ñishima awerandeklli, a'panta'deklli pideknennek.",Bien poquito les daba de comer y les mandaba a sus casas.,ok
+T012_N015,12,15,Amilusi'ma' willekllina' ukki'lanna'.,Las viejitas lloraban de hambre.,ok
+T012_N016,12,16,"Wilalusi'ma, ya'dandektanna', pa'anna', anaka'lli'na'.","A los muchachos, queriendo agarrar pejecitos con canasto, cuando se iban, se los comían las fieras.",ok
+T012_N017,12,17,"Nanadaper imaka lli'an Malallina tulli ""Asu' katu'ta' Ishpaña la'la' lunlusa' a'ta' kenmu'wa' utetchinerkenmu'wa'.","Viendo todas esas cosas, Malallina dijo “¿Esos dos hablantes de lengua española nos van a hacer todas esas cosas?",ok
+T012_N018,12,18,¿Napi'lanlek a'ta' na'wa' saka'tukellina'?.,"¿Acaso desde antes, pues, ellos han venido a trabajar?",ok
+T012_N019,12,19,"Kenmu'wei'na' napi' anantulekwa', pitetchulekwa', kala'tulekwa'.","Nosotros antes desmotábamos el algodón, hilábamos, metíamos el hilo en el telar armándolo.",ok
+T012_N020,12,20,"Kalantekwek nu'tulek, kutunwek nu'tulek, apetchawekku'kin kutunen nu'itulek”.","He hecho mi pampanilla, he hecho mi camisa, de mi tío finado su camisa he hecho”.",ok
+T012_N021,12,21,Nu'su'sa' ñillina' napi'.,Así nomas han sido antes.,ok
+T012_N022,12,22,"Ta'ser kuanta' wilaku ñamu lawektulek, ipa'la winta'pallenma'.",Así lo que han dicho he oído cuando era muchacho y ahora les estoy contando.,ok
+T013_N001,13,1,Enta' winterkenma' ma'pu'si'pa' kineklada’ llillin ñilli.,Ahora les voy a contar cómo quizás los nombres shiwilu11 han sido.,ok
+T013_N002,13,2,"Nana Sekputchekkui'na di'tanna, inpasetllina', inluyullina'.","Después de matar a Sekputchek, (los jeberinos) se han esparcido, se han aborrecido.",ok
+T013_N003,13,3,"Nanek ima' pa'lli' ipa'linchi ala'sa' taserpima tulli ""Enchuku' pa'awa' mutupik"".","Ahí, dice, se ha ido un viejo y ha dicho ""Vamos a ir al cerro"".",ok
+T013_N004,13,4,"Kenmu'wa' mutupi muda', kenmu'wa' ñi asu'lupa'dei'npu'.","Nosotros somos gente de cerro, nosotros no somos de aquí.",ok
+T013_N005,13,5,"Papinkumapu'wa'ku' tanni'ma nana luyurka'su', luyullinerkenmu'wa', tanni'ma pa'llina'.","Nuestros abuelos finados dijeron que los que aborrecían, los que nos aborrecían, diciendo se fueron.",ok
+T013_N006,13,6,Ali'lima llia'kelli musenpitek.,Otros se vinieron a quedar (donde vive) el ave montete.,ok
+T013_N007,13,7,Ali'lima llia'lli ma'i mutupik.,"Otros se han quedado en el cerro. 11 Literalmente, “los nombres de adentro”.",ok
+T013_N008,13,8,"Ali'lima llia'kuñi ala'sa', ma'i, panpateklu' ima llillinen Chota.","Otros se han ido a quedar en un, este, pasto llamado Chota.",ok
+T013_N009,13,9,Nanek ima ñikuñi.,Ahí se ha ido a quedar.,ok
+T013_N010,13,10,Ali'limi'na katu'ta mutupi laweklatekkasu'pu'si'ma ñilli.,"Otros, dice, hay dos lomas que parecen una boca abierta.",ok
+T013_N011,13,11,Nawa'ler ima aku'llillillina' Laweklatek.,"Ellos han adoptado el nombre ""El de la boca abierta"".",ok
+T013_N012,13,12,Nanek ima ñikuñi Laweklateklusa'.,Ahí se fueron a vivir los Laulates12.,ok
+T013_N013,13,13,"Naneklima adencha'a'ser lekdekllina' “ ¿Enñupa' i'na kenmama' nanpikunama', pa'anma' mutupik?","De ahí, cuando regresaron les preguntaron ""¿Dónde se han ido a vivir ustedes, yéndose al cerro?",ok
+T013_N014,13,14,Kui’na laweklateklupa' tullima.,"En cambio yo (me fui a vivir) por los dos cerros que forman como una boca abierta"" dijo.",ok
+T013_N015,13,15,"Nana ali'lima tulli ""Kui’na ñinchitulek nana mutupik nanpipalli Llumallun13’”.","Ese otro dijo ""Yo he sabido que en el cerro vive Llumallun"". 12 Laulate es un apellido muy común en Jeberos. Según este relato, su etimología se hallaría en el nombre Laweklatek “el de la boca abierta”. 13 Llumallun era viejita que vivia sola y era sabia.",ok
+T013_N016,13,16,"Llumallunkek ñikuñidek, tullima nana ali'la.","Donde Llumallun hemos ido a vivir, así dijo el otro.",fallback_last_line_as_spanish
+T013_N017,13,17,"Ali'lima tulli ""Kui’na Musenpitek, kui’na Maka”.","Otro dijo “Yo soy Ave Montete14, (y otro) yo soy Maka”.",ok
+T013_N018,13,18,"Naneklima ipa'linchi pacherler aku'lli ""Kenmami'na Makanma'"", Maka aku'deklli.","En base a eso, entonces, el cura le puso (el nombre) ""Ustedes son Maka"", Maka15 les pusieron.",ok
+T013_N019,13,19,Kenmami'na Llumallunku'lupa' Lomas.,Ustedes (los que viven) por (donde) Llumallun son Lomas.,ok
+T013_N020,13,20,Kenmami'na lawekklatekkek ñikunama' Laulate.,Y ustedes que fueron a vivir a los dos cerros que forman como una boca abierta son Laulate.,ok
+T013_N021,13,21,"Kenmami'na nana panpateklu' Chota, Chotanma'.","Y ustedes los de la pampa Chota, ustedes son Chota.",ok
+T013_N022,13,22,Naneklima asu' kineklada' llillin lli'tencha'lli.,De allí dice se originaron los nombres shiwilu.,ok
+T013_N023,13,23,Ipa'leklanlek nu'su' nanpipalekwa'.,Desde ese entonces estamos viviendo así.,ok
+T013_N024,13,24,"Adipida' llillinmapu'wei'na, dai'lek pacher' ima weklli ""¿Ma’llin a’cha?""","En cuanto a nuestro nombre de fuera, luego el cura, dice, ha llegado ""¿Cómo te llamas?"" (les preguntó) 14 Éste sería el origen del apellido Mozombite. 15 No se ofrece una posible etimología para el apellido Maca.",ok
+T013_N025,13,25,"Kui’na apulli'ku, kwina', ma'i, tananmuda'ku.","Yo soy tocayo, yo soy, este, Shapingo16.",fallback_last_line_as_spanish
+T013_N026,13,26,Tula'si'ma llinlliwañina'.,Así nomás dice tenían sus nombres.,ok
+T013_N027,13,27,Nanek imi'na pacher kelli u'ñishala shanchushala.,Entonces el cura ha traído santitos chiquititos.,ok
+T013_N028,13,28,"Nanek ima Mañer, Dañer, Pullikariu ma'i Panfilo, nanek ima Ransisko, nanek ima asu', ma'i, asu' Pancho, nanek ima ñilli asu' Pidir aku'llima da'kanchineksu'.","Allí, dice, a Manuel, Daniel, Policarpo, Pánfilo, después Francisco, después, este, Pancho, después había Fidel, los puso en fila.",ok
+T013_N029,13,29,Wilalusa' enmu'pinenwawalusa' ima peklu'deklli.,A los niños varoncitos los llamó.,ok
+T013_N030,13,30,“ ¿Enkasu' a’cha santupen luwantula ña'su'?” itullima.,“¿Cuál quieres que sea tu santo?” les preguntó.,ok
+T013_N031,13,31,Wileima panta'n lli'an pilli'tulli.,"El muchacho, dice, fue, miró y escogió (un santito) agarrándolo.",ok
+T013_N032,13,32,"""Asu'"", tullima.","""Este"", dijo.",fallback_last_line_as_spanish
+T013_N033,13,33,"“ ¿Ma'itetchuncha?, Pidir"" tullima.","“¿Cómo lo vas a llamar?, Fidel"", dijo (el cura).",ok
+T013_N034,13,34,“Kenmei'na”. Ali'la panta'lli. Lli'apallima pilli'tulli. 16 Shapingo significa sacharuna o espíritu de la selva.,“Ahora tú”. Otro (niño) fue. Estuvo viendo y escogió (otro santito) agarrándolo.,ok
+T013_N035,13,35,“ Asui'na Pablo”.,“Este es Pablo”.,fallback_last_line_as_spanish
+T013_N036,13,36,"Asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, “Pulu”.","Este, entonces, el que entendía (de santos), dijo, “Pablo”.",ok
+T013_N037,13,37,Naneklima asu' ali'lima panta'lli.,De allí le tocó el turno a otro.,ok
+T013_N038,13,38,"Pilli'tulli asi'na San Pedro. ""Ah, Pideru"".","Este agarró a San Pedro. ""Ah, Pedro"".",ok
+T013_N039,13,39,"Tusu'si'ma, naneklima, kenmu'wa' ipa'la nana llillin ekpa'palekwa'.","Diciendo así, desde entonces, nosotros ahora estos nombres estamos llevando.",ok
+T013_N040,13,40,"Ipa'li'na asu' Ishpaña la'la' lunpatulekwa': Pablo, Pedro, Daniel, Carlos, Augusto.","Ahora esta lengua española estamos hablando: Pablo, Pedro, Daniel, Carlos, Augusto.",ok
+T013_N041,13,41,Napi'i'na ma'sha Augusto itullina' Akushupi.,Antes no. A Augusto le decían Akushupi.,fallback_last_line_as_spanish
+T013_N042,13,42,Octavio itullina' ukchapi.,A Octavio le decían Ukchapi.,fallback_last_line_as_spanish
+T013_N043,13,43,Tusu'sa' llillinlusa' napi' a'ñiwinekwa'.,Esa clase de nombres antes no hemos tenido.,ok
+T013_N044,13,44,"Lli'inutapaku' nu'sukla'nka kenmu'wa' ipa'la itullinerkenmu'wa', ""gente civilizada"" tullima.","Vayan acordándose de esa clase (de nombres) nos dicen ahora, ""gente civilizada"" dicen.",ok
+T013_N045,13,45,"La'i nu'lekweipa', ku'leipa'. Latekchi’lek kua.","Así quizás somos, o no quizás. No creo yo.",ok
+T013_N046,13,46,Nana nu'su' aku'llinerkenmu'wa'.,Así nos han puesto.,ok
+T013_N047,13,47,Papinkumapu'wa'ku'lusa' nana nu'llina'.,Nuestros abuelos finados ellos han sido así.,fallback_last_line_as_spanish
+T013_N048,13,48,Kenmu'wei'na ipa' ñinchillintekwa'.,Ahora nosotros conocemos los nombres.,ok
+T013_N049,13,49,"Wadunek kerkek lli'amu llillinlusa', nerpi'pu'.","Ahora se escoge los nombres leyendo en papel, a veces.",ok
+T013_N050,13,50,Nerpi'la llillin aku'llina' ñinchiluinpu'la'pi'na'.,Nombres extranjeros han puesto sin saber hablar (la lengua).,ok
+T013_N051,13,51,"Ipa’la aku’llina’, ma’i, Giovanna, ma’nen ilipa’.","Ahora ponen, este, Giovana, y otros nombres más.",ok
+T013_N052,13,52,"Napi' i'na Maria, Wirkiña aku'llina', ma'i, santu llillinlusa' aku'llina' napi'.","Antes les ponían María, Virginia, este, les ponían nombres de los santos antiguamente.",ok
+T013_N053,13,53,Ipa'li'na ma'nen llillinlusi'pa' aku'llina'.,Ahora cualquier nombre ya les ponen.,ok
+T013_N054,13,54,"Sapana', dudinpu’ aku'llina'.","Bufeo, todo tipo (de nombres) le ponen.",ok
+T013_N055,13,55,Ipa’la lacheknawi’ñina’.,Ahora no se puede entender.,ok
+T013_N056,13,56,Ninchipeklui'npu'la'pi'na'.,No saben pronunciar.,ok
+T013_N057,13,57,"Nu'su' ipa'la lawektapalek asu' Shiwilumapu'wek, ñi napi'pu'su'.","Así oigo ahora en nuestro pueblo de Jeberos, no es como antes.",ok
+T013_N058,13,58,"Tekkinchi walek kunparinenna' pilli'iteklatanna', kumarinenna' pilli'iteklatanna', musha'iteklanna', yensunna', willekllina'.","De verdad tomaban las manos de sus compadres, tomaban las manos de sus comadres y se las besaban, se arrodillaban y lloraban.",ok
+T013_N059,13,59,"Ipa'li'na ""¿Pa'apilala, kunpá?"" tan nakutulli, lli'ladeinpu'la'pi'.","Ahora ""¿Estás yendo compadre?"" diciendo pasan, sin mirarle la cara.",ok
+T013_N060,13,60,Nu'su' ñiwiñi napi'.,Así era antes.,ok
