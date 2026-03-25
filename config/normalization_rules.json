@@ -27,6 +27,11 @@
       "enabled": true,
       "description": "Convertir a minúsculas para normalización",
       "order": 5
+    },
+    "remove_double_quotes": {
+      "enabled": true,
+      "description": "Eliminar comillas dobles (rectas y curvas). Son artefactos de formato del PDF, no contenido lingüístico. Las comillas simples/apóstrofos se preservan porque son parte de la ortografía shiwilu.",
+      "order": 6
     }
   },
   

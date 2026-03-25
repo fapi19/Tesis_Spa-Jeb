@@ -1,6 +1,6 @@
 {
   "pipeline": "03_auditar_dataset",
-  "timestamp": "2026-03-25T21:38:33.772335+00:00",
+  "timestamp": "2026-03-25T22:28:04.189270+00:00",
   "input_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\02_normalizado\\dataset_normalizado.csv",
   "total_rows": 3207,
   "rows_with_problems": 1295,
@@ -9,7 +9,7 @@
     "one_to_many_esp": 8,
     "bidirectional_conflict": 2,
     "many_to_one_shiwilu": 406,
-    "length_issue": 171,
+    "length_issue": 170,
     "suspicious_content": 861
   },
   "duplicate_stats": {
@@ -40,12 +40,12 @@
   "vocabulary_stats": {
     "ESP": {
       "total_tokens": 13447,
-      "unique_tokens": 4799,
-      "type_token_ratio": 0.3569,
+      "unique_tokens": 4631,
+      "type_token_ratio": 0.3444,
       "top_20_words": [
         [
           "a",
-          341
+          344
         ],
         [
           "se",
@@ -57,19 +57,19 @@
         ],
         [
           "de",
-          233
+          234
         ],
         [
           "los",
-          200
+          202
         ],
         [
           "la",
-          181
+          183
         ],
         [
           "no",
-          175
+          179
         ],
         [
           "y",
@@ -77,7 +77,7 @@
         ],
         [
           "el",
-          148
+          152
         ],
         [
           "lo",
@@ -89,15 +89,15 @@
         ],
         [
           "en",
-          107
+          108
         ],
         [
           "estoy",
-          104
+          105
         ],
         [
           "ahora",
-          83
+          88
         ],
         [
           "les",
@@ -120,20 +120,20 @@
           72
         ],
         [
-          "las",
-          66
+          "por",
+          70
         ]
       ],
-      "hapax_legomena": 3425
+      "hapax_legomena": 3252
     },
     "SHIWILU": {
-      "total_tokens": 8468,
-      "unique_tokens": 5017,
-      "type_token_ratio": 0.5925,
+      "total_tokens": 8460,
+      "unique_tokens": 4942,
+      "type_token_ratio": 0.5842,
       "top_20_words": [
         [
           "nana",
-          153
+          156
         ],
         [
           "ima",
@@ -145,7 +145,7 @@
         ],
         [
           "asu'",
-          78
+          80
         ],
         [
           "nanek",
@@ -153,7 +153,7 @@
         ],
         [
           "asu’",
-          57
+          61
         ],
         [
           "ñapalek",
@@ -177,15 +177,15 @@
         ],
         [
           "ñi",
-          36
+          38
+        ],
+        [
+          "kua",
+          35
         ],
         [
           "ipa’la",
           35
-        ],
-        [
-          "kua",
-          34
         ],
         [
           "iñer",
@@ -200,19 +200,19 @@
           28
         ],
         [
+          "arakayu",
+          27
+        ],
+        [
           "ñapalli",
           26
         ],
         [
           "ñapala?",
           26
-        ],
-        [
-          "arakayu",
-          25
         ]
       ],
-      "hapax_legomena": 4028
+      "hapax_legomena": 3946
     }
   }
 }

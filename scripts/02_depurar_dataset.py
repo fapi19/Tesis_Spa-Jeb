@@ -38,6 +38,7 @@ REMOVED_LOG_FILE = REPORTS_DIR / "rows_removed.csv"
 SUMMARY_FILE = REPORTS_DIR / "summary.json"
 
 MULTI_SPACE_PATTERN = re.compile(r"\s{2,}")
+DOUBLE_QUOTE_PATTERN = re.compile(r'["\u201c\u201d\u00ab\u00bb]')
 
 
 def load_config() -> dict[str, Any]:
@@ -80,12 +81,18 @@ def apply_lowercase(text: str) -> str:
     return text.lower()
 
 
+def apply_remove_double_quotes(text: str) -> str:
+    """Eliminar comillas dobles (rectas, curvas, angulares). Preserva comillas simples/apóstrofos."""
+    return DOUBLE_QUOTE_PATTERN.sub("", text)
+
+
 RULE_FUNCTIONS = {
     "unicode_nfc": apply_unicode_nfc,
     "trim": apply_trim,
     "collapse_spaces": apply_collapse_spaces,
     "normalize_comma_space": apply_normalize_comma_space,
     "lowercase": apply_lowercase,
+    "remove_double_quotes": apply_remove_double_quotes,
 }
 
 
