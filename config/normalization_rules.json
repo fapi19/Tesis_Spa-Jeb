@@ -1,0 +1,72 @@
+{
+  "_description": "Reglas de normalización para corpus shiwilu-castellano. Cada regla tiene un flag 'enabled' para activar/desactivar.",
+  "_version": "1.0.0",
+  
+  "global_rules": {
+    "unicode_nfc": {
+      "enabled": true,
+      "description": "Normalización Unicode NFC para consistencia de caracteres compuestos",
+      "order": 1
+    },
+    "trim": {
+      "enabled": true,
+      "description": "Eliminar espacios al inicio y final del texto",
+      "order": 2
+    },
+    "collapse_spaces": {
+      "enabled": true,
+      "description": "Colapsar múltiples espacios consecutivos en uno solo",
+      "order": 3
+    },
+    "normalize_comma_space": {
+      "enabled": true,
+      "description": "Normalizar ' , ' a ', ' para consistencia",
+      "order": 4
+    },
+    "lowercase": {
+      "enabled": true,
+      "description": "Convertir a minúsculas para normalización",
+      "order": 5
+    }
+  },
+  
+  "language_specific": {
+    "ESP": {
+      "remove_parentheses_content": {
+        "enabled": false,
+        "description": "Eliminar contenido entre paréntesis (glosas explicativas). DESACTIVADO por defecto para preservar información.",
+        "pattern": "\\s*\\(.*?\\)\\s*"
+      },
+      "remove_punctuation": {
+        "enabled": false,
+        "description": "Eliminar signos de puntuación. DESACTIVADO por defecto para preservar estructura.",
+        "pattern": "[¡!¿?.,:;\"«»\\-—…]"
+      }
+    },
+    "SHIWILU": {
+      "normalize_apostrophe": {
+        "enabled": false,
+        "description": "Normalizar variantes de apóstrofo a forma canónica. Placeholder para futuras reglas documentadas.",
+        "replacements": {}
+      },
+      "orthographic_variants": {
+        "enabled": false,
+        "description": "Placeholder para normalización de variantes ortográficas del shiwilu documentadas por lingüistas.",
+        "replacements": {}
+      },
+      "remove_punctuation": {
+        "enabled": false,
+        "description": "Eliminar signos de puntuación. DESACTIVADO por defecto para preservar estructura.",
+        "pattern": "[¡!¿?.,:;\"«»\\-—…]"
+      }
+    }
+  },
+  
+  "duplicate_handling": {
+    "remove_exact_duplicates": {
+      "enabled": false,
+      "description": "Eliminar duplicados exactos (mismo ESP_normalizado + SHIWILU_normalizado). DESACTIVADO: la auditoría los marca pero no los elimina automáticamente.",
+      "keep": "first"
+    }
+  }
+}

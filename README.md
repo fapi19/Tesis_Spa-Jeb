@@ -15,20 +15,31 @@ generación de embeddings bilingües y entrenamiento de modelos neuronales.
 
 ```
 Desarrollo/
+├── config/
+│   └── normalization_rules.json    # Reglas de normalización configurables
 ├── data/
-│   ├── raw/                 # Datos originales sin modificar
-│   │   ├── flashcards2.csv
-│   │   └── dataset_esp_shiwilu.csv
-│   └── processed/           # Datos limpios (salida de los pipelines)
-│       └── dataset_limpio.csv
-├── scripts/                 # Pipelines de procesamiento
-│   ├── 01_filtrar_dataset.py
-│   └── 02_depurar_dataset.py
-├── models/                  # Modelos entrenados (siguiente fase)
-├── notebooks/               # Exploración interactiva (siguiente fase)
-├── reports/                 # Gráficas generadas por los pipelines
-├── pyproject.toml           # Dependencias del proyecto (Poetry)
-├── poetry.lock              # Versiones exactas de todas las dependencias
+│   ├── raw/                        # Datos originales sin modificar
+│   │   └── flashcards2.csv
+│   ├── intermediate/               # Datos en proceso (entre etapas)
+│   │   ├── dataset_filtrado.csv
+│   │   └── dataset_auditado.csv
+│   └── processed/                  # Datos finales listos para modelos
+│       └── dataset_pre_embeddings.csv
+├── scripts/
+│   ├── 01_filtrar_dataset.py       # Etapa 1: Filtrado inicial
+│   ├── 02_depurar_dataset.py       # Etapa 2: Normalización no destructiva
+│   └── 03_auditar_dataset.py       # Etapa 3: Auditoría y exportación final
+├── models/                         # Modelos entrenados (siguiente fase)
+├── notebooks/                      # Exploración interactiva (siguiente fase)
+├── reports/                        # Reportes y bitácoras de preprocesamiento
+│   ├── rows_removed_01_filtrado.csv
+│   ├── normalization_log.csv
+│   ├── rows_removed_02_depuracion.csv
+│   ├── preprocessing_summary.json
+│   ├── audit_problem_rows.csv
+│   └── audit_summary.json
+├── pyproject.toml
+├── poetry.lock
 ├── .gitignore
 └── README.md
 ```
@@ -90,7 +101,7 @@ Hay dos formas de hacerlo:
 Agrega `poetry run` antes de cada comando. No necesitas activar nada.
 
 ```cmd
-poetry run python scripts/02_depurar_dataset.py
+poetry run python scripts/01_filtrar_dataset.py
 ```
 
 ### Opción B: Activar el entorno una vez y ejecutar sin prefijo
@@ -103,7 +114,7 @@ Verás que la terminal muestra `(.venv)` al inicio de la línea. Desde ese
 momento puedes ejecutar comandos directamente sin el prefijo `poetry run`:
 
 ```cmd
-python scripts/02_depurar_dataset.py
+python scripts/01_filtrar_dataset.py
 ```
 
 Para desactivar el entorno cuando termines:
@@ -114,64 +125,169 @@ deactivate
 
 ---
 
-## Ejecución de pipelines
+## Pipeline de preprocesamiento
 
-### Pipeline 01: Filtrar dataset
+El pipeline tiene 3 etapas secuenciales. Cada etapa genera salidas trazables
+y no destruye información de las etapas anteriores.
 
-Extrae del CSV original solo las filas que tienen valores válidos en ambas
-columnas (ESP y SHIWILU), descartando filas vacías o sin traducción.
+### Orden de ejecución
 
 ```cmd
 poetry run python scripts/01_filtrar_dataset.py
-```
-
-**Entrada:**
-
-- `data/raw/flashcards2.csv`
-
-**Salida:**
-
-- `data/raw/dataset_esp_shiwilu.csv`
-
-### Pipeline 02: Depurar dataset
-
-Ejecuta un pipeline de 7 pasos de limpieza sobre el dataset filtrado y genera
-un reporte en consola junto con 4 gráficas de análisis.
-
-```cmd
 poetry run python scripts/02_depurar_dataset.py
+poetry run python scripts/03_auditar_dataset.py
 ```
-
-**Entrada:**
-
-- `data/raw/dataset_esp_shiwilu.csv`
-
-**Salida:**
-
-- `data/processed/dataset_limpio.csv`
-- `reports/distribucion_longitudes.png`
-- `reports/top_palabras.png`
-- `reports/comparacion_antes_despues.png`
-- `reports/longitud_correlacion.png`
 
 ---
 
-## Pipeline de depuración: detalle de los 7 pasos
+## Etapa 01: Filtrado inicial
 
-| Paso | Descripción |
+**Script:** `scripts/01_filtrar_dataset.py`
+
+Filtra el CSV original para quedarse solo con filas que tengan valores válidos
+en ambas columnas (ESP y SHIWILU). Asigna un `pair_id` único a cada par.
+
+**Entrada:**
+- `data/raw/flashcards2.csv`
+
+**Salidas:**
+- `data/intermediate/dataset_filtrado.csv` — Dataset con columnas `pair_id`, `ESP`, `SHIWILU`
+- `reports/rows_removed_01_filtrado.csv` — Log de filas removidas con motivo
+
+**Criterios de exclusión:**
+- Filas con `ESP` o `SHIWILU` vacío, nulo, o placeholder `"--"`
+
+---
+
+## Etapa 02: Normalización no destructiva
+
+**Script:** `scripts/02_depurar_dataset.py`
+
+Aplica normalización configurable sin destruir el texto original. Mantiene
+columnas separadas para texto original y normalizado.
+
+**Entrada:**
+- `data/intermediate/dataset_filtrado.csv`
+- `config/normalization_rules.json`
+
+**Salidas:**
+- `data/intermediate/dataset_auditado.csv` — Dataset con columnas:
+  - `pair_id`
+  - `ESP_original`, `SHIWILU_original`
+  - `ESP_normalizado`, `SHIWILU_normalizado`
+- `reports/normalization_log.csv` — Log granular de cada transformación aplicada
+- `reports/rows_removed_02_depuracion.csv` — Log de filas removidas (vacío por defecto)
+- `reports/preprocessing_summary.json` — Metadatos y estadísticas de la corrida
+
+**Reglas de normalización (configurables en JSON):**
+
+| Regla | Descripción | Estado por defecto |
+|-------|-------------|--------------------|
+| `unicode_nfc` | Normalización Unicode NFC | Activa |
+| `trim` | Eliminar espacios al inicio/final | Activa |
+| `collapse_spaces` | Colapsar espacios múltiples | Activa |
+| `normalize_comma_space` | Normalizar ` , ` a `, ` | Activa |
+| `lowercase` | Convertir a minúsculas | Activa |
+
+Las reglas destructivas (eliminar puntuación, paréntesis) están **desactivadas**
+por defecto para preservar información en esta fase de tesis.
+
+---
+
+## Etapa 03: Auditoría y exportación final
+
+**Script:** `scripts/03_auditar_dataset.py`
+
+Detecta problemas estructurales del corpus y genera el dataset final para
+embeddings. Las filas problemáticas se marcan pero NO se eliminan automáticamente.
+
+**Entrada:**
+- `data/intermediate/dataset_auditado.csv`
+
+**Salidas:**
+- `reports/audit_problem_rows.csv` — CSV con filas problemáticas consolidadas
+- `reports/audit_summary.json` — Resumen JSON de auditoría completo
+- `data/processed/dataset_pre_embeddings.csv` — Dataset final con columna `has_audit_flags`
+
+**Problemas detectados:**
+
+| Tipo | Descripción |
 |------|-------------|
-| 1    | Trim y normalización de espacios (trailing, dobles, comas con espacio extra) |
-| 2    | Conversión a minúsculas en ambas columnas |
-| 3    | Eliminación de signos de puntuación (preserva apóstrofos del shiwilu) |
-| 4    | Limpieza de paréntesis explicativos en español |
-| 5    | Normalización Unicode NFC |
-| 6    | Eliminación de duplicados exactos |
-| 7    | Exportación del CSV limpio, reporte en consola y generación de gráficas |
+| `empty_field` | Campos vacíos en originales o normalizados |
+| `exact_duplicate` | Pares duplicados exactos (mismo ESP + SHIWILU normalizado) |
+| `one_to_many_esp` | Mismo ESP con múltiples traducciones SHIWILU |
+| `many_to_one_shiwilu` | Mismo SHIWILU con múltiples traducciones ESP |
+| `length_issue` | Longitudes extremas o desbalance fuerte ESP/SHIWILU |
+| `suspicious_content` | Caracteres sospechosos, paréntesis, glosas, solo números |
+
+**Estadísticas incluidas en el reporte:**
+- Distribución de longitudes (palabras por oración)
+- Vocabulario único por idioma
+- Type-Token Ratio (TTR)
+- Hapax legomena
+
+---
+
+## Archivo de configuración
+
+**Ubicación:** `config/normalization_rules.json`
+
+Permite activar/desactivar reglas de normalización sin modificar código.
+Incluye placeholders para futuras reglas específicas del shiwilu documentadas
+por lingüistas.
+
+Ejemplo de estructura:
+
+```json
+{
+  "global_rules": {
+    "lowercase": {
+      "enabled": true,
+      "description": "Convertir a minúsculas para normalización",
+      "order": 5
+    }
+  },
+  "language_specific": {
+    "SHIWILU": {
+      "orthographic_variants": {
+        "enabled": false,
+        "description": "Placeholder para variantes ortográficas"
+      }
+    }
+  }
+}
+```
+
+---
+
+## Salidas por etapa (resumen)
+
+| Etapa | Archivo | Propósito |
+|-------|---------|-----------|
+| 01 | `data/intermediate/dataset_filtrado.csv` | Pares válidos con pair_id |
+| 01 | `reports/rows_removed_01_filtrado.csv` | Trazabilidad de filas excluidas |
+| 02 | `data/intermediate/dataset_auditado.csv` | Originales + normalizados |
+| 02 | `reports/normalization_log.csv` | Bitácora de transformaciones |
+| 02 | `reports/preprocessing_summary.json` | Metadatos de la corrida |
+| 03 | `reports/audit_problem_rows.csv` | Filas con problemas detectados |
+| 03 | `reports/audit_summary.json` | Estadísticas y vocabulario |
+| 03 | `data/processed/dataset_pre_embeddings.csv` | **Dataset final para embeddings** |
+
+---
+
+## Principios de diseño
+
+1. **Trazabilidad:** Toda eliminación o cambio queda registrado con `pair_id` y motivo
+2. **No destructivo:** Se preservan columnas originales; normalización en columnas separadas
+3. **Configurable:** Reglas en JSON externo, fáciles de auditar y modificar
+4. **Conservador:** Reglas agresivas desactivadas por defecto para no perder información
+5. **Reproducible:** Misma entrada + misma config = misma salida
 
 ---
 
 ## Próximos pasos
 
+- Revisión manual de `audit_problem_rows.csv` para decidir exclusiones
 - Generación de embeddings bilingües (FastText / fine-tuning XLM-RoBERTa)
 - Entrenamiento del modelo NMT
 - Evaluación con métricas BLEU, chrF y evaluación humana

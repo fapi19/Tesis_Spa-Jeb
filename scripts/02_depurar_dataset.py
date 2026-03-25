@@ -1,337 +1,319 @@
 """
 02_depurar_dataset.py
-Pipeline de depuración del dataset español-shiwilu para embeddings.
+Pipeline de normalización no destructiva del corpus español-shiwilu.
 
-7 pasos:
-  1. Trim y normalización de espacios
-  2. Conversión a minúsculas
-  3. Eliminación de signos de puntuación
-  4. Limpieza de paréntesis explicativos
-  5. Normalización Unicode (NFC)
-  6. Eliminación de duplicados exactos
-  7. Reporte, gráficas y exportación
+Mantiene columnas originales y crea versiones normalizadas.
+Registra todas las transformaciones aplicadas en bitácora.
 
-Uso:
-  poetry run python scripts/02_depurar_dataset.py
+Entrada:  data/intermediate/dataset_filtrado.csv
+          config/normalization_rules.json
 
-Entrada:  data/raw/dataset_esp_shiwilu.csv
-Salida:   data/processed/dataset_limpio.csv
-          reports/*.png
+Salida:   data/intermediate/dataset_auditado.csv
+          reports/normalization_log.csv
+          reports/rows_removed_02_depuracion.csv
+          reports/preprocessing_summary.json
 """
 
+import json
 import re
 import unicodedata
-from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
-import matplotlib.pyplot as plt
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-RAW_DIR = PROJECT_ROOT / "data" / "raw"
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
+INTERMEDIATE_DIR = PROJECT_ROOT / "data" / "intermediate"
 REPORTS_DIR = PROJECT_ROOT / "reports"
+CONFIG_DIR = PROJECT_ROOT / "config"
 
-INPUT_FILE = RAW_DIR / "dataset_esp_shiwilu.csv"
-OUTPUT_FILE = PROCESSED_DIR / "dataset_limpio.csv"
+INPUT_FILE = INTERMEDIATE_DIR / "dataset_filtrado.csv"
+OUTPUT_FILE = INTERMEDIATE_DIR / "dataset_auditado.csv"
+CONFIG_FILE = CONFIG_DIR / "normalization_rules.json"
 
-PUNCTUATION_PATTERN = re.compile(r"[¡!¿?.,:;\"«»\-—…]")
-PARENTHESIS_PATTERN = re.compile(r"\s*\(.*?\)\s*")
+NORMALIZATION_LOG_FILE = REPORTS_DIR / "normalization_log.csv"
+REMOVED_LOG_FILE = REPORTS_DIR / "rows_removed_02_depuracion.csv"
+SUMMARY_FILE = REPORTS_DIR / "preprocessing_summary.json"
+
 MULTI_SPACE_PATTERN = re.compile(r"\s{2,}")
 
-plt.rcParams.update({
-    "figure.dpi": 150,
-    "savefig.bbox": "tight",
-    "font.size": 10,
-})
+
+def load_config() -> dict[str, Any]:
+    """Carga configuración de reglas de normalización."""
+    if not CONFIG_FILE.exists():
+        raise FileNotFoundError(f"Archivo de configuración no encontrado: {CONFIG_FILE}")
+    
+    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def load_data() -> pd.DataFrame:
-    df = pd.read_csv(INPUT_FILE)
-    df["ESP"] = df["ESP"].astype(str)
-    df["SHIWILU"] = df["SHIWILU"].astype(str)
+    """Carga dataset filtrado."""
+    df = pd.read_csv(INPUT_FILE, encoding="utf-8-sig")
     return df
 
 
-# ── Paso 1: Trim y espacios ─────────────────────────────────────────────────
-
-def paso_1_trim_espacios(df: pd.DataFrame) -> pd.DataFrame:
-    for col in ["ESP", "SHIWILU"]:
-        df[col] = df[col].str.strip()
-        df[col] = df[col].str.replace(" , ", ", ", regex=False)
-        df[col] = df[col].apply(lambda x: MULTI_SPACE_PATTERN.sub(" ", x))
-    return df
+def apply_unicode_nfc(text: str) -> str:
+    """Normalización Unicode NFC."""
+    return unicodedata.normalize("NFC", text)
 
 
-# ── Paso 2: Minúsculas ──────────────────────────────────────────────────────
-
-def paso_2_lowercase(df: pd.DataFrame) -> pd.DataFrame:
-    for col in ["ESP", "SHIWILU"]:
-        df[col] = df[col].str.lower()
-    return df
+def apply_trim(text: str) -> str:
+    """Eliminar espacios al inicio y final."""
+    return text.strip()
 
 
-# ── Paso 3: Eliminar puntuación ─────────────────────────────────────────────
-
-def paso_3_quitar_puntuacion(df: pd.DataFrame) -> pd.DataFrame:
-    for col in ["ESP", "SHIWILU"]:
-        df[col] = df[col].apply(lambda x: PUNCTUATION_PATTERN.sub("", x))
-        df[col] = df[col].str.strip()
-    return df
+def apply_collapse_spaces(text: str) -> str:
+    """Colapsar múltiples espacios en uno."""
+    return MULTI_SPACE_PATTERN.sub(" ", text)
 
 
-# ── Paso 4: Limpiar paréntesis explicativos ──────────────────────────────────
-
-def paso_4_limpiar_parentesis(df: pd.DataFrame) -> pd.DataFrame:
-    df["ESP"] = df["ESP"].apply(lambda x: PARENTHESIS_PATTERN.sub("", x).strip())
-    return df
+def apply_normalize_comma_space(text: str) -> str:
+    """Normalizar ' , ' a ', '."""
+    return text.replace(" , ", ", ")
 
 
-# ── Paso 5: Normalización Unicode ────────────────────────────────────────────
-
-def paso_5_normalizar_unicode(df: pd.DataFrame) -> pd.DataFrame:
-    for col in ["ESP", "SHIWILU"]:
-        df[col] = df[col].apply(lambda x: unicodedata.normalize("NFC", x))
-    return df
+def apply_lowercase(text: str) -> str:
+    """Convertir a minúsculas."""
+    return text.lower()
 
 
-# ── Paso 6: Eliminar duplicados exactos ──────────────────────────────────────
-
-def paso_6_eliminar_duplicados(df: pd.DataFrame) -> pd.DataFrame:
-    return df.drop_duplicates(subset=["ESP", "SHIWILU"]).reset_index(drop=True)
-
-
-# ── Gráficas ─────────────────────────────────────────────────────────────────
-
-def grafica_distribucion_longitudes(df: pd.DataFrame) -> None:
-    """Histograma de cantidad de palabras por oración en cada idioma."""
-    esp_len = df["ESP"].str.split().str.len()
-    shi_len = df["SHIWILU"].str.split().str.len()
-
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-    axes[0].hist(esp_len, bins=range(1, esp_len.max() + 2), color="#4A90D9",
-                 edgecolor="white", alpha=0.85)
-    axes[0].set_title("Distribución de longitudes — Español")
-    axes[0].set_xlabel("Palabras por oración")
-    axes[0].set_ylabel("Frecuencia")
-
-    axes[1].hist(shi_len, bins=range(1, shi_len.max() + 2), color="#D97B4A",
-                 edgecolor="white", alpha=0.85)
-    axes[1].set_title("Distribución de longitudes — Shiwilu")
-    axes[1].set_xlabel("Palabras por oración")
-    axes[1].set_ylabel("Frecuencia")
-
-    fig.suptitle("Distribución de longitudes (palabras por oración)", fontsize=13,
-                 fontweight="bold", y=1.02)
-    plt.tight_layout()
-    fig.savefig(REPORTS_DIR / "distribucion_longitudes.png")
-    plt.close(fig)
+RULE_FUNCTIONS = {
+    "unicode_nfc": apply_unicode_nfc,
+    "trim": apply_trim,
+    "collapse_spaces": apply_collapse_spaces,
+    "normalize_comma_space": apply_normalize_comma_space,
+    "lowercase": apply_lowercase,
+}
 
 
-def grafica_top_palabras(df: pd.DataFrame, top_n: int = 20) -> None:
-    """Barras horizontales con las palabras más frecuentes por idioma."""
-    fig, axes = plt.subplots(1, 2, figsize=(14, 7))
-
-    for idx, (col, color, titulo) in enumerate([
-        ("ESP", "#4A90D9", "Top 20 palabras — Español"),
-        ("SHIWILU", "#D97B4A", "Top 20 palabras — Shiwilu"),
-    ]):
-        all_words = " ".join(df[col]).split()
-        most_common = Counter(all_words).most_common(top_n)
-        words, counts = zip(*reversed(most_common))
-
-        axes[idx].barh(words, counts, color=color, edgecolor="white")
-        axes[idx].set_title(titulo)
-        axes[idx].set_xlabel("Frecuencia")
-
-    fig.suptitle("Palabras más frecuentes por idioma", fontsize=13,
-                 fontweight="bold", y=1.02)
-    plt.tight_layout()
-    fig.savefig(REPORTS_DIR / "top_palabras.png")
-    plt.close(fig)
+def get_active_global_rules(config: dict) -> list[tuple[str, callable]]:
+    """
+    Obtiene lista ordenada de reglas globales activas.
+    
+    Retorna lista de tuplas (nombre_regla, función).
+    """
+    global_rules = config.get("global_rules", {})
+    active_rules = []
+    
+    for rule_name, rule_config in global_rules.items():
+        if rule_config.get("enabled", False):
+            order = rule_config.get("order", 999)
+            if rule_name in RULE_FUNCTIONS:
+                active_rules.append((order, rule_name, RULE_FUNCTIONS[rule_name]))
+    
+    active_rules.sort(key=lambda x: x[0])
+    return [(name, func) for _, name, func in active_rules]
 
 
-def grafica_antes_despues(conteos: dict[str, int], total_final: int) -> None:
-    """Barras mostrando cuántas filas se afectaron en cada paso."""
-    pasos = [
-        "Entrada",
-        "P1: Espacios",
-        "P3: Puntuación",
-        "P4: Paréntesis",
-        "P5: Unicode",
-        "P6: Duplicados",
-    ]
-    valores = [
-        conteos["entrada"],
-        conteos["paso_1"],
-        conteos["paso_3"],
-        conteos["paso_4"],
-        conteos["paso_5"],
-        conteos["paso_6"],
-    ]
-
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5), gridspec_kw={"width_ratios": [2, 1]})
-
-    colores = ["#4A90D9"] + ["#D97B4A"] * 5
-    axes[0].bar(pasos, valores, color=colores, edgecolor="white")
-    axes[0].set_ylabel("Filas afectadas / eliminadas")
-    axes[0].set_title("Filas afectadas por paso de limpieza")
-    axes[0].tick_params(axis="x", rotation=30)
-
-    axes[1].bar(
-        ["Antes", "Después"],
-        [conteos["entrada"], total_final],
-        color=["#888888", "#2ECC71"],
-        edgecolor="white",
-        width=0.5,
-    )
-    axes[1].set_ylabel("Total de filas")
-    axes[1].set_title("Antes vs Después")
-
-    fig.suptitle("Impacto del pipeline de depuración", fontsize=13,
-                 fontweight="bold", y=1.02)
-    plt.tight_layout()
-    fig.savefig(REPORTS_DIR / "comparacion_antes_despues.png")
-    plt.close(fig)
+def normalize_text(
+    text: str,
+    rules: list[tuple[str, callable]],
+    pair_id: str,
+    column: str,
+    log_records: list[dict]
+) -> str:
+    """
+    Aplica reglas de normalización secuencialmente y registra cambios.
+    
+    Args:
+        text: Texto original
+        rules: Lista de (nombre_regla, función)
+        pair_id: ID del par para trazabilidad
+        column: Nombre de columna (ESP o SHIWILU)
+        log_records: Lista donde agregar registros de cambios
+    
+    Returns:
+        Texto normalizado
+    """
+    current_text = text
+    
+    for rule_name, rule_func in rules:
+        new_text = rule_func(current_text)
+        
+        if new_text != current_text:
+            log_records.append({
+                "pair_id": pair_id,
+                "column": column,
+                "rule_name": rule_name,
+                "before": current_text,
+                "after": new_text
+            })
+        
+        current_text = new_text
+    
+    return current_text
 
 
-def grafica_correlacion_longitudes(df: pd.DataFrame) -> None:
-    """Scatter plot: longitud ESP vs longitud SHIWILU."""
-    esp_len = df["ESP"].str.split().str.len()
-    shi_len = df["SHIWILU"].str.split().str.len()
+def process_dataset(
+    df: pd.DataFrame,
+    config: dict
+) -> tuple[pd.DataFrame, list[dict], list[dict], dict]:
+    """
+    Procesa el dataset aplicando normalización no destructiva.
+    
+    Returns:
+        - DataFrame con columnas originales y normalizadas
+        - Lista de registros de normalización
+        - Lista de filas removidas (vacías por defecto en esta etapa)
+        - Diccionario de estadísticas
+    """
+    active_rules = get_active_global_rules(config)
+    
+    df_out = df.copy()
+    df_out["ESP_original"] = df_out["ESP"].astype(str)
+    df_out["SHIWILU_original"] = df_out["SHIWILU"].astype(str)
+    
+    log_records: list[dict] = []
+    removed_records: list[dict] = []
+    
+    esp_normalized = []
+    shi_normalized = []
+    
+    for idx, row in df_out.iterrows():
+        pair_id = row["pair_id"]
+        
+        esp_norm = normalize_text(
+            row["ESP_original"],
+            active_rules,
+            pair_id,
+            "ESP",
+            log_records
+        )
+        esp_normalized.append(esp_norm)
+        
+        shi_norm = normalize_text(
+            row["SHIWILU_original"],
+            active_rules,
+            pair_id,
+            "SHIWILU",
+            log_records
+        )
+        shi_normalized.append(shi_norm)
+    
+    df_out["ESP_normalizado"] = esp_normalized
+    df_out["SHIWILU_normalizado"] = shi_normalized
+    
+    df_out = df_out[[
+        "pair_id",
+        "ESP_original",
+        "SHIWILU_original",
+        "ESP_normalizado",
+        "SHIWILU_normalizado"
+    ]]
+    
+    stats = {
+        "total_rows": len(df_out),
+        "rules_applied": [r[0] for r in active_rules],
+        "rows_with_changes": len(set(r["pair_id"] for r in log_records)),
+        "total_transformations": len(log_records),
+        "transformations_by_rule": {},
+        "transformations_by_column": {"ESP": 0, "SHIWILU": 0}
+    }
+    
+    for record in log_records:
+        rule = record["rule_name"]
+        col = record["column"]
+        stats["transformations_by_rule"][rule] = stats["transformations_by_rule"].get(rule, 0) + 1
+        stats["transformations_by_column"][col] += 1
+    
+    return df_out, log_records, removed_records, stats
 
-    fig, ax = plt.subplots(figsize=(7, 7))
-    ax.scatter(esp_len, shi_len, alpha=0.3, s=20, color="#4A90D9", edgecolors="none")
 
-    max_val = max(esp_len.max(), shi_len.max()) + 1
-    ax.plot([0, max_val], [0, max_val], "--", color="#999999", linewidth=1, label="x = y")
-
-    ax.set_xlabel("Palabras en Español")
-    ax.set_ylabel("Palabras en Shiwilu")
-    ax.set_title("Correlación de longitudes ESP vs SHIWILU", fontsize=13,
-                 fontweight="bold")
-    ax.legend()
-    plt.tight_layout()
-    fig.savefig(REPORTS_DIR / "longitud_correlacion.png")
-    plt.close(fig)
-
-
-# ── Paso 7: Reporte y exportación ────────────────────────────────────────────
-
-def paso_7_exportar_y_reportar(
-    df_limpio: pd.DataFrame,
-    conteos: dict[str, int],
+def save_outputs(
+    df: pd.DataFrame,
+    log_records: list[dict],
+    removed_records: list[dict],
+    stats: dict,
+    config: dict
 ) -> None:
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    """Guarda todas las salidas del pipeline."""
+    INTERMEDIATE_DIR.mkdir(parents=True, exist_ok=True)
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    
+    df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
+    
+    if log_records:
+        df_log = pd.DataFrame(log_records)
+        df_log.to_csv(NORMALIZATION_LOG_FILE, index=False, encoding="utf-8-sig")
+    else:
+        pd.DataFrame(columns=[
+            "pair_id", "column", "rule_name", "before", "after"
+        ]).to_csv(NORMALIZATION_LOG_FILE, index=False, encoding="utf-8-sig")
+    
+    if removed_records:
+        df_removed = pd.DataFrame(removed_records)
+        df_removed.to_csv(REMOVED_LOG_FILE, index=False, encoding="utf-8-sig")
+    else:
+        pd.DataFrame(columns=[
+            "pair_id", "ESP_original", "SHIWILU_original", "removal_reason"
+        ]).to_csv(REMOVED_LOG_FILE, index=False, encoding="utf-8-sig")
+    
+    summary = {
+        "pipeline": "02_depurar_dataset",
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "input_file": str(INPUT_FILE),
+        "output_file": str(OUTPUT_FILE),
+        "config_file": str(CONFIG_FILE),
+        "statistics": stats,
+        "config_snapshot": {
+            "global_rules_enabled": [
+                name for name, cfg in config.get("global_rules", {}).items()
+                if cfg.get("enabled", False)
+            ],
+            "language_specific_rules_enabled": {
+                lang: [
+                    name for name, cfg in rules.items()
+                    if cfg.get("enabled", False)
+                ]
+                for lang, rules in config.get("language_specific", {}).items()
+            }
+        }
+    }
+    
+    with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
 
-    df_limpio.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
 
-    esp_words = df_limpio["ESP"].str.split().str.len()
-    shi_words = df_limpio["SHIWILU"].str.split().str.len()
-
-    vocab_esp: set[str] = set()
-    vocab_shi: set[str] = set()
-    for text in df_limpio["ESP"]:
-        vocab_esp.update(text.split())
-    for text in df_limpio["SHIWILU"]:
-        vocab_shi.update(text.split())
-
+def print_report(stats: dict) -> None:
+    """Imprime reporte de normalización."""
     print("=" * 60)
-    print("  REPORTE DE DEPURACIÓN — Dataset ESP-Shiwilu")
+    print("  ETAPA 02: NORMALIZACIÓN NO DESTRUCTIVA")
     print("=" * 60)
     print()
-    print(f"  Filas de entrada:           {conteos['entrada']}")
-    print(f"  Filas de salida:            {len(df_limpio)}")
-    print(f"  Filas eliminadas (total):   {conteos['entrada'] - len(df_limpio)}")
+    print(f"  Entrada:                    {INPUT_FILE}")
+    print(f"  Configuración:              {CONFIG_FILE}")
     print()
-    print("  Detalle por paso:")
-    print(f"    Paso 1 — Espacios corregidos:        {conteos['paso_1']}")
-    print(f"    Paso 2 — Convertidas a minúsculas:    (todas)")
-    print(f"    Paso 3 — Puntuación eliminada en:     {conteos['paso_3']} celdas")
-    print(f"    Paso 4 — Paréntesis limpiados:        {conteos['paso_4']}")
-    print(f"    Paso 5 — Unicode normalizado:          {conteos['paso_5']}")
-    print(f"    Paso 6 — Duplicados eliminados:       {conteos['paso_6']}")
+    print(f"  Filas procesadas:           {stats['total_rows']}")
+    print(f"  Filas con cambios:          {stats['rows_with_changes']}")
+    print(f"  Total transformaciones:     {stats['total_transformations']}")
     print()
-    print("  Distribución de longitudes (palabras por oración):")
-    print(f"    ESP     → min: {esp_words.min()}, max: {esp_words.max()}, "
-          f"promedio: {esp_words.mean():.1f}")
-    print(f"    SHIWILU → min: {shi_words.min()}, max: {shi_words.max()}, "
-          f"promedio: {shi_words.mean():.1f}")
+    print("  Reglas aplicadas (en orden):")
+    for rule in stats["rules_applied"]:
+        count = stats["transformations_by_rule"].get(rule, 0)
+        print(f"    - {rule}: {count} cambios")
     print()
-    print(f"  Vocabulario único:")
-    print(f"    ESP:     {len(vocab_esp)} palabras únicas")
-    print(f"    SHIWILU: {len(vocab_shi)} palabras únicas")
+    print("  Transformaciones por columna:")
+    for col, count in stats["transformations_by_column"].items():
+        print(f"    - {col}: {count}")
     print()
-    print("  Muestra del resultado (primeras 10 filas):")
-    print()
-    for _, row in df_limpio.head(10).iterrows():
-        print(f"    {row['ESP']:40s} → {row['SHIWILU']}")
-    print()
-    print("  Archivos generados:")
-    print(f"    CSV:      {OUTPUT_FILE}")
-    print(f"    Gráficas: {REPORTS_DIR}/")
-    print("              - distribucion_longitudes.png")
-    print("              - top_palabras.png")
-    print("              - comparacion_antes_despues.png")
-    print("              - longitud_correlacion.png")
+    print("  Salidas generadas:")
+    print(f"    Dataset:      {OUTPUT_FILE}")
+    print(f"    Log cambios:  {NORMALIZATION_LOG_FILE}")
+    print(f"    Removidos:    {REMOVED_LOG_FILE}")
+    print(f"    Resumen:      {SUMMARY_FILE}")
     print("=" * 60)
 
-    grafica_distribucion_longitudes(df_limpio)
-    grafica_top_palabras(df_limpio)
-    grafica_antes_despues(conteos, len(df_limpio))
-    grafica_correlacion_longitudes(df_limpio)
-
-    print("\n  Gráficas generadas correctamente.")
-
-
-# ── Pipeline principal ───────────────────────────────────────────────────────
 
 def main() -> None:
+    config = load_config()
     df = load_data()
-    conteos: dict[str, int] = {"entrada": len(df)}
-
-    # Paso 1
-    espacios_antes = sum(
-        int(df[col].str.contains(r"\s{2,}|^\s|\s$", regex=True).sum())
-        for col in ["ESP", "SHIWILU"]
-    )
-    df = paso_1_trim_espacios(df)
-    conteos["paso_1"] = espacios_antes
-
-    # Paso 2
-    df = paso_2_lowercase(df)
-
-    # Paso 3
-    puntuacion_antes = sum(
-        int(df[col].str.contains(PUNCTUATION_PATTERN).sum())
-        for col in ["ESP", "SHIWILU"]
-    )
-    df = paso_3_quitar_puntuacion(df)
-    conteos["paso_3"] = puntuacion_antes
-
-    # Paso 4
-    parentesis_antes = int(df["ESP"].str.contains(r"\(", regex=True).sum())
-    df = paso_4_limpiar_parentesis(df)
-    conteos["paso_4"] = parentesis_antes
-
-    # Paso 5
-    unicode_antes = 0
-    for col in ["ESP", "SHIWILU"]:
-        for text in df[col]:
-            if unicodedata.normalize("NFC", text) != text:
-                unicode_antes += 1
-    df = paso_5_normalizar_unicode(df)
-    conteos["paso_5"] = unicode_antes
-
-    # Paso 6
-    filas_antes_dup = len(df)
-    df = paso_6_eliminar_duplicados(df)
-    conteos["paso_6"] = filas_antes_dup - len(df)
-
-    # Paso 7
-    paso_7_exportar_y_reportar(df, conteos)
+    
+    df_out, log_records, removed_records, stats = process_dataset(df, config)
+    
+    save_outputs(df_out, log_records, removed_records, stats, config)
+    print_report(stats)
 
 
 if __name__ == "__main__":

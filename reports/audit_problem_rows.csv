@@ -1,0 +1,458 @@
+﻿pair_id,problem_types,all_details,ESP_original,SHIWILU_original,ESP_normalizado,SHIWILU_normalizado
+P01171,exact_duplicate,Duplicado de P00758 (grupo de 2),Le gustó.,IYATULLI,le gustó.,iyatulli
+P01980,exact_duplicate,Duplicado de P00299 (grupo de 2),No mientas.,YATUMU'TA,no mientas.,yatumu'ta
+P02227,exact_duplicate,Duplicado de P01132 (grupo de 2),Sigue cavando.,IWA'TAPER'I'LA,sigue cavando.,iwa'taper'i'la
+P01041,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Come algo.,KAKER' MA'PINTA',come algo.,kaker' ma'pinta'
+P01352,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Come algo.,MA'SHAPIN'TA KA'KER',come algo.,ma'shapin'ta ka'ker'
+P00037,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Escucha.,LAU'TER,escucha.,lau'ter
+P00390,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Escucha.,LAUK'TER',escucha.,lauk'ter'
+P00041,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Estoy escuchando.,LAU'TAPALEK,estoy escuchando.,lau'tapalek
+P01459,bidirectional_conflict,ESP tiene 2 traducciones SHIWILU diferentes; SHIWILU tiene 2 traducciones ESP,Estoy escuchando.,LAUK'APALEK,estoy escuchando.,lauk'apalek
+P00509,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Mantente quieto.,YALENMEKTA,mantente quieto.,yalenmekta
+P00595,bidirectional_conflict,ESP tiene 2 traducciones SHIWILU diferentes; SHIWILU tiene 2 traducciones ESP,Mantente quieto.,YALENMEK'TA,mantente quieto.,yalenmek'ta
+P00062,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Sal. ,YUNSUER',sal.,yunsuer'
+P00063,one_to_many_esp,ESP tiene 2 traducciones SHIWILU diferentes,Sal. ,DAMULA,sal.,damula
+P02096,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Remontemos cometas.,A'PENU'WA' COMETAS,remontemos cometas.,a'penu'wa' cometas
+P02097,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Volemos cometas.,A'PENU'WA' COMETAS,volemos cometas.,a'penu'wa' cometas
+P00747,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Termine esto.,A'TA'WANTER ASU',termine esto.,a'ta'wanter asu'
+P00748,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Termina esto.,A'TA'WANTER ASU',termina esto.,a'ta'wanter asu'
+P00187,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,He vuelto.,ADENCHA'LEK,he vuelto.,adencha'lek
+P02009,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Volví.,ADENCHA'LEK,volví.,adencha'lek
+P00875,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mándalo dentro.,AKU'KER' KINEKLA,mándalo dentro.,aku'ker' kinekla
+P00876,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mándalo adentro.,AKU'KER' KINEKLA,mándalo adentro.,aku'ker' kinekla
+P01163,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ponlo allí.,AKU'KER' NANEK ,ponlo allí.,aku'ker' nanek
+P01165,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ponlo ahí.,AKU'KER' NANEK ,ponlo ahí.,aku'ker' nanek
+P00549,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Quiero uno!,ALA'SA' LUANTULEK,¡quiero uno!,ala'sa' luantulek
+P00550,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Quiero una!,ALA'SA' LUANTULEK,¡quiero una!,ala'sa' luantulek
+P01441,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo demostraré.,ALLI'ECHEK,lo demostraré.,alli'echek
+P01443,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Le mostraré.,ALLI'ECHEK,le mostraré.,alli'echek
+P00106,suspicious_content|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Enséñamelo. (muestramelo),ALLI'U,enséñamelo. (muestramelo),alli'u
+P00107,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Muestrame.,ALLI'U,muestrame.,alli'u
+P00060,many_to_one_shiwilu,SHIWILU tiene 5 traducciones ESP diferentes,Suéltalo.,APU'KER',suéltalo.,apu'ker'
+P00391,many_to_one_shiwilu,SHIWILU tiene 5 traducciones ESP diferentes,Aflójalo.,APU'KER',aflójalo.,apu'ker'
+P00392,many_to_one_shiwilu,SHIWILU tiene 5 traducciones ESP diferentes,Suéltala.,APU'KER',suéltala.,apu'ker'
+P00393,many_to_one_shiwilu,SHIWILU tiene 5 traducciones ESP diferentes,Aflójala.,APU'KER',aflójala.,apu'ker'
+P00873,many_to_one_shiwilu,SHIWILU tiene 5 traducciones ESP diferentes,Libérale.,APU'KER',libérale.,apu'ker'
+P00698,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Estamos acá.,ASEK ÑAPALLIDEK,estamos acá.,asek ñapallidek
+P00762,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Aquí estamos.,ASEK ÑAPALLIDEK,aquí estamos.,asek ñapallidek
+P00928,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Estamos aquí.,ASEK ÑAPALLIDEK,estamos aquí.,asek ñapallidek
+P00200,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy aquí.,ASEK' ÑAPALEK,estoy aquí.,asek' ñapalek
+P00310,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Acá estoy.,ASEK' ÑAPALEK,acá estoy.,asek' ñapalek
+P00646,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Esto funciona.,ASU' SAKA'TAPALLI,esto funciona.,asu' saka'tapalli
+P00647,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Esto trabaja.,ASU' SAKA'TAPALLI,esto trabaja.,asu' saka'tapalli
+P02117,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Siéntate derecho.,CHEKSU' DU'KER',siéntate derecho.,cheksu' du'ker'
+P02118,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Siéntese recto.,CHEKSU' DU'KER',siéntese recto.,cheksu' du'ker'
+P00724,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Sé específico.,CHEKSU' ÑIKER',sé específico.,cheksu' ñiker'
+P01029,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,No divagues.,CHEKSU' ÑIKER',no divagues.,cheksu' ñiker'
+P00152,suspicious_content|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Adelante. (ingresa),DA'ENCHER',adelante. (ingresa),da'encher'
+P00157,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Entra.,DA'ENCHER',entra.,da'encher'
+P00057,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Entre.,DA'KERKER',entre.,da'kerker'
+P00058,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Pase.,DA'KERKER',pase.,da'kerker'
+P01194,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Se chocaron.,DA'PAÑINA',se chocaron.,da'pañina'
+P01195,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Se estrellaron.,DA'PAÑINA',se estrellaron.,da'pañina'
+P00337,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy ciega.,DAPINANTEK' NUKA'KA,soy ciega.,dapinantek' nuka'ka
+P00338,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy ciego.,DAPINANTEK' NUKA'KA,soy ciego.,dapinantek' nuka'ka
+P01438,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo mataré.,DEI'TECHEK,lo mataré.,dei'techek
+P01439,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Le mataré.,DEI'TECHEK,le mataré.,dei'techek
+P00243,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Siéntate.,DU'KER',siéntate.,du'ker'
+P00753,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tome asiento.,DU'KER',tome asiento.,du'ker'
+P00244,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mes. ,DUKER,mes.,duker
+P00245,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Luna,DUKER,luna,duker
+P00957,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Qué lástima.,EMBU'NI WE'INUIPA',qué lástima.,embu'ni we'inuipa'
+P00958,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Qué pena.,EMBU'NI WE'INUIPA',qué pena.,embu'ni we'inuipa'
+P00477,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,¡Pásale!,ENKA'KER',¡pásale!,enka'ker'
+P01687,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Dáselo.,ENKA'KER',dáselo.,enka'ker'
+P01689,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Pásaselo.,ENKA'KER',pásaselo.,enka'ker'
+P00321,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me dieron.,ENKA'LLINER'KU,me dieron.,enka'lliner'ku
+P00322,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me alcanzaron.,ENKA'LLINER'KU,me alcanzaron.,enka'lliner'ku
+P00871,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ponte esto.,I'SHIKER' ASU',ponte esto.,i'shiker' asu'
+P00872,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Póngase esto.,I'SHIKER' ASU',póngase esto.,i'shiker' asu'
+P01406,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy resfriado.,ILUSU' ÑAPALEK,estoy resfriado.,ilusu' ñapalek
+P01407,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy acatarrado.,ILUSU' ÑAPALEK,estoy acatarrado.,ilusu' ñapalek
+P00562,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy asustado.,IMANANTUSU' ÑAPALEK,estoy asustado.,imanantusu' ñapalek
+P01770,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy asombrada.,IMANANTUSU' ÑAPALEK,estoy asombrada.,imanantusu' ñapalek
+P00977,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Eres libre.,INAPIKEN NUKA'MA,eres libre.,inapiken nuka'ma
+P01639,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estás soltero.,INAPIKEN NUKA'MA,estás soltero.,inapiken nuka'ma
+P00423,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Cuidate!,INLUUKTER',¡cuidate!,inluukter'
+P00424,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Te cuidas!,INLUUKTER',¡te cuidas!,inluukter'
+P00866,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Ahora sigue.,IPA'LA TUPITER',ahora sigue.,ipa'la tupiter'
+P00867,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Ahora continúa.,IPA'LA TUPITER',ahora continúa.,ipa'la tupiter'
+P00868,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Ahora prosigue.,IPA'LA TUPITER',ahora prosigue.,ipa'la tupiter'
+P00309,suspicious_content|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Es rico. (sabor),IYALLI,es rico. (sabor),iyalli
+P00369,suspicious_content|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Es agradable. (sabor),IYALLI,es agradable. (sabor),iyalli
+P00980,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estás enfermo.,KALUWI'PALA,estás enfermo.,kaluwi'pala
+P01930,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estás herida.,KALUWI'PALA,estás herida.,kaluwi'pala
+P00523,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Lo encontré.,KANANEK,lo encontré.,kananek
+P01415,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,La rescaté.,KANANEK,la rescaté.,kananek
+P01416,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Lo rescaté.,KANANEK,lo rescaté.,kananek
+P00078,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ayúdame.,KATU'PA'U,ayúdame.,katu'pa'u
+P01323,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Apóyame.,KATU'PA'U,apóyame.,katu'pa'u
+P00079,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ayúdanos.,KATU'PA'UDEK,ayúdanos.,katu'pa'udek
+P01324,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Apóyanos.,KATU'PA'UDEK,apóyanos.,katu'pa'udek
+P00733,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Acercate.,KAWITER',acercate.,kawiter'
+P01011,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Acércate.,KAWITER',acércate.,kawiter'
+P01287,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tú sobreviviste.,KENMA CHIMINLLINKEKLA NAMPILA,tú sobreviviste.,kenma chiminllinkekla nampila
+P01289,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Usted sobrevivió.,KENMA CHIMINLLINKEKLA NAMPILA,usted sobrevivió.,kenma chiminllinkekla nampila
+P01279,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ustedes prometisteis.,KENMAMA' TUWINAMA' NU'TECHUMA,ustedes prometisteis.,kenmama' tuwinama' nu'techuma
+P01281,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ustedes prometieron.,KENMAMA' TUWINAMA' NU'TECHUMA,ustedes prometieron.,kenmama' tuwinama' nu'techuma
+P00278,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tú primero.,KENMAMENTU,tú primero.,kenmamentu
+P00279,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Usted primero.,KENMAMENTU,usted primero.,kenmamentu
+P01102,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy confuso.,LACHEK'KI'NEK,estoy confuso.,lachek'ki'nek
+P01103,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy confundido.,LACHEK'KI'NEK,estoy confundido.,lachek'ki'nek
+P01851,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Está claro.,LATEK'LA NAÑI,está claro.,latek'la nañi
+P01852,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Es obvio.,LATEK'LA NAÑI,es obvio.,latek'la nañi
+P01390,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te creo.,LATEKLLIEN,te creo.,latekllien
+P01710,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te creí.,LATEKLLIEN,te creí.,latekllien
+P00042,length_issue|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP muy largo (4 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 4.00)",Estoy abriendo mi boca.,LAUK'APALEK,estoy abriendo mi boca.,lauk'apalek
+P00135,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Pregúntale.,LEK'KER',pregúntale.,lek'ker'
+P00136,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Pregúntales.,LEK'KER',pregúntales.,lek'ker'
+P01326,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Pide ayuda.,LEKTER' KATU'PA',pide ayuda.,lekter' katu'pa'
+P01327,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Pida ayuda.,LEKTER' KATU'PA',pida ayuda.,lekter' katu'pa'
+P01633,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo verás.,LLI'ECHU,lo verás.,lli'echu
+P01634,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,La verás.,LLI'ECHU,la verás.,lli'echu
+P00680,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mira esto.,LLI'KER' ASU',mira esto.,lli'ker' asu'
+P01031,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Examine esto.,LLI'KER' ASU',examine esto.,lli'ker' asu'
+P00681,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Miren esto.,LLI'KU' ASU',miren esto.,lli'ku' asu'
+P01032,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Examinen esto.,LLI'KU' ASU',examinen esto.,lli'ku' asu'
+P00181,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo vi.,LLI'LEK,lo vi.,lli'lek
+P00330,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Le vi.,LLI'LEK,le vi.,lli'lek
+P00266,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mírame.,LLI'U,mírame.,lli'u
+P00268,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Obsérvame.,LLI'U,obsérvame.,lli'u
+P00639,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Se quedaron.,LLIA'LLINA',se quedaron.,llia'llina'
+P00640,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Se mantuvieron.,LLIA'LLINA',se mantuvieron.,llia'llina'
+P02198,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Anota esto.,LLINSER'KER' ASU',anota esto.,llinser'ker' asu'
+P02199,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Anote esto.,LLINSER'KER' ASU',anote esto.,llinser'ker' asu'
+P02197,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Anoten eso.,LLINSER'KU' NANA,anoten eso.,llinser'ku' nana
+P02200,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Anoten esto.,LLINSER'KU' NANA,anoten esto.,llinser'ku' nana
+P01248,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estábamos heridos.,LLIPU'PI ÑAPAWIÑIDEK,estábamos heridos.,llipu'pi ñapawiñidek
+P01249,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estábamos lastimados.,LLIPU'PI ÑAPAWIÑIDEK,estábamos lastimados.,llipu'pi ñapawiñidek
+P00343,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy amado.,LUANPI NUKA'KA,soy amado.,luanpi nuka'ka
+P00344,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy amada.,LUANPI NUKA'KA,soy amada.,luanpi nuka'ka
+P00534,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te quiero.,LUANTULLIEN,te quiero.,luantullien
+P00535,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te amo.,LUANTULLIEN,te amo.,luantullien
+P00602,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Charlemos.,LUN'AWA',charlemos.,lun'awa'
+P00608,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Conversemos.,LUN'AWA',conversemos.,lun'awa'
+P01523,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Habla claramente.,LUNKER' LACHEK'AK,habla claramente.,lunker' lachek'ak
+P01524,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Hable claramente.,LUNKER' LACHEK'AK,hable claramente.,lunker' lachek'ak
+P00400,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lee esto.,LUNTUKER' ASU',lee esto.,luntuker' asu'
+P00401,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lea esto.,LUNTUKER' ASU',lea esto.,luntuker' asu'
+P00341,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy borracho.,LUPERSU' ÑAPALEK,estoy borracho.,lupersu' ñapalek
+P00342,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy tomada.,LUPERSU' ÑAPALEK,estoy tomada.,lupersu' ñapalek
+P01240,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Necesitamos ayuda.,LUWANTULLIDEK KATU'PA',necesitamos ayuda.,luwantullidek katu'pa'
+P01884,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Necesitábamos ayuda.,LUWANTULLIDEK KATU'PA',necesitábamos ayuda.,luwantullidek katu'pa'
+P02079,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Solo ignórala.,LUWE'CHINBUER',solo ignórala.,luwe'chinbuer'
+P02080,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ignórala.,LUWE'CHINBUER',ignórala.,luwe'chinbuer'
+P00528,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,La conozco.,LUWER'CHAPALEK,la conozco.,luwer'chapalek
+P00529,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo conozco.,LUWER'CHAPALEK,lo conozco.,luwer'chapalek
+P01911,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me ignorabas.,LUWER'CHI'NUN,me ignorabas.,luwer'chi'nun
+P01912,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me ignoraste.,LUWER'CHI'NUN,me ignoraste.,luwer'chi'nun
+P02004,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Odio pelear.,LUYULEK IDENMAAK,odio pelear.,luyulek idenmaak
+P02005,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Detesto pelear.,LUYULEK IDENMAAK,detesto pelear.,luyulek idenmaak
+P01723,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Odio bailar.,LUYULEK LANSA'AK,odio bailar.,luyulek lansa'ak
+P01724,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Detesto bailar.,LUYULEK LANSA'AK,detesto bailar.,luyulek lansa'ak
+P01402,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Odio volar.,LUYULEK PENNU'AK,odio volar.,luyulek pennu'ak
+P01403,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Detesto volar.,LUYULEK PENNU'AK,detesto volar.,luyulek pennu'ak
+P01404,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Odio perder.,LUYULEK WER'AK,odio perder.,luyulek wer'ak
+P01405,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Detesto perder.,LUYULEK WER'AK,detesto perder.,luyulek wer'ak
+P00426,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Toma esto.,MA'TA ASU',toma esto.,ma'ta asu'
+P00427,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tome esto.,MA'TA ASU',tome esto.,ma'ta asu'
+P01773,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy desempleado.,MAKEK SAKA'TAPI'NEK,estoy desempleado.,makek saka'tapi'nek
+P01775,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy desempleada.,MAKEK SAKA'TAPI'NEK,estoy desempleada.,makek saka'tapi'nek
+P00198,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy lleno.,MER'SU' ÑAPALEK,estoy lleno.,mer'su' ñapalek
+P00199,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy llena.,MER'SU' ÑAPALEK,estoy llena.,mer'su' ñapalek
+P00094,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy afectado.,MUIN'SU' ÑAPALEK,estoy afectado.,muin'su' ñapalek
+P00514,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy aburrida.,MUIN'SU' ÑAPALEK,estoy aburrida.,muin'su' ñapalek
+P00053,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Sean gentiles.,MUKANKAN ÑIKER',sean gentiles.,mukankan ñiker'
+P00054,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Sé agradable.,MUKANKAN ÑIKER',sé agradable.,mukankan ñiker'
+P00098,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Está bien.,MUPALLI,está bien.,mupalli
+P00411,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Está buena.,MUPALLI,está buena.,mupalli
+P01127,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Está perfecto.,MUPALLI,está perfecto.,mupalli
+P00125,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Bienvenidos.,MUWENCHA'KU',bienvenidos.,muwencha'ku'
+P00126,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Bienvenidas.,MUWENCHA'KU',bienvenidas.,muwencha'ku'
+P01562,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estamos arruinados.,NAKUSU' MUIN'SU' ÑAPALLIDEK ,estamos arruinados.,nakusu' muin'su' ñapallidek
+P01563,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estamos condenados.,NAKUSU' MUIN'SU' ÑAPALLIDEK ,estamos condenados.,nakusu' muin'su' ñapallidek
+P01105,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy congelado.,NAKUSU' SANEKWANTULEK,estoy congelado.,nakusu' sanekwantulek
+P01106,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy helado.,NAKUSU' SANEKWANTULEK,estoy helado.,nakusu' sanekwantulek
+P00408,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ella anda.,NANA DEKUNDULLI,ella anda.,nana dekundulli
+P00409,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ella camina.,NANA DEKUNDULLI,ella camina.,nana dekundulli
+P00583,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Eso pasa.,NANA NAKULLI,eso pasa.,nana nakulli
+P00837,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Eso sucedió.,NANA NAKULLI,eso sucedió.,nana nakulli
+P00076,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Él vino.,NANA UK'LLI,él vino.,nana uk'lli
+P00240,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ella vino.,NANA UK'LLI,ella vino.,nana uk'lli
+P00077,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Él renunció.,NANA YUNSU'LLI,él renunció.,nana yunsu'lli
+P01173,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Ella salió.,NANA YUNSU'LLI,ella salió.,nana yunsu'lli
+P01989,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Él salió.,NANA YUNSU'LLI,él salió.,nana yunsu'lli
+P01533,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Es suficiente.,NANASA',es suficiente.,nanasa'
+P02059,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Suficiente.,NANASA',suficiente.,nanasa'
+P00421,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Deténlos.,NANEK LIA'INA',deténlos.,nanek lia'ina'
+P00422,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Párales.,NANEK LIA'INA',párales.,nanek lia'ina'
+P01359,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Espera ahí.,NANEK WATENKER',espera ahí.,nanek watenker'
+P01360,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Espere allí.,NANEK WATENKER',espere allí.,nanek watenker'
+P00121,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Crudo,NANPI,crudo,nanpi
+P00122,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Vivo,NANPI,vivo,nanpi
+P00228,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Es viejo.,NAPI'DA' NUKA'A,es viejo.,napi'da' nuka'a
+P00619,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Es vieja.,NAPI'DA' NUKA'A,es vieja.,napi'da' nuka'a
+P01486,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Es obsoleto.,NAPI'DA' NUKA'A,es obsoleto.,napi'da' nuka'a
+P02223,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Respira normal.,NERIKER' U'CHIMU,respira normal.,neriker' u'chimu
+P02224,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Respira tranquilo.,NERIKER' U'CHIMU,respira tranquilo.,neriker' u'chimu
+P00227,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Es extraño.,NERPI'LA NUKA'A,es extraño.,nerpi'la nuka'a
+P01192,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Es raro.,NERPI'LA NUKA'A,es raro.,nerpi'la nuka'a
+P01804,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Es diferente.,NERPI'LA NUKA'A,es diferente.,nerpi'la nuka'a
+P01275,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Prometiste.,NU'TECHUN TUWINA,prometiste.,nu'techun tuwina
+P01282,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo prometiste.,NU'TECHUN TUWINA,lo prometiste.,nu'techun tuwina
+P00894,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo hicieron.,NU'TULLINA',lo hicieron.,nu'tullina'
+P00895,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo lograron.,NU'TULLINA',lo lograron.,nu'tullina'
+P00061,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Bájate.,NU'WANKER',bájate.,nu'wanker'
+P01013,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Baja.,NU'WANKER',baja.,nu'wanker'
+P01014,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Baje.,NU'WANKER',baje.,nu'wanker'
+P00688,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Debemos irnos.,PA'A'KAWA'SU' ÑAPALLI,debemos irnos.,pa'a'kawa'su' ñapalli
+P01244,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Deberíamos irnos.,PA'A'KAWA'SU' ÑAPALLI,deberíamos irnos.,pa'a'kawa'su' ñapalli
+P00090,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Iré.,PA'ECHEK,iré.,pa'echek
+P00819,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me voy.,PA'ECHEK,me voy.,pa'echek
+P00000,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Ve.,PAKER',ve.,paker'
+P00001,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Vete.,PAKER',vete.,paker'
+P00002,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Vaya.,PAKER',vaya.,paker'
+P00380,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ahora vete.,PAKER' IPA'LA,ahora vete.,paker' ipa'la
+P00381,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ahora lárgate.,PAKER' IPA'LA,ahora lárgate.,paker' ipa'la
+P02044,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te premiaré.,PANUERKEN,te premiaré.,panuerken
+P02045,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te recompensaré.,PANUERKEN,te recompensaré.,panuerken
+P01764,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te llamaré.,PEKLUE'CHEN,te llamaré.,peklue'chen
+P01767,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te invitaré.,PEKLUE'CHEN,te invitaré.,peklue'chen
+P00160,many_to_one_shiwilu,SHIWILU tiene 6 traducciones ESP diferentes,Agárralo.,PILLI'TER',agárralo.,pilli'ter'
+P00286,many_to_one_shiwilu,SHIWILU tiene 6 traducciones ESP diferentes,Captúralo.,PILLI'TER',captúralo.,pilli'ter'
+P00289,many_to_one_shiwilu,SHIWILU tiene 6 traducciones ESP diferentes,Atrápalo.,PILLI'TER',atrápalo.,pilli'ter'
+P00405,many_to_one_shiwilu,SHIWILU tiene 6 traducciones ESP diferentes,¡Cogedlo!,PILLI'TER',¡cogedlo!,pilli'ter'
+P00406,many_to_one_shiwilu,SHIWILU tiene 6 traducciones ESP diferentes,¡Arrestadlo!,PILLI'TER',¡arrestadlo!,pilli'ter'
+P00407,many_to_one_shiwilu,SHIWILU tiene 6 traducciones ESP diferentes,¡Prendedlo!,PILLI'TER',¡prendedlo!,pilli'ter'
+P00073,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Agarra fuertemente.,PILLI'TER' IKERSU',agarra fuertemente.,pilli'ter' ikersu'
+P01377,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Sujétalo fuerte.,PILLI'TER' IKERSU',sujétalo fuerte.,pilli'ter' ikersu'
+P00287,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Captúrenlo.,PILLI'TUKU',captúrenlo.,pilli'tuku'
+P00288,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Atrápenlo.,PILLI'TUKU',atrápenlo.,pilli'tuku'
+P00307,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Agarra esto.,PILLITER' ASU',agarra esto.,pilliter' asu'
+P00311,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Sostén esto.,PILLITER' ASU',sostén esto.,pilliter' asu'
+P01798,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estaba nevando.,PULUNKER'APAWIÑI,estaba nevando.,pulunker'apawiñi
+P01799,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Nevaba.,PULUNKER'APAWIÑI,nevaba.,pulunker'apawiñi
+P01362,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Guarda eso.,SEKDIPERKER' NANA,guarda eso.,sekdiperker' nana
+P01363,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Conserva eso.,SEKDIPERKER' NANA,conserva eso.,sekdiperker' nana
+P01819,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame sentirlo.,TA'ITULA'U LAUK'ECHEK,déjame sentirlo.,ta'itula'u lauk'echek
+P01820,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame oírlo.,TA'ITULA'U LAUK'ECHEK,déjame oírlo.,ta'itula'u lauk'echek
+P00600,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame ver.,TA'ITULA'U LLI'ECHEK,déjame ver.,ta'itula'u lli'echek
+P01496,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame verlo.,TA'ITULA'U LLI'ECHEK,déjame verlo.,ta'itula'u lli'echek
+P01497,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame intentarlo.,TA'ITULA'U TEKLE'RICHEK,déjame intentarlo.,ta'itula'u tekle'richek
+P01498,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame probarlo.,TA'ITULA'U TEKLE'RICHEK,déjame probarlo.,ta'itula'u tekle'richek
+P00384,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjame entrar.,TA'ITULA'U YADA'LEK,déjame entrar.,ta'itula'u yada'lek
+P00385,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjeme entrar.,TA'ITULA'U YADA'LEK,déjeme entrar.,ta'itula'u yada'lek
+P01489,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Déjelo.,TA'ITULER',déjelo.,ta'ituler'
+P01532,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ya basta.,TA'ITULER',ya basta.,ta'ituler'
+P01526,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Habla bajito.,TA'TULA'SHASU' LUNKER',habla bajito.,ta'tula'shasu' lunker'
+P01527,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Habla calladito.,TA'TULA'SHASU' LUNKER',habla calladito.,ta'tula'shasu' lunker'
+P00284,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Cálmate.,TA'TULER',cálmate.,ta'tuler'
+P00285,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Tranquilízate.,TA'TULER',tranquilízate.,ta'tuler'
+P01179,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Cállate.,TA'TULER',cállate.,ta'tuler'
+P00934,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te queremos.,TANDENÑIDEN,te queremos.,tandenñiden
+P00935,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Te amamos.,TANDENÑIDEN,te amamos.,tandenñiden
+P00590,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Hace viento.,TANLUWATAPALLI,hace viento.,tanluwatapalli
+P00845,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Hace fresco.,TANLUWATAPALLI,hace fresco.,tanluwatapalli
+P00532,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me gustó.,TANTENWINEK,me gustó.,tantenwinek
+P00785,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,La amaba.,TANTENWINEK,la amaba.,tantenwinek
+P00531,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me agradas.,TANTEÑEK,me agradas.,tanteñek
+P00533,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo amo.,TANTEÑEK,lo amo.,tanteñek
+P01909,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,"Sí, claro.",TEKINCHI,"sí, claro.",tekinchi
+P01910,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,"Sí, ciertamente.",TEKINCHI,"sí, ciertamente.",tekinchi
+P01120,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Ha empezado.,TENMIANSU'LLI,ha empezado.,tenmiansu'lli
+P01121,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Empezó.,TENMIANSU'LLI,empezó.,tenmiansu'lli
+P01122,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Comenzó.,TENMIANSU'LLI,comenzó.,tenmiansu'lli
+P00907,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom cambió.,TOM A'PAWILLEK'LLI,tom cambió.,tom a'pawillek'lli
+P00908,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom varió.,TOM A'PAWILLEK'LLI,tom varió.,tom a'pawillek'lli
+P01215,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom canceló.,TOM A'TA'WANTULLI,tom canceló.,tom a'ta'wantulli
+P01216,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom terminó.,TOM A'TA'WANTULLI,tom terminó.,tom a'ta'wantulli
+P00656,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom peleó.,TOM IDENMALLI,tom peleó.,tom idenmalli
+P00657,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom luchó.,TOM IDENMALLI,tom luchó.,tom idenmalli
+P01223,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom tartamudea.,TOM MUSU' LUNPI'ÑI,tom tartamudea.,tom musu' lunpi'ñi
+P01224,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom balbucea.,TOM MUSU' LUNPI'ÑI,tom balbucea.,tom musu' lunpi'ñi
+P00116,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom corrió.,TOM TEKA'LLI,tom corrió.,tom teka'lli
+P01220,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom huyó.,TOM TEKA'LLI,tom huyó.,tom teka'lli
+P00652,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom bebe.,TOM UWAPALLI,tom bebe.,tom uwapalli
+P00653,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Tom toma.,TOM UWAPALLI,tom toma.,tom uwapalli
+P00110,suspicious_content|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Páralo. (detener),TU'NEKER',páralo. (detener),tu'neker'
+P00111,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Deténlo.,TU'NEKER',deténlo.,tu'neker'
+P00637,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Engañaron.,TUMU'LLINA',engañaron.,tumu'llina'
+P00969,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Hicieron trampa.,TUMU'LLINA',hicieron trampa.,tumu'llina'
+P01914,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Nos mentiste.,TUMU'TULUNDEK,nos mentiste.,tumu'tulundek
+P02203,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Nos engañaste.,TUMU'TULUNDEK,nos engañaste.,tumu'tulundek
+P01506,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mantengámoslo.,TUPI'WA',mantengámoslo.,tupi'wa'
+P01507,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Prosigamos.,TUPI'WA',prosigamos.,tupi'wa'
+P01153,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,"Continúa, Tom.","TUPITER', TOM","continúa, tom.","tupiter', tom"
+P01154,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,"Prosigue, Tom.","TUPITER', TOM","prosigue, tom.","tupiter', tom"
+P01280,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Prometieron.,TUWIÑINA' NU'TECHUNA,prometieron.,tuwiñina' nu'techuna
+P01284,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo prometieron.,TUWIÑINA' NU'TECHUNA,lo prometieron.,tuwiñina' nu'techuna
+P01795,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Fue ameno.,U'CHIMU ÑIWIÑI,fue ameno.,u'chimu ñiwiñi
+P01796,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Era perfecto.,U'CHIMU ÑIWIÑI,era perfecto.,u'chimu ñiwiñi
+P00376,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Mantente caliente.,UKAPISU' ÑAPER',mantente caliente.,ukapisu' ñaper'
+P00377,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Manténgase caliente.,UKAPISU' ÑAPER',manténgase caliente.,ukapisu' ñaper'
+P00021,suspicious_content|many_to_one_shiwilu,"SHIWILU tiene 2 traducciones ESP diferentes || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Levanta. (un objeto),USANKER',levanta. (un objeto),usanker'
+P00612,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Levántalo.,USANKER',levántalo.,usanker'
+P00801,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me despidieron.,USU'LLINER'KU ,me despidieron.,usu'lliner'ku
+P02033,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Fui despedido.,USU'LLINER'KU,fui despedido.,usu'lliner'ku
+P01113,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy inquieto.,WA'DANPINTEK NUKA'KA,soy inquieto.,wa'danpintek nuka'ka
+P01114,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy intranquilo.,WA'DANPINTEK NUKA'KA,soy intranquilo.,wa'danpintek nuka'ka
+P00921,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Esperame.,WA'TEN'U,esperame.,wa'ten'u
+P01034,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Deme tiempo.,WA'TEN'U,deme tiempo.,wa'ten'u
+P00080,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Espera.,WA'TENKER',espera.,wa'tenker'
+P00248,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Un momento.,WA'TENKER',un momento.,wa'tenker'
+P02247,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Un momentito.,WA'TENKER',un momentito.,wa'tenker'
+P00443,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Espera aquí.,WA'TENTER' ASEK,espera aquí.,wa'tenter' asek
+P00444,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Aguarda aquí.,WA'TENTER' ASEK,aguarda aquí.,wa'tenter' asek
+P00208,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy rica.,WAPU' KULLIKER'WANEK,soy rica.,wapu' kulliker'wanek
+P00209,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy rico.,WAPU' KULLIKER'WANEK,soy rico.,wapu' kulliker'wanek
+P00093,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy gorda.,WEILUNSU' NUKA'KA,soy gorda.,weilunsu' nuka'ka
+P00346,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Soy obesa.,WEILUNSU' NUKA'KA,soy obesa.,weilunsu' nuka'ka
+P00143,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Venga.,WENCHER',venga.,wencher'
+P00291,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ven.,WENCHER',ven.,wencher'
+P00292,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Venid aquí.,WENCHER' ASEK,venid aquí.,wencher' asek
+P01666,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Ven acá.,WENCHER' ASEK,ven acá.,wencher' asek
+P00124,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Perdimos.,WER'LLIDEK,perdimos.,wer'llidek
+P00933,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Nos perdimos.,WER'LLIDEK,nos perdimos.,wer'llidek
+P00085,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Dormí.,WICHI'LEK,dormí.,wichi'lek
+P01399,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me dormí.,WICHI'LEK,me dormí.,wichi'lek
+P01183,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Cuéntame más.,WINTU'U A'PINTA',cuéntame más.,wintu'u a'pinta'
+P01184,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Dime más.,WINTU'U A'PINTA',dime más.,wintu'u a'pinta'
+P01185,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Dígame más.,WINTU'U A'PINTA',dígame más.,wintu'u a'pinta'
+P01186,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Dinos más.,WINTU'UDEK A'PINTA',dinos más.,wintu'udek a'pinta'
+P01187,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Dígannos más.,WINTU'UDEK A'PINTA',dígannos más.,wintu'udek a'pinta'
+P01188,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Cuéntanos más.,WINTU'UDEK A'PINTA',cuéntanos más.,wintu'udek a'pinta'
+P01345,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Hazlo rápidamente.,WIU'SU' NU'TER',hazlo rápidamente.,wiu'su' nu'ter'
+P01346,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Hágalo rápido.,WIU'SU' NU'TER',hágalo rápido.,wiu'su' nu'ter'
+P02027,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Quiero conducir.,YAEKPA'LEK,quiero conducir.,yaekpa'lek
+P02028,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Quiero manejar.,YAEKPA'LEK,quiero manejar.,yaekpa'lek
+P00494,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,No grites.,YALAMAPU'TA,no grites.,yalamapu'ta
+P00743,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,No chilles.,YALAMAPU'TA,no chilles.,yalamapu'ta
+P00596,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Manténgase quieto.,YALENMEK'TA,manténgase quieto.,yalenmek'ta
+P00183,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Reí.,YAMERLEK',reí.,yamerlek'
+P00326,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Me reí.,YAMERLEK',me reí.,yamerlek'
+P00081,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Resista.,YAN'KATEK'TER',resista.,yan'katek'ter'
+P00082,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Resiste.,YAN'KATEK'TER',resiste.,yan'katek'ter'
+P00726,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,Sé tolerante.,YAN'KATEK'TER',sé tolerante.,yan'katek'ter'
+P01058,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Quiero saberlo.,YAÑINCHITULEK,quiero saberlo.,yañinchitulek
+P02029,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Quiero aprender.,YAÑINCHITULEK,quiero aprender.,yañinchitulek
+P00314,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy ocupada.,YEN'NICHI'NEK,estoy ocupada.,yen'nichi'nek
+P00315,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy ocupado.,YEN'NICHI'NEK,estoy ocupado.,yen'nichi'nek
+P00769,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Puedo hacerlo.,YENNITULEK NU'TAK,puedo hacerlo.,yennitulek nu'tak
+P01788,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Puede hacerse.,YENNITULEK NU'TAK,puede hacerse.,yennitulek nu'tak
+P00605,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Renunciemos.,YUNSU'WA',renunciemos.,yunsu'wa'
+P01148,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Salgamos.,YUNSU'WA',salgamos.,yunsu'wa'
+P00335,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy enojado.,YUSU' ÑAPALEK,estoy enojado.,yusu' ñapalek
+P01109,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy indignado.,YUSU' ÑAPALEK,estoy indignado.,yusu' ñapalek
+P01765,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Lo regañaré.,YUTE'CHEK,lo regañaré.,yute'chek
+P01766,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Le reñiré.,YUTE'CHEK,le reñiré.,yute'chek
+P01986,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Dámelas!,¡ENKA'U!,¡dámelas!,¡enka'u!
+P01987,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Dámelos!,¡ENKA'U!,¡dámelos!,¡enka'u!
+P01245,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Lo conseguimos!,¡KANANEKWA'!,¡lo conseguimos!,¡kananekwa'!
+P01246,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Lo logramos!,¡KANANEKWA'!,¡lo logramos!,¡kananekwa'!
+P00008,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Ayuda!,¡KATU'PA'!,¡ayuda!,¡katu'pa'!
+P00010,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Auxilio!,¡KATU'PA'!,¡auxilio!,¡katu'pa'!
+P00463,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Ten cuidado!,¡LI'KER'LA!,¡ten cuidado!,¡li'ker'la!
+P00464,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Sé cuidadoso!,¡LI'KER'LA!,¡sé cuidadoso!,¡li'ker'la!
+P00950,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Qué burro!,¡MA'NEN ÑINCHICHI'NA!,¡qué burro!,¡ma'nen ñinchichi'na!
+P00951,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Qué imbécil!,¡MA'NEN ÑINCHICHI'NA!,¡qué imbécil!,¡ma'nen ñinchichi'na!
+P00065,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Largo!,¡PAKER'!,¡largo!,¡paker'!
+P00067,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Vete ya!,¡PAKER'!,¡vete ya!,¡paker'!
+P00070,many_to_one_shiwilu,SHIWILU tiene 4 traducciones ESP diferentes,¡Hasta luego!,¡PANTE'CHEK!,¡hasta luego!,¡pante'chek!
+P00071,many_to_one_shiwilu,SHIWILU tiene 4 traducciones ESP diferentes,¡Chau!,¡PANTE'CHEK!,¡chau!,¡pante'chek!
+P01167,many_to_one_shiwilu,SHIWILU tiene 4 traducciones ESP diferentes,¡Hasta pronto!,¡PANTE'CHEK!,¡hasta pronto!,¡pante'chek!
+P01168,many_to_one_shiwilu,SHIWILU tiene 4 traducciones ESP diferentes,Hasta entonces.,¡PANTE'CHEK!,hasta entonces.,¡pante'chek!
+P01180,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Felices sueños!,¡U'CHIMUSHA WICHI'KER'!,¡felices sueños!,¡u'chimusha wichi'ker'!
+P01181,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Dulces sueños!,¡U'CHIMUSHA WICHI'KER'!,¡dulces sueños!,¡u'chimusha wichi'ker'!
+P00479,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Ven rápido!,¡WENCHER' WIUKSU'!,¡ven rápido!,¡wencher' wiuksu'!
+P00480,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Vení rápido!,¡WENCHER' WIUKSU'!,¡vení rápido!,¡wencher' wiuksu'!
+P00046,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Gracias!,¡YUSPEINET'ECHUN!,¡gracias!,¡yuspeinet'echun!
+P00859,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¡Muchas gracias!,¡YUSPEINET'ECHUN!,¡muchas gracias!,¡yuspeinet'echun!
+P00715,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Hemos terminado?,¿A'TA'WANTULEKWA'?,¿hemos terminado?,¿a'ta'wantulekwa'?
+P01933,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Terminamos?,¿A'TA'WANTULEKWA'?,¿terminamos?,¿a'ta'wantulekwa'?
+P00575,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Es acá?,¿ASEK A'CHA?,¿es acá?,¿asek a'cha?
+P00577,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Está aquí?,¿ASEK A'CHA?,¿está aquí?,¿asek a'cha?
+P01262,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Quién empieza?,¿DEN TENMIAN'SU'LLI?,¿quién empieza?,¿den tenmian'su'lli?
+P01263,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Quién parte?,¿DEN TENMIAN'SU'LLI?,¿quién parte?,¿den tenmian'su'lli?
+P00129,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Quién corría?,¿DEN'INA' TEKA'LLI?,¿quién corría?,¿den'ina' teka'lli?
+P00130,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Quién corrió?,¿DEN'INA' TEKA'LLI?,¿quién corrió?,¿den'ina' teka'lli?
+P02193,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Quien ayudó?,¿DEN'KATU'PA'TULLI?,¿quien ayudó?,¿den'katu'pa'tulli?
+P02194,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Quién contribuyó?,¿DEN'KATU'PA'TULLI?,¿quién contribuyó?,¿den'katu'pa'tulli?
+P01975,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Tú crees?,¿KENMA LATEKTAPALA?,¿tú crees?,¿kenma latektapala?
+P01976,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Usted cree?,¿KENMA LATEKTAPALA?,¿usted cree?,¿kenma latektapala?
+P01026,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Usted ronca?,¿KENMA TUKULU'PALA?,¿usted ronca?,¿kenma tukulu'pala?
+P01027,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Tú roncas?,¿KENMA TUKULU'PALA?,¿tú roncas?,¿kenma tukulu'pala?
+P00024,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Entendiste?,¿LACHEK'LA?,¿entendiste?,¿lachek'la?
+P01667,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Entendió?,¿LACHEK'LA?,¿entendió?,¿lachek'la?
+P01672,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Me oyes?,¿LAUK'APALUN?,¿me oyes?,¿lauk'apalun?
+P01673,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Me escuchás?,¿LAUK'APALUN?,¿me escuchás?,¿lauk'apalun?
+P01312,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,¿Estás borracho?,¿LUPERSU' ÑAPALA?,¿estás borracho?,¿lupersu' ñapala?
+P01313,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,¿Estás ebrio?,¿LUPERSU' ÑAPALA?,¿estás ebrio?,¿lupersu' ñapala?
+P01314,many_to_one_shiwilu,SHIWILU tiene 3 traducciones ESP diferentes,¿Estás embriagado?,¿LUPERSU' ÑAPALA?,¿estás embriagado?,¿lupersu' ñapala?
+P01678,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Me quieres?,¿LUWANTULUN?,¿me quieres?,¿luwantulun?
+P01679,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Me amas?,¿LUWANTULUN?,¿me amas?,¿luwantulun?
+P01963,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Me querías?,¿LUWANTUWINUN?,¿me querías?,¿luwantuwinun?
+P01964,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Me amabas?,¿LUWANTUWINUN?,¿me amabas?,¿luwantuwinun?
+P01936,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Estás saludable?,¿MUDINU'PALA?,¿estás saludable?,¿mudinu'pala?
+P01937,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Estás sano?,¿MUDINU'PALA?,¿estás sano?,¿mudinu'pala?
+P00992,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Está segura?,¿TEKINCHI'CHA' ÑAPALA?,¿está segura?,¿tekinchi'cha' ñapala?
+P00993,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Está seguro?,¿TEKINCHI'CHA' ÑAPALA?,¿está seguro?,¿tekinchi'cha' ñapala?
+P00578,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Es seguro?,¿TEKINCHI'CHA?,¿es seguro?,¿tekinchi'cha?
+P00579,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Es verdad?,¿TEKINCHI'CHA?,¿es verdad?,¿tekinchi'cha?
+P00044,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿En serio?,¿TEKINCHI?,¿en serio?,¿tekinchi?
+P00045,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿La verdad?,¿TEKINCHI?,¿la verdad?,¿tekinchi?
+P01838,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Empezamos?,¿TENMIANSU'TER?,¿empezamos?,¿tenmiansu'ter?
+P01839,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Comenzamos?,¿TENMIANSU'TER?,¿comenzamos?,¿tenmiansu'ter?
+P01646,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Vendrás?,¿WENCHE'CHUN?,¿vendrás?,¿wenche'chun?
+P01647,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Vienes?,¿WENCHE'CHUN?,¿vienes?,¿wenche'chun?
+P01691,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Has comido?,¿WERANA?,¿has comido?,¿werana?
+P01692,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Comiste?,¿WERANA?,¿comiste?,¿werana?
+P01656,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Podemos proseguir?,¿YENNITATERWA TUPITAK?,¿podemos proseguir?,¿yennitaterwa tupitak?
+P01657,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Podemos continuar?,¿YENNITATERWA TUPITAK?,¿podemos continuar?,¿yennitaterwa tupitak?
+P01651,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Puedo ayudarle?,¿YENNITULEK KATU'PA'A'KIK?,¿puedo ayudarle?,¿yennitulek katu'pa'a'kik?
+P01652,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Puedo ayudarte?,¿YENNITULEK KATU'PA'A'KIK?,¿puedo ayudarte?,¿yennitulek katu'pa'a'kik?
+P00730,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Podemos hablar?,¿YENNITULEKWA' LUN'AK?,¿podemos hablar?,¿yennitulekwa' lun'ak?
+P00731,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Podemos conversar?,¿YENNITULEKWA' LUN'AK?,¿podemos conversar?,¿yennitulekwa' lun'ak?
+P00717,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Estás enfadado?,¿YUSU' ÑAPALA?,¿estás enfadado?,¿yusu' ñapala?
+P01310,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,¿Estás enojada?,¿YUSU' ÑAPALA?,¿estás enojada?,¿yusu' ñapala?
+P01116,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy exhausto.,ÑAPALEK SAKA'TUSU',estoy exhausto.,ñapalek saka'tusu'
+P01117,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estoy reventado.,ÑAPALEK SAKA'TUSU',estoy reventado.,ñapalek saka'tusu'
+P00727,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estate vigilante.,ÑAPER' LU'UK'TAN,estate vigilante.,ñaper' lu'uk'tan
+P00728,many_to_one_shiwilu,SHIWILU tiene 2 traducciones ESP diferentes,Estate atento.,ÑAPER' LU'UK'TAN,estate atento.,ñaper' lu'uk'tan
+P00031,suspicious_content|length_issue,"ESP muy largo (4 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 4.00) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Perdí. (opuesto de ganar),WER'LLIEK,perdí. (opuesto de ganar),wer'lliek
+P00087,length_issue,"ESP muy largo (4 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 4.00)",Me voy a dormir,WICHIN'DEK'CHEK,me voy a dormir,wichin'dek'chek
+P00192,suspicious_content|length_issue,"ESP muy largo (4 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 4.00) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Estoy tranquilo. (estoy bien),U'CHIMUÑAPALEK,estoy tranquilo. (estoy bien),u'chimuñapalek
+P00194,suspicious_content|length_issue,"ESP muy largo (4 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 4.00) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Soy justo. (soy bueno),MUKANKANKU',soy justo. (soy bueno),mukankanku'
+P00195,suspicious_content|length_issue,"ESP muy largo (5 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 5.00) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Soy bueno. (hacer bien algo),U'CHIMUKU,soy bueno. (hacer bien algo),u'chimuku
+P00206,suspicious_content|length_issue,"ESP muy largo (6 palabras, umbral: 3); ESP mucho más largo que SHIWILU (ratio: 6.00) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Soy malo. (hacer mal las cosas),MUI'NEK,soy malo. (hacer mal las cosas),mui'nek
+P00570,suspicious_content|length_issue,"ESP muy largo (5 palabras, umbral: 3) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",¿Es alto? (estatura - masculino),¿SHIPEN A'CHA?,¿es alto? (estatura - masculino),¿shipen a'cha?
+P00571,suspicious_content|length_issue,"ESP muy largo (5 palabras, umbral: 3) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",¿Es alto? (estatura - femenino),¿SHILUN A'CHA?,¿es alto? (estatura - femenino),¿shilun a'cha?
+P00572,suspicious_content|length_issue,"ESP muy largo (4 palabras, umbral: 3) || ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",¿Es alto? (muy arriba),¿MUSENKEK A'CHA?,¿es alto? (muy arriba),¿musenkek a'cha?
+P00664,length_issue,"ESP muy largo (4 palabras, umbral: 3)",Tomás llamó soplando hoja.,CHUMA PEKLU'TULLI PENMEK'TAN,tomás llamó soplando hoja.,chuma peklu'tulli penmek'tan
+P01401,suspicious_content|length_issue,"SHIWILU muy largo (5 palabras, umbral: 3) || SHIWILU contiene paréntesis (posible glosa); SHIWILU contiene caracteres sospechosos: ['/', '(', ')']",Me casé.,SADALEK (hombre) / SUDALEK (mujer),me casé.,sadalek (hombre) / sudalek (mujer)
+P01643,length_issue,"ESP muy largo (5 palabras, umbral: 3)",¿Estoy calificado para el trabajo?,¿MUPALEK SAKA'TUNANKI?,¿estoy calificado para el trabajo?,¿mupalek saka'tunanki?
+P01801,length_issue,"ESP muy largo (4 palabras, umbral: 3)",Es mes de navidad.,ÑIÑUDUKER' NUKA'A,es mes de navidad.,ñiñuduker' nuka'a
+P00016,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']","¡Oh, no! (masculino)",¡SHAW!,"¡oh, no! (masculino)",¡shaw!
+P00017,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']","¡Oh, no! (femenino)",¡ASHA!,"¡oh, no! (femenino)",¡asha!
+P00022,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Levanta. (pararse),YUNSANKER',levanta. (pararse),yunsanker'
+P00032,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Perdí. (extraviar),A'WER'LLIEK,perdí. (extraviar),a'wer'lliek
+P00048,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Pruébalo. (saborear),LATA'KER,pruébalo. (saborear),lata'ker
+P00049,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Pruébalo. (intentar),TEKLE'RIER',pruébalo. (intentar),tekle'rier'
+P00105,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Enséñamelo. (pasar conocimiento),ALEK'U,enséñamelo. (pasar conocimiento),alek'u
+P00109,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Páralo. (poner vertical),A'WANERKER',páralo. (poner vertical),a'wanerker'
+P00113,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Macambo (fruta),MAKER,macambo (fruta),maker
+P00153,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Adelante. (parte superior),EKTER,adelante. (parte superior),ekter
+P00191,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Está calmando. (dolor),LATADA'PILALLI,está calmando. (dolor),latada'pilalli
+P00205,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Soy malo. (maldad),MUKANKAINPU' NUKA'KA,soy malo. (maldad),mukankainpu' nuka'ka
+P00211,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Soy delgado. (masculino),SHAMU'PENSU' NUKA'KA,soy delgado. (masculino),shamu'pensu' nuka'ka
+P00212,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Soy delgada. (femenino),SHAMU'LUNSU' NUKA'KA,soy delgada. (femenino),shamu'lunsu' nuka'ka
+P00218,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Estoy listo. (preparado),INSEK'DIPERPIKU' NUKA'KA,estoy listo. (preparado),insek'diperpiku' nuka'ka
+P00263,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Prueben esto. (saborear),LATA'KU' ASU',prueben esto. (saborear),lata'ku' asu'
+P00264,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Prueba esto. (saborear),LATA'KER' ASU',prueba esto. (saborear),lata'ker' asu'
+P00368,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Es agradable. (persona),MUKANKAN,es agradable. (persona),mukankan
+P00677,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Enciéndelo. (fuego),A'TENDER',enciéndelo. (fuego),a'tender'
+P00734,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Cocíname (sin sopa).,AKUSUITU'U,cocíname (sin sopa).,akusuitu'u
+P00735,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Cocíname (con sopa).,KALUITU'U,cocíname (con sopa).,kaluitu'u
+P00847,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Es inútil. (sujeto),MA'KINPU' NUKA'A,es inútil. (sujeto),ma'kinpu' nuka'a
+P01042,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Toma otro. (beber),UKER' ALI'LA',toma otro. (beber),uker' ali'la'
+P01043,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Toma otro. (sostener),MA'ATASU' ALI'LA',toma otro. (sostener),ma'atasu' ali'la'
+P01126,suspicious_content,"ESP contiene paréntesis (posible glosa); ESP contiene caracteres sospechosos: ['(', ')']",Me toca. (tocar),PATA'LLIU,me toca. (tocar),pata'lliu
