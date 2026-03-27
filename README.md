@@ -40,7 +40,15 @@ Desarrollo/
 │   ├── 01b_unificar_fuentes.py         # Etapa 1b: Unificación de fuentes
 │   ├── 02_depurar_dataset.py           # Etapa 2: Normalización no destructiva
 │   └── 03_auditar_dataset.py           # Etapa 3: Auditoría y exportación final
-├── models/                             # Modelos entrenados (siguiente fase)
+├── src/
+│   └── embeddings/
+│       ├── preprocess.py               # Tokenización del corpus
+│       ├── train_fasttext.py           # Etapa 4: Entrenamiento FastText
+│       └── utils.py                    # Utilidades para embeddings
+├── models/
+│   └── fasttext/                       # Embeddings FastText (Skip-Gram)
+│       ├── fasttext.model              # Modelo completo (gensim)
+│       └── fasttext.vec                # Vectores formato word2vec
 ├── notebooks/                          # Exploración interactiva (siguiente fase)
 ├── reports/                            # Reportes organizados por etapa
 │   ├── 00_pdf/
@@ -295,6 +303,59 @@ embeddings. Las filas problemáticas se marcan pero NO se eliminan automáticame
 
 ---
 
+## Etapa 04: Entrenamiento de embeddings FastText
+
+**Script:** `src/embeddings/train_fasttext.py`
+
+Entrena embeddings FastText (Skip-Gram) desde cero usando el corpus bilingüe.
+Concatena español y shiwilu en un único espacio de vectores, lo cual es ideal
+para lenguas de bajos recursos con morfología rica.
+
+**Entrada:**
+- `data/processed/03_pre_embeddings/dataset_pre_embeddings.csv`
+
+**Salidas:**
+- `models/fasttext/fasttext.model` - Modelo completo (recargable con gensim)
+- `models/fasttext/fasttext.vec` - Vectores en formato word2vec (portable)
+
+**Ejecución:**
+
+```cmd
+poetry run python src/embeddings/train_fasttext.py
+```
+
+**Opciones:**
+
+| Parámetro | Default | Descripción |
+|-----------|---------|-------------|
+| `--data` | `data/processed/03_pre_embeddings/dataset_pre_embeddings.csv` | Ruta al CSV |
+| `--vector-size` | 100 | Dimensión de los vectores |
+| `--window` | 5 | Tamaño de ventana de contexto |
+| `--min-count` | 1 | Frecuencia mínima (1 = incluir todas) |
+| `--epochs` | 5 | Iteraciones de entrenamiento |
+
+**Configuración por defecto (Skip-Gram):**
+- `vector_size=100`: Dimensión adecuada para corpus pequeño
+- `window=5`: Contexto local para capturar relaciones sintácticas
+- `min_count=1`: Incluye todas las palabras (importante para low-resource)
+- `sg=1`: Skip-Gram (mejor para palabras raras que CBOW)
+
+**Uso de los embeddings:**
+
+```python
+from gensim.models import FastText
+
+model = FastText.load("models/fasttext/fasttext.model")
+
+# Obtener vector (funciona para OOV gracias a subpalabras)
+vector = model.wv["palabra"]
+
+# Palabras similares
+similares = model.wv.most_similar("hola", topn=10)
+```
+
+---
+
 ## Salidas por etapa (resumen)
 
 | Etapa | Carpeta | Archivos | Propósito |
@@ -309,6 +370,7 @@ embeddings. Las filas problemáticas se marcan pero NO se eliminan automáticame
 | 02 | `reports/02_normalizacion/` | `normalization_log.csv`, `rows_removed.csv`, `summary.json` | Bitácora y metadatos |
 | 03 | `data/processed/03_pre_embeddings/` | `dataset_pre_embeddings.csv` | **Dataset final para embeddings** |
 | 03 | `reports/03_auditoria/` | `problem_rows.csv`, `summary.json` | Problemas y estadísticas |
+| 04 | `models/fasttext/` | `fasttext.model`, `fasttext.vec` | **Embeddings FastText (Skip-Gram)** |
 
 ---
 
@@ -363,6 +425,7 @@ por lingüistas.
 ## Próximos pasos
 
 - Revisión manual de `reports/03_auditoria/problem_rows.csv` para decidir exclusiones
-- Generación de embeddings bilingües (FastText / fine-tuning XLM-RoBERTa)
+- Comparación de embeddings: FastText vs Word2Vec
+- Embeddings contextuales: fine-tuning XLM-RoBERTa
 - Entrenamiento del modelo NMT
 - Evaluación con métricas BLEU, chrF y evaluación humana
