@@ -1,0 +1,15 @@
+{
+  "pipeline": "train_sentence_transformers",
+  "timestamp": "2026-03-27T06:50:14.607922+00:00",
+  "model": "intfloat/multilingual-e5-small",
+  "total_pairs": 3207,
+  "embedding_dim": 384,
+  "similarity_stats": {
+    "mean": 0.8567437933619089,
+    "std": 0.020863725698534636,
+    "min": 0.7747357487678528,
+    "max": 0.939825713634491,
+    "median": 0.8571159839630127
+  },
+  "elapsed_seconds": 16.899168
+}

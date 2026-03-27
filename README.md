@@ -44,11 +44,16 @@ Desarrollo/
 │   └── embeddings/
 │       ├── preprocess.py               # Tokenización del corpus
 │       ├── train_fasttext.py           # Etapa 4: Entrenamiento FastText
+│       ├── train_sentence_transformers.py  # Etapa 4b: Sentence Transformers
+│       ├── compare_embeddings.py       # Etapa 5: Comparación de embeddings
 │       └── utils.py                    # Utilidades para embeddings
 ├── models/
-│   └── fasttext/                       # Embeddings FastText (Skip-Gram)
-│       ├── fasttext.model              # Modelo completo (gensim)
-│       └── fasttext.vec                # Vectores formato word2vec
+│   ├── fasttext/                       # Embeddings FastText (Skip-Gram)
+│   │   ├── fasttext.model              # Modelo completo (gensim)
+│   │   └── fasttext.vec                # Vectores formato word2vec
+│   └── sentence_transformers/          # Embeddings Sentence Transformers
+│       ├── embeddings_esp.npy          # Embeddings oraciones español
+│       └── embeddings_shi.npy          # Embeddings oraciones shiwilu
 ├── notebooks/                          # Exploración interactiva (siguiente fase)
 ├── reports/                            # Reportes organizados por etapa
 │   ├── 00_pdf/
@@ -62,9 +67,13 @@ Desarrollo/
 │   │   ├── normalization_log.csv
 │   │   ├── rows_removed.csv
 │   │   └── summary.json
-│   └── 03_auditoria/
-│       ├── problem_rows.csv
-│       └── summary.json
+│   ├── 03_auditoria/
+│   │   ├── problem_rows.csv
+│   │   └── summary.json
+│   └── 04_embeddings/
+│       ├── similarity_scores.csv       # Scores de similitud cross-lingual
+│       ├── comparison_report.json      # Comparación FastText vs ST
+│       └── low_similarity_pairs.csv    # Pares candidatos a filtrar
 ├── pyproject.toml
 ├── poetry.lock
 ├── .gitignore
@@ -356,6 +365,65 @@ similares = model.wv.most_similar("hola", topn=10)
 
 ---
 
+## Etapa 04b: Embeddings Sentence Transformers
+
+**Script:** `src/embeddings/train_sentence_transformers.py`
+
+Genera embeddings a nivel de oración usando un modelo multilingüe pre-entrenado.
+Permite medir similitud cross-lingual entre pares español-shiwilu.
+
+**Entrada:**
+- `data/processed/03_pre_embeddings/dataset_pre_embeddings.csv`
+
+**Salidas:**
+- `models/sentence_transformers/embeddings_esp.npy` - Embeddings oraciones español
+- `models/sentence_transformers/embeddings_shi.npy` - Embeddings oraciones shiwilu
+- `reports/04_embeddings/similarity_scores.csv` - Scores de similitud por par
+- `reports/04_embeddings/sentence_transformers_summary.json` - Estadísticas
+
+**Ejecución:**
+
+```cmd
+poetry run python src/embeddings/train_sentence_transformers.py
+```
+
+**Modelo usado:** `intfloat/multilingual-e5-small` (pre-entrenado multilingüe)
+
+**Uso de los scores:**
+- Pares con baja similitud son candidatos a revisar/filtrar
+- Los scores ayudan a identificar problemas en el corpus
+
+---
+
+## Etapa 05: Comparación de Embeddings
+
+**Script:** `src/embeddings/compare_embeddings.py`
+
+Compara FastText vs Sentence Transformers para analizar las diferencias en cómo
+cada método representa el corpus bilingüe.
+
+**Entrada:**
+- `models/fasttext/fasttext.model`
+- `models/sentence_transformers/embeddings_*.npy`
+- `reports/04_embeddings/similarity_scores.csv`
+
+**Salidas:**
+- `reports/04_embeddings/comparison_report.json` - Reporte comparativo
+- `reports/04_embeddings/low_similarity_pairs.csv` - Pares problemáticos
+
+**Ejecución:**
+
+```cmd
+poetry run python src/embeddings/compare_embeddings.py
+```
+
+**Interpretación:**
+- FastText captura similitud **morfológica** (subpalabras, estructura interna)
+- Sentence Transformers captura similitud **semántica** cross-lingual
+- Ambos métodos son complementarios para el pipeline NMT
+
+---
+
 ## Salidas por etapa (resumen)
 
 | Etapa | Carpeta | Archivos | Propósito |
@@ -371,6 +439,9 @@ similares = model.wv.most_similar("hola", topn=10)
 | 03 | `data/processed/03_pre_embeddings/` | `dataset_pre_embeddings.csv` | **Dataset final para embeddings** |
 | 03 | `reports/03_auditoria/` | `problem_rows.csv`, `summary.json` | Problemas y estadísticas |
 | 04 | `models/fasttext/` | `fasttext.model`, `fasttext.vec` | **Embeddings FastText (Skip-Gram)** |
+| 04b | `models/sentence_transformers/` | `embeddings_esp.npy`, `embeddings_shi.npy` | **Embeddings Sentence Transformers** |
+| 04b | `reports/04_embeddings/` | `similarity_scores.csv`, `*_summary.json` | Scores de similitud cross-lingual |
+| 05 | `reports/04_embeddings/` | `comparison_report.json`, `low_similarity_pairs.csv` | Comparación y pares problemáticos |
 
 ---
 

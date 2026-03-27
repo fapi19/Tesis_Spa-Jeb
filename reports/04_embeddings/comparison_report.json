@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-03-27T06:50:25.326281+00:00",
+  "models": {
+    "fasttext": {
+      "type": "word embeddings (morfológico)",
+      "vocab_size": 7480,
+      "trained_on": "corpus propio"
+    },
+    "sentence_transformers": {
+      "type": "sentence embeddings (cross-lingual)",
+      "model": "intfloat/multilingual-e5-small",
+      "embedding_dim": 384,
+      "pretrained": true
+    }
+  },
+  "distributions": {
+    "sentence_transformers": {
+      "mean": 0.8567437933619089,
+      "std": 0.020863725698534636,
+      "min": 0.7747357487678528,
+      "max": 0.939825713634491,
+      "percentiles": {
+        "10": 0.8309569239616394,
+        "25": 0.8436833620071411,
+        "50": 0.8571159839630127,
+        "75": 0.8707334399223328,
+        "90": 0.8825207948684692
+      }
+    }
+  },
+  "sample_analysis": [
+    {
+      "pair_id": "U00000",
+      "esp": "ve.",
+      "shiwilu": "paker'",
+      "sentence_transformer_score": 0.8436681032180786,
+      "fasttext_avg_word_score": 0.24395644664764404,
+      "difference": 0.5997116565704346
+    },
+    {
+      "pair_id": "U00356",
+      "esp": "se quemó.",
+      "shiwilu": "uker'lli",
+      "sentence_transformer_score": 0.8505245447158813,
+      "fasttext_avg_word_score": 0.2775637209415436,
+      "difference": 0.5729608237743378
+    },
+    {
+      "pair_id": "U00712",
+      "esp": "eres mala.",
+      "shiwilu": "mukankaninpu' nuka'ma",
+      "sentence_transformer_score": 0.8515404462814331,
+      "fasttext_avg_word_score": 0.3404432386159897,
+      "difference": 0.5110972076654434
+    },
+    {
+      "pair_id": "U01068",
+      "esp": "no sé.",
+      "shiwilu": "ñinchichi'nek",
+      "sentence_transformer_score": 0.8571188449859619,
+      "fasttext_avg_word_score": 0.5399168431758881,
+      "difference": 0.31720200181007385
+    },
+    {
+      "pair_id": "U01424",
+      "esp": "quiero ganar.",
+      "shiwilu": "yakana'lek",
+      "sentence_transformer_score": 0.8769413232803345,
+      "fasttext_avg_word_score": 0.3113148510456085,
+      "difference": 0.565626472234726
+    },
+    {
+      "pair_id": "U01781",
+      "esp": "¿es médico?",
+      "shiwilu": "¿lulentuteken'a'cha?",
+      "sentence_transformer_score": 0.8432527184486389,
+      "fasttext_avg_word_score": 0.4845624566078186,
+      "difference": 0.3586902618408203
+    },
+    {
+      "pair_id": "U02137",
+      "esp": "estaban equivocados.",
+      "shiwilu": "ñapawiñina' pektunsu'",
+      "sentence_transformer_score": 0.836625337600708,
+      "fasttext_avg_word_score": 0.31494829058647156,
+      "difference": 0.5216770470142365
+    },
+    {
+      "pair_id": "U02493",
+      "esp": "de ahí seguía viviendo en varadero mismo.",
+      "shiwilu": "nanekla nanpipawinek simirkek i’la.",
+      "sentence_transformer_score": 0.8188806772232056,
+      "fasttext_avg_word_score": 0.28692041668627,
+      "difference": 0.5319602605369356
+    },
+    {
+      "pair_id": "U02849",
+      "esp": "dicen que otro viejo se levantó y dijo también ¡no",
+      "shiwilu": "ali’la taserpima tununta’llin pitan ¡ma’sha aner y",
+      "sentence_transformer_score": 0.8706196546554565,
+      "fasttext_avg_word_score": 0.31511567367447746,
+      "difference": 0.5555039809809791
+    },
+    {
+      "pair_id": "U03206",
+      "esp": "así era antes.",
+      "shiwilu": "nu'su' ñiwiñi napi'.",
+      "sentence_transformer_score": 0.8437207937240601,
+      "fasttext_avg_word_score": 0.34344514542155796,
+      "difference": 0.5002756483025022
+    }
+  ],
+  "problematic_pairs_count": 0,
+  "problematic_pairs_threshold": 0.3
+}
