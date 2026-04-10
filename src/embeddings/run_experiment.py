@@ -2,15 +2,16 @@
 Orquestador de experimentos de embeddings bilingüe español-shiwilu.
 
 Uso:
-    python -m src.embeddings.run_experiment E0          # solo E0
-    python -m src.embeddings.run_experiment E0 E1       # E0 y E1
-    python -m src.embeddings.run_experiment --all        # los cuatro
+    python -m src.embeddings.run_experiment E0           # solo E0
+    python -m src.embeddings.run_experiment E0 E1        # E0 y E1
+    python -m src.embeddings.run_experiment --all        # todos los experimentos
 
 Experimentos:
-    E0  Unigram baseline          (unigram, corpus normal, alignment)
-    E1  BPE baseline              (bpe, corpus normal, alignment)
-    E2  Suffix-aware              (unigram, corpus suffix-aware, alignment)
-    E3  Suffix-aware+contrastivo  (unigram, corpus suffix-aware, alignment+contrastive)
+    E0  Unigram + contrastive
+    E1  BPE + contrastive
+    E2  Suffix-aware + contrastive
+    E3  Suffix-aware + contrastive + alignment
+    E4  Suffix-aware + focal contrastive + alignment
 """
 from __future__ import annotations
 
@@ -29,15 +30,22 @@ class ExperimentConfig:
     description: str
     tokenizer_type: str          # "unigram" | "bpe"
     suffix_aware: bool           # use suffix-aware corpus
-    use_contrastive: bool        # add contrastive loss
+    use_focal: bool              # use focal InfoNCE instead of standard InfoNCE
+    use_alignment: bool          # add bilingual alignment loss
     vocab_size: int = 4000
-    epochs: int = 20
+    epochs: int = 10
     batch_size: int = 32
     lr: float = 3e-4
-    d_model: int = 256
+    weight_decay: float = 1e-4
+    d_model: int = 192
     nhead: int = 4
-    num_layers: int = 4
-    ff_dim: int = 1024
+    num_layers: int = 2
+    ff_dim: int = 768
+    dropout: float = 0.2
+    contrastive_weight: float = 1.0
+    alignment_weight: float = 0.3
+    temperature: float = 0.05
+    gamma: float = 2.0
 
     @property
     def exp_dir(self) -> Path:
@@ -76,32 +84,50 @@ class ExperimentConfig:
 
 EXPERIMENTS: dict[str, ExperimentConfig] = {
     "E0": ExperimentConfig(
-        name="E0_unigram_baseline",
-        description="Unigram baseline — alineación bilingüe básica",
+        name="E0_unigram_contrastive",
+        description="Unigram + contrastive — baseline subword con InfoNCE",
         tokenizer_type="unigram",
         suffix_aware=False,
-        use_contrastive=False,
+        use_focal=False,
+        use_alignment=False,
     ),
     "E1": ExperimentConfig(
-        name="E1_bpe_baseline",
-        description="BPE baseline — comparar segmentación subword",
+        name="E1_bpe_contrastive",
+        description="BPE + contrastive — comparar unigram vs BPE",
         tokenizer_type="bpe",
         suffix_aware=False,
-        use_contrastive=False,
+        use_focal=False,
+        use_alignment=False,
     ),
     "E2": ExperimentConfig(
-        name="E2_suffix_aware",
-        description="Suffix-aware — captura morfología sufijante del shiwilu",
+        name="E2_suffix_contrastive",
+        description="Suffix-aware + contrastive — señal morfológica del shiwilu",
         tokenizer_type="unigram",
         suffix_aware=True,
-        use_contrastive=False,
+        use_focal=False,
+        use_alignment=False,
     ),
     "E3": ExperimentConfig(
-        name="E3_suffix_contrastive",
-        description="Suffix-aware + contrastivo — señal morfológica + semántica",
+        name="E3_suffix_contrastive_alignment",
+        description="Suffix-aware + contrastive + alignment — morfología + alineación bilingüe",
         tokenizer_type="unigram",
         suffix_aware=True,
-        use_contrastive=True,
+        use_focal=False,
+        use_alignment=True,
+        contrastive_weight=1.0,
+        alignment_weight=0.3,
+    ),
+    "E4": ExperimentConfig(
+        name="E4_suffix_focal_alignment",
+        description="Suffix-aware + focal contrastive + alignment — variante más fuerte",
+        tokenizer_type="unigram",
+        suffix_aware=True,
+        use_focal=True,
+        use_alignment=True,
+        batch_size=32,  #Added for testing purposes
+        contrastive_weight=1.0,
+        alignment_weight=0.3,
+        gamma=2.0,
     ),
 }
 
@@ -158,7 +184,10 @@ def run_experiment(cfg: ExperimentConfig) -> None:
         )
 
     # --- modelo ---
-    print(f"  Entrenando modelo (epochs={cfg.epochs}, contrastive={cfg.use_contrastive})...")
+    print(
+        f"  Entrenando modelo (epochs={cfg.epochs}, "
+        f"focal={cfg.use_focal}, alignment={cfg.use_alignment})..."
+    )
     t0 = time.time()
     train(
         train_path=cfg.train_jsonl,
@@ -168,11 +197,18 @@ def run_experiment(cfg: ExperimentConfig) -> None:
         epochs=cfg.epochs,
         batch_size=cfg.batch_size,
         lr=cfg.lr,
+        weight_decay=cfg.weight_decay,
         d_model=cfg.d_model,
         nhead=cfg.nhead,
         num_layers=cfg.num_layers,
         ff_dim=cfg.ff_dim,
-        use_contrastive=cfg.use_contrastive,
+        dropout=cfg.dropout,
+        use_focal=cfg.use_focal,
+        use_alignment=cfg.use_alignment,
+        contrastive_weight=cfg.contrastive_weight,
+        alignment_weight=cfg.alignment_weight,
+        temperature=cfg.temperature,
+        gamma=cfg.gamma,
     )
     elapsed = time.time() - t0
     print(f"  Finalizado en {elapsed / 60:.1f} min → {cfg.checkpoint_path}")
@@ -189,8 +225,8 @@ def main() -> None:
     parser.add_argument(
         "experiments",
         nargs="*",
-        choices=[*EXPERIMENTS.keys(), []],
-        help="Experimentos a correr (E0, E1, E2, E3)",
+        choices=list(EXPERIMENTS.keys()),
+        help="Experimentos a correr (E0, E1, E2, E3, E4)",
     )
     parser.add_argument("--all", action="store_true", help="Correr todos los experimentos")
     parser.add_argument("--skip-data-prep", action="store_true", help="Saltar preparación de datos")

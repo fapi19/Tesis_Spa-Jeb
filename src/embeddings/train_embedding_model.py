@@ -8,30 +8,44 @@ import torch
 from torch.utils.data import DataLoader
 
 from .dataset import ParallelEmbeddingDataset, collate_batch
-from .losses import alignment_loss, bidirectional_contrastive_loss
+from .losses import total_embedding_loss
 from .model import EmbeddingEncoder
 
 
-def _evaluate(model, loader, device, use_contrastive: bool) -> float:
+@torch.no_grad()
+def _evaluate(
+    model: EmbeddingEncoder,
+    loader: DataLoader,
+    device: torch.device,
+    *,
+    use_focal: bool,
+    use_alignment: bool,
+    contrastive_weight: float,
+    alignment_weight: float,
+    temperature: float,
+    gamma: float,
+) -> float:
     model.eval()
     total = 0.0
 
-    with torch.no_grad():
-        for batch in loader:
-            shw = batch["shw_ids"].to(device)
-            es = batch["es_ids"].to(device)
+    for batch in loader:
+        shw = batch["shw_ids"].to(device)
+        es = batch["es_ids"].to(device)
 
-            z_shw = model.forward_sentence(shw)
-            z_es = model.forward_sentence(es)
+        z_shw = model.forward_sentence(shw)
+        z_es = model.forward_sentence(es)
 
-            loss = 0.0
-            if use_contrastive:
-                loss += 0.7 * bidirectional_contrastive_loss(z_shw, z_es)
-                loss += 0.3 * alignment_loss(z_shw, z_es)
-            else:
-                loss += alignment_loss(z_shw, z_es)
-
-            total += float(loss.item())
+        loss = total_embedding_loss(
+            z_shw=z_shw,
+            z_es=z_es,
+            use_focal=use_focal,
+            use_alignment=use_alignment,
+            contrastive_weight=contrastive_weight,
+            alignment_weight=alignment_weight,
+            temperature=temperature,
+            gamma=gamma,
+        )
+        total += float(loss.item())
 
     return total / max(len(loader), 1)
 
@@ -42,15 +56,22 @@ def train(
     sp_model: str | Path,
     save_path: str | Path,
     *,
-    epochs: int = 20,
+    epochs: int = 10,
     batch_size: int = 32,
     max_len: int = 64,
     lr: float = 3e-4,
-    d_model: int = 256,
+    weight_decay: float = 1e-4,
+    d_model: int = 192,
     nhead: int = 4,
-    num_layers: int = 4,
-    ff_dim: int = 1024,
-    use_contrastive: bool = False,
+    num_layers: int = 2,
+    ff_dim: int = 768,
+    dropout: float = 0.2,
+    use_focal: bool = False,
+    use_alignment: bool = False,
+    contrastive_weight: float = 1.0,
+    alignment_weight: float = 0.3,
+    temperature: float = 0.05,
+    gamma: float = 2.0,
 ) -> Path:
     """Run the full training loop and return the path to the best checkpoint."""
     if torch.cuda.is_available():
@@ -89,9 +110,14 @@ def train(
         num_layers=num_layers,
         ff_dim=ff_dim,
         pad_id=pad_id,
+        dropout=dropout,
     ).to(device)
 
-    optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
+    optimizer = torch.optim.AdamW(
+        model.parameters(),
+        lr=lr,
+        weight_decay=weight_decay,
+    )
 
     save_path = Path(save_path)
     save_path.parent.mkdir(parents=True, exist_ok=True)
@@ -109,11 +135,16 @@ def train(
             z_shw = model.forward_sentence(shw)
             z_es = model.forward_sentence(es)
 
-            if use_contrastive:
-                loss = 0.7 * bidirectional_contrastive_loss(z_shw, z_es)
-                loss += 0.3 * alignment_loss(z_shw, z_es)
-            else:
-                loss = alignment_loss(z_shw, z_es)
+            loss = total_embedding_loss(
+                z_shw=z_shw,
+                z_es=z_es,
+                use_focal=use_focal,
+                use_alignment=use_alignment,
+                contrastive_weight=contrastive_weight,
+                alignment_weight=alignment_weight,
+                temperature=temperature,
+                gamma=gamma,
+            )
 
             optimizer.zero_grad()
             loss.backward()
@@ -123,7 +154,17 @@ def train(
             total_train += float(loss.item())
 
         train_loss = total_train / max(len(train_loader), 1)
-        val_loss = _evaluate(model, val_loader, device, use_contrastive)
+        val_loss = _evaluate(
+            model,
+            val_loader,
+            device,
+            use_focal=use_focal,
+            use_alignment=use_alignment,
+            contrastive_weight=contrastive_weight,
+            alignment_weight=alignment_weight,
+            temperature=temperature,
+            gamma=gamma,
+        )
 
         print(f"Epoch {epoch:02d} | train={train_loss:.4f} | val={val_loss:.4f}")
 
@@ -138,7 +179,14 @@ def train(
                     "nhead": nhead,
                     "num_layers": num_layers,
                     "ff_dim": ff_dim,
-                    "use_contrastive": use_contrastive,
+                    "dropout": dropout,
+                    "weight_decay": weight_decay,
+                    "use_focal": use_focal,
+                    "use_alignment": use_alignment,
+                    "contrastive_weight": contrastive_weight,
+                    "alignment_weight": alignment_weight,
+                    "temperature": temperature,
+                    "gamma": gamma,
                     "best_val_loss": best_val,
                 },
                 save_path,
@@ -155,15 +203,22 @@ def main() -> None:
     parser.add_argument("--val_path", required=True)
     parser.add_argument("--sp_model", required=True)
     parser.add_argument("--save_path", required=True)
-    parser.add_argument("--epochs", type=int, default=20)
+    parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--max_len", type=int, default=64)
     parser.add_argument("--lr", type=float, default=3e-4)
-    parser.add_argument("--d_model", type=int, default=256)
+    parser.add_argument("--weight_decay", type=float, default=1e-4)
+    parser.add_argument("--d_model", type=int, default=192)
     parser.add_argument("--nhead", type=int, default=4)
-    parser.add_argument("--num_layers", type=int, default=4)
-    parser.add_argument("--ff_dim", type=int, default=1024)
-    parser.add_argument("--use_contrastive", action="store_true")
+    parser.add_argument("--num_layers", type=int, default=2)
+    parser.add_argument("--ff_dim", type=int, default=768)
+    parser.add_argument("--dropout", type=float, default=0.2)
+    parser.add_argument("--use_focal", action="store_true")
+    parser.add_argument("--use_alignment", action="store_true")
+    parser.add_argument("--contrastive_weight", type=float, default=1.0)
+    parser.add_argument("--alignment_weight", type=float, default=0.3)
+    parser.add_argument("--temperature", type=float, default=0.05)
+    parser.add_argument("--gamma", type=float, default=2.0)
     args = parser.parse_args()
 
     train(
@@ -175,11 +230,18 @@ def main() -> None:
         batch_size=args.batch_size,
         max_len=args.max_len,
         lr=args.lr,
+        weight_decay=args.weight_decay,
         d_model=args.d_model,
         nhead=args.nhead,
         num_layers=args.num_layers,
         ff_dim=args.ff_dim,
-        use_contrastive=args.use_contrastive,
+        dropout=args.dropout,
+        use_focal=args.use_focal,
+        use_alignment=args.use_alignment,
+        contrastive_weight=args.contrastive_weight,
+        alignment_weight=args.alignment_weight,
+        temperature=args.temperature,
+        gamma=args.gamma,
     )
 
 
