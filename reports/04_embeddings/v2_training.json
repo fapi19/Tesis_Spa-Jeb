@@ -1,0 +1,28 @@
+{
+  "pipeline": "finetune_st_v2",
+  "timestamp": "2026-04-10T06:45:59.572958+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v2",
+  "config": {
+    "base_model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v1",
+    "epochs": 5,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "loss": "TripletLoss",
+    "train_triplets": 1529
+  },
+  "retrieval_metrics": {
+    "recall@1": 0.08854166666666667,
+    "recall@5": 0.328125,
+    "mrr": 0.20442321307682954,
+    "mean_rank": 35.208333333333336,
+    "total_pairs": 192,
+    "rank_distribution": {
+      "rank_1": 17,
+      "rank_2_5": 46,
+      "rank_6_10": 22,
+      "rank_11_50": 51,
+      "rank_51_plus": 56
+    }
+  },
+  "elapsed_seconds": 171.27401
+}

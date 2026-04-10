@@ -1,0 +1,25 @@
+{
+  "pipeline": "mine_hard_negatives",
+  "timestamp": "2026-04-10T06:42:43.384616+00:00",
+  "source_model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v1",
+  "total_triplets": 1529,
+  "positive_similarity": {
+    "mean": 0.6003440395436153,
+    "std": 0.11400100619258602,
+    "min": 0.153919517993927,
+    "max": 0.9465762972831726
+  },
+  "hard_negative_similarity": {
+    "mean": 0.6353641469116847,
+    "std": 0.09646811219982893,
+    "min": 0.3495817184448242,
+    "max": 0.9215456247329712
+  },
+  "margin_stats": {
+    "mean": -0.03502010736806943,
+    "std": 0.08248535719584131,
+    "min": -0.3914180397987366,
+    "pct_positive_margin": 28.38456507521256
+  },
+  "elapsed_seconds": 2.678904
+}

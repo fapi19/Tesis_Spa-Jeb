@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 from gensim.models import FastText
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 FASTTEXT_MODEL_PATH = PROJECT_ROOT / "models" / "fasttext" / "fasttext.model"
 ST_EMBEDDINGS_ESP = PROJECT_ROOT / "models" / "sentence_transformers" / "embeddings_esp.npy"

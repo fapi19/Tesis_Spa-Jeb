@@ -14,7 +14,7 @@ from gensim.models import FastText
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.util import cos_sim
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 FASTTEXT_PATH = PROJECT_ROOT / "models" / "fasttext" / "fasttext.model"
 CORPUS_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 

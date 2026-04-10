@@ -1,0 +1,21 @@
+{
+  "pipeline": "finetune_st_baseline",
+  "timestamp": "2026-04-10T06:38:12.422230+00:00",
+  "model": "intfloat/multilingual-e5-small",
+  "config": {},
+  "retrieval_metrics": {
+    "recall@1": 0.06770833333333333,
+    "recall@5": 0.16145833333333334,
+    "mrr": 0.13260091948576766,
+    "mean_rank": 56.307291666666664,
+    "total_pairs": 192,
+    "rank_distribution": {
+      "rank_1": 13,
+      "rank_2_5": 18,
+      "rank_6_10": 17,
+      "rank_11_50": 55,
+      "rank_51_plus": 89
+    }
+  },
+  "elapsed_seconds": 11.794061
+}

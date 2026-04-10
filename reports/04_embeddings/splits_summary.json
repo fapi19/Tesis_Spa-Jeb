@@ -1,0 +1,34 @@
+{
+  "pipeline": "prepare_splits",
+  "timestamp": "2026-04-10T06:37:29.598530+00:00",
+  "seed": 42,
+  "clean_only": true,
+  "total_original": 3207,
+  "total_used": 1912,
+  "filtered_out": 1295,
+  "splits": {
+    "train": 1529,
+    "valid": 191,
+    "test": 192
+  },
+  "ratios": {
+    "train": "79.97%",
+    "valid": "9.99%",
+    "test": "10.04%"
+  },
+  "sources_distribution": {
+    "train": {
+      "flashcards": 1434,
+      "pdf_textos": 95
+    },
+    "valid": {
+      "flashcards": 177,
+      "pdf_textos": 14
+    },
+    "test": {
+      "flashcards": 186,
+      "pdf_textos": 6
+    }
+  },
+  "elapsed_seconds": 0.018636
+}

@@ -24,7 +24,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.util import cos_sim
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 MODEL_DIR = PROJECT_ROOT / "models" / "sentence_transformers"
 REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"

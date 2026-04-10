@@ -20,7 +20,7 @@ from matplotlib.lines import Line2D
 from sentence_transformers import SentenceTransformer
 from sklearn.manifold import TSNE
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 FASTTEXT_PATH = PROJECT_ROOT / "models" / "fasttext" / "fasttext.model"
 CORPUS_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 OUTPUT_DIR = PROJECT_ROOT / "reports" / "04_embeddings"

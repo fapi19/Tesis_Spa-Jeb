@@ -1,0 +1,21 @@
+{
+  "pipeline": "evaluate_retrieval",
+  "timestamp": "2026-04-10T06:45:59.571848+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v2",
+  "tag": "v2",
+  "metrics": {
+    "recall@1": 0.08854166666666667,
+    "recall@5": 0.328125,
+    "mrr": 0.20442321307682954,
+    "mean_rank": 35.208333333333336,
+    "total_pairs": 192,
+    "rank_distribution": {
+      "rank_1": 17,
+      "rank_2_5": 46,
+      "rank_6_10": 22,
+      "rank_11_50": 51,
+      "rank_51_plus": 56
+    }
+  },
+  "elapsed_seconds": 171.272899
+}

@@ -1,0 +1,41 @@
+﻿pair_id,rank,correct_score,top1_score,esp,shiwilu_correct,shiwilu_top1,category
+U01018,1,0.8651117086410522,0.8651117086410522,¿vino tom?,¿tom wek'lli?,(correcto),best
+U01037,1,0.8893804550170898,0.8893804550170898,"espera, tom.",wa'tenker' tom,(correcto),best
+U03046,1,0.8676766157150269,0.8676766157150269,"toda cosa había ahí, cuando han dicho he escuchado.","dudinpu' ñiwiñi nanek, ta'ser lauktulek.",(correcto),best
+U01606,1,0.8722301125526428,0.8722301125526428,¿ella vendrá?,¿nana wenche'chu?,(correcto),best
+U01583,1,0.8956815600395203,0.8956815600395203,nos vamos.,pa'echidek,(correcto),best
+U00469,1,0.8954914212226868,0.8954914212226868,trae vino.,kencher' vinu',(correcto),best
+U01931,1,0.9043996334075928,0.9043996334075928,has cambiado.,a'pawilek'la,(correcto),best
+U01997,1,0.8757832050323486,0.8757832050323486,¡apúrate niña!,¡wiuker' wila!,(correcto),best
+U00576,1,0.8839543461799622,0.8839543461799622,¿aquí?,¿asek?,(correcto),best
+U00072,1,0.8935696482658386,0.8935696482658386,¡un segundo!,¡ipia'lasha!,(correcto),best
+U02168,1,0.8857777714729309,0.8857777714729309,estudiamos francés.,ñinchitapallidek frances,(correcto),best
+U01447,1,0.8878992199897766,0.8878992199897766,soy islandés.,islandes nuka'ka,(correcto),best
+U00671,1,0.8807288408279419,0.8807288408279419,tom trabajó.,tom saka'tulli,(correcto),best
+U00382,2,0.8954091668128967,0.9019559025764465,¡suéltame!,¡apu'u!,¡si'lentapala!,best
+U02460,2,0.8273338675498962,0.8367449641227722,el canasto caminaba.,nana lantekpi dekkuntulli.,nanekla papina chiminlapillun.,best
+U01320,2,0.8635377287864685,0.8689839839935303,¿estás?,¿ñapala?,¿asek?,best
+U01197,2,0.8976836800575256,0.8995664119720459,me conocían.,luwer'chuwiñiner'ku,wa'latapawinek,best
+U00438,2,0.8948749303817749,0.8971176147460938,tom camina.,tom dekkuntulli,tom saka'tulli,best
+U01381,2,0.8696934580802917,0.8711929321289062,¡qué emocionante!,¡embu'nimushipa'!,¡a'ñapalek!,best
+U01680,2,0.8923177123069763,0.8941401243209839,¿te gusto?,¿iyatulun?,¿asek?,best
+U00555,132,0.8309515118598938,0.8654325604438782,soy gemelo.,insilanpi nuka'ka,nampilek,worst
+U01353,133,0.8199632167816162,0.8531408309936523,todos ganan.,iñer' kana'tullina',weranker' uti'la,worst
+U01151,134,0.8428433537483215,0.8778560161590576,adivina.,teklerier' ninchita'mak,a'yiulliu,worst
+U01483,135,0.8377801179885864,0.8670757412910461,está desierto.,manen ñi'ñi,a'kaluwi'lun,worst
+U01160,142,0.829930305480957,0.8631029725074768,sonrian.,yamerladaku',nampilek,worst
+U01351,143,0.8488593697547913,0.8903834223747253,no engordes.,yaweyta,¡si'lentapala!,worst
+U00966,144,0.8239169120788574,0.8560168147087097,sos grande.,a'lliupiken nuka'ma,tumu'tulun,worst
+U01110,149,0.8497611284255981,0.919901967048645,estoy pintando.,llinserchapalek,wintu'u a'pinta,worst
+U00881,159,0.8545377850532532,0.8938490152359009,háblame.,luntuu,nampilek,worst
+U01040,159,0.8314288854598999,0.8655409216880798,tómate algo.,uker' ma'pinta',tumu'lek,worst
+U01757,164,0.82847660779953,0.8655205965042114,estaba agotado.,ñapawinek saka'tusu',a'yiulliu,worst
+U02222,165,0.8361169695854187,0.8790683746337891,pregúntaselo.,lekker',¿iyatulun?,worst
+U01835,172,0.8424736857414246,0.8800885677337646,nadie escucha.,ñiden lauk'tapi'ñi,pa'echidek,worst
+U01096,172,0.8195314407348633,0.8529788851737976,te demandaré.,winlapichen,tumu'tulliner'ku,worst
+U01727,174,0.8463284969329834,0.8882952928543091,tengo tos.,ilulek,tumu'tulliner'ku,worst
+U01546,174,0.8274120688438416,0.8643762469291687,están limpias.,mupisusa' ñapallina',luwer'chuwiñiner'ku,worst
+U01036,176,0.8396631479263306,0.8794087767601013,buenos días.,muuklli,a'yiulliu,worst
+U01419,181,0.8372910618782043,0.8868104219436646,quiero café.,luwantulek wayusa',iin nuka'kawa,worst
+U00293,181,0.8472074270248413,0.8920913338661194,vuelve pronto.,aden'cher' wiuk'su',pa'echidek,worst
+U00684,191,0.809220016002655,0.8809948563575745,nos divertimos.,sakeklekwa',ñinchidinupalek,worst

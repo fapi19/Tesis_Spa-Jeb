@@ -23,7 +23,7 @@ from gensim.models import FastText
 from preprocess import load_and_tokenize
 from utils import get_similar_words, get_vocab_size, get_vector_size
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 MODEL_DIR = PROJECT_ROOT / "models" / "fasttext"
 MODEL_PATH = MODEL_DIR / "fasttext.model"
