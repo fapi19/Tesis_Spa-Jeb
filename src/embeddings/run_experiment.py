@@ -12,6 +12,7 @@ Experimentos:
     E2  Suffix-aware + contrastive
     E3  Suffix-aware + contrastive + alignment
     E4  Suffix-aware + focal contrastive + alignment
+    E5  Unigram + contrastive + subword regularization
 """
 from __future__ import annotations
 
@@ -46,6 +47,10 @@ class ExperimentConfig:
     alignment_weight: float = 0.3
     temperature: float = 0.05
     gamma: float = 2.0
+    seed: int = 42
+    subword_regularization: bool = False
+    nbest_size: int = -1
+    alpha: float = 0.1
 
     @property
     def exp_dir(self) -> Path:
@@ -129,7 +134,34 @@ EXPERIMENTS: dict[str, ExperimentConfig] = {
         alignment_weight=0.3,
         gamma=2.0,
     ),
-}
+        "E4A": ExperimentConfig(
+        name="E4_suffix_focal_no_alignment",
+        description="Suffix-aware + focal contrastive — sin alignment para aislar su efecto",
+        tokenizer_type="unigram",
+        suffix_aware=True,
+        use_focal=True,
+        use_alignment=False,
+        batch_size=32,
+        contrastive_weight=1.0,
+        alignment_weight=0.0,
+        gamma=2.0,
+    ),
+        "E5": ExperimentConfig(
+        name="E5_unigram_contrastive_subwordreg",
+        description="Unigram + contrastive + subword regularization — baseline robustecido",
+        tokenizer_type="unigram",
+        suffix_aware=False,
+        use_focal=False,
+        use_alignment=False,
+        batch_size=32,
+        contrastive_weight=1.0,
+        alignment_weight=0.0,
+        seed=42,
+        subword_regularization=True,
+        nbest_size=-1,
+        alpha=0.1,
+        ),
+    }
 
 
 def _banner(text: str) -> None:
@@ -157,7 +189,7 @@ def prepare_shared_data() -> None:
         suffix_main()
 
 
-def run_experiment(cfg: ExperimentConfig) -> None:
+def run_experiment(cfg: ExperimentConfig) -> Path:
     from .train_tokenizer import train_tokenizer
     from .train_embedding_model import train
 
@@ -189,7 +221,7 @@ def run_experiment(cfg: ExperimentConfig) -> None:
         f"focal={cfg.use_focal}, alignment={cfg.use_alignment})..."
     )
     t0 = time.time()
-    train(
+    checkpoint = train(
         train_path=cfg.train_jsonl,
         val_path=cfg.val_jsonl,
         sp_model=cfg.sp_model_path,
@@ -209,9 +241,14 @@ def run_experiment(cfg: ExperimentConfig) -> None:
         alignment_weight=cfg.alignment_weight,
         temperature=cfg.temperature,
         gamma=cfg.gamma,
+        seed=cfg.seed,
+        subword_regularization=cfg.subword_regularization,
+        nbest_size=cfg.nbest_size,
+        alpha=cfg.alpha,
     )
     elapsed = time.time() - t0
-    print(f"  Finalizado en {elapsed / 60:.1f} min → {cfg.checkpoint_path}")
+    print(f"  Finalizado en {elapsed / 60:.1f} min → {checkpoint}")
+    return checkpoint
 
 
 def main() -> None:
@@ -226,7 +263,7 @@ def main() -> None:
         "experiments",
         nargs="*",
         choices=list(EXPERIMENTS.keys()),
-        help="Experimentos a correr (E0, E1, E2, E3, E4)",
+        help="Experimentos a correr (E0, E1, E2, E3, E4, E5)",
     )
     parser.add_argument("--all", action="store_true", help="Correr todos los experimentos")
     parser.add_argument("--skip-data-prep", action="store_true", help="Saltar preparación de datos")
