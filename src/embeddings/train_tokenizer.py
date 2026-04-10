@@ -9,7 +9,7 @@ import sentencepiece as spm
 def train_tokenizer(
     input_path: str | Path,
     model_prefix: str | Path,
-    vocab_size: int = 4000,
+    vocab_size: int = 2000,
     model_type: str = "unigram",
 ) -> Path:
     """Train a SentencePiece tokenizer and return the .model path."""
@@ -37,7 +37,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
     parser.add_argument("--model_prefix", required=True)
-    parser.add_argument("--vocab_size", type=int, default=4000)
+    parser.add_argument("--vocab_size", type=int, default=2000)
     parser.add_argument("--model_type", choices=["unigram", "bpe"], default="unigram")
     args = parser.parse_args()
 

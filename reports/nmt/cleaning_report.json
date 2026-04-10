@@ -1,0 +1,15 @@
+{
+  "total_original": 2886,
+  "duplicates_removed": 3,
+  "editorial_glosas": 138,
+  "conflicts_sources": 186,
+  "conflicts_pairs": 398,
+  "narrative": 0,
+  "imbalanced_to_editorial": 14,
+  "too_short_discarded": 0,
+  "train_clean": 2533,
+  "thresholds": {
+    "narrative_tokens": 25,
+    "ratio": 4.0
+  }
+}

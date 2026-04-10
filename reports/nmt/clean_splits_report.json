@@ -1,0 +1,16 @@
+{
+  "total_original": 3207,
+  "duplicates_removed": 3,
+  "editorial_glosas": 207,
+  "conflicts_sources": 186,
+  "conflicts_pairs": 398,
+  "imbalanced_to_editorial": 20,
+  "clean_total": 2785,
+  "train": 2228,
+  "val": 278,
+  "test": 279,
+  "seed": 42,
+  "thresholds": {
+    "ratio": 4.0
+  }
+}

@@ -33,7 +33,7 @@ class ExperimentConfig:
     suffix_aware: bool           # use suffix-aware corpus
     use_focal: bool              # use focal InfoNCE instead of standard InfoNCE
     use_alignment: bool          # add bilingual alignment loss
-    vocab_size: int = 4000
+    vocab_size: int = 2000
     epochs: int = 10
     batch_size: int = 32
     lr: float = 3e-4
