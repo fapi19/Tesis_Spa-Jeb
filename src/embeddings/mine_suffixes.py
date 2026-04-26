@@ -1,22 +1,34 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
 
 from .config import SPLITS_DIR
 
-TRAIN_PATH = SPLITS_DIR / "train_pairs.jsonl"
+TRAIN_PATH = SPLITS_DIR / "train.jsonl"
 OUT_PATH = SPLITS_DIR / "shiwilu_suffixes.json"
 
 MIN_SUFFIX_LEN = 2
 MAX_SUFFIX_LEN = 6
-MIN_COUNT = 5
+MIN_COUNT = 10
+MIN_STEM_LEN = 3
+EDGE_PUNCT_RE = re.compile(r"^[¡!¿?.,:;\"«»\-\—…]+|[¡!¿?.,:;\"«»\-\—…]+$")
 
 
 def extract_suffixes(word: str) -> list[str]:
+    word = EDGE_PUNCT_RE.sub("", word)
+    if not word or "'" == word:
+        return []
+
     suffixes = []
     for k in range(MIN_SUFFIX_LEN, min(MAX_SUFFIX_LEN, len(word)) + 1):
-        suffixes.append(word[-k:])
+        if len(word) - k < MIN_STEM_LEN:
+            continue
+        suffix = word[-k:]
+        if suffix.startswith("'"):
+            continue
+        suffixes.append(suffix)
     return suffixes
 
 

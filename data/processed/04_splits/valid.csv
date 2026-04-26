@@ -1,192 +1,321 @@
-﻿pair_id,ESP_original,SHIWILU_original,ESP_normalizado,SHIWILU_normalizado,source,source_pair_id,has_audit_flags
-U01919,Hueles bien.,LANERLLIEN U'CHIMU,hueles bien.,lanerllien u'chimu,flashcards,P01919,False
-U01272,Lo heriste.,LLIPU'TULA,lo heriste.,llipu'tula,flashcards,P01272,False
-U02252,Aquí me engendró mi madre.,kua asek wilawañun awawek.,aquí me engendró mi madre.,kua asek wilawañun awawek.,pdf_textos,T001_N002,False
-U00433,Tom teje.,TOM LANTEÑI,tom teje.,tom lanteñi,flashcards,P00433,False
-U01062,Comí caviar.,KA'LEK CAVIAR,comí caviar.,ka'lek caviar,flashcards,P01062,False
-U01982,Todos miraron.,IÑER'DAPER' LLI'TULLINA',todos miraron.,iñer'daper' lli'tullina',flashcards,P01982,False
-U00349,He perdido.,A'WER'LEK,he perdido.,a'wer'lek,flashcards,P00349,False
-U00039,Escuchen.,LAU'TUKU',escuchen.,lau'tuku',flashcards,P00039,False
-U02136,Estaban listos.,INSEKDIPERPI ÑAPAWIÑINA',estaban listos.,insekdiperpi ñapawiñina',flashcards,P02136,False
-U00625,Mantente alerta.,ÑAPAKER' INSEK'DIPERSU',mantente alerta.,ñapaker' insek'dipersu',flashcards,P00625,False
-U03096,"Cuando los barriobajinos van por el Barrio Alto, las mujeres y los hombres del Barrio Alto se rabian.","Chillenllusa' pa'a'ser Winenllupa', Winellun Winenpenllusa'nta' yullina'.","cuando los barriobajinos van por el barrio alto, las mujeres y los hombres del barrio alto se rabian.","chillenllusa' pa'a'ser winenllupa', winellun winenpenllusa'nta' yullina'.",pdf_textos,T011_N043,False
-U01785,¿Es posible?,¿YENNITATER'A'CHA?,¿es posible?,¿yennitater'a'cha?,flashcards,P01785,False
-U00353,¿Es malo?,¿MUKANKAN'INPU'?,¿es malo?,¿mukankan'inpu'?,flashcards,P00353,False
-U00066,Largo ,SHIN,largo,shin,flashcards,P00066,False
-U01001,¿Puede hacerlo?,¿YENNITULEK NU'TAK?,¿puede hacerlo?,¿yennitulek nu'tak?,flashcards,P01001,False
-U01382,"Apúrate, Tom.",WIUK'ER' TOM,"apúrate, tom.",wiuk'er' tom,flashcards,P01382,False
-U01800,Estará listo.,INSEK'DIPERPI ÑAPE'CHU,estará listo.,insek'diperpi ñape'chu,flashcards,P01800,False
-U00666,Tom sonrió.,TOM YAMERLADALLI,tom sonrió.,tom yamerladalli,flashcards,P00666,False
-U02057,Lo cambié.,A'PAWILEKLEK,lo cambié.,a'pawileklek,flashcards,P02057,False
-U03135,"Ese Sekputchek era bien miserable, no se conformaba con poquito.","Nana Sekputchek ima'ka nana aperku'tek ima, ñima luwanchi'ñi u'ñisha.","ese sekputchek era bien miserable, no se conformaba con poquito.","nana sekputchek ima'ka nana aperku'tek ima, ñima luwanchi'ñi u'ñisha.",pdf_textos,T012_N011,False
-U00926,¿Hacía frío?,¿SANEKWANWIÑI?,¿hacía frío?,¿sanekwanwiñi?,flashcards,P00926,False
-U02212,Te perderás.,WER'ECHU,te perderás.,wer'echu,flashcards,P02212,False
-U00865,Ahora resiste.,IPA'LA YAN'KATEKTER',ahora resiste.,ipa'la yan'katekter',flashcards,P00865,False
-U02078,Es refrescante.,SANEK'PIAK' NUKA'A,es refrescante.,sanek'piak' nuka'a,flashcards,P02078,False
-U01586,Somos egoístas.,KENMU'SAK LLI'I'NUPALEKWA',somos egoístas.,kenmu'sak lli'i'nupalekwa',flashcards,P01586,False
-U01518,Mándamelo.,A'UKTUWU,mándamelo.,a'uktuwu,flashcards,P01518,False
-U01818,Déjame explicar.,TA'ITULA'U WINTECHEN,déjame explicar.,ta'itula'u wintechen,flashcards,P01818,False
-U01946,Acércalo.,A'KAWITER',acércalo.,a'kawiter',flashcards,P01946,False
-U02016,Necesito Internet.,LUWANTULEK INTERNET,necesito internet.,luwantulek internet,flashcards,P02016,False
-U01683,Cómete todo.,KA'KER' IÑER',cómete todo.,ka'ker' iñer',flashcards,P01683,False
-U02186,Los perdimos.,A'WER'LLIDEK,los perdimos.,a'wer'llidek,flashcards,P02186,False
-U01065,Me corté.,INDEI'TULEK,me corté.,indei'tulek,flashcards,P01065,False
-U00252,Ellos ganaron.,NAWA' KANA'TULLINA',ellos ganaron.,nawa' kana'tullina',flashcards,P00252,False
-U01269,Puedes quedarte.,YENNITULA' LLIA'A'MAK,puedes quedarte.,yennitula' llia'a'mak,flashcards,P01269,False
-U01552,Tom dudó.,TOM LATEK'CHI'ÑI,tom dudó.,tom latek'chi'ñi,flashcards,P01552,False
-U01086,Quiero ir.,YAPA'LEK,quiero ir.,yapa'lek,flashcards,P01086,False
-U02047,Me carcajeo.,YAMERLEK,me carcajeo.,yamerlek,flashcards,P02047,False
-U01159,"Ah, entiendo.","AH, LACHEK'APALEK","ah, entiendo.","ah, lachek'apalek",flashcards,P01159,False
-U01213,Esto ayudará.,ASU' KATU'PA'TECHU,esto ayudará.,asu' katu'pa'techu,flashcards,P01213,False
-U00239,¿Puedo ir?,¿YEN'NITULEK PA'AK?,¿puedo ir?,¿yen'nitulek pa'ak?,flashcards,P00239,False
-U02205,Puedes decírnoslo.,YENNITULA WINTA'MUDEK,puedes decírnoslo.,yennitula winta'mudek,flashcards,P02205,False
-U02142,Son correctos.,TEKINCHILUSA' NUKER'KA,son correctos.,tekinchilusa' nuker'ka,flashcards,P02142,False
-U00711,Ya verás.,IPA' LLI'ECHU,ya verás.,ipa' lli'echu,flashcards,P00711,False
-U01490,Solo levántate.,KENMASA' YUNSANKER',solo levántate.,kenmasa' yunsanker',flashcards,P01490,False
-U01618,Debes esperar.,WA'TENTA'MASU' ÑAPALLI,debes esperar.,wa'tenta'masu' ñapalli,flashcards,P01618,False
-U02024,Despierto temprano.,NANPILADAPALEK SHAMPASIK,despierto temprano.,nanpiladapalek shampasik,flashcards,P02024,False
-U00171,Apresúrate.,WIUKER',apresúrate.,wiuker',flashcards,P00171,False
-U01854,Qué malo.,MUKANKANINPU',qué malo.,mukankaninpu',flashcards,P01854,False
-U01850,Es evidente.,LATEK'LANAÑI,es evidente.,latek'lanañi,flashcards,P01850,False
-U00807,Lo probaré.,LATA'ECHEK,lo probaré.,lata'echek,flashcards,P00807,False
-U02134,Me ataron.,TENPU'LLINERKU',me ataron.,tenpu'llinerku',flashcards,P02134,False
-U01501,Hagamos eso.,NU'TAWA' NANA,hagamos eso.,nu'tawa' nana,flashcards,P01501,False
-U00099,Soy yo.,KUA NUKA'KA,soy yo.,kua nuka'ka,flashcards,P00099,False
-U00238,Cásate conmigo.,SADAKER' KUALEK',cásate conmigo.,sadaker' kualek',flashcards,P00238,False
-U00581,¿Es así?,¿NU'SU' NUKA'A?,¿es así?,¿nu'su' nuka'a?,flashcards,P00581,False
-U03081,"Lo vieron corriendo hacia el Pampayacu, lo siguieron pero no lo alcanzaron.","Lli'llini'ma tekka'pilasik Panpadeklupa', tupitullina' ñi kasek'i'ñina'.","lo vieron corriendo hacia el pampayacu, lo siguieron pero no lo alcanzaron.","lli'llini'ma tekka'pilasik panpadeklupa', tupitullina' ñi kasek'i'ñina'.",pdf_textos,T011_N028,False
-U00319,Sé correr.,ÑINCHITAPALEK TEKA'AK',sé correr.,ñinchitapalek teka'ak',flashcards,P00319,False
-U02552,Cuentan que tres años ardió.,Kala ekkilala ima uketlli.,cuentan que tres años ardió.,kala ekkilala ima uketlli.,pdf_textos,T006_N042,False
-U01475,Me enferma.,A'KALUWI'LIU,me enferma.,a'kaluwi'liu,flashcards,P01475,False
-U02116,Es brasileña.,BRASHIKA NUKA'A ,es brasileña.,brashika nuka'a,flashcards,P02116,False
-U00013,¡Espera!,¡WA'TEN'KER'!,¡espera!,¡wa'ten'ker'!,flashcards,P00013,False
-U01343,¿Necesito uno?,¿LUANTULEK ALA'SA'?,¿necesito uno?,¿luantulek ala'sa'?,flashcards,P01343,False
-U02160,Podemos ayudarte.,YENNITULEK'WA' KATU'PA'A'KIK,podemos ayudarte.,yennitulek'wa' katu'pa'a'kik,flashcards,P02160,False
-U01398,Yo exageré.,KUA A'NADALEK,yo exageré.,kua a'nadalek,flashcards,P01398,False
-U00643,Votaron.,DEKLLINA',votaron.,dekllina',flashcards,P00643,False
-U00383,¡Déjeme ir!,¡TA'ITULA'U'KU YAPANTA'LEK!,¡déjeme ir!,¡ta'itula'u'ku yapanta'lek!,flashcards,P00383,False
-U01715,Lo noto.,LLI'APALEK,lo noto.,lli'apalek,flashcards,P01715,False
-U01196,Se escaparon.,CHI'YEK LLINA',se escaparon.,chi'yek llina',flashcards,P01196,False
-U02100,Emborrachémonos.,LUPER'AWA',emborrachémonos.,luper'awa',flashcards,P02100,False
-U01162,Ábrela.,EK'KER'CHER',ábrela.,ek'ker'cher',flashcards,P01162,False
-U02025,Quiero aquél.,LUWANTULEK NANA,quiero aquél.,luwantulek nana,flashcards,P02025,False
-U02423,Postrada me la paso.,Ñapamu erwatapalek.,postrada me la paso.,ñapamu erwatapalek.,pdf_textos,T003_N030,False
-U00848,Sigue intentando.,INTEKLERIAPER'ILA,sigue intentando.,intekleriaper'ila,flashcards,P00848,False
-U00503,Está arruinado.,SAPUSU' ÑAPALLI,está arruinado.,sapusu' ñapalli,flashcards,P00503,False
-U02120,Alguien tosió.,DENIPA' CHINKU'LLI,alguien tosió.,denipa' chinku'lli,flashcards,P02120,False
-U00398,¿Perdona?,TA'ITULAU,¿perdona?,ta'itulau,flashcards,P00398,False
-U01708,Ya sé.,IPA' ÑINCHITULEK,ya sé.,ipa' ñinchitulek,flashcards,P01708,False
-U01845,Apareció humo.,LLI'TULLI KELLIU,apareció humo.,lli'tulli kelliu,flashcards,P01845,False
-U00237,Cuidado.,LLI'KER'LLIA',cuidado.,lli'ker'llia',flashcards,P00237,False
-U00669,Tomás esperó.,CHUMA WA'TENTULLI,tomás esperó.,chuma wa'tentulli,flashcards,P00669,False
-U00869,Ahora callate.,IPA'LA TA'TULER',ahora callate.,ipa'la ta'tuler',flashcards,P00869,False
-U03168,De allí dice se originaron los nombres shiwilu.,Naneklima asu' kineklada' llillin lli'tencha'lli.,de allí dice se originaron los nombres shiwilu.,naneklima asu' kineklada' llillin lli'tencha'lli.,pdf_textos,T013_N022,False
-U02255,Mi padre quedó viudo.,Tatawek ekdusipen ñilli.,mi padre quedó viudo.,tatawek ekdusipen ñilli.,pdf_textos,T001_N005,False
-U00768,Lo compré.,MAPA'LEK,lo compré.,mapa'lek,flashcards,P00768,False
-U01233,Camina conmigo.,DEK'KUNTER' KUALEK,camina conmigo.,dek'kunter' kualek,flashcards,P01233,False
-U00689,Lo queremos.,TANTENLEK'WA',lo queremos.,tantenlek'wa',flashcards,P00689,False
-U02175,Estábamos hablando.,LUMPAWIÑIDEK,estábamos hablando.,lumpawiñidek,flashcards,P02175,False
-U01537,Cancelaron.,TA'ITULA'LLINA',cancelaron.,ta'itula'llina',flashcards,P01537,False
-U00233,Déjalo.,TAI'TULER',déjalo.,tai'tuler',flashcards,P00233,False
-U02106,Esperemos aquí.,WATENDAWA' ASEK,esperemos aquí.,watendawa' asek,flashcards,P02106,False
-U03042,"Se fueron hasta Moyobamba, regresaron, tuvieron reuniones y hablaron.","Muyunpak walek pa'anna', adencha'nna', indiuntunna' luñina'.","se fueron hasta moyobamba, regresaron, tuvieron reuniones y hablaron.","muyunpak walek pa'anna', adencha'nna', indiuntunna' luñina'.",pdf_textos,T010_N210,False
-U00580,¿Es ese?,¿NANA'CHA?,¿es ese?,¿nana'cha?,flashcards,P00580,False
-U01267,Eres rico.,KULLIKER'WANPALA,eres rico.,kulliker'wanpala,flashcards,P01267,False
-U02246,Está inconsciente.,INLLI'INUINSU' ÑAPALLI,está inconsciente.,inlli'inuinsu' ñapalli,flashcards,P02246,False
-U00893,Bailaron.,LANSA'LLINA',bailaron.,lansa'llina',flashcards,P00893,False
-U01762,Seré directo.,CHEKSU' ÑECHEK,seré directo.,cheksu' ñechek,flashcards,P01762,False
-U00660,Tom miró.,TOM LLI'TULLI,tom miró.,tom lli'tulli,flashcards,P00660,False
-U01739,Estornudo mucho.,A'SHULEK WAPU',estornudo mucho.,a'shulek wapu',flashcards,P01739,False
-U00290,Vuelve.,ADEN'CHER',vuelve.,aden'cher',flashcards,P00290,False
-U01505,Vayamos abajo.,NUWANTA'WA',vayamos abajo.,nuwanta'wa',flashcards,P01505,False
-U01592,Estamos ganando.,KANA'TAPALEKWA',estamos ganando.,kana'tapalekwa',flashcards,P01592,False
-U00830,Estoy esperando.,WA'TENTAPALEK,estoy esperando.,wa'tentapalek,flashcards,P00830,False
-U00230,Es triste.,WE'INU NUKA'A,es triste.,we'inu nuka'a,flashcards,P00230,False
-U01003,¿Puedes ayudar?,¿YENNITULA KATU'PA'TA'MAK?,¿puedes ayudar?,¿yennitula katu'pa'ta'mak?,flashcards,P01003,False
-U01953,¿Puedes oírnos?,¿YENNITULA LAUK'A'MUDEK?,¿puedes oírnos?,¿yennitula lauk'a'mudek?,flashcards,P01953,False
-U01302,Estás cansado.,SAKA'TUSU' ÑAPALA,estás cansado.,saka'tusu' ñapala,flashcards,P01302,False
-U00303,Síguenos.,TUPI'TU'UDEK,síguenos.,tupi'tu'udek,flashcards,P00303,False
-U02070,Fue emocionante.,MUSU' ÑAPAWIÑI,fue emocionante.,musu' ñapawiñi,flashcards,P02070,False
-U01169,¡Qué vergüenza!,¡DAKUTA'LEK!,¡qué vergüenza!,¡dakuta'lek!,flashcards,P01169,False
-U00429,¿Entonces qué?,¿NU'PACHIN MA'NEN?,¿entonces qué?,¿nu'pachin ma'nen?,flashcards,P00429,False
-U00445,Esperen aquí.,WA'TENKU' ASEK,esperen aquí.,wa'tenku' asek,flashcards,P00445,False
-U02187,¿Estabas llorando?,¿WELLIEK'APAWINA?,¿estabas llorando?,¿welliek'apawina?,flashcards,P02187,False
-U00574,¿Está bueno?,¿MUPALLIN'CHA?,¿está bueno?,¿mupallin'cha?,flashcards,P00574,False
-U00197,¡Soy libre!,¡INAPIKU!,¡soy libre!,¡inapiku!,flashcards,P00197,False
-U01575,Lo entendemos.,LACHEK'APALLIDEK,lo entendemos.,lachek'apallidek,flashcards,P01575,False
-U00312,¡Qué horror!,¡IMANAN EMPU'NIPA'!,¡qué horror!,¡imanan empu'nipa'!,flashcards,P00312,False
-U01871,Piénsalo.,INLLI'INUER',piénsalo.,inlli'inuer',flashcards,P01871,False
-U01100,Soy adulta.,TASERLUNKU NUKA'KA,soy adulta.,taserlunku nuka'ka,flashcards,P01100,False
-U00372,¡Es verdad!,¡TEKKINCHI NUKA'A!,¡es verdad!,¡tekkinchi nuka'a!,flashcards,P00372,False
-U01846,Fumar apesta.,U'WA'TAK ANALLI,fumar apesta.,u'wa'tak analli,flashcards,P01846,False
-U02646,"vino la gamitana,","dunanser uklli,","vino la gamitana,","dunanser uklli,",pdf_textos,T007_N066,False
-U02250,Me engripé.,ILU ENKA'LLIU,me engripé.,ilu enka'lliu,flashcards,P02250,False
-U01513,¿Puedo verlo?,¿YENNITULEK LLI'AK?,¿puedo verlo?,¿yennitulek lli'ak?,flashcards,P01513,False
-U01831,¿Puedo acompañarles?,¿YENNITULEK KA'TAN'AN'MASU'?,¿puedo acompañarles?,¿yennitulek ka'tan'an'masu'?,flashcards,P01831,False
-U00554,Soy coreano.,KOREANO NUKA'KA,soy coreano.,koreano nuka'ka,flashcards,P00554,False
-U02125,Son lindos.,U'CHIMUSHALA NUKER'KA,son lindos.,u'chimushala nuker'ka,flashcards,P02125,False
-U01133,Sigue conduciendo.,EKPA'APER'I'LA,sigue conduciendo.,ekpa'aper'i'la,flashcards,P01133,False
-U02019,Le burlé.,TUMU'TULEK,le burlé.,tumu'tulek,flashcards,P02019,False
-U00336,Estoy despierto.,NANPISU' ÑAPALEK,estoy despierto.,nanpisu' ñapalek,flashcards,P00336,False
-U00870,Bájalo.,U'NU'WANGER',bájalo.,u'nu'wanger',flashcards,P00870,False
-U00004,¡Corre!,TEKKER',¡corre!,tekker',flashcards,P00004,False
-U00180,Renuncio.,YUNSU'LEK',renuncio.,yunsu'lek',flashcards,P00180,False
-U00941,Nosotros compartiremos.,KUDA A'NAÑIECHIDEK,nosotros compartiremos.,kuda a'nañiechidek,flashcards,P00941,False
-U02985,"De ahí, otro grupo se fue otra vez colocando puentes.",Nanekla ali'la musun pa'nunta'lli pentunanlusa' aku'pilan.,"de ahí, otro grupo se fue otra vez colocando puentes.",nanekla ali'la musun pa'nunta'lli pentunanlusa' aku'pilan.,pdf_textos,T010_N153,False
-U01264,¿Acaso vivirá?,¿NANPICHUA'CHA?,¿acaso vivirá?,¿nanpichua'cha?,flashcards,P01264,False
-U02087,Sigan practicando.,TUPITUKU' INPALERIANMA',sigan practicando.,tupituku' inpalerianma',flashcards,P02087,False
-U02073,Está botado.,DEKPI ÑAPALLI,está botado.,dekpi ñapalli,flashcards,P02073,False
-U02115,Lo abofeteó.,LLIAKA'UK ENKA'LINA,lo abofeteó.,lliaka'uk enka'lina,flashcards,P02115,False
-U01813,Siga intentando.,INPALERIAPER',siga intentando.,inpaleriaper',flashcards,P01813,False
-U01812,Consérvalo contigo.,SEKDIPERKER' KENMALEK,consérvalo contigo.,sekdiperker' kenmalek,flashcards,P01812,False
-U01952,¿Puedes oírme?,¿YENNITULA LAUK'A'MUK?,¿puedes oírme?,¿yennitula lauk'a'muk?,flashcards,P01952,False
-U01670,¿Te conocemos?,¿LUWER'CHAPALLIDEN?,¿te conocemos?,¿luwer'chapalliden?,flashcards,P01670,False
-U02172,Queremos hablar.,YALUNÑIDEK,queremos hablar.,yalunñidek,flashcards,P02172,False
-U00629,¡Más rápido!,¡A'PINTA' WIUKSU'!,¡más rápido!,¡a'pinta' wiuksu'!,flashcards,P00629,False
-U01939,¿Estás mirando?,¿LLI'TAPALA?,¿estás mirando?,¿lli'tapala?,flashcards,P01939,False
-U01491,Aprende italiano.,ÑINCHITER' ITALIANU,aprende italiano.,ñinchiter' italianu,flashcards,P01491,False
-U01624,¿Quieres esto?,¿ASU' LUWANTULA?,¿quieres esto?,¿asu' luwantula?,flashcards,P01624,False
-U02234,¿Los conoces?,¿LUWER'CHAPADEKLA?,¿los conoces?,¿luwer'chapadekla?,flashcards,P02234,False
-U02068,Sabía dulce.,KASERSU' ÑIWIÑI,sabía dulce.,kasersu' ñiwiñi,flashcards,P02068,False
-U01797,Fue planeado.,LLI'INUPI ÑIWIÑI,fue planeado.,lli'inupi ñiwiñi,flashcards,P01797,False
-U00899,Sonrieron.,YAMERLADALLINA',sonrieron.,yamerladallina',flashcards,P00899,False
-U02204,Puedes entrar.,YENNITULADA'A'MAK,puedes entrar.,yennitulada'a'mak,flashcards,P02204,False
-U01625,Estabas ocupado.,SAKA'TAPAWINA,estabas ocupado.,saka'tapawina,flashcards,P01625,False
-U02139,Les gustará.,IYATECHUNA',les gustará.,iyatechuna',flashcards,P02139,False
-U00471,Lleva esto.,EKPA'KER' ASU',lleva esto.,ekpa'ker' asu',flashcards,P00471,False
-U00882,¡Dejad sitio!,¡TA'ITUKU' DU'AK!,¡dejad sitio!,¡ta'ituku' du'ak!,flashcards,P00882,False
-U01841,¿Bailamos?,¿LANSA'WA?,¿bailamos?,¿lansa'wa?,flashcards,P01841,False
-U01889,Ahí estaremos.,NANEK ÑAPATERWA',ahí estaremos.,nanek ñapaterwa',flashcards,P01889,False
-U00954,¡Qué mugre!,!EMBU'NI UCHUTEK'IPA'!,¡qué mugre!,!embu'ni uchutek'ipa'!,flashcards,P00954,False
-U01779,Me demandaron.,IKER'LALAK AKU'LLINERKU,me demandaron.,iker'lalak aku'llinerku,flashcards,P01779,False
-U01659,¿Puedes verlo?,¿YENNITULA LLI'A'MAK?,¿puedes verlo?,¿yennitula lli'a'mak?,flashcards,P01659,False
-U01293,Estás borracha.,LUPERSU' ÑAPALA,estás borracha.,lupersu' ñapala,flashcards,P01293,False
-U00852,¡Empecemos!,¡TENMIANSU'WA'!,¡empecemos!,¡tenmiansu'wa'!,flashcards,P00852,False
-U00857,Vayámonos.,PA'AWA',vayámonos.,pa'awa',flashcards,P00857,False
-U01693,¿Ya comiste?,¿IPA WERANA?,¿ya comiste?,¿ipa werana?,flashcards,P01693,False
-U01802,Me supera.,KANA'LLIU,me supera.,kana'lliu,flashcards,P01802,False
-U01811,Llévalo contigo.,EKPA'KER KENMALEK,llévalo contigo.,ekpa'ker kenmalek,flashcards,P01811,False
-U01616,Pareces enfermo.,KALUWINANPU'SU' LLI'TULA,pareces enfermo.,kaluwinanpu'su' lli'tula,flashcards,P01616,False
-U03102,"Malallina es la que nos ha puesto así,","Malallina nana nu'su' aku'llundek,","malallina es la que nos ha puesto así,","malallina nana nu'su' aku'llundek,",pdf_textos,T011_N049,False
-U01622,Hueles mal.,ANAPILA,hueles mal.,anapila,flashcards,P01622,False
-U01906,¿Dónde estabas?,¿ENÑUPA' ÑAPAWINA?,¿dónde estabas?,¿enñupa' ñapawina?,flashcards,P01906,False
-U01761,Estaré cerca.,KAWIK ÑAPECHEK,estaré cerca.,kawik ñapechek,flashcards,P01761,False
-U01948,¿Puedo probármelo?,¿YENNITULEK LATA'AK?,¿puedo probármelo?,¿yennitulek lata'ak?,flashcards,P01948,False
-U02104,Quedémonos acá.,LLIA'AWA' ASEK,quedémonos acá.,llia'awa' asek,flashcards,P02104,False
-U01744,Quiero otro.,LUWANTULEK ALI'LA,quiero otro.,luwantulek ali'la,flashcards,P01744,False
-U03031,Algún día en un fierro viejo que vuela ustedes también van a viajar.,Enpi' uklli pen ala'sa' wa'natek pennu'a'su' kenmama'nta' pa'achuma'.,algún día en un fierro viejo que vuela ustedes también van a viajar.,enpi' uklli pen ala'sa' wa'natek pennu'a'su' kenmama'nta' pa'achuma'.,pdf_textos,T010_N199,False
-U02644,"vino el tucunaré,","tukuner uklli,","vino el tucunaré,","tukuner uklli,",pdf_textos,T007_N064,False
-U02082,Solo pruébatela.,LATAKER'SA',solo pruébatela.,lataker'sa',flashcards,P02082,False
-U02217,¿Eres mago?,¿NUKA'MA A'I'KECHEKTUTEK?,¿eres mago?,¿nuka'ma a'i'kechektutek?,flashcards,P02217,False
-U01060,Estoy rezando.,MALLIA'PALEK,estoy rezando.,mallia'palek,flashcards,P01060,False
-U00879,¿Debería ir?,¿PA'ECHEK'ATA'?,¿debería ir?,¿pa'echek'ata'?,flashcards,P00879,False
-U01341,¿Le conozco?,¿LUWER'CHAPALEK?,¿le conozco?,¿luwer'chapalek?,flashcards,P01341,False
-U02208,Deberían quedarse.,LLIA'A'MAMASU' ÑAPALLI,deberían quedarse.,llia'a'mamasu' ñapalli,flashcards,P02208,False
-U00775,Tenía frío.,SANEK'WANTUWINEK,tenía frío.,sanek'wantuwinek,flashcards,P00775,False
-U00919,Pruébate este.,LATAKER' ASU',pruébate este.,lataker' asu',flashcards,P00919,False
-U00797,Quiero eso.,NANA LUWANTULEK,quiero eso.,nana luwantulek,flashcards,P00797,False
-U01462,Soy sensible.,MANENPITA' IKERCHULEK,soy sensible.,manenpita' ikerchulek,flashcards,P01462,False
-U01636,¿Bromeas?,¿SI'LENTAPALA'?,¿bromeas?,¿si'lentapala'?,flashcards,P01636,False
-U01549,Son gemelos.,INSILANPI NUKER'KA,son gemelos.,insilanpi nuker'ka,flashcards,P01549,False
-U00737,¿Ganaste?,¿KANA'TULA?,¿ganaste?,¿kana'tula?,flashcards,P00737,False
-U01397,No estudio.,KU'LA ÑINCHITAPI'NEK,no estudio.,ku'la ñinchitapi'nek,flashcards,P01397,False
+﻿pair_id,group_id,ESP_original,SHIWILU_original,ESP_normalizado,SHIWILU_normalizado,source,source_pair_id,has_audit_flags
+U01251,G01087,Estamos asustados.,IMANTUSU' ÑAPALLIDEK,estamos asustados.,imantusu' ñapallidek,flashcards,P01251,False
+U01070,G00929,Tomé leche.,MUDIDEK ULEK,tomé leche.,mudidek ulek,flashcards,P01070,False
+U01317,G01146,¿Contento?,¿MUSU'?,¿contento?,¿musu'?,flashcards,P01317,False
+U00357,G00288,Falló.,APER'LLI,falló.,aper'lli,flashcards,P00357,False
+U02011,G01796,Aprendí mucho.,NINCHITULEK WAPU',aprendí mucho.,ninchitulek wapu',flashcards,P02011,False
+U01264,G01099,¿Acaso vivirá?,¿NANPICHUA'CHA?,¿acaso vivirá?,¿nanpichua'cha?,flashcards,P01264,False
+U01089,G00948,Tenía hambre.,UKI'LA A'ÑIWINEK,tenía hambre.,uki'la a'ñiwinek,flashcards,P01089,False
+U02206,G01983,Pareces triste.,LLI'TULA WE'INUTUSU',pareces triste.,lli'tula we'inutusu',flashcards,P02206,False
+U02360,G02135,"en la misma olla se chanca y se va batiendo,","wa’nauktak i’la u’deklek, pitawilek,","en la misma olla se chanca y se va batiendo,","wa'nauktak i'la u'deklek, pitawilek,",pdf_textos,T002_N027,True
+U01275,G01114,Prometiste.,NU'TECHUN TUWINA,prometiste.,nu'techun tuwina,flashcards,P01275,True
+U01282,G01114,Lo prometiste.,NU'TECHUN TUWINA,lo prometiste.,nu'techun tuwina,flashcards,P01282,True
+U01130,G00983,Sólo espera.,WA'TENKER'LA,sólo espera.,wa'tenker'la,flashcards,P01130,False
+U01193,G01035,Son grandes.,A'LLUPI NUKER'KA,son grandes.,a'llupi nuker'ka,flashcards,P01193,False
+U02057,G01840,Lo cambié.,A'PAWILEKLEK,lo cambié.,a'pawileklek,flashcards,P02057,False
+U02162,G01942,Cerramos temprano.,SHAMPASIK UNKU'TULEKWA',cerramos temprano.,shampasik unku'tulekwa',flashcards,P02162,False
+U00729,G00611,¿Puedo comenzar?,¿YENNITULEK TENMIANSU'AK?,¿puedo comenzar?,¿yennitulek tenmiansu'ak?,flashcards,P00729,False
+U02039,G01823,Con placer.,SAKEKSU'LEK,con placer.,sakeksu'lek,flashcards,P02039,False
+U02687,G02462,"Entonces Arákayu regresó,","Arakayu ima adanta’n,","entonces arákayu regresó,","arakayu ima adanta'n,",pdf_textos,T007_N107,True
+U01950,G01740,¿Podemos probarlo?,¿YENNITULEKWA' LATA'AK?,¿podemos probarlo?,¿yennitulekwa' lata'ak?,flashcards,P01950,False
+U02292,G02067,para que aquí nomás no se termine.,ma’sha asek i’la ta’wanchinpu’kek.,para que aquí nomás no se termine.,ma'sha asek i'la ta'wanchinpu'kek.,pdf_textos,T001_N042,True
+U02022,G01807,Hablo español.,LUNPALEK ESPAÑOL,hablo español.,lunpalek español,flashcards,P02022,False
+U01463,G01281,Tengo cerveza.,AÑAPALEK CERVEZA,tengo cerveza.,añapalek cerveza,flashcards,P01463,False
+U02514,G02289,Entonces sí todos se pusieron de acuerdo. Dijeron “¡Vamos a pescar” y se fueron.,Ipa’linchi iñerdaper inlli’inutullina’ “¡Enchuku’ purkunwa’!” tanni’ma pa’llina’.,entonces sí todos se pusieron de acuerdo. dijeron ¡vamos a pescar y se fueron.,ipa'linchi iñerdaper inlli'inutullina' ¡enchuku' purkunwa'! tanni'ma pa'llina'.,pdf_textos,T006_N004,True
+U02885,G02660,"“Mucho cuidado, muchachos” dijo un viejo.","“Inlli’inuku’la’, wilalusa’” tullima ala’sa’ taserpi.","mucho cuidado, muchachos dijo un viejo.","inlli'inuku'la', wilalusa' tullima ala'sa' taserpi.",pdf_textos,T010_N053,True
+U02121,G01901,Cógelo todo.,MAKER' IÑER',cógelo todo.,maker' iñer',flashcards,P02121,False
+U00617,G00513,Di papa.,TUKER' TATA,di papa.,tuker' tata,flashcards,P00617,False
+U02085,G01867,Seguí practicando.,TUPITULEK INPALERIAMU,seguí practicando.,tupitulek inpaleriamu,flashcards,P02085,False
+U00562,G01570,Estoy asustado.,IMANANTUSU' ÑAPALEK,estoy asustado.,imanantusu' ñapalek,flashcards,P00562,True
+U01770,G01570,Estoy asombrada.,IMANANTUSU' ÑAPALEK,estoy asombrada.,imanantusu' ñapalek,flashcards,P01770,True
+U01138,G00991,Sigue cantando.,TULUNER'APER'I'LA,sigue cantando.,tuluner'aper'i'la,flashcards,P01138,False
+U02508,G02283,Yo le estoy enseñando.,A’lek’apalek kualer.,yo le estoy enseñando.,a'lek'apalek kualer.,pdf_textos,T005_N035,True
+U02889,G02664,Tenían sueño y mientras comían algunos cayeron.,Ipa’ yawichi’llina’ uranpanni’ma nu’unta’ anu’la’lli.,tenían sueño y mientras comían algunos cayeron.,ipa' yawichi'llina' uranpanni'ma nu'unta' anu'la'lli.,pdf_textos,T010_N057,True
+U02120,G01900,Alguien tosió.,DENIPA' CHINKU'LLI,alguien tosió.,denipa' chinku'lli,flashcards,P02120,False
+U02346,G02121,Un kilo de maíz se tuesta en una tostadora.,Ala’ kilu inyalek chiter inyalalanantekkek.,un kilo de maíz se tuesta en una tostadora.,ala' kilu inyalek chiter inyalalanantekkek.,pdf_textos,T002_N013,True
+U00804,G00680,Estaba equivocado.,PEKTUNSU' ÑAPAWINEK,estaba equivocado.,pektunsu' ñapawinek,flashcards,P00804,False
+U00998,G00861,Sé despiadado.,LUTANTENINPU'KER',sé despiadado.,lutanteninpu'ker',flashcards,P00998,False
+U01944,G01734,¿Estás trabajando?,¿SAKA'TAPALA?,¿estás trabajando?,¿saka'tapala?,flashcards,P01944,False
+U00496,G00408,¡Comé despacio!,¡WERANKER' UTI'LA!,¡comé despacio!,¡weranker' uti'la!,flashcards,P00496,False
+U00025,G00020,Él corrió.,NANA TEKAKLLI,él corrió.,nana tekaklli,flashcards,P00025,False
+U00680,G00892,Mira esto.,LLI'KER' ASU',mira esto.,lli'ker' asu',flashcards,P00680,True
+U01031,G00892,Examine esto.,LLI'KER' ASU',examine esto.,lli'ker' asu',flashcards,P01031,True
+U01112,G00969,Estoy preparado.,ÑAPALEK INSEKDIPERSU',estoy preparado.,ñapalek insekdipersu',flashcards,P01112,False
+U01831,G01627,¿Puedo acompañarles?,¿YENNITULEK KA'TAN'AN'MASU'?,¿puedo acompañarles?,¿yennitulek ka'tan'an'masu'?,flashcards,P01831,False
+U02249,G02024,Pedí comida.,WERAN LEKTULEK,pedí comida.,weran lektulek,flashcards,P02249,False
+U01758,G01560,Desearía poder.,YEN'NICHINA'KA,desearía poder.,yen'nichina'ka,flashcards,P01758,False
+U00889,G00761,Está mojado.,WIWERSU' ÑAPALLI,está mojado.,wiwersu' ñapalli,flashcards,P00889,False
+U02582,G02357,Los antiguos finados contaron que antes ellos no conocían la ribera del Pampayacu.,Papinkuku’lusa’ tullina’ napi’ ima nawa’ luwer’inpu’wiñina’ Panpadek ukuchin.,los antiguos finados contaron que antes ellos no conocían la ribera del pampayacu.,papinkuku'lusa' tullina' napi' ima nawa' luwer'inpu'wiñina' panpadek ukuchin.,pdf_textos,T007_N002,True
+U01895,G01689,Estamos colgados.,ÑAPALLIDEK WINTENSU',estamos colgados.,ñapallidek wintensu',flashcards,P01895,False
+U02081,G01863,Solo continúa.,TUPITER'SA',solo continúa.,tupiter'sa',flashcards,P02081,False
+U00334,G00269,Estoy solo.,KUASHASA' ÑAPALEK,estoy solo.,kuashasa' ñapalek,flashcards,P00334,False
+U03006,G02781,"Algunos que obedecieron llevaron a sus hermanas, las llevaron a vender, y les dieron mucho dinero.","Nu'unta' latekta'sui'ma ekpa'n sha'wan uku'latukun, enpu'nipa' kulliker enka'llina'.","algunos que obedecieron llevaron a sus hermanas, las llevaron a vender, y les dieron mucho dinero.","nu'unta' latekta'sui'ma ekpa'n sha'wan uku'latukun, enpu'nipa' kulliker enka'llina'.",pdf_textos,T010_N174,False
+U03116,G02891,"Ellos tienen la culpa, los que han abierto ese camino"" han dicho algunos.","Usha'wallina' nana inchilala ekketchulusa'"" tullini'ma' nu'unta'.","ellos tienen la culpa, los que han abierto ese camino han dicho algunos.",usha'wallina' nana inchilala ekketchulusa' tullini'ma' nu'unta'.,pdf_textos,T011_N063,True
+U00208,G00161,Soy rica.,WAPU' KULLIKER'WANEK,soy rica.,wapu' kulliker'wanek,flashcards,P00208,True
+U00209,G00161,Soy rico.,WAPU' KULLIKER'WANEK,soy rico.,wapu' kulliker'wanek,flashcards,P00209,True
+U00113,G00080,Macambo (fruta),MAKER,macambo (fruta),maker,flashcards,P00113,True
+U00679,G00569,¿Era divertido?,¿MUWIÑIN?,¿era divertido?,¿muwiñin?,flashcards,P00679,False
+U00910,G00780,Tom decidió.,TOM WADUÑI,tom decidió.,tom waduñi,flashcards,P00910,False
+U02986,G02761,"Después de eso, nuevamente se fueron otros más.",Naneklaka insichidañina'.,"después de eso, nuevamente se fueron otros más.",naneklaka insichidañina'.,pdf_textos,T010_N154,True
+U01432,G01252,Estaré solo.,KUASA' ÑAPECHEK,estaré solo.,kuasa' ñapechek,flashcards,P01432,False
+U01072,G00931,Tengo dinero.,KULLIKER'WANPALEK,tengo dinero.,kulliker'wanpalek,flashcards,P01072,False
+U02918,G02693,"“¡En acción. En acción, muchachos!","“¡Nasu’ku’la’. Nasu’ku’la’, wilalusa’!","¡en acción. en acción, muchachos!","¡nasu'ku'la'. nasu'ku'la', wilalusa'!",pdf_textos,T010_N086,True
+U01543,G01355,Están vivos.,NANPIPALLINA',están vivos.,nanpipallina',flashcards,P01543,False
+U02336,G02111,De la chicha punta quieren conocer.,Uklupidekkin yañinchitulama’.,de la chicha punta quieren conocer.,uklupidekkin yañinchitulama'.,pdf_textos,T002_N003,True
+U01306,G01137,¿Están ocupados?,¿YENNICHI'NAMA'?,¿están ocupados?,¿yennichi'nama'?,flashcards,P01306,False
+U00395,G00320,Deja pasar.,TA'ITER' NAKUI,deja pasar.,ta'iter' nakui,flashcards,P00395,False
+U00778,G00655,Traigo noticias.,KERA'PILELLEK LA'LA'LUSA',traigo noticias.,kera'pilellek la'la'lusa',flashcards,P00778,False
+U02156,G01936,Lava todo.,PAMUER' IÑER',lava todo.,pamuer' iñer',flashcards,P02156,False
+U02318,G02093,"Todos los que están aquí,","Iñer asek ñapalusa’,","todos los que están aquí,","iñer asek ñapalusa',",pdf_textos,T001_N068,True
+U02912,G02687,"Regresaron y le contaron al gobernante, quien convocó al pueblo.","Adenchanna’ wa’an wintullina’, ñinanlu’ peklu’lli.","regresaron y le contaron al gobernante, quien convocó al pueblo.","adenchanna' wa'an wintullina', ñinanlu' peklu'lli.",pdf_textos,T010_N080,True
+U02021,G01806,Hablo inglés.,LUNPALEK INGLES,hablo inglés.,lunpalek ingles,flashcards,P02021,False
+U02798,G02573,"A veces le llamaban, le discursaban a Arákayu.","Nerpi’pu’ peklu’llina’, ulenñina’ Arakayu.","a veces le llamaban, le discursaban a arákayu.","nerpi'pu' peklu'llina', ulenñina' arakayu.",pdf_textos,T007_N218,True
+U02122,G01902,Es dudoso.,LATEK'INPU'SU' NUKA'A,es dudoso.,latek'inpu'su' nuka'a,flashcards,P02122,False
+U01483,G01301,Está desierto.,MANEN ÑI'ÑI,está desierto.,manen ñi'ñi,flashcards,P01483,False
+U02600,G02375,“Entonces te queremos visitar. Queremos conocer tu casa”.,- “Nu’pachi yalli’llen. Yaluwerpidektullen”.,entonces te queremos visitar. queremos conocer tu casa.,- nu'pachi yalli'llen. yaluwerpidektullen.,pdf_textos,T007_N020,True
+U02784,G02559,"paiche, tucunaré, arahuana.","unma’, tukuner, dunantek.","paiche, tucunaré, arahuana.","unma', tukuner, dunantek.",pdf_textos,T007_N204,True
+U02777,G02552,"Ahora esta hambruna nos dieron,","Ipa’la uki’lak aku’llinerkenmu’wa’,","ahora esta hambruna nos dieron,","ipa'la uki'lak aku'llinerkenmu'wa',",pdf_textos,T007_N197,True
+U01322,G01151,Pórtate bien.,MUSU' ÑIKER,pórtate bien.,musu' ñiker,flashcards,P01322,False
+U01400,G01224,Te perdono.,MA'ICHIN'CHEN,te perdono.,ma'ichin'chen,flashcards,P01400,False
+U00003,G00001,Hola.,MA'PU'SIN,hola.,ma'pu'sin,flashcards,P00003,False
+U02469,G02244,"Avergonzado, en un desnivel del camino se cayó el canasto.",Dakutan inchilalak anu’lli nana lantekpi.,"avergonzado, en un desnivel del camino se cayó el canasto.",dakutan inchilalak anu'lli nana lantekpi.,pdf_textos,T004_N011,True
+U01860,G01654,Quieren más.,LUWANTULLINA' A'PINTA,quieren más.,luwantullina' a'pinta,flashcards,P01860,False
+U01387,G01212,Estoy tosiendo.,CHINKU'PALEK,estoy tosiendo.,chinku'palek,flashcards,P01387,False
+U02556,G02331,"“De verdad está ardiendo todavía, no se puede apagar el fuego.","“Tekkinchi uluntapallinpi’la, innichi’ñi tashu’nsu’.","de verdad está ardiendo todavía, no se puede apagar el fuego.","tekkinchi uluntapallinpi'la, innichi'ñi tashu'nsu'.",pdf_textos,T006_N046,True
+U00796,G00673,Quiero más.,A'PINTA' LUWANTULEK,quiero más.,a'pinta' luwantulek,flashcards,P00796,False
+U02908,G02683,A esos que están trabajando (abriendo trocha) vayan a verlos!”,¡Nana saka’tapalusa’ lli’kunchunma’”.,a esos que están trabajando (abriendo trocha) vayan a verlos!,¡nana saka'tapalusa' lli'kunchunma'.,pdf_textos,T010_N076,True
+U01922,G01713,Estabas feliz.,MUSU' ÑAPAWINA,estabas feliz.,musu' ñapawina,flashcards,P01922,False
+U00878,G00750,¿Nos vamos?,¿PA'ATER'?,¿nos vamos?,¿pa'ater'?,flashcards,P00878,False
+U00588,G00489,Está ahí.,NANEK ÑAPALLI,está ahí.,nanek ñapalli,flashcards,P00588,False
+U02495,G02270,Viniendo he tenido sólo seis hijos.,kua wek’amu suktasa’ willaweklusa’ a’ñilek.,viniendo he tenido sólo seis hijos.,kua wek'amu suktasa' willaweklusa' a'ñilek.,pdf_textos,T005_N022,True
+U01365,G01190,Come mucho.,WAPU' WERAMPALLI,come mucho.,wapu' werampalli,flashcards,P01365,False
+U01844,G01639,¿Debería cerrar?,¿UNKU'TUWINANSIN?,¿debería cerrar?,¿unku'tuwinansin?,flashcards,P01844,False
+U01503,G01319,Vámonos.,ENCHUKU' ,vámonos.,enchuku',flashcards,P01503,False
+U01869,G01663,Están dentro.,KINEKLA' ÑAPALLINA',están dentro.,kinekla' ñapallina',flashcards,P01869,False
+U01427,G01247,Estaba celoso.,APISADATUTEK ÑAPAWINEK,estaba celoso.,apisadatutek ñapawinek,flashcards,P01427,False
+U02302,G02077,¿Por qué no entienden?,¿Ma’ki’na ñinchichi’ñina’?,¿por qué no entienden?,¿ma'ki'na ñinchichi'ñina'?,pdf_textos,T001_N052,True
+U01385,G01210,Soy americano.,AMERICANO NUKA'KA,soy americano.,americano nuka'ka,flashcards,P01385,False
+U00575,G00480,¿Es acá?,¿ASEK A'CHA?,¿es acá?,¿asek a'cha?,flashcards,P00575,True
+U00577,G00480,¿Está aquí?,¿ASEK A'CHA?,¿está aquí?,¿asek a'cha?,flashcards,P00577,True
+U01448,G01266,Soy estudiante.,KIRKA'ÑINCHITUTEK NUKA'KA,soy estudiante.,kirka'ñinchitutek nuka'ka,flashcards,P01448,False
+U01520,G01335,¿Debo continuar?,¿TUPITE'CHEKPI'LA?,¿debo continuar?,¿tupite'chekpi'la?,flashcards,P01520,False
+U00319,G00255,Sé correr.,ÑINCHITAPALEK TEKA'AK',sé correr.,ñinchitapalek teka'ak',flashcards,P00319,False
+U01970,G01759,¿Tienes uno?,¿A'ÑAPALA ALA'SA'?,¿tienes uno?,¿a'ñapala ala'sa'?,flashcards,P01970,False
+U01670,G01477,¿Te conocemos?,¿LUWER'CHAPALLIDEN?,¿te conocemos?,¿luwer'chapalliden?,flashcards,P01670,False
+U00901,G00772,Caminaron.,DEK'KUNTULLINA',caminaron.,dek'kuntullina',flashcards,P00901,False
+U02430,G02205,"Me levanto pueda o no pueda, masatito te voy a traer (pensando).","Yunsamu innichinpu’la’wimu, uklulu’sha manta’mu.","me levanto pueda o no pueda, masatito te voy a traer (pensando).","yunsamu innichinpu'la'wimu, uklulu'sha manta'mu.",pdf_textos,T003_N037,True
+U02354,G02129,Después bonito se lava uno la boca y se lava los dientes.,"Nanekla mushasu’ inkawilalek, inpamu’lateklek.",después bonito se lava uno la boca y se lava los dientes.,"nanekla mushasu' inkawilalek, inpamu'lateklek.",pdf_textos,T002_N021,True
+U00008,G00007,¡Ayuda!,¡KATU'PA'!,¡ayuda!,¡katu'pa'!,flashcards,P00008,True
+U00010,G00007,¡Auxilio!,¡KATU'PA'!,¡auxilio!,¡katu'pa'!,flashcards,P00010,True
+U01994,G01780,¡Qué humillante!,¡EMPU'NI DAKUTA!,¡qué humillante!,¡empu'ni dakuta!,flashcards,P01994,False
+U00200,G00247,Estoy aquí.,ASEK' ÑAPALEK,estoy aquí.,asek' ñapalek,flashcards,P00200,True
+U00310,G00247,Acá estoy.,ASEK' ÑAPALEK,acá estoy.,asek' ñapalek,flashcards,P00310,True
+U01163,G01016,Ponlo allí.,AKU'KER' NANEK ,ponlo allí.,aku'ker' nanek,flashcards,P01163,True
+U01165,G01016,Ponlo ahí.,AKU'KER' NANEK ,ponlo ahí.,aku'ker' nanek,flashcards,P01165,True
+U00866,G00742,Ahora sigue.,IPA'LA TUPITER',ahora sigue.,ipa'la tupiter',flashcards,P00866,True
+U00867,G00742,Ahora continúa.,IPA'LA TUPITER',ahora continúa.,ipa'la tupiter',flashcards,P00867,True
+U00868,G00742,Ahora prosigue.,IPA'LA TUPITER',ahora prosigue.,ipa'la tupiter',flashcards,P00868,True
+U02586,G02361,Dijeron “¡Vamos a conocer quién será!”,Tanni’mi’na “¡Enchuku’ luwetchunta’wa’ den’ipa’tek!”,dijeron ¡vamos a conocer quién será!,tanni'mi'na ¡enchuku' luwetchunta'wa' den'ipa'tek!,pdf_textos,T007_N006,True
+U01763,G01565,Los llamaré.,PEKLUE'CHENMA',los llamaré.,peklue'chenma',flashcards,P01763,False
+U00537,G00443,Me encantó.,LUWANTULLIEN,me encantó.,luwantullien,flashcards,P00537,False
+U02319,G02094,"niños,","wilalusa’,","niños,","wilalusa',",pdf_textos,T001_N069,True
+U02708,G02483,"Los que no quisieron ir río abajo, unos cuantos se quedaron.","Nana yapanti’npu’lusa’, enpu’dunshipa’ llia’llina’.","los que no quisieron ir río abajo, unos cuantos se quedaron.","nana yapanti'npu'lusa', enpu'dunshipa' llia'llina'.",pdf_textos,T007_N128,True
+U01995,G01781,¡Qué interesante!,¡EMPU'NI LUYAIPA'!,¡qué interesante!,¡empu'ni luyaipa'!,flashcards,P01995,False
+U02891,G02666,Poquito les quitó el sueño.,A’metcha nanpiladencha’llina’.,poquito les quitó el sueño.,a'metcha nanpiladencha'llina'.,pdf_textos,T010_N059,True
+U01587,G01398,Somos serios.,KU'LA YAMERAPIÑIDEK,somos serios.,ku'la yamerapiñidek,flashcards,P01587,False
+U01985,G01772,Dales dinero.,ENKA'DEKER' KULLIKER',dales dinero.,enka'deker' kulliker',flashcards,P01985,False
+U02668,G02443,aparecer Arákayu.,Asu’ musenkek sellawalusi’ma chu’kenapa’ser lli’tencha’lli Arakayu. Cuando las golondrinas revoloteaban pandillando arriba vino a,aparecer arákayu.,asu' musenkek sellawalusi'ma chu'kenapa'ser lli'tencha'lli arakayu. cuando las golondrinas revoloteaban pandillando arriba vino a,pdf_textos,T007_N088,True
+U00504,G00416,Él miente.,NANA TUMU'PALLI,él miente.,nana tumu'palli,flashcards,P00504,False
+U00174,G00132,Lo hice.,NU'TULEK,lo hice.,nu'tulek,flashcards,P00174,False
+U02857,G02632,"dijo ese viejo soñador, que predecía lo que iba a suceder.","tullima nana ala’sa’ taserpi wa’lata’su’, lunanpichita’su’.","dijo ese viejo soñador, que predecía lo que iba a suceder.","tullima nana ala'sa' taserpi wa'lata'su', lunanpichita'su'.",pdf_textos,T010_N025,True
+U02603,G02378,No le permitía a nadie entrar a su casa.,Ñima ya’da’dek’i’ñi pidekñik.,no le permitía a nadie entrar a su casa.,ñima ya'da'dek'i'ñi pidekñik.,pdf_textos,T007_N023,True
+U03040,G02815,"Hoy estamos viendo. Estamos viendo todo lo que va aconteciendo años, semana, mes, año.","Ipa'li'na ipa' lli'apalekwa'. Lli'apalekwa' ma'pu'si'lipa' nakupilalli ekkilalalusa', simana', duker, ekkilala.","hoy estamos viendo. estamos viendo todo lo que va aconteciendo años, semana, mes, año.","ipa'li'na ipa' lli'apalekwa'. lli'apalekwa' ma'pu'si'lipa' nakupilalli ekkilalalusa', simana', duker, ekkilala.",pdf_textos,T010_N208,True
+U01202,G01043,Llamarán.,PEKLU'TECHUNA',llamarán.,peklu'techuna',flashcards,P01202,False
+U02822,G02597,Ahora a la que antes llamaban “Ballena Poza” la llaman “Campana Poza”.,Ipa’la “Lanla’ Pitun” itullina’ napi’ ipa’li’na “Kanpana’ Pitun” itullina’.,ahora a la que antes llamaban ballena poza la llaman campana poza.,ipa'la lanla' pitun itullina' napi' ipa'li'na kanpana' pitun itullina'.,pdf_textos,T009_N006,True
+U00128,G00091,¿Quién comió?,¿DEN'INA' KA'LLI?,¿quién comió?,¿den'ina' ka'lli?,flashcards,P00128,False
+U01525,G01339,Hablen claramente.,LUNKU' LACHEK'AK,hablen claramente.,lunku' lachek'ak,flashcards,P01525,False
+U02934,G02709,"Con esto prendieron fuego (los del primer grupo), cocinaron, comieron y así les hizo dormir el Duende Puro Hueso”.","Asu’lek penkwanna’, akusutanna’, uranna’ wa’ki’deklli Lansi’ Wa’danler”.","con esto prendieron fuego (los del primer grupo), cocinaron, comieron y así les hizo dormir el duende puro hueso.","asu'lek penkwanna', akusutanna', uranna' wa'ki'deklli lansi' wa'danler.",pdf_textos,T010_N102,True
+U01832,G01628,¿Puedo unírmeles?,¿YENNITULEK PIPER'AN'MASU'?,¿puedo unírmeles?,¿yennitulek piper'an'masu'?,flashcards,P01832,False
+U02311,G02086,"Para bien esta hermana desde otro pueblo,","Mula’si’la asu’ kai kua nerñinanlukla,","para bien esta hermana desde otro pueblo,","mula'si'la asu' kai kua nerñinanlukla,",pdf_textos,T001_N061,True
+U01610,G01421,Se equivocan.,APER'LLINA',se equivocan.,aper'llina',flashcards,P01610,False
+U01286,G01118,Sobreviviste.,CHIMINLLINKEKLA NAMPILA,sobreviviste.,chiminllinkekla nampila,flashcards,P01286,False
+U03143,G02918,"Nosotros antes desmotábamos el algodón, hilábamos, metíamos el hilo en el telar armándolo.","Kenmu'wei'na' napi' anantulekwa', pitetchulekwa', kala'tulekwa'.","nosotros antes desmotábamos el algodón, hilábamos, metíamos el hilo en el telar armándolo.","kenmu'wei'na' napi' anantulekwa', pitetchulekwa', kala'tulekwa'.",pdf_textos,T012_N019,False
+U01283,G01115,Lo prometió.,TUWIÑI NU'TECHU,lo prometió.,tuwiñi nu'techu,flashcards,P01283,False
+U01512,G01327,Resume.,TUNKA'SU' NU'TER',resume.,tunka'su' nu'ter',flashcards,P01512,False
+U01827,G01623,Levantémonos.,YUNSANWA',levantémonos.,yunsanwa',flashcards,P01827,False
+U00884,G00756,¡Quédate quieto!,¡LIA'KER' YALENMEKTA!,¡quédate quieto!,¡lia'ker' yalenmekta!,flashcards,P00884,False
+U00108,G00076,Hasta luego.,PANTE'CHEK,hasta luego.,pante'chek,flashcards,P00108,False
+U01018,G00880,¿Vino Tom?,¿TOM WEK'LLI?,¿vino tom?,¿tom wek'lli?,flashcards,P01018,False
+U01042,G00902,Toma otro. (beber),UKER' ALI'LA',toma otro. (beber),uker' ali'la',flashcards,P01042,True
+U01409,G01230,Escucho voces.,LAUK'APALEK LA'LA'LUSA',escucho voces.,lauk'apalek la'la'lusa',flashcards,P01409,False
+U01604,G01415,¿Dónde estábamos?,¿ENÑUPA'CHA ÑAPAWINEKWA'?,¿dónde estábamos?,¿enñupa'cha ñapawinekwa'?,flashcards,P01604,False
+U02102,G01883,Alistémonos.,INSEKDIPERAWA',alistémonos.,insekdiperawa',flashcards,P02102,False
+U00912,G00782,Tom espiró.,TOM DEKLLI NERIDEKNEN,tom espiró.,tom deklli nerideknen,flashcards,P00912,False
+U01016,G00878,Venga conmigo.,WEK'KER' KUALEK,venga conmigo.,wek'ker' kualek,flashcards,P01016,False
+U02145,G01925,Son amigos.,EKUANLUSA' NUKER'KA,son amigos.,ekuanlusa' nuker'ka,flashcards,P02145,False
+U00176,G00134,Lo olvidé.,PINANER'LEK',lo olvidé.,pinaner'lek',flashcards,P00176,False
+U01752,G01554,Fui arrestado.,PILLITUWIÑINERKU',fui arrestado.,pillituwiñinerku',flashcards,P01752,False
+U00502,G00414,Descolgó.,U'NU'WAÑI,descolgó.,u'nu'wañi,flashcards,P00502,False
+U00730,G00612,¿Podemos hablar?,¿YENNITULEKWA' LUN'AK?,¿podemos hablar?,¿yennitulekwa' lun'ak?,flashcards,P00730,True
+U00731,G00612,¿Podemos conversar?,¿YENNITULEKWA' LUN'AK?,¿podemos conversar?,¿yennitulekwa' lun'ak?,flashcards,P00731,True
+U03051,G02826,"Meses a veces lloraban, tomándose de las manos, besándose las manos, por todas esas cosas lloraban.","Duker nerpi’pu' wellekllina', inpilli'iteklatanna', inmusha'iteklanna', nanadaper malek wellekllina'.","meses a veces lloraban, tomándose de las manos, besándose las manos, por todas esas cosas lloraban.","duker nerpi'pu' wellekllina', inpilli'iteklatanna', inmusha'iteklanna', nanadaper malek wellekllina'.",pdf_textos,T010_N219,True
+U01134,G00987,Sigue mirando.,LLI'TAPER'I'LA,sigue mirando.,lli'taper'i'la,flashcards,P01134,False
+U01883,G01677,Necesitamos ganar.,LUWANTULLIDEK KANA'TAK,necesitamos ganar.,luwantullidek kana'tak,flashcards,P01883,False
+U01530,G01343,Mantenganse juntos.,MUMU'SU' ÑAPAKU',mantenganse juntos.,mumu'su' ñapaku',flashcards,P01530,False
+U00818,G00694,Estoy saludable.,ÑAPALEK MUDINUSU',estoy saludable.,ñapalek mudinusu',flashcards,P00818,False
+U00114,G00081,Dimelo.,ITU'U,dimelo.,itu'u,flashcards,P00114,False
+U01886,G01680,Fuimos culpados.,A'APITULLINER'KUDEK,fuimos culpados.,a'apitulliner'kudek,flashcards,P01886,False
+U00809,G00685,Soy turco.,TURKU NUKA'KA,soy turco.,turku nuka'ka,flashcards,P00809,False
+U00745,G00625,No sonrían.,YAYAMERLADATAMA',no sonrían.,yayamerladatama',flashcards,P00745,False
+U01079,G00938,Leo frecuentemente.,LUNPA'LEK UTALINPU'SA',leo frecuentemente.,lunpa'lek utalinpu'sa',flashcards,P01079,False
+U00709,G00595,Pueden irse.,YENNITULAMA' PA'A'MAMA'SU',pueden irse.,yennitulama' pa'a'mama'su',flashcards,P00709,False
+U02767,G02542,la ribera se mantendría muy bonita.,ukuchin enpu’ni mushipa’ ñapa’su’.,la ribera se mantendría muy bonita.,ukuchin enpu'ni mushipa' ñapa'su'.,pdf_textos,T007_N187,True
+U02915,G02690,Más bien propongan otro grupo!,A’pimuchun ali’la musun dunkerku’!,más bien propongan otro grupo!,a'pimuchun ali'la musun dunkerku'!,pdf_textos,T010_N083,True
+U02518,G02293,"Dicen que en ese momento bajó un catalán como hembra, este era una unchala5.","Nanek’ima ipa’linchi nu’wencha’lli ala’sa’ sasa’lunpu’a’su’, asu’ silakun.","dicen que en ese momento bajó un catalán como hembra, este era una unchala5.","nanek'ima ipa'linchi nu'wencha'lli ala'sa' sasa'lunpu'a'su', asu' silakun.",pdf_textos,T006_N008,True
+U01620,G01431,Necesitas esto.,LUWANTULA ASU',necesitas esto.,luwantula asu',flashcards,P01620,False
+U00481,G00394,¡Ya párale!,¡PILLI'TER' NANEK!,¡ya párale!,¡pilli'ter' nanek!,flashcards,P00481,False
+U01140,G00993,Continúe hablando.,LUN'APER'PI'LA,continúe hablando.,lun'aper'pi'la,flashcards,P01140,False
+U00960,G00826,¡Qué equipo!,MUMU'WANBALEK,¡qué equipo!,mumu'wanbalek,flashcards,P00960,False
+U01638,G01448,Eres guapa.,MULUNSHA NUKA'MA,eres guapa.,mulunsha nuka'ma,flashcards,P01638,False
+U00181,G00265,Lo vi.,LLI'LEK,lo vi.,lli'lek,flashcards,P00181,True
+U00330,G00265,Le vi.,LLI'LEK,le vi.,lli'lek,flashcards,P00330,True
+U01672,G01479,¿Me oyes?,¿LAUK'APALUN?,¿me oyes?,¿lauk'apalun?,flashcards,P01672,True
+U01673,G01479,¿Me escuchás?,¿LAUK'APALUN?,¿me escuchás?,¿lauk'apalun?,flashcards,P01673,True
+U01423,G01243,Quiero intentarlo.,YATEKLERILEK,quiero intentarlo.,yateklerilek,flashcards,P01423,False
+U00189,G00144,Estoy calvo.,NUWEK'MUTU' ÑAPALEK,estoy calvo.,nuwek'mutu' ñapalek,flashcards,P00189,False
+U00589,G00490,Es blanco.,DADAPU NUKA'A,es blanco.,dadapu nuka'a,flashcards,P00589,False
+U01963,G01753,¿Me querías?,¿LUWANTUWINUN?,¿me querías?,¿luwantuwinun?,flashcards,P01963,True
+U01964,G01753,¿Me amabas?,¿LUWANTUWINUN?,¿me amabas?,¿luwantuwinun?,flashcards,P01964,True
+U00682,G00570,Somos hombres.,ENMU'PINEN NUKA'KUDEK,somos hombres.,enmu'pinen nuka'kudek,flashcards,P00682,False
+U02488,G02263,Mi madre y mi padre murieron en Varadero.,Awawek tatawek chimiñina’ Simirkek.,mi madre y mi padre murieron en varadero.,awawek tatawek chimiñina' simirkek.,pdf_textos,T005_N015,True
+U02610,G02385,“¿Qué clase de (gente) es este hermano que hasta pescados cría?,“¿Ma’pu’a’su’ asu’ yalli’ samerunta’ pektawapallinchi?,¿qué clase de (gente) es este hermano que hasta pescados cría?,¿ma'pu'a'su' asu' yalli' samerunta' pektawapallinchi?,pdf_textos,T007_N030,True
+U01696,G01499,Ha cambiado.,A'PAWILEKLLI,ha cambiado.,a'pawileklli,flashcards,P01696,False
+U00165,G00123,Él prueba.,NANA LATA'LLI,él prueba.,nana lata'lli,flashcards,P00165,False
+U02459,G02234,Les voy a contar del canasto que caminaba antiguamente.,Wintetchenma’ lantekpi dekkunta’su’ napi’.,les voy a contar del canasto que caminaba antiguamente.,wintetchenma' lantekpi dekkunta'su' napi'.,pdf_textos,T004_N002,True
+U00686,G00574,Nos gusta.,IYA'TULEK'WA',nos gusta.,iya'tulek'wa',flashcards,P00686,False
+U02926,G02701,Dice que cuando llegaron les dijo (el duende):,Ektu’a’ser ima itudeklli:,dice que cuando llegaron les dijo (el duende):,ektu'a'ser ima itudeklli:,pdf_textos,T010_N094,True
+U03021,G02796,"Al cura cargándolo en la espalda lo traían ""¿Ahora quién va a estar cargando al cura?"", dijeron.","Pacher’ pipek'anna' kerapencha'llina' ""¿Ipa'li’na denler pacher’ pipek'apetchu?"", tullina'.","al cura cargándolo en la espalda lo traían ¿ahora quién va a estar cargando al cura?, dijeron.","pacher' pipek'anna' kerapencha'llina' ¿ipa'li'na denler pacher' pipek'apetchu?, tullina'.",pdf_textos,T010_N189,True
+U00043,G00035,¡Imposible!,¡SAKA'DEK!,¡imposible!,¡saka'dek!,flashcards,P00043,False
+U02522,G02297,"Dicen que en esos tiempos el gobernante (de Jeberos) era el Pelejo, el Pelejo era gobernante.","Napi’pui’mi’na wa’an ñapawiñi asu’ Kuntek, Kuntek wa’an.","dicen que en esos tiempos el gobernante (de jeberos) era el pelejo, el pelejo era gobernante.","napi'pui'mi'na wa'an ñapawiñi asu' kuntek, kuntek wa'an.",pdf_textos,T006_N012,True
+U01954,G01744,¿Puedes ayudarme?,¿YENNITULA KATUPA'A'MUK?,¿puedes ayudarme?,¿yennitula katupa'a'muk?,flashcards,P01954,False
+U02484,G02259,Cuando tenía diez años he salido de Jeberos.,Shunka’ ekkilala a’ñamu Shiwiluklan yunsu’lek.,cuando tenía diez años he salido de jeberos.,shunka' ekkilala a'ñamu shiwiluklan yunsu'lek.,pdf_textos,T005_N011,True
+U02019,G01804,Le burlé.,TUMU'TULEK,le burlé.,tumu'tulek,flashcards,P02019,False
+U03107,G02882,así les dicen en otro idioma al castellano.,"itullina' ali'la'la'leklan, asu' Kaschilla.",así les dicen en otro idioma al castellano.,"itullina' ali'la'la'leklan, asu' kaschilla.",pdf_textos,T011_N054,False
+U01205,G01046,Vendrán.,WENCHE'CHUNA',vendrán.,wenche'chuna',flashcards,P01205,False
+U00604,G00501,Juguemos.,INDEKLLITAWA',juguemos.,indekllitawa',flashcards,P00604,False
+U01537,G01349,Cancelaron.,TA'ITULA'LLINA',cancelaron.,ta'itula'llina',flashcards,P01537,False
+U00017,G00014,"¡Oh, no! (femenino)",¡ASHA!,"¡oh, no! (femenino)",¡asha!,flashcards,P00017,True
+U00198,G00153,Estoy lleno.,MER'SU' ÑAPALEK,estoy lleno.,mer'su' ñapalek,flashcards,P00198,True
+U00199,G00153,Estoy llena.,MER'SU' ÑAPALEK,estoy llena.,mer'su' ñapalek,flashcards,P00199,True
+U01273,G01108,Le conoces.,LUWER'CHAPALA,le conoces.,luwer'chapala,flashcards,P01273,False
+U02948,G02723,"En vano era puro hueso, pues tenía mucha fuerza.","Da’pinima lansi’sa’, enpu’ni nantapillinpi’ma.","en vano era puro hueso, pues tenía mucha fuerza.","da'pinima lansi'sa', enpu'ni nantapillinpi'ma.",pdf_textos,T010_N116,True
+U00435,G00352,Tom nada.,TOM IDUMPALLI,tom nada.,tom idumpalli,flashcards,P00435,False
+U00228,G01304,Es viejo.,NAPI'DA' NUKA'A,es viejo.,napi'da' nuka'a,flashcards,P00228,True
+U00619,G01304,Es vieja.,NAPI'DA' NUKA'A,es vieja.,napi'da' nuka'a,flashcards,P00619,True
+U01486,G01304,Es obsoleto.,NAPI'DA' NUKA'A,es obsoleto.,napi'da' nuka'a,flashcards,P01486,True
+U01146,G00999,Dejame hablar.,TA'ITULA'U LUN'ECHEK,dejame hablar.,ta'itula'u lun'echek,flashcards,P01146,False
+U03023,G02798,"A algunos se los comió el tigre negro, cuando volvieron a ir los mataron.","Nu'unti'ma kelluluñiñi'ler ka'deklli, pa'nunta'nni'ma ipa' di'tullina'.","a algunos se los comió el tigre negro, cuando volvieron a ir los mataron.","nu'unti'ma kelluluñiñi'ler ka'deklli, pa'nunta'nni'ma ipa' di'tullina'.",pdf_textos,T010_N191,False
+U02295,G02070,"el shiwilu de antes,","napi’ Shiwilu,","el shiwilu de antes,","napi' shiwilu,",pdf_textos,T001_N045,True
+U01214,G01055,Tom respondió.,TOM NA'PITULLI,tom respondió.,tom na'pitulli,flashcards,P01214,False
+U00929,G00798,Comimos huevos.,KA'LLIDEK KADU',comimos huevos.,ka'llidek kadu',flashcards,P00929,False
+U01576,G01387,Estábamos cerca.,KAWITUSU' ÑAPAWIÑIDEK,estábamos cerca.,kawitusu' ñapawiñidek,flashcards,P01576,False
+U00962,G00828,¿Quién sos?,¿DENKENA'CHA?,¿quién sos?,¿denkena'cha?,flashcards,P00962,False
+U02702,G02477,Conforme iba riéndose se iba sumergiendo.,Yamer’apila’su’pi’la dankumer’apilalli.,conforme iba riéndose se iba sumergiendo.,yamer'apila'su'pi'la dankumer'apilalli.,pdf_textos,T007_N122,True
+U01298,G01129,Tienes razón.,TEKINCHI NUKA'A,tienes razón.,tekinchi nuka'a,flashcards,P01298,False
+U01254,G01090,Estamos bromeando.,SI'LENTAPALLIDEK,estamos bromeando.,si'lentapallidek,flashcards,P01254,False
+U03168,G02943,De allí dice se originaron los nombres shiwilu.,Naneklima asu' kineklada' llillin lli'tencha'lli.,de allí dice se originaron los nombres shiwilu.,naneklima asu' kineklada' llillin lli'tencha'lli.,pdf_textos,T013_N022,False
+U03057,G02832,"Por eso dice, una mujer llamada Malallina9,","Nana malek imi'na, ala'sa' shaya' llillinen itullina' Malallina,","por eso dice, una mujer llamada malallina9,","nana malek imi'na, ala'sa' shaya' llillinen itullina' malallina,",pdf_textos,T011_N004,False
+U00498,G00410,Olvídenlo.,PINANER'KU',olvídenlo.,pinaner'ku',flashcards,P00498,False
+U00536,G00442,¡Te amo!,¡LUANTULLIEN!,¡te amo!,¡luantullien!,flashcards,P00536,False
+U03158,G02933,Ahí se fueron a vivir los Laulates12.,Nanek ima ñikuñi Laweklateklusa'.,ahí se fueron a vivir los laulates12.,nanek ima ñikuñi laweklateklusa'.,pdf_textos,T013_N012,False
+U00622,G00517,Huele esto.,LANERKER' ASU',huele esto.,lanerker' asu',flashcards,P00622,False
+U00484,G00397,¡No salten!,¡YAINDEKTAMA'!,¡no salten!,¡yaindektama'!,flashcards,P00484,False
+U01381,G01206,¡Qué emocionante!,¡EMBU'NIMUSHIPA'!,¡qué emocionante!,¡embu'nimushipa'!,flashcards,P01381,False
+U02496,G02271,Para hacer estudiar a mis hijos he trabajado bastante.,Wilaweklusa’ ya’ñinchillintudek’amu enpu’nipa’ saka’tulek.,para hacer estudiar a mis hijos he trabajado bastante.,wilaweklusa' ya'ñinchillintudek'amu enpu'nipa' saka'tulek.,pdf_textos,T005_N023,True
+U00035,G00030,Tengo diecinueve.,A'ÑAPALEK SHUNKA'ISKUN,tengo diecinueve.,a'ñapalek shunka'iskun,flashcards,P00035,False
+U02391,G02166,La espuma de la chicha punta se parece a la bebida que toman los wiracochas (cerveza).,Uklu’pidekdinpunen ma’lusa’ wa’danlusa’ uwerkasu’pu’lli.,la espuma de la chicha punta se parece a la bebida que toman los wiracochas (cerveza).,uklu'pidekdinpunen ma'lusa' wa'danlusa' uwerkasu'pu'lli.,pdf_textos,T002_N058,True
+U02730,G02505,"Quémalos a los malos,","Di’setchudekker muinpu’lusa’,","quémalos a los malos,","di'setchudekker muinpu'lusa',",pdf_textos,T007_N150,True
+U01394,G01218,Puedo verte.,YENNITULEK LI'AN'SU',puedo verte.,yennitulek li'an'su',flashcards,P01394,False
+U02450,G02225,"“Ya he venido, mamá. Te voy a servir masato, mamá”.","- “Ipa uncha’lek, mamá. Uklulu’ a’werken, mamá”.","ya he venido, mamá. te voy a servir masato, mamá.","- ipa uncha'lek, mamá. uklulu' a'werken, mamá.",pdf_textos,T003_N057,True
+U02991,G02766,"Algunos parece que no tuvieran ojos, porque son de otra raza"" dijeron antes.","Un’unta’ ma’lusa’ ladawi’ñinpu’su’ lli’tulli, nerñinanlukla nanna’"" tullina’ napi’.","algunos parece que no tuvieran ojos, porque son de otra raza dijeron antes.","un'unta' ma'lusa' ladawi'ñinpu'su' lli'tulli, nerñinanlukla nanna' tullina' napi'.",pdf_textos,T010_N159,True
+U00722,G00606,Sé puntual.,YATEK'DA'TA,sé puntual.,yatek'da'ta,flashcards,P00722,False
+U01312,G01143,¿Estás borracho?,¿LUPERSU' ÑAPALA?,¿estás borracho?,¿lupersu' ñapala?,flashcards,P01312,True
+U01313,G01143,¿Estás ebrio?,¿LUPERSU' ÑAPALA?,¿estás ebrio?,¿lupersu' ñapala?,flashcards,P01313,True
+U01314,G01143,¿Estás embriagado?,¿LUPERSU' ÑAPALA?,¿estás embriagado?,¿lupersu' ñapala?,flashcards,P01314,True
+U01697,G01500,Es canadiense.,KANADIENSE NUKA'A,es canadiense.,kanadiense nuka'a,flashcards,P01697,False
+U01113,G00970,Soy inquieto.,WA'DANPINTEK NUKA'KA,soy inquieto.,wa'danpintek nuka'ka,flashcards,P01113,True
+U01114,G00970,Soy intranquilo.,WA'DANPINTEK NUKA'KA,soy intranquilo.,wa'danpintek nuka'ka,flashcards,P01114,True
+U00313,G00250,¡Qué raro!,¡NERPI'LA EMPU'NIPA'!,¡qué raro!,¡nerpi'la empu'nipa'!,flashcards,P00313,False
+U01601,G01412,¿Cuándo vamos?,¿ENPI'A'CHA PA'ATER?,¿cuándo vamos?,¿enpi'a'cha pa'ater?,flashcards,P01601,False
+U00613,G00509,Mira allí.,LLI'KER' NANEK,mira allí.,lli'ker' nanek,flashcards,P00613,False
+U02905,G02680,"En lo que eso iba sucediendo, se cumplió un mes y el momento en que debían regresar.",Nu’apa’ser ima ipa’ ektu’nchalli dukerñenna’ yadencha’erkasu’.,"en lo que eso iba sucediendo, se cumplió un mes y el momento en que debían regresar.",nu'apa'ser ima ipa' ektu'nchalli dukerñenna' yadencha'erkasu'.,pdf_textos,T010_N073,True
+U02297,G02072,"lo que vivieron antes nuestros abuelos ya fallecidos, las abuelas finadas.","napi’ nanpirkasu’ papinkuku’lusa’, amiku’lusa’.","lo que vivieron antes nuestros abuelos ya fallecidos, las abuelas finadas.","napi' nanpirkasu' papinkuku'lusa', amiku'lusa'.",pdf_textos,T001_N047,True
+U00974,G00840,Quédatelo.,LIA'KER',quédatelo.,lia'ker',flashcards,P00974,False
+U02427,G02202,"Sentada me la paso, tarde llegan.","Du’anpamu erwatulek, erwa uncha’llina’.","sentada me la paso, tarde llegan.","du'anpamu erwatulek, erwa uncha'llina'.",pdf_textos,T003_N034,True
+U00336,G00270,Estoy despierto.,NANPISU' ÑAPALEK,estoy despierto.,nanpisu' ñapalek,flashcards,P00336,False
+U00468,G00383,Traed comida.,KENCHER' WERAN,traed comida.,kencher' weran,flashcards,P00468,False
+U02531,G02306,un hombre joven de cuello colorado y cara colorada.,"ipi’ma nana ukalu’ yata’wanta’su’lupa’ ima, uk’apilincha’, nanek kapeklli ala’sa’ enmu’pinen nadi’nek piperunkallu’la’su’, pipelladasu’. cuando iban terminando ese bajial, cuando venían, allí encontraron a",un hombre joven de cuello colorado y cara colorada.,"ipi'ma nana ukalu' yata'wanta'su'lupa' ima, uk'apilincha', nanek kapeklli ala'sa' enmu'pinen nadi'nek piperunkallu'la'su', pipelladasu'. cuando iban terminando ese bajial, cuando venían, allí encontraron a",pdf_textos,T006_N021,True
+U02769,G02544,"dijeron los antiguos sentados,","tullina’ napi’ku’lusa’ du’anna’,","dijeron los antiguos sentados,","tullina' napi'ku'lusa' du'anna',",pdf_textos,T007_N189,True
+U02093,G01875,Primero comamos.,NANENTU WERANWA',primero comamos.,nanentu weranwa',flashcards,P02093,False
+U00041,G01277,Estoy escuchando.,LAU'TAPALEK,estoy escuchando.,lau'tapalek,flashcards,P00041,True
+U00042,G01277,Estoy abriendo mi boca.,LAUK'APALEK,estoy abriendo mi boca.,lauk'apalek,flashcards,P00042,True
+U01459,G01277,Estoy escuchando.,LAUK'APALEK,estoy escuchando.,lauk'apalek,flashcards,P01459,True
+U00333,G00268,Cantaré.,TULUNER'ECHEK,cantaré.,tuluner'echek,flashcards,P00333,False
+U02862,G02637,Después se levantó otro y dijo:,Naneklima ali’la yunsa’n tulli:,después se levantó otro y dijo:,naneklima ali'la yunsa'n tulli:,pdf_textos,T010_N030,True
+U02088,G01870,Déjame llevarlo.,TA'ITULA'U EKPE'CHEK,déjame llevarlo.,ta'itula'u ekpe'chek,flashcards,P02088,False
+U01383,G01208,Casi morí.,CHIMINWINEK,casi morí.,chiminwinek,flashcards,P01383,False
+U00605,G01001,Renunciemos.,YUNSU'WA',renunciemos.,yunsu'wa',flashcards,P00605,True
+U01148,G01001,Salgamos.,YUNSU'WA',salgamos.,yunsu'wa',flashcards,P01148,True
+U01815,G01612,Déjelo ahí.,TA'ITULER NANEK,déjelo ahí.,ta'ituler nanek,flashcards,P01815,False
+U01222,G01062,Tomás renunció.,CHUMA YUNSU'LLI,tomás renunció.,chuma yunsu'lli,flashcards,P01222,False
+U01087,G00946,Tenía miedo.,TEKUAWINEK,tenía miedo.,tekuawinek,flashcards,P01087,False
+U01449,G01267,Soy maestro.,ALEKTUTEK NUKA'KA,soy maestro.,alektutek nuka'ka,flashcards,P01449,False
+U00932,G00801,Podemos esperar.,YINNITULLIDEK WA'TENTAK,podemos esperar.,yinnitullidek wa'tentak,flashcards,P00932,False
+U01201,G01042,Sudaron.,ELLI'LLINA',sudaron.,elli'llina',flashcards,P01201,False
+U01458,G01276,Estoy impresionada.,ÑAPALEK IMANANTUSU',estoy impresionada.,ñapalek imanantusu',flashcards,P01458,False
+U02366,G02141,Ahora a ese recipiente (grande de plástico) que le llaman“timbu”,Ipa’li’na nana wa’napi “tinpu” iterkasu’,ahora a ese recipiente (grande de plástico) que le llamantimbu,ipa'li'na nana wa'napi tinpu iterkasu',pdf_textos,T002_N033,True
+U02540,G02315,Recojan eso con sus manitos y beban.,Nana iteklashapenma’lek inshen’anma’ ukku’.,recojan eso con sus manitos y beban.,nana iteklashapenma'lek inshen'anma' ukku'.,pdf_textos,T006_N030,True
+U03080,G02855,Entonces salieron a buscarlo (a Apu’tek).,Nu'anna' yunsu'llina' yadunkeranna'.,entonces salieron a buscarlo (a apu'tek).,nu'anna' yunsu'llina' yadunkeranna'.,pdf_textos,T011_N027,True
+U01917,G01708,Puedes negarte.,KU'LA TUNANSIN,puedes negarte.,ku'la tunansin,flashcards,P01917,False
+U00376,G00307,Mantente caliente.,UKAPISU' ÑAPER',mantente caliente.,ukapisu' ñaper',flashcards,P00376,True
+U00377,G00307,Manténgase caliente.,UKAPISU' ÑAPER',manténgase caliente.,ukapisu' ñaper',flashcards,P00377,True
+U02761,G02536,“No se dejen ver donde están estos malos.,“Anetlla ya’lli’tapatama’ asu’ mukankinpu’lusek.,no se dejen ver donde están estos malos.,anetlla ya'lli'tapatama' asu' mukankinpu'lusek.,pdf_textos,T007_N181,True
+U00180,G00138,Renuncio.,YUNSU'LEK',renuncio.,yunsu'lek',flashcards,P00180,False
+U02660,G02435,“En verdad muy buen hombre es este Arákayu.,“Tekkinchi enpu’ni mukankeinpi’ma nana Arakayu.,en verdad muy buen hombre es este arákayu.,tekkinchi enpu'ni mukankeinpi'ma nana arakayu.,pdf_textos,T007_N080,True
+U02596,G02371,"Dice que bonito, bien deshierbado y barrido estaba su patio.",U’chimu mushasu’ pilu’pi witekwanpi.,"dice que bonito, bien deshierbado y barrido estaba su patio.",u'chimu mushasu' pilu'pi witekwanpi.,pdf_textos,T007_N016,True
+U01125,G00978,Se quemará.,UKER'ECHU,se quemará.,uker'echu,flashcards,P01125,False
+U02558,G02333,Tres años ardió (Pampayacu).,Kala ekkilala uketlli.,tres años ardió (pampayacu).,kala ekkilala uketlli.,pdf_textos,T006_N048,True
+U00556,G00461,Estoy comprando.,MAPA'TAPALEK,estoy comprando.,mapa'tapalek,flashcards,P00556,False
+U01849,G01644,Es correcto.,MULLINCHA',es correcto.,mullincha',flashcards,P01849,False
+U01073,G00932,La abracé.,WIPERI'LEK,la abracé.,wiperi'lek,flashcards,P01073,False
+U00308,G00246,Sonrió.,YAMERLADALLI,sonrió.,yamerladalli,flashcards,P00308,False
+U02662,G02437,Pero dicen que no permite que nadie entre a su casa.,Ñimi’na pidekñik ñiden ya’da’i’ñi.,pero dicen que no permite que nadie entre a su casa.,ñimi'na pidekñik ñiden ya'da'i'ñi.,pdf_textos,T007_N082,True
+U00312,G00249,¡Qué horror!,¡IMANAN EMPU'NIPA'!,¡qué horror!,¡imanan empu'nipa'!,flashcards,P00312,False
+U00848,G00724,Sigue intentando.,INTEKLERIAPER'ILA,sigue intentando.,intekleriaper'ila,flashcards,P00848,False
+U00368,G00299,Es agradable. (persona),MUKANKAN,es agradable. (persona),mukankan,flashcards,P00368,True
+U02305,G02080,"Yo sí que tengo la culpa por no enseñarles a mis hijos,","Kui’na usha’wanek wilaweklusa’ a’lek’inpu’dek’amu,","yo sí que tengo la culpa por no enseñarles a mis hijos,","kui'na usha'wanek wilaweklusa' a'lek'inpu'dek'amu,",pdf_textos,T001_N055,True
+U00255,G00202,Tom mintió.,TOM TUMU'LLI,tom mintió.,tom tumu'lli,flashcards,P00255,False
+U00720,G00604,Sé discreto.,LUNTEK YAÑITA,sé discreto.,luntek yañita,flashcards,P00720,False
+U02400,G02175,"Ahora, en cambio, un poco la quiero desviar.",Ipa’li’na a’metcha yateknellek.,"ahora, en cambio, un poco la quiero desviar.",ipa'li'na a'metcha yateknellek.,pdf_textos,T003_N007,True
+U02284,G02059,Ahora con el idioma le estoy enseñando y ella también está enseñándome a mí.,"Ipa’la nanalek nana a’lachik’apilalek, nananta’ a’lachik’apilallun kua.",ahora con el idioma le estoy enseñando y ella también está enseñándome a mí.,"ipa'la nanalek nana a'lachik'apilalek, nananta' a'lachik'apilallun kua.",pdf_textos,T001_N034,True
+U02170,G01950,Queremos ayudar.,YAKATU'PA'LLIDEK,queremos ayudar.,yakatu'pa'llidek,flashcards,P02170,False
+U02617,G02392,"Hagan candela ustedes, ustedes mismos con su candela.","Penwanku’ kenmama’, kenmami’nchi penpenma’lek.","hagan candela ustedes, ustedes mismos con su candela.","penwanku' kenmama', kenmami'nchi penpenma'lek.",pdf_textos,T007_N037,True
+U00225,G00177,Es suyo.,KENMAKIN NUKA'A,es suyo.,kenmakin nuka'a,flashcards,P00225,False
+U00257,G00204,Tom perdió.,TOM KANA'CHI'ÑI,tom perdió.,tom kana'chi'ñi,flashcards,P00257,False
+U01447,G01265,Soy islandés.,ISLANDES NUKA'KA,soy islandés.,islandes nuka'ka,flashcards,P01447,False
+U00273,G00219,¡Qué divertido!,¡EMPU'NI WA'DANPINTEK'IPA'!,¡qué divertido!,¡empu'ni wa'danpintek'ipa'!,flashcards,P00273,False
+U02445,G02220,"“Mamá, queremos ir a la chacra”.","- “Mamá, menmik yapa’llidek”.","mamá, queremos ir a la chacra.","- mamá, menmik yapa'llidek.",pdf_textos,T003_N052,True
+U02597,G02372,De ahí vieron esa quebrada de Pampayacu.,Lli’llini’ma nana dekshadek asu’ Panpadek.,de ahí vieron esa quebrada de pampayacu.,lli'llini'ma nana dekshadek asu' panpadek.,pdf_textos,T007_N017,True
+U00262,G00209,Demasiado tarde.,NAKUSUIN'CHI ERWA',demasiado tarde.,nakusuin'chi erwa',flashcards,P00262,False
+U00992,G00856,¿Está segura?,¿TEKINCHI'CHA' ÑAPALA?,¿está segura?,¿tekinchi'cha' ñapala?,flashcards,P00992,True
+U00993,G00856,¿Está seguro?,¿TEKINCHI'CHA' ÑAPALA?,¿está seguro?,¿tekinchi'cha' ñapala?,flashcards,P00993,True
+U01369,G01194,Luce pálido.,SHAPI'TEK NUKA'A,luce pálido.,shapi'tek nuka'a,flashcards,P01369,False
+U00865,G00741,Ahora resiste.,IPA'LA YAN'KATEKTER',ahora resiste.,ipa'la yan'katekter',flashcards,P00865,False
+U00710,G00596,Fallaste.,APER'LA,fallaste.,aper'la,flashcards,P00710,False
+U02215,G01992,Estás estancado.,PILLI'PI ÑAPALA,estás estancado.,pilli'pi ñapala,flashcards,P02215,False
+U02501,G02276,La señora me preguntó “¿Cómo vives?”,Senñula’ “¿Ma’pu’su’cha nanpipala?” itullun.,la señora me preguntó ¿cómo vives?,senñula' ¿ma'pu'su'cha nanpipala? itullun.,pdf_textos,T005_N028,True
+U01934,G01725,¿Estás emocionado?,¿SAKEK'SU' ÑAPALA?,¿estás emocionado?,¿sakek'su' ñapala?,flashcards,P01934,False
+U01315,G01144,¿Estás contento?,¿MUSU'CHA ÑAPALA?,¿estás contento?,¿musu'cha ñapala?,flashcards,P01315,False
+U02078,G01861,Es refrescante.,SANEK'PIAK' NUKA'A,es refrescante.,sanek'piak' nuka'a,flashcards,P02078,False
+U01221,G01061,Tom creció.,TOM SUSU'LLI,tom creció.,tom susu'lli,flashcards,P01221,False
+U01790,G01589,Mejora.,TEKDIPERKER,mejora.,tekdiperker,flashcards,P01790,False

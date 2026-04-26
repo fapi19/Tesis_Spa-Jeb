@@ -24,6 +24,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from src.embeddings.preprocess_embeddings import preprocess_embeddings
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
@@ -205,32 +207,15 @@ def print_report(
 
 def main() -> None:
     """Función principal."""
-    start_time = datetime.now(timezone.utc)
     args = parse_args()
-
-    print("=" * 70)
-    print("  Cargando corpus...")
-    print("=" * 70)
-    print(f"\n  Archivo: {args.data}")
-
-    df_original = load_corpus(args.data)
-    print(f"  Pares cargados: {len(df_original):,}")
-
     if args.clean_only:
-        print("  Filtrando pares sin audit flags...")
-        df_used = filter_clean(df_original)
-        print(f"  Pares después de filtrar: {len(df_used):,}")
-    else:
-        df_used = df_original.copy()
+        print("Aviso: --clean-only se conserva por compatibilidad, pero el pipeline canónico audita sin descartar flags automáticamente.")
 
-    print(f"\n  Generando splits (seed={args.seed})...")
-    train_df, valid_df, test_df = create_splits(df_used, args.seed)
-
-    save_splits(train_df, valid_df, test_df)
-    save_report(df_original, df_used, train_df, valid_df, test_df,
-                args.clean_only, args.seed, start_time)
-    print_report(df_original, df_used, train_df, valid_df, test_df,
-                 args.clean_only, args.seed, start_time)
+    splits = preprocess_embeddings(args.data, seed=args.seed)
+    print("prepare_splits ahora delega al pipeline canónico de embeddings.")
+    print(f"Train: {len(splits['train'])}")
+    print(f"Valid: {len(splits['valid'])}")
+    print(f"Test: {len(splits['test'])}")
 
 
 if __name__ == "__main__":

@@ -11,6 +11,31 @@ generación de embeddings bilingües y entrenamiento de modelos neuronales.
 
 ---
 
+## Estado actual
+
+La fase de preprocesamiento para embeddings Shiwlu-español está cerrada. El
+pipeline canónico quedó en `src/embeddings/preprocess_embeddings.py` y fue
+validado con `src/embeddings/audit_preprocessing.py`.
+
+Resumen actual:
+
+- Dataset original: `3207` pares.
+- Dataset incluido: `3204` pares.
+- Excluidos: `3` duplicados exactos.
+- Splits canónicos: `2563` train, `320` valid, `321` test.
+- Grupos totales: `2982`.
+- Grupos multi-par: `194`.
+- Estado de cierre: `pass`.
+- `suffix-aware` queda como variante experimental, no como default.
+
+Regla central: no limpiar pensando en español; limpiar sin romper morfología
+shiwilu.
+
+Siguiente fase: evaluación y entrenamiento de embeddings, empezando por baseline
+E5 y fine-tuning `v1` sobre los splits canónicos.
+
+---
+
 ## Estructura del proyecto
 
 ```
@@ -32,8 +57,16 @@ Desarrollo/
 │   │   └── 02_normalizado/
 │   │       └── dataset_normalizado.csv
 │   └── processed/                      # Datos finales listos para modelos
-│       └── 03_pre_embeddings/
-│           └── dataset_pre_embeddings.csv
+│       ├── 03_pre_embeddings/
+│       │   └── dataset_pre_embeddings.csv
+│       └── 04_splits/
+│           ├── train.jsonl             # Split canónico de embeddings
+│           ├── valid.jsonl
+│           ├── test.jsonl
+│           ├── train.csv               # Espejo para Sentence Transformers
+│           ├── valid.csv
+│           ├── test.csv
+│           └── all_text_for_sp.txt     # Corpus para SentencePiece
 ├── scripts/
 │   ├── 00_extraer_dataset_pdf.py       # Etapa 0: Extracción desde PDF
 │   ├── 01_filtrar_dataset.py           # Etapa 1: Filtrado inicial (flashcards)
@@ -41,12 +74,13 @@ Desarrollo/
 │   ├── 02_depurar_dataset.py           # Etapa 2: Normalización no destructiva
 │   └── 03_auditar_dataset.py           # Etapa 3: Auditoría y exportación final
 ├── src/
-│   └── embeddings/
-│       ├── preprocess.py               # Tokenización del corpus
-│       ├── train_fasttext.py           # Etapa 4: Entrenamiento FastText
-│       ├── train_sentence_transformers.py  # Etapa 4b: Sentence Transformers
-│       ├── compare_embeddings.py       # Etapa 5: Comparación de embeddings
-│       └── utils.py                    # Utilidades para embeddings
+│   ├── embeddings/
+│   │   ├── preprocess_embeddings.py    # Preprocesamiento canónico
+│   │   ├── audit_preprocessing.py      # Auditoría/cierre del preprocesamiento
+│   │   ├── run_experiment.py           # Experimentos de embeddings
+│   │   ├── train_embedding_model.py    # Encoder contrastivo propio
+│   │   └── exploratory/                # Experimentos Sentence Transformers
+│   └── nmt/                            # Modelos y utilidades NMT
 ├── models/
 │   ├── fasttext/                       # Embeddings FastText (Skip-Gram)
 │   │   ├── fasttext.model              # Modelo completo (gensim)
@@ -73,7 +107,9 @@ Desarrollo/
 │   └── 04_embeddings/
 │       ├── similarity_scores.csv       # Scores de similitud cross-lingual
 │       ├── comparison_report.json      # Comparación FastText vs ST
-│       └── low_similarity_pairs.csv    # Pares candidatos a filtrar
+│       ├── preprocess_manifest.json    # Manifiesto del split canónico
+│       ├── preprocessing_closure_report.json
+│       └── preprocessing_closure_report.md
 ├── pyproject.toml
 ├── poetry.lock
 ├── .gitignore
@@ -312,115 +348,55 @@ embeddings. Las filas problemáticas se marcan pero NO se eliminan automáticame
 
 ---
 
-## Etapa 04: Entrenamiento de embeddings FastText
+## Etapa 04: Preprocesamiento canónico de embeddings
 
-**Script:** `src/embeddings/train_fasttext.py`
+**Script principal:** `src/embeddings/preprocess_embeddings.py`
 
-Entrena embeddings FastText (Skip-Gram) desde cero usando el corpus bilingüe.
-Concatena español y shiwilu en un único espacio de vectores, lo cual es ideal
-para lenguas de bajos recursos con morfología rica.
-
-**Entrada:**
-- `data/processed/03_pre_embeddings/dataset_pre_embeddings.csv`
-
-**Salidas:**
-- `models/fasttext/fasttext.model` - Modelo completo (recargable con gensim)
-- `models/fasttext/fasttext.vec` - Vectores en formato word2vec (portable)
+Genera los splits canónicos para embeddings a partir de
+`data/processed/03_pre_embeddings/dataset_pre_embeddings.csv`. Esta etapa ya
+quedó cerrada y debe considerarse la fuente de verdad para los experimentos
+posteriores.
 
 **Ejecución:**
 
 ```cmd
-poetry run python src/embeddings/train_fasttext.py
+poetry run python -m src.embeddings.preprocess_embeddings
+poetry run python -m src.embeddings.audit_preprocessing
 ```
 
-**Opciones:**
+**Salidas principales:**
 
-| Parámetro | Default | Descripción |
-|-----------|---------|-------------|
-| `--data` | `data/processed/03_pre_embeddings/dataset_pre_embeddings.csv` | Ruta al CSV |
-| `--vector-size` | 100 | Dimensión de los vectores |
-| `--window` | 5 | Tamaño de ventana de contexto |
-| `--min-count` | 1 | Frecuencia mínima (1 = incluir todas) |
-| `--epochs` | 5 | Iteraciones de entrenamiento |
+- `data/processed/04_splits/train.jsonl`
+- `data/processed/04_splits/valid.jsonl`
+- `data/processed/04_splits/test.jsonl`
+- `data/processed/04_splits/train.csv`
+- `data/processed/04_splits/valid.csv`
+- `data/processed/04_splits/test.csv`
+- `data/processed/04_splits/all_text_for_sp.txt`
+- `reports/04_embeddings/preprocess_manifest.json`
+- `reports/04_embeddings/preprocessing_closure_report.md`
 
-**Configuración por defecto (Skip-Gram):**
-- `vector_size=100`: Dimensión adecuada para corpus pequeño
-- `window=5`: Contexto local para capturar relaciones sintácticas
-- `min_count=1`: Incluye todas las palabras (importante para low-resource)
-- `sg=1`: Skip-Gram (mejor para palabras raras que CBOW)
+**Decisiones fijadas:**
 
-**Uso de los embeddings:**
-
-```python
-from gensim.models import FastText
-
-model = FastText.load("models/fasttext/fasttext.model")
-
-# Obtener vector (funciona para OOV gracias a subpalabras)
-vector = model.wv["palabra"]
-
-# Palabras similares
-similares = model.wv.most_similar("hola", topn=10)
-```
+- Se preservan columnas `raw_*` y `normalized_*`.
+- Se mantienen apóstrofes internos en shiwilu.
+- No se filtra agresivamente por longitud.
+- Los casos uno-a-muchos se agrupan con `group_id` para evitar leakage.
+- Los aliases antiguos de embeddings (`train_pairs.jsonl`, `val_pairs.jsonl`,
+  `all_text.txt`) ya no se usan.
 
 ---
 
-## Etapa 04b: Embeddings Sentence Transformers
+## Etapa 05: Entrenamiento y evaluación de embeddings
 
-**Script:** `src/embeddings/train_sentence_transformers.py`
+Esta es la siguiente fase. Debe partir de los splits canónicos de la etapa 04.
 
-Genera embeddings a nivel de oración usando un modelo multilingüe pre-entrenado.
-Permite medir similitud cross-lingual entre pares español-shiwilu.
+Primeros pasos recomendados:
 
-**Entrada:**
-- `data/processed/03_pre_embeddings/dataset_pre_embeddings.csv`
-
-**Salidas:**
-- `models/sentence_transformers/embeddings_esp.npy` - Embeddings oraciones español
-- `models/sentence_transformers/embeddings_shi.npy` - Embeddings oraciones shiwilu
-- `reports/04_embeddings/similarity_scores.csv` - Scores de similitud por par
-- `reports/04_embeddings/sentence_transformers_summary.json` - Estadísticas
-
-**Ejecución:**
-
-```cmd
-poetry run python src/embeddings/train_sentence_transformers.py
-```
-
-**Modelo usado:** `intfloat/multilingual-e5-small` (pre-entrenado multilingüe)
-
-**Uso de los scores:**
-- Pares con baja similitud son candidatos a revisar/filtrar
-- Los scores ayudan a identificar problemas en el corpus
-
----
-
-## Etapa 05: Comparación de Embeddings
-
-**Script:** `src/embeddings/compare_embeddings.py`
-
-Compara FastText vs Sentence Transformers para analizar las diferencias en cómo
-cada método representa el corpus bilingüe.
-
-**Entrada:**
-- `models/fasttext/fasttext.model`
-- `models/sentence_transformers/embeddings_*.npy`
-- `reports/04_embeddings/similarity_scores.csv`
-
-**Salidas:**
-- `reports/04_embeddings/comparison_report.json` - Reporte comparativo
-- `reports/04_embeddings/low_similarity_pairs.csv` - Pares problemáticos
-
-**Ejecución:**
-
-```cmd
-poetry run python src/embeddings/compare_embeddings.py
-```
-
-**Interpretación:**
-- FastText captura similitud **morfológica** (subpalabras, estructura interna)
-- Sentence Transformers captura similitud **semántica** cross-lingual
-- Ambos métodos son complementarios para el pipeline NMT
+1. Evaluar baseline `intfloat/multilingual-e5-small` sobre `test.csv`.
+2. Reentrenar/fine-tunear `v1` con `train.csv` y `valid.csv`.
+3. Actualizar la evaluación para considerar `group_id` como multi-positivo.
+4. Comparar baseline vs `v1` con `R@1`, `R@5`, `R@10` y `MRR`.
 
 ---
 
@@ -438,10 +414,10 @@ poetry run python src/embeddings/compare_embeddings.py
 | 02 | `reports/02_normalizacion/` | `normalization_log.csv`, `rows_removed.csv`, `summary.json` | Bitácora y metadatos |
 | 03 | `data/processed/03_pre_embeddings/` | `dataset_pre_embeddings.csv` | **Dataset final para embeddings** |
 | 03 | `reports/03_auditoria/` | `problem_rows.csv`, `summary.json` | Problemas y estadísticas |
-| 04 | `models/fasttext/` | `fasttext.model`, `fasttext.vec` | **Embeddings FastText (Skip-Gram)** |
-| 04b | `models/sentence_transformers/` | `embeddings_esp.npy`, `embeddings_shi.npy` | **Embeddings Sentence Transformers** |
-| 04b | `reports/04_embeddings/` | `similarity_scores.csv`, `*_summary.json` | Scores de similitud cross-lingual |
-| 05 | `reports/04_embeddings/` | `comparison_report.json`, `low_similarity_pairs.csv` | Comparación y pares problemáticos |
+| 04 | `data/processed/04_splits/` | `train.jsonl`, `valid.jsonl`, `test.jsonl`, `all_text_for_sp.txt` | **Preprocesamiento canónico de embeddings** |
+| 04 | `reports/04_embeddings/` | `preprocess_manifest.json`, `preprocessing_closure_report.*` | Manifiesto y cierre del preprocesamiento |
+| 05 | `models/sentence_transformers/` | modelos fine-tuned | **Entrenamiento/evaluación de embeddings** |
+| 05 | `reports/04_embeddings/` | `*_retrieval.json`, `*_training.json` | Métricas de retrieval y entrenamiento |
 
 ---
 
@@ -495,8 +471,8 @@ por lingüistas.
 
 ## Próximos pasos
 
-- Revisión manual de `reports/03_auditoria/problem_rows.csv` para decidir exclusiones
-- Comparación de embeddings: FastText vs Word2Vec
-- Embeddings contextuales: fine-tuning XLM-RoBERTa
-- Entrenamiento del modelo NMT
-- Evaluación con métricas BLEU, chrF y evaluación humana
+- Actualizar evaluación de retrieval para usar `group_id` como multi-positivo.
+- Evaluar baseline `intfloat/multilingual-e5-small` sobre los splits canónicos.
+- Reentrenar/fine-tunear `v1` con `train.csv` y `valid.csv`.
+- Comparar baseline vs `v1` con `R@1`, `R@5`, `R@10` y `MRR`.
+- Pasar a NMT solo después de fijar el modelo de embeddings.

@@ -68,7 +68,7 @@ def load_split(split_name: str, splits_dir: Path | None = None) -> pd.DataFrame:
     if not filepath.exists():
         raise FileNotFoundError(
             f"Split no encontrado: {filepath}\n"
-            "Ejecuta primero: poetry run python src/embeddings/prepare_splits.py"
+            "Ejecuta primero: poetry run python -m src.embeddings.preprocess_embeddings"
         )
     return pd.read_csv(filepath, encoding="utf-8-sig")
 

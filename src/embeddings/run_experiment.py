@@ -22,7 +22,12 @@ import time
 from dataclasses import dataclass
 from pathlib import Path
 
+from .build_suffix_aware_corpus import main as build_suffix_aware_main
 from .config import SPLITS_DIR, MODELS_DIR
+from .mine_suffixes import main as mine_suffixes_main
+from .preprocess_embeddings import preprocess_embeddings
+from .train_embedding_model import train
+from .train_tokenizer import train_tokenizer
 
 
 @dataclass
@@ -60,19 +65,19 @@ class ExperimentConfig:
     def corpus_path(self) -> Path:
         if self.suffix_aware:
             return SPLITS_DIR / "all_text_suffix_aware.txt"
-        return SPLITS_DIR / "all_text.txt"
+        return SPLITS_DIR / "all_text_for_sp.txt"
 
     @property
     def train_jsonl(self) -> Path:
         if self.suffix_aware:
-            return SPLITS_DIR / "train_pairs_suffix_aware.jsonl"
-        return SPLITS_DIR / "train_pairs.jsonl"
+            return SPLITS_DIR / "train_suffix_aware.jsonl"
+        return SPLITS_DIR / "train.jsonl"
 
     @property
     def val_jsonl(self) -> Path:
         if self.suffix_aware:
-            return SPLITS_DIR / "val_pairs_suffix_aware.jsonl"
-        return SPLITS_DIR / "val_pairs.jsonl"
+            return SPLITS_DIR / "valid_suffix_aware.jsonl"
+        return SPLITS_DIR / "valid.jsonl"
 
     @property
     def tokenizer_prefix(self) -> Path:
@@ -170,38 +175,24 @@ def _banner(text: str) -> None:
 
 
 def prepare_shared_data() -> None:
-    """Run prepare_data (always) and suffix pipeline (if needed)."""
-    from .prepare_data import main as prepare_main
+    """Run the canonical preprocessing pipeline and optional suffix artifacts."""
+    _banner("Paso 0: preprocesamiento canónico de embeddings")
+    preprocess_embeddings()
 
-    _banner("Paso 0: preparar datos (CSV → JSONL + all_text)")
-    prepare_main()
+    _banner("Paso 0.1: minar sufijos shiwilu")
+    mine_suffixes_main()
 
-    if not (SPLITS_DIR / "shiwilu_suffixes.json").exists():
-        from .mine_suffixes import main as mine_main
-
-        _banner("Paso 0.1: minar sufijos shiwilu")
-        mine_main()
-
-    if not (SPLITS_DIR / "train_pairs_suffix_aware.jsonl").exists():
-        from .build_suffix_aware_corpus import main as suffix_main
-
-        _banner("Paso 0.2: construir corpus suffix-aware")
-        suffix_main()
+    _banner("Paso 0.2: construir corpus suffix-aware")
+    build_suffix_aware_main()
 
 
 def run_experiment(cfg: ExperimentConfig) -> Path:
-    from .train_tokenizer import train_tokenizer
-    from .train_embedding_model import train
-
     _banner(f"{cfg.name}: {cfg.description}")
 
     if cfg.suffix_aware:
         if not cfg.train_jsonl.exists():
-            from .mine_suffixes import main as mine_main
-            from .build_suffix_aware_corpus import main as suffix_main
-
-            mine_main()
-            suffix_main()
+            mine_suffixes_main()
+            build_suffix_aware_main()
 
     # --- tokenizer ---
     if cfg.sp_model_path.exists():

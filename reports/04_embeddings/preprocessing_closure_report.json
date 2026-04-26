@@ -1,0 +1,1128 @@
+{
+  "pipeline": "audit_preprocessing",
+  "timestamp": "2026-04-26T23:28:00.391125+00:00",
+  "status": "pass",
+  "blocking_issues": [],
+  "splits": {
+    "train": {
+      "rows": 2563,
+      "groups": 2387,
+      "source_distribution": {
+        "flashcards": 1791,
+        "pdf_textos": 772
+      },
+      "audit_flagged_rows": 1032,
+      "shiwilu_lengths": {
+        "min_chars": 4,
+        "max_chars": 169,
+        "mean_chars": 25.66,
+        "median_chars": 17,
+        "max_tokens": 24
+      },
+      "spanish_lengths": {
+        "min_chars": 3,
+        "max_chars": 261,
+        "mean_chars": 25.65,
+        "median_chars": 14,
+        "max_tokens": 47
+      }
+    },
+    "valid": {
+      "rows": 320,
+      "groups": 295,
+      "source_distribution": {
+        "flashcards": 236,
+        "pdf_textos": 84
+      },
+      "audit_flagged_rows": 127,
+      "shiwilu_lengths": {
+        "min_chars": 5,
+        "max_chars": 205,
+        "mean_chars": 24.19,
+        "median_chars": 17.0,
+        "max_tokens": 23
+      },
+      "spanish_lengths": {
+        "min_chars": 5,
+        "max_chars": 113,
+        "mean_chars": 22.82,
+        "median_chars": 14.0,
+        "max_tokens": 19
+      }
+    },
+    "test": {
+      "rows": 321,
+      "groups": 300,
+      "source_distribution": {
+        "flashcards": 221,
+        "pdf_textos": 100
+      },
+      "audit_flagged_rows": 133,
+      "shiwilu_lengths": {
+        "min_chars": 5,
+        "max_chars": 134,
+        "mean_chars": 25.71,
+        "median_chars": 18,
+        "max_tokens": 14
+      },
+      "spanish_lengths": {
+        "min_chars": 4,
+        "max_chars": 210,
+        "mean_chars": 26.21,
+        "median_chars": 14,
+        "max_tokens": 37
+      }
+    }
+  },
+  "excluded": {
+    "exact_duplicate": {
+      "count": 3,
+      "rows": [
+        {
+          "pair_id": "U01171",
+          "group_id": "",
+          "source": "flashcards",
+          "source_pair_id": "P01171",
+          "shiwilu": "iyatulli",
+          "spanish": "le gustó.",
+          "raw_shiwilu": "IYATULLI",
+          "raw_spanish": "Le gustó.",
+          "normalized_shiwilu": "iyatulli",
+          "normalized_spanish": "le gustó.",
+          "has_audit_flags": true
+        },
+        {
+          "pair_id": "U01980",
+          "group_id": "",
+          "source": "flashcards",
+          "source_pair_id": "P01980",
+          "shiwilu": "yatumu'ta",
+          "spanish": "no mientas.",
+          "raw_shiwilu": "YATUMU'TA",
+          "raw_spanish": "No mientas.",
+          "normalized_shiwilu": "yatumu'ta",
+          "normalized_spanish": "no mientas.",
+          "has_audit_flags": true
+        },
+        {
+          "pair_id": "U02227",
+          "group_id": "",
+          "source": "flashcards",
+          "source_pair_id": "P02227",
+          "shiwilu": "iwa'taper'i'la",
+          "spanish": "sigue cavando.",
+          "raw_shiwilu": "IWA'TAPER'I'LA",
+          "raw_spanish": "Sigue cavando.",
+          "normalized_shiwilu": "iwa'taper'i'la",
+          "normalized_spanish": "sigue cavando.",
+          "has_audit_flags": true
+        }
+      ]
+    },
+    "empty_text": {
+      "count": 0,
+      "rows": []
+    }
+  },
+  "groups": {
+    "total": 2982,
+    "multi_pair_samples": [
+      {
+        "group_id": "G00000",
+        "size": 3,
+        "pairs": [
+          {
+            "pair_id": "U00000",
+            "shiwilu": "paker'",
+            "spanish": "ve."
+          },
+          {
+            "pair_id": "U00001",
+            "shiwilu": "paker'",
+            "spanish": "vete."
+          },
+          {
+            "pair_id": "U00002",
+            "shiwilu": "paker'",
+            "spanish": "vaya."
+          }
+        ]
+      },
+      {
+        "group_id": "G00007",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00008",
+            "shiwilu": "¡katu'pa'!",
+            "spanish": "¡ayuda!"
+          },
+          {
+            "pair_id": "U00010",
+            "shiwilu": "¡katu'pa'!",
+            "spanish": "¡auxilio!"
+          }
+        ]
+      },
+      {
+        "group_id": "G00036",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00044",
+            "shiwilu": "¿tekinchi?",
+            "spanish": "¿en serio?"
+          },
+          {
+            "pair_id": "U00045",
+            "shiwilu": "¿tekinchi?",
+            "spanish": "¿la verdad?"
+          }
+        ]
+      },
+      {
+        "group_id": "G00043",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00053",
+            "shiwilu": "mukankan ñiker'",
+            "spanish": "sean gentiles."
+          },
+          {
+            "pair_id": "U00054",
+            "shiwilu": "mukankan ñiker'",
+            "spanish": "sé agradable."
+          }
+        ]
+      },
+      {
+        "group_id": "G00046",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00057",
+            "shiwilu": "da'kerker'",
+            "spanish": "entre."
+          },
+          {
+            "pair_id": "U00058",
+            "shiwilu": "da'kerker'",
+            "spanish": "pase."
+          }
+        ]
+      },
+      {
+        "group_id": "G00048",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00062",
+            "shiwilu": "yunsuer'",
+            "spanish": "sal."
+          },
+          {
+            "pair_id": "U00063",
+            "shiwilu": "damula",
+            "spanish": "sal."
+          }
+        ]
+      },
+      {
+        "group_id": "G00051",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00065",
+            "shiwilu": "¡paker'!",
+            "spanish": "¡largo!"
+          },
+          {
+            "pair_id": "U00067",
+            "shiwilu": "¡paker'!",
+            "spanish": "¡vete ya!"
+          }
+        ]
+      },
+      {
+        "group_id": "G00075",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00106",
+            "shiwilu": "alli'u",
+            "spanish": "enséñamelo. (muestramelo)"
+          },
+          {
+            "pair_id": "U00107",
+            "shiwilu": "alli'u",
+            "spanish": "muestrame."
+          }
+        ]
+      },
+      {
+        "group_id": "G00078",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00110",
+            "shiwilu": "tu'neker'",
+            "spanish": "páralo. (detener)"
+          },
+          {
+            "pair_id": "U00111",
+            "shiwilu": "tu'neker'",
+            "spanish": "deténlo."
+          }
+        ]
+      },
+      {
+        "group_id": "G00087",
+        "size": 2,
+        "pairs": [
+          {
+            "pair_id": "U00121",
+            "shiwilu": "nanpi",
+            "spanish": "crudo"
+          },
+          {
+            "pair_id": "U00122",
+            "shiwilu": "nanpi",
+            "spanish": "vivo"
+          }
+        ]
+      }
+    ]
+  },
+  "samples": {
+    "train": [
+      {
+        "pair_id": "U00000",
+        "group_id": "G00000",
+        "source": "flashcards",
+        "source_pair_id": "P00000",
+        "shiwilu": "paker'",
+        "spanish": "ve.",
+        "raw_shiwilu": "PAKER'",
+        "raw_spanish": "Ve.",
+        "normalized_shiwilu": "paker'",
+        "normalized_spanish": "ve.",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00001",
+        "group_id": "G00000",
+        "source": "flashcards",
+        "source_pair_id": "P00001",
+        "shiwilu": "paker'",
+        "spanish": "vete.",
+        "raw_shiwilu": "PAKER'",
+        "raw_spanish": "Vete.",
+        "normalized_shiwilu": "paker'",
+        "normalized_spanish": "vete.",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00002",
+        "group_id": "G00000",
+        "source": "flashcards",
+        "source_pair_id": "P00002",
+        "shiwilu": "paker'",
+        "spanish": "vaya.",
+        "raw_shiwilu": "PAKER'",
+        "raw_spanish": "Vaya.",
+        "normalized_shiwilu": "paker'",
+        "normalized_spanish": "vaya.",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00005",
+        "group_id": "G00003",
+        "source": "flashcards",
+        "source_pair_id": "P00005",
+        "shiwilu": "¿den?",
+        "spanish": "¿quién?",
+        "raw_shiwilu": "¿DEN?",
+        "raw_spanish": "¿Quién?",
+        "normalized_shiwilu": "¿den?",
+        "normalized_spanish": "¿quién?",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00006",
+        "group_id": "G00004",
+        "source": "flashcards",
+        "source_pair_id": "P00006",
+        "shiwilu": "¡pen!",
+        "spanish": "¡fuego!",
+        "raw_shiwilu": "¡PEN!",
+        "raw_spanish": "¡Fuego!",
+        "normalized_shiwilu": "¡pen!",
+        "normalized_spanish": "¡fuego!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00007",
+        "group_id": "G00005",
+        "source": "flashcards",
+        "source_pair_id": "P00007",
+        "shiwilu": "¡ukeñan!",
+        "spanish": "¡incendio!",
+        "raw_shiwilu": "¡UKEÑAN!",
+        "raw_spanish": "¡Incendio!",
+        "normalized_shiwilu": "¡ukeñan!",
+        "normalized_spanish": "¡incendio!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00009",
+        "group_id": "G00006",
+        "source": "flashcards",
+        "source_pair_id": "P00009",
+        "shiwilu": "¡katu'pa'! ¡katu'pa'!",
+        "spanish": "¡socorro! ¡auxilio!",
+        "raw_shiwilu": "¡KATU'PA'! ¡KATU'PA'!",
+        "raw_spanish": "¡Socorro! ¡Auxilio!",
+        "normalized_shiwilu": "¡katu'pa'! ¡katu'pa'!",
+        "normalized_spanish": "¡socorro! ¡auxilio!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00012",
+        "group_id": "G00009",
+        "source": "flashcards",
+        "source_pair_id": "P00012",
+        "shiwilu": "¡ta'ituler'!",
+        "spanish": "¡para!",
+        "raw_shiwilu": "¡TA'ITULER'!",
+        "raw_spanish": "¡Para!",
+        "normalized_shiwilu": "¡ta'ituler'!",
+        "normalized_spanish": "¡para!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00013",
+        "group_id": "G00010",
+        "source": "flashcards",
+        "source_pair_id": "P00013",
+        "shiwilu": "¡wa'ten'ker'!",
+        "spanish": "¡espera!",
+        "raw_shiwilu": "¡WA'TEN'KER'!",
+        "raw_spanish": "¡Espera!",
+        "normalized_shiwilu": "¡wa'ten'ker'!",
+        "normalized_spanish": "¡espera!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00014",
+        "group_id": "G00011",
+        "source": "flashcards",
+        "source_pair_id": "P00014",
+        "shiwilu": "¡wa'ten'ku'!",
+        "spanish": "esperen.",
+        "raw_shiwilu": "¡WA'TEN'KU'!",
+        "raw_spanish": "Esperen.",
+        "normalized_shiwilu": "¡wa'ten'ku'!",
+        "normalized_spanish": "esperen.",
+        "has_audit_flags": false
+      }
+    ],
+    "valid": [
+      {
+        "pair_id": "U00003",
+        "group_id": "G00001",
+        "source": "flashcards",
+        "source_pair_id": "P00003",
+        "shiwilu": "ma'pu'sin",
+        "spanish": "hola.",
+        "raw_shiwilu": "MA'PU'SIN",
+        "raw_spanish": "Hola.",
+        "normalized_shiwilu": "ma'pu'sin",
+        "normalized_spanish": "hola.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00008",
+        "group_id": "G00007",
+        "source": "flashcards",
+        "source_pair_id": "P00008",
+        "shiwilu": "¡katu'pa'!",
+        "spanish": "¡ayuda!",
+        "raw_shiwilu": "¡KATU'PA'!",
+        "raw_spanish": "¡Ayuda!",
+        "normalized_shiwilu": "¡katu'pa'!",
+        "normalized_spanish": "¡ayuda!",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00010",
+        "group_id": "G00007",
+        "source": "flashcards",
+        "source_pair_id": "P00010",
+        "shiwilu": "¡katu'pa'!",
+        "spanish": "¡auxilio!",
+        "raw_shiwilu": "¡KATU'PA'!",
+        "raw_spanish": "¡Auxilio!",
+        "normalized_shiwilu": "¡katu'pa'!",
+        "normalized_spanish": "¡auxilio!",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00017",
+        "group_id": "G00014",
+        "source": "flashcards",
+        "source_pair_id": "P00017",
+        "shiwilu": "¡asha!",
+        "spanish": "¡oh, no! (femenino)",
+        "raw_shiwilu": "¡ASHA!",
+        "raw_spanish": "¡Oh, no! (femenino)",
+        "normalized_shiwilu": "¡asha!",
+        "normalized_spanish": "¡oh, no! (femenino)",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00025",
+        "group_id": "G00020",
+        "source": "flashcards",
+        "source_pair_id": "P00025",
+        "shiwilu": "nana tekaklli",
+        "spanish": "él corrió.",
+        "raw_shiwilu": "NANA TEKAKLLI",
+        "raw_spanish": "Él corrió.",
+        "normalized_shiwilu": "nana tekaklli",
+        "normalized_spanish": "él corrió.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00035",
+        "group_id": "G00030",
+        "source": "flashcards",
+        "source_pair_id": "P00035",
+        "shiwilu": "a'ñapalek shunka'iskun",
+        "spanish": "tengo diecinueve.",
+        "raw_shiwilu": "A'ÑAPALEK SHUNKA'ISKUN",
+        "raw_spanish": "Tengo diecinueve.",
+        "normalized_shiwilu": "a'ñapalek shunka'iskun",
+        "normalized_spanish": "tengo diecinueve.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00041",
+        "group_id": "G01277",
+        "source": "flashcards",
+        "source_pair_id": "P00041",
+        "shiwilu": "lau'tapalek",
+        "spanish": "estoy escuchando.",
+        "raw_shiwilu": "LAU'TAPALEK",
+        "raw_spanish": "Estoy escuchando.",
+        "normalized_shiwilu": "lau'tapalek",
+        "normalized_spanish": "estoy escuchando.",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00042",
+        "group_id": "G01277",
+        "source": "flashcards",
+        "source_pair_id": "P00042",
+        "shiwilu": "lauk'apalek",
+        "spanish": "estoy abriendo mi boca.",
+        "raw_shiwilu": "LAUK'APALEK",
+        "raw_spanish": "Estoy abriendo mi boca.",
+        "normalized_shiwilu": "lauk'apalek",
+        "normalized_spanish": "estoy abriendo mi boca.",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00043",
+        "group_id": "G00035",
+        "source": "flashcards",
+        "source_pair_id": "P00043",
+        "shiwilu": "¡saka'dek!",
+        "spanish": "¡imposible!",
+        "raw_shiwilu": "¡SAKA'DEK!",
+        "raw_spanish": "¡Imposible!",
+        "normalized_shiwilu": "¡saka'dek!",
+        "normalized_spanish": "¡imposible!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00108",
+        "group_id": "G00076",
+        "source": "flashcards",
+        "source_pair_id": "P00108",
+        "shiwilu": "pante'chek",
+        "spanish": "hasta luego.",
+        "raw_shiwilu": "PANTE'CHEK",
+        "raw_spanish": "Hasta luego.",
+        "normalized_shiwilu": "pante'chek",
+        "normalized_spanish": "hasta luego.",
+        "has_audit_flags": false
+      }
+    ],
+    "test": [
+      {
+        "pair_id": "U00004",
+        "group_id": "G00002",
+        "source": "flashcards",
+        "source_pair_id": "P00004",
+        "shiwilu": "tekker'",
+        "spanish": "¡corre!",
+        "raw_shiwilu": "TEKKER'",
+        "raw_spanish": "¡Corre!",
+        "normalized_shiwilu": "tekker'",
+        "normalized_spanish": "¡corre!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00011",
+        "group_id": "G00008",
+        "source": "flashcards",
+        "source_pair_id": "P00011",
+        "shiwilu": "¡indekker'!",
+        "spanish": "¡salta!",
+        "raw_shiwilu": "¡INDEKKER'!",
+        "raw_spanish": "¡Salta!",
+        "normalized_shiwilu": "¡indekker'!",
+        "normalized_spanish": "¡salta!",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00016",
+        "group_id": "G00013",
+        "source": "flashcards",
+        "source_pair_id": "P00016",
+        "shiwilu": "¡shaw!",
+        "spanish": "¡oh, no! (masculino)",
+        "raw_shiwilu": "¡SHAW!",
+        "raw_spanish": "¡Oh, no! (masculino)",
+        "normalized_shiwilu": "¡shaw!",
+        "normalized_spanish": "¡oh, no! (masculino)",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00029",
+        "group_id": "G00024",
+        "source": "flashcards",
+        "source_pair_id": "P00029",
+        "shiwilu": "yunsu'lek",
+        "spanish": "salí.",
+        "raw_shiwilu": "YUNSU'LEK",
+        "raw_spanish": "Salí.",
+        "normalized_shiwilu": "yunsu'lek",
+        "normalized_spanish": "salí.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00032",
+        "group_id": "G00027",
+        "source": "flashcards",
+        "source_pair_id": "P00032",
+        "shiwilu": "a'wer'lliek",
+        "spanish": "perdí. (extraviar)",
+        "raw_shiwilu": "A'WER'LLIEK",
+        "raw_spanish": "Perdí. (extraviar)",
+        "normalized_shiwilu": "a'wer'lliek",
+        "normalized_spanish": "perdí. (extraviar)",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00052",
+        "group_id": "G00042",
+        "source": "flashcards",
+        "source_pair_id": "P00052",
+        "shiwilu": "musu' ñapaker'",
+        "spanish": "estate tranquilo.",
+        "raw_shiwilu": "MUSU' ÑAPAKER'",
+        "raw_spanish": "Estate tranquilo.",
+        "normalized_shiwilu": "musu' ñapaker'",
+        "normalized_spanish": "estate tranquilo.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00069",
+        "group_id": "G00053",
+        "source": "flashcards",
+        "source_pair_id": "P00069",
+        "shiwilu": "paker' uti'la",
+        "spanish": "vaya despacio.",
+        "raw_shiwilu": "PAKER' UTI'LA",
+        "raw_spanish": "Vaya despacio.",
+        "normalized_shiwilu": "paker' uti'la",
+        "normalized_spanish": "vaya despacio.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00090",
+        "group_id": "G00695",
+        "source": "flashcards",
+        "source_pair_id": "P00090",
+        "shiwilu": "pa'echek",
+        "spanish": "iré.",
+        "raw_shiwilu": "PA'ECHEK",
+        "raw_spanish": "Iré.",
+        "normalized_shiwilu": "pa'echek",
+        "normalized_spanish": "iré.",
+        "has_audit_flags": true
+      },
+      {
+        "pair_id": "U00097",
+        "group_id": "G00067",
+        "source": "flashcards",
+        "source_pair_id": "P00097",
+        "shiwilu": "wiwerapalek",
+        "spanish": "estoy mojada.",
+        "raw_shiwilu": "WIWERAPALEK",
+        "raw_spanish": "Estoy mojada.",
+        "normalized_shiwilu": "wiwerapalek",
+        "normalized_spanish": "estoy mojada.",
+        "has_audit_flags": false
+      },
+      {
+        "pair_id": "U00115",
+        "group_id": "G00082",
+        "source": "flashcards",
+        "source_pair_id": "P00115",
+        "shiwilu": "tom weranpalli",
+        "spanish": "tom comió.",
+        "raw_shiwilu": "TOM WERANPALLI",
+        "raw_spanish": "Tom comió.",
+        "normalized_shiwilu": "tom weranpalli",
+        "normalized_spanish": "tom comió.",
+        "has_audit_flags": false
+      }
+    ],
+    "normalization": [
+      {
+        "pair_id": "U00000",
+        "raw_shiwilu": "PAKER'",
+        "normalized_shiwilu": "paker'",
+        "raw_spanish": "Ve.",
+        "normalized_spanish": "ve."
+      },
+      {
+        "pair_id": "U00001",
+        "raw_shiwilu": "PAKER'",
+        "normalized_shiwilu": "paker'",
+        "raw_spanish": "Vete.",
+        "normalized_spanish": "vete."
+      },
+      {
+        "pair_id": "U00002",
+        "raw_shiwilu": "PAKER'",
+        "normalized_shiwilu": "paker'",
+        "raw_spanish": "Vaya.",
+        "normalized_spanish": "vaya."
+      },
+      {
+        "pair_id": "U00003",
+        "raw_shiwilu": "MA'PU'SIN",
+        "normalized_shiwilu": "ma'pu'sin",
+        "raw_spanish": "Hola.",
+        "normalized_spanish": "hola."
+      },
+      {
+        "pair_id": "U00004",
+        "raw_shiwilu": "TEKKER'",
+        "normalized_shiwilu": "tekker'",
+        "raw_spanish": "¡Corre!",
+        "normalized_spanish": "¡corre!"
+      },
+      {
+        "pair_id": "U00005",
+        "raw_shiwilu": "¿DEN?",
+        "normalized_shiwilu": "¿den?",
+        "raw_spanish": "¿Quién?",
+        "normalized_spanish": "¿quién?"
+      },
+      {
+        "pair_id": "U00006",
+        "raw_shiwilu": "¡PEN!",
+        "normalized_shiwilu": "¡pen!",
+        "raw_spanish": "¡Fuego!",
+        "normalized_spanish": "¡fuego!"
+      },
+      {
+        "pair_id": "U00007",
+        "raw_shiwilu": "¡UKEÑAN!",
+        "normalized_shiwilu": "¡ukeñan!",
+        "raw_spanish": "¡Incendio!",
+        "normalized_spanish": "¡incendio!"
+      },
+      {
+        "pair_id": "U00008",
+        "raw_shiwilu": "¡KATU'PA'!",
+        "normalized_shiwilu": "¡katu'pa'!",
+        "raw_spanish": "¡Ayuda!",
+        "normalized_spanish": "¡ayuda!"
+      },
+      {
+        "pair_id": "U00009",
+        "raw_shiwilu": "¡KATU'PA'! ¡KATU'PA'!",
+        "normalized_shiwilu": "¡katu'pa'! ¡katu'pa'!",
+        "raw_spanish": "¡Socorro! ¡Auxilio!",
+        "normalized_spanish": "¡socorro! ¡auxilio!"
+      }
+    ],
+    "apostrophes": [
+      {
+        "pair_id": "U00000",
+        "group_id": "G00000",
+        "shiwilu": "paker'",
+        "raw_shiwilu": "PAKER'"
+      },
+      {
+        "pair_id": "U00001",
+        "group_id": "G00000",
+        "shiwilu": "paker'",
+        "raw_shiwilu": "PAKER'"
+      },
+      {
+        "pair_id": "U00002",
+        "group_id": "G00000",
+        "shiwilu": "paker'",
+        "raw_shiwilu": "PAKER'"
+      },
+      {
+        "pair_id": "U00003",
+        "group_id": "G00001",
+        "shiwilu": "ma'pu'sin",
+        "raw_shiwilu": "MA'PU'SIN"
+      },
+      {
+        "pair_id": "U00004",
+        "group_id": "G00002",
+        "shiwilu": "tekker'",
+        "raw_shiwilu": "TEKKER'"
+      },
+      {
+        "pair_id": "U00008",
+        "group_id": "G00007",
+        "shiwilu": "¡katu'pa'!",
+        "raw_shiwilu": "¡KATU'PA'!"
+      },
+      {
+        "pair_id": "U00009",
+        "group_id": "G00006",
+        "shiwilu": "¡katu'pa'! ¡katu'pa'!",
+        "raw_shiwilu": "¡KATU'PA'! ¡KATU'PA'!"
+      },
+      {
+        "pair_id": "U00010",
+        "group_id": "G00007",
+        "shiwilu": "¡katu'pa'!",
+        "raw_shiwilu": "¡KATU'PA'!"
+      },
+      {
+        "pair_id": "U00011",
+        "group_id": "G00008",
+        "shiwilu": "¡indekker'!",
+        "raw_shiwilu": "¡INDEKKER'!"
+      },
+      {
+        "pair_id": "U00012",
+        "group_id": "G00009",
+        "shiwilu": "¡ta'ituler'!",
+        "raw_shiwilu": "¡TA'ITULER'!"
+      }
+    ],
+    "longest_shiwilu": [
+      {
+        "pair_id": "U02531",
+        "group_id": "G02306",
+        "source": "pdf_textos",
+        "shiwilu": "ipi'ma nana ukalu' yata'wanta'su'lupa' ima, uk'apilincha', nanek kapeklli ala'sa' enmu'pinen nadi'nek piperunkallu'la'su', pipelladasu'. cuando iban terminando ese bajial, cuando venían, allí encontraron a",
+        "spanish": "un hombre joven de cuello colorado y cara colorada.",
+        "length": 205
+      },
+      {
+        "pair_id": "U02968",
+        "group_id": "G02743",
+        "source": "pdf_textos",
+        "shiwilu": "sekllintulli iñer uklli, ala' simana', katu' simana', kala simana', ala' dukerkek ima ektu'llina' muyunpak. hicieron trocha todos los días, una semana, dos semanas, tres",
+        "spanish": "semanas, un mes y llegaron a moyobamba.",
+        "length": 169
+      },
+      {
+        "pair_id": "U03015",
+        "group_id": "G02790",
+        "source": "pdf_textos",
+        "shiwilu": "da'ilek, ipa'la tulekwa' mullin, nanekla nana'ka lli'akwa' kenmu'wa'nta' ipa'la enchekmapu'wa' dektuntulekwa', lunekwa' asu' kaschilla', tullina' papinkuku'lusa'.",
+        "spanish": "sin embargo, ahora decimos está bien, eso sí viéndoles nosotros también nos cortamos nuestros cabellos, hablamos el castellano dijeron los abuelos ya finados.",
+        "length": 162
+      },
+      {
+        "pair_id": "U03174",
+        "group_id": "G02949",
+        "source": "pdf_textos",
+        "shiwilu": "nanek ima mañer, dañer, pullikariu ma'i panfilo, nanek ima ransisko, nanek ima asu', ma'i, asu' pancho, nanek ima ñilli asu' pidir aku'llima da'kanchineksu'.",
+        "spanish": "allí, dice, a manuel, daniel, policarpo, pánfilo, después francisco, después, este, pancho, después había fidel, los puso en fila.",
+        "length": 157
+      },
+      {
+        "pair_id": "U02402",
+        "group_id": "G02177",
+        "source": "pdf_textos",
+        "shiwilu": "musu' lunpalek i'la shiwilu la'la'mapu'wa', kuaki shiwilu la'la' musu' lunpalek i'la. todavía hablo bien nuestra lengua shiwilu, mi idioma shiwilu todavía",
+        "spanish": "lo domino.",
+        "length": 154
+      },
+      {
+        "pair_id": "U03018",
+        "group_id": "G02793",
+        "source": "pdf_textos",
+        "shiwilu": "da'ilek, ali'ladaper tullina' saka'tunan dunkerpatekkudek nanalupa' pa'achidek, tullima. sin embargo, otros opinaban a buscar trabajo tenemos que ir por",
+        "spanish": "allá, decían.",
+        "length": 152
+      },
+      {
+        "pair_id": "U03087",
+        "group_id": "G02862",
+        "source": "pdf_textos",
+        "shiwilu": "adencha'n ima wa'an lekllina' -adanpilencha'llidek kuda, ¿luwandetchuma' a'cha? regresando le pidieron al gobernante -nosotros estamos volviendo,",
+        "spanish": "¿nos van a querer?",
+        "length": 145
+      },
+      {
+        "pair_id": "U03035",
+        "group_id": "G02810",
+        "source": "pdf_textos",
+        "shiwilu": "nu'unti'ma aper'kulli. yalun'i'ñi uncha'n muyunpakla ma'pu'si'pa' lli'lli senñulalusa', ñima nanapinta' yalun'i'ñi, ta'tula'nna' pa'llina'.",
+        "spanish": "algunos mezquinaban. volviendo de moyobamba no querían contar cómo habían visto a las señoras, ni querian contar más, sin despedirse se iban.",
+        "length": 139
+      },
+      {
+        "pair_id": "U02571",
+        "group_id": "G02346",
+        "source": "pdf_textos",
+        "shiwilu": "nanadaper panta'mudek wichi'nta'mudek, ikineklli' nanpincha'mudek laukllidek. todas esas cosas cuando nos vamos a dormir, a medianoche",
+        "spanish": "despertamos y escuchamos.",
+        "length": 134
+      },
+      {
+        "pair_id": "U03011",
+        "group_id": "G02786",
+        "source": "pdf_textos",
+        "shiwilu": "nu'siklimaka ipa'la asu' ñinanlu'mapu'wa' susulli, nerpi'la muda'lusa' nanpillina', nerpi'la ku'aper uk'apalli, kaluwi' ker'apallina'.",
+        "spanish": "de esa manera ahora nuestro pueblo ha crecido, gentes de otros lugares viven, otras mujeres vienen, traen enfermedades.",
+        "length": 134
+      }
+    ],
+    "longest_spanish": [
+      {
+        "pair_id": "U03002",
+        "group_id": "G02777",
+        "source": "pdf_textos",
+        "shiwilu": "inwellektanna', inmusha'iteklanna', tullini'ma kunpallinenna' luntanna'pu'su'. nanek uwanna', tusu'sa' luñina'.",
+        "spanish": "lloraron entre ellos, se besaron las manos, así dijeron como dialogando con sus compadres. ahí bebiendo todas estas cosas hablaban. 8 probablemente el narrador hace alusión a los espa ñoles conocidos como apu'tek y sekputchek. véanse las narraciones siguientes.",
+        "length": 261
+      },
+      {
+        "pair_id": "U03161",
+        "group_id": "G02936",
+        "source": "pdf_textos",
+        "shiwilu": "nana ali'lima tulli kui'na ñinchitulek nana mutupik nanpipalli llumallun13'.",
+        "spanish": "ese otro dijo yo he sabido que en el cerro vive llumallun. 12 laulate es un apellido muy común en jeberos. según este relato, su etimología se hallaría en el nombre laweklatek el de la boca abierta. 13 llumallun era viejita que vivia sola y era sabia.",
+        "length": 251
+      },
+      {
+        "pair_id": "U03058",
+        "group_id": "G02833",
+        "source": "pdf_textos",
+        "shiwilu": "malallineima ñañashasa', ukllilek dekpilli'lek, uklulu' nu'ta'n, iñer pideknen a'muetchan,",
+        "spanish": "malallina solita, en el día y en la noche, elaboró su masato llenando toda su casa (con la bebida), 9 malallina es la adaptación del nombre español magdalena. en esta traducción hemos optado por mantener la forma shiwilu malallina.",
+        "length": 231
+      },
+      {
+        "pair_id": "U03170",
+        "group_id": "G02945",
+        "source": "pdf_textos",
+        "shiwilu": "adipida' llillinmapu'wei'na, dai'lek pacher' ima weklli ¿ma'llin a'cha?",
+        "spanish": "en cuanto a nuestro nombre de fuera, luego el cura, dice, ha llegado ¿cómo te llamas? (les preguntó) 14 éste sería el origen del apellido mozombite. 15 no se ofrece una posible etimología para el apellido maca.",
+        "length": 210
+      },
+      {
+        "pair_id": "U03136",
+        "group_id": "G02911",
+        "source": "pdf_textos",
+        "shiwilu": "yenchenterka'su' saka'tapanna', iñer er'werwalek ipa' kasiserapilek walek ipa' asu' inkella chanchanchan.",
+        "spanish": "no quería que (los shiwilu) se estiraran cuando trabajaban, hasta que se hacía bien tarde (los obligaban a trabajar), hasta que se hacía bien oscuro y el grillo (cantaba) chanchanchan.",
+        "length": 184
+      },
+      {
+        "pair_id": "U02952",
+        "group_id": "G02727",
+        "source": "pdf_textos",
+        "shiwilu": "da'ilek i'na kua tekpa ñichek, ñichek iyun, tunka, etchu, lu'wellu, isekpila ñichek, ukladekpenma' uwapetchekpi'la enpi'walekpi'nta',",
+        "spanish": "por eso me voy a convertir en garrapata, voy a ser zancudo, tábano, tabanillo negro, mosquito, mosca grandecita voy a ser, voy a estar tomando su sangre por siempre,",
+        "length": 165
+      },
+      {
+        "pair_id": "U02956",
+        "group_id": "G02731",
+        "source": "pdf_textos",
+        "shiwilu": "nanek ima dasu'la yunsa'n a'uluntulli, tekkinchima nanekla yunkelli iyun, tunka, etchu, dudinpu' lli'la muinpu'a'su'.",
+        "spanish": "dice que de madrugada, al levantarse, venteó la ceniza con abanico y de ahí salieron zancudos, tábanos, tabanillos negros, toda clase de insectos que no valen.",
+        "length": 159
+      },
+      {
+        "pair_id": "U03015",
+        "group_id": "G02790",
+        "source": "pdf_textos",
+        "shiwilu": "da'ilek, ipa'la tulekwa' mullin, nanekla nana'ka lli'akwa' kenmu'wa'nta' ipa'la enchekmapu'wa' dektuntulekwa', lunekwa' asu' kaschilla', tullina' papinkuku'lusa'.",
+        "spanish": "sin embargo, ahora decimos está bien, eso sí viéndoles nosotros también nos cortamos nuestros cabellos, hablamos el castellano dijeron los abuelos ya finados.",
+        "length": 158
+      },
+      {
+        "pair_id": "U02995",
+        "group_id": "G02770",
+        "source": "pdf_textos",
+        "shiwilu": "nanek ima ala'sa' taserpi waneran tulli ipa'la'ka ali'la ñinanlu' luwetchulekwa'. ipa' wer'uklli kawi'ta'su malek u'apalekwa'.",
+        "spanish": "dice que ahí se puso de pie un viejo y dijo: ahora sí hemos conocido otro pueblo. porque ya se aproxima el día del perecimiento (el día del fin) estamos así.",
+        "length": 157
+      },
+      {
+        "pair_id": "U02957",
+        "group_id": "G02732",
+        "source": "pdf_textos",
+        "shiwilu": "nu'unta' ima lanpi'tasu' nana pendalu' penlu'pasu'. nanekla ima ñilli kuwer', tuner, dudinpu' kaluwi' ñilli merpimapu'wek tullina'.",
+        "spanish": "algunos percibieron la ceniza que volaba. dicen que de ahí se originó la lombriz, el iluli, toda clase de enfermedades que hay en nuestro estómago, dijeron.",
+        "length": 156
+      }
+    ]
+  },
+  "suffix_aware": {
+    "status": "experimental_no_usar_como_default",
+    "reason": "Mantener como variante experimental; no bloquea el preprocesamiento canónico.",
+    "samples": [
+      {
+        "pair_id": "U00000",
+        "group_id": "G00000",
+        "shiwilu": "pak @@er'",
+        "spanish": "ve."
+      },
+      {
+        "pair_id": "U00001",
+        "group_id": "G00000",
+        "shiwilu": "pak @@er'",
+        "spanish": "vete."
+      },
+      {
+        "pair_id": "U00002",
+        "group_id": "G00000",
+        "shiwilu": "pak @@er'",
+        "spanish": "vaya."
+      },
+      {
+        "pair_id": "U00007",
+        "group_id": "G00005",
+        "shiwilu": "¡ukeñ @@an!",
+        "spanish": "¡incendio!"
+      },
+      {
+        "pair_id": "U00009",
+        "group_id": "G00006",
+        "shiwilu": "¡kat @@u'pa'! ¡kat @@u'pa'!",
+        "spanish": "¡socorro! ¡auxilio!"
+      },
+      {
+        "pair_id": "U00012",
+        "group_id": "G00009",
+        "shiwilu": "¡ta'i @@tuler'!",
+        "spanish": "¡para!"
+      },
+      {
+        "pair_id": "U00013",
+        "group_id": "G00010",
+        "shiwilu": "¡wa'ten' @@ker'!",
+        "spanish": "¡espera!"
+      },
+      {
+        "pair_id": "U00014",
+        "group_id": "G00011",
+        "shiwilu": "¡wa'ten' @@ku'!",
+        "spanish": "esperen."
+      },
+      {
+        "pair_id": "U00015",
+        "group_id": "G00012",
+        "shiwilu": "¡kana' @@tulek!",
+        "spanish": "¡he ganado!"
+      },
+      {
+        "pair_id": "U00018",
+        "group_id": "G00015",
+        "shiwilu": "yam @@er",
+        "spanish": "sonríe."
+      },
+      {
+        "pair_id": "U00019",
+        "group_id": "G00016",
+        "shiwilu": "yamer @@ku'",
+        "spanish": "sonrían."
+      },
+      {
+        "pair_id": "U00020",
+        "group_id": "G00017",
+        "shiwilu": "¡pak @@u' llipu'tudek'kun @@ku'!",
+        "spanish": "¡al ataque!"
+      },
+      {
+        "pair_id": "U00021",
+        "group_id": "G00508",
+        "shiwilu": "usa @@nker'",
+        "spanish": "levanta. (un objeto)"
+      },
+      {
+        "pair_id": "U00022",
+        "group_id": "G00018",
+        "shiwilu": "yunsa @@nker'",
+        "spanish": "levanta. (pararse)"
+      },
+      {
+        "pair_id": "U00023",
+        "group_id": "G00019",
+        "shiwilu": "¡a'ñ @@apalek!",
+        "spanish": "¡tengo!"
+      },
+      {
+        "pair_id": "U00024",
+        "group_id": "G01474",
+        "shiwilu": "¿lachek' @@la?",
+        "spanish": "¿entendiste?"
+      },
+      {
+        "pair_id": "U00026",
+        "group_id": "G00021",
+        "shiwilu": "da' @@ker' kin @@ekla",
+        "spanish": "métete adentro."
+      },
+      {
+        "pair_id": "U00028",
+        "group_id": "G00023",
+        "shiwilu": "anu' @@lek",
+        "spanish": "me caí."
+      },
+      {
+        "pair_id": "U00030",
+        "group_id": "G00025",
+        "shiwilu": "tum @@u'lek",
+        "spanish": "mentí."
+      },
+      {
+        "pair_id": "U00031",
+        "group_id": "G00026",
+        "shiwilu": "wer'lli @@ek",
+        "spanish": "perdí. (opuesto de ganar)"
+      }
+    ]
+  },
+  "acceptance": {
+    "canonical_script_runs": true,
+    "canonical_artifacts_exist": true,
+    "group_ids_do_not_cross_splits": true,
+    "raw_and_normalized_fields_present": true,
+    "legacy_embedding_aliases_removed": true,
+    "length_outliers_audited_not_filtered": true
+  },
+  "next_phase": "Entrenar y evaluar embeddings v1 con los splits canónicos."
+}

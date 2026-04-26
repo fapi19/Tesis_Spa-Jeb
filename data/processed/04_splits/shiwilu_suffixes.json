@@ -1,734 +1,526 @@
 [
   {
-    "suffix": "ek",
-    "count": 887
+    "suffix": "a'",
+    "count": 1373
   },
   {
-    "suffix": "a'",
-    "count": 806
+    "suffix": "ek",
+    "count": 963
   },
   {
     "suffix": "u'",
-    "count": 522
-  },
-  {
-    "suffix": "su'",
-    "count": 399
-  },
-  {
-    "suffix": "lek",
-    "count": 383
-  },
-  {
-    "suffix": "r'",
-    "count": 320
-  },
-  {
-    "suffix": "er'",
-    "count": 320
-  },
-  {
-    "suffix": "la",
-    "count": 255
-  },
-  {
-    "suffix": "li",
-    "count": 244
-  },
-  {
-    "suffix": "lli",
-    "count": 244
+    "count": 529
   },
   {
     "suffix": "na'",
-    "count": 201
+    "count": 446
   },
   {
-    "suffix": "na",
-    "count": 199
+    "suffix": "li",
+    "count": 407
   },
   {
-    "suffix": "ker'",
-    "count": 182
+    "suffix": "lek",
+    "count": 386
   },
   {
-    "suffix": "sa'",
-    "count": 179
+    "suffix": "lli",
+    "count": 356
   },
   {
-    "suffix": "alek",
-    "count": 165
+    "suffix": "la",
+    "count": 331
   },
   {
-    "suffix": "'.",
-    "count": 163
-  },
-  {
-    "suffix": "ma",
-    "count": 161
-  },
-  {
-    "suffix": "dek",
-    "count": 160
-  },
-  {
-    "suffix": "asu'",
-    "count": 153
-  },
-  {
-    "suffix": "wa'",
-    "count": 147
-  },
-  {
-    "suffix": "'la",
-    "count": 145
+    "suffix": "su'",
+    "count": 307
   },
   {
     "suffix": "ina'",
-    "count": 142
+    "count": 299
   },
   {
-    "suffix": "',",
-    "count": 137
+    "suffix": "r'",
+    "count": 280
   },
   {
-    "suffix": "a?",
-    "count": 132
+    "suffix": "er'",
+    "count": 268
   },
   {
-    "suffix": "palek",
-    "count": 130
-  },
-  {
-    "suffix": "k.",
-    "count": 125
-  },
-  {
-    "suffix": "nek",
-    "count": 124
-  },
-  {
-    "suffix": "er",
-    "count": 122
-  },
-  {
-    "suffix": "en",
-    "count": 121
-  },
-  {
-    "suffix": "ulek",
-    "count": 119
-  },
-  {
-    "suffix": "a'.",
-    "count": 118
-  },
-  {
-    "suffix": "usa'",
-    "count": 111
-  },
-  {
-    "suffix": "ek.",
-    "count": 109
-  },
-  {
-    "suffix": "apalek",
-    "count": 106
-  },
-  {
-    "suffix": "lusa'",
-    "count": 106
-  },
-  {
-    "suffix": "idek",
-    "count": 103
-  },
-  {
-    "suffix": "a',",
-    "count": 102
-  },
-  {
-    "suffix": "ana",
-    "count": 101
-  },
-  {
-    "suffix": "tulek",
-    "count": 99
-  },
-  {
-    "suffix": "nana",
-    "count": 97
+    "suffix": "sa'",
+    "count": 259
   },
   {
     "suffix": "lina'",
-    "count": 97
+    "count": 212
+  },
+  {
+    "suffix": "wa'",
+    "count": 194
   },
   {
     "suffix": "llina'",
-    "count": 97
+    "count": 191
   },
   {
-    "suffix": "usu'",
-    "count": 90
+    "suffix": "ma",
+    "count": 189
   },
   {
-    "suffix": "om",
-    "count": 89
+    "suffix": "dek",
+    "count": 186
   },
   {
-    "suffix": "tom",
-    "count": 89
+    "suffix": "usa'",
+    "count": 180
   },
   {
-    "suffix": "alli",
-    "count": 89
+    "suffix": "lusa'",
+    "count": 173
   },
   {
-    "suffix": "an",
-    "count": 87
+    "suffix": "er",
+    "count": 145
   },
   {
-    "suffix": "ka",
-    "count": 87
+    "suffix": "ker'",
+    "count": 137
   },
   {
-    "suffix": "ta'",
-    "count": 87
+    "suffix": "alek",
+    "count": 134
   },
   {
-    "suffix": "i.",
-    "count": 85
+    "suffix": "na",
+    "count": 129
   },
   {
-    "suffix": "'su'",
-    "count": 83
-  },
-  {
-    "suffix": "'!",
-    "count": 81
-  },
-  {
-    "suffix": "ima",
-    "count": 81
-  },
-  {
-    "suffix": "ak",
-    "count": 77
-  },
-  {
-    "suffix": "lidek",
-    "count": 75
-  },
-  {
-    "suffix": "'ka",
-    "count": 75
-  },
-  {
-    "suffix": "nta'",
-    "count": 75
-  },
-  {
-    "suffix": "pa'",
-    "count": 75
-  },
-  {
-    "suffix": "'na",
-    "count": 75
-  },
-  {
-    "suffix": "palli",
-    "count": 74
-  },
-  {
-    "suffix": "i'na",
-    "count": 74
-  },
-  {
-    "suffix": "la?",
-    "count": 72
-  },
-  {
-    "suffix": "i'la",
-    "count": 71
-  },
-  {
-    "suffix": "'ker'",
-    "count": 70
-  },
-  {
-    "suffix": "llidek",
-    "count": 69
-  },
-  {
-    "suffix": "'u",
-    "count": 68
-  },
-  {
-    "suffix": "hek",
-    "count": 68
-  },
-  {
-    "suffix": "chek",
-    "count": 68
-  },
-  {
-    "suffix": "ñi",
-    "count": 67
-  },
-  {
-    "suffix": "awa'",
-    "count": 67
-  },
-  {
-    "suffix": "ku'",
-    "count": 65
-  },
-  {
-    "suffix": "pi",
-    "count": 65
-  },
-  {
-    "suffix": "lek.",
-    "count": 61
-  },
-  {
-    "suffix": "na'.",
-    "count": 61
-  },
-  {
-    "suffix": "ulli",
-    "count": 60
-  },
-  {
-    "suffix": "li.",
-    "count": 60
-  },
-  {
-    "suffix": "lli.",
-    "count": 60
-  },
-  {
-    "suffix": "'lek",
-    "count": 59
-  },
-  {
-    "suffix": "'lli",
-    "count": 58
-  },
-  {
-    "suffix": "k?",
-    "count": 57
-  },
-  {
-    "suffix": "k,",
-    "count": 56
-  },
-  {
-    "suffix": "i,",
-    "count": 56
-  },
-  {
-    "suffix": "i?",
-    "count": 55
-  },
-  {
-    "suffix": "ter'",
-    "count": 55
-  },
-  {
-    "suffix": "a'ka",
-    "count": 55
-  },
-  {
-    "suffix": "ala?",
-    "count": 55
-  },
-  {
-    "suffix": "pala?",
-    "count": 54
-  },
-  {
-    "suffix": "ina'.",
-    "count": 54
-  },
-  {
-    "suffix": "tulli",
-    "count": 53
-  },
-  {
-    "suffix": "apalli",
-    "count": 53
-  },
-  {
-    "suffix": "hi",
-    "count": 52
-  },
-  {
-    "suffix": "anek",
-    "count": 52
+    "suffix": "en",
+    "count": 118
   },
   {
     "suffix": "ma'",
-    "count": 51
+    "count": 116
   },
   {
-    "suffix": "chi",
-    "count": 51
+    "suffix": "ta'",
+    "count": 114
   },
   {
-    "suffix": "ku",
-    "count": 49
+    "suffix": "an",
+    "count": 113
   },
   {
-    "suffix": "sek",
-    "count": 49
+    "suffix": "ulek",
+    "count": 113
   },
   {
-    "suffix": "a'la",
-    "count": 49
+    "suffix": "idek",
+    "count": 112
   },
   {
-    "suffix": "un",
-    "count": 48
+    "suffix": "ak",
+    "count": 110
   },
   {
-    "suffix": "hu",
-    "count": 48
+    "suffix": "pa'",
+    "count": 105
   },
   {
-    "suffix": "'?",
-    "count": 48
+    "suffix": "alli",
+    "count": 100
   },
   {
-    "suffix": "'a",
-    "count": 47
-  },
-  {
-    "suffix": "a'a",
-    "count": 47
-  },
-  {
-    "suffix": "a'!",
-    "count": 46
-  },
-  {
-    "suffix": "musu'",
-    "count": 46
-  },
-  {
-    "suffix": "ka'ka",
-    "count": 46
-  },
-  {
-    "suffix": "uka'ka",
-    "count": 46
-  },
-  {
-    "suffix": "chu",
-    "count": 46
-  },
-  {
-    "suffix": "ka'a",
-    "count": 46
-  },
-  {
-    "suffix": "uka'a",
-    "count": 46
-  },
-  {
-    "suffix": "nuka'a",
-    "count": 46
-  },
-  {
-    "suffix": "asek",
-    "count": 46
-  },
-  {
-    "suffix": "pa'la",
-    "count": 45
-  },
-  {
-    "suffix": "ipa'la",
-    "count": 45
-  },
-  {
-    "suffix": "apala?",
-    "count": 44
-  },
-  {
-    "suffix": "'ma",
-    "count": 44
-  },
-  {
-    "suffix": "mu",
-    "count": 44
-  },
-  {
-    "suffix": "itulek",
-    "count": 43
-  },
-  {
-    "suffix": "nchi",
-    "count": 43
-  },
-  {
-    "suffix": "ha",
-    "count": 43
-  },
-  {
-    "suffix": "nanek",
-    "count": 43
-  },
-  {
-    "suffix": "ek,",
-    "count": 43
-  },
-  {
-    "suffix": "k'",
-    "count": 42
-  },
-  {
-    "suffix": "li?",
-    "count": 42
-  },
-  {
-    "suffix": "inchi",
-    "count": 42
-  },
-  {
-    "suffix": "tek",
-    "count": 42
-  },
-  {
-    "suffix": "lli?",
-    "count": 41
-  },
-  {
-    "suffix": "u'.",
-    "count": 41
-  },
-  {
-    "suffix": "ala",
-    "count": 40
-  },
-  {
-    "suffix": "'lusa'",
-    "count": 40
-  },
-  {
-    "suffix": "la'",
-    "count": 40
-  },
-  {
-    "suffix": "echek",
-    "count": 39
-  },
-  {
-    "suffix": "na',",
-    "count": 39
-  },
-  {
-    "suffix": "lina'.",
-    "count": 38
-  },
-  {
-    "suffix": "udek",
-    "count": 37
-  },
-  {
-    "suffix": "ek'",
-    "count": 36
-  },
-  {
-    "suffix": "ak?",
-    "count": 36
-  },
-  {
-    "suffix": "a'?",
-    "count": 36
-  },
-  {
-    "suffix": "a.",
-    "count": 36
-  },
-  {
-    "suffix": "inek",
-    "count": 36
-  },
-  {
-    "suffix": "den",
-    "count": 35
-  },
-  {
-    "suffix": "ha?",
-    "count": 35
-  },
-  {
-    "suffix": "cha?",
-    "count": 35
-  },
-  {
-    "suffix": "'sa'",
-    "count": 35
-  },
-  {
-    "suffix": "'wa'",
-    "count": 35
-  },
-  {
-    "suffix": "'nek",
-    "count": 34
-  },
-  {
-    "suffix": "ñina'",
-    "count": 34
-  },
-  {
-    "suffix": "ik",
-    "count": 34
-  },
-  {
-    "suffix": "n.",
-    "count": 34
-  },
-  {
-    "suffix": "a'u",
-    "count": 33
-  },
-  {
-    "suffix": "i'nek",
-    "count": 33
-  },
-  {
-    "suffix": "ta",
-    "count": 33
-  },
-  {
-    "suffix": "inta'",
-    "count": 33
-  },
-  {
-    "suffix": "pinta'",
-    "count": 33
-  },
-  {
-    "suffix": "li,",
-    "count": 33
-  },
-  {
-    "suffix": "lli,",
-    "count": 33
-  },
-  {
-    "suffix": "ipa'",
-    "count": 32
-  },
-  {
-    "suffix": "winek",
-    "count": 32
-  },
-  {
-    "suffix": "u'su'",
-    "count": 32
-  },
-  {
-    "suffix": "su'.",
-    "count": 32
+    "suffix": "nta'",
+    "count": 98
   },
   {
     "suffix": "nna'",
-    "count": 32
+    "count": 96
   },
   {
-    "suffix": "in",
-    "count": 31
+    "suffix": "ala",
+    "count": 94
   },
   {
-    "suffix": "a!",
-    "count": 31
+    "suffix": "tulek",
+    "count": 94
   },
   {
-    "suffix": "ula",
-    "count": 31
+    "suffix": "ñi",
+    "count": 92
   },
   {
-    "suffix": "ua",
-    "count": 31
+    "suffix": "nek",
+    "count": 89
+  },
+  {
+    "suffix": "ka",
+    "count": 84
+  },
+  {
+    "suffix": "asu'",
+    "count": 83
+  },
+  {
+    "suffix": "lidek",
+    "count": 83
+  },
+  {
+    "suffix": "ulli",
+    "count": 81
+  },
+  {
+    "suffix": "ha",
+    "count": 81
+  },
+  {
+    "suffix": "ku'",
+    "count": 80
+  },
+  {
+    "suffix": "ima",
+    "count": 77
+  },
+  {
+    "suffix": "palek",
+    "count": 74
+  },
+  {
+    "suffix": "llidek",
+    "count": 74
+  },
+  {
+    "suffix": "hek",
+    "count": 73
+  },
+  {
+    "suffix": "ku",
+    "count": 72
+  },
+  {
+    "suffix": "un",
+    "count": 71
+  },
+  {
+    "suffix": "tulli",
+    "count": 70
+  },
+  {
+    "suffix": "chek",
+    "count": 69
+  },
+  {
+    "suffix": "i'na",
+    "count": 68
+  },
+  {
+    "suffix": "pi",
+    "count": 67
+  },
+  {
+    "suffix": "ñina'",
+    "count": 66
+  },
+  {
+    "suffix": "ik",
+    "count": 65
   },
   {
     "suffix": "i'ma",
-    "count": 31
+    "count": 65
   },
   {
-    "suffix": "kua",
-    "count": 30
+    "suffix": "anna'",
+    "count": 64
   },
   {
-    "suffix": "tula",
-    "count": 30
+    "suffix": "lima",
+    "count": 62
   },
   {
-    "suffix": "ntulek",
-    "count": 30
+    "suffix": "hi",
+    "count": 59
   },
   {
-    "suffix": "nen",
-    "count": 30
+    "suffix": "chi",
+    "count": 58
   },
   {
-    "suffix": "'cha?",
-    "count": 30
-  },
-  {
-    "suffix": "u',",
-    "count": 30
-  },
-  {
-    "suffix": "kla",
-    "count": 29
+    "suffix": "palli",
+    "count": 56
   },
   {
     "suffix": "ama'",
-    "count": 29
+    "count": 55
   },
   {
-    "suffix": "pu'",
-    "count": 29
+    "suffix": "u'wa'",
+    "count": 54
   },
   {
-    "suffix": "a,",
-    "count": 29
+    "suffix": "udek",
+    "count": 53
   },
   {
-    "suffix": "u.",
-    "count": 29
+    "suffix": "apalek",
+    "count": 53
   },
   {
-    "suffix": "n,",
-    "count": 29
+    "suffix": "la'",
+    "count": 52
   },
   {
-    "suffix": "sa',",
-    "count": 29
+    "suffix": "nchi",
+    "count": 52
   },
   {
-    "suffix": "pala",
-    "count": 28
+    "suffix": "hu",
+    "count": 51
+  },
+  {
+    "suffix": "inchi",
+    "count": 50
+  },
+  {
+    "suffix": "a'su'",
+    "count": 49
+  },
+  {
+    "suffix": "awa'",
+    "count": 49
+  },
+  {
+    "suffix": "ter'",
+    "count": 49
   },
   {
     "suffix": "i'",
-    "count": 28
+    "count": 49
+  },
+  {
+    "suffix": "kasu'",
+    "count": 49
+  },
+  {
+    "suffix": "a'ka",
+    "count": 47
+  },
+  {
+    "suffix": "cha",
+    "count": 43
+  },
+  {
+    "suffix": "ni'ma",
+    "count": 42
+  },
+  {
+    "suffix": "mu'wa'",
+    "count": 42
+  },
+  {
+    "suffix": "chu",
+    "count": 41
+  },
+  {
+    "suffix": "kwa'",
+    "count": 41
+  },
+  {
+    "suffix": "nen",
+    "count": 40
   },
   {
     "suffix": "wek",
-    "count": 28
+    "count": 40
   },
   {
-    "suffix": "k!",
-    "count": 27
+    "suffix": "mu",
+    "count": 39
+  },
+  {
+    "suffix": "a'a",
+    "count": 39
+  },
+  {
+    "suffix": "i'ñi",
+    "count": 39
+  },
+  {
+    "suffix": "kla",
+    "count": 38
+  },
+  {
+    "suffix": "sik",
+    "count": 37
+  },
+  {
+    "suffix": "klli",
+    "count": 37
+  },
+  {
+    "suffix": "ekwa'",
+    "count": 37
+  },
+  {
+    "suffix": "i'nek",
+    "count": 36
+  },
+  {
+    "suffix": "a'lli",
+    "count": 36
+  },
+  {
+    "suffix": "ler",
+    "count": 36
+  },
+  {
+    "suffix": "nma'",
+    "count": 36
+  },
+  {
+    "suffix": "pala",
+    "count": 35
+  },
+  {
+    "suffix": "ula",
+    "count": 35
+  },
+  {
+    "suffix": "upa'",
+    "count": 35
+  },
+  {
+    "suffix": "tek",
+    "count": 34
   },
   {
     "suffix": "a'lek",
+    "count": 34
+  },
+  {
+    "suffix": "inta'",
+    "count": 34
+  },
+  {
+    "suffix": "iñi",
+    "count": 34
+  },
+  {
+    "suffix": "tula",
+    "count": 33
+  },
+  {
+    "suffix": "i'la",
+    "count": 33
+  },
+  {
+    "suffix": "itulek",
+    "count": 32
+  },
+  {
+    "suffix": "yu",
+    "count": 32
+  },
+  {
+    "suffix": "ayu",
+    "count": 32
+  },
+  {
+    "suffix": "kayu",
+    "count": 32
+  },
+  {
+    "suffix": "eklli",
+    "count": 32
+  },
+  {
+    "suffix": "k'",
+    "count": 31
+  },
+  {
+    "suffix": "inek",
+    "count": 31
+  },
+  {
+    "suffix": "a'u",
+    "count": 30
+  },
+  {
+    "suffix": "lun",
+    "count": 30
+  },
+  {
+    "suffix": "pu'",
+    "count": 30
+  },
+  {
+    "suffix": "ser",
+    "count": 30
+  },
+  {
+    "suffix": "u'lli",
+    "count": 30
+  },
+  {
+    "suffix": "ekla",
+    "count": 30
+  },
+  {
+    "suffix": "ipa'",
+    "count": 29
+  },
+  {
+    "suffix": "echek",
+    "count": 29
+  },
+  {
+    "suffix": "ta",
+    "count": 29
+  },
+  {
+    "suffix": "in",
+    "count": 29
+  },
+  {
+    "suffix": "lupa'",
+    "count": 29
+  },
+  {
+    "suffix": "alusa'",
+    "count": 28
+  },
+  {
+    "suffix": "per",
+    "count": 28
+  },
+  {
+    "suffix": "aper",
+    "count": 28
+  },
+  {
+    "suffix": "ntulek",
+    "count": 28
+  },
+  {
+    "suffix": "usu'",
+    "count": 27
+  },
+  {
+    "suffix": "apalli",
+    "count": 27
+  },
+  {
+    "suffix": "rwa'",
+    "count": 27
+  },
+  {
+    "suffix": "erwa'",
+    "count": 27
+  },
+  {
+    "suffix": "ek'",
     "count": 27
   },
   {
@@ -736,187 +528,83 @@
     "count": 27
   },
   {
-    "suffix": "ni",
+    "suffix": "klek",
     "count": 27
   },
   {
-    "suffix": "'ni",
+    "suffix": "eklek",
     "count": 27
   },
   {
-    "suffix": "u'ni",
-    "count": 27
+    "suffix": "kek",
+    "count": 26
   },
   {
-    "suffix": "a'sa'",
-    "count": 27
+    "suffix": "daper",
+    "count": 26
+  },
+  {
+    "suffix": "lekwa'",
+    "count": 26
+  },
+  {
+    "suffix": "terwa'",
+    "count": 26
+  },
+  {
+    "suffix": "ina",
+    "count": 26
+  },
+  {
+    "suffix": "lu'",
+    "count": 26
   },
   {
     "suffix": "tak",
-    "count": 27
-  },
-  {
-    "suffix": "amu",
-    "count": 27
-  },
-  {
-    "suffix": "yu",
-    "count": 27
-  },
-  {
-    "suffix": "ayu",
-    "count": 27
-  },
-  {
-    "suffix": "kayu",
-    "count": 27
-  },
-  {
-    "suffix": "akayu",
-    "count": 27
-  },
-  {
-    "suffix": "rakayu",
-    "count": 27
-  },
-  {
-    "suffix": "nker'",
-    "count": 26
-  },
-  {
-    "suffix": "iñi",
-    "count": 26
-  },
-  {
-    "suffix": "cha",
-    "count": 26
-  },
-  {
-    "suffix": "usa',",
-    "count": 26
-  },
-  {
-    "suffix": "lusa',",
-    "count": 26
-  },
-  {
-    "suffix": "aker'",
     "count": 25
   },
   {
-    "suffix": "'ku",
+    "suffix": "winek",
     "count": 25
   },
   {
-    "suffix": "her'",
+    "suffix": "deklli",
     "count": 25
   },
   {
-    "suffix": "cher'",
-    "count": 25
-  },
-  {
-    "suffix": "la'u",
-    "count": 25
-  },
-  {
-    "suffix": "ula'u",
-    "count": 25
-  },
-  {
-    "suffix": "tula'u",
-    "count": 25
-  },
-  {
-    "suffix": "'ñi",
-    "count": 25
-  },
-  {
-    "suffix": "i'ñi",
-    "count": 25
-  },
-  {
-    "suffix": "'pa'",
-    "count": 25
-  },
-  {
-    "suffix": "'an",
-    "count": 25
-  },
-  {
-    "suffix": "ekla",
+    "suffix": "u'su'",
     "count": 24
   },
   {
-    "suffix": "'ter'",
+    "suffix": "enma'",
     "count": 24
+  },
+  {
+    "suffix": "nlusa'",
+    "count": 24
+  },
+  {
+    "suffix": "una'",
+    "count": 23
+  },
+  {
+    "suffix": "huna'",
+    "count": 23
+  },
+  {
+    "suffix": "chuna'",
+    "count": 23
+  },
+  {
+    "suffix": "kudek",
+    "count": 23
+  },
+  {
+    "suffix": "linchi",
+    "count": 23
   },
   {
     "suffix": "apala",
-    "count": 24
-  },
-  {
-    "suffix": "ler",
-    "count": 24
-  },
-  {
-    "suffix": "lek,",
-    "count": 24
-  },
-  {
-    "suffix": "wa'.",
-    "count": 24
-  },
-  {
-    "suffix": "ek!",
-    "count": 23
-  },
-  {
-    "suffix": "uku'",
-    "count": 23
-  },
-  {
-    "suffix": "rsu'",
-    "count": 23
-  },
-  {
-    "suffix": "ersu'",
-    "count": 23
-  },
-  {
-    "suffix": "echu",
-    "count": 23
-  },
-  {
-    "suffix": "a'su'",
-    "count": 23
-  },
-  {
-    "suffix": "nawa'",
-    "count": 23
-  },
-  {
-    "suffix": "a'cha?",
-    "count": 23
-  },
-  {
-    "suffix": "kwa'",
-    "count": 23
-  },
-  {
-    "suffix": "ekwa'",
-    "count": 23
-  },
-  {
-    "suffix": "wiñi",
-    "count": 23
-  },
-  {
-    "suffix": "pi'",
-    "count": 23
-  },
-  {
-    "suffix": "kasu'",
     "count": 23
   },
   {
@@ -924,255 +612,147 @@
     "count": 23
   },
   {
-    "suffix": "lima",
+    "suffix": "sha",
     "count": 23
   },
   {
-    "suffix": "pa'!",
+    "suffix": "amu",
     "count": 22
   },
   {
-    "suffix": "r'!",
+    "suffix": "unta'",
     "count": 22
-  },
-  {
-    "suffix": "er'!",
-    "count": 22
-  },
-  {
-    "suffix": "a'ker'",
-    "count": 22
-  },
-  {
-    "suffix": "'ku'",
-    "count": 22
-  },
-  {
-    "suffix": "'ak",
-    "count": 22
-  },
-  {
-    "suffix": "asa'",
-    "count": 22
-  },
-  {
-    "suffix": "'cha",
-    "count": 22
-  },
-  {
-    "suffix": "la'sa'",
-    "count": 22
-  },
-  {
-    "suffix": "n?",
-    "count": 21
-  },
-  {
-    "suffix": "u'ker'",
-    "count": 21
-  },
-  {
-    "suffix": "u'lli",
-    "count": 21
-  },
-  {
-    "suffix": "wa",
-    "count": 21
-  },
-  {
-    "suffix": "tusu'",
-    "count": 21
-  },
-  {
-    "suffix": "tan",
-    "count": 21
-  },
-  {
-    "suffix": "klek",
-    "count": 21
-  },
-  {
-    "suffix": "eklek",
-    "count": 21
-  },
-  {
-    "suffix": "ma'?",
-    "count": 21
-  },
-  {
-    "suffix": "sik",
-    "count": 21
-  },
-  {
-    "suffix": "ui'na",
-    "count": 21
-  },
-  {
-    "suffix": "u,",
-    "count": 21
-  },
-  {
-    "suffix": "anna'",
-    "count": 21
-  },
-  {
-    "suffix": "ina',",
-    "count": 21
-  },
-  {
-    "suffix": "linchi",
-    "count": 21
-  },
-  {
-    "suffix": "'tulli",
-    "count": 20
   },
   {
     "suffix": "lu",
-    "count": 20
-  },
-  {
-    "suffix": "ina",
-    "count": 20
-  },
-  {
-    "suffix": "ñer",
-    "count": 20
-  },
-  {
-    "suffix": "iñer",
-    "count": 20
-  },
-  {
-    "suffix": "alusa'",
-    "count": 20
-  },
-  {
-    "suffix": "ker",
-    "count": 19
-  },
-  {
-    "suffix": "iker'",
-    "count": 19
-  },
-  {
-    "suffix": "'echek",
-    "count": 19
-  },
-  {
-    "suffix": "anta'",
-    "count": 19
-  },
-  {
-    "suffix": "una'",
-    "count": 19
-  },
-  {
-    "suffix": "huna'",
-    "count": 19
-  },
-  {
-    "suffix": "chuna'",
-    "count": 19
-  },
-  {
-    "suffix": "kek",
-    "count": 19
-  },
-  {
-    "suffix": "nma",
-    "count": 19
-  },
-  {
-    "suffix": "enma",
-    "count": 19
-  },
-  {
-    "suffix": "kenma",
-    "count": 19
-  },
-  {
-    "suffix": "u'wa'",
-    "count": 19
-  },
-  {
-    "suffix": "lekwa'",
-    "count": 19
-  },
-  {
-    "suffix": "ama'?",
-    "count": 19
-  },
-  {
-    "suffix": "su',",
-    "count": 19
-  },
-  {
-    "suffix": "ni'ma",
-    "count": 19
-  },
-  {
-    "suffix": "klli",
-    "count": 18
-  },
-  {
-    "suffix": "u'lek",
-    "count": 18
-  },
-  {
-    "suffix": "u'u",
-    "count": 18
-  },
-  {
-    "suffix": "pu'ni",
-    "count": 18
-  },
-  {
-    "suffix": "u'la",
-    "count": 18
-  },
-  {
-    "suffix": "itula",
-    "count": 18
+    "count": 22
   },
   {
     "suffix": "pu'su'",
+    "count": 22
+  },
+  {
+    "suffix": "rku",
+    "count": 22
+  },
+  {
+    "suffix": "erku",
+    "count": 22
+  },
+  {
+    "suffix": "la'u",
+    "count": 22
+  },
+  {
+    "suffix": "ula'u",
+    "count": 22
+  },
+  {
+    "suffix": "tula'u",
+    "count": 22
+  },
+  {
+    "suffix": "klusa'",
+    "count": 22
+  },
+  {
+    "suffix": "llima",
+    "count": 21
+  },
+  {
+    "suffix": "nker'",
+    "count": 21
+  },
+  {
+    "suffix": "her'",
+    "count": 21
+  },
+  {
+    "suffix": "cher'",
+    "count": 21
+  },
+  {
+    "suffix": "rpi",
+    "count": 21
+  },
+  {
+    "suffix": "erpi",
+    "count": 21
+  },
+  {
+    "suffix": "ksu'",
+    "count": 21
+  },
+  {
+    "suffix": "ini'ma",
+    "count": 21
+  },
+  {
+    "suffix": "asa'",
+    "count": 21
+  },
+  {
+    "suffix": "nerku",
+    "count": 21
+  },
+  {
+    "suffix": "inerku",
+    "count": 21
+  },
+  {
+    "suffix": "tanna'",
+    "count": 21
+  },
+  {
+    "suffix": "uma'",
+    "count": 21
+  },
+  {
+    "suffix": "huma'",
+    "count": 21
+  },
+  {
+    "suffix": "chuma'",
+    "count": 21
+  },
+  {
+    "suffix": "i'pa'",
+    "count": 21
+  },
+  {
+    "suffix": "lama'",
+    "count": 21
+  },
+  {
+    "suffix": "adaper",
+    "count": 20
+  },
+  {
+    "suffix": "uku'",
+    "count": 20
+  },
+  {
+    "suffix": "a'cha",
+    "count": 19
+  },
+  {
+    "suffix": "su'lli",
+    "count": 19
+  },
+  {
+    "suffix": "ntulli",
     "count": 18
   },
   {
-    "suffix": "awinek",
+    "suffix": "ni",
     "count": 18
   },
   {
-    "suffix": "per",
+    "suffix": "u'ni",
     "count": 18
   },
   {
-    "suffix": "aper",
-    "count": 18
-  },
-  {
-    "suffix": "nma'",
-    "count": 18
-  },
-  {
-    "suffix": "r'ka",
-    "count": 18
-  },
-  {
-    "suffix": "er'ka",
-    "count": 18
-  },
-  {
-    "suffix": "ker'ka",
-    "count": 18
-  },
-  {
-    "suffix": "li'la",
-    "count": 18
-  },
-  {
-    "suffix": "ali'la",
+    "suffix": "npu'",
     "count": 18
   },
   {
@@ -1180,47 +760,43 @@
     "count": 18
   },
   {
-    "suffix": "sa'.",
+    "suffix": "wilu",
     "count": 18
   },
   {
-    "suffix": "api'",
+    "suffix": "u'lek",
     "count": 18
   },
   {
-    "suffix": "napi'",
+    "suffix": "rsu'",
     "count": 18
   },
   {
-    "suffix": "paker'",
+    "suffix": "pa",
+    "count": 18
+  },
+  {
+    "suffix": "wa",
+    "count": 18
+  },
+  {
+    "suffix": "mi'na",
+    "count": 18
+  },
+  {
+    "suffix": "pen",
     "count": 17
   },
   {
-    "suffix": "ker'!",
+    "suffix": "echu",
     "count": 17
   },
   {
-    "suffix": "ncher'",
+    "suffix": "mama'",
     "count": 17
   },
   {
-    "suffix": "uker'",
-    "count": 17
-  },
-  {
-    "suffix": "sha",
-    "count": 17
-  },
-  {
-    "suffix": "pi'la",
-    "count": 17
-  },
-  {
-    "suffix": "a'cha",
-    "count": 17
-  },
-  {
-    "suffix": "'awa'",
+    "suffix": "inpu'",
     "count": 17
   },
   {
@@ -1228,463 +804,239 @@
     "count": 17
   },
   {
-    "suffix": "kudek",
+    "suffix": "a'ser",
     "count": 17
   },
   {
-    "suffix": "nitula",
+    "suffix": "mak",
     "count": 17
   },
   {
-    "suffix": "iden",
+    "suffix": "pi'la",
     "count": 17
   },
   {
-    "suffix": "usa'.",
-    "count": 17
-  },
-  {
-    "suffix": "lusa'.",
-    "count": 17
-  },
-  {
-    "suffix": "alek.",
-    "count": 17
-  },
-  {
-    "suffix": "asu'.",
-    "count": 17
-  },
-  {
-    "suffix": "nna',",
-    "count": 17
-  },
-  {
-    "suffix": "ma',",
-    "count": 17
-  },
-  {
-    "suffix": "upa'",
+    "suffix": "lan",
     "count": 16
   },
   {
-    "suffix": "ulli.",
-    "count": 16
-  },
-  {
-    "suffix": "persu'",
-    "count": 16
-  },
-  {
-    "suffix": "¿den",
-    "count": 16
-  },
-  {
-    "suffix": "r'ku",
-    "count": 16
-  },
-  {
-    "suffix": "er'ku",
-    "count": 16
-  },
-  {
-    "suffix": "ner'ku",
-    "count": 16
-  },
-  {
-    "suffix": "rpi",
-    "count": 16
-  },
-  {
-    "suffix": "erpi",
-    "count": 16
-  },
-  {
-    "suffix": "ñapala",
-    "count": 16
-  },
-  {
-    "suffix": "daper",
-    "count": 16
-  },
-  {
-    "suffix": "wilu",
-    "count": 16
-  },
-  {
-    "suffix": "iwilu",
-    "count": 16
-  },
-  {
-    "suffix": "hiwilu",
-    "count": 16
-  },
-  {
-    "suffix": "ñina'.",
-    "count": 16
-  },
-  {
-    "suffix": "i'pa'",
-    "count": 16
-  },
-  {
-    "suffix": "'lli.",
-    "count": 16
-  },
-  {
-    "suffix": "llima",
+    "suffix": "tapala",
     "count": 16
   },
   {
     "suffix": "rker'",
-    "count": 15
+    "count": 16
   },
   {
     "suffix": "erker'",
+    "count": 16
+  },
+  {
+    "suffix": "u'u",
+    "count": 16
+  },
+  {
+    "suffix": "a'mak",
+    "count": 16
+  },
+  {
+    "suffix": "r'ku",
     "count": 15
   },
   {
-    "suffix": "tu'u",
+    "suffix": "er'ku",
     "count": 15
   },
   {
-    "suffix": "a'lli",
+    "suffix": "ner'ku",
     "count": 15
   },
   {
-    "suffix": "ipa'!",
+    "suffix": "ilek",
     "count": 15
   },
   {
-    "suffix": "rwa'",
+    "suffix": "asik",
     "count": 15
   },
   {
-    "suffix": "erwa'",
+    "suffix": "a'n",
     "count": 15
   },
   {
-    "suffix": "ku'la",
+    "suffix": "llun",
     "count": 15
   },
   {
-    "suffix": "ler'",
+    "suffix": "ka'",
     "count": 15
   },
   {
-    "suffix": "iter'",
+    "suffix": "ter",
     "count": 15
   },
   {
-    "suffix": "es",
-    "count": 15
-  },
-  {
-    "suffix": "pen",
-    "count": 15
-  },
-  {
-    "suffix": "lun",
-    "count": 15
-  },
-  {
-    "suffix": "ksu'",
-    "count": 15
-  },
-  {
-    "suffix": "ñiden",
-    "count": 15
-  },
-  {
-    "suffix": "lama'?",
-    "count": 15
-  },
-  {
-    "suffix": "'la'",
-    "count": 15
-  },
-  {
-    "suffix": "klusa'",
-    "count": 15
-  },
-  {
-    "suffix": "ñi.",
-    "count": 15
-  },
-  {
-    "suffix": "dek.",
-    "count": 15
-  },
-  {
-    "suffix": "lina',",
-    "count": 15
-  },
-  {
-    "suffix": "an,",
-    "count": 15
-  },
-  {
-    "suffix": "ma.",
-    "count": 15
-  },
-  {
-    "suffix": "nekla",
+    "suffix": "mudek",
     "count": 14
-  },
-  {
-    "suffix": "'lli?",
-    "count": 14
-  },
-  {
-    "suffix": "unta'",
-    "count": 14
-  },
-  {
-    "suffix": "ntek",
-    "count": 14
-  },
-  {
-    "suffix": "'ak?",
-    "count": 14
-  },
-  {
-    "suffix": "as",
-    "count": 14
-  },
-  {
-    "suffix": "ien",
-    "count": 14
-  },
-  {
-    "suffix": "'pi",
-    "count": 14
-  },
-  {
-    "suffix": "'i'la",
-    "count": 14
-  },
-  {
-    "suffix": "imu",
-    "count": 14
-  },
-  {
-    "suffix": "pa",
-    "count": 14
-  },
-  {
-    "suffix": "ku.",
-    "count": 14
-  },
-  {
-    "suffix": "ulek.",
-    "count": 14
-  },
-  {
-    "suffix": "un.",
-    "count": 14
-  },
-  {
-    "suffix": "nek.",
-    "count": 14
-  },
-  {
-    "suffix": "ser",
-    "count": 14
-  },
-  {
-    "suffix": "u'!",
-    "count": 13
-  },
-  {
-    "suffix": "k'lli",
-    "count": 13
-  },
-  {
-    "suffix": "'chek",
-    "count": 13
-  },
-  {
-    "suffix": "lupa'",
-    "count": 13
   },
   {
     "suffix": "hi'nek",
+    "count": 14
+  },
+  {
+    "suffix": "r'ka",
+    "count": 14
+  },
+  {
+    "suffix": "er'ka",
+    "count": 14
+  },
+  {
+    "suffix": "anta'",
+    "count": 14
+  },
+  {
+    "suffix": "klima",
+    "count": 14
+  },
+  {
+    "suffix": "eklima",
+    "count": 14
+  },
+  {
+    "suffix": "ersu'",
+    "count": 14
+  },
+  {
+    "suffix": "uk",
+    "count": 14
+  },
+  {
+    "suffix": "itula",
+    "count": 14
+  },
+  {
+    "suffix": "lina",
+    "count": 14
+  },
+  {
+    "suffix": "awinek",
+    "count": 14
+  },
+  {
+    "suffix": "a'ker'",
+    "count": 14
+  },
+  {
+    "suffix": "si'pa'",
+    "count": 14
+  },
+  {
+    "suffix": "lala",
+    "count": 14
+  },
+  {
+    "suffix": "ilala",
+    "count": 14
+  },
+  {
+    "suffix": "deklek",
+    "count": 14
+  },
+  {
+    "suffix": "e'chek",
     "count": 13
   },
   {
-    "suffix": "u!",
+    "suffix": "anek",
     "count": 13
   },
   {
-    "suffix": "ñer'",
+    "suffix": "wiñi",
     "count": 13
   },
   {
-    "suffix": "iñer'",
+    "suffix": "imu",
     "count": 13
   },
   {
-    "suffix": "terwa'",
+    "suffix": "ler'",
     "count": 13
   },
   {
-    "suffix": "'ta",
+    "suffix": "enna'",
     "count": 13
   },
   {
-    "suffix": "lien",
+    "suffix": "tu'u",
     "count": 13
   },
   {
-    "suffix": "llien",
+    "suffix": "iter'",
     "count": 13
   },
   {
-    "suffix": "'ñina'",
+    "suffix": "a'nta'",
     "count": 13
   },
   {
-    "suffix": "uma",
+    "suffix": "nlu'",
     "count": 13
   },
   {
-    "suffix": "huma",
+    "suffix": "anlu'",
     "count": 13
   },
   {
-    "suffix": "chuma",
+    "suffix": "llina",
     "count": 13
   },
   {
-    "suffix": "'tak",
+    "suffix": "wa'su'",
     "count": 13
   },
   {
-    "suffix": "a'ma",
-    "count": 13
-  },
-  {
-    "suffix": "ka'ma",
-    "count": 13
-  },
-  {
-    "suffix": "uka'ma",
+    "suffix": "as",
     "count": 13
   },
   {
     "suffix": "eksu'",
-    "count": 13
+    "count": 12
+  },
+  {
+    "suffix": "a'ma",
+    "count": 12
+  },
+  {
+    "suffix": "ien",
+    "count": 12
+  },
+  {
+    "suffix": "lien",
+    "count": 12
+  },
+  {
+    "suffix": "llien",
+    "count": 12
+  },
+  {
+    "suffix": "ula'",
+    "count": 12
+  },
+  {
+    "suffix": "añina'",
+    "count": 12
   },
   {
     "suffix": "himu",
-    "count": 13
-  },
-  {
-    "suffix": "chimu",
-    "count": 13
-  },
-  {
-    "suffix": "'chimu",
-    "count": 13
-  },
-  {
-    "suffix": "kasu'.",
-    "count": 13
-  },
-  {
-    "suffix": "anna',",
-    "count": 13
-  },
-  {
-    "suffix": "lek'",
     "count": 12
   },
   {
-    "suffix": "ulli?",
+    "suffix": "tawa'",
     "count": 12
   },
   {
-    "suffix": "ek?",
-    "count": 12
-  },
-  {
-    "suffix": "npu'",
-    "count": 12
-  },
-  {
-    "suffix": "inpu'",
-    "count": 12
-  },
-  {
-    "suffix": "tulli.",
-    "count": 12
-  },
-  {
-    "suffix": "lu'",
-    "count": 12
-  },
-  {
-    "suffix": "uler'",
-    "count": 12
-  },
-  {
-    "suffix": "tuler'",
-    "count": 12
-  },
-  {
-    "suffix": "na?",
-    "count": 12
-  },
-  {
-    "suffix": "alli?",
-    "count": 12
-  },
-  {
-    "suffix": "palli?",
-    "count": 12
-  },
-  {
-    "suffix": "'nen",
-    "count": 12
-  },
-  {
-    "suffix": "techu",
-    "count": 12
-  },
-  {
-    "suffix": "utek",
-    "count": 12
-  },
-  {
-    "suffix": "mak?",
-    "count": 12
-  },
-  {
-    "suffix": "kusu'",
-    "count": 12
-  },
-  {
-    "suffix": "u?",
-    "count": 12
-  },
-  {
-    "suffix": "mama'",
-    "count": 12
-  },
-  {
-    "suffix": "iñina'",
-    "count": 12
-  },
-  {
-    "suffix": "un?",
-    "count": 12
-  },
-  {
-    "suffix": "'kasu'",
-    "count": 12
-  },
-  {
-    "suffix": "'amu",
+    "suffix": "ta'lli",
     "count": 12
   },
   {
@@ -1692,203 +1044,135 @@
     "count": 12
   },
   {
-    "suffix": "'li'na",
+    "suffix": "nitula",
     "count": 12
   },
   {
-    "suffix": "rku.",
-    "count": 12
-  },
-  {
-    "suffix": "erku.",
-    "count": 12
-  },
-  {
-    "suffix": "nerku.",
-    "count": 12
-  },
-  {
-    "suffix": "a'la'",
-    "count": 12
-  },
-  {
-    "suffix": "'n",
-    "count": 12
-  },
-  {
-    "suffix": "ima.",
-    "count": 12
-  },
-  {
-    "suffix": "ullima",
-    "count": 12
-  },
-  {
-    "suffix": "'tulek",
+    "suffix": "kllima",
     "count": 11
   },
   {
-    "suffix": "tuku'",
+    "suffix": "pasik",
     "count": 11
   },
   {
-    "suffix": "su'lli",
+    "suffix": "u'pa'",
     "count": 11
   },
   {
-    "suffix": "e'chek",
+    "suffix": "hi'ñi",
     "count": 11
   },
   {
-    "suffix": "tulli?",
+    "suffix": "chi'ñi",
     "count": 11
   },
   {
-    "suffix": "u'ter'",
+    "suffix": "utek",
     "count": 11
   },
   {
-    "suffix": "perpi",
+    "suffix": "si'ma",
     "count": 11
   },
   {
-    "suffix": "iperpi",
+    "suffix": "nenna'",
     "count": 11
   },
   {
-    "suffix": "kinchi",
+    "suffix": "tan",
     "count": 11
   },
   {
-    "suffix": "i'ker'",
+    "suffix": "ui'na",
     "count": 11
   },
   {
-    "suffix": "a'nen",
+    "suffix": "huku'",
     "count": 11
   },
   {
-    "suffix": "ma'nen",
+    "suffix": "tama'",
     "count": 11
   },
   {
-    "suffix": "awa",
+    "suffix": "nkasu'",
     "count": 11
   },
   {
-    "suffix": "masu'",
+    "suffix": "hun",
     "count": 11
   },
   {
-    "suffix": "'mak?",
+    "suffix": "chun",
     "count": 11
   },
   {
-    "suffix": "a'mak?",
+    "suffix": "a'ku'",
     "count": 11
   },
   {
-    "suffix": "yulek",
+    "suffix": "nkek",
     "count": 11
+  },
+  {
+    "suffix": "i'na'",
+    "count": 11
+  },
+  {
+    "suffix": "ki",
+    "count": 11
+  },
+  {
+    "suffix": "ken",
+    "count": 11
+  },
+  {
+    "suffix": "rkasu'",
+    "count": 11
+  },
+  {
+    "suffix": "kenma'",
+    "count": 11
+  },
+  {
+    "suffix": "tusu'",
+    "count": 11
+  },
+  {
+    "suffix": "pi'ñi",
+    "count": 10
+  },
+  {
+    "suffix": "aker'",
+    "count": 10
+  },
+  {
+    "suffix": "i'pu'",
+    "count": 10
+  },
+  {
+    "suffix": "klan",
+    "count": 10
+  },
+  {
+    "suffix": "llek",
+    "count": 10
+  },
+  {
+    "suffix": "tchek",
+    "count": 10
   },
   {
     "suffix": "tutek",
-    "count": 11
-  },
-  {
-    "suffix": "akusu'",
-    "count": 11
-  },
-  {
-    "suffix": "r'i'la",
-    "count": 11
-  },
-  {
-    "suffix": "ula'",
-    "count": 11
-  },
-  {
-    "suffix": "nmama'",
-    "count": 11
-  },
-  {
-    "suffix": "tulek.",
-    "count": 11
-  },
-  {
-    "suffix": "r.",
-    "count": 11
-  },
-  {
-    "suffix": "er.",
-    "count": 11
-  },
-  {
-    "suffix": "alli.",
-    "count": 11
-  },
-  {
-    "suffix": "a'lli.",
-    "count": 11
-  },
-  {
-    "suffix": "en.",
-    "count": 11
-  },
-  {
-    "suffix": "mi'na",
-    "count": 11
-  },
-  {
-    "suffix": "a'an",
-    "count": 11
-  },
-  {
-    "suffix": "ñi,",
-    "count": 11
-  },
-  {
-    "suffix": "mu'wa'",
-    "count": 11
-  },
-  {
-    "suffix": "yu.",
-    "count": 11
-  },
-  {
-    "suffix": "ayu.",
-    "count": 11
-  },
-  {
-    "suffix": "kayu.",
-    "count": 11
-  },
-  {
-    "suffix": "akayu.",
-    "count": 11
-  },
-  {
-    "suffix": "mer",
     "count": 10
   },
   {
-    "suffix": "amer",
+    "suffix": "uler'",
     "count": 10
   },
   {
-    "suffix": "anker'",
-    "count": 10
-  },
-  {
-    "suffix": "i'u",
-    "count": 10
-  },
-  {
-    "suffix": "hidek",
-    "count": 10
-  },
-  {
-    "suffix": "'udek",
+    "suffix": "tuler'",
     "count": 10
   },
   {
@@ -1896,1991 +1180,51 @@
     "count": 10
   },
   {
-    "suffix": "per'",
-    "count": 10
-  },
-  {
-    "suffix": "ipi",
-    "count": 10
-  },
-  {
-    "suffix": "hi'ñi",
-    "count": 10
-  },
-  {
-    "suffix": "chi'ñi",
-    "count": 10
-  },
-  {
-    "suffix": "ek'lli",
-    "count": 10
-  },
-  {
-    "suffix": "u'?",
-    "count": 10
-  },
-  {
-    "suffix": "eklli",
-    "count": 10
-  },
-  {
-    "suffix": "wa'!",
-    "count": 10
-  },
-  {
-    "suffix": "da",
-    "count": 10
-  },
-  {
-    "suffix": "wina",
-    "count": 10
-  },
-  {
-    "suffix": "la!",
-    "count": 10
-  },
-  {
-    "suffix": "tawa'",
-    "count": 10
-  },
-  {
-    "suffix": "ula?",
-    "count": 10
-  },
-  {
-    "suffix": "tula?",
-    "count": 10
-  },
-  {
-    "suffix": "hen",
-    "count": 10
-  },
-  {
-    "suffix": "chen",
-    "count": 10
-  },
-  {
-    "suffix": "'tusu'",
-    "count": 10
-  },
-  {
-    "suffix": "iwiñi",
-    "count": 10
-  },
-  {
-    "suffix": "ñiwiñi",
-    "count": 10
-  },
-  {
-    "suffix": "enma'",
-    "count": 10
-  },
-  {
-    "suffix": "npu'ni",
-    "count": 10
-  },
-  {
-    "suffix": "ilusa'",
-    "count": 10
-  },
-  {
-    "suffix": "walek",
-    "count": 10
-  },
-  {
-    "suffix": "iñidek",
-    "count": 10
-  },
-  {
-    "suffix": "nlusa'",
-    "count": 10
-  },
-  {
-    "suffix": "uyulek",
-    "count": 10
-  },
-  {
-    "suffix": "'ta'",
-    "count": 10
-  },
-  {
-    "suffix": "adaper",
-    "count": 10
-  },
-  {
-    "suffix": "'su'.",
-    "count": 10
-  },
-  {
-    "suffix": "palek.",
-    "count": 10
-  },
-  {
-    "suffix": "r,",
-    "count": 10
-  },
-  {
-    "suffix": "dek,",
-    "count": 10
-  },
-  {
-    "suffix": "ma'.",
-    "count": 10
-  },
-  {
-    "suffix": "si'pa'",
-    "count": 10
-  },
-  {
-    "suffix": "'lek.",
-    "count": 10
-  },
-  {
-    "suffix": "la.",
-    "count": 10
-  },
-  {
-    "suffix": "'sik",
-    "count": 10
-  },
-  {
-    "suffix": "'lli,",
-    "count": 10
-  },
-  {
-    "suffix": "adek",
-    "count": 10
-  },
-  {
-    "suffix": "i:",
-    "count": 10
-  },
-  {
-    "suffix": "lima.",
-    "count": 10
-  },
-  {
-    "suffix": "llima.",
-    "count": 10
-  },
-  {
-    "suffix": "ini'ma",
-    "count": 10
-  },
-  {
-    "suffix": "'ker'!",
-    "count": 9
-  },
-  {
-    "suffix": "ter",
-    "count": 9
-  },
-  {
-    "suffix": "hun",
-    "count": 9
-  },
-  {
-    "suffix": "chun",
-    "count": 9
-  },
-  {
-    "suffix": "chidek",
-    "count": 9
-  },
-  {
-    "suffix": "i'ter'",
-    "count": 9
-  },
-  {
-    "suffix": "i!",
-    "count": 9
-  },
-  {
-    "suffix": "'tula",
-    "count": 9
-  },
-  {
-    "suffix": "i'su'",
-    "count": 9
-  },
-  {
-    "suffix": "intek",
-    "count": 9
-  },
-  {
-    "suffix": "nchu",
-    "count": 9
-  },
-  {
-    "suffix": "nkek",
-    "count": 9
-  },
-  {
-    "suffix": "'sha",
-    "count": 9
-  },
-  {
-    "suffix": "ntulli",
-    "count": 9
-  },
-  {
-    "suffix": "anekla",
-    "count": 9
-  },
-  {
-    "suffix": "unker'",
-    "count": 9
-  },
-  {
-    "suffix": "'kudek",
-    "count": 9
-  },
-  {
-    "suffix": "bu'ni",
-    "count": 9
-  },
-  {
-    "suffix": "mbu'ni",
-    "count": 9
-  },
-  {
-    "suffix": "kekla",
-    "count": 9
-  },
-  {
-    "suffix": "nkekla",
-    "count": 9
-  },
-  {
-    "suffix": "ilek",
-    "count": 9
-  },
-  {
-    "suffix": "'techu",
-    "count": 9
-  },
-  {
-    "suffix": "pi'nek",
-    "count": 9
-  },
-  {
-    "suffix": "deklek",
-    "count": 9
-  },
-  {
-    "suffix": "awiñi",
-    "count": 9
-  },
-  {
-    "suffix": "pawiñi",
-    "count": 9
-  },
-  {
-    "suffix": "lan",
-    "count": 9
-  },
-  {
-    "suffix": "ken",
-    "count": 9
-  },
-  {
-    "suffix": "huku'",
-    "count": 9
-  },
-  {
-    "suffix": "chuku'",
-    "count": 9
-  },
-  {
-    "suffix": "mudek",
-    "count": 9
-  },
-  {
-    "suffix": "kui'na",
-    "count": 9
-  },
-  {
-    "suffix": "u'an",
-    "count": 9
-  },
-  {
-    "suffix": "nu'an",
-    "count": 9
-  },
-  {
-    "suffix": "'anna'",
-    "count": 9
-  },
-  {
-    "suffix": "klli,",
-    "count": 9
-  },
-  {
-    "suffix": "nanta'",
-    "count": 9
-  },
-  {
-    "suffix": "la'la'",
-    "count": 9
-  },
-  {
-    "suffix": "er,",
-    "count": 9
-  },
-  {
-    "suffix": "alek,",
-    "count": 9
-  },
-  {
-    "suffix": "'nta'",
-    "count": 9
-  },
-  {
-    "suffix": "la,",
-    "count": 9
-  },
-  {
-    "suffix": "pin",
-    "count": 9
-  },
-  {
-    "suffix": "upin",
-    "count": 9
-  },
-  {
-    "suffix": "kupin",
-    "count": 9
-  },
-  {
-    "suffix": "wa',",
-    "count": 9
-  },
-  {
-    "suffix": "klek.",
-    "count": 9
-  },
-  {
-    "suffix": "eklek.",
-    "count": 9
-  },
-  {
-    "suffix": "ik.",
-    "count": 9
-  },
-  {
     "suffix": "nni'ma",
-    "count": 9
+    "count": 10
   },
   {
-    "suffix": "li:",
-    "count": 9
+    "suffix": "es",
+    "count": 10
   },
   {
-    "suffix": "lli:",
-    "count": 9
+    "suffix": "ker",
+    "count": 10
   },
   {
-    "suffix": "'ser",
-    "count": 9
+    "suffix": "ipalli",
+    "count": 10
   },
   {
-    "suffix": "a'ser",
-    "count": 9
+    "suffix": "npa",
+    "count": 10
   },
   {
-    "suffix": "do",
-    "count": 9
+    "suffix": "unpa",
+    "count": 10
   },
   {
-    "suffix": "samer",
-    "count": 9
+    "suffix": "perpi",
+    "count": 10
   },
   {
-    "suffix": "palli.",
-    "count": 9
+    "suffix": "iperpi",
+    "count": 10
   },
   {
-    "suffix": "ansu'",
-    "count": 8
-  },
-  {
-    "suffix": "uer'",
-    "count": 8
-  },
-  {
-    "suffix": "ka'",
-    "count": 8
-  },
-  {
-    "suffix": "rlli",
-    "count": 8
-  },
-  {
-    "suffix": "erlli",
-    "count": 8
-  },
-  {
-    "suffix": "ensu'",
-    "count": 8
-  },
-  {
-    "suffix": "isu'",
-    "count": 8
-  },
-  {
-    "suffix": "npi",
-    "count": 8
-  },
-  {
-    "suffix": "anpi",
-    "count": 8
-  },
-  {
-    "suffix": "a'ku'",
-    "count": 8
-  },
-  {
-    "suffix": "k'ker'",
-    "count": 8
-  },
-  {
-    "suffix": "mpu'ni",
-    "count": 8
-  },
-  {
-    "suffix": "apu'",
-    "count": 8
-  },
-  {
-    "suffix": "wapu'",
-    "count": 8
-  },
-  {
-    "suffix": "kin",
-    "count": 8
-  },
-  {
-    "suffix": "da'",
-    "count": 8
-  },
-  {
-    "suffix": "'palli",
-    "count": 8
-  },
-  {
-    "suffix": "hasa'",
-    "count": 8
-  },
-  {
-    "suffix": "shasa'",
-    "count": 8
-  },
-  {
-    "suffix": "r'lli",
-    "count": 8
-  },
-  {
-    "suffix": "er'lli",
-    "count": 8
-  },
-  {
-    "suffix": "aper'",
-    "count": 8
-  },
-  {
-    "suffix": "tuker'",
-    "count": 8
-  },
-  {
-    "suffix": "enkek",
-    "count": 8
-  },
-  {
-    "suffix": "'echu",
-    "count": 8
-  },
-  {
-    "suffix": "uda",
-    "count": 8
-  },
-  {
-    "suffix": "kuda",
-    "count": 8
-  },
-  {
-    "suffix": "nu'",
-    "count": 8
-  },
-  {
-    "suffix": "inu'",
-    "count": 8
-  },
-  {
-    "suffix": "vinu'",
-    "count": 8
-  },
-  {
-    "suffix": "techek",
-    "count": 8
-  },
-  {
-    "suffix": "dasu'",
-    "count": 8
-  },
-  {
-    "suffix": "ila",
-    "count": 8
-  },
-  {
-    "suffix": "ndek",
-    "count": 8
-  },
-  {
-    "suffix": "u'pa'",
-    "count": 8
-  },
-  {
-    "suffix": "tu'pa'",
-    "count": 8
-  },
-  {
-    "suffix": "rku",
-    "count": 8
-  },
-  {
-    "suffix": "npalek",
-    "count": 8
-  },
-  {
-    "suffix": "su'?",
-    "count": 8
-  },
-  {
-    "suffix": "kawa'",
-    "count": 8
-  },
-  {
-    "suffix": "'kawa'",
-    "count": 8
-  },
-  {
-    "suffix": "mak",
-    "count": 8
-  },
-  {
-    "suffix": "'mak",
-    "count": 8
-  },
-  {
-    "suffix": "a'mak",
-    "count": 8
-  },
-  {
-    "suffix": "'pu'",
-    "count": 8
-  },
-  {
-    "suffix": "i'pu'",
-    "count": 8
-  },
-  {
-    "suffix": "pi'pu'",
-    "count": 8
-  },
-  {
-    "suffix": "'lupa'",
-    "count": 8
-  },
-  {
-    "suffix": "asu',",
-    "count": 8
-  },
-  {
-    "suffix": "tawek",
-    "count": 8
-  },
-  {
-    "suffix": "atawek",
-    "count": 8
-  },
-  {
-    "suffix": "lun.",
-    "count": 8
-  },
-  {
-    "suffix": "llun.",
-    "count": 8
-  },
-  {
-    "suffix": "sui'na",
-    "count": 8
-  },
-  {
-    "suffix": "a'su'.",
-    "count": 8
-  },
-  {
-    "suffix": "ai",
-    "count": 8
-  },
-  {
-    "suffix": "idek.",
-    "count": 8
-  },
-  {
-    "suffix": "lidek.",
-    "count": 8
-  },
-  {
-    "suffix": "ik,",
-    "count": 8
-  },
-  {
-    "suffix": "an.",
-    "count": 8
-  },
-  {
-    "suffix": "tanna'",
-    "count": 8
-  },
-  {
-    "suffix": "padek",
-    "count": 8
-  },
-  {
-    "suffix": "npadek",
-    "count": 8
-  },
-  {
-    "suffix": "'su',",
-    "count": 8
-  },
-  {
-    "suffix": "ndo",
-    "count": 8
-  },
-  {
-    "suffix": "rwa'.",
-    "count": 8
-  },
-  {
-    "suffix": "erwa'.",
-    "count": 8
-  },
-  {
-    "suffix": "nma',",
-    "count": 8
-  },
-  {
-    "suffix": "nla'",
-    "count": 8
-  },
-  {
-    "suffix": "anla'",
-    "count": 8
-  },
-  {
-    "suffix": "lanla'",
-    "count": 8
-  },
-  {
-    "suffix": "lek!",
-    "count": 7
-  },
-  {
-    "suffix": "ñiker'",
-    "count": 7
-  },
-  {
-    "suffix": "kerlli",
-    "count": 7
-  },
-  {
-    "suffix": "enker'",
-    "count": 7
-  },
-  {
-    "suffix": "unsu'",
-    "count": 7
-  },
-  {
-    "suffix": "li'u",
-    "count": 7
-  },
-  {
-    "suffix": "tama'",
-    "count": 7
-  },
-  {
-    "suffix": "r'ker'",
-    "count": 7
-  },
-  {
-    "suffix": "ulusa'",
-    "count": 7
-  },
-  {
-    "suffix": "r'su'",
-    "count": 7
-  },
-  {
-    "suffix": "er'su'",
-    "count": 7
-  },
-  {
-    "suffix": "pintek",
-    "count": 7
-  },
-  {
-    "suffix": "ñi?",
-    "count": 7
-  },
-  {
-    "suffix": "tu",
-    "count": 7
-  },
-  {
-    "suffix": "ntu",
-    "count": 7
-  },
-  {
-    "suffix": "entu",
-    "count": 7
-  },
-  {
-    "suffix": "k'su'",
-    "count": 7
-  },
-  {
-    "suffix": "nan",
-    "count": 7
-  },
-  {
-    "suffix": "a'sha",
-    "count": 7
-  },
-  {
-    "suffix": "kter'",
-    "count": 7
-  },
-  {
-    "suffix": "nu'su'",
-    "count": 7
-  },
-  {
-    "suffix": "adasu'",
-    "count": 7
-  },
-  {
-    "suffix": "a'tak",
-    "count": 7
-  },
-  {
-    "suffix": "k'wa'",
-    "count": 7
-  },
-  {
-    "suffix": "ek'wa'",
-    "count": 7
-  },
-  {
-    "suffix": "wa'su'",
-    "count": 7
-  },
-  {
-    "suffix": "'tula?",
-    "count": 7
-  },
-  {
-    "suffix": "tapala",
-    "count": 7
+    "suffix": "alama'",
+    "count": 10
   },
   {
     "suffix": "ksa'",
-    "count": 7
+    "count": 10
   },
   {
-    "suffix": "nak",
-    "count": 7
+    "suffix": "lin",
+    "count": 10
   },
   {
-    "suffix": "lina",
-    "count": 7
-  },
-  {
-    "suffix": "u'pi",
-    "count": 7
-  },
-  {
-    "suffix": "ha'",
-    "count": 7
-  },
-  {
-    "suffix": "cha'",
-    "count": 7
-  },
-  {
-    "suffix": "illi",
-    "count": 7
-  },
-  {
-    "suffix": "'chu",
-    "count": 7
-  },
-  {
-    "suffix": "kpi",
-    "count": 7
-  },
-  {
-    "suffix": "uk",
-    "count": 7
-  },
-  {
-    "suffix": "i'tula",
-    "count": 7
-  },
-  {
-    "suffix": "lun?",
-    "count": 7
-  },
-  {
-    "suffix": "erku",
-    "count": 7
-  },
-  {
-    "suffix": "nerku",
-    "count": 7
-  },
-  {
-    "suffix": "inerku",
-    "count": 7
-  },
-  {
-    "suffix": "henma'",
-    "count": 7
-  },
-  {
-    "suffix": "malek",
-    "count": 7
-  },
-  {
-    "suffix": "uler",
-    "count": 7
-  },
-  {
-    "suffix": "asik",
-    "count": 7
-  },
-  {
-    "suffix": "pasik",
-    "count": 7
-  },
-  {
-    "suffix": "amasu'",
-    "count": 7
-  },
-  {
-    "suffix": "ku,",
-    "count": 7
-  },
-  {
-    "suffix": "kasu',",
-    "count": 7
-  },
-  {
-    "suffix": "kai",
-    "count": 7
-  },
-  {
-    "suffix": "ulli,",
-    "count": 7
-  },
-  {
-    "suffix": "en,",
-    "count": 7
-  },
-  {
-    "suffix": "a'n",
-    "count": 7
-  },
-  {
-    "suffix": "llek.",
-    "count": 7
-  },
-  {
-    "suffix": "ñula'",
-    "count": 7
-  },
-  {
-    "suffix": "nñula'",
-    "count": 7
-  },
-  {
-    "suffix": "ner",
-    "count": 7
-  },
-  {
-    "suffix": "a'lek.",
-    "count": 7
-  },
-  {
-    "suffix": "sik,",
-    "count": 7
-  },
-  {
-    "suffix": "'ñi.",
-    "count": 7
-  },
-  {
-    "suffix": "i'ñi.",
-    "count": 7
-  },
-  {
-    "suffix": "..",
-    "count": 7
-  },
-  {
-    "suffix": "'wa'.",
-    "count": 7
-  },
-  {
-    "suffix": "u'wa'.",
-    "count": 7
-  },
-  {
-    "suffix": "a'lli,",
-    "count": 7
-  },
-  {
-    "suffix": "ma,",
-    "count": 7
-  },
-  {
-    "suffix": "'ler",
-    "count": 7
-  },
-  {
-    "suffix": "pi.",
-    "count": 7
-  },
-  {
-    "suffix": "'mi'na",
-    "count": 7
-  },
-  {
-    "suffix": "a'su',",
-    "count": 7
-  },
-  {
-    "suffix": "klima",
-    "count": 7
-  },
-  {
-    "suffix": "eklima",
-    "count": 7
-  },
-  {
-    "suffix": "ando",
-    "count": 7
-  },
-  {
-    "suffix": "tlli.",
-    "count": 7
-  },
-  {
-    "suffix": "etlli.",
-    "count": 7
-  },
-  {
-    "suffix": "en?",
-    "count": 6
-  },
-  {
-    "suffix": "n!",
-    "count": 6
-  },
-  {
-    "suffix": "ku'!",
-    "count": 6
-  },
-  {
-    "suffix": "rku'",
-    "count": 6
-  },
-  {
-    "suffix": "erku'",
-    "count": 6
-  },
-  {
-    "suffix": "aku'",
-    "count": 6
-  },
-  {
-    "suffix": "'la?",
-    "count": 6
-  },
-  {
-    "suffix": "kun",
-    "count": 6
-  },
-  {
-    "suffix": "i'lek",
-    "count": 6
-  },
-  {
-    "suffix": "'palek",
-    "count": 6
-  },
-  {
-    "suffix": "uanta'",
-    "count": 6
-  },
-  {
-    "suffix": "'cher'",
-    "count": 6
-  },
-  {
-    "suffix": "lli'u",
-    "count": 6
-  },
-  {
-    "suffix": "itu'u",
-    "count": 6
-  },
-  {
-    "suffix": "npalli",
-    "count": 6
-  },
-  {
-    "suffix": "'ina'",
-    "count": 6
-  },
-  {
-    "suffix": "a'lli?",
-    "count": 6
-  },
-  {
-    "suffix": "lek?",
-    "count": 6
-  },
-  {
-    "suffix": "a'ak",
-    "count": 6
-  },
-  {
-    "suffix": "ha'lek",
-    "count": 6
-  },
-  {
-    "suffix": "nku'",
-    "count": 6
-  },
-  {
-    "suffix": "rpi'la",
-    "count": 6
-  },
-  {
-    "suffix": "a'ak?",
-    "count": 6
-  },
-  {
-    "suffix": "'ipa'!",
-    "count": 6
-  },
-  {
-    "suffix": "iñi?",
-    "count": 6
-  },
-  {
-    "suffix": "kta",
-    "count": 6
-  },
-  {
-    "suffix": "ta!",
-    "count": 6
-  },
-  {
-    "suffix": "atulek",
-    "count": 6
-  },
-  {
-    "suffix": "añi",
-    "count": 6
-  },
-  {
-    "suffix": "'wa",
-    "count": 6
-  },
-  {
-    "suffix": "nwa'",
-    "count": 6
-  },
-  {
-    "suffix": "senkek",
-    "count": 6
-  },
-  {
-    "suffix": "dipi",
-    "count": 6
-  },
-  {
-    "suffix": "adipi",
-    "count": 6
-  },
-  {
-    "suffix": "nter'",
-    "count": 6
-  },
-  {
-    "suffix": "tak?",
-    "count": 6
-  },
-  {
-    "suffix": "su'!",
-    "count": 6
-  },
-  {
-    "suffix": "k'ak",
-    "count": 6
-  },
-  {
-    "suffix": "uwinek",
-    "count": 6
-  },
-  {
-    "suffix": "ces",
-    "count": 6
-  },
-  {
-    "suffix": "nces",
-    "count": 6
-  },
-  {
-    "suffix": "ances",
-    "count": 6
-  },
-  {
-    "suffix": "rances",
-    "count": 6
-  },
-  {
-    "suffix": "'i",
-    "count": 6
-  },
-  {
-    "suffix": "a'wa'",
-    "count": 6
-  },
-  {
-    "suffix": "'tawa'",
-    "count": 6
-  },
-  {
-    "suffix": "inen",
-    "count": 6
-  },
-  {
-    "suffix": "lama'",
-    "count": 6
-  },
-  {
-    "suffix": "heksu'",
-    "count": 6
-  },
-  {
-    "suffix": "ntu'u",
-    "count": 6
-  },
-  {
-    "suffix": "intu'u",
-    "count": 6
-  },
-  {
-    "suffix": "llek",
-    "count": 6
-  },
-  {
-    "suffix": "atek",
-    "count": 6
-  },
-  {
-    "suffix": "eksa'",
-    "count": 6
-  },
-  {
-    "suffix": "a'awa'",
-    "count": 6
-  },
-  {
-    "suffix": "ntak",
-    "count": 6
-  },
-  {
-    "suffix": "llina",
-    "count": 6
-  },
-  {
-    "suffix": "undek",
-    "count": 6
-  },
-  {
-    "suffix": "anen",
-    "count": 6
-  },
-  {
-    "suffix": "ma?",
-    "count": 6
-  },
-  {
-    "suffix": "api",
-    "count": 6
-  },
-  {
-    "suffix": "ualek",
-    "count": 6
-  },
-  {
-    "suffix": "kualek",
-    "count": 6
-  },
-  {
-    "suffix": "iu",
-    "count": 6
-  },
-  {
-    "suffix": "liu",
-    "count": 6
-  },
-  {
-    "suffix": "'pi'la",
-    "count": 6
-  },
-  {
-    "suffix": "añina'",
-    "count": 6
-  },
-  {
-    "suffix": "pi'ñi",
-    "count": 6
-  },
-  {
-    "suffix": "e'chu",
-    "count": 6
-  },
-  {
-    "suffix": "'tek",
-    "count": 6
-  },
-  {
-    "suffix": "ekpi",
-    "count": 6
-  },
-  {
-    "suffix": "dun",
-    "count": 6
-  },
-  {
-    "suffix": "'dun",
-    "count": 6
-  },
-  {
-    "suffix": "u'dun",
-    "count": 6
-  },
-  {
-    "suffix": "ina?",
-    "count": 6
-  },
-  {
-    "suffix": "wina?",
-    "count": 6
-  },
-  {
-    "suffix": "awina?",
-    "count": 6
-  },
-  {
-    "suffix": "ei",
-    "count": 6
-  },
-  {
-    "suffix": "wei",
-    "count": 6
-  },
-  {
-    "suffix": "nipa'",
-    "count": 6
-  },
-  {
-    "suffix": "wek.",
-    "count": 6
-  },
-  {
-    "suffix": "awek.",
-    "count": 6
-  },
-  {
-    "suffix": "rku,",
-    "count": 6
-  },
-  {
-    "suffix": "erku,",
-    "count": 6
-  },
-  {
-    "suffix": "nerku,",
-    "count": 6
-  },
-  {
-    "suffix": "wawek",
-    "count": 6
-  },
-  {
-    "suffix": "awawek",
-    "count": 6
-  },
-  {
-    "suffix": "si'la",
-    "count": 6
-  },
-  {
-    "suffix": "'si'la",
-    "count": 6
-  },
-  {
-    "suffix": "ma'sha",
-    "count": 6
-  },
-  {
-    "suffix": "klek,",
-    "count": 6
-  },
-  {
-    "suffix": "enna'",
-    "count": 6
-  },
-  {
-    "suffix": "kek.",
-    "count": 6
-  },
-  {
-    "suffix": "a'nta'",
-    "count": 6
-  },
-  {
-    "suffix": "rkasu'",
-    "count": 6
-  },
-  {
-    "suffix": "a'sik",
-    "count": 6
-  },
-  {
-    "suffix": "...",
-    "count": 6
-  },
-  {
-    "suffix": "udek,",
-    "count": 6
-  },
-  {
-    "suffix": "ima,",
-    "count": 6
-  },
-  {
-    "suffix": "a'ler",
-    "count": 6
-  },
-  {
-    "suffix": "tchek",
-    "count": 6
-  },
-  {
-    "suffix": "etchek",
-    "count": 6
-  },
-  {
-    "suffix": "wa'an",
-    "count": 6
-  },
-  {
-    "suffix": "':",
-    "count": 6
-  },
-  {
-    "suffix": "a':",
-    "count": 6
-  },
-  {
-    "suffix": "ku',",
-    "count": 6
-  },
-  {
-    "suffix": "ama',",
-    "count": 6
-  },
-  {
-    "suffix": "ku'.",
-    "count": 6
-  },
-  {
-    "suffix": "uma'.",
-    "count": 6
-  },
-  {
-    "suffix": "huma'.",
-    "count": 6
-  },
-  {
-    "suffix": "'ñi,",
-    "count": 6
-  },
-  {
-    "suffix": "i'ñi,",
-    "count": 6
-  },
-  {
-    "suffix": "uklli,",
-    "count": 6
-  },
-  {
-    "suffix": "yuler",
-    "count": 6
-  },
-  {
-    "suffix": "ayuler",
-    "count": 6
-  },
-  {
-    "suffix": "'pa'!",
-    "count": 5
-  },
-  {
-    "suffix": "u'pa'!",
-    "count": 5
-  },
-  {
-    "suffix": "paku'",
-    "count": 5
-  },
-  {
-    "suffix": "inekla",
-    "count": 5
-  },
-  {
-    "suffix": "su'lek",
-    "count": 5
-  },
-  {
-    "suffix": "hi?",
-    "count": 5
-  },
-  {
-    "suffix": "chi?",
-    "count": 5
-  },
-  {
-    "suffix": "echun",
-    "count": 5
-  },
-  {
-    "suffix": "'ker",
-    "count": 5
-  },
-  {
-    "suffix": "ier'",
-    "count": 5
-  },
-  {
-    "suffix": "rier'",
-    "count": 5
-  },
-  {
-    "suffix": "u'udek",
-    "count": 5
-  },
-  {
-    "suffix": "u'ku'",
-    "count": 5
-  },
-  {
-    "suffix": "hek!",
-    "count": 5
-  },
-  {
-    "suffix": "chek!",
-    "count": 5
-  },
-  {
-    "suffix": "'chek!",
-    "count": 5
-  },
-  {
-    "suffix": "iker",
-    "count": 5
-  },
-  {
-    "suffix": "a'udek",
-    "count": 5
-  },
-  {
-    "suffix": "'lek'",
-    "count": 5
-  },
-  {
-    "suffix": "pensu'",
-    "count": 5
-  },
-  {
-    "suffix": "lunsu'",
-    "count": 5
-  },
-  {
-    "suffix": "n'su'",
-    "count": 5
-  },
-  {
-    "suffix": "li!",
-    "count": 5
-  },
-  {
-    "suffix": "lli!",
-    "count": 5
-  },
-  {
-    "suffix": "eker'",
-    "count": 5
-  },
-  {
-    "suffix": "pisu'",
-    "count": 5
-  },
-  {
-    "suffix": "alek?",
-    "count": 5
-  },
-  {
-    "suffix": "palek?",
-    "count": 5
-  },
-  {
-    "suffix": "¡musu'",
-    "count": 5
-  },
-  {
-    "suffix": "nñi",
-    "count": 5
-  },
-  {
-    "suffix": "sek'",
-    "count": 5
-  },
-  {
-    "suffix": "asek'",
-    "count": 5
-  },
-  {
-    "suffix": "wanek",
-    "count": 5
-  },
-  {
-    "suffix": "'wanek",
-    "count": 5
-  },
-  {
-    "suffix": "atulli",
-    "count": 5
-  },
-  {
-    "suffix": "uklli",
-    "count": 5
-  },
-  {
-    "suffix": "uta",
-    "count": 5
-  },
-  {
-    "suffix": "tuta",
-    "count": 5
-  },
-  {
-    "suffix": "ak'",
-    "count": 5
-  },
-  {
-    "suffix": "yusu'",
-    "count": 5
-  },
-  {
-    "suffix": "ñaper'",
-    "count": 5
-  },
-  {
-    "suffix": "k'la",
-    "count": 5
-  },
-  {
-    "suffix": "a'ta",
-    "count": 5
-  },
-  {
-    "suffix": "n'cha?",
-    "count": 5
-  },
-  {
-    "suffix": "ntusu'",
-    "count": 5
-  },
-  {
-    "suffix": "piter'",
-    "count": 5
-  },
-  {
-    "suffix": "ktulek",
-    "count": 5
-  },
-  {
-    "suffix": "ek'ak",
-    "count": 5
-  },
-  {
-    "suffix": "ullien",
-    "count": 5
-  },
-  {
-    "suffix": "pu",
-    "count": 5
-  },
-  {
-    "suffix": "r'awa'",
-    "count": 5
-  },
-  {
-    "suffix": "'tan",
-    "count": 5
-  },
-  {
-    "suffix": "pa'cha",
-    "count": 5
-  },
-  {
-    "suffix": "u'lli?",
-    "count": 5
-  },
-  {
-    "suffix": "ulama'",
-    "count": 5
-  },
-  {
-    "suffix": "llun",
-    "count": 5
-  },
-  {
-    "suffix": "wa'?",
-    "count": 5
-  },
-  {
-    "suffix": "itulli",
-    "count": 5
-  },
-  {
-    "suffix": "pa'lek",
-    "count": 5
-  },
-  {
-    "suffix": "u'tak",
-    "count": 5
-  },
-  {
-    "suffix": "nu'tak",
-    "count": 5
-  },
-  {
-    "suffix": "i'pi",
-    "count": 5
-  },
-  {
-    "suffix": "li'pi",
-    "count": 5
-  },
-  {
-    "suffix": "lli'pi",
-    "count": 5
-  },
-  {
-    "suffix": "knen",
-    "count": 5
-  },
-  {
-    "suffix": "eknen",
-    "count": 5
-  },
-  {
-    "suffix": "ala!",
-    "count": 5
-  },
-  {
-    "suffix": "npen",
-    "count": 5
-  },
-  {
-    "suffix": "¿kenma",
-    "count": 5
-  },
-  {
-    "suffix": "'pala?",
-    "count": 5
-  },
-  {
-    "suffix": "r',",
-    "count": 5
-  },
-  {
-    "suffix": "er',",
-    "count": 5
-  },
-  {
-    "suffix": "u'sa'",
-    "count": 5
-  },
-  {
-    "suffix": "liker'",
-    "count": 5
-  },
-  {
-    "suffix": "pechek",
-    "count": 5
-  },
-  {
-    "suffix": "lliu",
-    "count": 5
-  },
-  {
-    "suffix": "h,",
-    "count": 5
-  },
-  {
-    "suffix": "ah,",
-    "count": 5
-  },
-  {
-    "suffix": "pilli",
-    "count": 5
-  },
-  {
-    "suffix": "'a'mak",
-    "count": 5
-  },
-  {
-    "suffix": "nentu",
-    "count": 5
-  },
-  {
-    "suffix": "anentu",
-    "count": 5
-  },
-  {
-    "suffix": "ik?",
-    "count": 5
-  },
-  {
-    "suffix": "hulek",
-    "count": 5
-  },
-  {
-    "suffix": "nchek",
-    "count": 5
-  },
-  {
-    "suffix": "aka",
-    "count": 5
-  },
-  {
-    "suffix": "hasu'",
-    "count": 5
-  },
-  {
-    "suffix": "shasu'",
-    "count": 5
-  },
-  {
-    "suffix": "nasa'",
-    "count": 5
-  },
-  {
-    "suffix": "anasa'",
-    "count": 5
-  },
-  {
-    "suffix": "npi'",
-    "count": 5
-  },
-  {
-    "suffix": "anma'",
-    "count": 5
-  },
-  {
-    "suffix": "'unta'",
-    "count": 5
-  },
-  {
-    "suffix": "u'amu",
-    "count": 5
-  },
-  {
-    "suffix": "anek.",
-    "count": 5
-  },
-  {
-    "suffix": "eklek,",
-    "count": 5
-  },
-  {
-    "suffix": "nenna'",
-    "count": 5
-  },
-  {
-    "suffix": "weklek",
-    "count": 5
-  },
-  {
-    "suffix": "klan",
-    "count": 5
-  },
-  {
-    "suffix": "tulli,",
-    "count": 5
-  },
-  {
-    "suffix": "nalek",
-    "count": 5
-  },
-  {
-    "suffix": "klli.",
-    "count": 5
-  },
-  {
-    "suffix": "eklli.",
-    "count": 5
-  },
-  {
-    "suffix": "nkasu'",
-    "count": 5
-  },
-  {
-    "suffix": "ak.",
-    "count": 5
-  },
-  {
-    "suffix": "u'n",
-    "count": 5
-  },
-  {
-    "suffix": "nler",
-    "count": 5
-  },
-  {
-    "suffix": "u'lli.",
-    "count": 5
-  },
-  {
-    "suffix": "'la.",
-    "count": 5
-  },
-  {
-    "suffix": "sik.",
-    "count": 5
-  },
-  {
-    "suffix": "á.",
-    "count": 5
-  },
-  {
-    "suffix": "u'ta'",
-    "count": 5
-  },
-  {
-    "suffix": "tu'ta'",
-    "count": 5
-  },
-  {
-    "suffix": "sa'ler",
-    "count": 5
-  },
-  {
-    "suffix": "rkek",
-    "count": 5
-  },
-  {
-    "suffix": "lala",
-    "count": 5
-  },
-  {
-    "suffix": "ilala",
-    "count": 5
-  },
-  {
-    "suffix": "tun",
-    "count": 5
-  },
-  {
-    "suffix": "uando",
-    "count": 5
-  },
-  {
-    "suffix": "cuando",
-    "count": 5
-  },
-  {
-    "suffix": "nka",
-    "count": 5
-  },
-  {
-    "suffix": "udek.",
-    "count": 5
-  },
-  {
-    "suffix": "amudek",
-    "count": 5
-  },
-  {
-    "suffix": "achi",
-    "count": 5
-  },
-  {
-    "suffix": "pachi",
-    "count": 5
-  },
-  {
-    "suffix": "ulli:",
-    "count": 5
-  },
-  {
-    "suffix": "tulli:",
-    "count": 5
-  },
-  {
-    "suffix": "itan",
-    "count": 5
-  },
-  {
-    "suffix": "kwa'.",
-    "count": 5
-  },
-  {
-    "suffix": "ekwa'.",
-    "count": 5
-  },
-  {
-    "suffix": "serpi",
-    "count": 5
-  },
-  {
-    "suffix": "aserpi",
-    "count": 5
-  },
-  {
-    "suffix": "ui'pa'",
-    "count": 5
+    "suffix": "lek'",
+    "count": 10
   }
 ]
