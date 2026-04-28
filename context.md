@@ -383,6 +383,17 @@ puede venir de ruido, equivalencias no agrupadas o ambigüedad real del corpus.
 - La fase de embeddings queda cerrada provisionalmente. No se recomienda otra
   ronda de hard negatives sin revisión manual de errores y grupos.
 
+### Resumen final de embeddings
+
+- Candidato final provisional: `v3_iterative_hn_e5_base_bidirectional`.
+- Razón de aceptación: mejor `R@1` y `MRR` en español -> Shiwlu y Shiwlu ->
+  español.
+- Riesgo conocido: `R@10` Shiwlu -> español baja de 0.9720 a 0.9688 (`-0.31`
+  puntos porcentuales), dentro del umbral aceptado.
+- Decisión: detener la fase de embeddings; no hacer más minería iterativa salvo
+  evidencia cualitativa fuerte.
+- Siguiente paso: integrar/evaluar este modelo en NMT.
+
 ### Organización de reportes
 
 Los reportes de embeddings están organizados en `reports/04_embeddings/`:

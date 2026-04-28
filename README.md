@@ -449,6 +449,16 @@ top-1 respectivamente. Los errores restantes se concentran en casos con
 `gold_has_audit_flag`, `semantic_confusion`, `close_score_ambiguity` y
 `shared_shiwilu_tokens`.
 
+### Resumen final de embeddings
+
+- Candidato final provisional: `v3_iterative_hn_e5_base_bidirectional`.
+- Razón de aceptación: mejor `R@1` y `MRR` bidireccional frente al candidato
+  anterior.
+- Riesgo conocido: `R@10` Shiwlu -> español baja levemente de 0.9720 a 0.9688
+  (`-0.31` puntos porcentuales), dentro del umbral aceptado.
+- Decisión: no hacer más minería iterativa salvo evidencia cualitativa fuerte.
+- Siguiente paso: usar este modelo en integración/evaluación con NMT.
+
 El modelo `v3_iterative_hn_e5_base_bidirectional` queda como candidato actual en:
 
 - `models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional`

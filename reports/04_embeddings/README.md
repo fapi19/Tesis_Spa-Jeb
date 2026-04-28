@@ -50,3 +50,11 @@ La iteración v3 mejora `R@1` y `MRR` en ambos sentidos frente al candidato
 anterior y pasa los criterios de aceptación. La fase de embeddings queda cerrada
 provisionalmente; la siguiente fase es usar `v3_iterative_hn_e5_base_bidirectional`
 en integración/evaluación con NMT.
+
+## Resumen Final
+
+- Candidato final provisional: `v3_iterative_hn_e5_base_bidirectional`.
+- Razón: mejor `R@1` y `MRR` bidireccional.
+- Riesgo: `R@10` Shiwlu -> español baja `-0.31` puntos porcentuales.
+- Decisión: no hacer más minería iterativa salvo evidencia cualitativa fuerte.
+- Siguiente paso: integración/evaluación con NMT.
