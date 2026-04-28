@@ -15,7 +15,7 @@ import json
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 import numpy as np
 import pandas as pd
@@ -30,10 +30,10 @@ REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
 REPORTS_PREPROCESSING_DIR = REPORTS_DIR / "preprocessing"
 CONTROLLED_HN_REPORTS_DIR = REPORTS_DIR / "controlled_hn"
 MODEL_DIR = PROJECT_ROOT / "models" / "sentence_transformers"
+Direction = Literal["esp_to_shi", "shi_to_esp"]
 
-DEFAULT_MODEL = MODEL_DIR / "finetuned_v2_hn_controlled"
-DEFAULT_TAG = "v2_hn_controlled"
-NEGATIVES_PATH = SPLITS_DIR / "train_hard_negatives_controlled.csv"
+DEFAULT_TAG = "v2_hn_controlled_e5_base"
+DEFAULT_MODEL = MODEL_DIR / DEFAULT_TAG
 
 
 def report_dir_for_tag(tag: str) -> Path:
@@ -44,6 +44,25 @@ def report_dir_for_tag(tag: str) -> Path:
     if tag == "baseline":
         return REPORTS_DIR / "baseline"
     return REPORTS_DIR / "experiments" / tag
+
+
+def controlled_hn_report_dir_for_tag(tag: str) -> Path:
+    if tag == "v2_hn_controlled":
+        return CONTROLLED_HN_REPORTS_DIR
+    return CONTROLLED_HN_REPORTS_DIR / tag
+
+
+def negatives_path_for_tag(tag: str) -> Path:
+    if tag == "v2_hn_controlled":
+        return SPLITS_DIR / "train_hard_negatives_controlled.csv"
+    return SPLITS_DIR / f"train_hard_negatives_{tag}.csv"
+
+
+def negatives_report_path_for_tag(tag: str) -> Path:
+    report_dir = controlled_hn_report_dir_for_tag(tag)
+    if tag == "v2_hn_controlled":
+        return report_dir / "hard_negatives_controlled_report.json"
+    return report_dir / f"hard_negatives_{tag}_report.json"
 
 
 def file_sha256(path: Path) -> str:
@@ -96,21 +115,49 @@ def heuristic_error_type(row: pd.Series, top1: pd.Series, rank: int, score_gap: 
     return "semantic_confusion"
 
 
-def encode_split(model: SentenceTransformer, df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
-    queries = [f"query: {text.strip()}" for text in df["ESP_normalizado"].astype(str)]
-    passages = [f"passage: {text.strip()}" for text in df["SHIWILU_normalizado"].astype(str)]
+def encode_split(
+    model: SentenceTransformer,
+    df: pd.DataFrame,
+    direction: Direction,
+) -> tuple[np.ndarray, np.ndarray]:
+    if direction == "esp_to_shi":
+        query_column = "ESP_normalizado"
+        passage_column = "SHIWILU_normalizado"
+    elif direction == "shi_to_esp":
+        query_column = "SHIWILU_normalizado"
+        passage_column = "ESP_normalizado"
+    else:
+        raise ValueError(f"Dirección no soportada: {direction}")
+
+    queries = [f"query: {text.strip()}" for text in df[query_column].astype(str)]
+    passages = [f"passage: {text.strip()}" for text in df[passage_column].astype(str)]
     query_embs = model.encode(queries, batch_size=64, show_progress_bar=True, convert_to_numpy=True)
     passage_embs = model.encode(passages, batch_size=64, show_progress_bar=True, convert_to_numpy=True)
     return l2_normalize(query_embs), l2_normalize(passage_embs)
 
 
-def run_error_analysis(model_path: Path, tag: str, sample_size: int) -> dict[str, Any]:
+def run_error_analysis(
+    model_path: Path,
+    tag: str,
+    sample_size: int,
+    direction: Direction,
+) -> dict[str, Any]:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     df = load_split("test")
     model = SentenceTransformer(str(model_path))
-    query_embs, passage_embs = encode_split(model, df)
+    query_embs, passage_embs = encode_split(model, df, direction)
     sim_matrix = query_embs @ passage_embs.T
     positive_indices = build_positive_indices(df)
+    output_tag = f"{tag}_{direction}"
+
+    if direction == "esp_to_shi":
+        query_column = "ESP_normalizado"
+        target_column = "SHIWILU_normalizado"
+    elif direction == "shi_to_esp":
+        query_column = "SHIWILU_normalizado"
+        target_column = "ESP_normalizado"
+    else:
+        raise ValueError(f"Dirección no soportada: {direction}")
 
     error_rows = []
     all_rows = []
@@ -131,10 +178,14 @@ def run_error_analysis(model_path: Path, tag: str, sample_size: int) -> dict[str
             "rank": rank,
             "top1_is_positive": top1_is_positive,
             "positive_count": len(positives),
-            "esp": row["ESP_normalizado"],
-            "shiwilu_correct": row["SHIWILU_normalizado"],
+            "direction": direction,
+            "query_text": row[query_column],
+            "target_correct": row[target_column],
             "top1_pair_id": top1["pair_id"],
             "top1_group_id": top1["group_id"],
+            "target_top1": top1[target_column],
+            "esp": row["ESP_normalizado"],
+            "shiwilu_correct": row["SHIWILU_normalizado"],
             "shiwilu_top1": top1["SHIWILU_normalizado"],
             "correct_score": best_positive_score,
             "top1_score": top1_score,
@@ -148,9 +199,9 @@ def run_error_analysis(model_path: Path, tag: str, sample_size: int) -> dict[str
 
     output_dir = report_dir_for_tag(tag)
     output_dir.mkdir(parents=True, exist_ok=True)
-    full_path = output_dir / f"{tag}_r1_error_analysis_full.csv"
-    sample_path = output_dir / f"{tag}_r1_error_analysis_review_sample.csv"
-    summary_path = output_dir / f"{tag}_r1_error_analysis_summary.json"
+    full_path = output_dir / f"{output_tag}_r1_error_analysis_full.csv"
+    sample_path = output_dir / f"{output_tag}_r1_error_analysis_review_sample.csv"
+    summary_path = output_dir / f"{output_tag}_r1_error_analysis_summary.json"
 
     error_df = pd.DataFrame(error_rows).sort_values(["rank", "score_gap"], ascending=[False, False])
     all_df = pd.DataFrame(all_rows)
@@ -162,6 +213,7 @@ def run_error_analysis(model_path: Path, tag: str, sample_size: int) -> dict[str
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "model": str(model_path),
         "tag": tag,
+        "direction": direction,
         "total_examples": int(len(df)),
         "top1_errors": int(len(error_df)),
         "top1_accuracy": float(1.0 - len(error_df) / max(len(df), 1)),
@@ -177,9 +229,11 @@ def run_error_analysis(model_path: Path, tag: str, sample_size: int) -> dict[str
     return summary
 
 
-def validate_negatives(sample_size: int) -> dict[str, Any]:
-    CONTROLLED_HN_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    negatives = pd.read_csv(NEGATIVES_PATH, encoding="utf-8-sig")
+def validate_negatives(tag: str, sample_size: int) -> dict[str, Any]:
+    output_dir = controlled_hn_report_dir_for_tag(tag)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    negatives_path = negatives_path_for_tag(tag)
+    negatives = pd.read_csv(negatives_path, encoding="utf-8-sig")
     risk_rows = []
     for _, row in negatives.iterrows():
         risks = []
@@ -199,8 +253,12 @@ def validate_negatives(sample_size: int) -> dict[str, Any]:
             risk_rows.append(risk_row)
 
     risk_df = pd.DataFrame(risk_rows)
-    risk_path = CONTROLLED_HN_REPORTS_DIR / "hard_negatives_controlled_risk_review.csv"
-    summary_path = CONTROLLED_HN_REPORTS_DIR / "hard_negatives_controlled_validation.json"
+    if tag == "v2_hn_controlled":
+        risk_path = output_dir / "hard_negatives_controlled_risk_review.csv"
+        summary_path = output_dir / "hard_negatives_controlled_validation.json"
+    else:
+        risk_path = output_dir / f"hard_negatives_{tag}_risk_review.csv"
+        summary_path = output_dir / f"hard_negatives_{tag}_validation.json"
     if len(risk_df):
         risk_df.head(sample_size).to_csv(risk_path, index=False, encoding="utf-8-sig")
     else:
@@ -209,6 +267,8 @@ def validate_negatives(sample_size: int) -> dict[str, Any]:
     summary = {
         "pipeline": "hard_negative_validation",
         "timestamp": datetime.now(timezone.utc).isoformat(),
+        "tag": tag,
+        "negatives_csv": str(negatives_path),
         "total_negatives": int(len(negatives)),
         "risk_rows": int(len(risk_df)),
         "risk_ratio": float(len(risk_df) / max(len(negatives), 1)),
@@ -228,9 +288,10 @@ def freeze_candidate(model_path: Path, tag: str) -> dict[str, Any]:
     output_dir = report_dir_for_tag(tag)
     output_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = REPORTS_PREPROCESSING_DIR / "preprocess_manifest.json"
-    mining_report_path = CONTROLLED_HN_REPORTS_DIR / "hard_negatives_controlled_report.json"
-    retrieval_path = output_dir / f"{tag}_retrieval.json"
-    training_path = output_dir / f"{tag}_training.json"
+    mining_report_path = negatives_report_path_for_tag(tag)
+    retrieval_esp_to_shi_path = output_dir / f"{tag}_esp_to_shi_retrieval.json"
+    retrieval_shi_to_esp_path = output_dir / f"{tag}_shi_to_esp_retrieval.json"
+    training_path = REPORTS_DIR / tag / f"{tag}_training.json"
 
     metadata = {
         "pipeline": "freeze_embedding_candidate",
@@ -247,11 +308,15 @@ def freeze_candidate(model_path: Path, tag: str) -> dict[str, Any]:
         },
         "reports": {
             "mining_report": str(mining_report_path),
-            "retrieval_report": str(retrieval_path),
+            "retrieval_esp_to_shi_report": str(retrieval_esp_to_shi_path),
+            "retrieval_shi_to_esp_report": str(retrieval_shi_to_esp_path),
             "training_report": str(training_path),
+            "r1_error_analysis_summary": str(
+                output_dir / f"{tag}_esp_to_shi_r1_error_analysis_summary.json"
+            ),
         },
         "decision": "candidate_final_embedding_model",
-        "next_step": "Use this model as the embedding candidate unless later ablations beat it.",
+        "next_step": "Use this model as the embedding candidate for NMT integration.",
     }
 
     output_path = output_dir / f"{tag}_freeze_metadata.json"
@@ -265,6 +330,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
     parser.add_argument("--tag", default=DEFAULT_TAG)
     parser.add_argument("--sample-size", type=int, default=200)
+    parser.add_argument("--direction", choices=["esp_to_shi", "shi_to_esp"], default="esp_to_shi")
     parser.add_argument("--skip-error-analysis", action="store_true")
     parser.add_argument("--skip-negative-validation", action="store_true")
     parser.add_argument("--skip-freeze", action="store_true")
@@ -274,10 +340,10 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     if not args.skip_error_analysis:
-        summary = run_error_analysis(args.model, args.tag, args.sample_size)
+        summary = run_error_analysis(args.model, args.tag, args.sample_size, args.direction)
         print(f"Error analysis: {summary['artifacts']['summary_json']}")
     if not args.skip_negative_validation:
-        validation = validate_negatives(args.sample_size)
+        validation = validate_negatives(args.tag, args.sample_size)
         print(f"Negative validation: {validation['artifacts']['summary_json']}")
     if not args.skip_freeze:
         metadata = freeze_candidate(args.model, args.tag)

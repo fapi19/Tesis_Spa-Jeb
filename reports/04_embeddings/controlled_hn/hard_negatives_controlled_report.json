@@ -1,7 +1,7 @@
 {
   "pipeline": "hard_negative_controlled",
-  "timestamp": "2026-04-28T04:19:26.606064+00:00",
-  "source_model": "models/sentence_transformers/finetuned_v1",
+  "timestamp": "2026-04-28T04:35:35.269520+00:00",
+  "source_model": "models/sentence_transformers/v1_e5_base",
   "top_k": 50,
   "margin_rules": {
     "hard": [
@@ -15,40 +15,40 @@
   },
   "counts": {
     "total_anchors": 2563,
-    "anchors_with_negative": 2341,
-    "anchors_without_negative": 222,
-    "valid_anchor_ratio": 0.9133827545844713,
-    "total_negative_rows": 3769,
+    "anchors_with_negative": 2558,
+    "anchors_without_negative": 5,
+    "valid_anchor_ratio": 0.9980491611392899,
+    "total_negative_rows": 4794,
     "difficulty_counts": {
-      "hard": 2286,
-      "medium": 1483
+      "medium": 2510,
+      "hard": 2284
     },
-    "same_group_discards": 397,
+    "same_group_discards": 414,
     "duplicate_discards": 0,
-    "too_hard_discards": 35831,
-    "too_easy_discards": 5049
+    "too_hard_discards": 7423,
+    "too_easy_discards": 36714
   },
   "similarity": {
     "sim_positive": {
-      "mean": 0.6205435247850153,
-      "std": 0.08893182352373107,
-      "min": 0.29537492990493774,
-      "p50": 0.621900200843811,
-      "max": 0.9016487002372742
+      "mean": 0.6954594299377478,
+      "std": 0.08466544461782606,
+      "min": 0.42081770300865173,
+      "p50": 0.698574960231781,
+      "max": 0.9218037724494934
     },
     "sim_negative": {
-      "mean": 0.5209832434535311,
-      "std": 0.08946955488502338,
-      "min": 0.23163214325904846,
-      "p50": 0.5208335518836975,
-      "max": 0.8399160504341125
+      "mean": 0.5715950200482612,
+      "std": 0.09060683654910466,
+      "min": 0.2688208520412445,
+      "p50": 0.570245772600174,
+      "max": 0.8396145701408386
     },
     "margin": {
-      "mean": 0.09956028133148412,
-      "std": 0.04934011972499371,
-      "min": 0.05000483989715576,
-      "p50": 0.07096540927886963,
-      "max": 0.2933865189552307
+      "mean": 0.12386440988948656,
+      "std": 0.049432098318496855,
+      "min": 0.050003647804260254,
+      "p50": 0.1503700166940689,
+      "max": 0.29819416999816895
     }
   },
   "quality_gate": {
@@ -60,5 +60,5 @@
     "sample_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/hard_negatives_controlled_sample.csv",
     "report_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/hard_negatives_controlled_report.json"
   },
-  "elapsed_seconds": 3.156986
+  "elapsed_seconds": 5.814474
 }

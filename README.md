@@ -33,13 +33,19 @@ shiwilu.
 
 Modelo candidato actual:
 
-- `v2_hn_controlled`
-- Base: `intfloat/multilingual-e5-small`
-- Etapas: baseline E5 -> fine-tuning `v1` -> hard/medium negative mining controlado
-- Métricas: `R@1=0.5670`, `R@5=0.8131`, `R@10=0.9003`, `MRR=0.6770`
+- `v3_iterative_hn_e5_base_bidirectional`
+- Base: `intfloat/multilingual-e5-base`
+- Etapas: baseline E5-base -> fine-tuning `v1_e5_base_bidirectional` -> hard/medium negative mining controlado bidireccional -> iterative hard negative mining v3
+- Español -> Shiwlu: `R@1=0.7882`, `R@5=0.9283`, `R@10=0.9782`, `MRR=0.8480`
+- Shiwlu -> español: `R@1=0.7913`, `R@5=0.9564`, `R@10=0.9688`, `MRR=0.8617`
+- Mejora frente a `v2_hn_controlled_e5_base_bidirectional`: `+3.74` puntos
+  porcentuales en `R@1` español -> Shiwlu (`+4.98%` relativo; 253 vs 241
+  aciertos en rank 1) y `+1.25` puntos porcentuales en `R@1` Shiwlu ->
+  español (`+1.60%` relativo; 254 vs 250 aciertos en rank 1).
 
-Siguiente fase: usar `v2_hn_controlled` como candidato de embeddings para análisis
-posterior y preparar su integración/evaluación con NMT.
+Decisión: cerrar provisionalmente la fase de embeddings y usar
+`v3_iterative_hn_e5_base_bidirectional` como candidato para
+integración/evaluación con NMT.
 
 ---
 
@@ -117,7 +123,10 @@ Desarrollo/
 │       ├── baseline/                   # E5 sin fine-tuning
 │       ├── v1/                         # E5 + MultipleNegativesRankingLoss
 │       ├── controlled_hn/              # Minería/validación de negativos
-│       ├── v2_hn_controlled/           # Modelo candidato actual
+│       ├── v2_hn_controlled/           # Candidato anterior E5-small + HN
+│       ├── v2_hn_controlled_e5_base/   # Candidato anterior E5-base + HN
+│       ├── v2_hn_controlled_e5_base_bidirectional/ # Candidato anterior bidireccional
+│       ├── v3_iterative_hn_e5_base_bidirectional/  # Modelo candidato actual
 │       ├── v2_hn_controlled_hard/      # Ablación hard-only
 │       ├── legacy_v2/                  # Triplets antiguos no controlados
 │       └── exploratory/                # Reportes exploratorios previos
@@ -400,20 +409,53 @@ poetry run python -m src.embeddings.audit_preprocessing
 
 ## Etapa 05: Entrenamiento y evaluación de embeddings
 
-Esta etapa ya produjo el candidato actual `v2_hn_controlled`. Todos los modelos
-se evaluaron con retrieval español -> Shiwlu y multi-positivo por `group_id`.
+Esta etapa ya produjo el candidato actual `v3_iterative_hn_e5_base_bidirectional`.
+Todos los modelos se evaluaron con retrieval multi-positivo por `group_id` y,
+para los candidatos finales, en ambas direcciones.
 
 | Modelo | Entrenamiento | R@1 | R@5 | R@10 | MRR | Mean Rank |
 |--------|---------------|----:|----:|-----:|----:|----------:|
 | `baseline` | E5 sin fine-tuning | 0.0966 | 0.2025 | 0.3209 | 0.1633 | 60.3 |
 | `v1` | E5 + `MultipleNegativesRankingLoss` | 0.5109 | 0.7788 | 0.8692 | 0.6325 | 5.9 |
 | `v2_hn_controlled_hard` | `v1` + hard negatives | 0.5421 | 0.8069 | 0.8879 | 0.6559 | 5.6 |
-| `v2_hn_controlled` | `v1` + hard/medium negatives | **0.5670** | **0.8131** | **0.9003** | **0.6770** | **5.2** |
+| `v2_hn_controlled` | `v1` + hard/medium negatives | 0.5670 | 0.8193 | 0.9097 | 0.6755 | 5.5 |
+| `baseline_e5_base` | E5-base sin fine-tuning | 0.1059 | 0.2056 | 0.3209 | 0.1751 | 57.5 |
+| `v1_e5_base` | E5-base + `MultipleNegativesRankingLoss` | 0.6480 | 0.9128 | 0.9688 | 0.7592 | 2.5 |
+| `v1_e5_base_bidirectional` | E5-base + MNRL bidireccional | 0.6573 | 0.9190 | 0.9751 | 0.7704 | 2.5 |
+| `v2_hn_controlled_e5_base` | `v1_e5_base` + hard/medium negatives | 0.7134 | 0.9159 | **0.9720** | 0.8037 | **2.4** |
+| `v2_hn_controlled_e5_base_bidirectional` | `v1_e5_base_bidirectional` + hard/medium negatives bidireccionales | 0.7508 | **0.9283** | 0.9688 | 0.8276 | 2.9 |
+| `v3_iterative_hn_e5_base_bidirectional` | `v2_hn_controlled_e5_base_bidirectional` + iterative hard negatives | **0.7882** | **0.9283** | **0.9782** | **0.8480** | **2.2** |
 
-El modelo `v2_hn_controlled` queda congelado como candidato actual en:
+La mejora principal del candidato actual está en el ordenamiento top-1. Frente a
+`v2_hn_controlled_e5_base_bidirectional`, sube de 241 a 253 aciertos rank 1 en
+español -> Shiwlu (`+12` aciertos, `+3.74` puntos porcentuales de `R@1`,
+`+4.98%` relativo). En Shiwlu -> español sube de 250 a 254 aciertos rank 1
+(`+4` aciertos, `+1.25` puntos porcentuales de `R@1`, `+1.60%` relativo).
 
-- `models/sentence_transformers/finetuned_v2_hn_controlled`
-- `reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_freeze_metadata.json`
+### Validación bidireccional del candidato
+
+| Dirección | R@1 | R@5 | R@10 | MRR | Mean Rank | Rank 1 |
+|-----------|----:|----:|-----:|----:|----------:|-------:|
+| español -> Shiwlu | 0.7882 | 0.9283 | **0.9782** | 0.8480 | 2.2 | 253/321 |
+| Shiwlu -> español | **0.7913** | **0.9564** | 0.9688 | **0.8617** | **2.0** | **254/321** |
+
+La iteración v3 mejora `R@1` y `MRR` en ambas direcciones. La única caída es
+`R@10` Shiwlu -> español, de 0.9720 a 0.9688, equivalente a `-0.31` puntos
+porcentuales y dentro del umbral de aceptación definido.
+
+El análisis de errores top-1 reporta 68 errores en español -> Shiwlu y 67 en
+Shiwlu -> español. Frente al candidato anterior, esto reduce 12 y 4 errores
+top-1 respectivamente. Los errores restantes se concentran en casos con
+`gold_has_audit_flag`, `semantic_confusion`, `close_score_ambiguity` y
+`shared_shiwilu_tokens`.
+
+El modelo `v3_iterative_hn_e5_base_bidirectional` queda como candidato actual en:
+
+- `models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional`
+- `reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_esp_to_shi_retrieval.json`
+- `reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_shi_to_esp_retrieval.json`
+- `reports/04_embeddings/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_training.json`
+- `reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_freeze_metadata.json`
 
 ---
 
@@ -434,7 +476,7 @@ El modelo `v2_hn_controlled` queda congelado como candidato actual en:
 | 04 | `data/processed/04_splits/` | `train.jsonl`, `valid.jsonl`, `test.jsonl`, `all_text_for_sp.txt` | **Preprocesamiento canónico de embeddings** |
 | 04 | `reports/04_embeddings/preprocessing/` | `preprocess_manifest.json`, `preprocessing_closure_report.*` | Manifiesto y cierre del preprocesamiento |
 | 05 | `models/sentence_transformers/` | modelos fine-tuned | **Entrenamiento/evaluación de embeddings** |
-| 05 | `reports/04_embeddings/{baseline,v1,v2_hn_controlled}/` | `*_retrieval.json`, `*_training.json` | Métricas de retrieval y entrenamiento |
+| 05 | `reports/04_embeddings/{baseline,v1,v2_hn_controlled,experiments/}/` | `*_retrieval.json`, `*_training.json` | Métricas de retrieval y entrenamiento |
 
 ---
 
@@ -488,6 +530,7 @@ por lingüistas.
 
 ## Próximos pasos
 
-- Revisar cualitativamente los errores de `v2_hn_controlled` en `reports/04_embeddings/v2_hn_controlled/`.
-- Usar `v2_hn_controlled` como candidato de embeddings para la siguiente fase.
+- Usar `v3_iterative_hn_e5_base_bidirectional` como candidato de embeddings para la siguiente fase.
+- Revisar manualmente los errores top-1 solo si se quiere depurar datos o `group_id`;
+  no iniciar otra ronda de entrenamiento sin esa revisión.
 - Preparar integración/evaluación con NMT sin reabrir el preprocesamiento de embeddings.

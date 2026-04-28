@@ -1,0 +1,64 @@
+{
+  "pipeline": "hard_negative_controlled",
+  "timestamp": "2026-04-28T05:24:48.931984+00:00",
+  "source_model": "models/sentence_transformers/v1_e5_base_bidirectional",
+  "top_k": 50,
+  "margin_rules": {
+    "hard": [
+      0.05,
+      0.15
+    ],
+    "medium": [
+      0.15,
+      0.3
+    ]
+  },
+  "counts": {
+    "total_anchors": 2563,
+    "anchors_with_negative": 2553,
+    "anchors_without_negative": 10,
+    "valid_anchor_ratio": 0.9960983222785798,
+    "total_negative_rows": 4710,
+    "difficulty_counts": {
+      "medium": 2540,
+      "hard": 2170
+    },
+    "same_group_discards": 414,
+    "duplicate_discards": 0,
+    "too_hard_discards": 5442,
+    "too_easy_discards": 50131
+  },
+  "similarity": {
+    "sim_positive": {
+      "mean": 0.7867216839785283,
+      "std": 0.0642636303585837,
+      "min": 0.5683168172836304,
+      "p50": 0.7911195755004883,
+      "max": 0.9392979741096497
+    },
+    "sim_negative": {
+      "mean": 0.6580543251427369,
+      "std": 0.07569205140069862,
+      "min": 0.4168337881565094,
+      "p50": 0.6579890549182892,
+      "max": 0.861290454864502
+    },
+    "margin": {
+      "mean": 0.12866735883579133,
+      "std": 0.04956401288739259,
+      "min": 0.05002868175506592,
+      "p50": 0.15102866291999817,
+      "max": 0.299416184425354
+    }
+  },
+  "quality_gate": {
+    "auto_pass": true,
+    "reason": "Valid anchor ratio and margins are acceptable."
+  },
+  "artifacts": {
+    "negatives_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/train_hard_negatives_v2_hn_controlled_e5_base_bidirectional.csv",
+    "sample_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v2_hn_controlled_e5_base_bidirectional/hard_negatives_v2_hn_controlled_e5_base_bidirectional_sample.csv",
+    "report_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v2_hn_controlled_e5_base_bidirectional/hard_negatives_v2_hn_controlled_e5_base_bidirectional_report.json"
+  },
+  "elapsed_seconds": 5.125651
+}

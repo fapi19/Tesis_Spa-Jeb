@@ -1,0 +1,23 @@
+{
+  "pipeline": "freeze_embedding_candidate",
+  "timestamp": "2026-04-28T05:36:58.145099+00:00",
+  "candidate_model": "v2_hn_controlled_e5_base_bidirectional",
+  "model_path": "models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional",
+  "model_exists": true,
+  "data": {
+    "preprocess_manifest": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/preprocessing/preprocess_manifest.json",
+    "preprocess_manifest_sha256": "b3e4d245db2d521dcd46f1b901127a802b65c060e4edfe176be998e89434edb2",
+    "train_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/train.csv",
+    "valid_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/valid.csv",
+    "test_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/test.csv"
+  },
+  "reports": {
+    "mining_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v2_hn_controlled_e5_base_bidirectional/hard_negatives_v2_hn_controlled_e5_base_bidirectional_report.json",
+    "retrieval_esp_to_shi_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/experiments/v2_hn_controlled_e5_base_bidirectional/v2_hn_controlled_e5_base_bidirectional_esp_to_shi_retrieval.json",
+    "retrieval_shi_to_esp_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/experiments/v2_hn_controlled_e5_base_bidirectional/v2_hn_controlled_e5_base_bidirectional_shi_to_esp_retrieval.json",
+    "training_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/v2_hn_controlled_e5_base_bidirectional/v2_hn_controlled_e5_base_bidirectional_training.json",
+    "r1_error_analysis_summary": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/experiments/v2_hn_controlled_e5_base_bidirectional/v2_hn_controlled_e5_base_bidirectional_esp_to_shi_r1_error_analysis_summary.json"
+  },
+  "decision": "candidate_final_embedding_model",
+  "next_step": "Use this model as the embedding candidate for NMT integration."
+}

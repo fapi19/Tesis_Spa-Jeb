@@ -1,0 +1,201 @@
+﻿pair_id,group_id,anchor,positive,negative,negative_pair_id,negative_group_id,difficulty,sim_positive,sim_negative,margin,negative_rank,risk_flags
+U01104,G00962,estoy divorciada.,apu'pi nuka'ka,nanpi'palek'i'la,U02056,G01839,hard,0.5428851842880249,0.4911322593688965,0.0517529249191284,51,very_close_margin
+U01034,G00895,deme tiempo.,wa'ten'u,wa'tenker',U02247,G02022,hard,0.6470953822135925,0.5929872393608093,0.0541081428527832,4,very_close_margin
+U00920,G00790,apágalo.,a'tashunker',tupiter',U00497,G00409,hard,0.6587293148040771,0.6036261916160583,0.0551031231880188,21,very_close_margin
+U00990,G00854,¿estás perdido?,¿wer'su' ñapala?,¿inapi ñapala?,U00987,G00851,hard,0.7793315649032593,0.727306604385376,0.0520249605178833,3,very_close_margin|shared_shiwilu_tokens
+U01102,G00961,estoy confuso.,lachek'ki'nek,ñinchichi'nek,U01068,G00927,hard,0.6946486830711365,0.6397868990898132,0.0548617839813232,3,very_close_margin
+U02116,G01897,es brasileña.,brashika nuka'a,pipersu' nuka'a,U00229,G00179,medium,0.7434180378913879,0.5690388083457947,0.1743792295455932,2,shared_shiwilu_tokens
+U00833,G00709,¿está ventoso?,¿nakusu' tanluwatulli?,¿nu'su' nuka'a?,U00581,G00483,hard,0.6084986329078674,0.5497308969497681,0.0587677359580993,22,very_close_margin
+U00669,G00559,tomás esperó.,chuma wa'tentulli,chuma wer'lli,U01226,G01065,medium,0.8283082246780396,0.5371212959289551,0.2911869287490845,2,shared_shiwilu_tokens
+U01295,G01126,están despedidos.,saka'tunakla usu'dekllina',saka'tusu' ñapallina',U01548,G01360,hard,0.8040074706077576,0.7481240034103394,0.0558834671974182,2,very_close_margin
+U01295,G01126,están despedidos.,saka'tunakla usu'dekllina',saka'tunakla usu'llina,U01294,G01125,medium,0.8040074706077576,0.6456364393234253,0.1583710312843322,6,shared_shiwilu_tokens
+U02483,G02258,hace mucho yo viví en varadero.,kua napi' simirkek nanpilek.,napi' sudawek sudatulek.,U02405,G02180,hard,0.6004121899604797,0.5040964484214783,0.0963157415390014,3,shared_shiwilu_tokens
+U01267,G01102,eres rico.,kulliker'wanpala,a'lliupiken nuka'ma,U00966,G00832,hard,0.6876975297927856,0.628969669342041,0.0587278604507446,2,very_close_margin
+U01053,G00913,¡qué pesado!,¡enpu'ni saka'dek'ipa'!,¡embu'ni mushipa'!,U00511,G00422,hard,0.7555055022239685,0.702572226524353,0.0529332756996154,5,very_close_margin
+U02148,G01928,son hermanas.,kaikualusa' nuker'ka,wiuksu'lusa' nuker'ka,U01207,G01048,hard,0.6482712626457214,0.5856319069862366,0.0626393556594848,5,shared_shiwilu_tokens
+U02148,G01928,son hermanas.,kaikualusa' nuker'ka,sha'pi'su'sa' nuker'ka,U02127,G01907,medium,0.6482712626457214,0.496667742729187,0.1516035199165344,12,shared_shiwilu_tokens
+U02624,G02399,"él no cría gallinas, no cría huanganas, nada de esos animales.","ñi nana wa'dantek pektawapi'ñi, ñi laman pektawapi'ñi, ñi ma'nen nanadaper.","ñi ma'wi'ñi, wilawi'ñi, ñi ñiñi'wi'ñi, wa'dantekwi'ñi, ñi ma'wi'ñi.",U02622,G02397,hard,0.7242029309272766,0.6415504217147827,0.0826525092124939,2,shared_shiwilu_tokens
+U02624,G02399,"él no cría gallinas, no cría huanganas, nada de esos animales.","ñi nana wa'dantek pektawapi'ñi, ñi laman pektawapi'ñi, ñi ma'nen nanadaper.","apu'tek i'mi'na ñinpu' ninchiluyuchi'ñi, ñi aperku'tekinpu'.",U03134,G02909,medium,0.7242029309272766,0.5605230927467346,0.163679838180542,4,shared_shiwilu_tokens
+U00201,G00154,estoy herido.,chacha'lek ñapalek,ñapalek sadasu',U00820,G00696,hard,0.7239418625831604,0.6668903231620789,0.0570515394210815,30,very_close_margin|shared_shiwilu_tokens
+U02793,G02568,cuando un viejo hablaba los niños no debían asomarse.,"taserpi lunpasik, wilalusa' kawichi'ñina'.",wilalusa' enmu'pinenwawalusa' ima peklu'deklli.,U03175,G02950,hard,0.6283596754074097,0.5215878486633301,0.1067718267440795,4,shared_shiwilu_tokens
+U01772,G01572,me desnudo.,inanpilechek,indei'techek,U01064,G00923,hard,0.613722026348114,0.5577839612960815,0.0559380650520324,14,very_close_margin
+U00561,G00466,me mudaré.,yunsue'chek,adencha'lek,U00187,G01794,hard,0.7823723554611206,0.7308019399642944,0.0515704154968261,2,very_close_margin
+U00359,G00290,llovió.,u'lanñi,a'aper'lli,U00358,G00289,hard,0.7303059101104736,0.6712442636489868,0.0590616464614868,8,very_close_margin
+U01059,G00918,estoy lesionado.,ñapalek da'peksu',ñapalek sakek'su',U00816,G00692,hard,0.826396644115448,0.7745530605316162,0.0518435835838317,12,very_close_margin|shared_shiwilu_tokens
+U01059,G00918,estoy lesionado.,ñapalek da'peksu',amercha tekuasu' ñapalek,U00823,G00699,medium,0.826396644115448,0.6718435287475586,0.1545531153678894,36,shared_shiwilu_tokens
+U00660,G00550,tom miró.,tom lli'tulli,tom lauki'lli,U00672,G00562,hard,0.8487493395805359,0.7502312064170837,0.0985181331634521,3,shared_shiwilu_tokens
+U00660,G00550,tom miró.,tom lli'tulli,tom lanteñi,U00433,G00350,medium,0.8487493395805359,0.6739802956581116,0.1747690439224243,5,shared_shiwilu_tokens
+U01633,G01444,lo verás.,lli'echu,ipa' lli'echu,U00711,G00597,hard,0.8036909699440002,0.7041121125221252,0.099578857421875,3,shared_shiwilu_tokens
+U01634,G01444,la verás.,lli'echu,ipa' lli'echu,U00711,G00597,hard,0.794478178024292,0.7017321586608887,0.0927460193634033,3,shared_shiwilu_tokens
+U02797,G02572,las viejas finadas y los viejos finados se sentaban y hablaban de ese arákayu.,"tasellunku'lusa' papinkuku'lusa' du'anna', nana arakayukin luñina'.",nana mukankinpu'lalusa'ler arakayu pideknen di'setchullina'.,U02788,G02563,hard,0.6874039769172668,0.6234979033470154,0.0639060735702514,2,shared_shiwilu_tokens
+U02693,G02468,gritó arákayu.,lukatullima arakayu.,lawinñini'ma arakayu.,U02656,G02431,hard,0.7412595152854919,0.6473199725151062,0.0939395427703857,2,shared_shiwilu_tokens
+U02220,G01997,¿son estudiantes?,¿ñinchitulusa' nuka'mama'?,¿suntadulusa'cha?,U01307,G01138,hard,0.6692538857460022,0.616269588470459,0.0529842972755432,4,very_close_margin
+U00780,G00657,tengo vino.,vinu' a'ñapalek,kerlliek vinu',U01712,G01515,medium,0.7676348090171814,0.6001228094100952,0.1675119996070861,2,shared_shiwilu_tokens
+U02688,G02463,"cuando pasó el carnaval regresó,","mitan nakusik ima adanta'n,","iñer ka'latak saneksik,",U02373,G02148,hard,0.7018241882324219,0.6473889350891113,0.0544352531433105,12,very_close_margin
+U03134,G02909,"en cambio apu'tek no sabía aborrecer mucho, no era miserable.","apu'tek i'mi'na ñinpu' ninchiluyuchi'ñi, ñi aperku'tekinpu'.","iñer ima dullinen adipi, ukunpala'lli, ñi chipitekwi'ñi.",U02875,G02650,hard,0.6756849884986877,0.5598911643028259,0.1157938241958618,2,shared_shiwilu_tokens
+U03134,G02909,"en cambio apu'tek no sabía aborrecer mucho, no era miserable.","apu'tek i'mi'na ñinpu' ninchiluyuchi'ñi, ñi aperku'tekinpu'.","ñi nana wa'dantek pektawapi'ñi, ñi laman pektawapi'ñi, ñi ma'nen nanadaper.",U02624,G02399,medium,0.6756849884986877,0.5222914218902588,0.1533935666084289,4,shared_shiwilu_tokens
+U00626,G00521,mantente despierto.,ñapaker' nanpiladasu',ñapaker' kawik,U00627,G00522,hard,0.7242874503135681,0.654219925403595,0.0700675249099731,6,shared_shiwilu_tokens
+U00626,G00521,mantente despierto.,ñapaker' nanpiladasu',insek'dipersu' ñapaker',U00721,G00605,medium,0.7242874503135681,0.5518133640289307,0.1724740862846374,10,shared_shiwilu_tokens
+U02659,G02434,dice que fueron a mirar.,lli'kuñini'ma.,nu'anna' insekkitullina'.,U02940,G02715,hard,0.5901635885238647,0.5319004654884338,0.0582631230354309,3,very_close_margin
+U02423,G02198,postrada me la paso.,ñapamu erwatapalek.,alantapalek kulliker',U01711,G01514,hard,0.5813578963279724,0.5237109065055847,0.0576469898223876,4,very_close_margin
+U03120,G02895,de esta manera ahora están olvidando la lengua shiwilu.,ipa'la nu'anna' ipa' shiwilu la'la' pinaner'apilallina'.,ipa'la asu' senñula' itullun ¡lunker shiwilu la'la'!,U02504,G02279,hard,0.7537415623664856,0.677863359451294,0.0758782029151916,3,shared_shiwilu_tokens
+U03120,G02895,de esta manera ahora están olvidando la lengua shiwilu.,ipa'la nu'anna' ipa' shiwilu la'la' pinaner'apilallina'.,ipa'la asu' shaya'lusa' inllinsellina' asu' ladanenna'.,U03013,G02788,medium,0.7537415623664856,0.5801828503608704,0.1735587120056152,5,shared_shiwilu_tokens
+U03064,G02839,"nosotros somos bastantes, ellos son doscitos nomas.","kenmu'wa' wapu'mu'wa', ma'ki'na asu' katu'shadapersa'.","kenmu'wa' mutupi muda', kenmu'wa' ñi asu'lupa'dei'npu'.",U03150,G02925,medium,0.7204995155334473,0.5696640014648438,0.1508355140686035,2,shared_shiwilu_tokens
+U02347,G02122,una vez tostado se lo muele.,inyek ipa'linchi peksanek.,sekkankatan indi'dektulli sadinlek.,U02700,G02475,hard,0.5204604864120483,0.4671231508255005,0.0533373355865478,7,very_close_margin
+U00646,G00539,esto funciona.,asu' saka'tapalli,asu' saka'techu',U01872,G01666,hard,0.77822345495224,0.6850011348724365,0.0932223200798034,3,shared_shiwilu_tokens
+U00646,G00539,esto funciona.,asu' saka'tapalli,asu' analli,U00905,G00776,medium,0.77822345495224,0.6245120763778687,0.1537113785743713,6,shared_shiwilu_tokens
+U00647,G00539,esto trabaja.,asu' saka'tapalli,nana saka'tapalli,U00636,G00531,hard,0.8210509419441223,0.700088381767273,0.1209625601768493,3,shared_shiwilu_tokens
+U00647,G00539,esto trabaja.,asu' saka'tapalli,asu' analli,U00905,G00776,medium,0.8210509419441223,0.6080560684204102,0.2129948735237121,5,shared_shiwilu_tokens
+U00675,G00565,tom morirá.,tom chiminchu,tom idenmechu,U01877,G01671,hard,0.8385903239250183,0.7312968969345093,0.107293426990509,2,shared_shiwilu_tokens
+U00675,G00565,tom morirá.,tom chiminchu,tom pa'echu,U00441,G00358,medium,0.8385903239250183,0.6516115665435791,0.1869787573814392,5,shared_shiwilu_tokens
+U00897,G00768,se besaron.,inmusha'llina',tumu'llina',U00637,G00835,hard,0.6727754473686218,0.6178468465805054,0.0549286007881164,2,very_close_margin
+U01037,G00898,"espera, tom.",wa'tenker' tom,"tupiter', tom",U01154,G01006,hard,0.8591234683990479,0.7094976902008057,0.1496257781982422,2,shared_shiwilu_tokens
+U01037,G00898,"espera, tom.",wa'tenker' tom,wiuk'er' tom,U01382,G01207,medium,0.8591234683990479,0.5665407776832581,0.2925826907157898,4,shared_shiwilu_tokens
+U02127,G01907,son amarillas.,sha'pi'su'sa' nuker'ka,u'chimuinchilusa' nuker'ka,U02149,G01929,hard,0.6601039171218872,0.6090219616889954,0.0510819554328918,10,very_close_margin|shared_shiwilu_tokens
+U02127,G01907,son amarillas.,sha'pi'su'sa' nuker'ka,iñer' ñinchitulusa' nuker'ka,U01300,G01131,medium,0.6601039171218872,0.4750059843063354,0.1850979328155517,13,shared_shiwilu_tokens
+U01615,G01426,pareces ocupado.,ma'nen'nu'tapa'masu'pu'su' lli'tula,kaluwinanpu'su' lli'tula,U01616,G01427,hard,0.669399082660675,0.588861882686615,0.08053719997406,3,shared_shiwilu_tokens
+U00690,G00577,fracasaremos.,teka'per'aterwa',uki'lallidek,U01564,G01375,hard,0.5826118588447571,0.5316767692565918,0.0509350895881652,20,very_close_margin
+U01008,G00871,¡míralo!,¡lli'ker'!,¡latada'ker'!,U01182,G01029,hard,0.7519072890281677,0.6979206800460815,0.0539866089820861,9,very_close_margin
+U00961,G00827,¿quiénes sois?,¿denlusa'acha?,¿kenma?,U01903,G01697,hard,0.6976333856582642,0.6385389566421509,0.0590944290161132,6,very_close_margin
+U02037,G01821,lo arreglaré.,tekdiper'echek,nu'techek,U00552,G00457,hard,0.6810275912284851,0.6306459307670593,0.0503816604614257,13,very_close_margin
+U02451,G02226,"ah, a ver pues, desde la mañana no he bebido nada.","- ah, enta'n'i'na dasu'laklanek uwi'nek.",- nanekla yunsanma' tekka'nta'ku' ala'sa' nala inner'apek walek.,U02543,G02318,medium,0.6536732912063599,0.4907331168651581,0.1629401743412017,5,shared_shiwilu_tokens
+U02332,G02107,nos estamos muriendo.,chimianpilallidek.,perlli'llidek,U00701,G00587,hard,0.6976211667060852,0.6389529705047607,0.0586681962013244,4,very_close_margin
+U02228,G02003,¡contrólate!,¡inlu'uk'ter!,¡luntuu!,U00632,G00527,hard,0.7106506824493408,0.6582643985748291,0.0523862838745117,17,very_close_margin
+U00641,G00534,lo intentaron.,indek'llina',peklu'tullina',U00892,G00764,hard,0.5466975569725037,0.4935245215892792,0.0531730353832244,15,very_close_margin
+U02364,G02139,cuando hierve se lo echa en otra olla de barro grande que está enterrada (hasta la mitad).,"ukluka'sik, ali'lak kupin uktak pekdu'a'kasu' upellek.",nu'sik ker' su'watek nananta' a'ukluka'lek ali'la uktak.,U02379,G02154,hard,0.6537251472473145,0.5978918671607971,0.0558332800865173,2,very_close_margin
+U00074,G00055,dolor,iker,ikerlli,U00221,G00173,hard,0.6180634498596191,0.5662831664085388,0.0517802834510803,2,very_close_margin
+U02876,G02651,de ahí le dijo:,naneklima itulli:,tekkinchima itulli:,U02627,G02402,hard,0.767047643661499,0.6939348578453064,0.0731127858161926,3,shared_shiwilu_tokens
+U01795,G01594,fue ameno.,u'chimu ñiwiñi,ñiwiñi tekinchi,U00842,G00718,hard,0.7616102695465088,0.694963812828064,0.0666464567184448,7,shared_shiwilu_tokens
+U01796,G01594,era perfecto.,u'chimu ñiwiñi,ñiwiñi tekinchi,U00842,G00718,hard,0.7470324635505676,0.6781491041183472,0.0688833594322204,3,shared_shiwilu_tokens
+U01796,G01594,era perfecto.,u'chimu ñiwiñi,si'len ñiwiñi,U01476,G01294,medium,0.7470324635505676,0.5397969484329224,0.2072355151176452,10,shared_shiwilu_tokens
+U01968,G01757,¿comés carne?,¿chuchu ka'a'pala?,¿ipa werana?,U01693,G01496,hard,0.5672200918197632,0.5155847072601318,0.0516353845596313,5,very_close_margin
+U02713,G02488,"el lago junto al pelejo se secó,","kundetchek enñi,","patak ipa'linchi u'deklek,",U02359,G02134,hard,0.5950357913970947,0.5389965772628784,0.0560392141342163,21,very_close_margin
+U00610,G00506,caminemos.,dek'kuntawa',weranwa',U00387,G00315,hard,0.6979224681854248,0.6467228531837463,0.0511996150016784,13,very_close_margin
+U01248,G01085,estábamos heridos.,llipu'pi ñapawiñidek,insek'diperpi ñapawiñidek,U01236,G01075,hard,0.725715696811676,0.6701458692550659,0.0555698275566101,13,very_close_margin|shared_shiwilu_tokens
+U01249,G01085,estábamos lastimados.,llipu'pi ñapawiñidek,ekuanñiwiñidek,U02174,G01954,hard,0.7793158292770386,0.7261638641357422,0.0531519651412963,8,very_close_margin
+U00012,G00009,¡para!,¡ta'ituler'!,¡daker'ku'!,U00059,G00047,hard,0.7012814879417419,0.6476302742958069,0.053651213645935,17,very_close_margin
+U02052,G01835,voy saliendo.,yunsu'pilalek,adenche'chek,U01092,G00951,hard,0.7033184766769409,0.6474427580833435,0.0558757185935974,7,very_close_margin
+U00988,G00852,¿estás lleno?,¿mer'su' ñapala?,¿saka'tusu' ñapala?,U01321,G01150,hard,0.7071903347969055,0.6487771272659302,0.0584132075309753,14,very_close_margin|shared_shiwilu_tokens
+U01172,G01021,le disparó.,ilanñi,chimidek'tulli,U01703,G01506,hard,0.7165821194648743,0.6634609699249268,0.0531211495399475,3,very_close_margin
+U01190,G01033,eso ayudará.,nana katu'pa'techu,nana katu'pa'tulli,U00888,G00760,medium,0.8033363819122314,0.6456226110458374,0.157713770866394,4,shared_shiwilu_tokens
+U02578,G02353,así dicen que pampayacu se quemó.,nu'sui'ma asu' panpadek uksu'ketchulli.,naneklimaka asu' nana lanla' pitunta' uwentunta'lli.,U02831,G02606,hard,0.7085806131362915,0.5844593644142151,0.1241212487220764,2,shared_shiwilu_tokens
+U02578,G02353,así dicen que pampayacu se quemó.,nu'sui'ma asu' panpadek uksu'ketchulli.,nu'sikla'nka asu' panpadek sennanlusa' wetlli.,U02808,G02583,medium,0.7085806131362915,0.531585693359375,0.1769949197769165,3,shared_shiwilu_tokens
+U03136,G02911,"no quería que (los shiwilu) se estiraran cuando trabajaban, hasta que se hacía bien tarde (los obligaban a trabajar), hasta que se hacía bien oscuro y el grillo (cantaba) chanchanchan.","yenchenterka'su' saka'tapanna', iñer er'werwalek ipa' kasiserapilek walek ipa' asu' inkella chanchanchan.","napi' ima llikanetchudek'i'ñina', yutudekllini'ma, llipu'tudekllini'ma, er'washinchi walek a'saka'tudekllina'.",U03056,G02831,hard,0.5780947208404541,0.4882737398147583,0.0898209810256958,2,shared_shiwilu_tokens
+U01940,G01730,¿estás casado?,¿sadasu'cha ñapala?,¿yunsansu' ñapala?,U00462,G00378,hard,0.7179481387138367,0.6671541929244995,0.0507939457893371,6,very_close_margin|shared_shiwilu_tokens
+U02035,G01819,seguiré.,tupiechek,nu'techek,U00552,G00457,hard,0.7175686955451965,0.6671120524406433,0.0504566431045532,2,very_close_margin
+U02062,G01845,¿es maestro?,¿a'lek'tutek' nuka'a?,¿musenkek a'cha?,U00572,G00476,hard,0.6799134016036987,0.6298826932907104,0.0500307083129882,5,very_close_margin
+U02807,G02582,(los jóvenes) ya no valoran esas cosas.,ñi a'pinta' nanadaper lli'inuchi'ñina'.,nu'su'sa' ñillina' napi'.,U03145,G02920,hard,0.6277783513069153,0.5701017379760742,0.057676613330841,3,very_close_margin
+U01786,G01585,¿está sano?,¿mudinupallincha?,¿ipa' mula'lli?,U01787,G01586,hard,0.7237597107887268,0.6723970770835876,0.0513626337051391,5,very_close_margin
+U02854,G02629,entonces otro viejo soñador dijo:,nanek ima ali'la taserpi wa'lata'su' tulli:,napi' ima wa'an yunsa'n luñi:,U02512,G02287,hard,0.7616018056869507,0.6885523796081543,0.0730494260787963,3,shared_shiwilu_tokens
+U01707,G01510,"¡apúrensen, muchachos!",¡wiuk'ku wilalusa'!,"yuyu'lusa', ¡da'kerku' u'ku!",U03060,G02835,hard,0.7090938091278076,0.6543149948120117,0.0547788143157959,2,very_close_margin
+U01750,G01552,quiero hablar.,yalun'nek,yachiminek,U01421,G01241,hard,0.5927992463111877,0.5355457067489624,0.0572535395622253,6,very_close_margin
+U01913,G01705,me mentiste.,tumu'tulun,tumu'lek,U00030,G00025,hard,0.6618868112564087,0.609697163105011,0.0521896481513977,5,very_close_margin
+U00623,G00518,huelan esto.,lanerku' asu',sek'diperku' asu',U00375,G00306,hard,0.7205019593238831,0.6700915098190308,0.0504104495048522,4,very_close_margin|shared_shiwilu_tokens
+U02864,G02639,un grupo que vaya durmiendo y el otro grupo que haga guardia.,"ala'musun wicha'pai, ali'la musui'na nanpiladapai.",nu'sik ker' su'watek nananta' a'ukluka'lek ali'la uktak.,U02379,G02154,medium,0.632981538772583,0.4454799890518188,0.1875015497207641,2,shared_shiwilu_tokens
+U02706,G02481,"dice que cuando iba río abajo los peces lo siguieron,","nu'wanta'sik ima sameller tupitunta'lli,","inpikanpiler'an ima unma' uklli,",U02642,G02417,hard,0.6833074688911438,0.5874768495559692,0.0958306193351745,2,shared_shiwilu_tokens
+U00609,G00505,votemos.,dek'awa',dek'kuntawa',U00610,G00506,hard,0.5370804071426392,0.4862431585788727,0.0508372485637664,19,very_close_margin
+U02216,G01993,estás atascado.,da'sek'su' ñapala,tasellun ñapala,U00713,G00599,hard,0.808834969997406,0.7576345205307007,0.0512004494667053,7,very_close_margin|shared_shiwilu_tokens
+U02653,G02428,¿estos qué peces son?,- ¿asu' ma'nen samer a'cha? itullina'.,- ¿ma'dek a'cha asu'? itullini'mi'na'.,U02598,G02373,hard,0.6559343934059143,0.6030594110488892,0.0528749823570251,4,very_close_margin|shared_shiwilu_tokens
+U01304,G01135,estás equivocado.,aper'su' ñapala,yaku'aper'wana,U01925,G01716,hard,0.5533250570297241,0.4987426400184631,0.0545824170112609,15,very_close_margin
+U02477,G02252,"con ella mi padre y mi madre me criaron, yo la hablo.","nanalek tatawek awawek teksusullun, kua nana lu'nkasu'.","nanpipakun tatawek ima wilawañinerku, wadekllinerku, asek i'la susulek.",U02253,G02028,hard,0.6925534009933472,0.5790842175483704,0.1134691834449768,2,shared_shiwilu_tokens
+U00863,G00739,nadie mintió.,ñiden tumui'ñi,ñiden lamapui'ñi,U01834,G01630,hard,0.8247886300086975,0.7496119141578674,0.07517671585083,2,shared_shiwilu_tokens
+U00863,G00739,nadie mintió.,ñiden tumui'ñi,ñiden chimii'ñi,U00861,G00737,medium,0.8247886300086975,0.6562877297401428,0.1685009002685547,7,shared_shiwilu_tokens
+U01562,G01374,estamos arruinados.,nakusu' muin'su' ñapallidek,sipuk'ñapallidek,U02182,G01962,hard,0.7938859462738037,0.7437907457351685,0.0500952005386352,14,very_close_margin
+U01563,G01374,estamos condenados.,nakusu' muin'su' ñapallidek,ape'chuwiñiner'kudek,U01567,G01378,hard,0.6531858444213867,0.600689709186554,0.0524961352348327,23,very_close_margin
+U00275,G00221,¿quién murió?,¿den chimiñi?,¿den kana'tulli?,U01605,G01416,hard,0.7913678884506226,0.7269902229309082,0.0643776655197143,7,shared_shiwilu_tokens
+U00275,G00221,¿quién murió?,¿den chimiñi?,¿den inllipu'iteklatulli?,U00963,G00829,medium,0.7913678884506226,0.6381399035453796,0.1532279849052429,14,shared_shiwilu_tokens
+U00093,G00277,soy gorda.,weilunsu' nuka'ka,taserpiku,U00095,G00065,hard,0.6731635928153992,0.6214022040367126,0.0517613887786865,15,very_close_margin
+U00093,G00277,soy gorda.,weilunsu' nuka'ka,tanta' nu'tutek nuka'ka,U00811,G00687,medium,0.6731635928153992,0.5153206586837769,0.1578429341316223,32,shared_shiwilu_tokens
+U00346,G00277,soy obesa.,weilunsu' nuka'ka,taserpiku',U00172,G00130,hard,0.690584659576416,0.6341312527656555,0.0564534068107605,16,very_close_margin
+U01686,G01491,todos pagaron.,iñer' panwilek'tullina',iñer' kana'tullina',U01353,G01180,hard,0.7709156274795532,0.7016696929931641,0.0692459344863891,2,shared_shiwilu_tokens
+U01686,G01491,todos pagaron.,iñer' panwilek'tullina',iñer' chiyekllina',U02237,G02012,medium,0.7709156274795532,0.5990093350410461,0.171906292438507,4,shared_shiwilu_tokens
+U01583,G01394,nos vamos.,pa'echidek,weranwa',U00387,G00315,hard,0.7686649560928345,0.7159749269485474,0.0526900291442871,14,very_close_margin
+U01178,G01026,no discutas.,yainyututa,yanantapita,U01682,G01487,hard,0.6003294587135315,0.5496799349784851,0.0506495237350463,18,very_close_margin
+U00671,G00561,tom trabajó.,tom saka'tulli,tom inllipu'itek'latulli,U01551,G01363,hard,0.7277974486351013,0.663165271282196,0.0646321773529052,7,shared_shiwilu_tokens
+U00671,G00561,tom trabajó.,tom saka'tulli,tom si'lentulli,U01554,G01366,medium,0.7277974486351013,0.5762650966644287,0.1515323519706726,21,shared_shiwilu_tokens
+U00741,G00621,no copien.,nana pu'su' yanu'tutama',yalli'tama,U00485,G00398,hard,0.5567901134490967,0.5001081824302673,0.0566819310188293,5,very_close_margin
+U00793,G00670,leo labios.,ñinchitapalek ma'tapallinpa',kerka' ñinchitapalek,U01115,G00971,medium,0.6162504553794861,0.4585992097854614,0.1576512455940246,13,shared_shiwilu_tokens
+U02251,G02026,yo soy jeberina.,kui'na shiwilulunku.,iyasu'lusa' nuker'ka,U01210,G01051,hard,0.5416784882545471,0.4865284264087677,0.0551500618457794,8,very_close_margin
+U02805,G02580,"sabiendo escribir,","ñinchillinsetchanna',","nanima yañinchitulli,",U02313,G02088,hard,0.6212450265884399,0.5640166401863098,0.0572283864021301,4,very_close_margin
+U00220,G00172,eso ayuda.,nana katu'patulli,nana saka'tapalli,U00636,G00531,medium,0.7061314582824707,0.5350062251091003,0.1711252331733703,8,shared_shiwilu_tokens
+U01564,G01375,tenemos hambre.,uki'lallidek,nakusu' ullidek,U01881,G01675,hard,0.7167173624038696,0.6605318188667297,0.0561855435371398,10,very_close_margin
+U02198,G01976,anota esto.,llinser'ker' asu',llinser'ku' nana,U02197,G01977,hard,0.7535287737846375,0.703471839427948,0.0500569343566894,7,very_close_margin
+U02198,G01976,anota esto.,llinser'ker' asu',a'ta'wanter asu',U00747,G00627,medium,0.7535287737846375,0.5115108489990234,0.242017924785614,26,shared_shiwilu_tokens
+U02199,G01976,anote esto.,llinser'ker' asu',llinser'ku' nana,U02200,G01977,hard,0.7669187188148499,0.7156143188476562,0.0513043999671936,7,very_close_margin
+U02199,G01976,anote esto.,llinser'ker' asu',ma'ta asu',U00426,G00344,medium,0.7669187188148499,0.5311151742935181,0.2358035445213318,26,shared_shiwilu_tokens
+U03001,G02776,"así como algunos maltratan a sus hijos a cada instante, así estas dos personas (nos maltratan a nosotros)8 dijeron en una reunion hablando.","ma'lusa', nu'unta' willina' llikanetchi'ñina' nanapu'tullinerkenmu'wa', asu' katu'shadaper tullina' ima idiuntunna' lunna'.","katu'shunka' alei'teklun ekkilala ñisik ima, nana wa'anku'lusa' malallinalek lu'rnkasu' nawei'ma ipa' chimia'ser adankenñunta'llina'.",U03086,G02861,hard,0.5921826362609863,0.5336118340492249,0.0585708022117614,5,very_close_margin
+U00062,G00048,sal.,yunsuer',apu'ker',U00391,G00746,hard,0.6031509637832642,0.5499146580696106,0.0532363057136535,12,very_close_margin
+U01682,G01487,no forcejees.,yanantapita,yawencha'ta,U00483,G00396,hard,0.6344720721244812,0.5817343592643738,0.0527377128601074,12,very_close_margin
+U01735,G01537,necesito trabajar.,luwantulek saka'tak,luwantulek neriak,U01734,G01536,hard,0.7468079328536987,0.6390926241874695,0.1077153086662292,2,shared_shiwilu_tokens
+U01735,G01537,necesito trabajar.,luwantulek saka'tak,luwantulek dek',U01077,G00936,medium,0.7468079328536987,0.5732201337814331,0.1735877990722656,6,shared_shiwilu_tokens
+U02481,G02256,todo eso quiere saber esta señora.,nanadaper iñer asu' senñula' yañinchitulli.,nanek iñer asu' sa'la' apu'tetchun itudekllima.,U02542,G02317,hard,0.6627717614173889,0.6070536971092224,0.0557180643081665,2,very_close_margin|shared_shiwilu_tokens
+U03111,G02886,"sentados afuera, como tomando su masato, así decían, mirando las estrellas, mirando los astros.","du'anna' adipi, uklulunenna' uwanna'pu'su', tusu' tullina', tandulalusa' lli'anna', pi'tandula lli'anna'.","wilalunlusa'nta kuten'anna', kekkilu'tek lli'anna', tandulalusa' lli'anna', willekllina'.",U02564,G02339,hard,0.7180407643318176,0.6139189004898071,0.1041218638420105,2,shared_shiwilu_tokens
+U00021,G00508,levanta. (un objeto),usanker',ek'ker'cher',U01162,G01014,hard,0.6253606081008911,0.5663936138153076,0.0589669942855834,14,very_close_margin
+U01250,G01086,somos adultos.,nuka'kawa taserpilusa',iin nuka'kawa,U01892,G01686,medium,0.7445893287658691,0.5926728248596191,0.15191650390625,6,shared_shiwilu_tokens
+U01691,G01495,¿has comido?,¿werana?,¿a'ñapala?,U01671,G01478,hard,0.6735836267471313,0.6141650080680847,0.0594186186790466,4,very_close_margin
+U01692,G01495,¿comiste?,¿werana?,¿kana'tapala?,U01943,G01733,hard,0.6768525242805481,0.622343897819519,0.054508626461029,8,very_close_margin
+U02938,G02713,a esos jóvenes.,nana nadi'neklusi'ma.,nana wa'an wala'wanen.,U02519,G02294,hard,0.6120569109916687,0.5545396208763123,0.0575172901153564,2,very_close_margin|shared_shiwilu_tokens
+U01325,G01154,tráelo aquí.,kencher' asek,nu'wanker' asek,U01662,G01469,hard,0.7849162220954895,0.7323654294013977,0.0525507926940918,3,very_close_margin|shared_shiwilu_tokens
+U01325,G01154,tráelo aquí.,kencher' asek,du'ker' asek,U00246,G00194,medium,0.7849162220954895,0.6341960430145264,0.1507201790809631,13,shared_shiwilu_tokens
+U01350,G01177,¿me ves?,¿li'apalu?,¿lli'la?,U01668,G01475,hard,0.7101075053215027,0.6504318714141846,0.0596756339073181,2,very_close_margin
+U02115,G01896,lo abofeteó.,lliaka'uk enka'lina,tenmiansu'lli,U01122,G00975,hard,0.6121882796287537,0.5536007881164551,0.0585874915122985,14,very_close_margin
+U01334,G01162,¿puedo quedármelo?,¿yennitulek ek'llia'ak?,¿yennitulek lata'ak?,U01948,G01738,hard,0.816477358341217,0.73972088098526,0.076756477355957,9,shared_shiwilu_tokens
+U01334,G01162,¿puedo quedármelo?,¿yennitulek ek'llia'ak?,¿yennitulek musha'a'kik?,U01653,G01461,medium,0.816477358341217,0.6609501242637634,0.1555272340774536,18,shared_shiwilu_tokens
+U01602,G01413,¿dónde estás?,¿enñupa'cha ñapala?,¿inapi ñapala?,U00987,G00851,hard,0.8086462020874023,0.7179288864135742,0.0907173156738281,2,shared_shiwilu_tokens
+U00417,G00337,más despacio.,a'pinta' uti'la,wintu'udek a'pinta',U01188,G01031,hard,0.5109195113182068,0.4188516139984131,0.0920678973197937,6,shared_shiwilu_tokens
+U00152,G00116,adelante. (ingresa),da'encher',aden'cher',U00290,G00230,hard,0.7134677171707153,0.6602634787559509,0.0532042384147644,11,very_close_margin
+U02748,G02523,"la charapa salió,","puka' yunsu'lli,","damer'ita yunsu'lli,",U02749,G02524,hard,0.8339779376983643,0.7649749517440796,0.0690029859542846,3,shared_shiwilu_tokens
+U02716,G02491,arákayu shinguró7 (los lagos).,arakayuler pilleklli.,arakayuler pekkun pa'lapinta'lli.,U02715,G02490,hard,0.6104941964149475,0.5493462681770325,0.061147928237915,5,shared_shiwilu_tokens
+U02803,G02578,pero a nadie queremos contarle porque no creen.,ñi'na ñiden kudaler yawinchi'ñidek latekchiñina'.,kenmu'wa' chimiansikwa' ma'ilipa' lli'tetchu tullini'ma napi'.,U03041,G02816,hard,0.6265466213226318,0.569290816783905,0.0572558045387268,2,very_close_margin
+U02803,G02578,pero a nadie queremos contarle porque no creen.,ñi'na ñiden kudaler yawinchi'ñidek latekchiñina'.,"ñinchitapalekwa' ali'ladaperunta' nanpi'perkasu', ñi'na ñienpi' lli'dek'i'nekwa'.",U02836,G02611,medium,0.6265466213226318,0.4699889421463012,0.1565576791763305,6,shared_shiwilu_tokens
+U02272,G02047,la que más me cuida es mi hija que es casada.,a'pinta' luwektapa'nkusui'na ku'aperwawa suda'su'.,kua usha'wanek a'lek'inpu'dek'amu wilaweklusa'.,U02303,G02078,hard,0.6212477684020996,0.5695496201515198,0.0516981482505798,2,very_close_margin
+U02272,G02047,la que más me cuida es mi hija que es casada.,a'pinta' luwektapa'nkusui'na ku'aperwawa suda'su'.,kui'na a'pinta' musu' eknanpi'ñu tatawek.,U02258,G02033,medium,0.6212477684020996,0.4700261056423187,0.1512216627597808,6,shared_shiwilu_tokens
+U02826,G02601,dicen que cuando marcel bajaba el río en un patecito la ballena se lo tragó.,marcel ima pachishak nu'wantan lanla'ler lanpi'tulli.,ekpantasik ima taserpiler pilli'tan lutu'lli.,U02932,G02707,hard,0.6993070840835571,0.5629324316978455,0.1363746523857116,2,shared_shiwilu_tokens
+U02826,G02601,dicen que cuando marcel bajaba el río en un patecito la ballena se lo tragó.,marcel ima pachishak nu'wantan lanla'ler lanpi'tulli.,wichi'a'ser ima tekkinchi lansi' wa'dan uk'an iñer ima laki'kerdeklli.,U02893,G02668,medium,0.6993070840835571,0.537092387676239,0.1622146964073181,3,shared_shiwilu_tokens
+U02715,G02490,arakayú icaró y se fue dejándolos.,arakayuler pekkun pa'lapinta'lli.,tan ima arakayu nu'wanta'lli.,U02699,G02474,hard,0.8137361407279968,0.758766770362854,0.0549693703651428,5,very_close_margin
+U00899,G00770,sonrieron.,yamerladallina',lamapu'llina',U01541,G01353,hard,0.8388614654541016,0.7792081236839294,0.0596533417701721,2,very_close_margin
+U03059,G02834,y cuando (los shawala) estaban pasando a trabajar con esos castellano-hablantes los llamó y les dijo:,nakupila'ser yasaka'tanna' nana kaschilla lu'nsu'lek peklu'dek'an itudeklli:,"nana anaka'ler pekdadeklli tan ima a'insekdiperdeklli, musu pilendek'anna':",U02917,G02692,hard,0.7169888615608215,0.6444151401519775,0.072573721408844,2,shared_shiwilu_tokens
+U03059,G02834,y cuando (los shawala) estaban pasando a trabajar con esos castellano-hablantes los llamó y les dijo:,nakupila'ser yasaka'tanna' nana kaschilla lu'nsu'lek peklu'dek'an itudeklli:,"tullima nana lunanpichita'su', tullima nana wa'lata'su':",U02935,G02710,medium,0.7169888615608215,0.5438474416732788,0.1731414198875427,4,shared_shiwilu_tokens
+U01187,G01031,dígannos más.,wintu'udek a'pinta',wintu'u a'pinta',U01183,G01030,hard,0.8593020439147949,0.7402693629264832,0.1190326809883117,4,shared_shiwilu_tokens
+U00759,G00638,está fingiendo.,intek apalli,insek'lutenapalli,U01051,G00911,hard,0.5824617743492126,0.5318475365638733,0.0506142377853393,16,very_close_margin
+U00117,G00083,tom ganó.,tom kana'tulli,tom saka'tulli,U00671,G00561,hard,0.8413037061691284,0.7906239032745361,0.0506798028945922,2,very_close_margin|shared_shiwilu_tokens
+U00117,G00083,tom ganó.,tom kana'tulli,tom idenmalli,U00656,G00547,medium,0.8413037061691284,0.6746880412101746,0.1666156649589538,7,shared_shiwilu_tokens
+U01872,G01666,este funciona.,asu' saka'techu',asu' analli,U00905,G00776,hard,0.6938453912734985,0.6269676089286804,0.0668777823448181,6,shared_shiwilu_tokens
+U01550,G01362,es incorrecto.,mui'su' nuka'a,nu'su' nuka'a,U01191,G01034,hard,0.5976400375366211,0.5464476943016052,0.0511923432350158,10,very_close_margin|shared_shiwilu_tokens
+U01386,G01211,soy japonés.,japones nuka'ka,koreano nuka'ka,U00554,G00459,medium,0.8988231420516968,0.6894035339355469,0.2094196081161499,2,shared_shiwilu_tokens
+U00919,G00789,pruébate este.,lataker' asu',i'shiker' asu',U00871,G00745,hard,0.8108226656913757,0.7580931186676025,0.0527295470237731,2,very_close_margin|shared_shiwilu_tokens
+U00919,G00789,pruébate este.,lataker' asu',lanerku' asu',U00623,G00518,medium,0.8108226656913757,0.6519195437431335,0.1589031219482422,20,shared_shiwilu_tokens
+U02395,G02170,usted señora quiere aprender esta nuestra lengua shiwilu.,kenma senñula' yañinchitula asu' shiwilu la'la'mapu'wa'.,napi' wilashakuñamu asu' shiwilu la'la' mushasu' lunek.,U02399,G02174,hard,0.7571556568145752,0.6695035099983215,0.0876521468162536,2,shared_shiwilu_tokens
+U02395,G02170,usted señora quiere aprender esta nuestra lengua shiwilu.,kenma senñula' yañinchitula asu' shiwilu la'la'mapu'wa'.,shiwilu la'la'mapu'wa' u'chimusha.,U02396,G02171,medium,0.7571556568145752,0.5759767293930054,0.1811789274215698,4,shared_shiwilu_tokens
+U00916,G00786,tom estornudó.,tom a'shulli,tom lanerlli,U00914,G00784,hard,0.7816498279571533,0.731003999710083,0.0506458282470703,16,very_close_margin|shared_shiwilu_tokens
+U00916,G00786,tom estornudó.,tom a'shulli,tom lachek'lli,U01876,G01670,medium,0.7816498279571533,0.6312742233276367,0.1503756046295166,38,shared_shiwilu_tokens
+U01373,G01198,es abogado.,chimidekpi nuka'a,sawadu' nuka'a,U01791,G01590,hard,0.607276439666748,0.5288463234901428,0.0784301161766052,6,shared_shiwilu_tokens
+U01373,G01198,es abogado.,chimidekpi nuka'a,iyasu' nuka'a,U01803,G01600,medium,0.607276439666748,0.4527156054973602,0.1545608341693878,19,shared_shiwilu_tokens
+U01231,G01070,despiertalos.,uchinande'ker,tandenñiden,U00934,G00803,hard,0.5927977561950684,0.5332723259925842,0.0595254302024841,3,very_close_margin
+U00938,G00806,nos recordamos.,lli'inutapallidek,inlu'uk'tutek nuka'kawa',U01896,G01690,hard,0.6076074838638306,0.5512521266937256,0.0563553571701049,2,very_close_margin
+U00464,G00379,¡sé cuidadoso!,¡li'ker'la!,!enta'n lli'ku'!,U02945,G02720,hard,0.67556232213974,0.6227541565895081,0.0528081655502319,4,very_close_margin
+U01862,G01656,estaban enfermos.,ñapawiñina' kaluwi'su',ñapawiñina' pektunsu',U02137,G01917,hard,0.852267324924469,0.7963968515396118,0.0558704733848571,2,very_close_margin|shared_shiwilu_tokens
+U00374,G00305,guarda esto.,sek'diperker' asu',lataker' asu',U00919,G00789,hard,0.7698387503623962,0.7186131477355957,0.0512256026268005,8,very_close_margin|shared_shiwilu_tokens
+U00374,G00305,guarda esto.,sek'diperker' asu',sekdiperker' asu' mutu'penkek,U01514,G01329,medium,0.7698387503623962,0.6169188618659973,0.1529198884963989,23,shared_shiwilu_tokens
+U01017,G00879,enfríalo.,a'sanek'ker',i'shi'ker',U00399,G00324,hard,0.5758197903633118,0.5216526985168457,0.054167091846466,2,very_close_margin
+U01776,G01575,estoy acostumbrado.,ñapalek da'iyasu',ñapalek sadasu',U00820,G00696,hard,0.6790591478347778,0.6266672611236572,0.0523918867111206,13,very_close_margin|shared_shiwilu_tokens
+U00136,G00097,pregúntales.,lek'ker',teklerier',U00442,G00359,hard,0.6494056582450867,0.5927909016609192,0.0566147565841674,3,very_close_margin
+U00246,G00194,siéntate aquí.,du'ker' asek,asek lia'ker',U00420,G00340,hard,0.7867286801338196,0.7332231402397156,0.053505539894104,3,very_close_margin|shared_shiwilu_tokens
+U03071,G02846,"-¿por qué vamos a matarlos?, dijo un viejo.","– ¿ma'ki'na nu'taterwa?, tullima ala'sa' taserpi.",¿ma'ki'na kenmama' u'lama'? itullinerkudek.,U02794,G02569,hard,0.6090466380119324,0.5168822407722473,0.092164397239685,3,shared_shiwilu_tokens
+U02703,G02478,cuando se silenció desapareció.,tuna'sik wetlli.,penwanpasik pidekñik.,U02584,G02359,hard,0.6575997471809387,0.5977437496185303,0.0598559975624084,3,very_close_margin
+U00652,G00544,tom bebe.,tom uwapalli,tom lansa'palli,U00651,G00543,hard,0.7367804050445557,0.6721741557121277,0.0646062493324279,4,shared_shiwilu_tokens
+U00652,G00544,tom bebe.,tom uwapalli,tom wellek'echu,U00674,G00564,medium,0.7367804050445557,0.5863513946533203,0.1504290103912353,13,shared_shiwilu_tokens
+U00653,G00544,tom toma.,tom uwapalli,tom idenmechu,U01877,G01671,hard,0.6801707744598389,0.6225523948669434,0.0576183795928955,11,very_close_margin|shared_shiwilu_tokens
+U00653,G00544,tom toma.,tom uwapalli,tom a'ta'wantulli,U01216,G01056,medium,0.6801707744598389,0.5299193859100342,0.1502513885498047,43,shared_shiwilu_tokens
+U02327,G02102,"no quieren (saber) nada,","ñi luwanchi'ñina',","ñi luwetchi'ñina' asu' tukuner,",U02633,G02408,medium,0.8093904256820679,0.6472480297088623,0.1621423959732055,8,shared_shiwilu_tokens
+U02329,G02104,no pueden hablar.,innichi'ñina' lu'nkasu'.,yatulener'tama,U00487,G00400,hard,0.6450724601745605,0.5901365280151367,0.0549359321594238,3,very_close_margin
+U02747,G02522,"el paiche salió,","unma' yunsu'lli,","kundetchek enñi,",U02713,G02488,hard,0.7352809309959412,0.6836042404174805,0.0516766905784606,10,very_close_margin
+U01879,G01673,ten cuidado.,inlu'uk'tuker',inluukter',U00423,G00342,hard,0.7000706791877747,0.6469731330871582,0.0530975461006164,3,very_close_margin
+U02542,G02317,ahí toda esta enfermedad sa'la' va a desaparecer les dijo.,nanek iñer asu' sa'la' apu'tetchun itudekllima.,naneklimaka asu' nana lanla' pitunta' uwentunta'lli.,U02831,G02606,hard,0.6565297842025757,0.5922170877456665,0.0643126964569091,2,shared_shiwilu_tokens
+U02542,G02317,ahí toda esta enfermedad sa'la' va a desaparecer les dijo.,nanek iñer asu' sa'la' apu'tetchun itudekllima.,nu'sui'ma asu' panpadek uksu'ketchulli.,U02578,G02353,medium,0.6565297842025757,0.4939686954021454,0.1625610888004303,6,shared_shiwilu_tokens
+U02689,G02464,and he saw that his house had been completely burned.,"arakayu lli'unta'llima enpu'ni wa'inuipa' nana pideknen uksuketchulli,",nu'an ima arakayu sakek'an peklu'deklli inyulateknen ima.,U02595,G02370,hard,0.5035223960876465,0.4525892734527588,0.0509331226348876,19,very_close_margin|shared_shiwilu_tokens
+U00302,G00241,sígueme.,tupi'tu'u,tupi'tu'udek,U00303,G00242,hard,0.6777424812316895,0.6250203847885132,0.0527220964431762,6,very_close_margin
+U00237,G00187,cuidado.,lli'ker'llia',lli'dek'ku',U00269,G00215,hard,0.6833117604255676,0.6311600208282471,0.0521517395973205,10,very_close_margin
+U01049,G00909,corre rápido.,tek'ker' wiuk'su',wiuk'su' nu'ter',U01511,G01326,hard,0.6829290390014648,0.6301883459091187,0.0527406930923461,6,very_close_margin|shared_shiwilu_tokens
+U02691,G02466,por eso dice arákayu se enojó mucho.,nu'an ima ipa'linchi arakayu yulli.,nanekla'nka kuanta' ñinchitulek asu' arakayu ma'pu'si'pa' nanpilli.,U02796,G02571,hard,0.6869525909423828,0.6332188844680786,0.0537337064743042,13,very_close_margin|shared_shiwilu_tokens
+U01501,G01317,hagamos eso.,nu'tawa' nana,nu'tawa' ipa'la,U02092,G01874,hard,0.7873333096504211,0.6684490442276001,0.118884265422821,2,shared_shiwilu_tokens

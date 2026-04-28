@@ -1,0 +1,17 @@
+{
+  "pipeline": "hard_negative_validation",
+  "timestamp": "2026-04-28T05:01:44.927928+00:00",
+  "tag": "v2_hn_controlled_e5_base",
+  "negatives_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/train_hard_negatives_v2_hn_controlled_e5_base.csv",
+  "total_negatives": 4794,
+  "risk_rows": 1580,
+  "risk_ratio": 0.32957863996662495,
+  "risk_counts": {
+    "very_close_margin": 731,
+    "shared_shiwilu_tokens": 1035
+  },
+  "artifacts": {
+    "risk_review_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v2_hn_controlled_e5_base/hard_negatives_v2_hn_controlled_e5_base_risk_review.csv",
+    "summary_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v2_hn_controlled_e5_base/hard_negatives_v2_hn_controlled_e5_base_validation.json"
+  }
+}

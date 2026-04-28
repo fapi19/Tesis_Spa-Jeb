@@ -1,0 +1,41 @@
+﻿pair_id,group_id,rank,correct_score,top1_score,top1_is_positive,positive_count,esp,shiwilu_correct,shiwilu_top1,category
+U02491,G02266,1,0.7819851040840149,0.7819851040840149,True,1,¿cómo viviré ahora que ha muerto mi padre? me preguntaba.,¿ma'pu'si'pa' nanpichek tatawek chiminsik? tulek.,(grupo correcto),best
+U01000,G00863,1,0.7177682518959045,0.7177682518959045,True,1,¿puedo intentar?,¿yennitulek inpaleriak?,(grupo correcto),best
+U01659,G01466,1,0.8180900812149048,0.8180900812149048,True,1,¿puedes verlo?,¿yennitula lli'a'mak?,(grupo correcto),best
+U02615,G02390,1,0.6420280337333679,0.6420280337333679,True,1,"se van a confundir, se van a extraviar.","aper'etchuma', wer'etchuma'.",(grupo correcto),best
+U01957,G01747,1,0.6290985345840454,0.6290985345840454,True,1,¿puedes mostrarme?,¿yennitula a'lli'a'muk?,(grupo correcto),best
+U02619,G02394,1,0.738244354724884,0.738244354724884,True,1,"con esa candela enciendan, corten leña, junten los palos para hacer fogata, hiervan y coman (su chilcano) dijo arákayu.","nanalek pen a'tentanma', diuk'anma', dintunma', kalu'tanma', uranku' tullima arakayu.",(grupo correcto),best
+U01209,G01050,1,0.5951920747756958,0.5951920747756958,True,1,son buenos.,u'chimulusa' nuker'ka,(grupo correcto),best
+U02432,G02207,1,0.6592524647712708,0.6592524647712708,True,1,"nosotros mismos vamos a servirnos masato y vamos a beber, mamá me dicen. nosotros mismos vamos a servirnos.","- kudinchi madektupatekkudek, uwetchidek, mamá. kudinchi mapatekkudek uklulu' uwetchidek itullinerku.",(grupo correcto),best
+U01128,G00981,1,0.6492252349853516,0.6492252349853516,True,1,está nevando.,pulunker'wanpalli,(grupo correcto),best
+U03200,G02975,1,0.43428027629852295,0.43428027629852295,True,1,"bufeo, todo tipo (de nombres) le ponen.","sapana', dudinpu' aku'llina'.",(grupo correcto),best
+U01218,G01058,1,0.862067699432373,0.862067699432373,True,1,tom escuchó.,tom lauk'tulli,(grupo correcto),best
+U02095,G01877,1,0.7363011240959167,0.7363011240959167,True,1,remontemos barriletes.,a'penu'wa' barriletes,(grupo correcto),best
+U02858,G02633,1,0.6404501795768738,0.6404501795768738,True,1,"después, dice otro viejo dijo: eso lo que están hablando no es falso,","naneklima, ali'la taserpi tulli nana tapa'mamasu' ñi da'pininpu',",(grupo correcto),best
+U02269,G02044,1,0.6188562512397766,0.6188562512397766,True,1,mis hijos varones y también mis hijas mujeres me están sirviendo.,enmu'pinenwawalusa' nu'an ku'aperwawalusa' luwektapallinerku.,(grupo correcto),best
+U00971,G00837,1,0.5789574384689331,0.5789574384689331,True,1,te desmayaste.,muisu' kankantula,(grupo correcto),best
+U02548,G02323,1,0.5850860476493835,0.5850860476493835,True,1,se detuvieron y miraron atrás.,waneranni'ma pi'shekllina'.,(grupo correcto),best
+U00964,G00830,1,0.8026733994483948,0.8026733994483948,True,1,¿quién escapó?,¿den chi'yeklli?,(grupo correcto),best
+U00301,G00240,1,0.6602731943130493,0.6602731943130493,True,1,¡es estupendo!,¡u'chimuinchi nuka'a!,(grupo correcto),best
+U01232,G01071,1,0.7542425394058228,0.7542425394058228,True,1,"despiértate, tom.","nanpiladaker', tom",(grupo correcto),best
+U01455,G01273,1,0.6355366706848145,0.6355366706848145,True,1,estoy horrorizado.,tekua'dansu' ñapalek,(grupo correcto),best
+U00976,G00842,7,0.325659841299057,0.47499826550483704,False,1,nos necesitas.,luantapalundek,luwantullidek a'pinta',worst
+U00097,G00067,8,0.3305325210094452,0.6060370206832886,False,1,estoy mojada.,wiwerapalek,tekua'dansu' ñapalek,worst
+U00478,G00392,8,0.4368313252925873,0.6918937563896179,False,1,¡pásenle!,enka'ku',¡tupiter'!,worst
+U00638,G00532,8,0.4306904673576355,0.554023265838623,False,1,hicieron trampas.,allisek nu'tapallina',tuwiñina' nu'techuna,worst
+U00815,G00691,8,0.3764728307723999,0.5426135659217834,False,1,estoy comprometida.,ñapalek ala'sa' enmu'pinenlek,ku'la latektapi'nek,worst
+U00746,G00626,8,0.45657244324684143,0.5555212497711182,False,1,no fumes.,yau'wa'tuta,yalenmekta,worst
+U02758,G02533,8,0.3191683292388916,0.48979058861732483,False,1,los lagartos negros ahí están.,matutada ñapalli.,uki'lasa' nanpichuma'.,worst
+U00477,G01493,9,0.4063165783882141,0.690069317817688,False,3,¡pásale!,enka'ker',¡tupiter'!,worst
+U01217,G01057,9,0.3624234199523926,0.5661025047302246,False,1,tom insistió.,tom a'perchulli,tom tekinchi'walek tulli,worst
+U02524,G02299,9,0.2305656373500824,0.3238885700702667,False,1,5 se trata de un ave de malagüero. llegaron dos niños huérfanos todo cubiertos de chupos (viruela).,ektu'lli katu'ta' wila suwilalusa' iñer ima sa'la'ta'ser.,"u'chimu wilaweklusa', iñerdaper mukankañina' wilaweklusa'.",worst
+U01838,G01634,10,0.3130604326725006,0.5483378767967224,False,2,¿empezamos?,¿tenmiansu'ter?,"ma'ki'na asu' chilen nu'lli? ¿kenmu'wa'ta' nanalupa' pa'apalekwa'?, tanna' yullina'.",worst
+U00148,G00108,12,0.2966870367527008,0.48603731393814087,False,1,abajo.,dawik',nanpi,worst
+U01351,G01178,12,0.3279922902584076,0.5943180322647095,False,1,no engordes.,yaweyta,yainyututama',worst
+U02002,G01788,18,0.30687639117240906,0.5180705189704895,False,1,me acobardé.,sapulek,iyatudeklek,worst
+U00398,G00323,19,0.24573718011379242,0.4150541424751282,False,1,¿perdona?,ta'itulau,¿tenmiansu'ter?,worst
+U00560,G00465,23,0.31777215003967285,0.5467062592506409,False,1,soy codicioso.,iñer' luantulek wapu',shamu'lunsu' nuka'ka,worst
+U00997,G00860,23,0.22409869730472565,0.43560531735420227,False,1,ten seguridad.,latek'u,musu' ñapaker',worst
+U00531,G00440,26,0.21312184631824493,0.5431342124938965,False,2,me agradas.,tanteñek,luantapalundek,worst
+U02927,G02702,32,0.19966894388198853,0.3370368480682373,False,1,¿vinieron otra vez?,- ¿uklama' a'cha nanapu'si'la?.,nawa' kana'tullina',worst
+U01644,G01454,68,0.11076948791742325,0.33519500494003296,False,1,¿tenías miedo?,¿te'kuawina?,luwantuwiñen,worst

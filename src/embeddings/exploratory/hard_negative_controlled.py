@@ -35,9 +35,6 @@ CONTROLLED_HN_REPORTS_DIR = REPORTS_DIR / "controlled_hn"
 V1_DIR = MODEL_DIR / "finetuned_v1"
 V2_HN_DIR = MODEL_DIR / "finetuned_v2_hn_controlled"
 V2_HN_HARD_DIR = MODEL_DIR / "finetuned_v2_hn_controlled_hard"
-NEGATIVES_PATH = SPLITS_DIR / "train_hard_negatives_controlled.csv"
-NEGATIVES_SAMPLE_PATH = CONTROLLED_HN_REPORTS_DIR / "hard_negatives_controlled_sample.csv"
-NEGATIVES_REPORT_PATH = CONTROLLED_HN_REPORTS_DIR / "hard_negatives_controlled_report.json"
 
 BASE_MODEL = "intfloat/multilingual-e5-small"
 STAGES = ("mine", "train", "evaluate", "all")
@@ -66,14 +63,31 @@ class MiningStats:
 
 
 class HardNegativeDataset(Dataset):
-    def __init__(self, rows: pd.DataFrame):
+    def __init__(self, rows: pd.DataFrame, *, bidirectional: bool = False):
         self.rows = rows.reset_index(drop=True)
+        self.bidirectional = bidirectional
 
     def __len__(self) -> int:
-        return len(self.rows)
+        multiplier = 2 if self.bidirectional else 1
+        return len(self.rows) * multiplier
 
     def __getitem__(self, idx: int) -> dict[str, str]:
-        row = self.rows.iloc[idx]
+        if self.bidirectional:
+            row = self.rows.iloc[idx // 2]
+            reverse = idx % 2 == 1
+        else:
+            row = self.rows.iloc[idx]
+            reverse = False
+
+        if reverse:
+            if "negative_anchor" not in row:
+                raise KeyError("Bidirectional hard-negative training requires a negative_anchor column.")
+            return {
+                "anchor": f"query: {str(row['positive']).strip()}",
+                "positive": f"passage: {str(row['anchor']).strip()}",
+                "negative": f"passage: {str(row['negative_anchor']).strip()}",
+            }
+
         return {
             "anchor": f"query: {str(row['anchor']).strip()}",
             "positive": f"passage: {str(row['positive']).strip()}",
@@ -85,6 +99,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Controlled hard negative experiment.")
     parser.add_argument("--stage", choices=STAGES, required=True)
     parser.add_argument("--model", default=str(V1_DIR), help="Modelo usado para minería/evaluación.")
+    parser.add_argument("--base-model", default=str(V1_DIR), help="Modelo inicial para entrenamiento.")
+    parser.add_argument("--experiment-name", default="v2_hn_controlled")
     parser.add_argument("--epochs", type=int, default=2)
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-5)
@@ -93,23 +109,66 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--sample-size", type=int, default=DEFAULT_SAMPLE_SIZE)
     parser.add_argument("--variant", choices=VARIANTS, default="all")
+    parser.add_argument(
+        "--bidirectional",
+        action="store_true",
+        help="Entrena también la dirección Shiwlu->español usando negativos españoles emparejados."
+    )
     return parser.parse_args()
 
 
-def controlled_model_dir(variant: str) -> Path:
-    if variant == "hard":
+def controlled_model_dir(experiment_name: str, variant: str) -> Path:
+    if experiment_name == "v2_hn_controlled" and variant == "hard":
         return V2_HN_HARD_DIR
+    if experiment_name == "v2_hn_controlled" and variant == "all":
+        return V2_HN_DIR
     if variant == "medium":
         return MODEL_DIR / "finetuned_v2_hn_controlled_medium"
-    return V2_HN_DIR
+    if variant == "all":
+        return MODEL_DIR / experiment_name
+    return MODEL_DIR / f"{experiment_name}_{variant}"
 
 
-def controlled_tag(variant: str) -> str:
-    if variant == "hard":
+def controlled_tag(experiment_name: str, variant: str) -> str:
+    if experiment_name == "v2_hn_controlled" and variant == "hard":
         return "v2_hn_controlled_hard"
     if variant == "medium":
-        return "v2_hn_controlled_medium"
-    return "v2_hn_controlled"
+        return f"{experiment_name}_medium"
+    if variant == "all":
+        return experiment_name
+    return f"{experiment_name}_{variant}"
+
+
+def controlled_report_dir(experiment_name: str) -> Path:
+    if experiment_name == "v2_hn_controlled":
+        return CONTROLLED_HN_REPORTS_DIR
+    return CONTROLLED_HN_REPORTS_DIR / experiment_name
+
+
+def negatives_path(experiment_name: str) -> Path:
+    if experiment_name == "v2_hn_controlled":
+        return SPLITS_DIR / "train_hard_negatives_controlled.csv"
+    return SPLITS_DIR / f"train_hard_negatives_{experiment_name}.csv"
+
+
+def negatives_sample_path(experiment_name: str) -> Path:
+    if experiment_name == "v2_hn_controlled":
+        return controlled_report_dir(experiment_name) / "hard_negatives_controlled_sample.csv"
+    return controlled_report_dir(experiment_name) / f"hard_negatives_{experiment_name}_sample.csv"
+
+
+def negatives_report_path(experiment_name: str) -> Path:
+    if experiment_name == "v2_hn_controlled":
+        return controlled_report_dir(experiment_name) / "hard_negatives_controlled_report.json"
+    return controlled_report_dir(experiment_name) / f"hard_negatives_{experiment_name}_report.json"
+
+
+def resolved_base_model(args: argparse.Namespace) -> str:
+    if args.base_model != str(V1_DIR):
+        return args.base_model
+    if "e5_base" in args.experiment_name:
+        return str(MODEL_DIR / "v1_e5_base")
+    return args.base_model
 
 
 def l2_normalize(array: np.ndarray) -> np.ndarray:
@@ -149,7 +208,8 @@ def encode_train_split(model: SentenceTransformer, train_df: pd.DataFrame) -> tu
 def mine_negatives(args: argparse.Namespace) -> pd.DataFrame:
     start_time = datetime.now(timezone.utc)
     random.seed(args.seed)
-    CONTROLLED_HN_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    output_report_dir = controlled_report_dir(args.experiment_name)
+    output_report_dir.mkdir(parents=True, exist_ok=True)
     SPLITS_DIR.mkdir(parents=True, exist_ok=True)
 
     train_df = load_split("train")
@@ -203,6 +263,7 @@ def mine_negatives(args: argparse.Namespace) -> pd.DataFrame:
                 "anchor": row["ESP_normalizado"],
                 "positive": row["SHIWILU_normalizado"],
                 "negative": candidate["SHIWILU_normalizado"],
+                "negative_anchor": candidate["ESP_normalizado"],
                 "negative_pair_id": candidate["pair_id"],
                 "negative_group_id": candidate["group_id"],
                 "difficulty": difficulty,
@@ -219,14 +280,18 @@ def mine_negatives(args: argparse.Namespace) -> pd.DataFrame:
             if "medium" in selected_by_difficulty:
                 rows.append(selected_by_difficulty["medium"])
 
+    output_negatives_path = negatives_path(args.experiment_name)
+    output_sample_path = negatives_sample_path(args.experiment_name)
+    output_report_path = negatives_report_path(args.experiment_name)
+
     mined_df = pd.DataFrame(rows)
-    mined_df.to_csv(NEGATIVES_PATH, index=False, encoding="utf-8-sig")
+    mined_df.to_csv(output_negatives_path, index=False, encoding="utf-8-sig")
 
     sample_df = mined_df.sample(
         n=min(args.sample_size, len(mined_df)),
         random_state=args.seed,
     ) if len(mined_df) else mined_df
-    sample_df.to_csv(NEGATIVES_SAMPLE_PATH, index=False, encoding="utf-8-sig")
+    sample_df.to_csv(output_sample_path, index=False, encoding="utf-8-sig")
 
     stats = MiningStats(
         total_anchors=len(train_df),
@@ -238,12 +303,12 @@ def mine_negatives(args: argparse.Namespace) -> pd.DataFrame:
         too_easy_discards=too_easy_discards,
     )
     report = build_mining_report(mined_df, stats, args, start_time)
-    with NEGATIVES_REPORT_PATH.open("w", encoding="utf-8") as f:
+    with output_report_path.open("w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
 
-    print(f"Negativos minados: {NEGATIVES_PATH}")
-    print(f"Muestra cualitativa: {NEGATIVES_SAMPLE_PATH}")
-    print(f"Reporte: {NEGATIVES_REPORT_PATH}")
+    print(f"Negativos minados: {output_negatives_path}")
+    print(f"Muestra cualitativa: {output_sample_path}")
+    print(f"Reporte: {output_report_path}")
     print(f"Auto-pass: {report['quality_gate']['auto_pass']}")
     return mined_df
 
@@ -301,9 +366,9 @@ def build_mining_report(
             ),
         },
         "artifacts": {
-            "negatives_csv": str(NEGATIVES_PATH),
-            "sample_csv": str(NEGATIVES_SAMPLE_PATH),
-            "report_json": str(NEGATIVES_REPORT_PATH),
+            "negatives_csv": str(negatives_path(args.experiment_name)),
+            "sample_csv": str(negatives_sample_path(args.experiment_name)),
+            "report_json": str(negatives_report_path(args.experiment_name)),
         },
         "elapsed_seconds": elapsed.total_seconds(),
     }
@@ -325,10 +390,12 @@ def collate_triplets(batch: list[dict[str, str]]) -> dict[str, list[str]]:
 
 
 def train_controlled(args: argparse.Namespace) -> None:
-    if not NEGATIVES_REPORT_PATH.exists() or not NEGATIVES_PATH.exists():
+    input_report_path = negatives_report_path(args.experiment_name)
+    input_negatives_path = negatives_path(args.experiment_name)
+    if not input_report_path.exists() or not input_negatives_path.exists():
         raise FileNotFoundError("Run --stage mine before training.")
 
-    report = json.loads(NEGATIVES_REPORT_PATH.read_text(encoding="utf-8"))
+    report = json.loads(input_report_path.read_text(encoding="utf-8"))
     if not report["quality_gate"]["auto_pass"]:
         raise RuntimeError("Mining quality gate did not pass; inspect negatives before training.")
 
@@ -336,16 +403,17 @@ def train_controlled(args: argparse.Namespace) -> None:
     random.seed(args.seed)
     np.random.seed(args.seed)
 
-    mined_df = pd.read_csv(NEGATIVES_PATH, encoding="utf-8-sig")
+    mined_df = pd.read_csv(input_negatives_path, encoding="utf-8-sig")
     if args.variant != "all":
         mined_df = mined_df[mined_df["difficulty"] == args.variant].copy()
     if mined_df.empty:
         raise RuntimeError(f"No negatives available for variant={args.variant}.")
 
-    dataset = HardNegativeDataset(mined_df)
+    dataset = HardNegativeDataset(mined_df, bidirectional=args.bidirectional)
     loader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate_triplets)
 
-    model = SentenceTransformer(str(V1_DIR))
+    base_model = resolved_base_model(args)
+    model = SentenceTransformer(base_model)
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
     model.to(device)
     model.train()
@@ -381,7 +449,7 @@ def train_controlled(args: argparse.Namespace) -> None:
         avg_loss = total_loss / max(len(loader), 1)
         print(f"Epoch {epoch:02d} | train_loss={avg_loss:.4f}")
 
-    output_dir = controlled_model_dir(args.variant)
+    output_dir = controlled_model_dir(args.experiment_name, args.variant)
     if output_dir.exists():
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -389,9 +457,11 @@ def train_controlled(args: argparse.Namespace) -> None:
     print(f"Modelo guardado en {output_dir}")
 
 
-def evaluate_controlled(variant: str) -> dict[str, Any]:
-    output_dir = controlled_model_dir(variant)
-    tag = controlled_tag(variant)
+def evaluate_controlled(args: argparse.Namespace) -> dict[str, Any]:
+    experiment_name = args.experiment_name
+    variant = args.variant
+    output_dir = controlled_model_dir(experiment_name, variant)
+    tag = controlled_tag(experiment_name, variant)
     model = SentenceTransformer(str(output_dir))
     test_df = load_split("test")
     start_time = datetime.now(timezone.utc)
@@ -407,9 +477,11 @@ def evaluate_controlled(variant: str) -> dict[str, Any]:
         "pipeline": f"finetune_st_{tag}",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "model": str(output_dir),
-        "base_model": str(V1_DIR),
+        "base_model": resolved_base_model(args),
+        "experiment_name": experiment_name,
         "variant": variant,
         "loss": "explicit_negative_mnrl_style_cross_entropy",
+        "bidirectional": args.bidirectional,
         "retrieval_metrics": metrics,
         "acceptance_reference": {
             "v1_recall@1": 0.5109034267912772,
@@ -434,7 +506,7 @@ def main() -> None:
     if args.stage in {"train", "all"}:
         train_controlled(args)
     if args.stage in {"evaluate", "all"}:
-        evaluate_controlled(args.variant)
+        evaluate_controlled(args)
 
 
 if __name__ == "__main__":

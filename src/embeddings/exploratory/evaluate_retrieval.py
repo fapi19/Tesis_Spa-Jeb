@@ -23,6 +23,7 @@ import argparse
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Literal
 
 import numpy as np
 import pandas as pd
@@ -32,21 +33,27 @@ from sentence_transformers.util import cos_sim
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
 REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
+Direction = Literal["esp_to_shi", "shi_to_esp"]
 
 
 def report_dir_for_tag(tag: str, reports_dir: Path | None = None) -> Path:
     root = reports_dir or REPORTS_DIR
-    if tag == "baseline":
+    base_tag = tag
+    for suffix in ("_esp_to_shi", "_shi_to_esp"):
+        if base_tag.endswith(suffix):
+            base_tag = base_tag.removesuffix(suffix)
+            break
+    if base_tag == "baseline":
         return root / "baseline"
-    if tag == "v1":
+    if base_tag == "v1":
         return root / "v1"
-    if tag == "v2":
+    if base_tag == "v2":
         return root / "legacy_v2"
-    if tag == "v2_hn_controlled":
+    if base_tag == "v2_hn_controlled":
         return root / "v2_hn_controlled"
-    if tag == "v2_hn_controlled_hard":
+    if base_tag == "v2_hn_controlled_hard":
         return root / "v2_hn_controlled_hard"
-    return root / "experiments" / tag
+    return root / "experiments" / base_tag
 
 
 def parse_args() -> argparse.Namespace:
@@ -73,6 +80,12 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Etiqueta para los archivos de salida (default: nombre del split)"
     )
+    parser.add_argument(
+        "--direction",
+        choices=["esp_to_shi", "shi_to_esp"],
+        default="esp_to_shi",
+        help="Dirección de retrieval a evaluar (default: esp_to_shi)"
+    )
     return parser.parse_args()
 
 
@@ -92,16 +105,26 @@ def encode_pairs(
     model: SentenceTransformer,
     esp_texts: list[str],
     shi_texts: list[str],
-    batch_size: int = 64
+    batch_size: int = 64,
+    direction: Direction = "esp_to_shi",
 ) -> tuple[np.ndarray, np.ndarray]:
     """
     Genera embeddings con prefijos E5 asimétricos.
 
-    ESP → "query: ..." (lo que buscamos)
-    SHI → "passage: ..." (el corpus donde buscamos)
+    En cada dirección, query representa lo que se busca y passage el corpus
+    candidato sobre el que se rankea.
     """
-    queries = [f"query: {t.strip()}" for t in esp_texts]
-    passages = [f"passage: {t.strip()}" for t in shi_texts]
+    if direction == "esp_to_shi":
+        query_texts = esp_texts
+        passage_texts = shi_texts
+    elif direction == "shi_to_esp":
+        query_texts = shi_texts
+        passage_texts = esp_texts
+    else:
+        raise ValueError(f"Dirección no soportada: {direction}")
+
+    queries = [f"query: {t.strip()}" for t in query_texts]
+    passages = [f"passage: {t.strip()}" for t in passage_texts]
 
     emb_query = model.encode(queries, show_progress_bar=True, convert_to_numpy=True,
                              batch_size=batch_size)
@@ -184,6 +207,7 @@ def build_qualitative_analysis(
     emb_query: np.ndarray,
     emb_passage: np.ndarray,
     positive_indices: list[set[int]],
+    direction: Direction = "esp_to_shi",
     n_best: int = 20,
     n_worst: int = 20
 ) -> pd.DataFrame:
@@ -197,6 +221,15 @@ def build_qualitative_analysis(
     n = sim_matrix.shape[0]
 
     rows = []
+    if direction == "esp_to_shi":
+        query_column = "ESP_normalizado"
+        target_column = "SHIWILU_normalizado"
+    elif direction == "shi_to_esp":
+        query_column = "SHIWILU_normalizado"
+        target_column = "ESP_normalizado"
+    else:
+        raise ValueError(f"Dirección no soportada: {direction}")
+
     for i in range(n):
         scores = sim_matrix[i]
         sorted_indices = np.argsort(-scores)
@@ -216,6 +249,14 @@ def build_qualitative_analysis(
             "top1_score": top1_score,
             "top1_is_positive": top1_is_positive,
             "positive_count": len(positives),
+            "direction": direction,
+            "query_text": row_data[query_column],
+            "target_correct": row_data[target_column],
+            "target_top1": (
+                "(grupo correcto)"
+                if top1_is_positive
+                else df.iloc[top1_idx][target_column]
+            ),
             "esp": row_data["ESP_normalizado"],
             "shiwilu_correct": row_data["SHIWILU_normalizado"],
             "shiwilu_top1": (
@@ -240,7 +281,8 @@ def save_retrieval_report(
     tag: str,
     model_name: str,
     start_time: datetime,
-    reports_dir: Path | None = None
+    reports_dir: Path | None = None,
+    direction: Direction = "esp_to_shi",
 ) -> Path:
     """Guarda reporte JSON de retrieval."""
     output_dir = report_dir_for_tag(tag, reports_dir)
@@ -252,6 +294,7 @@ def save_retrieval_report(
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "model": model_name,
         "tag": tag,
+        "direction": direction,
         "metrics": metrics,
         "elapsed_seconds": elapsed.total_seconds()
     }
@@ -284,7 +327,8 @@ def evaluate_model(
     model_name: str,
     start_time: datetime | None = None,
     reports_dir: Path | None = None,
-    batch_size: int = 64
+    batch_size: int = 64,
+    direction: Direction = "esp_to_shi",
 ) -> dict:
     """
     Evalúa un modelo completo sobre un DataFrame con pares.
@@ -299,15 +343,18 @@ def evaluate_model(
     shi_texts = df["SHIWILU_normalizado"].astype(str).tolist()
 
     emb_query, emb_passage = encode_pairs(model, esp_texts, shi_texts,
-                                          batch_size=batch_size)
+                                          batch_size=batch_size,
+                                          direction=direction)
     positive_indices = build_positive_indices(df)
 
     metrics = compute_retrieval_metrics(emb_query, emb_passage, positive_indices)
+    metrics["direction"] = direction
 
-    qual_df = build_qualitative_analysis(df, emb_query, emb_passage, positive_indices)
+    qual_df = build_qualitative_analysis(df, emb_query, emb_passage,
+                                         positive_indices, direction=direction)
 
     report_path = save_retrieval_report(metrics, tag, model_name, start_time,
-                                        reports_dir)
+                                        reports_dir, direction=direction)
     qual_path = save_qualitative_csv(qual_df, tag, reports_dir)
 
     print_metrics(metrics, tag, model_name, report_path, qual_path)
@@ -354,7 +401,8 @@ def main() -> None:
     start_time = datetime.now(timezone.utc)
     args = parse_args()
 
-    tag = args.tag or args.split
+    base_tag = args.tag or args.split
+    tag = f"{base_tag}_{args.direction}"
 
     print("=" * 70)
     print("  EVALUACIÓN DE RETRIEVAL BILINGÜE")
@@ -367,6 +415,7 @@ def main() -> None:
         model_name = model_path
 
     print(f"\n  Modelo: {model_name}")
+    print(f"  Dirección: {args.direction}")
     model = SentenceTransformer(model_path)
 
     print(f"  Cargando split: {args.split}")
@@ -374,7 +423,8 @@ def main() -> None:
     print(f"  Pares: {len(df):,}")
 
     print("\n  Evaluando retrieval...")
-    metrics = evaluate_model(model, df, tag, model_name, start_time)
+    metrics = evaluate_model(model, df, tag, model_name, start_time,
+                             direction=args.direction)
 
     print()
     print("=" * 70)

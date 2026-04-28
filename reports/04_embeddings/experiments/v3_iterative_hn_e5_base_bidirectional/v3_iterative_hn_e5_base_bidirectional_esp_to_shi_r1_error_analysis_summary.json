@@ -1,0 +1,22 @@
+{
+  "pipeline": "r1_error_analysis",
+  "timestamp": "2026-04-28T05:56:22.333832+00:00",
+  "model": "models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional",
+  "tag": "v3_iterative_hn_e5_base_bidirectional",
+  "direction": "esp_to_shi",
+  "total_examples": 321,
+  "top1_errors": 68,
+  "top1_accuracy": 0.7881619937694704,
+  "heuristic_error_counts": {
+    "severe_retrieval_failure": 1,
+    "gold_has_audit_flag": 22,
+    "semantic_confusion": 26,
+    "shared_shiwilu_tokens": 6,
+    "close_score_ambiguity": 13
+  },
+  "artifacts": {
+    "full_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_esp_to_shi_r1_error_analysis_full.csv",
+    "review_sample_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_esp_to_shi_r1_error_analysis_review_sample.csv",
+    "summary_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_esp_to_shi_r1_error_analysis_summary.json"
+  }
+}

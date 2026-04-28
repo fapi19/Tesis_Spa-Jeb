@@ -318,7 +318,7 @@ No limpiar pensando en español. Limpiar sin romper morfología shiwilu.
 ## 12. Estado actual de embeddings
 
 La fase de evaluación/entrenamiento de embeddings ya produjo un candidato actual:
-`v2_hn_controlled`.
+`v3_iterative_hn_e5_base_bidirectional`.
 
 ### Modelos evaluados
 
@@ -327,14 +327,61 @@ La fase de evaluación/entrenamiento de embeddings ya produjo un candidato actua
 | `baseline` | `intfloat/multilingual-e5-small` sin fine-tuning | 0.0966 | 0.2025 | 0.3209 | 0.1633 | 60.3 |
 | `v1` | E5 fine-tuned con `MultipleNegativesRankingLoss` | 0.5109 | 0.7788 | 0.8692 | 0.6325 | 5.9 |
 | `v2_hn_controlled_hard` | `v1` + hard negatives | 0.5421 | 0.8069 | 0.8879 | 0.6559 | 5.6 |
-| `v2_hn_controlled` | `v1` + hard/medium negatives | **0.5670** | **0.8131** | **0.9003** | **0.6770** | **5.2** |
+| `v2_hn_controlled` | `v1` + hard/medium negatives | 0.5670 | 0.8193 | 0.9097 | 0.6755 | 5.5 |
+| `baseline_e5_base` | `intfloat/multilingual-e5-base` sin fine-tuning | 0.1059 | 0.2056 | 0.3209 | 0.1751 | 57.5 |
+| `v1_e5_base` | E5-base fine-tuned con `MultipleNegativesRankingLoss` | 0.6480 | 0.9128 | 0.9688 | 0.7592 | 2.5 |
+| `v1_e5_base_bidirectional` | E5-base fine-tuned bidireccional con `MultipleNegativesRankingLoss` | 0.6573 | 0.9190 | 0.9751 | 0.7704 | 2.5 |
+| `v2_hn_controlled_e5_base` | `v1_e5_base` + hard/medium negatives | 0.7134 | 0.9159 | **0.9720** | 0.8037 | **2.4** |
+| `v2_hn_controlled_e5_base_bidirectional` | `v1_e5_base_bidirectional` + hard/medium negatives bidireccionales | 0.7508 | **0.9283** | 0.9688 | 0.8276 | 2.9 |
+| `v3_iterative_hn_e5_base_bidirectional` | `v2_hn_controlled_e5_base_bidirectional` + iterative hard negatives | **0.7882** | **0.9283** | **0.9782** | **0.8480** | **2.2** |
+
+### Mejora del candidato actual
+
+Sobre el test canónico de 321 pares, `v3_iterative_hn_e5_base_bidirectional`
+recupera la traducción correcta en rank 1 para 253 pares en español -> Shiwlu.
+
+- Frente a `v2_hn_controlled_e5_base_bidirectional`: mejora de `0.7508` a
+  `0.7882` en `R@1` español -> Shiwlu, equivalente a `+3.74` puntos
+  porcentuales, `+4.98%` relativo y `+12` aciertos top-1 adicionales.
+- En Shiwlu -> español, mejora de `0.7788` a `0.7913` en `R@1`, equivalente a
+  `+1.25` puntos porcentuales, `+1.60%` relativo y `+4` aciertos top-1
+  adicionales.
+
+### Validación bidireccional
+
+| Dirección | R@1 | R@5 | R@10 | MRR | Mean Rank | Rank 1 |
+|-----------|----:|----:|-----:|----:|----------:|-------:|
+| español -> Shiwlu | 0.7882 | 0.9283 | **0.9782** | 0.8480 | 2.2 | 253/321 |
+| Shiwlu -> español | **0.7913** | **0.9564** | 0.9688 | **0.8617** | **2.0** | **254/321** |
+
+La iteración v3 mejora `R@1` y `MRR` en ambas direcciones. La única caída frente
+al candidato anterior es `R@10` Shiwlu -> español, de 0.9720 a 0.9688, una
+degradación de `0.31` puntos porcentuales que queda dentro del umbral de
+aceptación.
+
+El análisis de errores top-1 muestra:
+
+- Español -> Shiwlu: 68 errores top-1.
+- Shiwlu -> español: 67 errores top-1.
+- Principales categorías heurísticas: `gold_has_audit_flag`,
+  `semantic_confusion`, `close_score_ambiguity` y `shared_shiwilu_tokens`.
+
+La lectura metodológica es que los errores restantes deben revisarse
+cualitativamente antes de cualquier nuevo entrenamiento, porque parte del fallo
+puede venir de ruido, equivalencias no agrupadas o ambigüedad real del corpus.
 
 ### Decisión actual
 
-- `v2_hn_controlled` es el candidato actual de embeddings.
-- `v1` queda como baseline fuerte.
+- `v3_iterative_hn_e5_base_bidirectional` es el candidato actual de embeddings.
+- `v2_hn_controlled_e5_base_bidirectional` queda como candidato anterior
+  bidireccional.
+- `v2_hn_controlled_e5_base` queda como candidato anterior no bidireccional.
+- `v1_e5_base` queda como baseline fuerte para E5-base.
+- `v2_hn_controlled` queda como candidato anterior basado en E5-small.
 - `legacy_v2` no debe usarse como modelo principal porque venía de hard negatives
   no controlados y degradaba resultados.
+- La fase de embeddings queda cerrada provisionalmente. No se recomienda otra
+  ronda de hard negatives sin revisión manual de errores y grupos.
 
 ### Organización de reportes
 
@@ -344,12 +391,18 @@ Los reportes de embeddings están organizados en `reports/04_embeddings/`:
 - `baseline/`: E5 sin fine-tuning.
 - `v1/`: fine-tuning contrastivo inicial.
 - `controlled_hn/`: minería y validación de hard/medium negatives.
-- `v2_hn_controlled/`: candidato actual.
+- `v2_hn_controlled/`: candidato anterior con E5-small.
+- `v2_hn_controlled_e5_base/`: candidato anterior no bidireccional.
+- `v2_hn_controlled_e5_base_bidirectional/`: candidato anterior bidireccional.
+- `v3_iterative_hn_e5_base_bidirectional/`: entrenamiento del candidato actual.
 - `v2_hn_controlled_hard/`: ablación hard-only.
+- `experiments/v3_iterative_hn_e5_base_bidirectional/`: evaluación retrieval y análisis
+  cualitativo del candidato actual.
 - `legacy_v2/`: experimento anterior no controlado.
 - `exploratory/`: reportes exploratorios previos.
 
 ### Siguiente fase
 
-Usar `v2_hn_controlled` como candidato de embeddings para análisis posterior e
-integración/evaluación con NMT. No reabrir el preprocesamiento salvo error crítico.
+Usar `v3_iterative_hn_e5_base_bidirectional` como candidato de embeddings para
+integración/evaluación con NMT. No reabrir el preprocesamiento ni el
+entrenamiento de embeddings salvo error crítico o evidencia cualitativa clara.

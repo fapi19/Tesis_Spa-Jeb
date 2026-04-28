@@ -1,0 +1,32 @@
+{
+  "pipeline": "finetune_st_v2_hn_controlled_e5_base",
+  "timestamp": "2026-04-28T04:50:58.788371+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v2_hn_controlled_e5_base",
+  "base_model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v1_e5_base",
+  "experiment_name": "v2_hn_controlled_e5_base",
+  "variant": "all",
+  "loss": "explicit_negative_mnrl_style_cross_entropy",
+  "retrieval_metrics": {
+    "recall@1": 0.7133956386292835,
+    "recall@5": 0.9158878504672897,
+    "recall@10": 0.9719626168224299,
+    "mrr": 0.8037414007740968,
+    "mean_rank": 2.4174454828660434,
+    "total_pairs": 321,
+    "multi_positive": true,
+    "avg_positives_per_query": 1.1495327102803738,
+    "rank_distribution": {
+      "rank_1": 229,
+      "rank_2_5": 65,
+      "rank_6_10": 18,
+      "rank_11_50": 8,
+      "rank_51_plus": 1
+    }
+  },
+  "acceptance_reference": {
+    "v1_recall@1": 0.5109034267912772,
+    "v1_recall@5": 0.778816199376947,
+    "v1_recall@10": 0.8691588785046729,
+    "v1_mrr": 0.632462097901643
+  }
+}

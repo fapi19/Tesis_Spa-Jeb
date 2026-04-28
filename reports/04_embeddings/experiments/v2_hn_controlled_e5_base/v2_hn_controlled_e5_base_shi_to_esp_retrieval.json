@@ -1,0 +1,26 @@
+{
+  "pipeline": "evaluate_retrieval",
+  "timestamp": "2026-04-28T05:01:35.641619+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v2_hn_controlled_e5_base",
+  "tag": "v2_hn_controlled_e5_base_shi_to_esp",
+  "direction": "shi_to_esp",
+  "metrics": {
+    "recall@1": 0.7165109034267912,
+    "recall@5": 0.9252336448598131,
+    "recall@10": 0.9781931464174455,
+    "mrr": 0.8057164864465598,
+    "mean_rank": 2.3271028037383177,
+    "total_pairs": 321,
+    "multi_positive": true,
+    "avg_positives_per_query": 1.1495327102803738,
+    "rank_distribution": {
+      "rank_1": 230,
+      "rank_2_5": 67,
+      "rank_6_10": 17,
+      "rank_11_50": 7,
+      "rank_51_plus": 0
+    },
+    "direction": "shi_to_esp"
+  },
+  "elapsed_seconds": 1.835872
+}

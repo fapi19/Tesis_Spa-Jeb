@@ -1,0 +1,101 @@
+﻿pair_id,group_id,anchor,positive,negative,negative_anchor,negative_pair_id,negative_group_id,difficulty,sim_positive,sim_negative,margin,negative_rank
+U02800,G02575,¿qué les voy a dar de comer a mis hijos? diciendo.,¿wilaweklusa' ma'nen i'na a'ka'dek'etchek? tanna'.,wilaweklusa'pa' ma'sha a'lekdek'i'nek.,ya que a mis hijos no les enseñé.,U02298,G02073,medium,0.7854316234588623,0.5692687034606934,0.21616291999816895,2
+U00688,G01082,debemos irnos.,pa'a'kawa'su' ñapalli,ka'a'kawa'su' ñapalli,deberíamos comer.,U01574,G01385,hard,0.8756430149078369,0.7566303610801697,0.11901265382766724,3
+U02200,G01977,anoten esto.,llinser'ku' nana,nawa' lli'apallinerku.,ellas me cuidan.,U02441,G02216,medium,0.7691540718078613,0.5982570648193359,0.1708970069885254,7
+U01613,G01424,tienes vino.,a'ñapala' vinu',a'ñapallidek vinu',tenemos vino.,U01238,G01077,medium,0.8973115086555481,0.6601542234420776,0.23715728521347046,2
+U02627,G02402,en verdad le dijeron:,tekkinchima itulli:,naneklima itulli:,de ahí le dijo:,U02876,G02651,medium,0.8068819642066956,0.6369707584381104,0.1699112057685852,2
+U02773,G02548,¿por qué nos hicieron esto?,¿ma'kin nu'tullinerkenmu'wa' chi,¿ma'nen'a'cha nu'taterwa'?,¿qué haremos?,U01600,G01411,medium,0.831088662147522,0.6216824650764465,0.20940619707107544,2
+U03161,G02936,"ese otro dijo yo he sabido que en el cerro vive llumallun. 12 laulate es un apellido muy común en jeberos. según este relato, su etimología se hallaría en el nombre laweklatek el de la boca abierta. 13 llumallun era viejita que vivia sola y era sabia.",nana ali'lima tulli kui'na ñinchitulek nana mutupik nanpipalli llumallun13'.,"shunka' katu' ekkilala a'ñamu nana lunpa'kasu' ipa'la lauktulek, kuanta' supinawantamu amiwekku'.","cuando tenia 12 años he escuchado lo que digo ahora, me ponía detrás de mi abuelita finada.",U03122,G02897,medium,0.6062402129173279,0.42462393641471863,0.18161627650260925,3
+U02124,G01904,hay reglas.,ñapalli la'la'lusa',amu utek'wañi,tiene barba.,U01695,G01498,hard,0.6658552885055542,0.5226137042045593,0.14324158430099487,2
+U02347,G02122,una vez tostado se lo muele.,inyek ipa'linchi peksanek.,ukluka'pasik kenmu'nta' inyalalatulek chitetlla.,mientras está hirviendo se tuesta el maíz desgranado.,U02345,G02120,medium,0.588169276714325,0.43612954020500183,0.15203973650932312,16
+U00430,G00347,cayeron.,anu'llina',chi'yek llina',se escaparon.,U01196,G01037,hard,0.8498455286026001,0.7096979022026062,0.1401476263999939,2
+U00674,G00564,tom llorará.,tom wellek'echu,tom lun'echu,tom hablará.,U01227,G01066,medium,0.8801268935203552,0.681113600730896,0.19901329278945923,2
+U00636,G00531,eso funciona.,nana saka'tapalli,asu' saka'tapalli,esto trabaja.,U00647,G00539,hard,0.8433620929718018,0.792039155960083,0.05132293701171875,2
+U01645,G01455,¿estás dormido?,¿wichi'su' ñapala?,¿yunsansu' ñapala?,¿estás levantado?,U00462,G00378,hard,0.8697132468223572,0.7592862248420715,0.11042702198028564,2
+U01220,G01060,tom huyó.,tom teka'lli,"puka' yunsu'lli,","la charapa salió,",U02748,G02523,medium,0.7082481384277344,0.5533152222633362,0.1549329161643982,19
+U00548,G00454,vomité.,enmu'lek,chinku'lli,tosió.,U00501,G00413,medium,0.7393438220024109,0.5618714094161987,0.17747241258621216,12
+U00196,G00151,estoy perfectamente.,u'chimuinchi ñapalek,musu' nampipalek,soy feliz,U00515,G00426,hard,0.7923104763031006,0.707141637802124,0.08516883850097656,2
+U02831,G02606,"de ahí, esta la ballena poza se redujo.",naneklimaka asu' nana lanla' pitunta' uwentunta'lli.,nu'sui'ma asu' panpadek uksu'ketchulli.,así dicen que pampayacu se quemó.,U02578,G02353,hard,0.8103908896446228,0.685722827911377,0.12466806173324585,2
+U01013,G00876,baja.,nu'wanker',paker' ñilupa',apártate.,U00137,G00098,medium,0.8422387838363647,0.6359260678291321,0.20631271600723267,7
+U01485,G01303,está mejorado.,tekdiperpi ñapalli,saka'tunakla usu'llina,está despedido.,U01294,G01125,hard,0.694193422794342,0.6152967214584351,0.07889670133590698,3
+U01866,G01660,ellos atacarán.,nawa panper'chechuna',ekte'chechuna',se adelantarán.,U00156,G00115,hard,0.7697276473045349,0.6874707937240601,0.08225685358047485,3
+U01628,G01439,fracasarás.,nu'chin'chu,ekte'chechu,se adelantará.,U00155,G00114,hard,0.7520518898963928,0.6918529272079468,0.060198962688446045,2
+U00289,G00329,atrápalo.,pilli'ter',i'shi'ker',póntelo.,U00399,G00324,medium,0.7841649651527405,0.6238808631896973,0.1602841019630432,9
+U03019,G02794,así seguía hasta que trajeron por acá (por jeberos) mujeres adineradas.,nu'apileklima kencha'llina' inalupa' ku'apellusa' kullikerwanlusa'.,"nu'su' ñapilaterwa' enta' ipa'la, nermuda'lusi'pa' danker'kuñina' shiwiluk.","así vamos a estar viviendo pues ahora, otras gentes han entrado en jeberos.",U03117,G02892,medium,0.6937064528465271,0.5426855087280273,0.15102094411849976,3
+U02177,G01957,los detendremos.,tu'nek'echidek,wa'tentaterwa',esperaremos.,U00694,G00581,medium,0.7847257852554321,0.6281689405441284,0.1565568447113037,5
+U01100,G00959,soy adulta.,taserlunku nuka'ka,nuwek'mutu'ku,soy calvo.,U00188,G00143,medium,0.6426475048065186,0.4863802492618561,0.15626725554466248,27
+U00259,G00206,tom renunció.,tom yunsu'lli,tom chi'ye'klli,tom escapó.,U00911,G00781,medium,0.8863614797592163,0.6792080998420715,0.20715337991714478,4
+U02165,G01945,deberíamos ganar.,kana'ta'kawa'su' ñapalli,ka'a'kawa'su' ñapalli,deberíamos comer.,U01574,G01385,hard,0.8370742797851562,0.721985936164856,0.11508834362030029,2
+U02419,G02194,estoy viniendo queriendo verte. como fui a la chacra tantos días no te he visitado.,- uk'apincha'lek yalli'amun. pa'amu menmik u'dun uklli lli'ker'i'ñen.,- nu'amuntana luwanpallen. ¿ma'pun a'cha kai kuawek lli'ker'i'ñu? tapalek.,por eso te estoy echando de menos. ¿qué teniendo mi hermana no me visita? estoy diciendo.,U02420,G02195,medium,0.7229835391044617,0.48461151123046875,0.23837202787399292,2
+U01334,G01162,¿puedo quedármelo?,¿yennitulek ek'llia'ak?,¿yennitulek lli'ak?,¿puedo verlo?,U01513,G01328,medium,0.7420634031295776,0.5852707028388977,0.15679270029067993,12
+U00437,G00354,tomás votó.,tomas dek'lli,chuma lansa'lli,tomás bailó.,U00650,G00542,hard,0.6478950381278992,0.5511770248413086,0.09671801328659058,3
+U00714,G00600,estás triste.,we'inutusu' ñapala,lupersu' ñapala,estás borracha.,U01293,G01124,medium,0.7819543480873108,0.630494236946106,0.15146011114120483,9
+U00739,G00619,¿juegas boliche?,¿indekllitapala bulichi?,¿sanekwantula?,¿tienes frío?,U00984,G00848,hard,0.6631688475608826,0.5496704578399658,0.11349838972091675,2
+U03010,G02785,"cuando ya pasaban veinte años ahora sí, vayan a su pueblo, les decían los viejos, este, los que tenían mal corazón.","katu' shunka' ekkilala ñisik ima ipa'a'ka panta'ku' ñinanlu'penmek, itudekllina' nana taserpiku'lusa', ma'i, mukankinpu'lusa'.","ipa'la' winterkenma' ma'pu'si'pa' napi' shawala kenma' ñapanna'pi'la idenmalli'na' asu' nerñinalukla uklusa'lek, kaschilla lunlusa'.","ahora les voy a contar cómo quiza cuando vivían los antiguos indios shawala pelearon contra los que vinieron de otro pueblo, los catellano- hablantes.",U03054,G02829,hard,0.7185036540031433,0.6400983333587646,0.07840532064437866,2
+U02517,G02292,"luego de hacer eso, dijeron pesquemos mañana.",nu'anna' eklli pur'awa' tullini'ma.,nanalupa' uk'anna' asu' utapakellinerkenmu'wa'.,viniendo por ahí nos están viniendo a hacer esto.,U03115,G02890,medium,0.7091981768608093,0.5358121991157532,0.17338597774505615,3
+U00759,G00638,está fingiendo.,intek apalli,latada'pilalli,está calmando. (dolor),U00191,G00146,hard,0.7223862409591675,0.6561731100082397,0.06621313095092773,3
+U01328,G01156,pidan ayuda.,lektuku' katu'pa',luwantullidek katu'pa',necesitábamos ayuda.,U01884,G01678,medium,0.7360193133354187,0.582828938961029,0.15319037437438965,4
+U00956,G00823,qué dolor.,embu'ni iker'ipa',ku'la iker'i'ñi,no duele.,U02066,G01849,medium,0.701876699924469,0.545722246170044,0.15615445375442505,3
+U01424,G01244,quiero ganar.,yakana'lek,yawerannek,quiero comer.,U01422,G01242,medium,0.7350210547447205,0.5720289945602417,0.16299206018447876,5
+U02315,G02090,llevándolo ella también que enseñe por otros lugares,"ekpanta'n nananta' a'lekchii, a'lektan nanalupa'","nananta' a'lekchii, ñinchichii,","ella también que enseñe para que (otros) la aprendan,",U02291,G02066,medium,0.6880835890769958,0.49681004881858826,0.1912735402584076,3
+U00687,G00575,lo hicimos.,nu'tulek'wa',nu'tawa' nana,hagamos eso.,U01501,G01317,hard,0.8615301847457886,0.738246738910675,0.12328344583511353,2
+U00514,G00425,estoy aburrida.,muin'su' ñapalek,inanpilechek,me desnudo.,U01772,G01572,medium,0.739747941493988,0.5863864421844482,0.1533614993095398,28
+U01055,G00915,¡qué romántico!,¡enpu'ni mupenchipa'!,¡enpu'ni mui'pa!,¡qué alivio!,U01598,G01409,medium,0.7351082563400269,0.5696001052856445,0.16550815105438232,7
+U02713,G02488,"el lago junto al pelejo se secó,","kundetchek enñi,","ukilasu'tundek enñi,","el rayo caño se secó,",U02712,G02487,hard,0.7555859088897705,0.6894737482070923,0.06611216068267822,3
+U03010,G02785,"cuando ya pasaban veinte años ahora sí, vayan a su pueblo, les decían los viejos, este, los que tenían mal corazón.","katu' shunka' ekkilala ñisik ima ipa'a'ka panta'ku' ñinanlu'penmek, itudekllina' nana taserpiku'lusa', ma'i, mukankinpu'lusa'.","nanekla adenchenna' luncha'llina' nanalupa' dadapu muda' nanpipalli, kañellu'ladatusu, adawa'ladatusu.","al regresar de allí hablaron por ahí vive gente blanca, de ojos azules, de ojos claros.",U02990,G02765,medium,0.7185036540031433,0.48313549160957336,0.23536816239356995,3
+U01983,G01770,todos oraron.,iñer'daper' mallia'llina',iñer'daper yamerladallina',todos sonrieron.,U01984,G01771,hard,0.7726887464523315,0.652131199836731,0.12055754661560059,2
+U01746,G01548,quiero vivir.,yanampilek,taitula'u nanpiak,déjame vivir.,U00851,G00727,medium,0.7130470275878906,0.5587137341499329,0.15433329343795776,3
+U02498,G02273,por eso ahora estoy aquí.,ipa'la nu'amu asek ñapalek.,¡asek ñapallidek!,¡aquí estamos!,U00761,G00640,medium,0.8798103928565979,0.6283949017524719,0.251415491104126,2
+U00360,G00291,apesta.,analli,iyalli,es rico. (sabor),U00309,G00300,medium,0.7759722471237183,0.609008252620697,0.16696399450302124,2
+U00379,G00309,manténganse abrigados.,i'shiwansu' ñapaku',ñapaker' musu'kankantusu',estate contento.,U00465,G00380,medium,0.7834190726280212,0.6195740103721619,0.16384506225585938,4
+U03148,G02923,"después de matar a sekputchek, (los jeberinos) se han esparcido, se han aborrecido.","nana sekputchekkui'na di'tanna, inpasetllina', inluyullina'.","dei'tanna', pen dintunna', aku'lalatullina'.","lo mataron, atizaron la candela y lo metieron (al fuego).",U02949,G02724,hard,0.7257740497589111,0.6261990070343018,0.09957504272460938,2
+U00244,G00193,mes.,duker,shin,largo,U00066,G00050,hard,0.7005451321601868,0.621117353439331,0.07942777872085571,4
+U00857,G00733,vayámonos.,pa'awa',pa'echidek,nos vamos.,U01583,G01394,medium,0.8601698279380798,0.7075831890106201,0.15258663892745972,6
+U03130,G02905,"de ahí, dice, ha quedado este pasto que hasta ahora conocemos.",naneklima llia'lli asu' wa'dan panpateklu' ipa'la walek luwetchapalekwa'.,nanekla'nka lawektapamudek kudanta' ipa'la walek lli'inutapallidek nana lunka'su'.,"de ahí, escuchándoles, nosotros también hasta ahora nos acordamos de eso que hablaban.",U02577,G02352,medium,0.7492424249649048,0.5175437331199646,0.23169869184494019,2
+U01796,G01594,era perfecto.,u'chimu ñiwiñi,ñiwiñi tekinchi,fue real.,U00842,G00718,medium,0.7932180762290955,0.606759786605835,0.1864582896232605,5
+U01952,G01742,¿puedes oírme?,¿yennitula lauk'a'muk?,¿lauk'lun?,¿me oíste?,U01960,G01750,medium,0.837554395198822,0.5711217522621155,0.26643264293670654,4
+U01105,G00963,estoy congelado.,nakusu' sanekwantulek,ñapalek a'mechailusu,estoy constipado.,U02058,G01841,medium,0.728260338306427,0.5728622078895569,0.15539813041687012,19
+U01129,G00982,está funcionando.,saka'tapalli,saka'tunakla usu'llina,está despedido.,U01294,G01125,medium,0.8370296359062195,0.662071168422699,0.1749584674835205,10
+U02819,G02594,dicen que arákayu puso una ballena y salió (de la región).,arakayu ima lanla' akun yunsu'lli.,tan ima arakayu nana lanla' aku'lli.,dijo arákayu y puso la ballena.,U02821,G02596,hard,0.7656797766685486,0.6451628804206848,0.12051689624786377,2
+U01779,G01578,me demandaron.,iker'lalak aku'llinerku,usu'lliner'ku,fui despedido.,U02033,G01817,hard,0.7578391432762146,0.69794762134552,0.05989152193069458,4
+U03069,G02844,ahí está echado un shungo (palo sangre). ¡hagan mazos.,unkuenñan pek kua'palli. ¡llisanala nu'tu'ku'!,enta' winterkenma'. ¡lawekku'!,entonces les voy a contar. ¡escuchen!,U03055,G02830,medium,0.6842407584190369,0.4197360873222351,0.26450467109680176,3
+U00024,G01474,¿entendiste?,¿lachek'la?,lauk'llien,te oí.,U00781,G00658,medium,0.8147087097167969,0.6357802748680115,0.1789284348487854,5
+U02232,G02007,¿tienes arroz?,¿pumuladawanpala?,¿a'ñapala cerveza?,¿tienes cerveza?,U02229,G02004,hard,0.7652448415756226,0.7031964659690857,0.062048375606536865,2
+U00990,G00854,¿estás perdido?,¿wer'su' ñapala?,¿inapi ñapala?,¿estás libre?,U00987,G00851,hard,0.7622284293174744,0.6405487656593323,0.12167966365814209,2
+U00564,G00468,estoy soltero.,ku'aper'wi'nek,kulliker'wi'nek,soy pobre.,U00207,G00160,hard,0.7681565284729004,0.6523242592811584,0.11583226919174194,2
+U02512,G02287,cuentan que antiguamente el gobernante (de jeberos) se levantó y habló:,napi' ima wa'an yunsa'n luñi:,"nanima pennu'pilenchan, unchan itudeklli:","ahí vino volando, bajó y le dijo (a la gente):",U02520,G02295,medium,0.6932901740074158,0.5259492993354797,0.16734087467193604,7
+U02968,G02743,"semanas, un mes y llegaron a moyobamba.","sekllintulli iñer uklli, ala' simana', katu' simana', kala simana', ala' dukerkek ima ektu'llina' muyunpak. hicieron trocha todos los días, una semana, dos semanas, tres","du'anna', wa'inutanna', nerpi'pu' ñiper'dekllina' nana pa'lusa'.","se sentaban, sentían pena y a veces insultaban a los que habían ido (por primera vez a moyobamba).",U03016,G02791,medium,0.648452877998352,0.46029427647590637,0.18815860152244568,2
+U00065,G00051,¡largo!,¡paker'!,¡luntuu!,¡háblame!,U00632,G00527,hard,0.6766877770423889,0.621087372303009,0.05560040473937988,5
+U01034,G00895,deme tiempo.,wa'ten'u,wa'tenker',un momento.,U00248,G02022,hard,0.7176333069801331,0.6244667768478394,0.0931665301322937,4
+U00486,G00399,no cantes.,yatuluner'ta,yatumu'ta,no mientas.,U00299,G00238,medium,0.6696898341178894,0.5054231286048889,0.1642667055130005,14
+U01252,G01088,estamos encerrados.,unku'pi ñapallidek,nampilalasu' ñapalidek,estamos despiertos.,U00943,G00811,medium,0.8052404522895813,0.6496063470840454,0.1556341052055359,11
+U01445,G01263,cogeré uno.,maechek alasa',ka'apalek tanta',como pan.,U00773,G00650,medium,0.734906017780304,0.5507658123970032,0.18414020538330078,2
+U01651,G01460,¿puedo ayudarle?,¿yennitulek katu'pa'a'kik?,¿yennitulama katupa'a'muk?,¿pueden ayudarme?,U01955,G01745,hard,0.8097007274627686,0.7011290788650513,0.10857164859771729,5
+U00465,G00380,estate contento.,ñapaker' musu'kankantusu',musu'nakuker',pásala bien.,U00162,G00120,hard,0.7721843719482422,0.645737886428833,0.12644648551940918,2
+U01546,G01358,están limpias.,mupisusa' ñapallina',saka'tusu' ñapallina',están cansados.,U01548,G01360,hard,0.7608531713485718,0.6347293853759766,0.12612378597259521,2
+U02766,G02541,"nosotros tendríamos muchísimo pescado,","enpu'nipa' kenmu'wa' samerwanpanansu'wa',","- pu'yek aperku'tullinerkudek,",(los hombres de jeberos) nos mezquinaron la pesca.,U02533,G02308,hard,0.7453658580780029,0.6032878160476685,0.14207804203033447,2
+U00948,G00816,somos gemelos.,insilan nuka'kawa',iin nuka'kawa,somos hermanos.,U01892,G01686,hard,0.7615078091621399,0.6642670631408691,0.09724074602127075,3
+U00571,G00475,¿es alto? (estatura - femenino),¿shilun a'cha?,¿sulliman wanpalli?,¿es venenoso?,U02065,G01848,medium,0.6966027021408081,0.541131317615509,0.15547138452529907,5
+U02573,G02348,todas esas cosas verdad es lo que contaron los viejos que escuchaban cuando iban (a pampayacu).,nanadaper tekkinchinen luñina' taserpilusa' pantanna' lauk'erkasu'.,ta'ser kuanta' taserpiku'lusa' laukdeklek du'amu weilan.,"cuando contaban yo también a los viejos ya finados les he escuchado, sentado desde cierta distancia.",U02789,G02564,medium,0.7607729434967041,0.4790787696838379,0.2816941738128662,2
+U02839,G02614,no sabemos.,ñinchichi'nekwa'.,yalli'tama,no miren.,U00485,G00398,medium,0.7830962538719177,0.6259944438934326,0.1571018099784851,4
+U00441,G00358,tom irá.,tom pa'echu,tom chiminchu,tom morirá.,U00675,G00565,medium,0.905082643032074,0.7211014628410339,0.18398118019104004,2
+U00156,G00115,se adelantarán.,ekte'chechuna',panper'echuna',atacarán.,U01865,G01659,medium,0.8301852345466614,0.6616964340209961,0.16848880052566528,3
+U01135,G00988,siga leyendo.,luntaper'i'la,lansa'per'i'la,sigue bailando.,U01131,G00984,medium,0.7355393171310425,0.5852590799331665,0.15028023719787598,4
+U02870,G02645,"dijeron esto y se alistaron, mandaron a hacer masato a sus señoras para llevar.","tanni'ma insekdipellina', uklulu'nenna' a'nu'tullina' sadina' yekpanna'.",nu'apileklima kencha'llina' inalupa' ku'apellusa' kullikerwanlusa'.,así seguía hasta que trajeron por acá (por jeberos) mujeres adineradas.,U03019,G02794,medium,0.8001230359077454,0.5542213916778564,0.24590164422988892,2
+U00351,G00282,¿está tom?,¿ñapalli tom?,¿tom ñiwiñi?,¿fue tom?,U00482,G00395,medium,0.8419501781463623,0.6861341595649719,0.15581601858139038,3
+U02349,G02124,ahora ya no hacen así.,ipa'li'na nui'ñina'.,ipa'la lacheknawi'ñina'.,ahora no se puede entender.,U03201,G02976,medium,0.8483058214187622,0.6881890296936035,0.1601167917251587,2
+U01564,G01375,tenemos hambre.,uki'lallidek,aper'llidek,fallamos.,U00446,G00362,hard,0.8030186295509338,0.7248581051826477,0.07816052436828613,2
+U01948,G01738,¿puedo probármelo?,¿yennitulek lata'ak?,¿yennitulek musha'a'kik?,¿puedo besarte?,U01653,G01461,hard,0.7197887301445007,0.6369767785072327,0.08281195163726807,3
+U01109,G00966,estoy indignado.,yusu' ñapalek,inapilante'ñapalek,estoy descalzo.,U01101,G00960,hard,0.824559211730957,0.7342422008514404,0.0903170108795166,5
+U02179,G01959,estamos seguros.,musu'lu'ukpi ñapallidek,inapi ñapallidek,estamos disponibles.,U02178,G01958,medium,0.7926419377326965,0.61881422996521,0.17382770776748657,7
+U00349,G00280,he perdido.,a'wer'lek,anu'lek,me caí.,U00028,G00023,hard,0.7724224925041199,0.674393892288208,0.09802860021591187,4
+U00447,G00363,nos olvidamos.,pinaner'llidek,a'nañiechidek,compartiremos.,U00942,G00810,medium,0.6966617107391357,0.5387156009674072,0.15794610977172852,9
+U03153,G02928,"otros se han quedado en el cerro. 11 literalmente, los nombres de adentro.",ali'lima llia'lli ma'i mutupik.,ali'ladaper ima ker' aku'pakuñina'.,"otros, dice, fueron a poner más yuca (para aprovisionarse).",U02959,G02734,medium,0.7159439325332642,0.5105121731758118,0.2054317593574524,3
+U01077,G00936,necesito agua.,luwantulek dek',luwantulek kulliker',quiero dinero.,U01085,G00944,hard,0.6692640781402588,0.6049262881278992,0.06433779001235962,5
+U02195,G01974,escribe algo.,llinse'cher' manen'unta',¡tuker' ma'nen'unta'!,¡di algo!,U01516,G01331,medium,0.782441258430481,0.521371603012085,0.261069655418396,2
+U02900,G02675,quizás aparecieron estas nubes para pronosticarnos mal agüero,nu'an asu' kekkilu'tek yunsu'lli ya'lli'minmu'wa' yapekkiwantanminmu'wa',nana nani'na itullina' ma'pu'si'pa' insekluteñek muyunpa inchilala yaekketchakwa' tullina'.,a eso dijeron ¡cuánto hemos sufrido para abrir el camino a moyobamba! dijeron.,U03033,G02808,hard,0.6872693300247192,0.5387845039367676,0.14848482608795166,2
+U00614,G00510,mamá lloró.,awa wellek'lli,welliek'apawiñi,estaba llorando.,U01843,G01638,hard,0.8029142618179321,0.6754427552223206,0.12747150659561157,2
+U00402,G00326,lean esto.,luntuku' asu',llinser'ker' asu',anota esto.,U02198,G01976,medium,0.8226460218429565,0.6466092467308044,0.1760367751121521,6
+U01085,G00944,quiero dinero.,luwantulek kulliker',luwantulek wayusa',quiero café.,U01419,G01239,medium,0.7455821633338928,0.5917822122573853,0.15379995107650757,5
+U00378,G00308,mantente abrigado.,i'shiwansu' ñaper',ñapaker' musu'kankantusu',estate contento.,U00465,G00380,hard,0.7983822226524353,0.6933431029319763,0.10503911972045898,4
+U00028,G00023,me caí.,anu'lek,iluwinek,me resfrié.,U02001,G01787,medium,0.77181476354599,0.5631556510925293,0.2086591124534607,3

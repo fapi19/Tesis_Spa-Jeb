@@ -1,24 +1,25 @@
 {
   "pipeline": "finetune_st_v2_hn_controlled",
-  "timestamp": "2026-04-28T04:06:47.153373+00:00",
+  "timestamp": "2026-04-28T04:37:22.638702+00:00",
   "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v2_hn_controlled",
   "base_model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v1",
+  "variant": "all",
   "loss": "explicit_negative_mnrl_style_cross_entropy",
   "retrieval_metrics": {
     "recall@1": 0.5669781931464174,
-    "recall@5": 0.8130841121495327,
-    "recall@10": 0.9003115264797508,
-    "mrr": 0.6769717767926607,
-    "mean_rank": 5.161993769470405,
+    "recall@5": 0.8193146417445483,
+    "recall@10": 0.9096573208722741,
+    "mrr": 0.6754885765825586,
+    "mean_rank": 5.498442367601246,
     "total_pairs": 321,
     "multi_positive": true,
     "avg_positives_per_query": 1.1495327102803738,
     "rank_distribution": {
       "rank_1": 182,
-      "rank_2_5": 79,
-      "rank_6_10": 28,
-      "rank_11_50": 26,
-      "rank_51_plus": 6
+      "rank_2_5": 81,
+      "rank_6_10": 29,
+      "rank_11_50": 22,
+      "rank_51_plus": 7
     }
   },
   "acceptance_reference": {

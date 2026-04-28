@@ -1,0 +1,71 @@
+{
+  "pipeline": "finetune_st_v3_iterative_hn_e5_base_bidirectional",
+  "timestamp": "2026-04-28T05:55:06.561428+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional",
+  "base_model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional",
+  "experiment_name": "v3_iterative_hn_e5_base_bidirectional",
+  "variant": "all",
+  "epochs": 2,
+  "batch_size": 16,
+  "learning_rate": 0.000005,
+  "temperature": 0.05,
+  "bidirectional": true,
+  "loss": "explicit_negative_mnrl_style_cross_entropy",
+  "mining": {
+    "source_model": "models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional",
+    "total_negative_rows": 3997,
+    "difficulty_counts": {
+      "medium": 2526,
+      "hard": 1471
+    },
+    "anchors_with_negative": 2530,
+    "anchors_without_negative": 33,
+    "valid_anchor_ratio": 0.9871244635193133,
+    "auto_pass": true,
+    "risk_ratio": 0.2654490868151113
+  },
+  "retrieval_metrics": {
+    "esp_to_shi": {
+      "recall@1": 0.7881619937694704,
+      "recall@5": 0.9283489096573209,
+      "recall@10": 0.9781931464174455,
+      "mrr": 0.8480121566324221,
+      "mean_rank": 2.1713395638629285,
+      "total_pairs": 321,
+      "rank_distribution": {
+        "rank_1": 253,
+        "rank_2_5": 45,
+        "rank_6_10": 16,
+        "rank_11_50": 5,
+        "rank_51_plus": 2
+      },
+      "top1_errors": 68
+    },
+    "shi_to_esp": {
+      "recall@1": 0.7912772585669782,
+      "recall@5": 0.956386292834891,
+      "recall@10": 0.9688473520249221,
+      "mrr": 0.8617404853349272,
+      "mean_rank": 1.9532710280373833,
+      "total_pairs": 321,
+      "rank_distribution": {
+        "rank_1": 254,
+        "rank_2_5": 53,
+        "rank_6_10": 4,
+        "rank_11_50": 10,
+        "rank_51_plus": 0
+      },
+      "top1_errors": 67
+    }
+  },
+  "acceptance_reference": {
+    "previous_candidate": "v2_hn_controlled_e5_base_bidirectional",
+    "esp_to_shi_recall@1": 0.7507788161993769,
+    "shi_to_esp_recall@1": 0.778816199376947,
+    "esp_to_shi_mrr": 0.8276222876925469,
+    "shi_to_esp_mrr": 0.8554933203249137,
+    "esp_to_shi_top1_errors": 80,
+    "shi_to_esp_top1_errors": 71
+  },
+  "decision": "accepted_as_current_embedding_candidate"
+}

@@ -1,0 +1,64 @@
+{
+  "pipeline": "hard_negative_controlled",
+  "timestamp": "2026-04-28T05:44:08.566834+00:00",
+  "source_model": "models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional",
+  "top_k": 50,
+  "margin_rules": {
+    "hard": [
+      0.05,
+      0.15
+    ],
+    "medium": [
+      0.15,
+      0.3
+    ]
+  },
+  "counts": {
+    "total_anchors": 2563,
+    "anchors_with_negative": 2530,
+    "anchors_without_negative": 33,
+    "valid_anchor_ratio": 0.9871244635193133,
+    "total_negative_rows": 3997,
+    "difficulty_counts": {
+      "medium": 2526,
+      "hard": 1471
+    },
+    "same_group_discards": 414,
+    "duplicate_discards": 0,
+    "too_hard_discards": 1414,
+    "too_easy_discards": 82409
+  },
+  "similarity": {
+    "sim_positive": {
+      "mean": 0.7662603907400828,
+      "std": 0.07304312605336512,
+      "min": 0.4527033269405365,
+      "p50": 0.7672851085662842,
+      "max": 0.9363856911659241
+    },
+    "sim_negative": {
+      "mean": 0.6129043791513011,
+      "std": 0.0796401206013519,
+      "min": 0.35520583391189575,
+      "p50": 0.6131946444511414,
+      "max": 0.8721757531166077
+    },
+    "margin": {
+      "mean": 0.15335601158878162,
+      "std": 0.0532069801686911,
+      "min": 0.05014711618423462,
+      "p50": 0.15714764595031738,
+      "max": 0.2999982237815857
+    }
+  },
+  "quality_gate": {
+    "auto_pass": true,
+    "reason": "Valid anchor ratio and margins are acceptable."
+  },
+  "artifacts": {
+    "negatives_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/train_hard_negatives_v3_iterative_hn_e5_base_bidirectional.csv",
+    "sample_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v3_iterative_hn_e5_base_bidirectional/hard_negatives_v3_iterative_hn_e5_base_bidirectional_sample.csv",
+    "report_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/v3_iterative_hn_e5_base_bidirectional/hard_negatives_v3_iterative_hn_e5_base_bidirectional_report.json"
+  },
+  "elapsed_seconds": 5.109219
+}

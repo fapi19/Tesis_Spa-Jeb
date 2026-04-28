@@ -1,0 +1,26 @@
+{
+  "pipeline": "evaluate_retrieval",
+  "timestamp": "2026-04-28T05:33:44.680859+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional",
+  "tag": "v2_hn_controlled_e5_base_bidirectional_esp_to_shi",
+  "direction": "esp_to_shi",
+  "metrics": {
+    "recall@1": 0.7507788161993769,
+    "recall@5": 0.9283489096573209,
+    "recall@10": 0.9688473520249221,
+    "mrr": 0.8276222876925469,
+    "mean_rank": 2.884735202492212,
+    "total_pairs": 321,
+    "multi_positive": true,
+    "avg_positives_per_query": 1.1495327102803738,
+    "rank_distribution": {
+      "rank_1": 241,
+      "rank_2_5": 57,
+      "rank_6_10": 13,
+      "rank_11_50": 8,
+      "rank_51_plus": 2
+    },
+    "direction": "esp_to_shi"
+  },
+  "elapsed_seconds": 1.748777
+}

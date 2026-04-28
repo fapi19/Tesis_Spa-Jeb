@@ -91,14 +91,44 @@ def parse_args() -> argparse.Namespace:
         default=2e-5,
         help="Learning rate (default: 2e-5)"
     )
+    parser.add_argument(
+        "--output-name",
+        type=str,
+        default=None,
+        help="Nombre de salida para guardar modelo/reportes sin sobrescribir defaults"
+    )
+    parser.add_argument(
+        "--bidirectional",
+        action="store_true",
+        help="Duplica pares de entrenamiento/evaluación como español->Shiwlu y Shiwlu->español"
+    )
     return parser.parse_args()
 
 
-def build_pair_dataset(df: pd.DataFrame) -> Dataset:
+def stage_tag(args: argparse.Namespace, default: str) -> str:
+    return args.output_name or default
+
+
+def stage_model_dir(args: argparse.Namespace, default_dir: Path) -> Path:
+    if args.output_name:
+        return MODEL_DIR / args.output_name
+    return default_dir
+
+
+def build_pair_dataset(df: pd.DataFrame, *, bidirectional: bool = False) -> Dataset:
     """Construye Dataset de pares con prefijos E5 asimétricos."""
+    esp_texts = df["ESP_normalizado"].astype(str).tolist()
+    shi_texts = df["SHIWILU_normalizado"].astype(str).tolist()
+    anchors = [f"query: {text.strip()}" for text in esp_texts]
+    positives = [f"passage: {text.strip()}" for text in shi_texts]
+
+    if bidirectional:
+        anchors.extend(f"query: {text.strip()}" for text in shi_texts)
+        positives.extend(f"passage: {text.strip()}" for text in esp_texts)
+
     return Dataset.from_dict({
-        "anchor": [f"query: {t.strip()}" for t in df["ESP_normalizado"].astype(str)],
-        "positive": [f"passage: {t.strip()}" for t in df["SHIWILU_normalizado"].astype(str)],
+        "anchor": anchors,
+        "positive": positives,
     })
 
 
@@ -156,9 +186,10 @@ def run_baseline(args: argparse.Namespace) -> None:
     print(f"  Pares de test: {len(test_df):,}")
 
     print("\n  Evaluando retrieval...")
-    metrics = evaluate_model(model, test_df, "baseline", args.model, start_time)
+    tag = stage_tag(args, "baseline")
+    metrics = evaluate_model(model, test_df, tag, args.model, start_time)
 
-    save_stage_report("baseline", args.model, {}, metrics, start_time)
+    save_stage_report(tag, args.model, {}, metrics, start_time)
 
     print()
     print("=" * 70)
@@ -180,7 +211,10 @@ def run_v1(args: argparse.Namespace) -> None:
     print(f"  Epochs:         {epochs}")
     print(f"  Batch size:     {args.batch_size}")
     print(f"  Learning rate:  {args.lr}")
-    print(f"  Salida modelo:  {V1_DIR}")
+    print(f"  Bidireccional:  {args.bidirectional}")
+    output_dir = stage_model_dir(args, V1_DIR)
+    tag = stage_tag(args, "v1")
+    print(f"  Salida modelo:  {output_dir}")
 
     model = SentenceTransformer(args.model)
 
@@ -190,15 +224,15 @@ def run_v1(args: argparse.Namespace) -> None:
     print(f"  Train: {len(train_df):,} pares")
     print(f"  Valid: {len(valid_df):,} pares")
 
-    train_dataset = build_pair_dataset(train_df)
-    eval_dataset = build_pair_dataset(valid_df)
+    train_dataset = build_pair_dataset(train_df, bidirectional=args.bidirectional)
+    eval_dataset = build_pair_dataset(valid_df, bidirectional=args.bidirectional)
 
     loss = MultipleNegativesRankingLoss(model)
 
-    V1_DIR.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     training_args = SentenceTransformerTrainingArguments(
-        output_dir=str(V1_DIR),
+        output_dir=str(output_dir),
         num_train_epochs=epochs,
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
@@ -222,12 +256,12 @@ def run_v1(args: argparse.Namespace) -> None:
     print("\n  Iniciando entrenamiento v1...")
     trainer.train()
 
-    print(f"\n  Guardando modelo en {V1_DIR}")
-    model.save_pretrained(str(V1_DIR))
+    print(f"\n  Guardando modelo en {output_dir}")
+    model.save_pretrained(str(output_dir))
 
     print("\n  Evaluando v1 en test split...")
     test_df = load_split("test")
-    metrics = evaluate_model(model, test_df, "v1", str(V1_DIR), start_time)
+    metrics = evaluate_model(model, test_df, tag, str(output_dir), start_time)
 
     config = {
         "base_model": args.model,
@@ -235,10 +269,13 @@ def run_v1(args: argparse.Namespace) -> None:
         "batch_size": args.batch_size,
         "learning_rate": args.lr,
         "loss": "MultipleNegativesRankingLoss",
+        "bidirectional": args.bidirectional,
         "train_pairs": len(train_df),
+        "train_examples": len(train_dataset),
         "valid_pairs": len(valid_df),
+        "valid_examples": len(eval_dataset),
     }
-    save_stage_report("v1", str(V1_DIR), config, metrics, start_time)
+    save_stage_report(tag, str(output_dir), config, metrics, start_time)
 
     print()
     print("=" * 70)

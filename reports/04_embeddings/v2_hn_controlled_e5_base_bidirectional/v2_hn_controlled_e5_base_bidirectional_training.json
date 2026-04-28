@@ -1,0 +1,61 @@
+{
+  "pipeline": "finetune_st_v2_hn_controlled_e5_base_bidirectional",
+  "timestamp": "2026-04-28T05:33:52.601745+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional",
+  "base_model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/v1_e5_base_bidirectional",
+  "experiment_name": "v2_hn_controlled_e5_base_bidirectional",
+  "variant": "all",
+  "bidirectional": true,
+  "loss": "explicit_negative_mnrl_style_cross_entropy",
+  "mining": {
+    "source_model": "models/sentence_transformers/v1_e5_base_bidirectional",
+    "total_negative_rows": 4710,
+    "difficulty_counts": {
+      "medium": 2540,
+      "hard": 2170
+    },
+    "anchors_with_negative": 2553,
+    "anchors_without_negative": 10,
+    "valid_anchor_ratio": 0.9960983222785798,
+    "auto_pass": true
+  },
+  "retrieval_metrics": {
+    "esp_to_shi": {
+      "recall@1": 0.7507788161993769,
+      "recall@5": 0.9283489096573209,
+      "recall@10": 0.9688473520249221,
+      "mrr": 0.8276222876925469,
+      "mean_rank": 2.884735202492212,
+      "total_pairs": 321,
+      "rank_distribution": {
+        "rank_1": 241,
+        "rank_2_5": 57,
+        "rank_6_10": 13,
+        "rank_11_50": 8,
+        "rank_51_plus": 2
+      }
+    },
+    "shi_to_esp": {
+      "recall@1": 0.778816199376947,
+      "recall@5": 0.9501557632398754,
+      "recall@10": 0.9719626168224299,
+      "mrr": 0.8554933203249137,
+      "mean_rank": 2.3457943925233646,
+      "total_pairs": 321,
+      "rank_distribution": {
+        "rank_1": 250,
+        "rank_2_5": 55,
+        "rank_6_10": 7,
+        "rank_11_50": 7,
+        "rank_51_plus": 2
+      }
+    }
+  },
+  "acceptance_reference": {
+    "previous_candidate": "v2_hn_controlled_e5_base",
+    "esp_to_shi_recall@1": 0.7133956386292835,
+    "shi_to_esp_recall@1": 0.7165109034267912,
+    "esp_to_shi_mrr": 0.8037414007740968,
+    "shi_to_esp_mrr": 0.8057164864465598
+  }
+}
