@@ -34,6 +34,21 @@ SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
 REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
 
 
+def report_dir_for_tag(tag: str, reports_dir: Path | None = None) -> Path:
+    root = reports_dir or REPORTS_DIR
+    if tag == "baseline":
+        return root / "baseline"
+    if tag == "v1":
+        return root / "v1"
+    if tag == "v2":
+        return root / "legacy_v2"
+    if tag == "v2_hn_controlled":
+        return root / "v2_hn_controlled"
+    if tag == "v2_hn_controlled_hard":
+        return root / "v2_hn_controlled_hard"
+    return root / "experiments" / tag
+
+
 def parse_args() -> argparse.Namespace:
     """Parsea argumentos de línea de comandos."""
     parser = argparse.ArgumentParser(
@@ -228,8 +243,8 @@ def save_retrieval_report(
     reports_dir: Path | None = None
 ) -> Path:
     """Guarda reporte JSON de retrieval."""
-    reports_dir = reports_dir or REPORTS_DIR
-    reports_dir.mkdir(parents=True, exist_ok=True)
+    output_dir = report_dir_for_tag(tag, reports_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     elapsed = datetime.now(timezone.utc) - start_time
     report = {
@@ -241,7 +256,7 @@ def save_retrieval_report(
         "elapsed_seconds": elapsed.total_seconds()
     }
 
-    output_path = reports_dir / f"{tag}_retrieval.json"
+    output_path = output_dir / f"{tag}_retrieval.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
 
@@ -254,10 +269,10 @@ def save_qualitative_csv(
     reports_dir: Path | None = None
 ) -> Path:
     """Guarda análisis cualitativo como CSV."""
-    reports_dir = reports_dir or REPORTS_DIR
-    reports_dir.mkdir(parents=True, exist_ok=True)
+    output_dir = report_dir_for_tag(tag, reports_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    output_path = reports_dir / f"{tag}_qualitative.csv"
+    output_path = output_dir / f"{tag}_qualitative.csv"
     qual_df.to_csv(output_path, index=False, encoding="utf-8-sig")
     return output_path
 

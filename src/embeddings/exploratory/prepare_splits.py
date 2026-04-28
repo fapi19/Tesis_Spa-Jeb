@@ -14,7 +14,7 @@ Salida:
     data/processed/04_splits/train.csv
     data/processed/04_splits/valid.csv
     data/processed/04_splits/test.csv
-    reports/04_embeddings/splits_summary.json
+    reports/04_embeddings/preprocessing/splits_summary.json
 """
 
 import argparse
@@ -29,7 +29,7 @@ from src.embeddings.preprocess_embeddings import preprocess_embeddings
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings" / "preprocessing"
 
 TRAIN_RATIO = 0.8
 VALID_RATIO = 0.1

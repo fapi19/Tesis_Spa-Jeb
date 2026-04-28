@@ -1,0 +1,21 @@
+{
+  "pipeline": "freeze_embedding_candidate",
+  "timestamp": "2026-04-28T04:19:31.193120+00:00",
+  "candidate_model": "v2_hn_controlled",
+  "model_path": "models/sentence_transformers/finetuned_v2_hn_controlled",
+  "model_exists": true,
+  "data": {
+    "preprocess_manifest": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/preprocessing/preprocess_manifest.json",
+    "preprocess_manifest_sha256": "b3e4d245db2d521dcd46f1b901127a802b65c060e4edfe176be998e89434edb2",
+    "train_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/train.csv",
+    "valid_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/valid.csv",
+    "test_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/test.csv"
+  },
+  "reports": {
+    "mining_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/hard_negatives_controlled_report.json",
+    "retrieval_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_retrieval.json",
+    "training_report": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_training.json"
+  },
+  "decision": "candidate_final_embedding_model",
+  "next_step": "Use this model as the embedding candidate unless later ablations beat it."
+}

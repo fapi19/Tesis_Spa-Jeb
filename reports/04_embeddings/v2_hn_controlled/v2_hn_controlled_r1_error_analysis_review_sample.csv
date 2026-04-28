@@ -1,0 +1,140 @@
+﻿pair_id,group_id,rank,top1_is_positive,positive_count,esp,shiwilu_correct,top1_pair_id,top1_group_id,shiwilu_top1,correct_score,top1_score,score_gap,heuristic_error_type
+U00997,G00860,162,False,1,ten seguridad.,latek'u,U00052,G00042,musu' ñapaker',0.016849473118782043,0.45560482144355774,0.4387553483247757,severe_retrieval_failure
+U02051,G01834,110,False,1,solo bromeo.,si'lentapaleksa',U00139,G00100,empu'ni yalunta',0.09501570463180542,0.43235424160957336,0.33733853697776794,severe_retrieval_failure
+U00398,G00323,82,False,1,¿perdona?,ta'itulau,U01936,G01727,¿mudinu'pala?,0.13020041584968567,0.5504083633422852,0.4202079474925995,severe_retrieval_failure
+U00967,G00833,66,False,1,estás loca.,wa'danpindek ñapala,U01266,G01101,mu'su' ñapala,0.19454272091388702,0.5662816762924194,0.3717389553785324,shared_shiwilu_tokens
+U00121,G00087,59,False,2,crudo,nanpi,U00348,G00279,we'inu,0.09182559698820114,0.366915762424469,0.27509016543626785,gold_has_audit_flag
+U01837,G01633,53,False,1,dilo claramente.,tuker' tekinchiwalek,U01147,G01000,ta'itula'u inlli'inutechek,0.13746775686740875,0.37664785981178284,0.23918010294437408,severe_retrieval_failure
+U00560,G00465,50,False,1,soy codicioso.,iñer' luantulek wapu',U00212,G00164,shamu'lunsu' nuka'ka,0.20955584943294525,0.6167786121368408,0.40722276270389557,semantic_confusion
+U00531,G00440,31,False,2,me agradas.,tanteñek,U00734,G00614,akusuitu'u,0.26523926854133606,0.6206895112991333,0.35545024275779724,gold_has_audit_flag
+U00723,G00607,29,False,1,sé razonable.,inlli'inuter' musu',U01266,G01101,mu'su' ñapala,0.29029539227485657,0.5082656145095825,0.21797022223472595,semantic_confusion
+U00348,G00279,26,False,1,lo siento.,we'inu,U00029,G00024,yunsu'lek,0.313256174325943,0.6460394859313965,0.3327833116054535,semantic_confusion
+U01932,G01723,25,False,1,quien sea.,denpinta' ñi'i,U00122,G00087,nanpi,0.2770194709300995,0.4267149269580841,0.14969545602798462,semantic_confusion
+U03182,G02957,24,False,1,"este, entonces, el que entendía (de santos), dijo, pablo.","asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, pulu.",U03181,G02956,asui'na pablo.,0.27198323607444763,0.5940092206001282,0.32202598452568054,gold_has_audit_flag
+U02927,G02702,22,False,1,¿vinieron otra vez?,- ¿uklama' a'cha nanapu'si'la?.,U01644,G01454,¿te'kuawina?,0.25460460782051086,0.4430001676082611,0.18839555978775024,gold_has_audit_flag
+U01351,G01178,21,False,1,no engordes.,yaweyta,U00740,G00620,yainyututama',0.32350394129753113,0.6332827210426331,0.30977877974510193,semantic_confusion
+U00362,G00293,21,False,1,hace frío.,sanek'wañi,U01048,G00908,weranpalli,0.3067071735858917,0.5452881455421448,0.23858097195625305,semantic_confusion
+U01716,G01519,20,False,1,no pico.,ku'la ek'kuanpinek,U00595,G00495,yalenmek'ta,0.3764290511608124,0.6010016798973083,0.22457262873649597,semantic_confusion
+U00976,G00842,17,False,1,nos necesitas.,luantapalundek,U01078,G00937,luwantuwiñen,0.22767026722431183,0.5157006978988647,0.2880304306745529,semantic_confusion
+U03170,G02945,17,False,1,"en cuanto a nuestro nombre de fuera, luego el cura, dice, ha llegado ¿cómo te llamas? (les preguntó) 14 éste sería el origen del apellido mozombite. 15 no se ofrece una posible etimología para el apellido maca.","adipida' llillinmapu'wei'na, dai'lek pacher' ima weklli ¿ma'llin a'cha?",U03039,G02814,nanekla tulli ali'la papinku asu' pa'apalusa' enpulila keretchuna' nana wa'nakla nu'ter'kasu' pennu'pilerpachi uk'etchu tullini'ma.,0.2145368903875351,0.3775721490383148,0.16303525865077972,gold_has_audit_flag
+U00122,G00087,17,False,2,vivo,nanpi,U00348,G00279,we'inu,0.19379709661006927,0.3070104122161865,0.11321331560611725,gold_has_audit_flag
+U00288,G00229,16,False,2,atrápenlo.,pilli'tuku',U00398,G00323,ta'itulau,0.36305177211761475,0.5827038288116455,0.21965205669403076,gold_has_audit_flag
+U01084,G00943,16,False,1,entiendo.,lachekapalek,U00976,G00842,luantapalundek,0.4032818078994751,0.5423173904418945,0.13903558254241943,semantic_confusion
+U00750,G00629,15,False,1,vístete.,ishinwer',U00004,G00002,tekker',0.4706549346446991,0.6390835642814636,0.16842862963676453,semantic_confusion
+U02667,G02442,15,False,1,"entonces voy a ir respondió (arákayu), el día central del carnaval.","- nu'pachi pantetchek tan ima, mitan uklliñik'inchima.",U02476,G02251,tekkinchintana kua ñinchitulek shiwilu la'la'.,0.2989214360713959,0.4129776954650879,0.11405625939369202,gold_has_audit_flag
+U00139,G00100,15,False,1,sea breve.,empu'ni yalunta',U00560,G00465,iñer' luantulek wapu',0.3481973111629486,0.4554814398288727,0.10728412866592407,semantic_confusion
+U00029,G00024,14,False,1,salí.,yunsu'lek,U00836,G00712,nakulli,0.3593626916408539,0.6445441246032715,0.2851814329624176,semantic_confusion
+U02638,G02413,13,False,1,"no corran,","- ¡anetlla yatek kuatama',",U02634,G02409,"ñi dunan,",0.27072954177856445,0.7233783006668091,0.45264875888824463,gold_has_audit_flag
+U00638,G00532,13,False,1,hicieron trampas.,allisek nu'tapallina',U01280,G01116,tuwiñina' nu'techuna,0.3723396062850952,0.6288504004478455,0.25651079416275024,semantic_confusion
+U00783,G00660,13,False,1,me gustan.,iyatudeklek,U00734,G00614,akusuitu'u,0.3459402620792389,0.5047756433486938,0.15883538126945496,semantic_confusion
+U02719,G02494,12,False,1,dijeron salgamos todos.,tullina' ¡yu'nker'awa'!,U02846,G02621,kenmu'wi'na nanalupa' anaka'terwa'.,0.3650090992450714,0.5343362092971802,0.16932711005210876,gold_has_audit_flag
+U00478,G00392,11,False,1,¡pásenle!,enka'ku',U00145,G00105,¡tuna'ker'!,0.41770076751708984,0.7320569157600403,0.31435614824295044,semantic_confusion
+U01838,G01634,11,False,2,¿empezamos?,¿tenmiansu'ter?,U01644,G01454,¿te'kuawina?,0.354335218667984,0.5533412098884583,0.19900599122047424,gold_has_audit_flag
+U01663,G01470,11,False,1,ven entra.,weker' da'encher',U00455,G00371,kenma ekpa'ker',0.3546852469444275,0.4202730357646942,0.06558778882026672,semantic_confusion
+U02344,G02119,10,False,1,se junta la leña (para el fuego) debajo de la olla de aluminio y se hierve.,dintuntulek wa'naukta ukluka'lli.,U02486,G02261,"pa'an amantek ilañi, laman ilañi.",0.29789429903030396,0.4794284403324127,0.18153414130210876,gold_has_audit_flag
+U02002,G01788,10,False,1,me acobardé.,sapulek,U00734,G00614,akusuitu'u,0.43727579712867737,0.6027019023895264,0.165426105260849,semantic_confusion
+U01107,G00964,10,False,1,estoy dudando.,ku'la latektapi'nek,U01749,G01551,yanerilek,0.4716525971889496,0.5802560448646545,0.10860344767570496,semantic_confusion
+U00097,G00067,10,False,1,estoy mojada.,wiwerapalek,U00967,G00833,wa'danpindek ñapala,0.48077648878097534,0.5820111036300659,0.10123461484909058,semantic_confusion
+U02758,G02533,9,False,1,los lagartos negros ahí están.,matutada ñapalli.,U02697,G02472,uki'lasa' nanpichuma'.,0.2692205011844635,0.5580215454101562,0.28880104422569275,semantic_confusion
+U00734,G00614,9,False,1,cocíname (sin sopa).,akusuitu'u,U00316,G00252,mukankanku,0.35213029384613037,0.4969978332519531,0.14486753940582275,gold_has_audit_flag
+U00746,G00626,9,False,1,no fumes.,yau'wa'tuta,U00596,G00495,yalenmek'ta,0.421761691570282,0.5637233853340149,0.1419616937637329,semantic_confusion
+U01687,G01493,9,False,3,dáselo.,enka'ker',U00148,G00108,dawik',0.45556920766830444,0.5675699710845947,0.11200076341629028,gold_has_audit_flag
+U00429,G00346,9,False,1,¿entonces qué?,¿nu'pachin ma'nen?,U01004,G00867,¿yennitula lunta'mak?,0.414238840341568,0.49577024579048157,0.08153140544891357,semantic_confusion
+U00477,G01493,8,False,3,¡pásale!,enka'ker',U00592,G00492,¡tupiter'!,0.4778999090194702,0.736266016960144,0.25836610794067383,gold_has_audit_flag
+U02901,G02676,8,False,1,dijeron otras.,tullini'ma ali'ladaper.,U01284,G01116,tuwiñina' nu'techuna,0.3780180811882019,0.5691922903060913,0.1911742091178894,gold_has_audit_flag
+U00439,G00356,8,False,1,tom saludó.,tom tulli ma'pu'sin,U00260,G00207,tom iduñi,0.5513249635696411,0.6756955981254578,0.12437063455581665,shared_shiwilu_tokens
+U00815,G00691,8,False,1,estoy comprometida.,ñapalek ala'sa' enmu'pinenlek,U01455,G01273,tekua'dansu' ñapalek,0.4399951100349426,0.5346121788024902,0.09461706876754761,shared_shiwilu_tokens
+U01133,G00986,7,False,1,sigue conduciendo.,ekpa'aper'i'la,U01141,G00994,dek'kuntaper'pi'la,0.40433400869369507,0.668974757194519,0.264640748500824,semantic_confusion
+U02846,G02621,7,False,1,nosotros por ahí vamos a ser atrapados por las fieras.,kenmu'wi'na nanalupa' anaka'terwa'.,U02809,G02584,nu'su' wer'sik i'pa kuda ñillidek.,0.487971693277359,0.6507599949836731,0.1627883017063141,gold_has_audit_flag
+U00517,G00428,7,False,1,puedo saltar.,innitulek indek'ak,U01714,G01517,yennitulek a'lli'tak,0.35925984382629395,0.4844244420528412,0.12516459822654724,semantic_confusion
+U01700,G01503,7,False,1,vende frutas.,uku'latapalli wayupilusa',U01918,G01709,luwantullina' kulliker,0.2965344786643982,0.4007302224636078,0.1041957437992096,semantic_confusion
+U00327,G00262,7,False,1,me gusta.,iyatulek,U00206,G00159,mui'nek,0.4655652940273285,0.562250018119812,0.09668472409248352,semantic_confusion
+U00533,G00440,7,False,2,lo amo.,tanteñek,U00327,G00262,iyatulek,0.46398821473121643,0.5334563255310059,0.06946811079978943,gold_has_audit_flag
+U00971,G00837,7,False,1,te desmayaste.,muisu' kankantula,U01096,G00955,winlapichen,0.347904235124588,0.39464324712753296,0.046739012002944946,close_score_ambiguity
+U01839,G01634,6,False,2,¿comenzamos?,¿tenmiansu'ter?,U01644,G01454,¿te'kuawina?,0.3806706368923187,0.5653836727142334,0.18471303582191467,gold_has_audit_flag
+U01000,G00863,6,False,1,¿puedo intentar?,¿yennitulek inpaleriak?,U01001,G00864,¿yennitulek nu'tak?,0.5372888445854187,0.6932284235954285,0.15593957901000977,shared_shiwilu_tokens
+U00409,G00330,6,False,2,ella camina.,nana dekundulli,U01141,G00994,dek'kuntaper'pi'la,0.4321449100971222,0.5533156394958496,0.12117072939872742,gold_has_audit_flag
+U00317,G00253,6,False,1,puedo volar.,yen'nitulek pen'nu'ak',U01420,G01240,yawelleklek,0.4102513790130615,0.5281758904457092,0.1179245114326477,semantic_confusion
+U01118,G00973,6,False,1,¿está roto?,¿nusha'tusu' ñapalli?,U01969,G01758,¿ñapalli muin'su?,0.4185255169868469,0.5347764492034912,0.11625093221664429,semantic_confusion
+U03029,G02804,6,False,1,"sin embargo, ellos viendo a los astros (decían) miren por qué reverbean las estrellas, después se vuelan (las estrellas fugaces).","da'ilek i'na, pi'tandulalusa' lli'anna', lli'ker, ma'pu'n ipa' asu' tandula ulu' ulu'tulli, nu'an pennu'lli.",U02924,G02699,"nanek ima nawa'nta' lli'llina' mu'katapa'su' pen, pa'anna' lli'kuñina'.",0.3641863167285919,0.44037091732025146,0.07618460059165955,gold_has_audit_flag
+U02211,G01988,6,False,1,mejor vete.,a'pimuechu paker',U00495,G00407,weranker' uti'la,0.3829283118247986,0.4580729603767395,0.07514464855194092,semantic_confusion
+U00596,G00495,6,False,3,manténgase quieto.,yalenmek'ta,U02223,G02000,neriker' u'chimu,0.40837427973747253,0.4807184636592865,0.07234418392181396,gold_has_audit_flag
+U02524,G02299,5,False,1,5 se trata de un ave de malagüero. llegaron dos niños huérfanos todo cubiertos de chupos (viruela).,ektu'lli katu'ta' wila suwilalusa' iñer ima sa'la'ta'ser.,U02434,G02209,"u'chimu wilaweklusa', iñerdaper mukankañina' wilaweklusa'.",0.24615170061588287,0.4469643831253052,0.2008126825094223,gold_has_audit_flag
+U00004,G00002,5,False,1,¡corre!,tekker',U00011,G00008,¡indekker'!,0.591570258140564,0.7005434036254883,0.10897314548492432,semantic_confusion
+U01354,G01181,5,False,1,dámelo.,enka'u,U00398,G00323,ta'itulau,0.4997496008872986,0.5965240001678467,0.0967743992805481,semantic_confusion
+U01845,G01640,5,False,1,apareció humo.,lli'tulli kelliu,U00648,G00540,chuma ek'lli,0.4032217264175415,0.4801478087902069,0.0769260823726654,semantic_confusion
+U00287,G00229,5,False,2,captúrenlo.,pilli'tuku',U01689,G01493,enka'ker',0.465048611164093,0.5364652276039124,0.07141661643981934,gold_has_audit_flag
+U01128,G00981,5,False,1,está nevando.,pulunker'wanpalli,U01048,G00908,weranpalli,0.5320020318031311,0.5857364535331726,0.053734421730041504,semantic_confusion
+U02994,G02769,5,False,1,otro grupo se fue por ahí mismo queriendo conocer. volviendo ellos también hablaron.,"ali'la musu'nti'ma pa'lli nanalupa'pi'la, yaluwerkun. adencha'n nananta' luncha'lli.",U02924,G02699,"nanek ima nawa'nta' lli'llina' mu'katapa'su' pen, pa'anna' lli'kuñina'.",0.4061412513256073,0.4581563472747803,0.052015095949172974,semantic_confusion
+U00455,G00371,5,False,1,tú maneja.,kenma ekpa'ker',U01928,G01719,kana'tapala,0.34757769107818604,0.3995407521724701,0.05196306109428406,semantic_confusion
+U01209,G01050,5,False,1,son buenos.,u'chimulusa' nuker'ka,U00712,G00598,mukankaninpu' nuka'ma,0.45495903491973877,0.4934801757335663,0.038521140813827515,close_score_ambiguity
+U00732,G00613,4,False,1,¿puedes ver?,¿yennitulan'cha lli'ta'mak?,U01659,G01466,¿yennitula lli'a'mak?,0.5295928716659546,0.7580583691596985,0.2284654974937439,semantic_confusion
+U02053,G01836,4,False,1,soy zurdo.,amennan nuka'ka,U00212,G00164,shamu'lunsu' nuka'ka,0.5534946918487549,0.7135427594184875,0.16004806756973267,shared_shiwilu_tokens
+U01749,G01551,4,False,1,quiero descansar.,yanerilek,U01420,G01240,yawelleklek,0.5271106362342834,0.6599458456039429,0.13283520936965942,semantic_confusion
+U01217,G01057,4,False,1,tom insistió.,tom a'perchulli,U01555,G01367,tom tumu'pawiñi,0.6742477416992188,0.7905219793319702,0.11627423763275146,shared_shiwilu_tokens
+U00011,G00008,4,False,1,¡salta!,¡indekker'!,U00592,G00492,¡tupiter'!,0.6223093271255493,0.7237177491188049,0.10140842199325562,semantic_confusion
+U00764,G00642,4,False,1,qué raro.,empu'ni lli'inek,U00957,G00824,embu'ni we'inuipa',0.37752047181129456,0.4771610498428345,0.09964057803153992,semantic_confusion
+U02954,G02729,4,False,1,"bien ardió hasta el amanecer, quedó pura ceniza.","musui'ma ukllishin uksuketchulli, pendalu'sa' llia'lli.",U02486,G02261,"pa'an amantek ilañi, laman ilañi.",0.4794403612613678,0.5588541030883789,0.07941374182701111,semantic_confusion
+U00661,G00551,4,False,1,tom asintió.,tom tulli ajá,U00260,G00207,tom iduñi,0.7317341566085815,0.807812511920929,0.07607835531234741,shared_shiwilu_tokens
+U01986,G01773,4,False,2,¡dámelas!,¡enka'u!,U00145,G00105,¡tuna'ker'!,0.5481600761413574,0.6194229125976562,0.07126283645629883,gold_has_audit_flag
+U01738,G01540,4,False,1,te recuerdo.,lli'inutapallien,U00976,G00842,luantapalundek,0.43412449955940247,0.4984430968761444,0.06431859731674194,semantic_confusion
+U00461,G00377,4,False,1,¿estás bien?,¿mupalan'cha?,U01936,G01727,¿mudinu'pala?,0.5917503833770752,0.6411880850791931,0.04943770170211792,close_score_ambiguity
+U01804,G01601,4,False,3,es diferente.,nerpi'la nuka'a,U00362,G00293,sanek'wañi,0.38242292404174805,0.4283258318901062,0.045902907848358154,gold_has_audit_flag
+U01025,G00887,4,False,1,¿fumas?,¿u'wa'tapala?,U01937,G01727,¿mudinu'pala?,0.5102766156196594,0.5373427271842957,0.02706611156463623,close_score_ambiguity
+U01936,G01727,4,False,2,¿estás saludable?,¿mudinu'pala?,U02064,G01847,¿musu' ñapalli?,0.5593056678771973,0.5829442143440247,0.023638546466827393,gold_has_audit_flag
+U01937,G01727,4,False,2,¿estás sano?,¿mudinu'pala?,U02064,G01847,¿musu' ñapalli?,0.6161416172981262,0.623836874961853,0.007695257663726807,gold_has_audit_flag
+U00702,G00588,3,False,1,somos débiles.,saputek nuka'kudek,U01580,G01391,yalli'walusa' nuka'kawa',0.5520140528678894,0.6715548038482666,0.1195407509803772,semantic_confusion
+U01063,G00922,3,False,1,podría caminar.,yennituwinasku dekkunta',U01714,G01517,yennitulek a'lli'tak,0.34361836314201355,0.461208313703537,0.11758995056152344,semantic_confusion
+U01266,G01101,3,False,1,estás bien.,mu'su' ñapala,U00195,G00150,u'chimuku,0.5070021152496338,0.6221749782562256,0.1151728630065918,semantic_confusion
+U01969,G01758,3,False,1,¿está mal?,¿ñapalli muin'su?,U00461,G00377,¿mupalan'cha?,0.5521631836891174,0.6440484523773193,0.0918852686882019,semantic_confusion
+U00264,G00211,3,False,1,prueba esto. (saborear),lata'ker' asu',U00472,G00387,teklerier' asu',0.5591364502906799,0.6444535851478577,0.08531713485717773,gold_has_audit_flag
+U00052,G00042,3,False,1,estate tranquilo.,musu' ñapaker',U02224,G02000,neriker' u'chimu,0.41630440950393677,0.47818031907081604,0.06187590956687927,semantic_confusion
+U02825,G02600,3,False,1,él mató a la ballena.,di'tulli lanla'.,U02690,G02465,dudinpu'nen uketlli.,0.5174131989479065,0.5768522620201111,0.05943906307220459,gold_has_audit_flag
+U00472,G00387,3,False,1,comprueba esto.,teklerier' asu',U00263,G00210,lata'ku' asu',0.44262343645095825,0.4901945888996124,0.047571152448654175,close_score_ambiguity
+U01549,G01361,3,False,1,son gemelos.,insilanpi nuker'ka,U01211,G01052,aper'pilusa' nuker'ka,0.5386413335800171,0.5820974111557007,0.043456077575683594,close_score_ambiguity
+U02245,G02020,3,False,1,está envejeciendo.,taserpitapilalli,U02072,G01855,ipia'la u'lenchu,0.5306441783905029,0.5728771090507507,0.0422329306602478,close_score_ambiguity
+U00069,G00053,3,False,1,vaya despacio.,paker' uti'la,U01136,G00989,teka'per'i'la,0.4548969864845276,0.49240487813949585,0.03750789165496826,close_score_ambiguity
+U00495,G00407,3,False,1,come despacio.,weranker' uti'la,U02072,G01855,ipia'la u'lenchu,0.37222960591316223,0.40899187326431274,0.03676226735115051,close_score_ambiguity
+U01627,G01438,3,False,1,eras simpático.,u'cha'paya ñiwina,U01266,G01101,mu'su' ñapala,0.4719800353050232,0.5084366202354431,0.03645658493041992,close_score_ambiguity
+U00459,G00375,3,False,1,¿me equivoco?,¿aper'lek a'cha?,U01335,G01163,¿yennitulek lliak?,0.47583067417144775,0.5093261003494263,0.033495426177978516,close_score_ambiguity
+U02486,G02261,3,False,1,"yendo baleaba sajino, baleaba huangana.","pa'an amantek ilañi, laman ilañi.",U02563,G02338,"amilusa' wa'inutullina', willekllina'.",0.3442988395690918,0.3700588345527649,0.025759994983673096,gold_has_audit_flag
+U01987,G01773,3,False,2,¡dámelos!,¡enka'u!,U00145,G00105,¡tuna'ker'!,0.5762725472450256,0.6020026803016663,0.025730133056640625,gold_has_audit_flag
+U00195,G00150,3,False,1,soy bueno. (hacer bien algo),u'chimuku,U01451,G01269,mulun nuka'ka,0.49918538331985474,0.5145713090896606,0.015385925769805908,gold_has_audit_flag
+U01762,G01564,3,False,1,seré directo.,cheksu' ñechek,U01455,G01273,tekua'dansu' ñapalek,0.38401439785957336,0.3931725323200226,0.009158134460449219,close_score_ambiguity
+U01957,G01747,3,False,1,¿puedes mostrarme?,¿yennitula a'lli'a'muk?,U01004,G00867,¿yennitula lunta'mak?,0.625162661075592,0.6270816326141357,0.0019189715385437012,close_score_ambiguity
+U02896,G02671,2,False,1,"después, cuando se puso el sol, vieron nubes de viuda en el cielo.",nu'sik ima lli'llina' er'washinchi ekdulunlu'tek.,U02871,G02646,tekkinchima ala'simana' sekllintapilanna' ektu'llina' ala'sa' kupin mutupi.,0.43704694509506226,0.5953598022460938,0.1583128571510315,gold_has_audit_flag
+U00292,G01473,2,False,2,venid aquí.,wencher' asek,U01437,G01257,asek werenchek,0.5115481615066528,0.6349453330039978,0.12339717149734497,gold_has_audit_flag
+U02154,G01934,2,False,1,tomás entiende.,chuma lachek'lli,U00909,G00779,tomas inllipu'ite'lalli,0.5505183935165405,0.6738495826721191,0.12333118915557861,semantic_confusion
+U01219,G01059,2,False,1,tom prometió.,tom tekinchi'walek tulli,U01555,G01367,tom tumu'pawiñi,0.6548022627830505,0.7739481329917908,0.11914587020874023,shared_shiwilu_tokens
+U02697,G02472,2,False,1,de hambre nomás pasarán sus vidas.,uki'lasa' nanpichuma'.,U02886,G02661,aner enpu'ninchi yawichi'tama'.,0.44051361083984375,0.5471885204315186,0.1066749095916748,gold_has_audit_flag
+U03155,G02930,2,False,1,ahí se ha ido a quedar.,nanek ima ñikuñi.,U00242,G00192,nana teka'lli,0.4614070951938629,0.5435172319412231,0.08211013674736023,semantic_confusion
+U01455,G01273,2,False,1,estoy horrorizado.,tekua'dansu' ñapalek,U00967,G00833,wa'danpindek ñapala,0.5204398036003113,0.6021788716316223,0.08173906803131104,semantic_confusion
+U00576,G00479,2,False,1,¿aquí?,¿asek?,U00454,G00370,¿den a'cha?,0.6973533630371094,0.7758247256278992,0.0784713625907898,semantic_confusion
+U00115,G00082,2,False,1,tom comió.,tom weranpalli,U00260,G00207,tom iduñi,0.6924730539321899,0.7548921704292297,0.062419116497039795,shared_shiwilu_tokens
+U00712,G00598,2,False,1,eres mala.,mukankaninpu' nuka'ma,U01266,G01101,mu'su' ñapala,0.5630954504013062,0.6239945888519287,0.06089913845062256,semantic_confusion
+U00145,G00105,2,False,1,¡cálmate!,¡tuna'ker'!,U00592,G00492,¡tupiter'!,0.7031470537185669,0.7468085289001465,0.04366147518157959,close_score_ambiguity
+U01136,G00989,2,False,1,sigue corriendo.,teka'per'i'la,U01141,G00994,dek'kuntaper'pi'la,0.6148961186408997,0.6526480913162231,0.037751972675323486,close_score_ambiguity
+U01047,G00907,2,False,1,es francés.,francés nuka'a,U01521,G01336,nuka'a francesa,0.8200055956840515,0.8556191921234131,0.03561359643936157,close_score_ambiguity
+U00509,G00495,2,False,3,mantente quieto.,yalenmekta,U00746,G00626,yau'wa'tuta,0.499581515789032,0.5346945524215698,0.03511303663253784,gold_has_audit_flag
+U00595,G00495,2,False,3,mantente quieto.,yalenmek'ta,U00746,G00626,yau'wa'tuta,0.499581515789032,0.5346945524215698,0.03511303663253784,gold_has_audit_flag
+U02690,G02465,2,False,1,todas sus cosas se habían quemado.,dudinpu'nen uketlli.,U02548,G02323,waneranni'ma pi'shekllina'.,0.5158210396766663,0.5483660697937012,0.03254503011703491,gold_has_audit_flag
+U00436,G00353,2,False,1,tom juró.,tom tulli,U01218,G01058,tom lauk'tulli,0.7590838670730591,0.7857947945594788,0.026710927486419678,close_score_ambiguity
+U02433,G02208,2,False,1,así vivo con mis hijos.,nu'su' nanpipalek wilaweklusa'lek.,U02275,G02050,nu'anna' nawa' eknanpipallinerku.,0.5419570803642273,0.5679320693016052,0.02597498893737793,gold_has_audit_flag
+U00819,G00695,2,False,2,me voy.,pa'echek,U01354,G01181,enka'u,0.6459334492683411,0.6690811514854431,0.02314770221710205,gold_has_audit_flag
+U01229,G01068,2,False,1,pruébate estos.,tekle'rier asu'lusa,U00472,G00387,teklerier' asu',0.5142428874969482,0.5360786318778992,0.021835744380950928,close_score_ambiguity
+U00592,G00492,2,False,1,¡continúa!,¡tupiter'!,U00145,G00105,¡tuna'ker'!,0.6737822890281677,0.6941304206848145,0.02034813165664673,close_score_ambiguity
+U01451,G01269,2,False,1,soy guapa.,mulun nuka'ka,U00212,G00164,shamu'lunsu' nuka'ka,0.7170823812484741,0.7322777509689331,0.015195369720458984,close_score_ambiguity
+U01043,G00903,2,False,1,toma otro. (sostener),ma'atasu' ali'la',U00478,G00392,enka'ku',0.3911954462528229,0.4049844443798065,0.013788998126983643,gold_has_audit_flag
+U02304,G02079,2,False,1,ahora ellos quisieran aprender pero es difícil.,ipa'li'na nawa' yañinchituwiñina' saka'dek.,U02896,G02671,nu'sik ima lli'llina' er'washinchi ekdulunlu'tek.,0.4671865999698639,0.4808575212955475,0.013670921325683594,gold_has_audit_flag
+U02098,G01879,2,False,1,olvidémoslo.,pinaner'awa',U00644,G00537,ektu'lekwa',0.49868205189704895,0.5107691287994385,0.012087076902389526,close_score_ambiguity
+U01814,G01611,2,False,1,sigue buscando.,dunker'aper'i'la,U01141,G00994,dek'kuntaper'pi'la,0.48374417424201965,0.49371597170829773,0.009971797466278076,close_score_ambiguity
+U01192,G01601,2,False,3,es raro.,nerpi'la nuka'a,U00362,G00293,sanek'wañi,0.47692883014678955,0.4868231415748596,0.009894311428070068,gold_has_audit_flag
+U02189,G01969,2,False,1,¿qué hiciste?,¿ma'nen'nu'tula?,U00272,G00218,¿ma'ki'na?,0.5256217122077942,0.5340136289596558,0.008391916751861572,close_score_ambiguity
+U02709,G02484,2,False,1,de esta manera los peces nos dejaron.,nu'siklima'ka asu' samer chiketllapillenmu'wa'.,U02809,G02584,nu'su' wer'sik i'pa kuda ñillidek.,0.5692257881164551,0.5773499011993408,0.008124113082885742,gold_has_audit_flag
+U01117,G00972,2,False,2,estoy reventado.,ñapalek saka'tusu',U00967,G00833,wa'danpindek ñapala,0.4877318739891052,0.494863897562027,0.007132023572921753,gold_has_audit_flag
+U00147,G00107,2,False,1,arregla esto.,asu' tekdi'per'ker',U00472,G00387,teklerier' asu',0.6671982407569885,0.6734418869018555,0.006243646144866943,close_score_ambiguity
+U00272,G00218,2,False,1,¿para qué?,¿ma'ki'na?,U00454,G00370,¿den a'cha?,0.5538951754570007,0.5575894713401794,0.003694295883178711,close_score_ambiguity
+U00519,G00430,2,False,1,puedo cantar.,ñinchitapalek tuluner'ak,U00317,G00253,yen'nitulek pen'nu'ak',0.48005369305610657,0.4833495020866394,0.003295809030532837,close_score_ambiguity
+U00408,G00330,2,False,2,ella anda.,nana dekundulli,U00242,G00192,nana teka'lli,0.5607720017433167,0.5639392137527466,0.0031672120094299316,gold_has_audit_flag
+U02073,G01856,2,False,1,está botado.,dekpi ñapalli,U01128,G00981,pulunker'wanpalli,0.552441418170929,0.5553402304649353,0.0028988122940063477,close_score_ambiguity
+U00263,G00210,2,False,1,prueben esto. (saborear),lata'ku' asu',U00472,G00387,teklerier' asu',0.6084914207458496,0.6100707650184631,0.0015793442726135254,gold_has_audit_flag

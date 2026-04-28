@@ -9,7 +9,7 @@ Uso:
     poetry run python src/embeddings/compare_embeddings.py
 
 Salida:
-    reports/04_embeddings/comparison_report.json
+    reports/04_embeddings/exploratory/comparison_report.json
 """
 
 import json
@@ -25,8 +25,8 @@ DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset
 FASTTEXT_MODEL_PATH = PROJECT_ROOT / "models" / "fasttext" / "fasttext.model"
 ST_EMBEDDINGS_ESP = PROJECT_ROOT / "models" / "sentence_transformers" / "embeddings_esp.npy"
 ST_EMBEDDINGS_SHI = PROJECT_ROOT / "models" / "sentence_transformers" / "embeddings_shi.npy"
-ST_SCORES_PATH = PROJECT_ROOT / "reports" / "04_embeddings" / "similarity_scores.csv"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
+ST_SCORES_PATH = PROJECT_ROOT / "reports" / "04_embeddings" / "exploratory" / "similarity_scores.csv"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings" / "exploratory"
 
 
 def load_fasttext_model() -> FastText:

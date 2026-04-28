@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from .config import REPORTS_DIR, SPLITS_DIR
+from .config import REPORTS_PREPROCESSING_DIR, SPLITS_DIR
 
 
 SPLIT_NAMES = ("train", "valid", "test")
@@ -328,11 +328,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = build_parser().parse_args()
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    REPORTS_PREPROCESSING_DIR.mkdir(parents=True, exist_ok=True)
 
     report = build_report(sample_limit=args.sample_limit)
-    json_path = REPORTS_DIR / "preprocessing_closure_report.json"
-    markdown_path = REPORTS_DIR / "preprocessing_closure_report.md"
+    json_path = REPORTS_PREPROCESSING_DIR / "preprocessing_closure_report.json"
+    markdown_path = REPORTS_PREPROCESSING_DIR / "preprocessing_closure_report.md"
 
     with json_path.open("w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)

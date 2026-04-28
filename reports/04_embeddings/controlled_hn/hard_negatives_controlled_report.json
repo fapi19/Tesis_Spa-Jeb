@@ -1,0 +1,64 @@
+{
+  "pipeline": "hard_negative_controlled",
+  "timestamp": "2026-04-28T04:19:26.606064+00:00",
+  "source_model": "models/sentence_transformers/finetuned_v1",
+  "top_k": 50,
+  "margin_rules": {
+    "hard": [
+      0.05,
+      0.15
+    ],
+    "medium": [
+      0.15,
+      0.3
+    ]
+  },
+  "counts": {
+    "total_anchors": 2563,
+    "anchors_with_negative": 2341,
+    "anchors_without_negative": 222,
+    "valid_anchor_ratio": 0.9133827545844713,
+    "total_negative_rows": 3769,
+    "difficulty_counts": {
+      "hard": 2286,
+      "medium": 1483
+    },
+    "same_group_discards": 397,
+    "duplicate_discards": 0,
+    "too_hard_discards": 35831,
+    "too_easy_discards": 5049
+  },
+  "similarity": {
+    "sim_positive": {
+      "mean": 0.6205435247850153,
+      "std": 0.08893182352373107,
+      "min": 0.29537492990493774,
+      "p50": 0.621900200843811,
+      "max": 0.9016487002372742
+    },
+    "sim_negative": {
+      "mean": 0.5209832434535311,
+      "std": 0.08946955488502338,
+      "min": 0.23163214325904846,
+      "p50": 0.5208335518836975,
+      "max": 0.8399160504341125
+    },
+    "margin": {
+      "mean": 0.09956028133148412,
+      "std": 0.04934011972499371,
+      "min": 0.05000483989715576,
+      "p50": 0.07096540927886963,
+      "max": 0.2933865189552307
+    }
+  },
+  "quality_gate": {
+    "auto_pass": true,
+    "reason": "Valid anchor ratio and margins are acceptable."
+  },
+  "artifacts": {
+    "negatives_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/data/processed/04_splits/train_hard_negatives_controlled.csv",
+    "sample_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/hard_negatives_controlled_sample.csv",
+    "report_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/controlled_hn/hard_negatives_controlled_report.json"
+  },
+  "elapsed_seconds": 3.156986
+}

@@ -11,7 +11,7 @@ Uso:
 Salida:
     models/sentence_transformers/embeddings_esp.npy
     models/sentence_transformers/embeddings_shi.npy
-    reports/04_embeddings/similarity_scores.csv
+    reports/04_embeddings/exploratory/similarity_scores.csv
 """
 
 import argparse
@@ -27,7 +27,7 @@ from sentence_transformers.util import cos_sim
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DEFAULT_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "03_pre_embeddings" / "dataset_pre_embeddings.csv"
 MODEL_DIR = PROJECT_ROOT / "models" / "sentence_transformers"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings" / "exploratory"
 
 MODEL_NAME = "intfloat/multilingual-e5-small"
 

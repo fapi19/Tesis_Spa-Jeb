@@ -40,7 +40,7 @@ from sentence_transformers import (
 from sentence_transformers.losses import MultipleNegativesRankingLoss, TripletLoss
 from sentence_transformers.training_args import BatchSamplers
 
-from evaluate_retrieval import evaluate_model, load_split
+from evaluate_retrieval import evaluate_model, load_split, report_dir_for_tag
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
@@ -119,7 +119,8 @@ def save_stage_report(
     start_time: datetime
 ) -> None:
     """Guarda reporte de configuración y resultados de la etapa."""
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    output_dir = report_dir_for_tag(stage)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     elapsed = datetime.now(timezone.utc) - start_time
     report = {
@@ -131,7 +132,7 @@ def save_stage_report(
         "elapsed_seconds": elapsed.total_seconds()
     }
 
-    with open(REPORTS_DIR / f"{stage}_training.json", "w", encoding="utf-8") as f:
+    with open(output_dir / f"{stage}_training.json", "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
 
 
@@ -340,7 +341,9 @@ def run_mine_negatives(args: argparse.Namespace) -> None:
         "elapsed_seconds": elapsed.total_seconds()
     }
 
-    with open(REPORTS_DIR / "mine_negatives_report.json", "w", encoding="utf-8") as f:
+    legacy_v2_dir = REPORTS_DIR / "legacy_v2"
+    legacy_v2_dir.mkdir(parents=True, exist_ok=True)
+    with open(legacy_v2_dir / "mine_negatives_report.json", "w", encoding="utf-8") as f:
         json.dump(mining_report, f, ensure_ascii=False, indent=2)
 
     print()
@@ -357,7 +360,7 @@ def run_mine_negatives(args: argparse.Namespace) -> None:
     print("  SALIDAS:")
     print("  " + "-" * 50)
     print(f"    Triplets:  {TRIPLETS_PATH}")
-    print(f"    Reporte:   {REPORTS_DIR / 'mine_negatives_report.json'}")
+    print(f"    Reporte:   {legacy_v2_dir / 'mine_negatives_report.json'}")
     print("=" * 70)
 
 

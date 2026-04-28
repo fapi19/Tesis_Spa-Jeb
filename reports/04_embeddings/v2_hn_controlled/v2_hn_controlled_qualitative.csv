@@ -1,0 +1,41 @@
+﻿pair_id,group_id,rank,correct_score,top1_score,top1_is_positive,positive_count,esp,shiwilu_correct,shiwilu_top1,category
+U02491,G02266,1,0.746846616268158,0.746846616268158,True,1,¿cómo viviré ahora que ha muerto mi padre? me preguntaba.,¿ma'pu'si'pa' nanpichek tatawek chiminsik? tulek.,(grupo correcto),best
+U01929,G01720,1,0.7219506502151489,0.7219506502151489,True,1,están ganando.,kana'tapallina',(grupo correcto),best
+U03012,G02787,1,0.5789749026298523,0.5789749026298523,True,1,"todas esas cosas, porque dios quiere, estamos cambiando.","nanadaper ima, yus luwanta'su' malek, nana nu'apilalekwa'.",(grupo correcto),best
+U02795,G02570,1,0.4873846471309662,0.4873846471309662,True,1,nosotros silenciosamente nos acercábamos queriendo escuchar.,kudi'na ta'tushala'mudek kawidekllidek yalaukdek'amudek.,(grupo correcto),best
+U00212,G00164,1,0.6003378033638,0.6003378033638,True,1,soy delgada. (femenino),shamu'lunsu' nuka'ka,(grupo correcto),best
+U02312,G02087,1,0.4576144218444824,0.4576144218444824,True,1,desde una ciudad grande ha venido.,kupin ñinanlukla weklli.,(grupo correcto),best
+U01659,G01466,1,0.7560555934906006,0.7560555934906006,True,1,¿puedes verlo?,¿yennitula lli'a'mak?,(grupo correcto),best
+U01830,G01626,1,0.6267461776733398,0.6267461776733398,True,1,¿puedo acompañarle?,¿yennitulek ka'tan'an'su'?,(grupo correcto),best
+U02615,G02390,1,0.6404222846031189,0.6404222846031189,True,1,"se van a confundir, se van a extraviar.","aper'etchuma', wer'etchuma'.",(grupo correcto),best
+U02619,G02394,1,0.6884667873382568,0.6884667873382568,True,1,"con esa candela enciendan, corten leña, junten los palos para hacer fogata, hiervan y coman (su chilcano) dijo arákayu.","nanalek pen a'tentanma', diuk'anma', dintunma', kalu'tanma', uranku' tullima arakayu.",(grupo correcto),best
+U02432,G02207,1,0.5796302556991577,0.5796302556991577,True,1,"nosotros mismos vamos a servirnos masato y vamos a beber, mamá me dicen. nosotros mismos vamos a servirnos.","- kudinchi madektupatekkudek, uwetchidek, mamá. kudinchi mapatekkudek uklulu' uwetchidek itullinerku.",(grupo correcto),best
+U03200,G02975,1,0.5046367645263672,0.5046367645263672,True,1,"bufeo, todo tipo (de nombres) le ponen.","sapana', dudinpu' aku'llina'.",(grupo correcto),best
+U01218,G01058,1,0.8604994416236877,0.8604994416236877,True,1,tom escuchó.,tom lauk'tulli,(grupo correcto),best
+U02095,G01877,1,0.764416515827179,0.764416515827179,True,1,remontemos barriletes.,a'penu'wa' barriletes,(grupo correcto),best
+U02858,G02633,1,0.5668082237243652,0.5668082237243652,True,1,"después, dice otro viejo dijo: eso lo que están hablando no es falso,","naneklima, ali'la taserpi tulli nana tapa'mamasu' ñi da'pininpu',",(grupo correcto),best
+U02269,G02044,1,0.5130205154418945,0.5130205154418945,True,1,mis hijos varones y también mis hijas mujeres me están sirviendo.,enmu'pinenwawalusa' nu'an ku'aperwawalusa' luwektapallinerku.,(grupo correcto),best
+U02909,G02684,1,0.43991196155548096,0.43991196155548096,True,1,yo dijeron los otros.,kua tullima ali'ladaper.,(grupo correcto),best
+U02548,G02323,1,0.5661287903785706,0.5661287903785706,True,1,se detuvieron y miraron atrás.,waneranni'ma pi'shekllina'.,(grupo correcto),best
+U00964,G00830,1,0.7757371068000793,0.7757371068000793,True,1,¿quién escapó?,¿den chi'yeklli?,(grupo correcto),best
+U00301,G00240,1,0.5247431993484497,0.5247431993484497,True,1,¡es estupendo!,¡u'chimuinchi nuka'a!,(grupo correcto),best
+U01084,G00943,16,0.4032817780971527,0.5423173904418945,False,1,entiendo.,lachekapalek,luantapalundek,worst
+U03170,G02945,17,0.2145368754863739,0.3775721490383148,False,1,"en cuanto a nuestro nombre de fuera, luego el cura, dice, ha llegado ¿cómo te llamas? (les preguntó) 14 éste sería el origen del apellido mozombite. 15 no se ofrece una posible etimología para el apellido maca.","adipida' llillinmapu'wei'na, dai'lek pacher' ima weklli ¿ma'llin a'cha?",nanekla tulli ali'la papinku asu' pa'apalusa' enpulila keretchuna' nana wa'nakla nu'ter'kasu' pennu'pilerpachi uk'etchu tullini'ma.,worst
+U00122,G00087,17,0.19379709661006927,0.3070104420185089,False,2,vivo,nanpi,we'inu,worst
+U00976,G00842,17,0.22767026722431183,0.5157007575035095,False,1,nos necesitas.,luantapalundek,luwantuwiñen,worst
+U01716,G01519,20,0.37642902135849,0.601001501083374,False,1,no pico.,ku'la ek'kuanpinek,yalenmek'ta,worst
+U01351,G01178,21,0.3235040009021759,0.6332828402519226,False,1,no engordes.,yaweyta,yainyututama',worst
+U00362,G00293,21,0.3067071735858917,0.5452881455421448,False,1,hace frío.,sanek'wañi,weranpalli,worst
+U02927,G02702,22,0.25460466742515564,0.4430001676082611,False,1,¿vinieron otra vez?,- ¿uklama' a'cha nanapu'si'la?.,¿te'kuawina?,worst
+U03182,G02957,24,0.27198323607444763,0.5940092206001282,False,1,"este, entonces, el que entendía (de santos), dijo, pablo.","asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, pulu.",asui'na pablo.,worst
+U01932,G01723,25,0.2770194709300995,0.42671486735343933,False,1,quien sea.,denpinta' ñi'i,nanpi,worst
+U00348,G00279,26,0.31325623393058777,0.6460395455360413,False,1,lo siento.,we'inu,yunsu'lek,worst
+U00723,G00607,29,0.29029539227485657,0.5082655549049377,False,1,sé razonable.,inlli'inuter' musu',mu'su' ñapala,worst
+U00531,G00440,31,0.26523926854133606,0.6206895112991333,False,2,me agradas.,tanteñek,akusuitu'u,worst
+U00560,G00465,50,0.20955586433410645,0.6167786121368408,False,1,soy codicioso.,iñer' luantulek wapu',shamu'lunsu' nuka'ka,worst
+U01837,G01633,53,0.13746775686740875,0.37664785981178284,False,1,dilo claramente.,tuker' tekinchiwalek,ta'itula'u inlli'inutechek,worst
+U00121,G00087,59,0.09182559698820114,0.3669157922267914,False,2,crudo,nanpi,we'inu,worst
+U00967,G00833,66,0.19454272091388702,0.5662815570831299,False,1,estás loca.,wa'danpindek ñapala,mu'su' ñapala,worst
+U00398,G00323,82,0.13020041584968567,0.5504083633422852,False,1,¿perdona?,ta'itulau,¿mudinu'pala?,worst
+U02051,G01834,110,0.09501571208238602,0.43235427141189575,False,1,solo bromeo.,si'lentapaleksa',empu'ni yalunta',worst
+U00997,G00860,162,0.016849473118782043,0.45560482144355774,False,1,ten seguridad.,latek'u,musu' ñapaker',worst

@@ -1,0 +1,24 @@
+{
+  "pipeline": "evaluate_retrieval",
+  "timestamp": "2026-04-28T04:14:58.184888+00:00",
+  "model": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/models/sentence_transformers/finetuned_v2_hn_controlled_hard",
+  "tag": "v2_hn_controlled_hard",
+  "metrics": {
+    "recall@1": 0.5420560747663551,
+    "recall@5": 0.8068535825545171,
+    "recall@10": 0.8878504672897196,
+    "mrr": 0.6559308949263292,
+    "mean_rank": 5.638629283489097,
+    "total_pairs": 321,
+    "multi_positive": true,
+    "avg_positives_per_query": 1.1495327102803738,
+    "rank_distribution": {
+      "rank_1": 174,
+      "rank_2_5": 85,
+      "rank_6_10": 26,
+      "rank_11_50": 31,
+      "rank_51_plus": 5
+    }
+  },
+  "elapsed_seconds": 0.519824
+}

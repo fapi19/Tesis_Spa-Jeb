@@ -1,0 +1,21 @@
+{
+  "pipeline": "r1_error_analysis",
+  "timestamp": "2026-04-28T04:19:31.115651+00:00",
+  "model": "models/sentence_transformers/finetuned_v2_hn_controlled",
+  "tag": "v2_hn_controlled",
+  "total_examples": 321,
+  "top1_errors": 139,
+  "top1_accuracy": 0.5669781931464175,
+  "heuristic_error_counts": {
+    "severe_retrieval_failure": 4,
+    "shared_shiwilu_tokens": 9,
+    "gold_has_audit_flag": 48,
+    "semantic_confusion": 51,
+    "close_score_ambiguity": 27
+  },
+  "artifacts": {
+    "full_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_r1_error_analysis_full.csv",
+    "review_sample_csv": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_r1_error_analysis_review_sample.csv",
+    "summary_json": "/Users/fapi/Documents/University/10th Semester/Thesis/Tesis_Spa-Jeb/reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_r1_error_analysis_summary.json"
+  }
+}

@@ -275,8 +275,8 @@ error crítico.
 
 - Script principal: `src/embeddings/preprocess_embeddings.py`
 - Auditoría de cierre: `src/embeddings/audit_preprocessing.py`
-- Manifiesto: `reports/04_embeddings/preprocess_manifest.json`
-- Reporte de cierre: `reports/04_embeddings/preprocessing_closure_report.md`
+- Manifiesto: `reports/04_embeddings/preprocessing/preprocess_manifest.json`
+- Reporte de cierre: `reports/04_embeddings/preprocessing/preprocessing_closure_report.md`
 
 ### Artefactos canónicos
 
@@ -315,5 +315,41 @@ error crítico.
 
 No limpiar pensando en español. Limpiar sin romper morfología shiwilu.
 
-La siguiente fase debe ser evaluación y entrenamiento de embeddings, empezando por
-baseline E5 y fine-tuning `v1` sobre los splits canónicos.
+## 12. Estado actual de embeddings
+
+La fase de evaluación/entrenamiento de embeddings ya produjo un candidato actual:
+`v2_hn_controlled`.
+
+### Modelos evaluados
+
+| Modelo | Descripción | R@1 | R@5 | R@10 | MRR | Mean Rank |
+|--------|-------------|----:|----:|-----:|----:|----------:|
+| `baseline` | `intfloat/multilingual-e5-small` sin fine-tuning | 0.0966 | 0.2025 | 0.3209 | 0.1633 | 60.3 |
+| `v1` | E5 fine-tuned con `MultipleNegativesRankingLoss` | 0.5109 | 0.7788 | 0.8692 | 0.6325 | 5.9 |
+| `v2_hn_controlled_hard` | `v1` + hard negatives | 0.5421 | 0.8069 | 0.8879 | 0.6559 | 5.6 |
+| `v2_hn_controlled` | `v1` + hard/medium negatives | **0.5670** | **0.8131** | **0.9003** | **0.6770** | **5.2** |
+
+### Decisión actual
+
+- `v2_hn_controlled` es el candidato actual de embeddings.
+- `v1` queda como baseline fuerte.
+- `legacy_v2` no debe usarse como modelo principal porque venía de hard negatives
+  no controlados y degradaba resultados.
+
+### Organización de reportes
+
+Los reportes de embeddings están organizados en `reports/04_embeddings/`:
+
+- `preprocessing/`: cierre del preprocesamiento.
+- `baseline/`: E5 sin fine-tuning.
+- `v1/`: fine-tuning contrastivo inicial.
+- `controlled_hn/`: minería y validación de hard/medium negatives.
+- `v2_hn_controlled/`: candidato actual.
+- `v2_hn_controlled_hard/`: ablación hard-only.
+- `legacy_v2/`: experimento anterior no controlado.
+- `exploratory/`: reportes exploratorios previos.
+
+### Siguiente fase
+
+Usar `v2_hn_controlled` como candidato de embeddings para análisis posterior e
+integración/evaluación con NMT. No reabrir el preprocesamiento salvo error crítico.

@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
-from .config import RAW_CSV, REPORTS_DIR, SPLITS_DIR
+from .config import RAW_CSV, REPORTS_PREPROCESSING_DIR, SPLITS_DIR
 
 
 TRAIN_RATIO = 0.8
@@ -363,7 +363,7 @@ def save_outputs(
     started_at: datetime,
 ) -> None:
     SPLITS_DIR.mkdir(parents=True, exist_ok=True)
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    REPORTS_PREPROCESSING_DIR.mkdir(parents=True, exist_ok=True)
 
     write_jsonl(SPLITS_DIR / "train.jsonl", splits["train"])
     write_jsonl(SPLITS_DIR / "valid.jsonl", splits["valid"])
@@ -380,7 +380,7 @@ def save_outputs(
 
     included = splits["train"] + splits["valid"] + splits["test"]
     write_manifest(
-        REPORTS_DIR / "preprocess_manifest.json",
+        REPORTS_PREPROCESSING_DIR / "preprocess_manifest.json",
         input_path=input_path,
         seed=seed,
         original_count=original_count,
@@ -434,7 +434,7 @@ def main() -> None:
     print(f"Train: {len(splits['train'])}")
     print(f"Valid: {len(splits['valid'])}")
     print(f"Test: {len(splits['test'])}")
-    print(f"Manifiesto: {REPORTS_DIR / 'preprocess_manifest.json'}")
+    print(f"Manifiesto: {REPORTS_PREPROCESSING_DIR / 'preprocess_manifest.json'}")
 
 
 if __name__ == "__main__":

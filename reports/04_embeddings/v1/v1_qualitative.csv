@@ -1,0 +1,41 @@
+﻿pair_id,group_id,rank,correct_score,top1_score,top1_is_positive,positive_count,esp,shiwilu_correct,shiwilu_top1,category
+U02491,G02266,1,0.7310857772827148,0.7310857772827148,True,1,¿cómo viviré ahora que ha muerto mi padre? me preguntaba.,¿ma'pu'si'pa' nanpichek tatawek chiminsik? tulek.,(grupo correcto),best
+U01096,G00955,1,0.45692208409309387,0.45692208409309387,True,1,te demandaré.,winlapichen,(grupo correcto),best
+U00260,G00207,1,0.8715742826461792,0.8715742826461792,True,1,tom nadó.,tom iduñi,(grupo correcto),best
+U01090,G00949,1,0.49093684554100037,0.49093684554100037,True,1,estaba solo.,kuashasa' ñapawinek,(grupo correcto),best
+U01420,G01240,1,0.7578071355819702,0.7578071355819702,True,1,quiero llorar.,yawelleklek,(grupo correcto),best
+U03099,G02874,1,0.6004043817520142,0.6004043817520142,True,1,"no se están peleando, aunque no nos queremos mucho.","ñi idenmapi'ñina', ñi'na musu' intantennapi'ñidek kuda.",(grupo correcto),best
+U00090,G00695,1,0.6560553312301636,0.6560553312301636,True,2,iré.,pa'echek,(grupo correcto),best
+U03024,G02799,1,0.5342558026313782,0.5342558026313782,True,1,"ahora tal vez sólo el tigre negro hay, tengan mucho cuidado, no se deja ver más.","ipa'linchi kelluluñiñi'pa' ñapa'n, inlli'inuku', ya'nlli'tapi'ñi a'pinta'.",(grupo correcto),best
+U02223,G02000,1,0.4388778805732727,0.4388778805732727,True,2,respira normal.,neriker' u'chimu,(grupo correcto),best
+U02224,G02000,1,0.5065412521362305,0.5065412521362305,True,2,respira tranquilo.,neriker' u'chimu,(grupo correcto),best
+U01492,G01309,1,0.6384232640266418,0.6384232640266418,True,1,déjelo aquí.,ta'ituler' asek,(grupo correcto),best
+U02678,G02453,1,0.6872666478157043,0.6872666478157043,True,1,y después de pandillar regresó arákayu.,nu'an ima chu'kenpa'tan adanta'lli arakayu.,(grupo correcto),best
+U02879,G02654,1,0.6274609565734863,0.6274609565734863,True,1,"¡ahí está, lleva! (duende)","- ¡ma'ata'na, ekpanter!",(grupo correcto),best
+U02397,G02172,1,0.7104889750480652,0.7104889750480652,True,1,"los que la entienden, la entienden, pero los que no la entienden no pueden entender.","lachek'erkasu' lachekllina', lachek'inpu'erkasui'na innichi'ñina' lachek'erkasu'.",(grupo correcto),best
+U02434,G02209,1,0.5814630389213562,0.5814630389213562,True,1,"buenos son mis hijos, todos mis hijos son buenos.","u'chimu wilaweklusa', iñerdaper mukankañina' wilaweklusa'.",(grupo correcto),best
+U02720,G02495,1,0.5191394090652466,0.5191394090652466,True,1,"dicen que una joven que mestruaba por primera vez se había ido ahí, cuando arákayu estaba enojado.","nanek ima leklun panta'lli, arakayu ima yupasik.",(grupo correcto),best
+U02412,G02187,1,0.6963072419166565,0.6963072419166565,True,1,ahora en mi jeberos ya no hablan más esta nuestra lengua shiwilu.,ipa'la shiwiluwekkek ñi a'pinta' lunpi'ñina' asu' shiwilu la'la'mapu'wa'.,(grupo correcto),best
+U03070,G02845,1,0.633382260799408,0.633382260799408,True,1,con eso vamos a golpear sus cabezas para matar a esos wiracochas!,nana'lek llipu'mutu'tan dei'tawa' nana wa'dan!,(grupo correcto),best
+U03181,G02956,1,0.7409826517105103,0.7409826517105103,True,1,este es pablo.,asui'na pablo.,(grupo correcto),best
+U02970,G02745,1,0.4805941581726074,0.4805941581726074,True,1,"calladitos pasaron (el viento se levanta, dice, cuando se pasa haciendo bulla).",ta'tushalai'ni'ma nakutullina' (tanluwa ima yunsanpalli lamapu'nna' nakuerkasu').,(grupo correcto),best
+U00029,G00024,18,0.33326610922813416,0.5808866024017334,False,1,salí.,yunsu'lek,nakulli,worst
+U00596,G00495,21,0.3457370400428772,0.5119386911392212,False,3,manténgase quieto.,yalenmek'ta,weranker' uti'la,worst
+U00746,G00626,21,0.3546372354030609,0.6052283048629761,False,1,no fumes.,yau'wa'tuta,yalenmek'ta,worst
+U01716,G01519,22,0.3878365457057953,0.6321733593940735,False,1,no pico.,ku'la ek'kuanpinek,yalenmek'ta,worst
+U00122,G00087,25,0.15008118748664856,0.2981935739517212,False,2,vivo,nanpi,mukankanku,worst
+U01932,G01723,27,0.26693499088287354,0.43133899569511414,False,1,quien sea.,denpinta' ñi'i,nanpi,worst
+U00348,G00279,27,0.357617050409317,0.657584011554718,False,1,lo siento.,we'inu,yunsu'lek,worst
+U00362,G00293,29,0.3125091791152954,0.6095647215843201,False,1,hace frío.,sanek'wañi,ipia'la u'lenchu,worst
+U01351,G01178,29,0.30581432580947876,0.6421306729316711,False,1,no engordes.,yaweyta,yalenmek'ta,worst
+U00531,G00440,31,0.31311163306236267,0.6372191905975342,False,2,me agradas.,tanteñek,akusuitu'u,worst
+U00976,G00842,37,0.18247631192207336,0.4910776615142822,False,1,nos necesitas.,luantapalundek,ektu'lekwa',worst
+U00723,G00607,42,0.2917337119579315,0.5142602920532227,False,1,sé razonable.,inlli'inuter' musu',mukankaninpu' nuka'ma,worst
+U00560,G00465,45,0.3071119785308838,0.645015299320221,False,1,soy codicioso.,iñer' luantulek wapu',shamu'lunsu' nuka'ka,worst
+U03182,G02957,49,0.22692255675792694,0.54624342918396,False,1,"este, entonces, el que entendía (de santos), dijo, pablo.","asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, pulu.",asui'na pablo.,worst
+U00121,G00087,61,0.09152045845985413,0.3749045431613922,False,2,crudo,nanpi,mukankanku,worst
+U00967,G00833,62,0.2455269992351532,0.5564501881599426,False,1,estás loca.,wa'danpindek ñapala,mu'su' ñapala,worst
+U01837,G01633,63,0.12658226490020752,0.39380890130996704,False,1,dilo claramente.,tuker' tekinchiwalek,inlli'inuter' musu',worst
+U00398,G00323,82,0.1163993552327156,0.6234424710273743,False,1,¿perdona?,ta'itulau,¿mudinu'pala?,worst
+U02051,G01834,132,0.09201111644506454,0.42945393919944763,False,1,solo bromeo.,si'lentapaleksa',empu'ni yalunta',worst
+U00997,G00860,148,0.043697770684957504,0.50514155626297,False,1,ten seguridad.,latek'u,kenma ekpa'ker',worst

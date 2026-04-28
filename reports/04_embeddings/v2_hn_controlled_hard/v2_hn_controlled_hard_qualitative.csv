@@ -1,0 +1,41 @@
+﻿pair_id,group_id,rank,correct_score,top1_score,top1_is_positive,positive_count,esp,shiwilu_correct,shiwilu_top1,category
+U02491,G02266,1,0.7422180771827698,0.7422180771827698,True,1,¿cómo viviré ahora que ha muerto mi padre? me preguntaba.,¿ma'pu'si'pa' nanpichek tatawek chiminsik? tulek.,(grupo correcto),best
+U02392,G02167,1,0.668366014957428,0.668366014957428,True,1,"así se hace hermanas, señoras,","nu'tulek kai kualusa', senñula'lusa',",(grupo correcto),best
+U02665,G02440,1,0.7171691060066223,0.7171691060066223,True,1,le fueron a decir los policías:,wintunta'llima wala'wanlusa'ler:,(grupo correcto),best
+U01929,G01720,1,0.6965649127960205,0.6965649127960205,True,1,están ganando.,kana'tapallina',(grupo correcto),best
+U03012,G02787,1,0.5594648718833923,0.5594648718833923,True,1,"todas esas cosas, porque dios quiere, estamos cambiando.","nanadaper ima, yus luwanta'su' malek, nana nu'apilalekwa'.",(grupo correcto),best
+U02795,G02570,1,0.5136008858680725,0.5136008858680725,True,1,nosotros silenciosamente nos acercábamos queriendo escuchar.,kudi'na ta'tushala'mudek kawidekllidek yalaukdek'amudek.,(grupo correcto),best
+U00212,G00164,1,0.5836887955665588,0.5836887955665588,True,1,soy delgada. (femenino),shamu'lunsu' nuka'ka,(grupo correcto),best
+U02312,G02087,1,0.4056398272514343,0.4056398272514343,True,1,desde una ciudad grande ha venido.,kupin ñinanlukla weklli.,(grupo correcto),best
+U01659,G01466,1,0.7645565867424011,0.7645565867424011,True,1,¿puedes verlo?,¿yennitula lli'a'mak?,(grupo correcto),best
+U01830,G01626,1,0.6665477156639099,0.6665477156639099,True,1,¿puedo acompañarle?,¿yennitulek ka'tan'an'su'?,(grupo correcto),best
+U02615,G02390,1,0.6147929430007935,0.6147929430007935,True,1,"se van a confundir, se van a extraviar.","aper'etchuma', wer'etchuma'.",(grupo correcto),best
+U02619,G02394,1,0.6733041405677795,0.6733041405677795,True,1,"con esa candela enciendan, corten leña, junten los palos para hacer fogata, hiervan y coman (su chilcano) dijo arákayu.","nanalek pen a'tentanma', diuk'anma', dintunma', kalu'tanma', uranku' tullima arakayu.",(grupo correcto),best
+U01147,G01000,1,0.553093433380127,0.553093433380127,True,1,déjame pensar.,ta'itula'u inlli'inutechek,(grupo correcto),best
+U02432,G02207,1,0.5656699538230896,0.5656699538230896,True,1,"nosotros mismos vamos a servirnos masato y vamos a beber, mamá me dicen. nosotros mismos vamos a servirnos.","- kudinchi madektupatekkudek, uwetchidek, mamá. kudinchi mapatekkudek uklulu' uwetchidek itullinerku.",(grupo correcto),best
+U01218,G01058,1,0.8578463196754456,0.8578463196754456,True,1,tom escuchó.,tom lauk'tulli,(grupo correcto),best
+U02095,G01877,1,0.7732295989990234,0.7732295989990234,True,1,remontemos barriletes.,a'penu'wa' barriletes,(grupo correcto),best
+U02858,G02633,1,0.5712155103683472,0.5712155103683472,True,1,"después, dice otro viejo dijo: eso lo que están hablando no es falso,","naneklima, ali'la taserpi tulli nana tapa'mamasu' ñi da'pininpu',",(grupo correcto),best
+U01814,G01611,1,0.49353131651878357,0.49353131651878357,True,1,sigue buscando.,dunker'aper'i'la,(grupo correcto),best
+U02269,G02044,1,0.45440712571144104,0.45440712571144104,True,1,mis hijos varones y también mis hijas mujeres me están sirviendo.,enmu'pinenwawalusa' nu'an ku'aperwawalusa' luwektapallinerku.,(grupo correcto),best
+U02548,G02323,1,0.5360101461410522,0.5360101461410522,True,1,se detuvieron y miraron atrás.,waneranni'ma pi'shekllina'.,(grupo correcto),best
+U00029,G00024,18,0.3493988513946533,0.6026030778884888,False,1,salí.,yunsu'lek,nakulli,worst
+U02927,G02702,18,0.29635855555534363,0.4651019871234894,False,1,¿vinieron otra vez?,- ¿uklama' a'cha nanapu'si'la?.,¿te'kuawina?,worst
+U01932,G01723,20,0.2899097204208374,0.41875725984573364,False,1,quien sea.,denpinta' ñi'i,nanpi,worst
+U01107,G00964,20,0.3984996974468231,0.6049199104309082,False,1,estoy dudando.,ku'la latektapi'nek,tumu'tulliner'ku,worst
+U01716,G01519,24,0.37956753373146057,0.5956991910934448,False,1,no pico.,ku'la ek'kuanpinek,yalenmek'ta,worst
+U01351,G01178,26,0.3058590590953827,0.628131091594696,False,1,no engordes.,yaweyta,yainyututama',worst
+U00348,G00279,27,0.3073135018348694,0.6281188726425171,False,1,lo siento.,we'inu,yunsu'lek,worst
+U00362,G00293,27,0.32288113236427307,0.5655205845832825,False,1,hace frío.,sanek'wañi,ipia'la u'lenchu,worst
+U03182,G02957,33,0.2511495351791382,0.5417603850364685,False,1,"este, entonces, el que entendía (de santos), dijo, pablo.","asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, pulu.",asui'na pablo.,worst
+U00531,G00440,34,0.23369960486888885,0.5839047431945801,False,2,me agradas.,tanteñek,akusuitu'u,worst
+U00288,G00229,34,0.29729652404785156,0.6032732725143433,False,2,atrápenlo.,pilli'tuku',ta'itulau,worst
+U00976,G00842,36,0.14695259928703308,0.46901142597198486,False,1,nos necesitas.,luantapalundek,luwantuwiñen,worst
+U00560,G00465,41,0.2656603157520294,0.6094974279403687,False,1,soy codicioso.,iñer' luantulek wapu',shamu'lunsu' nuka'ka,worst
+U00723,G00607,42,0.25147607922554016,0.4729432463645935,False,1,sé razonable.,inlli'inuter' musu',mukankaninpu' nuka'ma,worst
+U00967,G00833,46,0.2540431320667267,0.542029082775116,False,1,estás loca.,wa'danpindek ñapala,mu'su' ñapala,worst
+U00121,G00087,57,0.062112584710121155,0.32721439003944397,False,2,crudo,nanpi,mukankanku,worst
+U01837,G01633,78,0.07005374133586884,0.3589000999927521,False,1,dilo claramente.,tuker' tekinchiwalek,inlli'inuter' musu',worst
+U00398,G00323,80,0.11582806706428528,0.5605084300041199,False,1,¿perdona?,ta'itulau,¿mudinu'pala?,worst
+U02051,G01834,107,0.1324833333492279,0.42967352271080017,False,1,solo bromeo.,si'lentapaleksa',empu'ni yalunta',worst
+U00997,G00860,183,-0.007651153020560741,0.414933979511261,False,1,ten seguridad.,latek'u,musu' ñapaker',worst

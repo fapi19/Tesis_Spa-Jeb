@@ -17,7 +17,7 @@ La fase de preprocesamiento para embeddings Shiwlu-español está cerrada. El
 pipeline canónico quedó en `src/embeddings/preprocess_embeddings.py` y fue
 validado con `src/embeddings/audit_preprocessing.py`.
 
-Resumen actual:
+Resumen actual de datos:
 
 - Dataset original: `3207` pares.
 - Dataset incluido: `3204` pares.
@@ -31,8 +31,15 @@ Resumen actual:
 Regla central: no limpiar pensando en español; limpiar sin romper morfología
 shiwilu.
 
-Siguiente fase: evaluación y entrenamiento de embeddings, empezando por baseline
-E5 y fine-tuning `v1` sobre los splits canónicos.
+Modelo candidato actual:
+
+- `v2_hn_controlled`
+- Base: `intfloat/multilingual-e5-small`
+- Etapas: baseline E5 -> fine-tuning `v1` -> hard/medium negative mining controlado
+- Métricas: `R@1=0.5670`, `R@5=0.8131`, `R@10=0.9003`, `MRR=0.6770`
+
+Siguiente fase: usar `v2_hn_controlled` como candidato de embeddings para análisis
+posterior y preparar su integración/evaluación con NMT.
 
 ---
 
@@ -105,11 +112,15 @@ Desarrollo/
 │   │   ├── problem_rows.csv
 │   │   └── summary.json
 │   └── 04_embeddings/
-│       ├── similarity_scores.csv       # Scores de similitud cross-lingual
-│       ├── comparison_report.json      # Comparación FastText vs ST
-│       ├── preprocess_manifest.json    # Manifiesto del split canónico
-│       ├── preprocessing_closure_report.json
-│       └── preprocessing_closure_report.md
+│       ├── README.md                   # Organización de reportes de embeddings
+│       ├── preprocessing/              # Manifiesto y cierre del preprocesamiento
+│       ├── baseline/                   # E5 sin fine-tuning
+│       ├── v1/                         # E5 + MultipleNegativesRankingLoss
+│       ├── controlled_hn/              # Minería/validación de negativos
+│       ├── v2_hn_controlled/           # Modelo candidato actual
+│       ├── v2_hn_controlled_hard/      # Ablación hard-only
+│       ├── legacy_v2/                  # Triplets antiguos no controlados
+│       └── exploratory/                # Reportes exploratorios previos
 ├── pyproject.toml
 ├── poetry.lock
 ├── .gitignore
@@ -373,8 +384,8 @@ poetry run python -m src.embeddings.audit_preprocessing
 - `data/processed/04_splits/valid.csv`
 - `data/processed/04_splits/test.csv`
 - `data/processed/04_splits/all_text_for_sp.txt`
-- `reports/04_embeddings/preprocess_manifest.json`
-- `reports/04_embeddings/preprocessing_closure_report.md`
+- `reports/04_embeddings/preprocessing/preprocess_manifest.json`
+- `reports/04_embeddings/preprocessing/preprocessing_closure_report.md`
 
 **Decisiones fijadas:**
 
@@ -389,14 +400,20 @@ poetry run python -m src.embeddings.audit_preprocessing
 
 ## Etapa 05: Entrenamiento y evaluación de embeddings
 
-Esta es la siguiente fase. Debe partir de los splits canónicos de la etapa 04.
+Esta etapa ya produjo el candidato actual `v2_hn_controlled`. Todos los modelos
+se evaluaron con retrieval español -> Shiwlu y multi-positivo por `group_id`.
 
-Primeros pasos recomendados:
+| Modelo | Entrenamiento | R@1 | R@5 | R@10 | MRR | Mean Rank |
+|--------|---------------|----:|----:|-----:|----:|----------:|
+| `baseline` | E5 sin fine-tuning | 0.0966 | 0.2025 | 0.3209 | 0.1633 | 60.3 |
+| `v1` | E5 + `MultipleNegativesRankingLoss` | 0.5109 | 0.7788 | 0.8692 | 0.6325 | 5.9 |
+| `v2_hn_controlled_hard` | `v1` + hard negatives | 0.5421 | 0.8069 | 0.8879 | 0.6559 | 5.6 |
+| `v2_hn_controlled` | `v1` + hard/medium negatives | **0.5670** | **0.8131** | **0.9003** | **0.6770** | **5.2** |
 
-1. Evaluar baseline `intfloat/multilingual-e5-small` sobre `test.csv`.
-2. Reentrenar/fine-tunear `v1` con `train.csv` y `valid.csv`.
-3. Actualizar la evaluación para considerar `group_id` como multi-positivo.
-4. Comparar baseline vs `v1` con `R@1`, `R@5`, `R@10` y `MRR`.
+El modelo `v2_hn_controlled` queda congelado como candidato actual en:
+
+- `models/sentence_transformers/finetuned_v2_hn_controlled`
+- `reports/04_embeddings/v2_hn_controlled/v2_hn_controlled_freeze_metadata.json`
 
 ---
 
@@ -415,9 +432,9 @@ Primeros pasos recomendados:
 | 03 | `data/processed/03_pre_embeddings/` | `dataset_pre_embeddings.csv` | **Dataset final para embeddings** |
 | 03 | `reports/03_auditoria/` | `problem_rows.csv`, `summary.json` | Problemas y estadísticas |
 | 04 | `data/processed/04_splits/` | `train.jsonl`, `valid.jsonl`, `test.jsonl`, `all_text_for_sp.txt` | **Preprocesamiento canónico de embeddings** |
-| 04 | `reports/04_embeddings/` | `preprocess_manifest.json`, `preprocessing_closure_report.*` | Manifiesto y cierre del preprocesamiento |
+| 04 | `reports/04_embeddings/preprocessing/` | `preprocess_manifest.json`, `preprocessing_closure_report.*` | Manifiesto y cierre del preprocesamiento |
 | 05 | `models/sentence_transformers/` | modelos fine-tuned | **Entrenamiento/evaluación de embeddings** |
-| 05 | `reports/04_embeddings/` | `*_retrieval.json`, `*_training.json` | Métricas de retrieval y entrenamiento |
+| 05 | `reports/04_embeddings/{baseline,v1,v2_hn_controlled}/` | `*_retrieval.json`, `*_training.json` | Métricas de retrieval y entrenamiento |
 
 ---
 
@@ -471,8 +488,6 @@ por lingüistas.
 
 ## Próximos pasos
 
-- Actualizar evaluación de retrieval para usar `group_id` como multi-positivo.
-- Evaluar baseline `intfloat/multilingual-e5-small` sobre los splits canónicos.
-- Reentrenar/fine-tunear `v1` con `train.csv` y `valid.csv`.
-- Comparar baseline vs `v1` con `R@1`, `R@5`, `R@10` y `MRR`.
-- Pasar a NMT solo después de fijar el modelo de embeddings.
+- Revisar cualitativamente los errores de `v2_hn_controlled` en `reports/04_embeddings/v2_hn_controlled/`.
+- Usar `v2_hn_controlled` como candidato de embeddings para la siguiente fase.
+- Preparar integración/evaluación con NMT sin reabrir el preprocesamiento de embeddings.
