@@ -9,3 +9,4 @@ build/
 models/*
 !models/.gitkeep
 .hf_cache/
+.conda-emb

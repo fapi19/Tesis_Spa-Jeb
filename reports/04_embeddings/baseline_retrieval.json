@@ -1,21 +1,24 @@
 {
   "pipeline": "evaluate_retrieval",
-  "timestamp": "2026-04-10T06:38:12.421015+00:00",
+  "timestamp": "2026-04-28T03:46:50.269123+00:00",
   "model": "intfloat/multilingual-e5-small",
   "tag": "baseline",
   "metrics": {
-    "recall@1": 0.06770833333333333,
-    "recall@5": 0.16145833333333334,
-    "mrr": 0.13260091948576766,
-    "mean_rank": 56.307291666666664,
-    "total_pairs": 192,
+    "recall@1": 0.09657320872274143,
+    "recall@5": 0.20249221183800623,
+    "recall@10": 0.32087227414330216,
+    "mrr": 0.16330402922152704,
+    "mean_rank": 60.25233644859813,
+    "total_pairs": 321,
+    "multi_positive": true,
+    "avg_positives_per_query": 1.1495327102803738,
     "rank_distribution": {
-      "rank_1": 13,
-      "rank_2_5": 18,
-      "rank_6_10": 17,
-      "rank_11_50": 55,
-      "rank_51_plus": 89
+      "rank_1": 31,
+      "rank_2_5": 34,
+      "rank_6_10": 38,
+      "rank_11_50": 95,
+      "rank_51_plus": 123
     }
   },
-  "elapsed_seconds": 11.792845
+  "elapsed_seconds": 19.824145
 }

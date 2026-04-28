@@ -95,15 +95,35 @@ def encode_pairs(
     return emb_query, emb_passage
 
 
+def build_positive_indices(df: pd.DataFrame) -> list[set[int]]:
+    """Build multi-positive retrieval targets from group_id when available."""
+    if "group_id" not in df.columns:
+        return [{i} for i in range(len(df))]
+
+    group_ids = df["group_id"].astype(str).tolist()
+    group_to_indices: dict[str, set[int]] = {}
+    for idx, group_id in enumerate(group_ids):
+        group_to_indices.setdefault(group_id, set()).add(idx)
+    return [group_to_indices[group_id] for group_id in group_ids]
+
+
+def first_positive_rank(sorted_indices: np.ndarray, positives: set[int]) -> int:
+    for rank, idx in enumerate(sorted_indices, start=1):
+        if int(idx) in positives:
+            return rank
+    raise ValueError("No positive candidate found in ranked list.")
+
+
 def compute_retrieval_metrics(
     emb_query: np.ndarray,
-    emb_passage: np.ndarray
+    emb_passage: np.ndarray,
+    positive_indices: list[set[int]],
 ) -> dict:
     """
     Calcula métricas de retrieval bilingüe.
 
-    Para cada query_i, rankea todos los passages por similitud coseno.
-    El ground truth es que query_i corresponde a passage_i.
+    Para cada query_i, rankea todos los passages por similitud coseno. Si hay
+    group_id, cualquier fila del mismo grupo cuenta como positivo válido.
 
     Retorna dict con recall@1, recall@5, mrr y mean_rank.
     """
@@ -114,22 +134,26 @@ def compute_retrieval_metrics(
     for i in range(n):
         scores = sim_matrix[i]
         sorted_indices = np.argsort(-scores)
-        rank = int(np.where(sorted_indices == i)[0][0]) + 1
+        rank = first_positive_rank(sorted_indices, positive_indices[i])
         ranks.append(rank)
 
     ranks = np.array(ranks)
 
     recall_at_1 = float(np.mean(ranks <= 1))
     recall_at_5 = float(np.mean(ranks <= 5))
+    recall_at_10 = float(np.mean(ranks <= 10))
     mrr = float(np.mean(1.0 / ranks))
     mean_rank = float(np.mean(ranks))
 
     return {
         "recall@1": recall_at_1,
         "recall@5": recall_at_5,
+        "recall@10": recall_at_10,
         "mrr": mrr,
         "mean_rank": mean_rank,
         "total_pairs": n,
+        "multi_positive": True,
+        "avg_positives_per_query": float(np.mean([len(x) for x in positive_indices])),
         "rank_distribution": {
             "rank_1": int(np.sum(ranks == 1)),
             "rank_2_5": int(np.sum((ranks >= 2) & (ranks <= 5))),
@@ -144,6 +168,7 @@ def build_qualitative_analysis(
     df: pd.DataFrame,
     emb_query: np.ndarray,
     emb_passage: np.ndarray,
+    positive_indices: list[set[int]],
     n_best: int = 20,
     n_worst: int = 20
 ) -> pd.DataFrame:
@@ -160,20 +185,29 @@ def build_qualitative_analysis(
     for i in range(n):
         scores = sim_matrix[i]
         sorted_indices = np.argsort(-scores)
-        rank = int(np.where(sorted_indices == i)[0][0]) + 1
-        correct_score = float(scores[i])
+        positives = positive_indices[i]
+        rank = first_positive_rank(sorted_indices, positives)
+        correct_score = float(max(scores[list(positives)]))
         top1_idx = int(sorted_indices[0])
         top1_score = float(scores[top1_idx])
+        top1_is_positive = top1_idx in positives
 
         row_data = df.iloc[i]
         rows.append({
             "pair_id": row_data["pair_id"],
+            "group_id": row_data["group_id"] if "group_id" in df.columns else row_data["pair_id"],
             "rank": rank,
             "correct_score": correct_score,
             "top1_score": top1_score,
+            "top1_is_positive": top1_is_positive,
+            "positive_count": len(positives),
             "esp": row_data["ESP_normalizado"],
             "shiwilu_correct": row_data["SHIWILU_normalizado"],
-            "shiwilu_top1": df.iloc[top1_idx]["SHIWILU_normalizado"] if top1_idx != i else "(correcto)",
+            "shiwilu_top1": (
+                "(grupo correcto)"
+                if top1_is_positive
+                else df.iloc[top1_idx]["SHIWILU_normalizado"]
+            ),
         })
 
     result_df = pd.DataFrame(rows).sort_values("rank")
@@ -251,10 +285,11 @@ def evaluate_model(
 
     emb_query, emb_passage = encode_pairs(model, esp_texts, shi_texts,
                                           batch_size=batch_size)
+    positive_indices = build_positive_indices(df)
 
-    metrics = compute_retrieval_metrics(emb_query, emb_passage)
+    metrics = compute_retrieval_metrics(emb_query, emb_passage, positive_indices)
 
-    qual_df = build_qualitative_analysis(df, emb_query, emb_passage)
+    qual_df = build_qualitative_analysis(df, emb_query, emb_passage, positive_indices)
 
     report_path = save_retrieval_report(metrics, tag, model_name, start_time,
                                         reports_dir)
@@ -280,8 +315,10 @@ def print_metrics(
     print(f"    Total pares:  {metrics['total_pairs']:,}")
     print(f"    Recall@1:     {metrics['recall@1']:.4f}")
     print(f"    Recall@5:     {metrics['recall@5']:.4f}")
+    print(f"    Recall@10:    {metrics['recall@10']:.4f}")
     print(f"    MRR:          {metrics['mrr']:.4f}")
     print(f"    Mean Rank:    {metrics['mean_rank']:.1f}")
+    print(f"    Positivos/q:  {metrics['avg_positives_per_query']:.2f}")
 
     dist = metrics["rank_distribution"]
     print()
