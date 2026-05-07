@@ -1,0 +1,18 @@
+# =====================================================================
+#   Configuracion de latexmk para la tesis
+#   Uso:  latexmk -xelatex tesis.tex
+#   Esto corre xelatex -> biber -> xelatex -> xelatex automaticamente
+#   y resuelve referencias APA generadas por biblatex.
+# =====================================================================
+
+# 5 = xelatex
+$pdf_mode = 5;
+
+# 2 = correr siempre biber/bibtex (no intentar adivinar si hace falta)
+$bibtex_use = 2;
+
+# Asegura que se invoque biber (backend de biblatex APA), no bibtex
+$biber = 'biber %O %B';
+
+# Limpiar archivos auxiliares generados por biblatex/biber
+push @generated_exts, 'bbl', 'bcf', 'run.xml';
