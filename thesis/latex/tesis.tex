@@ -80,6 +80,8 @@
 
 % --- Graficos / imagenes ---
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \graphicspath{{figuras/}{figuras/media/}}
 
 % --- Colores ---
@@ -92,6 +94,7 @@
 \usepackage{calc}
 \usepackage{multirow}
 \usepackage{caption}
+\captionsetup[figure]{name=Figura}
 \captionsetup[table]{name=Tabla}
 \captionsetup[longtable]{
   labelfont=bf,
@@ -115,6 +118,7 @@
             citecolor=blue!50!black,
             urlcolor=blue!50!black,
             bookmarksnumbered=true]{hyperref}
+\newcommand{\filepath}[1]{\nolinkurl{#1}}
 
 % --- Bibliografia APA 7 con biblatex + biber ---
 % Cargado despues de polyglossia/hyperref para que la localizacion
@@ -175,7 +179,7 @@
   Fabian Prado Infanson\\[1cm]
 
   \textbf{ASESOR:}\\[0.2cm]
-  Hector Gómez\\[2cm]
+  Mg. Erasmo Gómez\\[2cm]
 
   {\large Lima, 26 de Julio del 2025}
 \end{titlepage}
@@ -186,6 +190,11 @@
 \chapter*{Resumen}
 \addcontentsline{toc}{chapter}{Resumen}
 
+El shiwilu, también conocido como jebero, es una lengua amazónica peruana en situación crítica de amenaza, cuya presencia digital y disponibilidad de recursos bilingües siguen siendo limitadas. Esta tesis aborda dicho problema mediante la propuesta de un sistema de traducción automática neuronal bidireccional entre shiwilu y castellano, orientado a apoyar la documentación, el aprendizaje y el uso cotidiano de la lengua en contextos educativos y comunitarios.
+
+El trabajo se centra en la construcción de una base metodológica y técnica para desarrollar el sistema: recopilación y alineación de un corpus paralelo, definición de criterios de selección y normalización, preparación de recursos de representación semántica, diseño de modelos de traducción y planteamiento de un protocolo de evaluación que combine métricas automáticas con validación participativa. La investigación adopta un enfoque reproducible, trazable y sensible a las particularidades lingüísticas del shiwilu, considerando los desafíos propios de las lenguas de bajo recurso.
+
+Con ello, la tesis busca aportar un recurso tecnológico inicial y una ruta experimental documentada para futuras investigaciones en traducción automática de lenguas originarias.
 
 \clearpage
 \tableofcontents
@@ -929,158 +938,292 @@ Para la tesis se derivan implicaciones metodológicas claras. En primer lugar, r
 
 \section{Introducción}\label{introducciuxf3n-2}
 
-El presente capítulo expone los avances en la construcción del corpus bilingüe shiwilu--castellano que sustenta el desarrollo del sistema de traducción automática neuronal. Esta etapa se ha orientado a la recopilación, organización y análisis lingüístico de materiales textuales en ambas lenguas, así como a la elaboración de un conjunto amplio de frases paralelas creadas especialmente para el proyecto. La combinación de fuentes narrativas bilingües y datos sintéticos validados con hablante nativo responde a las recomendaciones revisadas en el marco teórico para la construcción de corpus en lenguas de bajo recurso, priorizando la autenticidad lingüística, la coherencia semántica y la representatividad funcional del idioma.
+Este capítulo presenta la construcción del corpus paralelo shiwilu--castellano utilizado en la investigación y la preparación del recurso de \emph{embeddings} que servirá como base para las etapas posteriores de modelado. El trabajo descrito responde al primer objetivo específico, orientado a recopilar y alinear un corpus paralelo, producir particiones reproducibles para entrenamiento, validación y prueba, y dejar preparado un modelo de representación semántica como entregable intermedio.
 
-\section{Materiales textuales bilingüe recopilados}\label{materiales-textuales-bilinguxfce-recopilados}
+La organización del capítulo sigue la secuencia metodológica aplicada en el proyecto: primero se describen las fuentes lingüísticas incorporadas; luego se documenta el flujo de extracción, filtrado, unificación, normalización y auditoría; posteriormente se presentan las particiones canónicas; y finalmente se resume la preparación del modelo de \emph{embeddings}. El detalle operativo del pipeline, comandos, archivos y reportes se presenta en el \hyperref[anexo-documento-reproducible]{Anexo B}, entendido como documento reproducible del proceso y medio de verificación de los resultados asociados al objetivo.
 
-Como parte de la recopilación de corpus, se han incorporado dos obras bilingües fundamentales que aportan contenido narrativo estructurado en formato paralelo shiwilu--castellano:
+\section{Fuentes del corpus bilingüe}\label{fuentes-del-corpus-bilingue}
 
-\textbf{• \emph{Pidir Llinsercha'su -- Los relatos de Fidel}}
+El corpus se construyó a partir de dos fuentes principales. La primera corresponde a un conjunto de flashcards shiwilu--castellano elaborado y revisado con apoyo del señor Fidel Lomas Chota, hablante nativo shiwilu. Esta fuente aporta frases breves, de estructura relativamente controlada y útiles para capturar correspondencias léxicas y morfológicas frecuentes en contextos comunicativos básicos.
 
-Recopilada por Fidel Lomas Chota, hablante nativo shiwilu, esta obra presenta relatos contemporáneos con traducción directa al castellano. Sus textos se caracterizan por la claridad estructural y el uso de oraciones cortas, lo cual resulta especialmente favorable para procesos posteriores de alineación y normalización. Esta fuente añade diversidad estilística y contribuye a capturar una parte representativa del uso actual del idioma.
+La segunda fuente corresponde a \emph{Pidir Llinsercha'su -- Los relatos de Fidel}, obra narrativa recopilada por Fidel Lomas Chota. A diferencia de las flashcards, esta fuente aporta oraciones de carácter narrativo, mayor variación contextual y estructuras discursivas más amplias. Su incorporación permitió complementar el corpus con ejemplos menos controlados, más cercanos al uso textual continuo del idioma.
 
-En total, esta obra comprende \textbf{24 cuentos breves} y aporta \textbf{957 oraciones} en formato bilingüe paralelo, constituyéndose en la principal fuente textual complementaria al corpus de flashcards empleado en esta investigación.
+La Tabla~\ref{tab:materiales-bilingues} resume la composición inicial validada después de los procesos de filtrado y extracción. Esta tabla reemplaza los conteos preliminares usados durante etapas anteriores por los valores consolidados del pipeline actual.
 
 \begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1809}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2133}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1126}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1807}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1597}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1528}}@{}}
-\caption{Resumen de materiales textuales bilingües recopilados}\label{tab:materiales-bilingues}\\
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2350}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2650}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1900}}@{}}
+\caption{Fuentes bilingües incorporadas al corpus}\label{tab:materiales-bilingues}\\
 \toprule
-\textbf{Fuente} & \textbf{Tipo de contenido} & \textbf{Nº de relatos} & \textbf{Promedio de oraciones por relato} & \textbf{Oraciones estimadas} & \textbf{Formato paralelo} \\
+\textbf{Fuente} & \textbf{Tipo de contenido} & \textbf{Pares válidos} & \textbf{Formato de origen} & \textbf{Uso en el corpus} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Fuente} & \textbf{Tipo de contenido} & \textbf{Nº de relatos} & \textbf{Promedio de oraciones por relato} & \textbf{Oraciones estimadas} & \textbf{Formato paralelo} \\
+\textbf{Fuente} & \textbf{Tipo de contenido} & \textbf{Pares válidos} & \textbf{Formato de origen} & \textbf{Uso en el corpus} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-\emph{Pidir Llinsercha'su} & Relatos contemporáneos & 24 & 40 & 957 & Shiwilu--Castellano \\
+Flashcards shiwilu--castellano & Frases breves validadas con hablante & 2251 & Archivo tabular & Base léxica y funcional de expresiones controladas \\
+\emph{Pidir Llinsercha'su} & Relatos narrativos bilingües & 956 & PDF convertido a CSV & Complemento narrativo y contextual \\
+\textbf{Total unificado} & Registros paralelos de ambas fuentes & \textbf{3207} & CSV consolidado & Base para normalización, auditoría y particiones \\
 \end{longtable}
 
-\section{Elaboración del corpus de flashcards shiwilu -- castellano}\label{elaboraciuxf3n-del-corpus-de-flashcards-shiwilu-castellano}
+La combinación de ambas fuentes responde a una necesidad propia de las lenguas de bajo recurso: aprovechar materiales disponibles sin homogeneizarlos de forma agresiva. Las flashcards ofrecen control y validación directa; los relatos aportan diversidad estilística. Por ello, el procesamiento posterior se diseñó para conservar trazabilidad por fuente y mantener acceso tanto a las versiones originales como a las normalizadas.
 
-Además de los materiales textuales, se desarrolló un corpus propio de \textbf{2,301 pares de frases shiwilu--castellano}, construido específicamente para este proyecto en coordinación directa con el señor \textbf{Fidel Lomas Chota}. Las frases fueron generadas, revisadas y validadas conjuntamente, asegurando la idoneidad lingüística, la equivalencia semántica y la coherencia morfológica entre ambas lenguas.
+\section{Construcción, normalización y auditoría del corpus}\label{construccion-normalizacion-auditoria-corpus}
 
-Este corpus presenta frases cortas y de estructura controlada, con extensiones que oscilan entre una y seis palabras en castellano y entre una y cinco palabras en shiwilu. Esta configuración es especialmente útil para entrenar modelos neuronales en escenarios de bajo recurso, dado que favorece la identificación de correspondencias morfológicas y la construcción de representaciones subléxicas consistentes con un total de \textbf{2252 frases} paralelas shiwlu -- castellano.
+El proceso de preparación se organizó como un pipeline reproducible. Cada etapa generó un archivo de salida y un reporte asociado, de modo que las decisiones de limpieza, exclusión y partición pudieran ser auditadas posteriormente. La Figura~\ref{fig:pipeline-corpus} muestra el flujo general aplicado desde las fuentes originales hasta las particiones canónicas.
 
-El análisis morfológico inicial revela patrones regulares en la lengua shiwilu, incluyendo sufijos frecuentes como \textbf{-LEK, -EK, -ER', -LLI, -DEK, -SU', -NEK} y prefijos como \textbf{ÑAP-, NU-, NUK-, LU-, MU-}, los cuales se alinean con la caracterización de la lengua como sistema aglutinante, aspecto ampliamente documentado en la literatura lingüística amazónica revisada en el marco teórico.
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  stage/.style={
+    draw,
+    rounded corners,
+    align=center,
+    text width=0.78\linewidth,
+    minimum height=1.0cm
+  },
+  arrow/.style={-{Latex[length=3mm]}, thick}
+]
+\node[stage] (s00) {\textbf{00 Extracción PDF}\\Conversión de relatos bilingües a CSV: 956 pares};
+\node[stage, below=0.45cm of s00] (s01) {\textbf{01 Filtrado de flashcards}\\Conservación de pares con español y shiwilu válidos: 2251 pares};
+\node[stage, below=0.45cm of s01] (s01b) {\textbf{01b Unificación}\\Integración de fuentes con trazabilidad: 3207 registros};
+\node[stage, below=0.45cm of s01b] (s02) {\textbf{02 Normalización no destructiva}\\Reglas textuales aplicadas y columnas originales preservadas};
+\node[stage, below=0.45cm of s02] (s03) {\textbf{03 Auditoría}\\Identificación de duplicados, conflictos y alertas de calidad};
+\node[stage, below=0.45cm of s03] (s04) {\textbf{04 Particiones canónicas}\\3204 pares incluidos en train, valid y test};
+\draw[arrow] (s00) -- (s01);
+\draw[arrow] (s01) -- (s01b);
+\draw[arrow] (s01b) -- (s02);
+\draw[arrow] (s02) -- (s03);
+\draw[arrow] (s03) -- (s04);
+\end{tikzpicture}
+\caption{Flujo reproducible de construcción del corpus bilingüe}
+\label{fig:pipeline-corpus}
+\end{figure}
 
-Además el desarrollo conjunto con hablante de la lengua, nos brinda la seguridad que la data obtenida está validada por un experto.
+La extracción del PDF se realizó con heurísticas conservadoras para identificar ítems numerados y separar segmentos bilingües. El resultado fue un conjunto de 956 pares exportados, de los cuales 867 fueron marcados como casos directos y 89 como casos recuperados mediante una regla de respaldo. Esta distinción permitió conservar información útil sin ocultar los casos que requirieron tratamiento especial.
 
-\section{Distribución temática del corpus generado}\label{distribuciuxf3n-temuxe1tica-del-corpus-generado}
+En paralelo, el filtrado de flashcards descartó filas sin correspondencia bilingüe válida. Esta decisión fue necesaria porque, para entrenamiento y evaluación supervisada, cada registro debe contener una entrada en castellano y una entrada en shiwilu. Con ello se obtuvo una fuente tabular de 2251 pares válidos.
 
-Las 2,252 frases elaboradas se distribuyen en una variedad de categorías funcionales que permiten cubrir diferentes actos de habla y contextos comunicativos. La clasificación semántica evidencia la presencia de interrogativas, descripciones personales, comandos, expresiones de ubicación, referencias temporales y otros tipos de contenido frecuente en el uso cotidiano del idioma.
+Luego, ambas fuentes se integraron en un único dataset de 3207 registros con trazabilidad de origen. Sobre este corpus unificado se aplicó una normalización no destructiva: las columnas originales se conservaron, mientras que las versiones normalizadas se generaron en columnas separadas. Las reglas aplicadas incluyeron normalización Unicode NFC, eliminación de espacios redundantes, ajuste de espacios junto a comas, conversión a minúsculas y eliminación de comillas dobles. Esta estrategia evita perder información lingüística potencialmente relevante, especialmente en una lengua con rasgos morfológicos complejos como el shiwilu.
+
+La Tabla~\ref{tab:etapas-preprocesamiento} resume las etapas principales, sus salidas y los reportes que permiten reproducir o auditar cada paso. El listado completo de rutas se desarrolla en el \hyperref[anexo-documento-reproducible]{Anexo B}.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5013}}
-  >{\centering\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1582}}
-  >{\centering\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1699}}@{}}
-\caption{Distribución temática del corpus generado}\label{tab:distribucion-tematica}\\
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0900}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1850}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3550}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1850}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1850}}@{}}
+\caption{Etapas reproducibles de preparación del corpus}\label{tab:etapas-preprocesamiento}\\
 \toprule
-\textbf{Categoría} & \textbf{Cantidad} & \textbf{Porcentaje} \\
+\textbf{Etapa} & \textbf{Nombre} & \textbf{Procedimiento aplicado} & \textbf{Salida principal} & \textbf{Reporte de control} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Categoría} & \textbf{Cantidad} & \textbf{Porcentaje} \\
+\textbf{Etapa} & \textbf{Nombre} & \textbf{Procedimiento aplicado} & \textbf{Salida principal} & \textbf{Reporte de control} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-Expresiones generales & 1,720 & 76.4 \% \\
-Estados, descripciones personales y acciones & {320} & {14.2 \%} \\
-Ubicación, direcciones y referencias temporales & {140} & {6.2 \%} \\
-Comandos, emergencias y situaciones funcionales & {72} & {3.2 \%} \\
+00 & Extracción PDF & Conversión de relatos bilingües desde PDF hacia registros tabulares & 956 pares extraídos & Resumen de extracción \\
+01 & Filtrado & Eliminación de flashcards sin par bilingüe completo & 2251 pares válidos & Filas removidas \\
+01b & Unificación & Integración de fuentes y conservación de metadatos de origen & 3207 registros & Resumen de unificación \\
+02 & Normalización & Normalización textual no destructiva sobre español y shiwilu & 3207 registros normalizados & Log de normalización \\
+03 & Auditoría & Revisión de duplicados, conflictos y alertas de longitud o contenido & 3 duplicados exactos detectados & Resumen de auditoría \\
+04 & Partición & Generación de train, valid y test con semilla fija y grupos & 3204 pares incluidos & Manifiesto de preprocesamiento \\
 \end{longtable}
 
-Esta distribución demuestra que el corpus no solo cubre vocabulario básico, sino también expresiones asociadas a situaciones comunicativas reales, alineándose con los enfoques de corpus funcionales para lenguas originarias discutidos en el marco conceptual.
+\section{Caracterización del corpus preparado}\label{caracterizacion-del-corpus-preparado}
 
-\section{\texorpdfstring{Proceso de preprocesamiento del corpus bilingüe }{Proceso de preprocesamiento del corpus bilingüe }}\label{proceso-de-preprocesamiento-del-corpus-bilinguxfce}
-
-Luego de recopilar las fuentes principales del corpus, se implementó un proceso de preprocesamiento orientado a transformar los datos en un recurso bilingüe estructurado, consistente y apto para su uso dentro del pipeline experimental de la investigación. Este proceso fue especialmente importante debido a la heterogeneidad de las fuentes empleadas: por un lado, el corpus de flashcards ya se encontraba en formato tabular; por otro, el material textual de \emph{Pidir Llinsercha'su} tuvo que ser extraído desde un archivo PDF antes de poder integrarse con el resto del corpus.
-
-El flujo de trabajo aplicado se organizó en cuatro etapas principales: 00 extraer PDF, 01 filtrar, 01b unificar y 02 depurar. Cada una de estas etapas permitió reducir ruido, asegurar correspondencia entre las dos lenguas y consolidar una versión progresivamente más limpia del corpus bilingüe.
-
-En la etapa 00 extraer PDF, se procesó el archivo de textos narrativos en formato PDF para recuperar pares bilingües en shiwilu y castellano y convertirlos a un archivo CSV estructurado. Para ello, se empleó un parser con heurísticas conservadoras que permitió identificar ítems numerados, separar bloques bilingües y registrar casos ambiguos para revisión posterior, sin eliminar información lingüística relevante del documento original. El resultado de esta etapa fue un dataset inicial extraído desde PDF en formato tabular, junto con un resumen de trazabilidad del proceso
-
-En la etapa 01 filtrar, se trabajó sobre el archivo de flashcards para conservar únicamente aquellas filas que contaban con valores válidos en ambas columnas, es decir, tanto en castellano como en shiwilu. En este punto se descartaron explícitamente las filas que no tenían su correspondiente traducción en una de las dos lenguas, así como registros vacíos o placeholders. Esta decisión permitió asegurar que el corpus paralelo estuviera compuesto únicamente por pares bilingües utilizables y coherentes para las etapas siguientes
-
-La etapa 01b unificar tuvo como objetivo integrar en un único dataset las diferentes fuentes disponibles, manteniendo trazabilidad de origen. Para ello, se combinaron el dataset filtrado de flashcards y el dataset extraído desde PDF, registrando para cada fila su fuente correspondiente y su identificador interno. Adicionalmente, se realizó una detección de duplicados entre fuentes para identificar pares que pudieran repetirse en más de un recurso, preservando así mayor control sobre la composición final del corpus
-
-Finalmente, en la etapa 02 depurar, se aplicó una normalización no destructiva al corpus unificado. Este procedimiento mantuvo las columnas originales y generó versiones normalizadas de los textos, incorporando reglas como normalización Unicode, eliminación de espacios redundantes, estandarización básica del formato textual y registro detallado de las transformaciones realizadas. De este modo, se obtuvo un corpus depurado y trazable, sin perder acceso a las versiones originales de cada segmento bilingüe
-
-En conjunto, este proceso permitió pasar de fuentes heterogéneas y parcialmente ruidosas a un corpus bilingüe consolidado, filtrado y depurado, listo para ser utilizado en las siguientes fases metodológicas de la investigación.
+La auditoría permitió describir el corpus tanto en términos cuantitativos como en términos de calidad. El corpus unificado contiene 3207 registros; de ellos, 3 fueron excluidos por duplicación exacta antes de generar las particiones canónicas. Por tanto, el corpus final utilizado para entrenamiento y evaluación de recursos intermedios quedó compuesto por 3204 pares paralelos.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1107}}
-  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1482}}
-  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4632}}
-  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2779}}@{}}
-\caption{Etapas del preprocesamiento del corpus bilingüe}\label{tab:etapas-preprocesamiento}\\
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3100}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1700}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2700}}@{}}
+\caption{Resumen del corpus consolidado y auditado}\label{tab:corpus-consolidado}\\
 \toprule
-\textbf{Etapa} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Resultado principal} \\
+\textbf{Indicador} & \textbf{Valor} & \textbf{Fuente del valor} & \textbf{Interpretación} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Etapa} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Resultado principal} \\
+\textbf{Indicador} & \textbf{Valor} & \textbf{Fuente del valor} & \textbf{Interpretación} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-00 & Extraer PDF & Extracción de oraciones bilingües desde el archivo PDF de textos narrativos y conversión a formato CSV estructurado & Dataset inicial extraído desde PDF \\
-01 & Filtrar & Eliminación de filas sin correspondencia bilingüe válida en castellano o shiwilu, así como registros vacíos o placeholders & Dataset de flashcards filtrado \\
-01b & Unificar & Integración de las distintas fuentes en un único dataset con trazabilidad de origen y revisión de duplicados entre fuentes & Dataset unificado \\
-02 & Depurar & Normalización no destructiva del corpus, conservando versiones originales y generando versiones depuradas & Dataset normalizado y trazable \\
+Registros unificados & 3207 & Unificación de fuentes & Total antes de exclusiones finales \\
+Registros incluidos & 3204 & Manifiesto canónico & Pares usados para particiones y modelos \\
+Registros excluidos & 3 & Auditoría y manifiesto & Duplicados exactos removidos \\
+Grupos totales & 2982 & Manifiesto canónico & Agrupación semántica para evitar fuga entre splits \\
+Grupos multi-par & 194 & Manifiesto canónico & Casos con más de una variante equivalente \\
+Filas con cambios de normalización & 3115 & Reporte de normalización & Registros afectados por al menos una regla textual \\
+Transformaciones registradas & 6697 & Reporte de normalización & Cambios trazables aplicados al corpus \\
 \end{longtable}
 
-\section{Preparación del corpus consolidado para modelo de embeddings}\label{preparaciuxf3n-del-corpus-consolidado-para-modelo-de-embeddings}
-
-Una vez completadas las etapas de extracción, filtrado, unificación y depuración, se obtuvo una versión consolidada del corpus bilingüe español--shiwilu, preparada para su uso en las siguientes fases del proyecto. Esta consolidación permitió disponer de un recurso homogéneo en cuanto a formato, estructura y trazabilidad, lo cual era necesario para trabajar de manera consistente con datos provenientes de fuentes distintas.
-
-La preparación del corpus no se limitó a la limpieza básica de texto, sino que implicó también una reorganización metodológica del recurso. En particular, se aseguró que cada registro bilingüe contara con una estructura uniforme, con identificadores claros, fuente de procedencia y versiones tratadas del texto que facilitaran su manipulación computacional. Esto resultó fundamental para garantizar que las distintas etapas posteriores del trabajo se apoyaran en un mismo insumo validado y reproducible.
-
-Asimismo, la conversión del material narrativo desde PDF hacia CSV permitió homologar el formato de los relatos con el de las flashcards, de modo que ambas fuentes pudieran ser trabajadas bajo una lógica común. Esta homogeneización fue una condición necesaria para consolidar un corpus paralelo único, evitando que las diferencias de formato entre fuentes dificultaran el análisis posterior.
-
-Por otro lado, el descarte de filas sin traducción correspondiente en castellano o shiwilu fortaleció la calidad paralela del recurso final. En un escenario de muy bajo recurso, conservar únicamente pares bilingües completos constituye una decisión metodológica importante, ya que reduce ruido y evita incorporar ejemplos incompletos que puedan afectar la consistencia del corpus.
-
-Como resultado de este proceso, el proyecto pasó a contar con un corpus bilingüe consolidado y depurado, compuesto por el conjunto de flashcards paralelas y las oraciones narrativas extraídas de \emph{Pidir Llinsercha'su}, todo ello integrado en una misma estructura tabular. Esta base constituye el insumo central preparado para las siguientes etapas de trabajo de la tesis.
+Desde el punto de vista léxico, la auditoría muestra una diferencia relevante entre ambas lenguas. El castellano presenta 13\,447 tokens y 4631 tipos únicos, mientras que el shiwilu presenta 8460 tokens y 4942 tipos únicos. Esta mayor proporción de tipos únicos en shiwilu es coherente con la caracterización de la lengua como sistema de alta productividad morfológica; por ello, el preprocesamiento evitó eliminar agresivamente signos o segmentos internos que pudieran formar parte de unidades lingüísticas válidas.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2247}}
-  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3646}}
-  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1305}}
-  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2802}}@{}}
-\caption{Corpus consolidado para modelo de embeddings}\label{tab:corpus-consolidado}\\
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1800}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1800}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1900}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2000}}@{}}
+\caption{Estadísticas léxicas del corpus auditado}\label{tab:estadisticas-lexicas-corpus}\\
 \toprule
-\textbf{Fuente} & \textbf{Unidad de análisis} & \textbf{Cantidad} & \textbf{Tratamiento aplicado} \\
+\textbf{Lengua} & \textbf{Tokens} & \textbf{Tipos únicos} & \textbf{TTR} & \textbf{Hapax} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Fuente} & \textbf{Unidad de análisis} & \textbf{Cantidad} & \textbf{Tratamiento aplicado} \\
+\textbf{Lengua} & \textbf{Tokens} & \textbf{Tipos únicos} & \textbf{TTR} & \textbf{Hapax} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-Flashcards español--shiwilu & Par paralelo & 2,252 & Filtrado, unificación y depuración \\
-{Pidir Llinsercha'su} & Oración bilingüe & 957 & Extracción desde PDF, unificación y depuración \\
-Corpus consolidado & Registro bilingüe estructurado & 3,209 & Integración total en formato tabular \\
+Castellano & 13\,447 & 4631 & 0.3444 & 3252 \\
+Shiwilu & 8460 & 4942 & 0.5842 & 3946 \\
 \end{longtable}
+
+\section{Particiones reproducibles del corpus}\label{particiones-reproducibles-del-corpus}
+
+Para asegurar comparabilidad entre experimentos, el corpus final se dividió en particiones de entrenamiento, validación y prueba bajo una proporción 80/10/10 y con semilla fija igual a 42. La división no se realizó únicamente por filas, sino considerando grupos semánticos mediante \texttt{group\_id}. Esta decisión evita que variantes equivalentes o relaciones uno-a-muchos queden distribuidas entre entrenamiento y prueba, lo cual produciría una estimación artificialmente optimista del desempeño.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1800}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1500}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1500}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1700}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\caption{Particiones canónicas del corpus bilingüe}\label{tab:particiones-canonicas}\\
+\toprule
+\textbf{Partición} & \textbf{Filas} & \textbf{Grupos} & \textbf{Flashcards} & \textbf{PDF} & \textbf{Uso} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Partición} & \textbf{Filas} & \textbf{Grupos} & \textbf{Flashcards} & \textbf{PDF} & \textbf{Uso} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Entrenamiento & 2563 & 2387 & 1791 & 772 & Ajuste de modelos y recursos intermedios \\
+Validación & 320 & 295 & 236 & 84 & Selección y control experimental \\
+Prueba & 321 & 300 & 221 & 100 & Evaluación final no usada en entrenamiento \\
+\textbf{Total} & \textbf{3204} & \textbf{2982} & \textbf{2248} & \textbf{956} & Corpus canónico incluido \\
+\end{longtable}
+
+La Figura~\ref{fig:distribucion-fuentes-splits} muestra que las tres particiones conservan una composición similar por fuente. Esto resulta importante porque evita que una partición quede dominada por un único tipo de material y permite evaluar el comportamiento del modelo sobre ejemplos provenientes tanto de flashcards como de textos narrativos.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=0.75cm]
+\node[anchor=east] at (0,3) {Entrenamiento};
+\draw[fill=gray!35] (0,2.75) rectangle (6.99,3.25);
+\draw[fill=gray!70] (6.99,2.75) rectangle (10,3.25);
+\node[anchor=west] at (10.2,3) {2563};
+
+\node[anchor=east] at (0,2) {Validación};
+\draw[fill=gray!35] (0,1.75) rectangle (7.38,2.25);
+\draw[fill=gray!70] (7.38,1.75) rectangle (10,2.25);
+\node[anchor=west] at (10.2,2) {320};
+
+\node[anchor=east] at (0,1) {Prueba};
+\draw[fill=gray!35] (0,0.75) rectangle (6.89,1.25);
+\draw[fill=gray!70] (6.89,0.75) rectangle (10,1.25);
+\node[anchor=west] at (10.2,1) {321};
+
+\draw[fill=gray!35] (0,-0.15) rectangle (0.45,0.15);
+\node[anchor=west] at (0.55,0) {Flashcards};
+\draw[fill=gray!70] (4.1,-0.15) rectangle (4.55,0.15);
+\node[anchor=west] at (4.65,0) {PDF narrativo};
+\end{tikzpicture}
+\caption{Distribución de fuentes por partición canónica}
+\label{fig:distribucion-fuentes-splits}
+\end{figure}
+
+\section{Preparación del modelo de embeddings}\label{preparacion-del-modelo-de-embeddings}
+
+Además del corpus depurado y particionado, el primer objetivo específico contempla la preparación de un modelo de \emph{embeddings}. En esta tesis, los \emph{embeddings} cumplen una función intermedia: permiten representar pares shiwilu--castellano en un espacio semántico común, medir recuperación bilingüe y disponer de un recurso preparado para análisis posteriores vinculados al modelado de traducción automática neuronal.
+
+El modelo seleccionado como candidato final provisional fue la variante v3 de E5-base bidireccional con minería iterativa de negativos, basada en \texttt{intfloat/multilingual-e5-base} y ajustada mediante entrenamiento bidireccional con negativos duros y medios. La selección se realizó sobre la partición de prueba de 321 pares, usando recuperación multi-positiva por \texttt{group\_id}; es decir, el sistema no exige una única traducción válida cuando existen variantes equivalentes registradas.
+
+La elección de este candidato no fue directa, sino resultado de una secuencia incremental. Primero se evaluó E5-base sin ajuste fino para establecer un punto de comparación. Luego se entrenó una versión con pérdida \emph{Multiple Negatives Ranking Loss}, lo que permitió adaptar el espacio semántico al par shiwilu--castellano. En una tercera etapa se incorporó minería controlada de negativos duros y medios, con el fin de enseñar al modelo a distinguir pares semánticamente cercanos pero incorrectos. Finalmente, la variante v3 reutilizó el mejor candidato anterior y aplicó una nueva iteración de minería de negativos, manteniendo entrenamiento bidireccional para mejorar la recuperación en ambos sentidos. Esta progresión se resume técnicamente en el \hyperref[anexo-documento-reproducible]{Anexo B}.
+
+La Figura~\ref{fig:embedding-evolution-r1-mrr} muestra esta progresión a partir de métricas de recuperación sobre la partición de prueba. Se emplean R@1 y MRR porque el propósito del modelo de \emph{embeddings} no es generar traducciones directamente, sino recuperar equivalencias bilingües cercanas dentro de un espacio semántico compartido.
+
+\begin{center}
+\centering
+\includegraphics[width=0.90\linewidth,height=0.28\textheight,keepaspectratio]{generated/embedding_evolution_r1_mrr.pdf}
+\captionof{figure}{Evolución experimental de R@1 y MRR en los modelos de embeddings}
+\label{fig:embedding-evolution-r1-mrr}
+\end{center}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2400}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1600}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1600}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1600}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1400}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1400}}@{}}
+\caption{Métricas del modelo de embeddings preparado}\label{tab:metricas-embeddings}\\
+\toprule
+\textbf{Dirección de recuperación} & \textbf{R@1} & \textbf{R@5} & \textbf{R@10} & \textbf{MRR} & \textbf{Aciertos R@1} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Dirección de recuperación} & \textbf{R@1} & \textbf{R@5} & \textbf{R@10} & \textbf{MRR} & \textbf{Aciertos R@1} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Castellano $\rightarrow$ shiwilu & 0.7882 & 0.9283 & 0.9782 & 0.8480 & 253/321 \\
+Shiwilu $\rightarrow$ castellano & 0.7913 & 0.9564 & 0.9688 & 0.8617 & 254/321 \\
+\end{longtable}
+
+La Figura~\ref{fig:embedding-v3-final-metrics} compara las métricas finales del candidato v3 en ambas direcciones. Se observa que el modelo mantiene un comportamiento equilibrado: en ambos sentidos supera el umbral de recuperación top-1 cercano a ocho de cada diez consultas y conserva valores altos de recuperación dentro de los primeros cinco y diez candidatos.
+
+\begin{center}
+\centering
+\includegraphics[width=0.72\linewidth,height=0.24\textheight,keepaspectratio]{generated/embedding_v3_final_metrics.pdf}
+\captionof{figure}{Métricas finales de recuperación del modelo de embeddings v3}
+\label{fig:embedding-v3-final-metrics}
+\end{center}
+
+La Figura~\ref{fig:embedding-v3-rank-distribution} complementa esta lectura al mostrar la distribución de rangos. La mayor parte de las consultas se ubica en rank 1 y, cuando el primer resultado no coincide con la referencia esperada, el par correcto suele permanecer entre los primeros candidatos. Por ello, el modelo queda preparado como entregable de \emph{embeddings} y como insumo para las fases posteriores de integración y evaluación con NMT. Los reportes de entrenamiento, recuperación, minería de negativos y congelamiento del candidato se documentan en el \hyperref[anexo-documento-reproducible]{Anexo B}.
+
+\begin{center}
+\centering
+\includegraphics[width=0.74\linewidth,height=0.24\textheight,keepaspectratio]{generated/embedding_v3_rank_distribution.pdf}
+\captionof{figure}{Distribución de rangos del modelo de embeddings v3}
+\label{fig:embedding-v3-rank-distribution}
+\end{center}
+
+Como resultado de este capítulo, la tesis dispone de un corpus paralelo consolidado de 3204 pares útiles, particiones reproducibles para experimentación y un modelo de \emph{embeddings} bilingüe evaluado en ambas direcciones. Estos elementos constituyen la base empírica sobre la cual se apoyan las siguientes etapas de modelado y validación.
 
 \chapter{Conclusiones y trabajos futuros}\label{conclusiones-y-trabajos-futuros}
 
@@ -1471,5 +1614,203 @@ A continuación, se presenta una plantilla mínima genérica que puede ser usada
 4.1 & Computadora personal & Unidad & 1 & 5000 & 5000 & - \\
 4.2 & Microsoft Office Suite & Anual & 1 & 200 & 200 & - \\
 \end{longtable}
+
+\clearpage
+\phantomsection
+\section*{Anexo B: Documento reproducible del proceso de corpus y embeddings}\label{anexo-documento-reproducible}
+\addcontentsline{toc}{section}{Anexo B: Documento reproducible del proceso de corpus y embeddings}
+
+Este anexo reúne la documentación operativa que respalda los medios de verificación del primer objetivo específico. En particular, funciona como informe reproducible de criterios de selección, normalización y alineación aplicadas, y como referencia del entregable del modelo de \emph{embeddings}. El propósito no es reemplazar la explicación metodológica del capítulo 4, sino dejar trazabilidad suficiente para revisar, replicar o auditar el proceso.
+
+\subsection*{B.1 Alcance del documento}
+
+El proceso documentado comprende dos entregables:
+
+\begin{itemize}
+\item
+  Corpus paralelo shiwilu--castellano depurado, alineado y particionado.
+\item
+  Modelo de \emph{embeddings} preparado y evaluado en ambas direcciones.
+\end{itemize}
+
+La fuente de verdad para los conteos y decisiones corresponde a los archivos generados por el pipeline del repositorio. Los valores principales son: 3207 registros unificados, 3204 registros incluidos en las particiones canónicas, 3 duplicados exactos excluidos, 2982 grupos totales y 194 grupos multi-par.
+
+\subsection*{B.2 Pipeline reproducible del corpus}
+
+La Tabla~\ref{tab:anexo-pipeline-corpus} resume las etapas ejecutadas, los scripts base, las salidas y los reportes de verificación. Las rutas se presentan de forma relativa al directorio raíz del proyecto.
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2300}}@{}}
+\caption{Artefactos reproducibles de construcción del corpus}\label{tab:anexo-pipeline-corpus}\\
+\toprule
+\textbf{Etapa} & \textbf{Script base} & \textbf{Entrada principal} & \textbf{Salida principal} & \textbf{Reporte} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Etapa} & \textbf{Script base} & \textbf{Entrada principal} & \textbf{Salida principal} & \textbf{Reporte} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+00 & \filepath{scripts/00_extraer_dataset_pdf.py} & \filepath{data/raw/II_TEXTOS_SHIWILU.pdf} & \filepath{data/intermediate/00_pdf/dataset_extraido_pdf.csv} & \filepath{reports/00_pdf/summary.json} \\
+01 & \filepath{scripts/01_filtrar_dataset.py} & \filepath{data/raw/flashcards2.csv} & \filepath{data/intermediate/01_filtrado/dataset_filtrado.csv} & \filepath{reports/01_filtrado/rows_removed.csv} \\
+01b & \filepath{scripts/01b_unificar_fuentes.py} & \filepath{config/sources.json} & \filepath{data/intermediate/01b_unificado/dataset_unificado.csv} & \filepath{reports/01b_unificado/summary.json} \\
+02 & \filepath{scripts/02_depurar_dataset.py} & \filepath{data/intermediate/01b_unificado/dataset_unificado.csv} & \filepath{data/intermediate/02_normalizado/dataset_normalizado.csv} & \filepath{reports/02_normalizacion/summary.json} \\
+03 & \filepath{scripts/03_auditar_dataset.py} & \filepath{data/intermediate/02_normalizado/dataset_normalizado.csv} & \filepath{data/processed/03_pre_embeddings/dataset_pre_embeddings.csv} & \filepath{reports/03_auditoria/summary.json} \\
+04 & \filepath{src/embeddings/preprocess_embeddings.py} & \filepath{data/processed/03_pre_embeddings/dataset_pre_embeddings.csv} & \filepath{data/processed/04_splits/} & \filepath{reports/04_embeddings/preprocessing/preprocess_manifest.json} \\
+\end{longtable}
+
+\subsection*{B.3 Criterios de selección y normalización}
+
+Los criterios aplicados fueron conservadores para evitar eliminar información lingüística útil del shiwilu. La selección mantuvo únicamente pares bilingües completos, preservó la fuente de cada registro y excluyó solo duplicados exactos en el cierre canónico. La normalización se aplicó de forma no destructiva: las columnas originales se conservaron y las versiones procesadas se almacenaron por separado.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\caption{Criterios documentados para selección y normalización}\label{tab:anexo-criterios-normalizacion}\\
+\toprule
+\textbf{Criterio} & \textbf{Aplicación} & \textbf{Justificación} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Criterio} & \textbf{Aplicación} & \textbf{Justificación} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Par bilingüe completo & Se conservaron registros con español y shiwilu válidos & Evitar ejemplos incompletos en entrenamiento y evaluación \\
+Trazabilidad por fuente & Se mantuvo el origen flashcards o PDF & Permitir análisis por procedencia del dato \\
+Normalización Unicode NFC & Se estandarizó la representación de caracteres & Reducir variación técnica no lingüística \\
+Espacios y formato & Se aplicaron \emph{trim}, colapso de espacios y ajuste de coma-espacio & Homogeneizar superficie textual sin alterar contenido \\
+Minúsculas & Se redujo variación por capitalización & Estabilizar vocabulario en un corpus pequeño \\
+Apóstrofes internos & Se preservaron en shiwilu & Evitar romper formas potencialmente relevantes \\
+Puntuación & No se eliminó agresivamente & Reducir riesgo de pérdida morfológica o funcional \\
+Agrupación por \texttt{group\_id} & Se agruparon variantes equivalentes antes del split & Evitar fuga de datos entre entrenamiento y prueba \\
+\end{longtable}
+
+\subsection*{B.4 Particiones canónicas}
+
+El archivo \filepath{reports/04_embeddings/preprocessing/preprocess_manifest.json} registra la semilla, las proporciones y los conteos finales. La semilla usada fue 42 y las proporciones fueron 80\% entrenamiento, 10\% validación y 10\% prueba. El hash SHA-256 del archivo de entrada canónico fue:
+
+\begin{quote}
+\texttt{1f6f8f252c47addd44d47eee96570c3db2199dc94522dd04f2e8cb88075654a9}
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2600}}@{}}
+\caption{Archivos canónicos de partición}\label{tab:anexo-archivos-splits}\\
+\toprule
+\textbf{Partición} & \textbf{JSONL} & \textbf{CSV} & \textbf{Uso} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Partición} & \textbf{JSONL} & \textbf{CSV} & \textbf{Uso} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Entrenamiento & \filepath{data/processed/04_splits/train.jsonl} & \filepath{data/processed/04_splits/train.csv} & Ajuste de modelos \\
+Validación & \filepath{data/processed/04_splits/valid.jsonl} & \filepath{data/processed/04_splits/valid.csv} & Selección y control \\
+Prueba & \filepath{data/processed/04_splits/test.jsonl} & \filepath{data/processed/04_splits/test.csv} & Evaluación final \\
+\end{longtable}
+
+También se generó \filepath{data/processed/04_splits/all_text_for_sp.txt}, usado como corpus textual consolidado para procesos posteriores de tokenización o segmentación sub-palabra.
+
+\subsection*{B.5 Entregable del modelo de embeddings}
+
+El modelo de \emph{embeddings} preparado quedó registrado como:
+
+\begin{quote}
+\filepath{models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional}
+\end{quote}
+
+La selección se realizó mediante una progresión experimental. Se partió de modelos E5 sin ajuste fino, que sirvieron como líneas base. Luego se adaptaron al corpus shiwilu--castellano con una pérdida contrastiva. Posteriormente se incorporaron negativos duros y medios para mejorar la discriminación entre pares cercanos, se migró de E5-small a E5-base, se probó entrenamiento bidireccional y finalmente se aplicó una iteración adicional de minería sobre el mejor candidato previo. La Tabla~\ref{tab:anexo-evolucion-embeddings} resume esta secuencia, indicando la hipótesis de cada variante y la decisión tomada a partir de sus resultados.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2200}}@{}}
+\caption{Evolución experimental del modelo de embeddings}\label{tab:anexo-evolucion-embeddings}\\
+\toprule
+\textbf{Variante} & \textbf{Hipótesis o motivo} & \textbf{Resultado observado} & \textbf{Decisión} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Variante} & \textbf{Hipótesis o motivo} & \textbf{Resultado observado} & \textbf{Decisión} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+E5-small sin ajuste & Medir el desempeño de un modelo multilingüe preentrenado sin adaptación al corpus & R@1=0.0966; recuperación insuficiente & Aplicar fine-tuning contrastivo \\
+v1 E5-small & Verificar si los pares positivos adaptan el espacio semántico & R@1=0.5109; mejora fuerte frente al baseline & Explorar negativos difíciles \\
+v2 hard-only & Probar si solo los negativos duros mejoran la discriminación & R@1=0.5421; mejora moderada & Combinar negativos duros y medios \\
+v2 hard/medium & Evaluar si los negativos medios estabilizan el aprendizaje & R@1=0.5670; mejora mayor que hard-only & Migrar a una base de mayor capacidad \\
+E5-base sin ajuste & Comprobar si una base más grande mejora sin ajuste & R@1=0.1059; sigue bajo sin adaptación & Ajustar E5-base con el corpus \\
+v1 E5-base & Repetir fine-tuning contrastivo con mayor capacidad & R@1=0.6480; supera a E5-small & Usar E5-base como línea principal \\
+v1 E5-base bidireccional & Evitar favorecer una sola dirección de recuperación & R@1=0.6573 / 0.6760 & Mantener evaluación bidireccional \\
+v2 E5-base & Combinar E5-base con negativos controlados & R@1=0.7134 / 0.7165 & Probar entrenamiento bidireccional con negativos \\
+v2 E5-base bidireccional & Unir hard/medium negatives y entrenamiento bidireccional & R@1=0.7508 / 0.7788 & Usarlo como base para minería iterativa \\
+v3 iterativo bidireccional & Minar nuevos negativos desde el mejor candidato previo & R@1=0.7882 / 0.7913 & Seleccionarlo como modelo preparado \\
+\end{longtable}
+
+El entrenamiento final partió del candidato anterior \filepath{models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional}, se ejecutó durante 2 épocas, con \emph{batch size} 16, tasa de aprendizaje $5\times10^{-6}$, temperatura 0.05 y entrenamiento bidireccional. La pérdida registrada fue una entropía cruzada estilo MNRL con negativos explícitos. La minería de negativos produjo 3997 filas negativas, con 2526 casos medios y 1471 casos duros. La Figura~\ref{fig:anexo-negative-mix} muestra la composición de estos negativos.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\linewidth]{generated/embedding_v3_negative_mix.pdf}
+\caption{Composición de negativos usados en la iteración v3}
+\label{fig:anexo-negative-mix}
+\end{figure}
+
+Las figuras anteriores representan la evolución del desempeño de recuperación entre candidatos ya entrenados. No corresponden a curvas internas de pérdida de entrenamiento, porque los experimentos de Sentence Transformers no conservaron una serie histórica de pérdida por época o paso. Para futuras corridas, se recomienda habilitar logging a TensorBoard o persistir un archivo CSV o \texttt{trainer\_state.json} con pérdida de entrenamiento y validación por época.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2800}}@{}}
+\caption{Reportes del modelo de embeddings preparado}\label{tab:anexo-reportes-embeddings}\\
+\toprule
+\textbf{Reporte} & \textbf{Ruta} & \textbf{Contenido} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Reporte} & \textbf{Ruta} & \textbf{Contenido} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Entrenamiento & \filepath{reports/04_embeddings/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_training.json} & Configuración, minería y métricas finales \\
+Recuperación castellano--shiwilu & \filepath{reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_esp_to_shi_retrieval.json} & R@1, R@5, R@10, MRR y distribución de rangos \\
+Recuperación shiwilu--castellano & \filepath{reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_shi_to_esp_retrieval.json} & R@1, R@5, R@10, MRR y distribución de rangos \\
+Congelamiento del candidato & \filepath{reports/04_embeddings/experiments/v3_iterative_hn_e5_base_bidirectional/v3_iterative_hn_e5_base_bidirectional_freeze_metadata.json} & Rutas finales, manifiesto y decisión de cierre \\
+Script de figuras & \filepath{scripts/generate_embedding_figures.py} & Generación reproducible de gráficas desde reportes JSON \\
+Resumen tabular de métricas & \filepath{thesis/latex/figuras/generated/embedding_metrics_summary.csv} & Métricas, hipótesis, resultados y decisiones por variante \\
+\end{longtable}
+
+La decisión registrada para este candidato fue \texttt{candidate\_final\_embedding\_model}. Por tanto, el modelo queda como entregable del resultado R2 y como insumo listo para integración o evaluación con etapas posteriores de traducción automática neuronal.
 
 \end{document}
