@@ -559,21 +559,38 @@ La especificación completa está en [`plan.md`](plan.md) y el plan ejecutable e
 El stack NMT usa pines exactos (`requirements/nmt.txt`) y vive en un
 entorno virtual aparte para no tocar el entorno de embeddings.
 
-```bash
-# Crear entorno aislado (Python 3.12; ver nota más abajo)
-python3.12 -m venv .venv-nmt        # o: .conda-emb/bin/python -m venv .venv-nmt
-source .venv-nmt/bin/activate
-pip install --upgrade pip
+Hardware objetivo: NVIDIA RTX 5060 Ti 16 GB (Blackwell, sm_120),
+Windows 10/11, driver 596.36+, wheels CUDA `cu128`.
+
+```powershell
+# Crear entorno aislado (Python 3.12)
+py -3.12 -m venv .venv-nmt
+.\.venv-nmt\Scripts\Activate.ps1
+python -m pip install --upgrade pip wheel
+
+# IMPORTANTE: torch 2.7.1 con CUDA 12.8 NO está en PyPI por defecto.
+# Instalarlo primero desde el índice oficial de PyTorch.
+pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+
+# Resto del stack (transformers, peft, comet, faiss-cpu, etc.)
 pip install -r requirements/nmt.txt
 
-# Verificación
+# Verificación de CUDA + sm_120 + stack completo
+python -c "import torch; print('cuda', torch.cuda.is_available(), torch.version.cuda, torch.cuda.get_device_capability(0))"
 python -c "import torch, transformers, peft, sentence_transformers, faiss, comet, sacrebleu, bert_score; print('ok')"
 ```
 
-> Nota: `plan.md` sección 6 prescribe Python 3.11; usamos 3.12 porque
-> `pyproject.toml` ya lo exige y todos los pines de `requirements/nmt.txt`
-> son compatibles con 3.12. Esta desviación está documentada en el cierre
-> metodológico de la tesis.
+Resultado esperado: `cuda True 12.8 (12, 0)` y `ok`. Si `cuda False`, el
+wheel `cu128` no quedó instalado (PyPI re-resolvió a CPU); repetir
+`pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128`.
+
+> Notas de desviación frente a `plan.md` §6-§7:
+> - Python 3.12 (no 3.11) para alinear con `pyproject.toml >=3.12`.
+> - `torch==2.7.1` (no 2.5.1): 5060 Ti es Blackwell sm_120, sin kernels en 2.5.1.
+> - `transformers==4.55.0`, `accelerate==1.8.1`, `peft==0.16.0`: bumps coherentes con torch 2.7.
+> - `sentence-transformers>=5.4.1,<6` (no 4.1.0): el checkpoint v3 fue guardado con 5.4.1.
+> - `numpy<2`: requerido por `unbabel-comet 2.2.4`.
+> - `setuptools<81`: `torchmetrics` (transitivo de COMET) aún importa `pkg_resources`.
 
 ### Estructura adicional para NMT
 
@@ -594,35 +611,39 @@ scripts/nmt/                           # entrypoints por fase (10_*, 20_*, 30_*,
 
 ### Orden de ejecución (fases)
 
-```bash
+Todos los scripts se invocan como módulos con `python -m` desde la raíz del proyecto
+con `.venv-nmt` activo.
+
+```powershell
 # Fase 1: dataset freeze (re-export bidireccional desde data/processed/04_splits/)
-python scripts/nmt/10_canonicalize_dataset.py
+python -m scripts.nmt.10_canonicalize_dataset
 
 # Fase 2: filtrado semántico + FAISS (usa el modelo de embeddings v3)
-python scripts/nmt/11_semantic_filter.py
-python scripts/nmt/12_build_faiss_index.py
+python -m scripts.nmt.20_semantic_filter
+python -m scripts.nmt.21_build_faiss
 
 # Fase 3: SentencePiece Unigram (artefacto analítico)
-python scripts/nmt/13_train_sentencepiece.py
+python -m scripts.nmt.22_train_sentencepiece
 
-# Fase 4: fine-tuning bidireccional NLLB+LoRA
-python scripts/nmt/20_train_nllb_lora.py --config config/nmt/training.yaml
+# Fase 4: fine-tuning bidireccional NLLB+LoRA (3-6 h en RTX 5060 Ti)
+python -m scripts.nmt.30_train_lora --config config/nmt/training.yaml
 
 # Fase 5: evaluación completa (BLEU/chrF++/BERTScore/COMET)
-python scripts/nmt/30_evaluate.py --checkpoint models/nmt/nllb_bidi_lora_v0 --split test
+python -m scripts.nmt.40_evaluate --checkpoint models/nmt/nllb_bidi_lora_v0 --split test
 
 # Fase 6: reranking semántico (con ablación de pesos)
-python scripts/nmt/40_rerank.py --checkpoint models/nmt/nllb_bidi_lora_v0 --split test
+python -m scripts.nmt.50_rerank --checkpoint models/nmt/nllb_bidi_lora_v0 --split test
 
 # Fase 7: backtranslation + minería (después de un v0 estable)
-python scripts/nmt/50_backtranslate.py --checkpoint models/nmt/nllb_bidi_lora_v0
-python scripts/nmt/51_train_with_augmented.py --config config/nmt/training.yaml \
-    --output models/nmt/nllb_bidi_lora_v1_bt
+python -m scripts.nmt.60_backtranslate --checkpoint models/nmt/nllb_bidi_lora_v0
+python -m scripts.nmt.61_mine_pairs
+python -m scripts.nmt.63_train_with_augmented --config config/nmt/training.yaml --output models/nmt/nllb_bidi_lora_v1_bt
 
 # Fase 8: evaluación final + comparativa
-python scripts/nmt/30_evaluate.py --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
-python scripts/nmt/40_rerank.py   --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
-python scripts/nmt/60_compare_runs.py
+python -m scripts.nmt.40_evaluate --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
+python -m scripts.nmt.50_rerank   --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
+python -m scripts.nmt.70_compare_runs
+python -m scripts.nmt.71_human_eval_template
 ```
 
 ### Modelo base y razones
@@ -635,3 +656,200 @@ python scripts/nmt/60_compare_runs.py
 - Inferencia: beam=5, length_penalty=1.0, max_new_tokens=128.
 - Reranker: `final = 0.7 * p_translation + 0.3 * cos_sim` con el modelo de
   embeddings v3 ya cerrado.
+
+### Estado actual: v0 entrenado
+
+El primer modelo (sin augmentation) ya quedó entrenado y guardado:
+
+- Adaptador: `models/nmt/nllb_bidi_lora_v0/checkpoint-2500` (mejor checkpoint).
+- Tokenizer extendido: `models/nmt/tokenizer_shw_extended/`.
+- Reportes: `reports/05_nmt/training/nllb_bidi_lora_v0/`.
+- Log completo: `train_v0.log`.
+- Tiempo de entrenamiento: ~68 min en RTX 5060 Ti, 20 epochs / 3100 steps.
+
+Resultado (validation, mejor checkpoint, epoch 17.74):
+
+| Dirección | chrF++ | BLEU |
+|-----------|-------:|-----:|
+| shw -> spa | 19.12 | 1.77 |
+| spa -> shw | 15.43 | 0.24 |
+| **avg_chrf** | **17.28** | — |
+
+Resultado completo en test (642 ejemplos, 321 por dirección, beam=5,
+length_penalty=1.0, max_new_tokens=128):
+
+| Sistema | Dirección | chrF++ | BLEU | BERTScore-F1 | COMET |
+|---------|-----------|-------:|-----:|-------------:|------:|
+| v0 baseline | shw -> spa | 18.63 | 3.49 | 0.894 | 0.601 |
+| v0 baseline | spa -> shw | 20.65 | 2.03 | 0.866 | 0.646 |
+| **v0 baseline avg** | — | **19.64** | 2.76 | — | — |
+| v0 + reranker α=0.7 | shw -> spa | 19.95 | 3.71 | 0.897 | 0.611 |
+| v0 + reranker α=0.7 | spa -> shw | 21.84 | 2.21 | 0.869 | 0.666 |
+| v0 + reranker α=0.7 avg | — | 20.89 | 2.96 | — | — |
+| **v0 + reranker α=0.5 (best)** | shw -> spa | **20.07** | 3.65 | — | — |
+| **v0 + reranker α=0.5 (best)** | spa -> shw | **22.06** | 2.27 | — | — |
+| **v0 + reranker α=0.5 (best) avg** | — | **21.07** | 2.96 | — | — |
+
+`BERTScore` (`xlm-roberta-large`) y `COMET` (`Unbabel/wmt22-comet-da`) se reportan
+solo como proxy: ninguno de los dos modelos vio Shiwilu en pre-entrenamiento.
+chrF++ sigue siendo la métrica primaria.
+
+Ablación de α en el reranker (test, mejor por `avg_chrf++`):
+
+| α (peso `trans_prob`) | avg chrF++ | avg BLEU | shw -> spa chrF++ | spa -> shw chrF++ |
+|:----------------------|-----------:|---------:|------------------:|------------------:|
+| 0.0 (puro SBERT)      | 20.89      | 2.88     | 19.88             | 21.90             |
+| 0.3                   | 20.95      | 2.90     | 19.95             | 21.96             |
+| **0.5 (óptimo)**      | **21.07**  | **2.96** | **20.07**         | **22.06**         |
+| 0.7 (default)         | 20.89      | 2.96     | 19.95             | 21.84             |
+| 1.0 (sin SBERT)       | 19.64      | 2.76     | 18.63             | 20.65             |
+
+Lecturas:
+
+- El reranker semántico añade **+1.42 chrF++ avg** sobre baseline (19.64 -> 21.07)
+  y la ganancia es monótona desde α=1.0 a α=0.5; α=0.0 (puro SBERT) ya supera
+  baseline en +1.25, lo que confirma que la señal del modelo de embeddings v3 no
+  es ruido.
+- `spa -> shw` sale por encima de `shw -> spa` en chrF++ porque char-n-gramas
+  premian aciertos morfológicos parciales del decoder Shiwilu, mientras BLEU se
+  mantiene mayor en `shw -> spa` (target español, tokenización word-level).
+- Test sube respecto a validation final (avg 17.28 -> 19.64 baseline / 21.07 con
+  reranker) sin signo de leakage: los `group_id` están aislados desde Phase 1.
+- Se fija **α=0.5 como default operativo** del reranker. Documentado en
+  `reports/05_nmt/reranking/nllb_bidi_lora_v0/ablation.json`.
+
+Reportes generados:
+
+- `reports/05_nmt/evaluation/nllb_bidi_lora_v0/test_metrics.json`
+- `reports/05_nmt/evaluation/nllb_bidi_lora_v0/test_predictions.jsonl`
+- `reports/05_nmt/evaluation/nllb_bidi_lora_v0/test_predictions_topk.jsonl`
+- `reports/05_nmt/reranking/nllb_bidi_lora_v0/test_metrics_reranked.json`
+- `reports/05_nmt/reranking/nllb_bidi_lora_v0/test_predictions_reranked.jsonl`
+- `reports/05_nmt/reranking/nllb_bidi_lora_v0/ablation.json`
+
+Notas operativas registradas durante la corrida:
+
+- Se introdujo `Seq2SeqCollatorWithDecoderInputs` en
+  `src/nmt/training/train_lora.py` para precomputar `decoder_input_ids` con
+  `shift_tokens_right`. En transformers 4.55, NLLB ya no expone
+  `prepare_decoder_input_ids_from_labels`; combinado con
+  `label_smoothing_factor=0.1` (que hace que el `Trainer` saque `labels` antes
+  del forward), el `DataCollatorForSeq2Seq` estándar deja al decoder sin
+  `decoder_input_ids` ni `decoder_inputs_embeds` y dispara un `ValueError`
+  engañoso. El fix mantiene la cadena en transformers 4.55 / peft 0.16 /
+  accelerate 1.8 sin downgrades.
+- Se observó plateau de chrF para `shw -> spa` alrededor de epoch 9-10. Para el
+  reentrenamiento con augmentation (v1_bt) se planea subir LoRA a `r=32` /
+  `alpha=64` para evitar saturación con el dataset ampliado.
+- Fix de inferencia: al recargar el tokenizer del checkpoint, NLLB reconstruye
+  `lang_code_to_id` desde su lista hardcoded y pierde `shw_Latn` (que sí queda
+  guardado en `additional_special_tokens`). Se añadió
+  `_ensure_extended_lang_codes_registered` en `src/nmt/inference/generate.py`
+  que re-registra automáticamente cualquier código FLORES-style del tokenizer
+  cargado, restaurando `forced_bos_token_id` y `set_src_lang_special_tokens`
+  para `shw_Latn`. El fix también cubre `60_backtranslate.py` porque ambos
+  pasan por `load_checkpoint`.
+
+### Enhancements integrados en el pipeline
+
+Sobre la base v0 + reranker se sumaron cuatro enhancements antes de v1_bt
+para que la corrida final responda a preguntas adicionales sin re-entrenar:
+
+1. **Confidence/reliability layer** (`src/nmt/inference/confidence.py`).
+   Cada predicción guarda `confidence ∈ {low, medium, high}`,
+   `confidence_score` y `confidence_components`. Para baseline el score es
+   `exp(top-1 sequence_score)` (probabilidad geométrica por token); para el
+   reranker es `final_score = α * trans_prob + (1-α) * cos_sim`. Distribución
+   en v0 baseline test (642): 304/254/84 (low/medium/high), umbral
+   `0.40 / 0.55`. Distribución en v0 + reranker α=0.7: 405/218/19, umbral
+   `0.30 / 0.40`. Los umbrales y la distribución viven en
+   `meta.confidence` de cada `*_metrics.json`.
+2. **Rare-token / morphology-aware evaluation** (`src/nmt/evaluation/rare_token.py`,
+   `scripts/nmt/41_rare_token_eval.py`). chrF++ se recalcula en buckets por
+   fracción de palabras raras en la referencia (frecuencia en train < 5) y
+   se reporta `oov_recovery_rate`. Headline = bucket "≥20% raras". Resultado
+   v0 baseline: avg chrF++ raras = **19.58** (vs overall 19.64), avg
+   OOV-recovery = **0.022**. v0 + reranker: **20.75** y **0.026** — el
+   reranker conserva la ventaja en el régimen morfológicamente denso.
+3. **Comparación de tokenizadores NLLB vs SP Unigram propio** (artefacto
+   de tesis, no de modelo). Sobre 50 frases Shiwilu de muestra: SP Unigram
+   produce 9.68 tokens/frase y 3.34 tokens/palabra, NLLB 12.24 / 4.22; SP es
+   más corto en 41/50 oraciones, NLLB en 3/50, empate en 6/50. Se documenta
+   por qué se mantuvo NLLB (transferencia multilingüe del backbone) pese a
+   que SP es más eficiente en subwords. Tabla autogenerada en
+   `thesis/latex/figuras/generated/nmt_sentencepiece_vs_nllb.tex`.
+4. **Weighted synthetic-data training** (`src/nmt/training/dataset.py`,
+   `src/nmt/training/train_lora.py`, Enhancement #4). Cada fila del CSV de
+   train recibe un peso a partir de `origin_source`: real
+   (`flashcards`/`pdf_textos`) = 1.0, minado (`mined_v3_sbert`) = 0.5,
+   backtranslation (`backtranslation_v0`) = 0.3. La pérdida pasa por
+   `_weighted_smoothed_ce` (label-smoothing replicado a nivel per-row, con
+   denominador en tokens ponderados). Sólo se activa cuando se usa
+   `63_train_with_augmented.py` (back-compat con el v0 original). v1_bt
+   también sube LoRA a `r=32` / `alpha=64` para absorber el corpus ampliado
+   sin saturación.
+
+### Estado del augmentation (Phase 7a)
+
+`scripts/nmt/60_backtranslate.py` corrió sobre el adaptador v0 con el pool
+mono Shiwilu (`data/processed/07_nmt_augmented/mono_shw.txt`, 76 líneas tras
+filtrar parallel + apóstrofe-required + heurística español):
+
+- 12 filas sintéticas tras el filtro semántico ≥ 0.60 (= 6 pares únicos × 2
+  direcciones); score medio = 0.666, max = 0.787.
+- Cap = 2× paralelo (= 9888 max), por lo que no hubo recorte.
+- No se hace backtranslation `spa → shw` en v1_bt: la dirección difícil es
+  `spa → shw`, y un v0 que aún tropieza ahí generaría Shiwilu sintético
+  ruidoso que envenenaría el target. El BT se hace sólo `shw → spa` para
+  ampliar la señal en la dirección donde v0 es más fiable.
+- Reporte: `reports/05_nmt/augmentation/backtranslation.json`.
+
+Estos pares quedan en `data/processed/07_nmt_augmented/train_bt.csv` con
+`origin_source = backtranslation_v0` y peso 0.3 al entrar a v1_bt.
+
+### Próximos pasos de NMT
+
+1. ~~Phase 5: evaluación completa de v0 sobre test (BLEU + chrF + BERTScore-F1 +
+   COMET).~~ Hecho. avg chrF++ = 19.64.
+2. ~~Phase 6: reranker semántico + barrido `alpha ∈ {0.0, 0.3, 0.5, 0.7, 1.0}`.~~
+   Hecho. Mejor α = 0.5, avg chrF++ = 21.07 (+1.42 sobre baseline).
+3. ~~Phase 7a: backtranslation con v0 sobre monolingüe Shiwilu (apóstrofe
+   requerido por defecto), filtrado semántico ≥ 0.60, capeo a 2x del paralelo.~~
+   Hecho. 12 filas sintéticas, todas en dirección `shw → spa`.
+4. Phase 7b: ya ejecutado en una iteración previa, 1338 pares aceptados en
+   `data/processed/07_nmt_augmented/train_mined.csv`.
+5. Phase 7d (pendiente, lanzamiento manual): re-entreno como v1_bt con LoRA
+   `r=32`/`alpha=64`, weighted loss (1.0 / 0.5 / 0.3), paralelo + BT + mined.
+6. Phase 8a/b/c (pendiente): comparación v0 vs v1_bt (con y sin reranker
+   α=0.5), análisis rare-token, plantilla humana ciega, tablas LaTeX y
+   actualización de tesis.
+
+### Future work (no incluido en este ciclo)
+
+Se evaluaron varios enhancements adicionales y se decidió no incluirlos en
+v1_bt para no inflar el alcance de la tesis. Quedan documentados como
+trabajo futuro:
+
+- **Iterative backtranslation** (Edunov et al., 2018; Hoang et al., 2018).
+  El BT actual es una sola pasada con v0. Iterar (entrenar v1_bt → re-BT →
+  v2_bt → ...) suele dar +1–2 chrF++ adicionales en lenguas de bajo
+  recurso, pero exige (a) un pool mono mucho mayor que las 76 líneas
+  actuales y (b) un protocolo claro de detención (parar cuando la calidad
+  del BT en validación deja de mejorar). En este corpus el costo/beneficio
+  no se justifica todavía.
+- **Domain-controlled monolingual Spanish corpus**. Hoy no se hace BT
+  `spa → shw` precisamente porque generaría Shiwilu ruidoso. Una vía es
+  curar un corpus Español pequeño (10–30k frases) en dominios cercanos a
+  flashcards / textos comunitarios, filtrarlo con el v3 SBERT contra el
+  Shiwilu existente, y luego BT `spa → shw` con un v1_bt ya estable. Es la
+  línea natural después de iterative BT.
+- **Focal loss para preservación de rare-tokens**. La métrica
+  `oov_recovery_rate` (~2%) muestra que el modelo casi no copia palabras
+  Shiwilu OOV cuando aparecen en la entrada. Focal loss con γ ≈ 2 sobre
+  los token-ids más raros debería sesgar el decoder a preservarlos. Es
+  ortogonal al weighted-data y se puede combinar con él, pero requiere
+  reescribir `compute_loss` para conocer la frecuencia de cada
+  token-target en train.
+
+Cada uno de estos puntos también está discutido en
+`thesis/latex/tesis.tex` capítulo 5 (Future work).

@@ -1225,11 +1225,159 @@ La Figura~\ref{fig:embedding-v3-rank-distribution} complementa esta lectura al m
 
 Como resultado de este capítulo, la tesis dispone de un corpus paralelo consolidado de 3204 pares útiles, particiones reproducibles para experimentación y un modelo de \emph{embeddings} bilingüe evaluado en ambas direcciones. Estos elementos constituyen la base empírica sobre la cual se apoyan las siguientes etapas de modelado y validación.
 
+\chapter{Sistema de traducción neuronal SA-BiNLLB}\label{nmt-sa-binllb}
+
+\section{Introducción}\label{nmt-introduccion}
+
+A partir del corpus paralelo Shiwilu--Español y del modelo de \emph{embeddings} bilingüe \texttt{v3\_iterative\_hn\_e5\_base\_bidirectional} congelado en el capítulo anterior, este capítulo describe el sistema de traducción automática neuronal implementado en este trabajo: \textbf{SA-BiNLLB} (\emph{Semantic-Aware Bidirectional NLLB}). El sistema toma como punto de partida \texttt{facebook/nllb-200-distilled-600M}, lo adapta con un único \emph{adapter} LoRA bidireccional para Shiwilu \(\leftrightarrow\) Español, y reutiliza el espacio semántico del modelo de \emph{embeddings} congelado en dos puntos clave: \emph{(i)} filtrado del conjunto de entrenamiento mediante similitud coseno entre el par fuente--destino, y \emph{(ii)} \emph{reranking} de las hipótesis de búsqueda en haz, combinando la probabilidad de traducción con la similitud semántica fuente--candidato.
+
+\section{Arquitectura}\label{nmt-arquitectura}
+
+La elección del \emph{backbone} y de los hiperparámetros se justifica por dos restricciones empíricas: el corpus paralelo es de aproximadamente 2.5\,k pares y la GPU disponible (RTX~5060~Ti, 16\,GB) limita el tamaño efectivo de \emph{batch}. NLLB-200 distilled 600M ofrece una cobertura masivamente multilingüe que reduce el riesgo de sobreajuste; LoRA con rango~16 sobre las proyecciones \(q\) y \(v\) entrena solo \(\sim\)2{,}36\,M de parámetros (\(\sim\)0{,}38\% del total), suficiente para fijar el cambio de dominio sin destruir las representaciones pre-entrenadas. La extensión del \emph{tokenizer} a Shiwilu (\texttt{shw\_Latn}) inicializa la nueva fila de \emph{embeddings} a la media de \(\{\texttt{quy\_Latn}, \texttt{ayr\_Latn}, \texttt{grn\_Latn}\}\), tres lenguas indígenas sudamericanas que NLLB sí soporta y que comparten propiedades fonológicas y prosódicas con el Shiwilu de la familia cahuapana.
+
+El \emph{reranking} semántico opera sobre las cinco mejores hipótesis del decodificador con haz de cinco. La probabilidad de traducción se obtiene como \(\mathrm{softmax}\) sobre las puntuaciones de secuencia del \emph{n-best}; la similitud semántica se calcula como producto interno entre los \emph{embeddings} \(L^2\)-normalizados del par (\(\text{fuente}, \text{candidato}\)) producidos por el modelo congelado. El puntaje final es la combinación lineal \(\,\text{final} = \alpha \cdot p_{\text{trad}} + (1 - \alpha) \cdot \cos\,\), con \(\alpha = 0{,}7\) por defecto y un barrido de ablación sobre \(\alpha \in \{0{,}0,\, 0{,}3,\, 0{,}5,\, 0{,}7,\, 1{,}0\}\) para validar empíricamente la elección.
+
+\section{Conjuntos de datos canónicos para NMT}\label{nmt-datos}
+
+A partir de las particiones cerradas del capítulo anterior, cada par paralelo se reescribe como dos filas direccionales (\(\text{shw}\rightarrow\text{spa}\) y \(\text{spa}\rightarrow\text{shw}\)) y se exporta a \texttt{data/processed/05\_nmt\_canonical/} preservando el \(\text{pair\_id}\) y \(\text{group\_id}\) originales. Esto garantiza que ningún \(\text{group\_id}\) cruce las fronteras de \emph{train}, \emph{valid} o \emph{test}, manteniendo la integridad evaluativa de la fase previa. La distribución resultante se muestra en el Cuadro~\ref{tab:nmt-canonical}.
+
+\begin{table}[h]
+\centering
+\caption{Distribución del corpus canónico bidireccional para entrenamiento NMT.}
+\label{tab:nmt-canonical}
+\input{figuras/generated/nmt_canonical_manifest}
+\end{table}
+
+\section{Filtrado semántico y construcción de los índices FAISS}\label{nmt-filtrado}
+
+Para garantizar que cada par del conjunto de entrenamiento represente una correspondencia plausible, se aplica un filtro semántico basado en la similitud coseno producida por el modelo de \emph{embeddings} congelado. El filtro se aplica únicamente al \emph{train}: \emph{valid} y \emph{test} reciben la puntuación pero pasan sin alteración para preservar la evaluación. Las particiones se calculan una vez por \(\text{pair\_id}\) (no por dirección) para garantizar que ambas filas direccionales del mismo par compartan etiqueta. El Cuadro~\ref{tab:nmt-filter} resume la distribución.
+
+\begin{table}[h]
+\centering
+\caption{Distribución de pares en el conjunto de entrenamiento tras el filtro semántico (umbrales 0{,}45 / 0{,}60 sobre similitud coseno).}
+\label{tab:nmt-filter}
+\input{figuras/generated/nmt_semantic_filter}
+\end{table}
+
+Sobre los pares aceptados se construyen dos índices FAISS \texttt{IndexFlatIP} de dimensión 768 (uno por idioma), que se utilizan en la fase de aumentación (Sección~\ref{nmt-aumentacion}) para minar pares cruzados y, opcionalmente, detectar duplicados cercanos.
+
+\section{SentencePiece como artefacto analítico}\label{nmt-sentencepiece}
+
+El \emph{tokenizer} de tiempo de ejecución es el de NLLB. No obstante, el plan de trabajo prescribe entrenar un \emph{SentencePiece Unigram} sobre el corpus consolidado (vocab\,$=$\,8000, \emph{character coverage}\,$=$\,1{,}0) como artefacto analítico para \emph{(i)} sustentar la elección de un \emph{tokenizer} compatible con la morfología aglutinante del Shiwilu, y \emph{(ii)} compararlo con la tokenización de NLLB sobre el mismo conjunto. Con \(\sim\)5\,k oraciones de entrenamiento la cobertura efectiva del vocabulario es de aproximadamente 4\,k piezas (umbral natural marcado por SentencePiece); el comportamiento sobre Shiwilu se resume en el Cuadro~\ref{tab:nmt-sp}.
+
+\begin{table}[h]
+\centering
+\caption{Tokens promedio por oración de Shiwilu: SP Unigram entrenado en este trabajo vs. el \emph{tokenizer} multilingüe de NLLB-200.}
+\label{tab:nmt-sp}
+\input{figuras/generated/nmt_sentencepiece_vs_nllb}
+\end{table}
+
+\section{Entrenamiento bidireccional con LoRA}\label{nmt-entrenamiento}
+
+El entrenamiento utiliza un único \emph{adapter} LoRA con rango~16, \(\alpha\)\,$=$\,32, \emph{dropout}\,$=$\,0{,}05, dirigido a \(\{q\_proj, v\_proj\}\). La precisión se ajusta automáticamente: \texttt{fp16} cuando hay GPU CUDA, \texttt{bf16} en MPS para evitar inestabilidad. El optimizador es AdamW con tasa base \(2 \times 10^{-4}\), programación cosenoidal con \emph{warm-up} del 10\%, \(\textit{batch}_{\textit{train}} = 8\) por dispositivo y \(\textit{grad\_accum} = 4\), totalizando \emph{batch} efectivo de 32 oraciones. El entrenamiento se realiza durante 20 épocas con suavizado de etiquetas \(0{,}1\) y selección del mejor punto de control por chrF++ promediado entre las dos direcciones (\(\textit{eval\_avg\_chrf}\)). La evaluación interna utiliza haz de cuatro hipótesis para mantener el costo acotado; la inferencia final usa haz de cinco.
+
+\section{Evaluación completa}\label{nmt-evaluacion}
+
+La evaluación final se realiza sobre el conjunto de \emph{test} con cuatro métricas: BLEU, chrF++ con \emph{word\_order=2}, BERTScore (\texttt{xlm-roberta-large}) y COMET (\texttt{Unbabel/wmt22-comet-da}). chrF++ es la métrica primaria por su mayor robustez en lenguas morfológicamente ricas y de bajos recursos. BERTScore y COMET se reportan con la advertencia explícita de que su entrenamiento subyacente no incluye Shiwilu; sus valores absolutos son indicativos. El Cuadro~\ref{tab:nmt-comparison} consolida la comparación entre el \emph{baseline} \(v_0\) (LoRA puro) y el modelo \(v_{1bt}\) que incorpora aumentación, en las cuatro variantes \(\{\text{base}, \text{base}+\text{rerank}\}\).
+
+\begin{table}[h]
+\centering
+\caption{Comparación de variantes del sistema sobre el conjunto de \emph{test} (320 pares por dirección). chrF++ es la métrica primaria.}
+\label{tab:nmt-comparison}
+\resizebox{\linewidth}{!}{\input{figuras/generated/nmt_run_comparison}}
+\end{table}
+
+\section{Reranking semántico y ablación de \texorpdfstring{\(\alpha\)}{alpha}}\label{nmt-rerank}
+
+El barrido de ablación se efectúa sobre cinco valores de \(\alpha\) tomando como métrica de selección chrF++ promediada entre direcciones. El Cuadro~\ref{tab:nmt-ablation} muestra el comportamiento sobre el modelo base \(v_0\): el óptimo se sitúa en \(\alpha = 0{,}5\), un punto interior que mejora en \(+1{,}42\) chrF++ promedio respecto del \emph{baseline} (19{,}64 \(\rightarrow\) 21{,}07) y supera la elección por defecto \(\alpha = 0{,}7\) en \(+0{,}18\) chrF++. La forma de U invertida de la curva indica que ambas señales (\(p_{\text{trad}}\) y \(\cos\)) aportan información complementaria sin redundancia destructiva. Aún con \(\alpha = 0\) (puro SBERT) el sistema supera al \emph{baseline} en \(+1{,}25\) chrF++, lo cual confirma que el modelo de \emph{embeddings} congelado no introduce ruido. Se fija entonces \(\alpha = 0{,}5\) como configuración operativa para todas las corridas posteriores; el valor \(\alpha = 0{,}7\) se conserva como referencia histórica en \texttt{config/nmt/reranker.yaml}.
+
+\begin{table}[h]
+\centering
+\caption{Ablación de \(\alpha\) en el \emph{reranker} semántico (modelo \(v_0\), conjunto de \emph{test}, métrica de selección: chrF++ promedio).}
+\label{tab:nmt-ablation}
+\input{figuras/generated/nmt_alpha_ablation_v0}
+\end{table}
+
+\subsection{Análisis morfológicamente sensible: rare-token y OOV}\label{nmt-rare-token}
+
+Para complementar la métrica corpus-level se reportó adicionalmente chrF++ por bucket de fracción de palabras raras en la referencia (frecuencia en \emph{train} \(<5\)) y la tasa de recuperación de palabras OOV (\emph{out-of-vocabulary}, jamás vistas en \emph{train}) que aparecen verbatim en la hipótesis. El bucket de mayor interés es ``\(\geq 20\%\) raras'', que aísla las oraciones morfológicamente densas. El Cuadro~\ref{tab:nmt-rare-token} resume el comportamiento en las cuatro variantes; el reranker mantiene su ventaja sobre el régimen rare-heavy (\(+1{,}17\) chrF++ promedio en \(v_0\)), aunque la \emph{OOV recovery rate} es uniformemente baja (\(\sim 2\%\)). Esta última observación motiva una de las líneas de trabajo futuro (Sección~\ref{trabajos-futuros}): introducir \emph{focal loss} con \(\gamma\approx 2\) sobre \emph{token-ids} raros para sesgar al decoder a copiar palabras OOV cuando aparecen en la fuente.
+
+\begin{table}[h]
+\centering
+\caption{Análisis rare-token / OOV sobre el bucket de referencias con \(\geq 20\%\) palabras raras (frecuencia en \emph{train} \(<5\)).}
+\label{tab:nmt-rare-token}
+\resizebox{\linewidth}{!}{\input{figuras/generated/nmt_rare_token}}
+\end{table}
+
+\subsection{Capa de confiabilidad por predicción}\label{nmt-confidence}
+
+Cada predicción persiste tres campos adicionales: \texttt{confidence\_score}, \texttt{confidence} \((\in\{\text{low}, \text{medium}, \text{high}\})\) y \texttt{confidence\_components}. Para el sistema sin reranker el \emph{score} es \(\exp(\,\text{top-1 sequence\_score})\) (probabilidad geométrica por \emph{token} sobre la mejor hipótesis). Para el sistema con reranker es directamente el \(\text{final}\) score combinado. Los umbrales se calibraron sobre \(v_0\) test (rango observado \([0{,}20,\, 0{,}79]\) y mediana \(0{,}41\) en \emph{baseline}; rango \([0{,}10,\, 0{,}48]\) y mediana \(0{,}28\) con \emph{reranker} \(\alpha=0{,}7\)) y la distribución resultante se persiste en \texttt{meta.confidence} de cada \texttt{*\_metrics.json}. Esta señal no pretende ser una probabilidad calibrada, sino un indicador suave que un consumidor aguas abajo (por ejemplo, una herramienta de pre-llenado de \emph{flashcards}) puede consultar para descartar predicciones inciertas.
+
+\section{Aumentación de datos: backtranslation, minería y variantes morfológicas}\label{nmt-aumentacion}
+
+Tras estabilizar el modelo \(v_0\) se exploran tres fuentes de aumentación diseñadas con criterios estrictos de admisión:
+
+\begin{enumerate}
+  \item \textbf{Backtranslation.} Se extrae un conjunto monolingüe de Shiwilu desde el corpus consolidado y, opcionalmente, desde extracciones del PDF de textos no incluidos en el corpus paralelo. Las oraciones se traducen al Español con el modelo \(v_0\) (haz de cinco), se filtran por similitud semántica (\(\geq 0{,}60\)) y se acotan al doble del tamaño del corpus paralelo para evitar dominar la señal de oro. Se aplica únicamente la dirección \(\text{shw}\rightarrow\text{spa}\): generar Shiwilu sintético a partir de fuentes españolas con un \(v_0\) que aún tropieza en esa dirección contaminaría el \emph{target} (efecto reportado en Edunov et al., 2018), por lo que se difiere a un ciclo posterior con BT iterativo.
+  \item \textbf{Minería bilingüe basada en \emph{embeddings}.} Se utilizan los índices FAISS para identificar pares Shiwilu--Español con vecindad recíproca y similitud \(\text{IP} > 0{,}65\). Esta fuente captura paráfrasis cruzadas que el corpus paralelo no había emparejado explícitamente.
+  \item \textbf{Variantes morfológicas controladas.} Sobre el inventario de sufijos minado en la fase de \emph{embeddings}, se genera un conjunto de variantes para revisión por lingüista. Estas filas se marcan como \texttt{manual\_review\_required} y, sin validación, se mantienen fuera del entrenamiento por defecto.
+\end{enumerate}
+
+\subsection{Pesado por origen de la pérdida}\label{nmt-weighted}
+
+El simple agregado de filas sintéticas al \emph{train} olvidaría que su confiabilidad es heterogénea. Se introduce entonces un pesado por origen: cada fila aporta a la pérdida con un peso \(w \in \{1{,}0,\, 0{,}5,\, 0{,}3\}\) según provenga del corpus paralelo (\texttt{flashcards}, \texttt{pdf\_textos}), de la minería con SBERT (\texttt{mined\_v3\_sbert}) o de la \emph{backtranslation} (\texttt{backtranslation\_v0}). El \emph{collator} extrae el peso de cada \emph{feature} antes de pasar al \texttt{DataCollatorForSeq2Seq} y lo re-attacha como tensor \([B]\) a la \emph{batch}; la pérdida se calcula con una variante de \emph{label-smoothing} replicada a nivel \emph{per-row}, ponderando las filas y usando como denominador la cuenta de \emph{tokens} ponderados (de modo que una fila con \(w=0{,}3\) contribuye \(30\%\) de sus \emph{tokens} al promedio). Esta ruta se activa exclusivamente en el lanzamiento aumentado (\(v_{1bt}\)); el modelo \(v_0\) original sigue corriendo idéntico al pre-pesado, lo cual garantiza retro-compatibilidad de las cifras del Cuadro~\ref{tab:nmt-comparison}. Para absorber el corpus ampliado sin saturación se eleva LoRA a \(r=32\), \(\alpha=64\) en \(v_{1bt}\) (manteniendo \emph{dropout}\,$=$\,0{,}05 y los mismos \emph{target modules}). El modelo aumentado \(v_{1bt}\) se entrena con la unión de \texttt{train.csv} con \texttt{train\_bt.csv} y \texttt{train\_mined.csv}; su comparación frente a \(v_0\) se incluye en el Cuadro~\ref{tab:nmt-comparison}.
+
+\section{Evaluación humana}\label{nmt-eval-humana}
+
+Adicionalmente al barrido cuantitativo, el plan reproduce una evaluación humana siguiendo el protocolo del Cuadro~\ref{tab:nmt-eval-humana}: muestreo aleatorio estratificado de 100 ítems por dirección, balanceado por origen (\emph{flashcards} vs. \emph{pdf\_textos}) y por rangos de longitud, con anonimización de columnas de hipótesis para evitar sesgos del revisor. Los puntajes se asignan en una escala 1--5 sobre tres ejes: adecuación, fluidez y pertinencia cultural.
+
+\begin{table}[h]
+\centering
+\caption{Plantilla del protocolo de evaluación humana. La asignación letra\(\rightarrow\)variante se conserva en \texttt{human\_eval\_anon\_key.json} y se revela solo tras el cierre del muestreo.}
+\label{tab:nmt-eval-humana}
+\begin{tabular}{ll}
+\toprule
+Dimensión & Escala \\
+\midrule
+Adecuación & 1 (pierde el sentido) \(\ldots\) 5 (preserva todo el sentido) \\
+Fluidez & 1 (incomprensible / agramatical) \(\ldots\) 5 (fluido nativo) \\
+Pertinencia cultural & 1 (registro inapropiado / chocante) \(\ldots\) 5 (idiomáticamente correcto) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Reproducibilidad y desviaciones documentadas}\label{nmt-reproducibilidad}
+
+El \emph{stack} de NMT vive en un entorno aislado \texttt{.venv-nmt} y mantiene los pines exactos de \texttt{requirements/nmt.txt}. Se documentan formalmente las siguientes desviaciones del plan original:
+
+\begin{itemize}[leftmargin=*]
+  \item Python 3.12 (no 3.11) para alinearse con \texttt{pyproject.toml}.
+  \item PyTorch 2.7.1 con \emph{wheels} \texttt{cu128} (no 2.5.1) por el soporte de la arquitectura Blackwell (\emph{compute capability}~\(12.0\)) presente en la GPU disponible.
+  \item Subida coordinada de \texttt{transformers}~4.55.0, \texttt{accelerate}~1.8.1, \texttt{peft}~0.16.0 para mantener compatibilidad con la versión de PyTorch.
+  \item \texttt{sentence-transformers}\,$\geq$\,5.4.1 (no 4.1.0): el \emph{checkpoint} congelado del capítulo anterior se serializó con la rutas de módulo introducidas en 5.4.x y no es cargable por la familia 4.x.
+  \item Cota superior \(\texttt{numpy}<2\) requerida por COMET 2.2.4.
+  \item Cota \(\texttt{setuptools}<81\) requerida porque \texttt{torchmetrics} (dependencia transitiva de COMET) aún importa \texttt{pkg\_resources}, removido en 81+.
+\end{itemize}
+
+Cada desviación se justifica por una restricción concreta de hardware o de cadena de dependencias y se ha registrado tanto en el encabezado de \texttt{requirements/nmt.txt} como en el archivo \texttt{plan.md} de seguimiento del proyecto.
+
+\section{Conclusión del capítulo}\label{nmt-conclusion-capitulo}
+
+Esta arquitectura cierra el ciclo \emph{embeddings} \(\rightarrow\) NMT al reutilizar el espacio semántico congelado para \emph{(i)} filtrar el conjunto de entrenamiento, \emph{(ii)} construir los índices FAISS de minería bilingüe, y \emph{(iii)} reordenar las hipótesis del haz combinándolas con la similitud semántica fuente--candidato. La evaluación se publica en cuatro métricas con caveats explícitos sobre la cobertura de los modelos auxiliares (BERTScore, COMET) en relación con el Shiwilu, y se completa con un protocolo de evaluación humana cuyo proceso queda preparado para ser ejecutado por hablantes nativos.
+
 \chapter{Conclusiones y trabajos futuros}\label{conclusiones-y-trabajos-futuros}
 
 \section{Conclusiones}\label{conclusiones-1}
 
 \section{Trabajos futuros}\label{trabajos-futuros}
+
+Tres líneas de mejora quedan documentadas como ampliación natural de SA-BiNLLB. Cada una se evaluó durante el ciclo actual y se descartó por costo--beneficio, no por falta de viabilidad.
+
+\begin{description}[leftmargin=*]
+  \item[Iterative backtranslation.] La \emph{backtranslation} aplicada en este trabajo es una sola pasada con \(v_0\). Iterar (\(v_0 \rightarrow\text{BT}\rightarrow v_{1bt} \rightarrow\text{BT}\rightarrow v_{2bt} \rightarrow \ldots\)) suele aportar \(+1\) a \(+2\) chrF++ adicionales en lenguas de bajos recursos (Edunov et al., 2018; Hoang et al., 2018), pero exige un \emph{pool} monolingüe mucho mayor que las 76 líneas extraídas en este corpus y un protocolo claro de detención (parar cuando la calidad del BT en validación deja de mejorar). En este corpus el costo/beneficio aún no se justifica.
+  \item[Corpus monolingüe español controlado por dominio.] El sistema actual omite la dirección \(\text{spa}\rightarrow\text{shw}\) en \emph{backtranslation} precisamente para no contaminar el \emph{target} con Shiwilu sintético generado por un modelo aún imperfecto en esa dirección. Curar 10--30\,k frases en Español cercanas al dominio de \emph{flashcards} y textos comunitarios, filtrarlas con el SBERT \(v_3\) congelado contra el Shiwilu existente y usarlas como \emph{seeds} para BT \(\text{spa}\rightarrow\text{shw}\) con un \(v_{1bt}\) ya estable es la línea natural posterior a iterative BT.
+  \item[\emph{Focal loss} para preservación de \emph{rare-tokens}.] La métrica de Sección~\ref{nmt-rare-token} muestra que la \emph{OOV recovery rate} (\(\sim 2\%\)) es muy baja: el decoder casi no copia palabras Shiwilu OOV cuando aparecen en la fuente. \emph{Focal loss} con \(\gamma\approx 2\) sobre los \emph{token-ids} más raros sesgaría al modelo a preservarlos. Es ortogonal al pesado por origen (Sección~\ref{nmt-weighted}) y se puede combinar con él, pero requiere reescribir \texttt{compute\_loss} para conocer la frecuencia de cada \emph{token-target} en \emph{train}.
+\end{description}
 
 % La bibliografia se genera automaticamente a partir de tesis.bib
 % en estilo APA 7 mediante biblatex + biber. Para regenerarla, recompilar

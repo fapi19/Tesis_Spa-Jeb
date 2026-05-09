@@ -16,11 +16,20 @@
 #      have prebuilt CUDA kernels for sm_120; bumping is required to use
 #      the available hardware. transformers/accelerate/peft bumped accordingly.
 #   5. Glue libs use ">=" instead of "==" (project decision: middle-ground).
+#   6. sentence-transformers bumped 4.1.0 -> >=5.4.1,<6. The frozen
+#      v3_iterative_hn_e5_base_bidirectional checkpoint was saved with
+#      sentence-transformers 5.4.1 and uses the new module paths
+#      (sentence_transformers.base.modules.transformer.Transformer plus
+#      transformer_task / modality_config / include_prompt kwargs). 4.1.0
+#      cannot load it. Verified working on this Windows host with 5.4.1.
 #
-# CUDA install (Linux + RTX 5060 Ti): the torch line below uses PyPI default
-# wheels. To force a specific CUDA build, install torch separately first:
+# CUDA install (Windows + RTX 5060 Ti, sm_120 / Blackwell, driver 596.36 /
+# CUDA 13.2-capable): the torch line below uses PyPI default wheels (CPU).
+# Install the cu128 build first, then the rest of this file:
 #   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-# Then install the rest of this file.
+#   pip install -r requirements/nmt.txt
+# Verify with:
+#   python -c "import torch; print(torch.cuda.is_available(), torch.version.cuda)"
 
 # --- ML stack (exact pins) ---
 torch==2.7.1
@@ -29,7 +38,7 @@ accelerate==1.8.1
 datasets==3.6.0
 sentencepiece==0.2.0
 peft==0.16.0
-sentence-transformers==4.1.0
+sentence-transformers>=5.4.1,<6
 
 # --- Evaluation stack (exact pins, affects reported metrics) ---
 evaluate==0.4.3
