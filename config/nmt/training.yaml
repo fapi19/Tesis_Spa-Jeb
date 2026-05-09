@@ -1,0 +1,76 @@
+# NLLB + LoRA bidirectional fine-tuning configuration.
+# Hyperparameters per plan.md sections 23-29.
+
+base_model: facebook/nllb-200-distilled-600M
+
+# Tokenizer extension
+tokenizer:
+  shiwilu_lang_code: shw_Latn         # registered as new special token
+  also_register_t5_style_tags: true    # add <2shw> and <2spa> for compatibility
+  init_shw_from_neighbors:             # mean-init the new lang token embedding
+    - quy_Latn      # Ayacucho Quechua
+    - ayr_Latn      # Aymara
+    - grn_Latn      # Guarani
+
+# LoRA config (plan sections 23-24)
+lora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  bias: none
+  target_modules: [q_proj, v_proj]
+  task_type: SEQ_2_SEQ_LM
+
+# Training (plan section 25-29)
+training:
+  output_dir: models/nmt/nllb_bidi_lora_v0
+  seed: 42
+  learning_rate: 2.0e-4
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 4
+  num_train_epochs: 20
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  lr_scheduler_type: cosine
+  optim: adamw_torch
+  label_smoothing_factor: 0.1
+  max_source_length: 128
+  max_target_length: 128
+
+  # Precision is auto-selected at runtime: fp16 on CUDA, bf16 on MPS/CPU.
+  # Plan section 25 prescribes fp16=True; Apple Silicon MPS is unstable for
+  # fp16 so we degrade to bf16 there. Documented in the thesis methodology.
+  precision: auto
+
+  # Eval / save / select (sections 28-29, 31)
+  evaluation_strategy: steps
+  eval_steps: 250
+  save_strategy: steps
+  save_steps: 500
+  save_total_limit: 4
+  load_best_model_at_end: true
+  metric_for_best_model: eval_avg_chrf      # mean chrF++ across both directions
+  greater_is_better: true
+
+  # Generation during in-loop eval (kept light)
+  predict_with_generate: true
+  generation_num_beams: 4
+  generation_max_length: 128
+
+  logging_steps: 25
+  report_to: []     # no wandb/tensorboard by default; toggle in CLI
+
+# Data
+data:
+  train_csv: data/processed/06_nmt_filtered/train.csv
+  valid_csv: data/processed/06_nmt_filtered/valid.csv
+  test_csv:  data/processed/06_nmt_filtered/test.csv
+  source_column: source
+  target_column: target
+  source_lang_column: source_lang
+  target_lang_column: target_lang
+  # mapping plan-style codes to NLLB lang codes
+  lang_code_map:
+    shw: shw_Latn
+    spa: spa_Latn

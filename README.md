@@ -544,3 +544,94 @@ por lingüistas.
 - Revisar manualmente los errores top-1 solo si se quiere depurar datos o `group_id`;
   no iniciar otra ronda de entrenamiento sin esa revisión.
 - Preparar integración/evaluación con NMT sin reabrir el preprocesamiento de embeddings.
+
+---
+
+## Pipeline NMT (NLLB + LoRA)
+
+La fase NMT vive en `src/nmt/` y reutiliza el modelo de embeddings cerrado
+(`v3_iterative_hn_e5_base_bidirectional`) para filtrado semántico y reranking.
+La especificación completa está en [`plan.md`](plan.md) y el plan ejecutable en
+`.cursor/plans/sa-binllb_implementation_eb40261e.plan.md`.
+
+### Aislamiento de entorno
+
+El stack NMT usa pines exactos (`requirements/nmt.txt`) y vive en un
+entorno virtual aparte para no tocar el entorno de embeddings.
+
+```bash
+# Crear entorno aislado (Python 3.12; ver nota más abajo)
+python3.12 -m venv .venv-nmt        # o: .conda-emb/bin/python -m venv .venv-nmt
+source .venv-nmt/bin/activate
+pip install --upgrade pip
+pip install -r requirements/nmt.txt
+
+# Verificación
+python -c "import torch, transformers, peft, sentence_transformers, faiss, comet, sacrebleu, bert_score; print('ok')"
+```
+
+> Nota: `plan.md` sección 6 prescribe Python 3.11; usamos 3.12 porque
+> `pyproject.toml` ya lo exige y todos los pines de `requirements/nmt.txt`
+> son compatibles con 3.12. Esta desviación está documentada en el cierre
+> metodológico de la tesis.
+
+### Estructura adicional para NMT
+
+```
+config/nmt/                            # YAMLs por fase (filter, training, inference, reranker, eval)
+data/processed/05_nmt_canonical/       # CSV canónico bidireccional (Fase 1)
+data/processed/06_nmt_filtered/        # CSV filtrado semánticamente + índices FAISS (Fase 2)
+data/processed/07_nmt_augmented/       # backtranslation + minería + variantes morfológicas (Fase 7)
+models/nmt/sentencepiece/              # SP Unigram analítico (Fase 3)
+models/nmt/tokenizer_shw_extended/     # tokenizer NLLB con shw_Latn (Fase 4a)
+models/nmt/nllb_bidi_lora_v0/          # adapters LoRA + tokenizer extendido (Fase 4)
+models/nmt/nllb_bidi_lora_v1_bt/       # variante con backtranslation (Fase 7)
+reports/05_nmt/{preprocessing,training,evaluation,reranking,augmentation}/
+src/nmt/{preprocessing,training,reranking,evaluation,inference,augmentation}/
+src/nmt/_legacy/                       # baselines de Transformer-from-scratch (n0-n5)
+scripts/nmt/                           # entrypoints por fase (10_*, 20_*, 30_*, ...)
+```
+
+### Orden de ejecución (fases)
+
+```bash
+# Fase 1: dataset freeze (re-export bidireccional desde data/processed/04_splits/)
+python scripts/nmt/10_canonicalize_dataset.py
+
+# Fase 2: filtrado semántico + FAISS (usa el modelo de embeddings v3)
+python scripts/nmt/11_semantic_filter.py
+python scripts/nmt/12_build_faiss_index.py
+
+# Fase 3: SentencePiece Unigram (artefacto analítico)
+python scripts/nmt/13_train_sentencepiece.py
+
+# Fase 4: fine-tuning bidireccional NLLB+LoRA
+python scripts/nmt/20_train_nllb_lora.py --config config/nmt/training.yaml
+
+# Fase 5: evaluación completa (BLEU/chrF++/BERTScore/COMET)
+python scripts/nmt/30_evaluate.py --checkpoint models/nmt/nllb_bidi_lora_v0 --split test
+
+# Fase 6: reranking semántico (con ablación de pesos)
+python scripts/nmt/40_rerank.py --checkpoint models/nmt/nllb_bidi_lora_v0 --split test
+
+# Fase 7: backtranslation + minería (después de un v0 estable)
+python scripts/nmt/50_backtranslate.py --checkpoint models/nmt/nllb_bidi_lora_v0
+python scripts/nmt/51_train_with_augmented.py --config config/nmt/training.yaml \
+    --output models/nmt/nllb_bidi_lora_v1_bt
+
+# Fase 8: evaluación final + comparativa
+python scripts/nmt/30_evaluate.py --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
+python scripts/nmt/40_rerank.py   --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
+python scripts/nmt/60_compare_runs.py
+```
+
+### Modelo base y razones
+
+- Backbone NMT: `facebook/nllb-200-distilled-600M` (multilingual NMT pre-entrenado).
+- Adaptación: LoRA (`r=16`, `alpha=32`, `target_modules=["q_proj","v_proj"]`).
+  Los 615M parámetros base permanecen congelados.
+- Tokenizer: el de NLLB extendido con `shw_Latn` (más `<2shw>` / `<2spa>` por
+  compatibilidad con la especificación de `plan.md` §19).
+- Inferencia: beam=5, length_penalty=1.0, max_new_tokens=128.
+- Reranker: `final = 0.7 * p_translation + 0.3 * cos_sim` con el modelo de
+  embeddings v3 ya cerrado.

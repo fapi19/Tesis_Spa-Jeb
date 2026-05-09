@@ -1,0 +1,21 @@
+# Semantic reranker configuration (plan.md section 34).
+# final_score = w_translation * trans_prob + w_semantic * semantic_similarity
+
+weights:
+  translation: 0.7
+  semantic:    0.3
+
+# Translation probability normalization for the n-best list:
+#   sequence_scores -> softmax over the n candidates
+prob_normalization: softmax_over_nbest
+
+# Embedding model used for semantic_similarity. Must match Phase 2 filter.
+embedding_model:
+  path: models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional
+  use_e5_prefixes: false
+  batch_size: 32
+  device: auto
+
+# Ablation sweep written to reports/05_nmt/reranking/<run>/ablation.json
+ablation:
+  alphas: [0.0, 0.3, 0.5, 0.7, 1.0]

@@ -1,0 +1,55 @@
+# NMT pipeline (NLLB-200 + LoRA + semantic reranking)
+# Pinning strategy: exact pins on the ML / eval stack (anything that affects
+# model behavior or reported metrics), looser ranges on glue libs (numpy with
+# upper bound, pandas, sklearn, tqdm, pyyaml, pyarrow, matplotlib).
+#
+# Deviations from plan.md (documented in the thesis methodology):
+#   1. Python: plan §6 prescribes 3.11, we use 3.12 to align with pyproject.toml.
+#   2. numpy: plan §7 prescribes numpy==2.2.6, but unbabel-comet 2.2.4 hard-pins
+#      numpy<2.0.0. We use numpy>=1.26,<2 to satisfy COMET. COMET is non-
+#      negotiable per plan §30.
+#   3. setuptools<81: pkg_resources was removed in setuptools 81+ but
+#      torchmetrics (transitive dep of unbabel-comet via pytorch_lightning)
+#      still imports it. Pin under 81.
+#   4. torch bumped 2.5.1 -> 2.7.1 to support Blackwell consumer GPUs
+#      (sm_120, RTX 50 series). Plan §7 fixed torch==2.5.1 which does not
+#      have prebuilt CUDA kernels for sm_120; bumping is required to use
+#      the available hardware. transformers/accelerate/peft bumped accordingly.
+#   5. Glue libs use ">=" instead of "==" (project decision: middle-ground).
+#
+# CUDA install (Linux + RTX 5060 Ti): the torch line below uses PyPI default
+# wheels. To force a specific CUDA build, install torch separately first:
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+# Then install the rest of this file.
+
+# --- ML stack (exact pins) ---
+torch==2.7.1
+transformers==4.55.0
+accelerate==1.8.1
+datasets==3.6.0
+sentencepiece==0.2.0
+peft==0.16.0
+sentence-transformers==4.1.0
+
+# --- Evaluation stack (exact pins, affects reported metrics) ---
+evaluate==0.4.3
+sacrebleu==2.5.1
+bert-score==0.3.13
+unbabel-comet==2.2.4
+
+# --- Indexing (exact pin, affects neighbor results) ---
+faiss-cpu==1.11.0
+
+# --- Glue libs (loose, do not affect model/metric behavior) ---
+numpy>=1.26,<2          # upper bound required by unbabel-comet 2.2.4
+pandas>=2.2,<3
+scikit-learn>=1.6,<2
+tqdm>=4.67
+pyyaml>=6.0
+pyarrow>=16
+matplotlib>=3.9
+
+# --- Build/runtime shim ---
+# setuptools 81+ removes pkg_resources, which torchmetrics (transitive dep of
+# unbabel-comet via pytorch_lightning) still imports. Pin under 81.
+setuptools<81

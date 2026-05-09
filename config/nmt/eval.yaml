@@ -1,0 +1,31 @@
+# Full evaluation suite configuration (plan.md section 30-31).
+# chrF++ is the headline metric for low-resource morphology-rich languages.
+
+primary_metric: chrf_pp
+
+metrics:
+  bleu:
+    backend: sacrebleu
+    tokenize: 13a            # default sacrebleu tokenizer
+  chrf_pp:
+    backend: sacrebleu
+    word_order: 2            # makes it chrF++ (chrF with word order penalty)
+    char_order: 6
+    beta: 2
+  bertscore:
+    backend: bert-score
+    model_type: xlm-roberta-large
+    # XLM-R-large is multilingual; we use it for both Spanish and Shiwilu sides.
+    # Shiwilu is OOD for the model; reported with explicit caveat in metrics JSON.
+    num_layers: 17           # default for xlm-roberta-large
+    rescale_with_baseline: false
+  comet:
+    backend: unbabel-comet
+    model: Unbabel/wmt22-comet-da
+    # COMET-DA was not trained on Shiwilu; reported as indicative score with
+    # the caveat emitted into metrics JSON. chrF++ remains the headline.
+    batch_size: 16
+
+per_direction:
+  - shw2spa
+  - spa2shw

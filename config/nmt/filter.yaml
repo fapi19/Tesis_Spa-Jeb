@@ -1,0 +1,24 @@
+# Semantic filter configuration
+# Applied only to TRAIN. Valid/test pass through with score column attached.
+
+embedding_model:
+  path: models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional
+  # E5 family expects "query: " / "passage: " prefixes when used as a
+  # general-purpose encoder, but the v3 candidate was fine-tuned without
+  # those prefixes (matches src/embeddings/train_embedding_model.py and the
+  # retrieval evaluations in reports/04_embeddings/...). Keep raw inputs
+  # to avoid silent divergence with the closure setup.
+  use_e5_prefixes: false
+  batch_size: 32
+  device: auto       # cuda | mps | cpu | auto
+  fp16: false        # keep numerics stable for cosine scores
+
+thresholds:
+  remove_below: 0.45
+  flag_upper: 0.60   # 0.45 <= score <= 0.60 -> flagged_for_review
+  # score > 0.60 -> accepted
+
+faiss:
+  index_type: IndexFlatIP
+  build_for_sides: [shiwilu, spanish]
+  near_duplicate_warning_ip: 0.98

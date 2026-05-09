@@ -1,4 +1,7 @@
 .venv/
+.venv-nmt/
+.conda-emb/
+.conda-nmt/
 __pycache__/
 *.pyc
 .pytest_cache/
@@ -9,4 +12,15 @@ build/
 models/*
 !models/.gitkeep
 .hf_cache/
-.conda-emb
+
+# NMT pipeline outputs (auto-generated, not tracked)
+data/processed/05_nmt_canonical/
+data/processed/06_nmt_filtered/
+data/processed/07_nmt_augmented/
+reports/05_nmt/
+
+# Keep .gitkeep markers so the structure is reproducible
+!data/processed/05_nmt_canonical/.gitkeep
+!data/processed/06_nmt_filtered/.gitkeep
+!data/processed/07_nmt_augmented/.gitkeep
+!reports/05_nmt/.gitkeep
