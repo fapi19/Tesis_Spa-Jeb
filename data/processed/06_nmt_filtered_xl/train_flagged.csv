@@ -1,0 +1,609 @@
+﻿id,pair_id,group_id,source,target,source_lang,target_lang,split,has_audit_flags,origin_source,score,label
+U04394__shw2spa,U04394,G04129,katu'-shunka' ekkilala ñilli yunsu'a'kasu' ñinanlu'wekekla.,hace veinte años que salí de mi pueblo.,shw,spa,train,True,fidel_lomas,0.5950871,flagged_for_review
+U04394__spa2shw,U04394,G04129,hace veinte años que salí de mi pueblo.,katu'-shunka' ekkilala ñilli yunsu'a'kasu' ñinanlu'wekekla.,spa,shw,train,True,fidel_lomas,0.5950871,flagged_for_review
+U03976__shw2spa,U03976,G03720,ala'shasa' wawinwanpalli ekkilalak.,el majaz tiene solo una cría anualmente.,shw,spa,train,True,fidel_lomas,0.5238471,flagged_for_review
+U03976__spa2shw,U03976,G03720,el majaz tiene solo una cría anualmente.,ala'shasa' wawinwanpalli ekkilalak.,spa,shw,train,True,fidel_lomas,0.5238471,flagged_for_review
+U02729__shw2spa,U02729,G02498,"tanpen, enpulula' yapur'anna' uncha'a'ser di'setchudekker. hombre candela, cuando alguna vez queriendo pescar vengan,",quémalos.,shw,spa,train,True,pdf_textos,0.5783349,flagged_for_review
+U02729__spa2shw,U02729,G02498,quémalos.,"tanpen, enpulula' yapur'anna' uncha'a'ser di'setchudekker. hombre candela, cuando alguna vez queriendo pescar vengan,",spa,shw,train,True,pdf_textos,0.5783349,flagged_for_review
+U03205__shw2spa,U03205,G02974,"ipa'li'na ¿pa'apilala, kunpá? tan nakutulli, lli'ladeinpu'la'pi'.","ahora ¿estás yendo compadre? diciendo pasan, sin mirarle la cara.",shw,spa,train,True,pdf_textos,0.5814379,flagged_for_review
+U03205__spa2shw,U03205,G02974,"ahora ¿estás yendo compadre? diciendo pasan, sin mirarle la cara.","ipa'li'na ¿pa'apilala, kunpá? tan nakutulli, lli'ladeinpu'la'pi'.",spa,shw,train,True,pdf_textos,0.5814379,flagged_for_review
+U01801__shw2spa,U01801,G01592,ñiñuduker' nuka'a,es mes de navidad.,shw,spa,train,False,flashcards2,0.5686722,flagged_for_review
+U01801__spa2shw,U01801,G01592,es mes de navidad.,ñiñuduker' nuka'a,spa,shw,train,False,flashcards2,0.5686722,flagged_for_review
+U00787__shw2spa,U00787,G00660,insek'kita'kasu'ñapalli,debo esconderme.,shw,spa,train,False,flashcards2,0.5493358,flagged_for_review
+U00787__spa2shw,U00787,G00660,debo esconderme.,insek'kita'kasu'ñapalli,spa,shw,train,False,flashcards2,0.5493358,flagged_for_review
+U04276__shw2spa,U04276,G04012,¡kupin ñinanlu'mapu'wa' enpu'dun kulliker' ipa' dekker'apalli ilulenna mapa'tan!,¡cuánto dinero quizás estará gastando nuestro país comprando la vacuna!,shw,spa,train,True,fidel_lomas,0.5729525,flagged_for_review
+U04276__spa2shw,U04276,G04012,¡cuánto dinero quizás estará gastando nuestro país comprando la vacuna!,¡kupin ñinanlu'mapu'wa' enpu'dun kulliker' ipa' dekker'apalli ilulenna mapa'tan!,spa,shw,train,True,fidel_lomas,0.5729525,flagged_for_review
+U03087__shw2spa,U03087,G02856,"adencha'n ima wa'an lekllina' -adanpilencha'llidek kuda, ¿luwandetchuma' a'cha? regresando le pidieron al gobernante -nosotros estamos volviendo,",¿nos van a querer?,shw,spa,train,True,pdf_textos,0.56577474,flagged_for_review
+U03087__spa2shw,U03087,G02856,¿nos van a querer?,"adencha'n ima wa'an lekllina' -adanpilencha'llidek kuda, ¿luwandetchuma' a'cha? regresando le pidieron al gobernante -nosotros estamos volviendo,",spa,shw,train,True,pdf_textos,0.56577474,flagged_for_review
+U00262__shw2spa,U00262,G00205,nakusuin'chi erwa',demasiado tarde.,shw,spa,train,False,flashcards2,0.5918509,flagged_for_review
+U00262__spa2shw,U00262,G00205,demasiado tarde.,nakusuin'chi erwa',spa,shw,train,False,flashcards2,0.5918509,flagged_for_review
+U00439__shw2spa,U00439,G00352,tom tulli ma'pu'sin,tom saludó.,shw,spa,train,False,flashcards2,0.55872196,flagged_for_review
+U00439__spa2shw,U00439,G00352,tom saludó.,tom tulli ma'pu'sin,spa,shw,train,False,flashcards2,0.55872196,flagged_for_review
+U04317__shw2spa,U04317,G04052,ala'waranka iskun-pasak inkatu'- shunka' ekkilalak.,en el año 1940.,shw,spa,train,True,fidel_lomas,0.47842497,flagged_for_review
+U04317__spa2shw,U04317,G04052,en el año 1940.,ala'waranka iskun-pasak inkatu'- shunka' ekkilalak.,spa,shw,train,True,fidel_lomas,0.47842497,flagged_for_review
+U03067__shw2spa,U03067,G02836,¡wanerku' enmu'pinenpu'su'!,!pónganse de pie como varones! 10 se refiere a las autoridades españolas conocidos como apu'tek y sekputchek. léase el texto siguiente.,shw,spa,train,True,pdf_textos,0.56064856,flagged_for_review
+U03067__spa2shw,U03067,G02836,!pónganse de pie como varones! 10 se refiere a las autoridades españolas conocidos como apu'tek y sekputchek. léase el texto siguiente.,¡wanerku' enmu'pinenpu'su'!,spa,shw,train,True,pdf_textos,0.56064856,flagged_for_review
+U01622__shw2spa,U01622,G01427,anapila,hueles mal.,shw,spa,train,False,flashcards2,0.47655833,flagged_for_review
+U01622__spa2shw,U01622,G01427,hueles mal.,anapila,spa,shw,train,False,flashcards2,0.47655833,flagged_for_review
+U02576__shw2spa,U02576,G02345,"wilaku ñamu kawitulek, du'pa'tamu laweklek lunpa'ser.","cuando era niño me acercaba, sentándome cerca les escuchaba contar. 6 se expresa en shiwilu como late nuestro hígado.",shw,spa,train,True,pdf_textos,0.5707427,flagged_for_review
+U02576__spa2shw,U02576,G02345,"cuando era niño me acercaba, sentándome cerca les escuchaba contar. 6 se expresa en shiwilu como late nuestro hígado.","wilaku ñamu kawitulek, du'pa'tamu laweklek lunpa'ser.",spa,shw,train,True,pdf_textos,0.5707427,flagged_for_review
+U03982__shw2spa,U03982,G03726,nanekla sukellu' ñinta'llina'.,luego se convierten en renacuajos.,shw,spa,train,True,fidel_lomas,0.58450663,flagged_for_review
+U03982__spa2shw,U03982,G03726,luego se convierten en renacuajos.,nanekla sukellu' ñinta'llina'.,spa,shw,train,True,fidel_lomas,0.58450663,flagged_for_review
+U03170__shw2spa,U03170,G02939,"adipida' llillinmapu'wei'na, dai'lek pacher' ima weklli ¿ma'llin a'cha?","en cuanto a nuestro nombre de fuera, luego el cura, dice, ha llegado ¿cómo te llamas? (les preguntó) 14 éste sería el origen del apellido mozombite. 15 no se ofrece una posible etimología para el apellido maca.",shw,spa,train,True,pdf_textos,0.5208847,flagged_for_review
+U03170__spa2shw,U03170,G02939,"en cuanto a nuestro nombre de fuera, luego el cura, dice, ha llegado ¿cómo te llamas? (les preguntó) 14 éste sería el origen del apellido mozombite. 15 no se ofrece una posible etimología para el apellido maca.","adipida' llillinmapu'wei'na, dai'lek pacher' ima weklli ¿ma'llin a'cha?",spa,shw,train,True,pdf_textos,0.5208847,flagged_for_review
+U02851__shw2spa,U02851,G02620,"amana' ñichu di'tawa', ali'la erpilu' kupiwan ñipachi nananta' di'tawa'.","si hay tigre se lo mata, si hay anaconda de altura a esa también se la mata.",shw,spa,train,True,pdf_textos,0.59623545,flagged_for_review
+U02851__spa2shw,U02851,G02620,"si hay tigre se lo mata, si hay anaconda de altura a esa también se la mata.","amana' ñichu di'tawa', ali'la erpilu' kupiwan ñipachi nananta' di'tawa'.",spa,shw,train,True,pdf_textos,0.59623545,flagged_for_review
+U00217__shw2spa,U00217,G00165,iñer' ñinchitapalek,soy listo.,shw,spa,train,False,flashcards2,0.46052068,flagged_for_review
+U00217__spa2shw,U00217,G00165,soy listo.,iñer' ñinchitapalek,spa,shw,train,False,flashcards2,0.46052068,flagged_for_review
+U01644__shw2spa,U01644,G01448,¿te'kuawina?,¿tenías miedo?,shw,spa,train,False,flashcards2,0.54693735,flagged_for_review
+U01644__spa2shw,U01644,G01448,¿tenías miedo?,¿te'kuawina?,spa,shw,train,False,flashcards2,0.54693735,flagged_for_review
+U03991__shw2spa,U03991,G03735,nadallina' ishan ukllik wadeker'kek.,aumentan para desovar en la época de vaciante.,shw,spa,train,True,fidel_lomas,0.53016174,flagged_for_review
+U03991__spa2shw,U03991,G03735,aumentan para desovar en la época de vaciante.,nadallina' ishan ukllik wadeker'kek.,spa,shw,train,True,fidel_lomas,0.53016174,flagged_for_review
+U02531__shw2spa,U02531,G02300,"ipi'ma nana ukalu' yata'wanta'su'lupa' ima, uk'apilincha', nanek kapeklli ala'sa' enmu'pinen nadi'nek piperunkallu'la'su', pipelladasu'. cuando iban terminando ese bajial, cuando venían, allí encontraron a",un hombre joven de cuello colorado y cara colorada.,shw,spa,train,True,pdf_textos,0.5348323,flagged_for_review
+U02531__spa2shw,U02531,G02300,un hombre joven de cuello colorado y cara colorada.,"ipi'ma nana ukalu' yata'wanta'su'lupa' ima, uk'apilincha', nanek kapeklli ala'sa' enmu'pinen nadi'nek piperunkallu'la'su', pipelladasu'. cuando iban terminando ese bajial, cuando venían, allí encontraron a",spa,shw,train,True,pdf_textos,0.5348323,flagged_for_review
+U00368__shw2spa,U00368,G00295,mukankan,es agradable. (persona),shw,spa,train,True,flashcards2,0.5680627,flagged_for_review
+U00368__spa2shw,U00368,G00295,es agradable. (persona),mukankan,spa,shw,train,True,flashcards2,0.5680627,flagged_for_review
+U02525__shw2spa,U02525,G02294,sa'la'wenkasu' malek ima itudekllina':,dice que como estaban cubiertos de chupos les dijeron:,shw,spa,train,True,pdf_textos,0.5930084,flagged_for_review
+U02525__spa2shw,U02525,G02294,dice que como estaban cubiertos de chupos les dijeron:,sa'la'wenkasu' malek ima itudekllina':,spa,shw,train,True,pdf_textos,0.5930084,flagged_for_review
+U00573__shw2spa,U00573,G00473,¿pa'chi'ñin'cha?,¿es gratis?,shw,spa,train,False,flashcards2,0.50900817,flagged_for_review
+U00573__spa2shw,U00573,G00473,¿es gratis?,¿pa'chi'ñin'cha?,spa,shw,train,False,flashcards2,0.50900817,flagged_for_review
+U00007__shw2spa,U00007,G00005,¡ukeñan!,¡incendio!,shw,spa,train,False,flashcards2,0.5553518,flagged_for_review
+U00007__spa2shw,U00007,G00005,¡incendio!,¡ukeñan!,spa,shw,train,False,flashcards2,0.5553518,flagged_for_review
+U01168__shw2spa,U01168,G01012,¡pante'chek!,hasta entonces.,shw,spa,train,True,flashcards2,0.59978366,flagged_for_review
+U01168__spa2shw,U01168,G01012,hasta entonces.,¡pante'chek!,spa,shw,train,True,flashcards2,0.59978366,flagged_for_review
+U02386__shw2spa,U02386,G02155,a'pi'dekta'kasu' supinak a'du'dektulek kupin uktak.,"después de cutipar, se deposita (la bebida) en una olla grande (que está enterrada hasta la mitad).",shw,spa,train,True,pdf_textos,0.5461962,flagged_for_review
+U02386__spa2shw,U02386,G02155,"después de cutipar, se deposita (la bebida) en una olla grande (que está enterrada hasta la mitad).",a'pi'dekta'kasu' supinak a'du'dektulek kupin uktak.,spa,shw,train,True,pdf_textos,0.5461962,flagged_for_review
+U02573__shw2spa,U02573,G02342,nanadaper tekkinchinen luñina' taserpilusa' pantanna' lauk'erkasu'.,todas esas cosas verdad es lo que contaron los viejos que escuchaban cuando iban (a pampayacu).,shw,spa,train,True,pdf_textos,0.566328,flagged_for_review
+U02573__spa2shw,U02573,G02342,todas esas cosas verdad es lo que contaron los viejos que escuchaban cuando iban (a pampayacu).,nanadaper tekkinchinen luñina' taserpilusa' pantanna' lauk'erkasu'.,spa,shw,train,True,pdf_textos,0.566328,flagged_for_review
+U02593__shw2spa,U02593,G02362,tulli ma'pu'mi'na' peklu'chi'nama' weilan lauk'a'killek tullima arakayu.,entonces dijo arákayu¿por qué no llamaron de lejos para oírlos?,shw,spa,train,True,pdf_textos,0.5778626,flagged_for_review
+U02593__spa2shw,U02593,G02362,entonces dijo arákayu¿por qué no llamaron de lejos para oírlos?,tulli ma'pu'mi'na' peklu'chi'nama' weilan lauk'a'killek tullima arakayu.,spa,shw,train,True,pdf_textos,0.5778626,flagged_for_review
+U00033__shw2spa,U00033,G00028,ta'itula'lek,renuncié.,shw,spa,train,False,flashcards2,0.5875499,flagged_for_review
+U00033__spa2shw,U00033,G00028,renuncié.,ta'itula'lek,spa,shw,train,False,flashcards2,0.5875499,flagged_for_review
+U00102__shw2spa,U00102,G00067,ek'ke'cher',abre.,shw,spa,train,False,flashcards2,0.5524734,flagged_for_review
+U00102__spa2shw,U00102,G00067,abre.,ek'ke'cher',spa,shw,train,False,flashcards2,0.5524734,flagged_for_review
+U02584__shw2spa,U02584,G02353,penwanpasik pidekñik.,alguien estaba haciendo fuego en su casa.,shw,spa,train,True,pdf_textos,0.5670922,flagged_for_review
+U02584__spa2shw,U02584,G02353,alguien estaba haciendo fuego en su casa.,penwanpasik pidekñik.,spa,shw,train,True,pdf_textos,0.5670922,flagged_for_review
+U03121__shw2spa,U03121,G02890,"nu'amudek i'na kua taserpiku' nuka'ka, kui'na kanchis shunka' ekkilalawantulek ipa'.","yo soy viejo, tengo setenta años ya.",shw,spa,train,True,pdf_textos,0.5692409,flagged_for_review
+U03121__spa2shw,U03121,G02890,"yo soy viejo, tengo setenta años ya.","nu'amudek i'na kua taserpiku' nuka'ka, kui'na kanchis shunka' ekkilalawantulek ipa'.",spa,shw,train,True,pdf_textos,0.5692409,flagged_for_review
+U04034__shw2spa,U04034,G03771,tan ima panwalalun pa'lli tanak diteklu' yadunker'an.,"diciendo esto, la mujer sachavaca se fue al monte a buscar arcilla.",shw,spa,train,True,fidel_lomas,0.5857211,flagged_for_review
+U04034__spa2shw,U04034,G03771,"diciendo esto, la mujer sachavaca se fue al monte a buscar arcilla.",tan ima panwalalun pa'lli tanak diteklu' yadunker'an.,spa,shw,train,True,fidel_lomas,0.5857211,flagged_for_review
+U00923__shw2spa,U00923,G00786,a'nambiker',despertalo.,shw,spa,train,False,flashcards2,0.53733826,flagged_for_review
+U00923__spa2shw,U00923,G00786,despertalo.,a'nambiker',spa,shw,train,False,flashcards2,0.53733826,flagged_for_review
+U01879__shw2spa,U01879,G01667,inlu'uk'tuker',ten cuidado.,shw,spa,train,False,flashcards2,0.59030896,flagged_for_review
+U01879__spa2shw,U01879,G01667,ten cuidado.,inlu'uk'tuker',spa,shw,train,False,flashcards2,0.59030896,flagged_for_review
+U03018__shw2spa,U03018,G02787,"da'ilek, ali'ladaper tullina' saka'tunan dunkerpatekkudek nanalupa' pa'achidek, tullima. sin embargo, otros opinaban a buscar trabajo tenemos que ir por","allá, decían.",shw,spa,train,True,pdf_textos,0.5845039,flagged_for_review
+U03018__spa2shw,U03018,G02787,"allá, decían.","da'ilek, ali'ladaper tullina' saka'tunan dunkerpatekkudek nanalupa' pa'achidek, tullima. sin embargo, otros opinaban a buscar trabajo tenemos que ir por",spa,shw,train,True,pdf_textos,0.5845039,flagged_for_review
+U01623__shw2spa,U01623,G01428,wa'danpintek'pu'su' lli'tula,pareces loco.,shw,spa,train,False,flashcards2,0.59037197,flagged_for_review
+U01623__spa2shw,U01623,G01428,pareces loco.,wa'danpintek'pu'su' lli'tula,spa,shw,train,False,flashcards2,0.59037197,flagged_for_review
+U03252__shw2spa,U03252,G03021,tata nerku'lli nunkek,papá rema la canoa.,shw,spa,train,False,flashcards_oraciones,0.55072206,flagged_for_review
+U03252__spa2shw,U03252,G03021,papá rema la canoa.,tata nerku'lli nunkek,spa,shw,train,False,flashcards_oraciones,0.55072206,flagged_for_review
+U02394__shw2spa,U02394,G02163,enta'ten i'na lunterkenma'.,"a ver, pues, vamos a conversar.",shw,spa,train,True,pdf_textos,0.5845077,flagged_for_review
+U02394__spa2shw,U02394,G02163,"a ver, pues, vamos a conversar.",enta'ten i'na lunterkenma'.,spa,shw,train,True,pdf_textos,0.5845077,flagged_for_review
+U04169__shw2spa,U04169,G03905,lachek'inpu'n wilalunler lek'a'su' ekkuanen kani'ñi.,"por no entender el pedido de la señorita, no consiguió enamorada.",shw,spa,train,True,fidel_lomas,0.5740125,flagged_for_review
+U04169__spa2shw,U04169,G03905,"por no entender el pedido de la señorita, no consiguió enamorada.",lachek'inpu'n wilalunler lek'a'su' ekkuanen kani'ñi.,spa,shw,train,True,fidel_lomas,0.5740125,flagged_for_review
+U02361__shw2spa,U02361,G02130,pitawilek ma'ilek nerku'teklek pitawilek.,se lo va batiendo con este.... con un remo se lo bate.,shw,spa,train,True,pdf_textos,0.59318936,flagged_for_review
+U02361__spa2shw,U02361,G02130,se lo va batiendo con este.... con un remo se lo bate.,pitawilek ma'ilek nerku'teklek pitawilek.,spa,shw,train,True,pdf_textos,0.59318936,flagged_for_review
+U03885__shw2spa,U03885,G03629,asu' dekshadekshaki llillinen nuka'a ama'wina.,esta quebradita se llama armanayacu.,shw,spa,train,True,fidel_lomas,0.5537298,flagged_for_review
+U03885__spa2shw,U03885,G03629,esta quebradita se llama armanayacu.,asu' dekshadekshaki llillinen nuka'a ama'wina.,spa,shw,train,True,fidel_lomas,0.5537298,flagged_for_review
+U02533__shw2spa,U02533,G02302,"- pu'yek aperku'tullinerkudek,",(los hombres de jeberos) nos mezquinaron la pesca.,shw,spa,train,True,pdf_textos,0.5954933,flagged_for_review
+U02533__spa2shw,U02533,G02302,(los hombres de jeberos) nos mezquinaron la pesca.,"- pu'yek aperku'tullinerkudek,",spa,shw,train,True,pdf_textos,0.5954933,flagged_for_review
+U04176__shw2spa,U04176,G03912,yaami'nek'unta' mumulu'dek lli'amu.,"tampoco quería bañarme, al ver su agua lodosa.",shw,spa,train,True,fidel_lomas,0.5984396,flagged_for_review
+U04176__spa2shw,U04176,G03912,"tampoco quería bañarme, al ver su agua lodosa.",yaami'nek'unta' mumulu'dek lli'amu.,spa,shw,train,True,fidel_lomas,0.5984396,flagged_for_review
+U04257__shw2spa,U04257,G03993,"yayanlulenta'mapi'pu' wa'tentetchu wanersu',","el día que te vas a mandar vacunar,.",shw,spa,train,True,fidel_lomas,0.5006192,flagged_for_review
+U04257__spa2shw,U04257,G03993,"el día que te vas a mandar vacunar,.","yayanlulenta'mapi'pu' wa'tentetchu wanersu',",spa,shw,train,True,fidel_lomas,0.5006192,flagged_for_review
+U02419__shw2spa,U02419,G02188,- uk'apincha'lek yalli'amun. pa'amu menmik u'dun uklli lli'ker'i'ñen.,estoy viniendo queriendo verte. como fui a la chacra tantos días no te he visitado.,shw,spa,train,True,pdf_textos,0.557462,flagged_for_review
+U02419__spa2shw,U02419,G02188,estoy viniendo queriendo verte. como fui a la chacra tantos días no te he visitado.,- uk'apincha'lek yalli'amun. pa'amu menmik u'dun uklli lli'ker'i'ñen.,spa,shw,train,True,pdf_textos,0.557462,flagged_for_review
+U02811__shw2spa,U02811,G02580,enpu'dun waranka ekkilaleipa' ñilli nana nu'su' ña'su'!,hace cuántos miles de años habrá pasado eso lo que ha sido así!,shw,spa,train,True,pdf_textos,0.57447755,flagged_for_review
+U02811__spa2shw,U02811,G02580,hace cuántos miles de años habrá pasado eso lo que ha sido así!,enpu'dun waranka ekkilaleipa' ñilli nana nu'su' ña'su'!,spa,shw,train,True,pdf_textos,0.57447755,flagged_for_review
+U03280__shw2spa,U03280,G03048,dekmuda' nantapitek nuka'a,el espíritu del agua es fuerte.,shw,spa,train,False,flashcards_oraciones,0.5725012,flagged_for_review
+U03280__spa2shw,U03280,G03048,el espíritu del agua es fuerte.,dekmuda' nantapitek nuka'a,spa,shw,train,False,flashcards_oraciones,0.5725012,flagged_for_review
+U03899__shw2spa,U03899,G03643,piunalamek'unta' mulli waka'ki.,la hoja de sanango también es buena para la hinchazón.,shw,spa,train,True,fidel_lomas,0.56217694,flagged_for_review
+U03899__spa2shw,U03899,G03643,la hoja de sanango también es buena para la hinchazón.,piunalamek'unta' mulli waka'ki.,spa,shw,train,True,fidel_lomas,0.56217694,flagged_for_review
+U04145__shw2spa,U04145,G03882,chi'lek pilenñantununta'lli.,el carachupa volvió a pifuanear y las mujeres nuevamente volvieron a bailar felices.,shw,spa,train,True,fidel_lomas,0.5834155,flagged_for_review
+U04145__spa2shw,U04145,G03882,el carachupa volvió a pifuanear y las mujeres nuevamente volvieron a bailar felices.,chi'lek pilenñantununta'lli.,spa,shw,train,True,fidel_lomas,0.5834155,flagged_for_review
+U04325__shw2spa,U04325,G04060,susunentan sadalli ala'sa' wilalunlek llillinen chirisa achu chuta.,"siendo mayor, se casó con una señorita de nombre teresa acho chota.",shw,spa,train,True,fidel_lomas,0.59154105,flagged_for_review
+U04325__spa2shw,U04325,G04060,"siendo mayor, se casó con una señorita de nombre teresa acho chota.",susunentan sadalli ala'sa' wilalunlek llillinen chirisa achu chuta.,spa,shw,train,True,fidel_lomas,0.59154105,flagged_for_review
+U02391__shw2spa,U02391,G02160,uklu'pidekdinpunen ma'lusa' wa'danlusa' uwerkasu'pu'lli.,la espuma de la chicha punta se parece a la bebida que toman los wiracochas (cerveza).,shw,spa,train,True,pdf_textos,0.48896798,flagged_for_review
+U02391__spa2shw,U02391,G02160,la espuma de la chicha punta se parece a la bebida que toman los wiracochas (cerveza).,uklu'pidekdinpunen ma'lusa' wa'danlusa' uwerkasu'pu'lli.,spa,shw,train,True,pdf_textos,0.48896798,flagged_for_review
+U03058__shw2spa,U03058,G02827,"malallineima ñañashasa', ukllilek dekpilli'lek, uklulu' nu'ta'n, iñer pideknen a'muetchan,","malallina solita, en el día y en la noche, elaboró su masato llenando toda su casa (con la bebida), 9 malallina es la adaptación del nombre español magdalena. en esta traducción hemos optado por mantener la forma shiwilu malallina.",shw,spa,train,True,pdf_textos,0.5781737,flagged_for_review
+U03058__spa2shw,U03058,G02827,"malallina solita, en el día y en la noche, elaboró su masato llenando toda su casa (con la bebida), 9 malallina es la adaptación del nombre español magdalena. en esta traducción hemos optado por mantener la forma shiwilu malallina.","malallineima ñañashasa', ukllilek dekpilli'lek, uklulu' nu'ta'n, iñer pideknen a'muetchan,",spa,shw,train,True,pdf_textos,0.5781737,flagged_for_review
+U02456__shw2spa,U02456,G02225,ñi napi'pu'su' kupin uwapawinek.,no como antes que bebía bastante.,shw,spa,train,True,pdf_textos,0.5872596,flagged_for_review
+U02456__spa2shw,U02456,G02225,no como antes que bebía bastante.,ñi napi'pu'su' kupin uwapawinek.,spa,shw,train,True,pdf_textos,0.5872596,flagged_for_review
+U00403__shw2spa,U00403,G00323,ma'pu'sin tuker',decí hola.,shw,spa,train,False,flashcards2,0.54379636,flagged_for_review
+U00403__spa2shw,U00403,G00323,decí hola.,ma'pu'sin tuker',spa,shw,train,False,flashcards2,0.54379636,flagged_for_review
+U02685__shw2spa,U02685,G02454,musenkek kekkilu'tek ima kunekchapallina'.,arriba en el cielo dice estaban dando vueltas.,shw,spa,train,True,pdf_textos,0.57720697,flagged_for_review
+U02685__spa2shw,U02685,G02454,arriba en el cielo dice estaban dando vueltas.,musenkek kekkilu'tek ima kunekchapallina'.,spa,shw,train,True,pdf_textos,0.57720697,flagged_for_review
+U03008__shw2spa,U03008,G02777,"uku'latudek'anna', insekkilapidek'anna', uk'lapincha'dekllina' nana.","una vez que las vendían, (los hermanos) se escondían y las abandonaban, se venían (a jeberos) dejándolas.",shw,spa,train,True,pdf_textos,0.5906905,flagged_for_review
+U03008__spa2shw,U03008,G02777,"una vez que las vendían, (los hermanos) se escondían y las abandonaban, se venían (a jeberos) dejándolas.","uku'latudek'anna', insekkilapidek'anna', uk'lapincha'dekllina' nana.",spa,shw,train,True,pdf_textos,0.5906905,flagged_for_review
+U01531__shw2spa,U01531,G01338,¡dakuti'ñi!,¡qué listo!,shw,spa,train,False,flashcards2,0.487434,flagged_for_review
+U01531__spa2shw,U01531,G01338,¡qué listo!,¡dakuti'ñi!,spa,shw,train,False,flashcards2,0.487434,flagged_for_review
+U03667__shw2spa,U03667,G03418,awauk akusulli tangu,mi mamá cocina plátano,shw,spa,train,False,flashcards_oraciones,0.5866389,flagged_for_review
+U03667__spa2shw,U03667,G03418,mi mamá cocina plátano,awauk akusulli tangu,spa,shw,train,False,flashcards_oraciones,0.5866389,flagged_for_review
+U03888__shw2spa,U03888,G03632,dek yunsu'a'su' lupa' kineklalan a'ñapallidek shiwiluk.,en jeberos tenemos manantiales.,shw,spa,train,True,fidel_lomas,0.53021777,flagged_for_review
+U03888__spa2shw,U03888,G03632,en jeberos tenemos manantiales.,dek yunsu'a'su' lupa' kineklalan a'ñapallidek shiwiluk.,spa,shw,train,True,fidel_lomas,0.53021777,flagged_for_review
+U02300__shw2spa,U02300,G02069,"u'dun wawalu' wadek'a'kasu', u'dun wawalu' kua teksusu'kasu'.","hartos hijos he parido, hartos hijos he criado.",shw,spa,train,True,pdf_textos,0.51372206,flagged_for_review
+U02300__spa2shw,U02300,G02069,"hartos hijos he parido, hartos hijos he criado.","u'dun wawalu' wadek'a'kasu', u'dun wawalu' kua teksusu'kasu'.",spa,shw,train,True,pdf_textos,0.51372206,flagged_for_review
+U02939__shw2spa,U02939,G02708,"ali'ladaper nalatuntun llituntullina', chipetcheknenna' lalak yakala'nna'.",unos cortaron trozos de madera para meterlos dentro de sus mosquiteros (y hacerle creer al duende que eran ellos durmiendo).,shw,spa,train,True,pdf_textos,0.59288526,flagged_for_review
+U02939__spa2shw,U02939,G02708,unos cortaron trozos de madera para meterlos dentro de sus mosquiteros (y hacerle creer al duende que eran ellos durmiendo).,"ali'ladaper nalatuntun llituntullina', chipetcheknenna' lalak yakala'nna'.",spa,shw,train,True,pdf_textos,0.59288526,flagged_for_review
+U03978__shw2spa,U03978,G03722,nanek nala ekdenpilek ekkuan'ak dei'tulek.,"entonces, picándole con palo puntalado, se le mata.",shw,spa,train,True,fidel_lomas,0.59743786,flagged_for_review
+U03978__spa2shw,U03978,G03722,"entonces, picándole con palo puntalado, se le mata.",nanek nala ekdenpilek ekkuan'ak dei'tulek.,spa,shw,train,True,fidel_lomas,0.59743786,flagged_for_review
+U02566__shw2spa,U02566,G02335,nana malek dansu'lusa' tullina':,por eso los sobrevivientes dijeron:,shw,spa,train,True,pdf_textos,0.5755419,flagged_for_review
+U02566__spa2shw,U02566,G02335,por eso los sobrevivientes dijeron:,nana malek dansu'lusa' tullina':,spa,shw,train,True,pdf_textos,0.5755419,flagged_for_review
+U00643__shw2spa,U00643,G00532,dekllina',votaron.,shw,spa,train,False,flashcards2,0.53862447,flagged_for_review
+U00643__spa2shw,U00643,G00532,votaron.,dekllina',spa,shw,train,False,flashcards2,0.53862447,flagged_for_review
+U00815__shw2spa,U00815,G00687,ñapalek ala'sa' enmu'pinenlek,estoy comprometida.,shw,spa,train,False,flashcards2,0.5999913,flagged_for_review
+U00815__spa2shw,U00815,G00687,estoy comprometida.,ñapalek ala'sa' enmu'pinenlek,spa,shw,train,False,flashcards2,0.5999913,flagged_for_review
+U03148__shw2spa,U03148,G02917,"nana sekputchekkui'na di'tanna, inpasetllina', inluyullina'.","después de matar a sekputchek, (los jeberinos) se han esparcido, se han aborrecido.",shw,spa,train,True,pdf_textos,0.58772445,flagged_for_review
+U03148__spa2shw,U03148,G02917,"después de matar a sekputchek, (los jeberinos) se han esparcido, se han aborrecido.","nana sekputchekkui'na di'tanna, inpasetllina', inluyullina'.",spa,shw,train,True,pdf_textos,0.58772445,flagged_for_review
+U03255__shw2spa,U03255,G03024,tanamuda' luuktapalli tanan,el espíritu cuida el bosque.,shw,spa,train,False,flashcards_oraciones,0.49634498,flagged_for_review
+U03255__spa2shw,U03255,G03024,el espíritu cuida el bosque.,tanamuda' luuktapalli tanan,spa,shw,train,False,flashcards_oraciones,0.49634498,flagged_for_review
+U04188__shw2spa,U04188,G03924,nana curichi iter'kasu' napi'pu' ñinpu'wiñi.,en ese tiempo no existía eso que llaman curichi.,shw,spa,train,True,fidel_lomas,0.5910576,flagged_for_review
+U04188__spa2shw,U04188,G03924,en ese tiempo no existía eso que llaman curichi.,nana curichi iter'kasu' napi'pu' ñinpu'wiñi.,spa,shw,train,True,fidel_lomas,0.5910576,flagged_for_review
+U04124__shw2spa,U04124,G03861,ala'dukerpu'su' nakusik,cuando había pasado aproximadamente un mes,shw,spa,train,True,fidel_lomas,0.566897,flagged_for_review
+U04124__spa2shw,U04124,G03861,cuando había pasado aproximadamente un mes,ala'dukerpu'su' nakusik,spa,shw,train,True,fidel_lomas,0.566897,flagged_for_review
+U00352__shw2spa,U00352,G00279,¿nu'la'lli?,¿es grave?,shw,spa,train,False,flashcards2,0.5559894,flagged_for_review
+U00352__spa2shw,U00352,G00279,¿es grave?,¿nu'la'lli?,spa,shw,train,False,flashcards2,0.5559894,flagged_for_review
+U02228__shw2spa,U02228,G01997,¡inlu'uk'ter!,¡contrólate!,shw,spa,train,False,flashcards2,0.5460215,flagged_for_review
+U02228__spa2shw,U02228,G01997,¡contrólate!,¡inlu'uk'ter!,spa,shw,train,False,flashcards2,0.5460215,flagged_for_review
+U01429__shw2spa,U01429,G01243,illiapalek'inpu ñapawinek,estaba desarmado.,shw,spa,train,False,flashcards2,0.58643043,flagged_for_review
+U01429__spa2shw,U01429,G01243,estaba desarmado.,illiapalek'inpu ñapawinek,spa,shw,train,False,flashcards2,0.58643043,flagged_for_review
+U01706__shw2spa,U01706,G01503,¿enpuduncha?,¿cuánto es?,shw,spa,train,False,flashcards2,0.5283611,flagged_for_review
+U01706__spa2shw,U01706,G01503,¿cuánto es?,¿enpuduncha?,spa,shw,train,False,flashcards2,0.5283611,flagged_for_review
+U02468__shw2spa,U02468,G02237,ala'lu'sa' katu'ta' wilalunlusa' katu'ta' yuyu'walusa'ler kaper'anna' lumellina'.,un día dos muchachas y dos muchachos encontrándolo (en el camino) se burlaron de él.,shw,spa,train,True,pdf_textos,0.58964527,flagged_for_review
+U02468__spa2shw,U02468,G02237,un día dos muchachas y dos muchachos encontrándolo (en el camino) se burlaron de él.,ala'lu'sa' katu'ta' wilalunlusa' katu'ta' yuyu'walusa'ler kaper'anna' lumellina'.,spa,shw,train,True,pdf_textos,0.58964527,flagged_for_review
+U00224__shw2spa,U00224,G00172,wa'danpintek,es divertido.,shw,spa,train,False,flashcards2,0.56840533,flagged_for_review
+U00224__spa2shw,U00224,G00172,es divertido.,wa'danpintek,spa,shw,train,False,flashcards2,0.56840533,flagged_for_review
+U02647__shw2spa,U02647,G02416,"lapi'samer uklli,","vino la corvina,",shw,spa,train,True,pdf_textos,0.5909827,flagged_for_review
+U02647__spa2shw,U02647,G02416,"vino la corvina,","lapi'samer uklli,",spa,shw,train,True,pdf_textos,0.5909827,flagged_for_review
+U03907__shw2spa,U03907,G03651,ma'a ñipinen peklu'lek ma'api.,al fruto del aguaje de chamisal se le llama ma'api.,shw,spa,train,True,fidel_lomas,0.58125126,flagged_for_review
+U03907__spa2shw,U03907,G03651,al fruto del aguaje de chamisal se le llama ma'api.,ma'a ñipinen peklu'lek ma'api.,spa,shw,train,True,fidel_lomas,0.58125126,flagged_for_review
+U03881__shw2spa,U03881,G03625,"kallinenlusa' chekshasu' nuker'ka, chilenkeklanek, winenñupa'walek lli'tulek.","sus calles son rectas, se puede divisar desde el barrio bajo hasta el barrio alto.",shw,spa,train,True,fidel_lomas,0.58657295,flagged_for_review
+U03881__spa2shw,U03881,G03625,"sus calles son rectas, se puede divisar desde el barrio bajo hasta el barrio alto.","kallinenlusa' chekshasu' nuker'ka, chilenkeklanek, winenñupa'walek lli'tulek.",spa,shw,train,True,fidel_lomas,0.58657295,flagged_for_review
+U04455__shw2spa,U04455,G04190,"ladashapu'lli,","como la carita de la luna llena,",shw,spa,train,True,vs_textos_narrativos,0.56541425,flagged_for_review
+U04455__spa2shw,U04455,G04190,"como la carita de la luna llena,","ladashapu'lli,",spa,shw,train,True,vs_textos_narrativos,0.56541425,flagged_for_review
+U00229__shw2spa,U00229,G00175,pipersu' nuka'a,es rojo.,shw,spa,train,False,flashcards2,0.56994873,flagged_for_review
+U00229__spa2shw,U00229,G00175,es rojo.,pipersu' nuka'a,spa,shw,train,False,flashcards2,0.56994873,flagged_for_review
+U00560__shw2spa,U00560,G00461,iñer' luantulek wapu',soy codicioso.,shw,spa,train,False,flashcards2,0.5017653,flagged_for_review
+U00560__spa2shw,U00560,G00461,soy codicioso.,iñer' luantulek wapu',spa,shw,train,False,flashcards2,0.5017653,flagged_for_review
+U03303__shw2spa,U03303,G03071,tununda' nansin asu' yusmalek,"¿puedes repetir eso, por favor?",shw,spa,train,False,flashcards_oraciones,0.5916615,flagged_for_review
+U03303__spa2shw,U03303,G03071,"¿puedes repetir eso, por favor?",tununda' nansin asu' yusmalek,spa,shw,train,False,flashcards_oraciones,0.5916615,flagged_for_review
+U02828__shw2spa,U02828,G02597,di'tetchek tan dinlupinen dektuintulli.,la mataré dijo y le trozó el corazón.,shw,spa,train,True,pdf_textos,0.5687131,flagged_for_review
+U02828__spa2shw,U02828,G02597,la mataré dijo y le trozó el corazón.,di'tetchek tan dinlupinen dektuintulli.,spa,shw,train,True,pdf_textos,0.5687131,flagged_for_review
+U02290__shw2spa,U02290,G02059,"nana ekpanta'i, ekpanta'i nerñinanluk,","ella que lleve (mi palabra) a otro pueblo,",shw,spa,train,True,pdf_textos,0.57488024,flagged_for_review
+U02290__spa2shw,U02290,G02059,"ella que lleve (mi palabra) a otro pueblo,","nana ekpanta'i, ekpanta'i nerñinanluk,",spa,shw,train,True,pdf_textos,0.57488024,flagged_for_review
+U02721__shw2spa,U02721,G02490,"yun pa'lapinta'lli, pekkun pa'lapinta'lli.","enojándose (arákayu) se fue dejándolos, tras icarar se fue y los dejó.",shw,spa,train,True,pdf_textos,0.5704355,flagged_for_review
+U02721__spa2shw,U02721,G02490,"enojándose (arákayu) se fue dejándolos, tras icarar se fue y los dejó.","yun pa'lapinta'lli, pekkun pa'lapinta'lli.",spa,shw,train,True,pdf_textos,0.5704355,flagged_for_review
+U00953__shw2spa,U00953,G00814,¡embu'ni panger'ipa'!,¡qué desastre!,shw,spa,train,False,flashcards2,0.5876125,flagged_for_review
+U00953__spa2shw,U00953,G00814,¡qué desastre!,¡embu'ni panger'ipa'!,spa,shw,train,False,flashcards2,0.5876125,flagged_for_review
+U04021__shw2spa,U04021,G03758,shikillek'an siwerchulli lu'lunnen.,haciéndole cosquillas le quitó su carne.,shw,spa,train,True,fidel_lomas,0.59447336,flagged_for_review
+U04021__spa2shw,U04021,G03758,haciéndole cosquillas le quitó su carne.,shikillek'an siwerchulli lu'lunnen.,spa,shw,train,True,fidel_lomas,0.59447336,flagged_for_review
+U00188__shw2spa,U00188,G00139,nuwek'mutu'ku,soy calvo.,shw,spa,train,False,flashcards2,0.5755532,flagged_for_review
+U00188__spa2shw,U00188,G00139,soy calvo.,nuwek'mutu'ku,spa,shw,train,False,flashcards2,0.5755532,flagged_for_review
+U03934__shw2spa,U03934,G03678,utekkunan dektu'tulek samerlek.,al anzuelo se lo empata con peje.,shw,spa,train,True,fidel_lomas,0.57694316,flagged_for_review
+U03934__spa2shw,U03934,G03678,al anzuelo se lo empata con peje.,utekkunan dektu'tulek samerlek.,spa,shw,train,True,fidel_lomas,0.57694316,flagged_for_review
+U02378__shw2spa,U02378,G02147,chiter nanpi peksanpi nananta' ali'la uktak a'ukluka'lek.,maíz crudo molido también se hierve en otra olla.,shw,spa,train,True,pdf_textos,0.5644996,flagged_for_review
+U02378__spa2shw,U02378,G02147,maíz crudo molido también se hierve en otra olla.,chiter nanpi peksanpi nananta' ali'la uktak a'ukluka'lek.,spa,shw,train,True,pdf_textos,0.5644996,flagged_for_review
+U02338__shw2spa,U02338,G02107,uklutulek.,cómo se prepara la bebida.,shw,spa,train,True,pdf_textos,0.5134891,flagged_for_review
+U02338__spa2shw,U02338,G02107,cómo se prepara la bebida.,uklutulek.,spa,shw,train,True,pdf_textos,0.5134891,flagged_for_review
+U01556__shw2spa,U01556,G01362,tom sha'pi'wiñi,tom palideció.,shw,spa,train,False,flashcards2,0.5848231,flagged_for_review
+U01556__spa2shw,U01556,G01362,tom palideció.,tom sha'pi'wiñi,spa,shw,train,False,flashcards2,0.5848231,flagged_for_review
+U03947__shw2spa,U03947,G03691,dansu'a'su' nanek ta'itula'llina'.,lo que sobra lo dejan ahí.,shw,spa,train,True,fidel_lomas,0.5972556,flagged_for_review
+U03947__spa2shw,U03947,G03691,lo que sobra lo dejan ahí.,dansu'a'su' nanek ta'itula'llina'.,spa,shw,train,True,fidel_lomas,0.5972556,flagged_for_review
+U01959__shw2spa,U01959,G01743,inlu'ukter',defiéndete.,shw,spa,train,False,flashcards2,0.5792867,flagged_for_review
+U01959__spa2shw,U01959,G01743,defiéndete.,inlu'ukter',spa,shw,train,False,flashcards2,0.5792867,flagged_for_review
+U04103__shw2spa,U04103,G03840,"pa'apilanta'llima, sin…sin...sin a'tapilanta'la'llima, pilenñantan amana' pidekñikwalek.","el tigre se iba solo, haciendo sonar sin…sin…sin,",shw,spa,train,True,fidel_lomas,0.5581219,flagged_for_review
+U04103__spa2shw,U04103,G03840,"el tigre se iba solo, haciendo sonar sin…sin…sin,","pa'apilanta'llima, sin…sin...sin a'tapilanta'la'llima, pilenñantan amana' pidekñikwalek.",spa,shw,train,True,fidel_lomas,0.5581219,flagged_for_review
+U01739__shw2spa,U01739,G01535,a'shulek wapu',estornudo mucho.,shw,spa,train,False,flashcards2,0.5742362,flagged_for_review
+U01739__spa2shw,U01739,G01535,estornudo mucho.,a'shulek wapu',spa,shw,train,False,flashcards2,0.5742362,flagged_for_review
+U03230__shw2spa,U03230,G02999,kekilu'tek' uku'tulli dinpanlutek'ler,el cielo está nublado.,shw,spa,train,False,flashcards_oraciones,0.53577983,flagged_for_review
+U03230__spa2shw,U03230,G02999,el cielo está nublado.,kekilu'tek' uku'tulli dinpanlutek'ler,spa,shw,train,False,flashcards_oraciones,0.53577983,flagged_for_review
+U02549__shw2spa,U02549,G02318,enpu'nipi'ma ituwetchapalli ulunta'su'.,enorme se levantaba el ardor.,shw,spa,train,True,pdf_textos,0.5752115,flagged_for_review
+U02549__spa2shw,U02549,G02318,enorme se levantaba el ardor.,enpu'nipi'ma ituwetchapalli ulunta'su'.,spa,shw,train,True,pdf_textos,0.5752115,flagged_for_review
+U04207__shw2spa,U04207,G03943,"nanek'unta' ñapalli illisia, alakanter'lusa' pideknen, naneklanek alakanter' saka'tapalli.",también está la iglesia y el palacio municipal donde trabaja el alcalde.,shw,spa,train,True,fidel_lomas,0.57069767,flagged_for_review
+U04207__spa2shw,U04207,G03943,también está la iglesia y el palacio municipal donde trabaja el alcalde.,"nanek'unta' ñapalli illisia, alakanter'lusa' pideknen, naneklanek alakanter' saka'tapalli.",spa,shw,train,True,fidel_lomas,0.57069767,flagged_for_review
+U00572__shw2spa,U00572,G00472,¿musenkek a'cha?,¿es alto? (muy arriba),shw,spa,train,True,flashcards2,0.51051605,flagged_for_review
+U00572__spa2shw,U00572,G00472,¿es alto? (muy arriba),¿musenkek a'cha?,spa,shw,train,True,flashcards2,0.51051605,flagged_for_review
+U01850__shw2spa,U01850,G01639,latek'lanañi,es evidente.,shw,spa,train,False,flashcards2,0.56019545,flagged_for_review
+U01850__spa2shw,U01850,G01639,es evidente.,latek'lanañi,spa,shw,train,False,flashcards2,0.56019545,flagged_for_review
+U02181__shw2spa,U02181,G01955,mumusu' ñapallidek,estamos organizados.,shw,spa,train,False,flashcards2,0.57872075,flagged_for_review
+U02181__spa2shw,U02181,G01955,estamos organizados.,mumusu' ñapallidek,spa,shw,train,False,flashcards2,0.57872075,flagged_for_review
+U02935__shw2spa,U02935,G02704,"tullima nana lunanpichita'su', tullima nana wa'lata'su':","cuentan que dijo así el hombre que detectó, eso dijo ese soñador:",shw,spa,train,True,pdf_textos,0.5646492,flagged_for_review
+U02935__spa2shw,U02935,G02704,"cuentan que dijo así el hombre que detectó, eso dijo ese soñador:","tullima nana lunanpichita'su', tullima nana wa'lata'su':",spa,shw,train,True,pdf_textos,0.5646492,flagged_for_review
+U03166__shw2spa,U03166,G02935,kenmami'na lawekklatekkek ñikunama' laulate.,y ustedes que fueron a vivir a los dos cerros que forman como una boca abierta son laulate.,shw,spa,train,True,pdf_textos,0.5648048,flagged_for_review
+U03166__spa2shw,U03166,G02935,y ustedes que fueron a vivir a los dos cerros que forman como una boca abierta son laulate.,kenmami'na lawekklatekkek ñikunama' laulate.,spa,shw,train,True,pdf_textos,0.5648048,flagged_for_review
+U02484__shw2spa,U02484,G02253,shunka' ekkilala a'ñamu shiwiluklan yunsu'lek.,cuando tenía diez años he salido de jeberos.,shw,spa,train,True,pdf_textos,0.5528686,flagged_for_review
+U02484__spa2shw,U02484,G02253,cuando tenía diez años he salido de jeberos.,shunka' ekkilala a'ñamu shiwiluklan yunsu'lek.,spa,shw,train,True,pdf_textos,0.5528686,flagged_for_review
+U02312__shw2spa,U02312,G02081,kupin ñinanlukla weklli.,desde una ciudad grande ha venido.,shw,spa,train,False,pdf_textos,0.585725,flagged_for_review
+U02312__spa2shw,U02312,G02081,desde una ciudad grande ha venido.,kupin ñinanlukla weklli.,spa,shw,train,False,pdf_textos,0.585725,flagged_for_review
+U00096__shw2spa,U00096,G00062,tekua'dande'ku,soy tímido.,shw,spa,train,False,flashcards2,0.5760709,flagged_for_review
+U00096__spa2shw,U00096,G00062,soy tímido.,tekua'dande'ku,spa,shw,train,False,flashcards2,0.5760709,flagged_for_review
+U04049__shw2spa,U04049,G03786,madu ma'malek ipa' u'nei llinsersa' a'ñapalli.,y porqué quizás el motelo tiene tremendas pintotas nomás.,shw,spa,train,True,fidel_lomas,0.57855415,flagged_for_review
+U04049__spa2shw,U04049,G03786,y porqué quizás el motelo tiene tremendas pintotas nomás.,madu ma'malek ipa' u'nei llinsersa' a'ñapalli.,spa,shw,train,True,fidel_lomas,0.57855415,flagged_for_review
+U02962__shw2spa,U02962,G02731,"ukkapinchasik, uktalek i'la pidanantullina' mutu'ñik.","cuando venía (el tigre negro), con la olla de barro y todo se lo echaron en su cabeza.",shw,spa,train,True,pdf_textos,0.5081568,flagged_for_review
+U02962__spa2shw,U02962,G02731,"cuando venía (el tigre negro), con la olla de barro y todo se lo echaron en su cabeza.","ukkapinchasik, uktalek i'la pidanantullina' mutu'ñik.",spa,shw,train,True,pdf_textos,0.5081568,flagged_for_review
+U00244__shw2spa,U00244,G00189,duker,mes.,shw,spa,train,True,flashcards2,0.5545608,flagged_for_review
+U00244__spa2shw,U00244,G00189,mes.,duker,spa,shw,train,True,flashcards2,0.5545608,flagged_for_review
+U00245__shw2spa,U00245,G00189,duker,luna,shw,spa,train,True,flashcards2,0.58987576,flagged_for_review
+U00245__spa2shw,U00245,G00189,luna,duker,spa,shw,train,True,flashcards2,0.58987576,flagged_for_review
+U00960__shw2spa,U00960,G00820,mumu'wanbalek,¡qué equipo!,shw,spa,train,False,flashcards2,0.5762198,flagged_for_review
+U00960__spa2shw,U00960,G00820,¡qué equipo!,mumu'wanbalek,spa,shw,train,False,flashcards2,0.5762198,flagged_for_review
+U01402__shw2spa,U01402,G01220,luyulek pennu'ak,odio volar.,shw,spa,train,True,flashcards2,0.59736,flagged_for_review
+U01402__spa2shw,U01402,G01220,odio volar.,luyulek pennu'ak,spa,shw,train,True,flashcards2,0.59736,flagged_for_review
+U03296__shw2spa,U03296,G03064,¿matuleki'na' asu' la'la'kek?,¿qué significa esta palabra?,shw,spa,train,False,flashcards_oraciones,0.5457244,flagged_for_review
+U03296__spa2shw,U03296,G03064,¿qué significa esta palabra?,¿matuleki'na' asu' la'la'kek?,spa,shw,train,False,flashcards_oraciones,0.5457244,flagged_for_review
+U04109__shw2spa,U04109,G03846,"¿pilli'tullen a'cha,? itullima.",¿acaso te he agarrado? le preguntó.,shw,spa,train,True,fidel_lomas,0.5937538,flagged_for_review
+U04109__spa2shw,U04109,G03846,¿acaso te he agarrado? le preguntó.,"¿pilli'tullen a'cha,? itullima.",spa,shw,train,True,fidel_lomas,0.5937538,flagged_for_review
+U01104__shw2spa,U01104,G00956,apu'pi nuka'ka,estoy divorciada.,shw,spa,train,False,flashcards2,0.4620126,flagged_for_review
+U01104__spa2shw,U01104,G00956,estoy divorciada.,apu'pi nuka'ka,spa,shw,train,False,flashcards2,0.4620126,flagged_for_review
+U03954__shw2spa,U03954,G03698,nu'sik'unta' lu'lunen chinpi uku'latulek.,también se vende su carne ahumada.,shw,spa,train,True,fidel_lomas,0.57123226,flagged_for_review
+U03954__spa2shw,U03954,G03698,también se vende su carne ahumada.,nu'sik'unta' lu'lunen chinpi uku'latulek.,spa,shw,train,True,fidel_lomas,0.57123226,flagged_for_review
+U02551__shw2spa,U02551,G02320,nana wilalusa' wanererkek walek ima uketlli.,"hasta donde se detuvieron los niños, dice, ardió todo.",shw,spa,train,True,pdf_textos,0.5929431,flagged_for_review
+U02551__spa2shw,U02551,G02320,"hasta donde se detuvieron los niños, dice, ardió todo.",nana wilalusa' wanererkek walek ima uketlli.,spa,shw,train,True,pdf_textos,0.5929431,flagged_for_review
+U02050__shw2spa,U02050,G01827,lektapaleksa',solo pregunto.,shw,spa,train,False,flashcards2,0.5976028,flagged_for_review
+U02050__spa2shw,U02050,G01827,solo pregunto.,lektapaleksa',spa,shw,train,False,flashcards2,0.5976028,flagged_for_review
+U04371__shw2spa,U04371,G04106,tamutuk adencha'llidek pu'yekkekla.,a las once hemos vuelto de la pesca.,shw,spa,train,True,fidel_lomas,0.5402006,flagged_for_review
+U04371__spa2shw,U04371,G04106,a las once hemos vuelto de la pesca.,tamutuk adencha'llidek pu'yekkekla.,spa,shw,train,True,fidel_lomas,0.5402006,flagged_for_review
+U00792__shw2spa,U00792,G00665,insek'dipersu' ñapi'nek,necesito tiempo.,shw,spa,train,False,flashcards2,0.5780786,flagged_for_review
+U00792__spa2shw,U00792,G00665,necesito tiempo.,insek'dipersu' ñapi'nek,spa,shw,train,False,flashcards2,0.5780786,flagged_for_review
+U04275__shw2spa,U04275,G04011,kulliker' yadimullina' kuvi-19 ilulennan uku'latanna'.,acumular más dinero vendiendo la vacuna del covid-19.,shw,spa,train,True,fidel_lomas,0.57158554,flagged_for_review
+U04275__spa2shw,U04275,G04011,acumular más dinero vendiendo la vacuna del covid-19.,kulliker' yadimullina' kuvi-19 ilulennan uku'latanna'.,spa,shw,train,True,fidel_lomas,0.57158554,flagged_for_review
+U02610__shw2spa,U02610,G02379,¿ma'pu'a'su' asu' yalli' samerunta' pektawapallinchi?,¿qué clase de (gente) es este hermano que hasta pescados cría?,shw,spa,train,True,pdf_textos,0.5787296,flagged_for_review
+U02610__spa2shw,U02610,G02379,¿qué clase de (gente) es este hermano que hasta pescados cría?,¿ma'pu'a'su' asu' yalli' samerunta' pektawapallinchi?,spa,shw,train,True,pdf_textos,0.5787296,flagged_for_review
+U02121__shw2spa,U02121,G01895,maker' iñer',cógelo todo.,shw,spa,train,False,flashcards2,0.514826,flagged_for_review
+U02121__spa2shw,U02121,G01895,cógelo todo.,maker' iñer',spa,shw,train,False,flashcards2,0.514826,flagged_for_review
+U03105__shw2spa,U03105,G02874,nana malallinapu'wa'su' ñillin iñer enmu'pinen.,todos los hombres deberían ser como malallina.,shw,spa,train,False,pdf_textos,0.58284837,flagged_for_review
+U03105__spa2shw,U03105,G02874,todos los hombres deberían ser como malallina.,nana malallinapu'wa'su' ñillin iñer enmu'pinen.,spa,shw,train,False,pdf_textos,0.58284837,flagged_for_review
+U03182__shw2spa,U03182,G02951,"asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, pulu.","este, entonces, el que entendía (de santos), dijo, pablo.",shw,spa,train,True,pdf_textos,0.57908916,flagged_for_review
+U03182__spa2shw,U03182,G02951,"este, entonces, el que entendía (de santos), dijo, pablo.","asui'ina, nu'pachi, a'la'chikta'sui'ma, tulli, pulu.",spa,shw,train,True,pdf_textos,0.57908916,flagged_for_review
+U04452__shw2spa,U04452,G04187,u'an arakayu sadinlunshapu'n ipa' intumu'tulama' tullina' wilalunlusa'.,te jactas como si te parecieras a la mujer de arákayu decían las jovencitas.,shw,spa,train,True,vs_textos_narrativos,0.5706911,flagged_for_review
+U04452__spa2shw,U04452,G04187,te jactas como si te parecieras a la mujer de arákayu decían las jovencitas.,u'an arakayu sadinlunshapu'n ipa' intumu'tulama' tullina' wilalunlusa'.,spa,shw,train,True,vs_textos_narrativos,0.5706911,flagged_for_review
+U01615__shw2spa,U01615,G01420,ma'nen'nu'tapa'masu'pu'su' lli'tula,pareces ocupado.,shw,spa,train,False,flashcards2,0.5339028,flagged_for_review
+U01615__spa2shw,U01615,G01420,pareces ocupado.,ma'nen'nu'tapa'masu'pu'su' lli'tula,spa,shw,train,False,flashcards2,0.5339028,flagged_for_review
+U03250__shw2spa,U03250,G03019,¿den'i'na padeklli yunpi?,¿quién rompió el cántaro?,shw,spa,train,False,flashcards_oraciones,0.505077,flagged_for_review
+U03250__spa2shw,U03250,G03019,¿quién rompió el cántaro?,¿den'i'na padeklli yunpi?,spa,shw,train,False,flashcards_oraciones,0.505077,flagged_for_review
+U02001__shw2spa,U02001,G01781,iluwinek,me resfrié.,shw,spa,train,False,flashcards2,0.59933203,flagged_for_review
+U02001__spa2shw,U02001,G01781,me resfrié.,iluwinek,spa,shw,train,False,flashcards2,0.59933203,flagged_for_review
+U01695__shw2spa,U01695,G01492,amu utek'wañi,tiene barba.,shw,spa,train,False,flashcards2,0.59761846,flagged_for_review
+U01695__spa2shw,U01695,G01492,tiene barba.,amu utek'wañi,spa,shw,train,False,flashcards2,0.59761846,flagged_for_review
+U01830__shw2spa,U01830,G01620,¿yennitulek ka'tan'an'su'?,¿puedo acompañarle?,shw,spa,train,False,flashcards2,0.584504,flagged_for_review
+U01830__spa2shw,U01830,G01620,¿puedo acompañarle?,¿yennitulek ka'tan'an'su'?,spa,shw,train,False,flashcards2,0.584504,flagged_for_review
+U01105__shw2spa,U01105,G00957,nakusu' sanekwantulek,estoy congelado.,shw,spa,train,True,flashcards2,0.59429413,flagged_for_review
+U01105__spa2shw,U01105,G00957,estoy congelado.,nakusu' sanekwantulek,spa,shw,train,True,flashcards2,0.59429413,flagged_for_review
+U00677__shw2spa,U00677,G00563,a'tender',enciéndelo. (fuego),shw,spa,train,True,flashcards2,0.529176,flagged_for_review
+U00677__spa2shw,U00677,G00563,enciéndelo. (fuego),a'tender',spa,shw,train,True,flashcards2,0.529176,flagged_for_review
+U03112__shw2spa,U03112,G02881,"pi'tandulaler ima pata'kankañi asu' malallina, tullina'nta'.","dice que el astro le había tocado el corazón a malallina, decían algunos.",shw,spa,train,False,pdf_textos,0.5728322,flagged_for_review
+U03112__spa2shw,U03112,G02881,"dice que el astro le había tocado el corazón a malallina, decían algunos.","pi'tandulaler ima pata'kankañi asu' malallina, tullina'nta'.",spa,shw,train,False,pdf_textos,0.5728322,flagged_for_review
+U01733__shw2spa,U01733,G01529,luwantulek na'pia'musu',necesito respuestas.,shw,spa,train,False,flashcards2,0.59577113,flagged_for_review
+U01733__spa2shw,U01733,G01529,necesito respuestas.,luwantulek na'pia'musu',spa,shw,train,False,flashcards2,0.59577113,flagged_for_review
+U04140__shw2spa,U04140,G03877,asui'na anpulu' muda',este es el hombre enplumado,shw,spa,train,True,fidel_lomas,0.58910525,flagged_for_review
+U04140__spa2shw,U04140,G03877,este es el hombre enplumado,asui'na anpulu' muda',spa,shw,train,True,fidel_lomas,0.58910525,flagged_for_review
+U00638__shw2spa,U00638,G00528,allisek nu'tapallina',hicieron trampas.,shw,spa,train,False,flashcards2,0.5262381,flagged_for_review
+U00638__spa2shw,U00638,G00528,hicieron trampas.,allisek nu'tapallina',spa,shw,train,False,flashcards2,0.5262381,flagged_for_review
+U02884__shw2spa,U02884,G02653,kankanen ukunpala'lli.,su higado está colgado nomás.,shw,spa,train,True,pdf_textos,0.59905726,flagged_for_review
+U02884__spa2shw,U02884,G02653,su higado está colgado nomás.,kankanen ukunpala'lli.,spa,shw,train,True,pdf_textos,0.59905726,flagged_for_review
+U03078__shw2spa,U03078,G02847,nana malallinalek ñapalusi'mi'na danker'kuñina' kani'ñina' sekputcheksa'.,los del grupo del malallina entraron y encontraron solamente a sekputchek.,shw,spa,train,False,pdf_textos,0.59117436,flagged_for_review
+U03078__spa2shw,U03078,G02847,los del grupo del malallina entraron y encontraron solamente a sekputchek.,nana malallinalek ñapalusi'mi'na danker'kuñina' kani'ñina' sekputcheksa'.,spa,shw,train,False,pdf_textos,0.59117436,flagged_for_review
+U00396__shw2spa,U00396,G00317,musu' dek'la,¡buen tiro!,shw,spa,train,False,flashcards2,0.54728794,flagged_for_review
+U00396__spa2shw,U00396,G00317,¡buen tiro!,musu' dek'la,spa,shw,train,False,flashcards2,0.54728794,flagged_for_review
+U00486__shw2spa,U00486,G00395,yatuluner'ta,no cantes.,shw,spa,train,False,flashcards2,0.5996683,flagged_for_review
+U00486__spa2shw,U00486,G00395,no cantes.,yatuluner'ta,spa,shw,train,False,flashcards2,0.5996683,flagged_for_review
+U02859__shw2spa,U02859,G02628,kenmu'wa' takeraterwa' nu'unta'nmu'wa'.,uno de nosotros va a perecer.,shw,spa,train,True,pdf_textos,0.5909107,flagged_for_review
+U02859__spa2shw,U02859,G02628,uno de nosotros va a perecer.,kenmu'wa' takeraterwa' nu'unta'nmu'wa'.,spa,shw,train,True,pdf_textos,0.5909107,flagged_for_review
+U04111__shw2spa,U04111,G03848,"amana'ler a'mercha apu'lli llinteknen, nanek",el tigre le soltó un poco la cola y el carachupa se metió más al fondo.,shw,spa,train,True,fidel_lomas,0.59421384,flagged_for_review
+U04111__spa2shw,U04111,G03848,el tigre le soltó un poco la cola y el carachupa se metió más al fondo.,"amana'ler a'mercha apu'lli llinteknen, nanek",spa,shw,train,True,fidel_lomas,0.59421384,flagged_for_review
+U03943__shw2spa,U03943,G03687,da'wanserlusa' werandektullina'.,los súngaros cacean en el agua.,shw,spa,train,True,fidel_lomas,0.5163888,flagged_for_review
+U03943__spa2shw,U03943,G03687,los súngaros cacean en el agua.,da'wanserlusa' werandektullina'.,spa,shw,train,True,fidel_lomas,0.5163888,flagged_for_review
+U00678__shw2spa,U00678,G00564,¿mulli'ncha'?,¿fue divertido?,shw,spa,train,False,flashcards2,0.5902468,flagged_for_review
+U00678__spa2shw,U00678,G00564,¿fue divertido?,¿mulli'ncha'?,spa,shw,train,False,flashcards2,0.5902468,flagged_for_review
+U03266__shw2spa,U03266,G03035,kerlli'na damula ñinaluklan,trajeron sal del pueblo.,shw,spa,train,False,flashcards_oraciones,0.5853025,flagged_for_review
+U03266__spa2shw,U03266,G03035,trajeron sal del pueblo.,kerlli'na damula ñinaluklan,spa,shw,train,False,flashcards_oraciones,0.5853025,flagged_for_review
+U00601__shw2spa,U00601,G00495,enta'i'na,a ver.,shw,spa,train,False,flashcards2,0.59822285,flagged_for_review
+U00601__spa2shw,U00601,G00495,a ver.,enta'i'na,spa,shw,train,False,flashcards2,0.59822285,flagged_for_review
+U04046__shw2spa,U04046,G03783,a'ñapalli dekkunnen muda'kinpu'su'.,tiene su trocha como la de la gente.,shw,spa,train,True,fidel_lomas,0.59935355,flagged_for_review
+U04046__spa2shw,U04046,G03783,tiene su trocha como la de la gente.,a'ñapalli dekkunnen muda'kinpu'su'.,spa,shw,train,True,fidel_lomas,0.59935355,flagged_for_review
+U02387__shw2spa,U02387,G02156,"nu'tak, lanchimeklek atantulek.","hecho esto, se cubre con esteras (formando un techo).",shw,spa,train,True,pdf_textos,0.5743755,flagged_for_review
+U02387__spa2shw,U02387,G02156,"hecho esto, se cubre con esteras (formando un techo).","nu'tak, lanchimeklek atantulek.",spa,shw,train,True,pdf_textos,0.5743755,flagged_for_review
+U04272__shw2spa,U04272,G04008,"muinchi tullina' ma'ki'na nu'tullina' asu' kaluwi',","muchos se preguntaban por qué habían creado esta enfermedad,",shw,spa,train,True,fidel_lomas,0.58528316,flagged_for_review
+U04272__spa2shw,U04272,G04008,"muchos se preguntaban por qué habían creado esta enfermedad,","muinchi tullina' ma'ki'na nu'tullina' asu' kaluwi',",spa,shw,train,True,fidel_lomas,0.58528316,flagged_for_review
+U03147__shw2spa,U03147,G02916,enta' winterkenma' ma'pu'si'pa' kineklada' llillin ñilli.,ahora les voy a contar cómo quizás los nombres shiwilu11 han sido.,shw,spa,train,True,pdf_textos,0.5791173,flagged_for_review
+U03147__spa2shw,U03147,G02916,ahora les voy a contar cómo quizás los nombres shiwilu11 han sido.,enta' winterkenma' ma'pu'si'pa' kineklada' llillin ñilli.,spa,shw,train,True,pdf_textos,0.5791173,flagged_for_review
+U03288__shw2spa,U03288,G03056,kencher' ilulenna ñichinta',trae la medicina natural.,shw,spa,train,False,flashcards_oraciones,0.5771563,flagged_for_review
+U03288__spa2shw,U03288,G03056,trae la medicina natural.,kencher' ilulenna ñichinta',spa,shw,train,False,flashcards_oraciones,0.5771563,flagged_for_review
+U02596__shw2spa,U02596,G02365,u'chimu mushasu' pilu'pi witekwanpi.,"dice que bonito, bien deshierbado y barrido estaba su patio.",shw,spa,train,True,pdf_textos,0.5669085,flagged_for_review
+U02596__spa2shw,U02596,G02365,"dice que bonito, bien deshierbado y barrido estaba su patio.",u'chimu mushasu' pilu'pi witekwanpi.,spa,shw,train,True,pdf_textos,0.5669085,flagged_for_review
+U04041__shw2spa,U04041,G03778,diteklu'lek a'nada'su' malek lu'lunen.,porque aumentó su carne con arcilla.,shw,spa,train,True,fidel_lomas,0.5487664,flagged_for_review
+U04041__spa2shw,U04041,G03778,porque aumentó su carne con arcilla.,diteklu'lek a'nada'su' malek lu'lunen.,spa,shw,train,True,fidel_lomas,0.5487664,flagged_for_review
+U03117__shw2spa,U03117,G02886,"nu'su' ñapilaterwa' enta' ipa'la, nermuda'lusi'pa' danker'kuñina' shiwiluk.","así vamos a estar viviendo pues ahora, otras gentes han entrado en jeberos.",shw,spa,train,False,pdf_textos,0.596684,flagged_for_review
+U03117__spa2shw,U03117,G02886,"así vamos a estar viviendo pues ahora, otras gentes han entrado en jeberos.","nu'su' ñapilaterwa' enta' ipa'la, nermuda'lusi'pa' danker'kuñina' shiwiluk.",spa,shw,train,False,pdf_textos,0.596684,flagged_for_review
+U01722__shw2spa,U01722,G01519,sakek'lek,me divertí.,shw,spa,train,False,flashcards2,0.57596356,flagged_for_review
+U01722__spa2shw,U01722,G01519,me divertí.,sakek'lek,spa,shw,train,False,flashcards2,0.57596356,flagged_for_review
+U01049__shw2spa,U01049,G00903,tek'ker' wiuk'su',corre rápido.,shw,spa,train,False,flashcards2,0.5935643,flagged_for_review
+U01049__spa2shw,U01049,G00903,corre rápido.,tek'ker' wiuk'su',spa,shw,train,False,flashcards2,0.5935643,flagged_for_review
+U02786__shw2spa,U02786,G02555,nanekla kenmu'wa'pi'la usha'wanekwa'.,por eso nosotros mismos somos culpables.,shw,spa,train,True,pdf_textos,0.56847084,flagged_for_review
+U02786__spa2shw,U02786,G02555,por eso nosotros mismos somos culpables.,nanekla kenmu'wa'pi'la usha'wanekwa'.,spa,shw,train,True,pdf_textos,0.56847084,flagged_for_review
+U02720__shw2spa,U02720,G02489,"nanek ima leklun panta'lli, arakayu ima yupasik.","dicen que una joven que mestruaba por primera vez se había ido ahí, cuando arákayu estaba enojado.",shw,spa,train,True,pdf_textos,0.59181124,flagged_for_review
+U02720__spa2shw,U02720,G02489,"dicen que una joven que mestruaba por primera vez se había ido ahí, cuando arákayu estaba enojado.","nanek ima leklun panta'lli, arakayu ima yupasik.",spa,shw,train,True,pdf_textos,0.59181124,flagged_for_review
+U03892__shw2spa,U03892,G03636,nu'sik'unta' wa'na pennua'su' ektu'lek yurimawak.,también por avión se llega a yurimaguas.,shw,spa,train,True,fidel_lomas,0.5852018,flagged_for_review
+U03892__spa2shw,U03892,G03636,también por avión se llega a yurimaguas.,nu'sik'unta' wa'na pennua'su' ektu'lek yurimawak.,spa,shw,train,True,fidel_lomas,0.5852018,flagged_for_review
+U02054__shw2spa,U02054,G01831,umilu'lada' nuka'ka,soy miope.,shw,spa,train,False,flashcards2,0.5978869,flagged_for_review
+U02054__spa2shw,U02054,G01831,soy miope.,umilu'lada' nuka'ka,spa,shw,train,False,flashcards2,0.5978869,flagged_for_review
+U00237__shw2spa,U00237,G00183,lli'ker'llia',cuidado.,shw,spa,train,False,flashcards2,0.59785914,flagged_for_review
+U00237__spa2shw,U00237,G00183,cuidado.,lli'ker'llia',spa,shw,train,False,flashcards2,0.59785914,flagged_for_review
+U02674__shw2spa,U02674,G02443,yaaurañini'ma arakayu luwanchiñi.,quisieron hacerle comer pero arákayu no quiso.,shw,spa,train,True,pdf_textos,0.5661509,flagged_for_review
+U02674__spa2shw,U02674,G02443,quisieron hacerle comer pero arákayu no quiso.,yaaurañini'ma arakayu luwanchiñi.,spa,shw,train,True,pdf_textos,0.5661509,flagged_for_review
+U03287__shw2spa,U03287,G03055,nun nuchinkatusu' ñapalli,la canoa está rota.,shw,spa,train,False,flashcards_oraciones,0.5600922,flagged_for_review
+U03287__spa2shw,U03287,G03055,la canoa está rota.,nun nuchinkatusu' ñapalli,spa,shw,train,False,flashcards_oraciones,0.5600922,flagged_for_review
+U03093__shw2spa,U03093,G02862,"ninanlu' aku'llina' wala'wan ikiñek ñinanlu'. wala'wan chilenki, wala'wan winenki.",el pueblo puso policías en el medio del pueblo. policía para el barrio bajo y policía para el barrio alto.,shw,spa,train,True,pdf_textos,0.5804663,flagged_for_review
+U03093__spa2shw,U03093,G02862,el pueblo puso policías en el medio del pueblo. policía para el barrio bajo y policía para el barrio alto.,"ninanlu' aku'llina' wala'wan ikiñek ñinanlu'. wala'wan chilenki, wala'wan winenki.",spa,shw,train,True,pdf_textos,0.5804663,flagged_for_review
+U03285__shw2spa,U03285,G03053,tuntun illanpalli wey,el tambor suena lejos.,shw,spa,train,False,flashcards_oraciones,0.51036704,flagged_for_review
+U03285__spa2shw,U03285,G03053,el tambor suena lejos.,tuntun illanpalli wey,spa,shw,train,False,flashcards_oraciones,0.51036704,flagged_for_review
+U02426__shw2spa,U02426,G02195,willeklek wilaweklusa' chiketllapitapallinerku menmik.,lloro porque mis hijos se van todos a la chacra y me quedo sola.,shw,spa,train,True,pdf_textos,0.55455524,flagged_for_review
+U02426__spa2shw,U02426,G02195,lloro porque mis hijos se van todos a la chacra y me quedo sola.,willeklek wilaweklusa' chiketllapitapallinerku menmik.,spa,shw,train,True,pdf_textos,0.55455524,flagged_for_review
+U04451__shw2spa,U04451,G04186,tullina' napi' wilalunlusa' ñiperchanna',antes decían las señoritas cuando se insultaban,shw,spa,train,True,vs_textos_narrativos,0.59624255,flagged_for_review
+U04451__spa2shw,U04451,G04186,antes decían las señoritas cuando se insultaban,tullina' napi' wilalunlusa' ñiperchanna',spa,shw,train,True,vs_textos_narrativos,0.59624255,flagged_for_review
+U04438__shw2spa,U04438,G04173,arakayu sadin uwenluncha.,la mujer de arákayu era baja de estatura.,shw,spa,train,False,vs_textos_narrativos,0.593071,flagged_for_review
+U04438__spa2shw,U04438,G04173,la mujer de arákayu era baja de estatura.,arakayu sadin uwenluncha.,spa,shw,train,False,vs_textos_narrativos,0.593071,flagged_for_review
+U04308__shw2spa,U04308,G04044,"wa'na tekka'a'su'daperler,","los carros,",shw,spa,train,True,fidel_lomas,0.58854795,flagged_for_review
+U04308__spa2shw,U04308,G04044,"los carros,","wa'na tekka'a'su'daperler,",spa,shw,train,True,fidel_lomas,0.58854795,flagged_for_review
+U03923__shw2spa,U03923,G03667,nu'unta'lusa' yunsu'llina' yapa'willitanna'.,agunos salían a cazar animales en la noche.,shw,spa,train,True,fidel_lomas,0.5525024,flagged_for_review
+U03923__spa2shw,U03923,G03667,agunos salían a cazar animales en la noche.,nu'unta'lusa' yunsu'llina' yapa'willitanna'.,spa,shw,train,True,fidel_lomas,0.5525024,flagged_for_review
+U02725__shw2spa,U02725,G02494,ipa'la peklu'lek leklun pitun.,ahora le llamamos a ese lugar la poza de la niña.,shw,spa,train,True,pdf_textos,0.53663665,flagged_for_review
+U02725__spa2shw,U02725,G02494,ahora le llamamos a ese lugar la poza de la niña.,ipa'la peklu'lek leklun pitun.,spa,shw,train,True,pdf_textos,0.53663665,flagged_for_review
+U00782__shw2spa,U00782,G00655,luwer'chapadeklek,los conozco.,shw,spa,train,False,flashcards2,0.5910567,flagged_for_review
+U00782__spa2shw,U00782,G00655,los conozco.,luwer'chapadeklek,spa,shw,train,False,flashcards2,0.5910567,flagged_for_review
+U01725__shw2spa,U01725,G01521,empu'duncha',odio planchar.,shw,spa,train,False,flashcards2,0.54911536,flagged_for_review
+U01725__spa2shw,U01725,G01521,odio planchar.,empu'duncha',spa,shw,train,False,flashcards2,0.54911536,flagged_for_review
+U03979__shw2spa,U03979,G03723,nanamalek tulli dekkanan naterkek ñinta'lli.,por eso dice que el majaz se convierte en shushupe.,shw,spa,train,True,fidel_lomas,0.59799194,flagged_for_review
+U03979__spa2shw,U03979,G03723,por eso dice que el majaz se convierte en shushupe.,nanamalek tulli dekkanan naterkek ñinta'lli.,spa,shw,train,True,fidel_lomas,0.59799194,flagged_for_review
+U02646__shw2spa,U02646,G02415,"dunanser uklli,","vino la gamitana,",shw,spa,train,False,pdf_textos,0.5953691,flagged_for_review
+U02646__spa2shw,U02646,G02415,"vino la gamitana,","dunanser uklli,",spa,shw,train,False,pdf_textos,0.5953691,flagged_for_review
+U02899__shw2spa,U02899,G02668,"ma'shipa', yu'lanla'pi' nuka'a.","quizás no, quizas es un anuncio de lluvias.",shw,spa,train,True,pdf_textos,0.5308937,flagged_for_review
+U02899__spa2shw,U02899,G02668,"quizás no, quizas es un anuncio de lluvias.","ma'shipa', yu'lanla'pi' nuka'a.",spa,shw,train,True,pdf_textos,0.5308937,flagged_for_review
+U01487__shw2spa,U01487,G01299,ipia'la yennichi'ñi,está ocupado.,shw,spa,train,False,flashcards2,0.5846554,flagged_for_review
+U01487__spa2shw,U01487,G01299,está ocupado.,ipia'la yennichi'ñi,spa,shw,train,False,flashcards2,0.5846554,flagged_for_review
+U03300__shw2spa,U03300,G03068,lli'ker'la' dawanlek',cuidado con la serpiente.,shw,spa,train,False,flashcards_oraciones,0.5826079,flagged_for_review
+U03300__spa2shw,U03300,G03068,cuidado con la serpiente.,lli'ker'la' dawanlek',spa,shw,train,False,flashcards_oraciones,0.5826079,flagged_for_review
+U02684__shw2spa,U02684,G02453,nana chu'kenpa'tapasik mitan ukllik'inchi sellawalusa' chu'kenapallina'.,mientras (arákayu) estaba pandillando el día central de carnaval las golondrinas estaban también danzando.,shw,spa,train,True,pdf_textos,0.583734,flagged_for_review
+U02684__spa2shw,U02684,G02453,mientras (arákayu) estaba pandillando el día central de carnaval las golondrinas estaban también danzando.,nana chu'kenpa'tapasik mitan ukllik'inchi sellawalusa' chu'kenapallina'.,spa,shw,train,True,pdf_textos,0.583734,flagged_for_review
+U03136__shw2spa,U03136,G02905,"yenchenterka'su' saka'tapanna', iñer er'werwalek ipa' kasiserapilek walek ipa' asu' inkella chanchanchan.","no quería que (los shiwilu) se estiraran cuando trabajaban, hasta que se hacía bien tarde (los obligaban a trabajar), hasta que se hacía bien oscuro y el grillo (cantaba) chanchanchan.",shw,spa,train,True,pdf_textos,0.5886235,flagged_for_review
+U03136__spa2shw,U03136,G02905,"no quería que (los shiwilu) se estiraran cuando trabajaban, hasta que se hacía bien tarde (los obligaban a trabajar), hasta que se hacía bien oscuro y el grillo (cantaba) chanchanchan.","yenchenterka'su' saka'tapanna', iñer er'werwalek ipa' kasiserapilek walek ipa' asu' inkella chanchanchan.",spa,shw,train,True,pdf_textos,0.5886235,flagged_for_review
+U02722__shw2spa,U02722,G02491,"kuntetchek arakayuler pekkusik nana leklun ta'wantulli,","cuando arákayu icaró al lago junto al pelejo la joven de primera menstruación se acabó,",shw,spa,train,True,pdf_textos,0.59482086,flagged_for_review
+U02722__spa2shw,U02722,G02491,"cuando arákayu icaró al lago junto al pelejo la joven de primera menstruación se acabó,","kuntetchek arakayuler pekkusik nana leklun ta'wantulli,",spa,shw,train,True,pdf_textos,0.59482086,flagged_for_review
+U04025__shw2spa,U04025,G03762,nu'sik'unta' pa'lli dunkululunkek.,también fue donde la mujer perdiz.,shw,spa,train,True,fidel_lomas,0.52165186,flagged_for_review
+U04025__spa2shw,U04025,G03762,también fue donde la mujer perdiz.,nu'sik'unta' pa'lli dunkululunkek.,spa,shw,train,True,fidel_lomas,0.52165186,flagged_for_review
+U00860__shw2spa,U00860,G00730,sekdiperker' mutu'penkek,memorízalo.,shw,spa,train,False,flashcards2,0.57733935,flagged_for_review
+U00860__spa2shw,U00860,G00730,memorízalo.,sekdiperker' mutu'penkek,spa,shw,train,False,flashcards2,0.57733935,flagged_for_review
+U00247__shw2spa,U00247,G00191,insek'diper'ker',prepárate.,shw,spa,train,False,flashcards2,0.59150875,flagged_for_review
+U00247__spa2shw,U00247,G00191,prepárate.,insek'diper'ker',spa,shw,train,False,flashcards2,0.59150875,flagged_for_review
+U03675__shw2spa,U03675,G03426,kuda inteklitullidek pilutapi kallik',nosotros jugamos fútbol en la calle.,shw,spa,train,False,flashcards_oraciones,0.584504,flagged_for_review
+U03675__spa2shw,U03675,G03426,nosotros jugamos fútbol en la calle.,kuda inteklitullidek pilutapi kallik',spa,shw,train,False,flashcards_oraciones,0.584504,flagged_for_review
+U04527__shw2spa,U04527,G04236,nu'unta'sa' lli inutapallina',aunque pocas lo recuerden,shw,spa,train,False,el_principito,0.58288914,flagged_for_review
+U04527__spa2shw,U04527,G04236,aunque pocas lo recuerden,nu'unta'sa' lli inutapallina',spa,shw,train,False,el_principito,0.58288914,flagged_for_review
+U02897__shw2spa,U02897,G02666,"¿denkenmu'wa' ekdulunterwa', ten","¿ay, quién de nosotras irá a quedar viuda?",shw,spa,train,True,pdf_textos,0.54180026,flagged_for_review
+U02897__spa2shw,U02897,G02666,"¿ay, quién de nosotras irá a quedar viuda?","¿denkenmu'wa' ekdulunterwa', ten",spa,shw,train,True,pdf_textos,0.54180026,flagged_for_review
+U02701__shw2spa,U02701,G02470,wanersu' anu'dektullina'.,de pie cayeron al agua.,shw,spa,train,True,pdf_textos,0.5881701,flagged_for_review
+U02701__spa2shw,U02701,G02470,de pie cayeron al agua.,wanersu' anu'dektullina'.,spa,shw,train,True,pdf_textos,0.5881701,flagged_for_review
+U03953__shw2spa,U03953,G03697,"laman ker'pi nuka'a, lu'lunen ka'lek, iyalli.","la huangana es de color negro, su carne es comestible, es sabrosa.",shw,spa,train,True,fidel_lomas,0.59784245,flagged_for_review
+U03953__spa2shw,U03953,G03697,"la huangana es de color negro, su carne es comestible, es sabrosa.","laman ker'pi nuka'a, lu'lunen ka'lek, iyalli.",spa,shw,train,True,fidel_lomas,0.59784245,flagged_for_review
+U01408__shw2spa,U01408,G01223,aper'lek,he pecado.,shw,spa,train,False,flashcards2,0.5465417,flagged_for_review
+U01408__spa2shw,U01408,G01223,he pecado.,aper'lek,spa,shw,train,False,flashcards2,0.5465417,flagged_for_review
+U03049__shw2spa,U03049,G02818,"wilawek wilamapu'wa'lusa' lli'erkek, nawa'nta' luwetcherkek.",para que mis hijos y los hijos de todos nosotros lo lean y que ellos también conozcan.,shw,spa,train,True,pdf_textos,0.5930625,flagged_for_review
+U03049__spa2shw,U03049,G02818,para que mis hijos y los hijos de todos nosotros lo lean y que ellos también conozcan.,"wilawek wilamapu'wa'lusa' lli'erkek, nawa'nta' luwetcherkek.",spa,shw,train,True,pdf_textos,0.5930625,flagged_for_review
+U02726__shw2spa,U02726,G02495,nu'an ipa' yunsu'n panta'lli. 7 hizo daño.,"ocurrido esto, (arákayu) salió del lugar y se fue.",shw,spa,train,True,pdf_textos,0.5784207,flagged_for_review
+U02726__spa2shw,U02726,G02495,"ocurrido esto, (arákayu) salió del lugar y se fue.",nu'an ipa' yunsu'n panta'lli. 7 hizo daño.,spa,shw,train,True,pdf_textos,0.5784207,flagged_for_review
+U00690__shw2spa,U00690,G00573,teka'per'aterwa',fracasaremos.,shw,spa,train,False,flashcards2,0.5992755,flagged_for_review
+U00690__spa2shw,U00690,G00573,fracasaremos.,teka'per'aterwa',spa,shw,train,False,flashcards2,0.5992755,flagged_for_review
+U00300__shw2spa,U00300,G00235,¡u'chimuinchi!,¡fantástico!,shw,spa,train,False,flashcards2,0.5925157,flagged_for_review
+U00300__spa2shw,U00300,G00235,¡fantástico!,¡u'chimuinchi!,spa,shw,train,False,flashcards2,0.5925157,flagged_for_review
+U00846__shw2spa,U00846,G00716,pulunker' wanta'palli,está nublado.,shw,spa,train,False,flashcards2,0.56879616,flagged_for_review
+U00846__spa2shw,U00846,G00716,está nublado.,pulunker' wanta'palli,spa,shw,train,False,flashcards2,0.56879616,flagged_for_review
+U01571__shw2spa,U01571,G01376,a'ñapallidek la'la'lusa' latek'ak,tenemos reglas.,shw,spa,train,False,flashcards2,0.5399584,flagged_for_review
+U01571__spa2shw,U01571,G01376,tenemos reglas.,a'ñapallidek la'la'lusa' latek'ak,spa,shw,train,False,flashcards2,0.5399584,flagged_for_review
+U02580__shw2spa,U02580,G02349,"yuspainek'etchun, senñula'lusa'. muchas gracias, señoras.","jeberos, julio 2007",shw,spa,train,True,pdf_textos,0.47042066,flagged_for_review
+U02580__spa2shw,U02580,G02349,"jeberos, julio 2007","yuspainek'etchun, senñula'lusa'. muchas gracias, señoras.",spa,shw,train,True,pdf_textos,0.47042066,flagged_for_review
+U03312__shw2spa,U03312,G03079,¿ya wintulun'cha nanpia'masu'?,¿quieres contarme tu historia?,shw,spa,train,False,flashcards_oraciones,0.532923,flagged_for_review
+U03312__spa2shw,U03312,G03079,¿quieres contarme tu historia?,¿ya wintulun'cha nanpia'masu'?,spa,shw,train,False,flashcards_oraciones,0.532923,flagged_for_review
+U03129__shw2spa,U03129,G02898,menmi a'nu'tudek'awa' tannima u'anna'.,"vamos a mandarles a hacer chacra, diciendo vinieron (a jeberos).",shw,spa,train,True,pdf_textos,0.56883174,flagged_for_review
+U03129__spa2shw,U03129,G02898,"vamos a mandarles a hacer chacra, diciendo vinieron (a jeberos).",menmi a'nu'tudek'awa' tannima u'anna'.,spa,shw,train,True,pdf_textos,0.56883174,flagged_for_review
+U04417__shw2spa,U04417,G04152,lunku' lawer' la'la'kla.,hablen en castellano.,shw,spa,train,True,fidel_lomas,0.5598079,flagged_for_review
+U04417__spa2shw,U04417,G04152,hablen en castellano.,lunku' lawer' la'la'kla.,spa,shw,train,True,fidel_lomas,0.5598079,flagged_for_review
+U04197__shw2spa,U04197,G03933,"nanekla pa'nunta'lek yurimawak a'pinta' nadi'nektamu, yainllinserlapimu, yaa'ñamu kirka'wek suntatuki","siendo ya un hombre joven, fui nuevamente a yurimaguas para inscribirme como soldado, para obtener mi libreta militar.",shw,spa,train,True,fidel_lomas,0.54737496,flagged_for_review
+U04197__spa2shw,U04197,G03933,"siendo ya un hombre joven, fui nuevamente a yurimaguas para inscribirme como soldado, para obtener mi libreta militar.","nanekla pa'nunta'lek yurimawak a'pinta' nadi'nektamu, yainllinserlapimu, yaa'ñamu kirka'wek suntatuki",spa,shw,train,True,fidel_lomas,0.54737496,flagged_for_review
+U01528__shw2spa,U01528,G01335,inlli'inuter' musuk,sé positivo.,shw,spa,train,False,flashcards2,0.5786401,flagged_for_review
+U01528__spa2shw,U01528,G01335,sé positivo.,inlli'inuter' musuk,spa,shw,train,False,flashcards2,0.5786401,flagged_for_review
+U03932__shw2spa,U03932,G03676,samerlusa' dek'a'kasu' si'yektulek sha'yak.,los pejes que se jalan se juntan en jicra.,shw,spa,train,True,fidel_lomas,0.55076575,flagged_for_review
+U03932__spa2shw,U03932,G03676,los pejes que se jalan se juntan en jicra.,samerlusa' dek'a'kasu' si'yektulek sha'yak.,spa,shw,train,True,fidel_lomas,0.55076575,flagged_for_review
+U04303__shw2spa,U04303,G04039,"kupin dekkun dunsak,",y el canto de la carretera,shw,spa,train,False,fidel_lomas,0.53255755,flagged_for_review
+U04303__spa2shw,U04303,G04039,y el canto de la carretera,"kupin dekkun dunsak,",spa,shw,train,False,fidel_lomas,0.53255755,flagged_for_review
+U02893__shw2spa,U02893,G02662,wichi'a'ser ima tekkinchi lansi' wa'dan uk'an iñer ima laki'kerdeklli.,"cuando se durmieron, dice que de veras vino el duende puro hueso y a toditos los mató mordiéndoles el cuello,",shw,spa,train,True,pdf_textos,0.58621347,flagged_for_review
+U02893__spa2shw,U02893,G02662,"cuando se durmieron, dice que de veras vino el duende puro hueso y a toditos los mató mordiéndoles el cuello,",wichi'a'ser ima tekkinchi lansi' wa'dan uk'an iñer ima laki'kerdeklli.,spa,shw,train,True,pdf_textos,0.58621347,flagged_for_review
+U02366__shw2spa,U02366,G02135,ipa'li'na nana wa'napi tinpu iterkasu',ahora a ese recipiente (grande de plástico) que le llamantimbu,shw,spa,train,True,pdf_textos,0.5958512,flagged_for_review
+U02366__spa2shw,U02366,G02135,ahora a ese recipiente (grande de plástico) que le llamantimbu,ipa'li'na nana wa'napi tinpu iterkasu',spa,shw,train,True,pdf_textos,0.5958512,flagged_for_review
+U02881__shw2spa,U02881,G02650,"- ta'iter, alli'shá.","muy bien, hermano. (joven)",shw,spa,train,True,pdf_textos,0.55051786,flagged_for_review
+U02881__spa2shw,U02881,G02650,"muy bien, hermano. (joven)","- ta'iter, alli'shá.",spa,shw,train,True,pdf_textos,0.55051786,flagged_for_review
+U00189__shw2spa,U00189,G00140,nuwek'mutu' ñapalek,estoy calvo.,shw,spa,train,False,flashcards2,0.56020784,flagged_for_review
+U00189__spa2shw,U00189,G00140,estoy calvo.,nuwek'mutu' ñapalek,spa,shw,train,False,flashcards2,0.56020784,flagged_for_review
+U04100__shw2spa,U04100,G03837,sin…sin…sin…sin… tula'si'ma a'illiñi.,sin…sin…sin…sin…. así nomás (feo) le hacía sonar.,shw,spa,train,True,fidel_lomas,0.5237455,flagged_for_review
+U04100__spa2shw,U04100,G03837,sin…sin…sin…sin…. así nomás (feo) le hacía sonar.,sin…sin…sin…sin… tula'si'ma a'illiñi.,spa,shw,train,True,fidel_lomas,0.5237455,flagged_for_review
+U04475__shw2spa,U04475,G04194,lli'taa' kunpari,hola compadre,shw,spa,train,False,cotidianas,0.5162575,flagged_for_review
+U04475__spa2shw,U04475,G04194,hola compadre,lli'taa' kunpari,spa,shw,train,False,cotidianas,0.5162575,flagged_for_review
+U04480__shw2spa,U04480,G04198,pantekchek kunpari,adios compadre,shw,spa,train,False,cotidianas,0.584128,flagged_for_review
+U04480__spa2shw,U04480,G04198,adios compadre,pantekchek kunpari,spa,shw,train,False,cotidianas,0.584128,flagged_for_review
+U04486__shw2spa,U04486,G04203,i in,hermano,shw,spa,train,True,cotidianas,0.5607097,flagged_for_review
+U04486__spa2shw,U04486,G04203,hermano,i in,spa,shw,train,True,cotidianas,0.5607097,flagged_for_review
+U04494__shw2spa,U04494,G04206,yuyu'wa,hermano menor,shw,spa,train,True,cotidianas,0.588662,flagged_for_review
+U04494__spa2shw,U04494,G04206,hermano menor,yuyu'wa,spa,shw,train,True,cotidianas,0.588662,flagged_for_review
+U04504__shw2spa,U04504,G04215,ami,abuela,shw,spa,train,False,cotidianas,0.5637773,flagged_for_review
+U04504__spa2shw,U04504,G04215,abuela,ami,spa,shw,train,False,cotidianas,0.5637773,flagged_for_review
+U04512__shw2spa,U04512,G04221,teclapin,hija,shw,spa,train,False,cotidianas,0.5895257,flagged_for_review
+U04512__spa2shw,U04512,G04221,hija,teclapin,spa,shw,train,False,cotidianas,0.5895257,flagged_for_review
+U04513__shw2spa,U04513,G04222,erkun,hijo varon,shw,spa,train,False,cotidianas,0.54706514,flagged_for_review
+U04513__spa2shw,U04513,G04222,hijo varon,erkun,spa,shw,train,False,cotidianas,0.54706514,flagged_for_review
+U04531__shw2spa,U04531,G04239,ananan,fracaso,shw,spa,train,False,extra,0.48592794,flagged_for_review
+U04531__spa2shw,U04531,G04239,fracaso,ananan,spa,shw,train,False,extra,0.48592794,flagged_for_review
+U04532__shw2spa,U04532,G04240,dawan',opaco,shw,spa,train,False,extra,0.4883873,flagged_for_review
+U04532__spa2shw,U04532,G04240,opaco,dawan',spa,shw,train,False,extra,0.4883873,flagged_for_review
+U04533__shw2spa,U04533,G04241,ashin,dueño espiritual; madre,shw,spa,train,False,extra,0.5664984,flagged_for_review
+U04533__spa2shw,U04533,G04241,dueño espiritual; madre,ashin,spa,shw,train,False,extra,0.5664984,flagged_for_review
+U04534__shw2spa,U04534,G04242,anaser',zorro,shw,spa,train,False,extra,0.59808755,flagged_for_review
+U04534__spa2shw,U04534,G04242,zorro,anaser',spa,shw,train,False,extra,0.59808755,flagged_for_review
+U04536__shw2spa,U04536,G04244,anhili,(a) tiene; (b) ha tenido,shw,spa,train,True,extra,0.59434414,flagged_for_review
+U04536__spa2shw,U04536,G04244,(a) tiene; (b) ha tenido,anhili,spa,shw,train,True,extra,0.59434414,flagged_for_review
+U04548__shw2spa,U04548,G04250,wankechek,boquichico,shw,spa,train,False,extra,0.52885675,flagged_for_review
+U04548__spa2shw,U04548,G04250,boquichico,wankechek,spa,shw,train,False,extra,0.52885675,flagged_for_review
+U04553__shw2spa,U04553,G04253,illin,sonidos,shw,spa,train,False,extra,0.5329964,flagged_for_review
+U04553__spa2shw,U04553,G04253,sonidos,illin,spa,shw,train,False,extra,0.5329964,flagged_for_review
+U04557__shw2spa,U04557,G04282,chinyi,cangrejo,shw,spa,train,True,extra,0.56274295,flagged_for_review
+U04557__spa2shw,U04557,G04282,cangrejo,chinyi,spa,shw,train,True,extra,0.56274295,flagged_for_review
+U04589__shw2spa,U04589,G04282,chinchi,cangrejo,shw,spa,train,True,extra,0.5124469,flagged_for_review
+U04589__spa2shw,U04589,G04282,cangrejo,chinchi,spa,shw,train,True,extra,0.5124469,flagged_for_review
+U04561__shw2spa,U04561,G04258,itek',raíz,shw,spa,train,True,extra,0.575462,flagged_for_review
+U04561__spa2shw,U04561,G04258,raíz,itek',spa,shw,train,True,extra,0.575462,flagged_for_review
+U04566__shw2spa,U04566,G04262,u'klin,cenicidor,shw,spa,train,False,extra,0.57863325,flagged_for_review
+U04566__spa2shw,U04566,G04262,cenicidor,u'klin,spa,shw,train,False,extra,0.57863325,flagged_for_review
+U04567__shw2spa,U04567,G04263,unma',páiche,shw,spa,train,False,extra,0.5224088,flagged_for_review
+U04567__spa2shw,U04567,G04263,páiche,unma',spa,shw,train,False,extra,0.5224088,flagged_for_review
+U04569__shw2spa,U04569,G04265,sulu',mono choro,shw,spa,train,False,extra,0.59773344,flagged_for_review
+U04569__spa2shw,U04569,G04265,mono choro,sulu',spa,shw,train,False,extra,0.59773344,flagged_for_review
+U04570__shw2spa,U04570,G04266,lu'lu',cotomono,shw,spa,train,False,extra,0.563331,flagged_for_review
+U04570__spa2shw,U04570,G04266,cotomono,lu'lu',spa,shw,train,False,extra,0.563331,flagged_for_review
+U04571__shw2spa,U04571,G04267,chuchu,carne,shw,spa,train,False,extra,0.56352174,flagged_for_review
+U04571__spa2shw,U04571,G04267,carne,chuchu,spa,shw,train,False,extra,0.56352174,flagged_for_review
+U04574__shw2spa,U04574,G04270,nalu,nuevo,shw,spa,train,False,extra,0.58393085,flagged_for_review
+U04574__spa2shw,U04574,G04270,nuevo,nalu,spa,shw,train,False,extra,0.58393085,flagged_for_review
+U04578__shw2spa,U04578,G04274,cha'cha',diviesos; chupos,shw,spa,train,False,extra,0.5809703,flagged_for_review
+U04578__spa2shw,U04578,G04274,diviesos; chupos,cha'cha',spa,shw,train,False,extra,0.5809703,flagged_for_review
+U04579__shw2spa,U04579,G04275,wa'cha'cha',tipo de pajarito malagüero,shw,spa,train,True,extra,0.55411816,flagged_for_review
+U04579__spa2shw,U04579,G04275,tipo de pajarito malagüero,wa'cha'cha',spa,shw,train,True,extra,0.55411816,flagged_for_review
+U04590__shw2spa,U04590,G04283,chi'lek,carachupa,shw,spa,train,False,extra,0.5240642,flagged_for_review
+U04590__spa2shw,U04590,G04283,carachupa,chi'lek,spa,shw,train,False,extra,0.5240642,flagged_for_review
+U04594__shw2spa,U04594,G04286,chumpi,caracolito de tahuampa,shw,spa,train,False,extra,0.5279958,flagged_for_review
+U04594__spa2shw,U04594,G04286,caracolito de tahuampa,chumpi,spa,shw,train,False,extra,0.5279958,flagged_for_review
+U04597__shw2spa,U04597,G04289,dapi,dolor de ojo,shw,spa,train,False,extra,0.53549635,flagged_for_review
+U04597__spa2shw,U04597,G04289,dolor de ojo,dapi,spa,shw,train,False,extra,0.53549635,flagged_for_review
+U04606__shw2spa,U04606,G04297,suden,afilar,shw,spa,train,False,extra,0.5041306,flagged_for_review
+U04606__spa2shw,U04606,G04297,afilar,suden,spa,shw,train,False,extra,0.5041306,flagged_for_review
+U04610__shw2spa,U04610,G04300,idimunan,cobija,shw,spa,train,False,extra,0.5390687,flagged_for_review
+U04610__spa2shw,U04610,G04300,cobija,idimunan,spa,shw,train,False,extra,0.5390687,flagged_for_review
+U04618__shw2spa,U04618,G04307,kadu',huevo,shw,spa,train,False,extra,0.5395526,flagged_for_review
+U04618__spa2shw,U04618,G04307,huevo,kadu',spa,shw,train,False,extra,0.5395526,flagged_for_review
+U04623__shw2spa,U04623,G04311,kala,tres,shw,spa,train,False,extra,0.55611986,flagged_for_review
+U04623__spa2shw,U04623,G04311,tres,kala,spa,shw,train,False,extra,0.55611986,flagged_for_review
+U04625__shw2spa,U04625,G04313,ukapinla'li,está viniendo,shw,spa,train,False,extra,0.5503526,flagged_for_review
+U04625__spa2shw,U04625,G04313,está viniendo,ukapinla'li,spa,shw,train,False,extra,0.5503526,flagged_for_review
+U04626__shw2spa,U04626,G04314,dek'kanan,maíz,shw,spa,train,False,extra,0.47099823,flagged_for_review
+U04626__spa2shw,U04626,G04314,maíz,dek'kanan,spa,shw,train,False,extra,0.47099823,flagged_for_review
+U04631__shw2spa,U04631,G04319,ukeklli,sangre que huele mal,shw,spa,train,True,extra,0.49213037,flagged_for_review
+U04631__spa2shw,U04631,G04319,sangre que huele mal,ukeklli,spa,shw,train,True,extra,0.49213037,flagged_for_review
+U04650__shw2spa,U04650,G04331,kwaini,juan,shw,spa,train,False,extra,0.58903766,flagged_for_review
+U04650__spa2shw,U04650,G04331,juan,kwaini,spa,shw,train,False,extra,0.58903766,flagged_for_review
+U04651__shw2spa,U04651,G04332,asu'kwe'li,esto es pesado,shw,spa,train,False,extra,0.51020575,flagged_for_review
+U04651__spa2shw,U04651,G04332,esto es pesado,asu'kwe'li,spa,shw,train,False,extra,0.51020575,flagged_for_review
+U04656__shw2spa,U04656,G04336,lada,ojo,shw,spa,train,False,extra,0.5701295,flagged_for_review
+U04656__spa2shw,U04656,G04336,ojo,lada,spa,shw,train,False,extra,0.5701295,flagged_for_review
+U04666__shw2spa,U04666,G04344,ala'tek'lun,cinco,shw,spa,train,False,extra,0.45301354,flagged_for_review
+U04666__spa2shw,U04666,G04344,cinco,ala'tek'lun,spa,shw,train,False,extra,0.45301354,flagged_for_review
+U04777__shw2spa,U04777,G04426,lu'pa',tierra,shw,spa,train,True,extra,0.5608646,flagged_for_review
+U04777__spa2shw,U04777,G04426,tierra,lu'pa',spa,shw,train,True,extra,0.5608646,flagged_for_review
+U04671__shw2spa,U04671,G04346,lulinlintek',soga,shw,spa,train,False,extra,0.5142553,flagged_for_review
+U04671__spa2shw,U04671,G04346,soga,lulinlintek',spa,shw,train,False,extra,0.5142553,flagged_for_review
+U04673__shw2spa,U04673,G04348,tuntek',conversador,shw,spa,train,False,extra,0.5118761,flagged_for_review
+U04673__spa2shw,U04673,G04348,conversador,tuntek',spa,shw,train,False,extra,0.5118761,flagged_for_review
+U04688__shw2spa,U04688,G04356,ikellala,tipo de bagrecito; cunchi,shw,spa,train,True,extra,0.49569595,flagged_for_review
+U04688__spa2shw,U04688,G04356,tipo de bagrecito; cunchi,ikellala,spa,shw,train,True,extra,0.49569595,flagged_for_review
+U04685__shw2spa,U04685,G04353,llachek',nombre antiguo de hombre,shw,spa,train,True,extra,0.5697497,flagged_for_review
+U04685__spa2shw,U04685,G04353,nombre antiguo de hombre,llachek',spa,shw,train,True,extra,0.5697497,flagged_for_review
+U04686__shw2spa,U04686,G04354,ketlla,afrecho,shw,spa,train,False,extra,0.5561479,flagged_for_review
+U04686__spa2shw,U04686,G04354,afrecho,ketlla,spa,shw,train,False,extra,0.5561479,flagged_for_review
+U04694__shw2spa,U04694,G04360,lli'li,río,shw,spa,train,False,extra,0.51250136,flagged_for_review
+U04694__spa2shw,U04694,G04360,río,lli'li,spa,shw,train,False,extra,0.51250136,flagged_for_review
+U04697__shw2spa,U04697,G04363,yullu,apodo de dolores,shw,spa,train,False,extra,0.5686953,flagged_for_review
+U04697__spa2shw,U04697,G04363,apodo de dolores,yullu,spa,shw,train,False,extra,0.5686953,flagged_for_review
+U04704__shw2spa,U04704,G04368,ma'nen,qué es?,shw,spa,train,False,extra,0.5357251,flagged_for_review
+U04704__spa2shw,U04704,G04368,qué es?,ma'nen,spa,shw,train,False,extra,0.5357251,flagged_for_review
+U04707__shw2spa,U04707,G04370,amandek',sajino,shw,spa,train,False,extra,0.57115245,flagged_for_review
+U04707__spa2shw,U04707,G04370,sajino,amandek',spa,shw,train,False,extra,0.57115245,flagged_for_review
+U04713__shw2spa,U04713,G04454,merpi,maduro,shw,spa,train,True,extra,0.5415721,flagged_for_review
+U04713__spa2shw,U04713,G04454,maduro,merpi,spa,shw,train,True,extra,0.5415721,flagged_for_review
+U04813__shw2spa,U04813,G04454,mer'pi,maduro,shw,spa,train,True,extra,0.581747,flagged_for_review
+U04813__spa2shw,U04813,G04454,maduro,mer'pi,spa,shw,train,True,extra,0.581747,flagged_for_review
+U04715__shw2spa,U04715,G04374,mek'shi,cuñado del hombre,shw,spa,train,False,extra,0.4759736,flagged_for_review
+U04715__spa2shw,U04715,G04374,cuñado del hombre,mek'shi,spa,shw,train,False,extra,0.4759736,flagged_for_review
+U04716__shw2spa,U04716,G04375,memin,chacra,shw,spa,train,False,extra,0.5799038,flagged_for_review
+U04716__spa2shw,U04716,G04375,chacra,memin,spa,shw,train,False,extra,0.5799038,flagged_for_review
+U04731__shw2spa,U04731,G04386,mulu',copa de árbol,shw,spa,train,False,extra,0.5319042,flagged_for_review
+U04731__spa2shw,U04731,G04386,copa de árbol,mulu',spa,shw,train,False,extra,0.5319042,flagged_for_review
+U04747__shw2spa,U04747,G04400,nerpi'la,diferente,shw,spa,train,False,extra,0.48246434,flagged_for_review
+U04747__spa2shw,U04747,G04400,diferente,nerpi'la,spa,shw,train,False,extra,0.48246434,flagged_for_review
+U04757__shw2spa,U04757,G04409,unu'lli,animal sin cola,shw,spa,train,False,extra,0.5680051,flagged_for_review
+U04757__spa2shw,U04757,G04409,animal sin cola,unu'lli,spa,shw,train,False,extra,0.5680051,flagged_for_review
+U04759__shw2spa,U04759,G04411,num,canoa,shw,spa,train,False,extra,0.59539926,flagged_for_review
+U04759__spa2shw,U04759,G04411,canoa,num,spa,shw,train,False,extra,0.59539926,flagged_for_review
+U04760__shw2spa,U04760,G04412,ñashi,narcisa,shw,spa,train,False,extra,0.5882404,flagged_for_review
+U04760__spa2shw,U04760,G04412,narcisa,ñashi,spa,shw,train,False,extra,0.5882404,flagged_for_review
+U04761__shw2spa,U04761,G04413,ña?su?,lo que es; lo que ha estado,shw,spa,train,True,extra,0.56488955,flagged_for_review
+U04761__spa2shw,U04761,G04413,lo que es; lo que ha estado,ña?su?,spa,shw,train,True,extra,0.56488955,flagged_for_review
+U04767__shw2spa,U04767,G04419,pektuñin,se ha extraviado,shw,spa,train,False,extra,0.5987276,flagged_for_review
+U04767__spa2shw,U04767,G04419,se ha extraviado,pektuñin,spa,shw,train,False,extra,0.5987276,flagged_for_review
+U04768__shw2spa,U04768,G04420,ñinupek,donde no hay,shw,spa,train,False,extra,0.55555123,flagged_for_review
+U04768__spa2shw,U04768,G04420,donde no hay,ñinupek,spa,shw,train,False,extra,0.55555123,flagged_for_review
+U04770__shw2spa,U04770,G04446,puiñu,vasija para sacar agua,shw,spa,train,True,extra,0.52856475,flagged_for_review
+U04770__spa2shw,U04770,G04446,vasija para sacar agua,puiñu,spa,shw,train,True,extra,0.52856475,flagged_for_review
+U04798__shw2spa,U04798,G04446,puiñu,vasija de barro para agua,shw,spa,train,True,extra,0.5530799,flagged_for_review
+U04798__spa2shw,U04798,G04446,vasija de barro para agua,puiñu,spa,shw,train,True,extra,0.5530799,flagged_for_review
+U04771__shw2spa,U04771,G04422,pada,palmera pulponota; tasha ponilla,shw,spa,train,True,extra,0.5615308,flagged_for_review
+U04771__spa2shw,U04771,G04422,palmera pulponota; tasha ponilla,pada,spa,shw,train,True,extra,0.5615308,flagged_for_review
+U04774__shw2spa,U04774,G04455,sapana',bufeo; lombriz gruesa,shw,spa,train,True,extra,0.58060074,flagged_for_review
+U04774__spa2shw,U04774,G04455,bufeo; lombriz gruesa,sapana',spa,shw,train,True,extra,0.58060074,flagged_for_review
+U04784__shw2spa,U04784,G04433,pi'tek',espalda,shw,spa,train,False,extra,0.53846514,flagged_for_review
+U04784__spa2shw,U04784,G04433,espalda,pi'tek',spa,shw,train,False,extra,0.53846514,flagged_for_review
+U04791__shw2spa,U04791,G04439,pupun,pucahuicsa,shw,spa,train,False,extra,0.5937129,flagged_for_review
+U04791__spa2shw,U04791,G04439,pucahuicsa,pupun,spa,shw,train,False,extra,0.5937129,flagged_for_review
+U04795__shw2spa,U04795,G04443,wapu',hartos,shw,spa,train,False,extra,0.537459,flagged_for_review
+U04795__spa2shw,U04795,G04443,hartos,wapu',spa,shw,train,False,extra,0.537459,flagged_for_review
+U04803__shw2spa,U04803,G04510,uran,comida; comer,shw,spa,train,True,extra,0.59861743,flagged_for_review
+U04803__spa2shw,U04803,G04510,comida; comer,uran,spa,shw,train,True,extra,0.59861743,flagged_for_review
+U04804__shw2spa,U04804,G04450,uru,venado,shw,spa,train,False,extra,0.5720139,flagged_for_review
+U04804__spa2shw,U04804,G04450,venado,uru,spa,shw,train,False,extra,0.5720139,flagged_for_review
+U04807__shw2spa,U04807,G04451,mur',lleno,shw,spa,train,False,extra,0.4852008,flagged_for_review
+U04807__spa2shw,U04807,G04451,lleno,mur',spa,shw,train,False,extra,0.4852008,flagged_for_review
+U04815__shw2spa,U04815,G04456,sasa',catalán,shw,spa,train,False,extra,0.544749,flagged_for_review
+U04815__spa2shw,U04815,G04456,catalán,sasa',spa,shw,train,False,extra,0.544749,flagged_for_review
+U04818__shw2spa,U04818,G04458,sa'lek',guaba,shw,spa,train,False,extra,0.4832492,flagged_for_review
+U04818__spa2shw,U04818,G04458,guaba,sa'lek',spa,shw,train,False,extra,0.4832492,flagged_for_review
+U04819__shw2spa,U04819,G04459,sennan,lago,shw,spa,train,False,extra,0.5850498,flagged_for_review
+U04819__spa2shw,U04819,G04459,lago,sennan,spa,shw,train,False,extra,0.5850498,flagged_for_review
+U04824__shw2spa,U04824,G04463,sisek',erizo,shw,spa,train,False,extra,0.56138015,flagged_for_review
+U04824__spa2shw,U04824,G04463,erizo,sisek',spa,shw,train,False,extra,0.56138015,flagged_for_review
+U04825__shw2spa,U04825,G04464,simek',delgado; finito,shw,spa,train,False,extra,0.55295837,flagged_for_review
+U04825__spa2shw,U04825,G04464,delgado; finito,simek',spa,shw,train,False,extra,0.55295837,flagged_for_review
+U04827__shw2spa,U04827,G04466,a'llupisi,tubo grueso,shw,spa,train,False,extra,0.575305,flagged_for_review
+U04827__spa2shw,U04827,G04466,tubo grueso,a'llupisi,spa,shw,train,False,extra,0.575305,flagged_for_review
+U04828__shw2spa,U04828,G04467,supu',gallinazo,shw,spa,train,False,extra,0.5730532,flagged_for_review
+U04828__spa2shw,U04828,G04467,gallinazo,supu',spa,shw,train,False,extra,0.5730532,flagged_for_review
+U04829__shw2spa,U04829,G04468,sunan,a pie del árbol,shw,spa,train,True,extra,0.5273533,flagged_for_review
+U04829__spa2shw,U04829,G04468,a pie del árbol,sunan,spa,shw,train,True,extra,0.5273533,flagged_for_review
+U04831__shw2spa,U04831,G04469,sudutek',soga; pretina,shw,spa,train,False,extra,0.58632827,flagged_for_review
+U04831__spa2shw,U04831,G04469,soga; pretina,sudutek',spa,shw,train,False,extra,0.58632827,flagged_for_review
+U04832__shw2spa,U04832,G04470,sunki,machete (antiguo),shw,spa,train,True,extra,0.5344353,flagged_for_review
+U04832__spa2shw,U04832,G04470,machete (antiguo),sunki,spa,shw,train,True,extra,0.5344353,flagged_for_review
+U04838__shw2spa,U04838,G04476,pisha',empapado,shw,spa,train,False,extra,0.5621017,flagged_for_review
+U04838__spa2shw,U04838,G04476,empapado,pisha',spa,shw,train,False,extra,0.5621017,flagged_for_review
+U04839__shw2spa,U04839,G04477,sha'pi',amarillo,shw,spa,train,False,extra,0.5442133,flagged_for_review
+U04839__spa2shw,U04839,G04477,amarillo,sha'pi',spa,shw,train,False,extra,0.5442133,flagged_for_review
+U04841__shw2spa,U04841,G04479,kusher,chancho,shw,spa,train,False,extra,0.5185688,flagged_for_review
+U04841__spa2shw,U04841,G04479,chancho,kusher,spa,shw,train,False,extra,0.5185688,flagged_for_review
+U04848__shw2spa,U04848,G04484,wanshen,camarón,shw,spa,train,False,extra,0.5955576,flagged_for_review
+U04848__spa2shw,U04848,G04484,camarón,wanshen,spa,shw,train,False,extra,0.5955576,flagged_for_review
+U04856__shw2spa,U04856,G04488,tanker,chinchi,shw,spa,train,False,extra,0.59955037,flagged_for_review
+U04856__spa2shw,U04856,G04488,chinchi,tanker,spa,shw,train,False,extra,0.59955037,flagged_for_review
+U04866__shw2spa,U04866,G04498,tu'tu'pi,rodilla,shw,spa,train,False,extra,0.5602902,flagged_for_review
+U04866__spa2shw,U04866,G04498,rodilla,tu'tu'pi,spa,shw,train,False,extra,0.5602902,flagged_for_review
+U04868__shw2spa,U04868,G04500,tumek',palmera para cumba,shw,spa,train,False,extra,0.5747003,flagged_for_review
+U04868__spa2shw,U04868,G04500,palmera para cumba,tumek',spa,shw,train,False,extra,0.5747003,flagged_for_review
+U04884__shw2spa,U04884,G04514,wi'pu,poner al niño en brazos,shw,spa,train,True,extra,0.52864146,flagged_for_review
+U04884__spa2shw,U04884,G04514,poner al niño en brazos,wi'pu,spa,shw,train,True,extra,0.52864146,flagged_for_review
+U04890__shw2spa,U04890,G04519,yenbilli,solearse el cuerpo,shw,spa,train,False,extra,0.55901146,flagged_for_review
+U04890__spa2shw,U04890,G04519,solearse el cuerpo,yenbilli,spa,shw,train,False,extra,0.55901146,flagged_for_review
+U04892__shw2spa,U04892,G04521,yulu'danku,flor de santa rosa,shw,spa,train,True,extra,0.48363617,flagged_for_review
+U04892__spa2shw,U04892,G04521,flor de santa rosa,yulu'danku,spa,shw,train,True,extra,0.48363617,flagged_for_review

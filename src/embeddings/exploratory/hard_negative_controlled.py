@@ -114,6 +114,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Entrena también la dirección Shiwlu->español usando negativos españoles emparejados."
     )
+    parser.add_argument(
+        "--splits-variant",
+        choices=("main", "xl"),
+        default="main",
+        help="Usa data/processed/04_splits (main) o 04_splits_xl (xl).",
+    )
     return parser.parse_args()
 
 
@@ -161,6 +167,13 @@ def negatives_report_path(experiment_name: str) -> Path:
     if experiment_name == "v2_hn_controlled":
         return controlled_report_dir(experiment_name) / "hard_negatives_controlled_report.json"
     return controlled_report_dir(experiment_name) / f"hard_negatives_{experiment_name}_report.json"
+
+
+def negatives_path_for_args(args: argparse.Namespace) -> Path:
+    base = negatives_path(args.experiment_name)
+    if args.splits_variant == "xl":
+        return base.with_name(base.stem + "_xl.csv")
+    return base
 
 
 def resolved_base_model(args: argparse.Namespace) -> str:
@@ -212,7 +225,7 @@ def mine_negatives(args: argparse.Namespace) -> pd.DataFrame:
     output_report_dir.mkdir(parents=True, exist_ok=True)
     SPLITS_DIR.mkdir(parents=True, exist_ok=True)
 
-    train_df = load_split("train")
+    train_df = load_split("train", splits_variant=args.splits_variant)
     model = SentenceTransformer(args.model)
     anchor_embs, passage_embs = encode_train_split(model, train_df)
     sim_matrix = anchor_embs @ passage_embs.T
@@ -280,7 +293,7 @@ def mine_negatives(args: argparse.Namespace) -> pd.DataFrame:
             if "medium" in selected_by_difficulty:
                 rows.append(selected_by_difficulty["medium"])
 
-    output_negatives_path = negatives_path(args.experiment_name)
+    output_negatives_path = negatives_path_for_args(args)
     output_sample_path = negatives_sample_path(args.experiment_name)
     output_report_path = negatives_report_path(args.experiment_name)
 
@@ -366,7 +379,7 @@ def build_mining_report(
             ),
         },
         "artifacts": {
-            "negatives_csv": str(negatives_path(args.experiment_name)),
+            "negatives_csv": str(negatives_path_for_args(args)),
             "sample_csv": str(negatives_sample_path(args.experiment_name)),
             "report_json": str(negatives_report_path(args.experiment_name)),
         },
@@ -391,7 +404,7 @@ def collate_triplets(batch: list[dict[str, str]]) -> dict[str, list[str]]:
 
 def train_controlled(args: argparse.Namespace) -> None:
     input_report_path = negatives_report_path(args.experiment_name)
-    input_negatives_path = negatives_path(args.experiment_name)
+    input_negatives_path = negatives_path_for_args(args)
     if not input_report_path.exists() or not input_negatives_path.exists():
         raise FileNotFoundError("Run --stage mine before training.")
 
@@ -414,7 +427,12 @@ def train_controlled(args: argparse.Namespace) -> None:
 
     base_model = resolved_base_model(args)
     model = SentenceTransformer(base_model)
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cpu")
     model.to(device)
     model.train()
 
@@ -463,7 +481,7 @@ def evaluate_controlled(args: argparse.Namespace) -> dict[str, Any]:
     output_dir = controlled_model_dir(experiment_name, variant)
     tag = controlled_tag(experiment_name, variant)
     model = SentenceTransformer(str(output_dir))
-    test_df = load_split("test")
+    test_df = load_split("test", splits_variant=args.splits_variant)
     start_time = datetime.now(timezone.utc)
     metrics = evaluate_model(
         model,

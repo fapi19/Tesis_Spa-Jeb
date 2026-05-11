@@ -1,0 +1,7 @@
+[phase2b] variant=xl, device=cuda
+[phase2b] indexing 3615 accepted pairs
+[phase2b] shiwilu: index=faiss_shw.index meta=faiss_shw_meta.parquet n=3615 dim=768
+[phase2b] spanish: index=faiss_spa.index meta=faiss_spa_meta.parquet n=3615 dim=768
+[phase2b] shiwilu: near-duplicate pairs (IP>=0.98) = 222
+[phase2b] spanish: near-duplicate pairs (IP>=0.98) = 72
+[phase2b] report -> reports\05_nmt\preprocessing_xl\faiss_index.json

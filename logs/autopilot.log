@@ -1,0 +1,26 @@
+[Sun, May 10, 2026 11:17:28 AM] === AUTOPILOT PHASE R START ===
+[Sun, May 10, 2026 11:17:28 AM] R1: data prep
+[Sun, May 10, 2026 11:17:28 AM] R1 done
+[Sun, May 10, 2026 11:17:28 AM] R2: embeddings retraining
+[Sun, May 10, 2026 11:39:59 AM] R2 done
+[Sun, May 10, 2026 11:39:59 AM] R3: v0_xl retraining
+[Sun, May 10, 2026 11:40:44 AM] === AUTOPILOT PHASE R START ===
+[Sun, May 10, 2026 11:40:44 AM] R1: data prep
+[Sun, May 10, 2026 11:40:44 AM] R1 done
+[Sun, May 10, 2026 11:40:44 AM] R2: embeddings retraining
+[Sun, May 10, 2026 12:03:11 PM] R2 done
+[Sun, May 10, 2026 12:03:11 PM] R3: v0_xl retraining
+[Sun, May 10, 2026  1:26:07 PM] R3 done
+[Sun, May 10, 2026  1:26:07 PM] R4: round-trip BT + mining + v1_bt_xl
+[Sun, May 10, 2026  3:34:18 PM] R4 done
+[Sun, May 10, 2026  3:34:18 PM] === AUTOPILOT PHASE R COMPLETE ===
+[Sun, May 10, 2026  3:35:38 PM] === AUTOPILOT PHASE 2 START ===
+[Sun, May 10, 2026  3:35:38 PM] Phase 2.0: DoRA bidirectional
+[Sun, May 10, 2026  6:30:32 PM] Phase 2.0 done
+[Sun, May 10, 2026  6:30:32 PM] Phase 2.1b: LoRA + LoRA+
+[Sun, May 10, 2026  8:53:44 PM] Phase 2.1b done
+[Sun, May 10, 2026  8:53:44 PM] Phase 2.1: DoRA + LoRA+
+[Mon, May 11, 2026 12:10:30 AM] Phase 2.1 done
+[Mon, May 11, 2026 12:10:30 AM] Phase 2.2: BT iter 1 (Wikipedia es)
+[Mon, May 11, 2026  3:46:05 AM] Phase 2.2 done
+[Mon, May 11, 2026  3:46:05 AM] === AUTOPILOT PHASE 2 COMPLETE ===

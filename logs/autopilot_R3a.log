@@ -1,0 +1,10 @@
+[phase1] variant=xl
+[phase1] reading splits from C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\data\processed\04_splits_xl
+[phase1]   train: 3923 pairs (sha 23033205a9b4)
+[phase1]   valid: 445 pairs (sha 5c06a53ecb34)
+[phase1]   test: 446 pairs (sha 4951ffb77487)
+[phase1] wrote data\processed\05_nmt_canonical_xl\train.csv (7846 rows, sha d175aa2728da)
+[phase1] wrote data\processed\05_nmt_canonical_xl\valid.csv (890 rows, sha be7bc3c815b9)
+[phase1] wrote data\processed\05_nmt_canonical_xl\test.csv (892 rows, sha 41a82712d11d)
+[phase1] manifest -> reports\05_nmt\preprocessing_xl\canonical_manifest.json
+[phase1] total 9628 rows (expected 9628); group leakage: none

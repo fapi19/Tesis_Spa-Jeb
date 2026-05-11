@@ -23,6 +23,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import pandas as pd  # noqa: E402
 
+from scripts.nmt._paths import resolve_paths  # noqa: E402
 from src.nmt.augmentation.backtranslation import (  # noqa: E402
     BackTranslationConfig,
     cap_synthetic,
@@ -30,15 +31,19 @@ from src.nmt.augmentation.backtranslation import (  # noqa: E402
     make_synthetic_dataframe,
 )
 
-PARALLEL_DIR = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered"
-AUGMENTED_DIR = PROJECT_ROOT / "data" / "processed" / "07_nmt_augmented"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "augmentation"
-DEFAULT_MONO = AUGMENTED_DIR / "mono_shw.txt"
-DEFAULT_TRAIN_BT = AUGMENTED_DIR / "train_bt.csv"
+
+def _variant_paths(variant: str) -> tuple[Path, Path, Path, Path, Path]:
+    nmt = resolve_paths(PROJECT_ROOT, variant)
+    parallel_dir = nmt.filtered_dir
+    augmented_dir = nmt.augmented_dir
+    suffix = "_xl" if variant == "xl" else ""
+    reports_dir = PROJECT_ROOT / "reports" / "05_nmt" / f"augmentation{suffix}"
+    return parallel_dir, augmented_dir, reports_dir, augmented_dir / "mono_shw.txt", augmented_dir / "train_bt.csv"
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
     p.add_argument("--extract-mono", action="store_true", help="Stage 1: extract mono pool only.")
     p.add_argument(
         "--candidate",
@@ -47,7 +52,7 @@ def parse_args() -> argparse.Namespace:
         default=[],
         help="Candidate text file with line-per-sentence Shiwilu sources. Repeatable.",
     )
-    p.add_argument("--mono", type=str, default=str(DEFAULT_MONO))
+    p.add_argument("--mono", type=str, default=None, help="Override mono pool path (default: <augmented>/mono_shw.txt).")
     p.add_argument("--checkpoint", type=str, default=None)
     p.add_argument(
         "--no-require-apostrophe",
@@ -66,31 +71,35 @@ def parse_args() -> argparse.Namespace:
 
 
 def _stage_extract_mono(args: argparse.Namespace) -> int:
-    AUGMENTED_DIR.mkdir(parents=True, exist_ok=True)
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    parallel_dir, augmented_dir, reports_dir, default_mono, _ = _variant_paths(args.variant)
+    augmented_dir.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
 
+    mono_path = Path(args.mono) if args.mono else default_mono
     candidate_paths = [Path(c).resolve() for c in args.candidate]
     parallel_csvs = [
-        PARALLEL_DIR / "train.csv",
-        PARALLEL_DIR / "valid.csv",
-        PARALLEL_DIR / "test.csv",
+        parallel_dir / "train.csv",
+        parallel_dir / "valid.csv",
+        parallel_dir / "test.csv",
     ]
+    print(f"[phase7a] variant={args.variant}, parallel_dir={parallel_dir.relative_to(PROJECT_ROOT)}")
     print(f"[phase7a] candidates: {[str(p.relative_to(PROJECT_ROOT)) for p in candidate_paths] or '<none>'}")
     info = extract_mono_shiwilu(
         parallel_csvs,
         candidate_paths,
-        Path(args.mono),
+        mono_path,
         require_apostrophe=not args.no_require_apostrophe,
     )
     info["timestamp_utc"] = dt.datetime.now(dt.timezone.utc).isoformat()
     info["mode"] = "extract_mono"
+    info["variant"] = args.variant
     print(
         f"[phase7a] kept {info['kept']} mono Shiwilu lines "
         f"(skipped {info['skipped_in_parallel']} in_parallel, "
         f"{info['skipped_looks_spanish']} looks_spanish)"
     )
 
-    out_dir = Path(args.report) if args.report else REPORTS_DIR
+    out_dir = Path(args.report) if args.report else reports_dir
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "mono_extraction.json").write_text(
         json.dumps(info, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -103,7 +112,8 @@ def _stage_backtranslate(args: argparse.Namespace) -> int:
         print("[phase7a] --checkpoint is required for backtranslation stage", file=sys.stderr)
         return 2
 
-    mono_path = Path(args.mono)
+    parallel_dir, augmented_dir, reports_dir, default_mono, default_train_bt = _variant_paths(args.variant)
+    mono_path = Path(args.mono) if args.mono else default_mono
     if not mono_path.exists() or mono_path.stat().st_size == 0:
         print(
             f"[phase7a] mono pool empty or missing: {mono_path}\n"
@@ -179,18 +189,19 @@ def _stage_backtranslate(args: argparse.Namespace) -> int:
     )
     print(f"[phase7a] synthetic rows after threshold {args.accept_threshold}: {len(syn_df)}")
 
-    parallel_train = pd.read_csv(PARALLEL_DIR / "train.csv", encoding="utf-8-sig")
+    parallel_train = pd.read_csv(parallel_dir / "train.csv", encoding="utf-8-sig")
     capped = cap_synthetic(syn_df, parallel_size=len(parallel_train), cfg=BackTranslationConfig(bt_cap_x_parallel=args.cap_x))
     print(f"[phase7a] capped synthetic rows: {len(capped)} (cap={args.cap_x}x parallel of size {len(parallel_train)})")
 
-    AUGMENTED_DIR.mkdir(parents=True, exist_ok=True)
-    capped.to_csv(DEFAULT_TRAIN_BT, index=False, encoding="utf-8-sig")
-    print(f"[phase7a] wrote {DEFAULT_TRAIN_BT.relative_to(PROJECT_ROOT)}")
+    augmented_dir.mkdir(parents=True, exist_ok=True)
+    capped.to_csv(default_train_bt, index=False, encoding="utf-8-sig")
+    print(f"[phase7a] wrote {default_train_bt.relative_to(PROJECT_ROOT)}")
 
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
     report = {
         "phase": "7a",
         "step": "backtranslation",
+        "variant": args.variant,
         "timestamp_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "checkpoint": str(Path(args.checkpoint).resolve()),
         "mono_lines_in": len(mono_lines),
@@ -205,7 +216,7 @@ def _stage_backtranslate(args: argparse.Namespace) -> int:
             "max": float(syn_df["score"].max()) if len(syn_df) else None,
         },
     }
-    out_dir = Path(args.report) if args.report else REPORTS_DIR
+    out_dir = Path(args.report) if args.report else reports_dir
     (out_dir / "backtranslation.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
     )

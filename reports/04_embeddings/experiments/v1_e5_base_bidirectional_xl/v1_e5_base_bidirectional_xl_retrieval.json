@@ -1,0 +1,26 @@
+{
+  "pipeline": "evaluate_retrieval",
+  "timestamp": "2026-05-10T16:51:28.682397+00:00",
+  "model": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\models\\sentence_transformers\\v1_e5_base_bidirectional_xl",
+  "tag": "v1_e5_base_bidirectional_xl",
+  "direction": "esp_to_shi",
+  "metrics": {
+    "recall@1": 0.7556053811659192,
+    "recall@5": 0.9327354260089686,
+    "recall@10": 0.9596412556053812,
+    "mrr": 0.8316803301084869,
+    "mean_rank": 3.069506726457399,
+    "total_pairs": 446,
+    "multi_positive": true,
+    "avg_positives_per_query": 1.1793721973094171,
+    "rank_distribution": {
+      "rank_1": 337,
+      "rank_2_5": 79,
+      "rank_6_10": 12,
+      "rank_11_50": 13,
+      "rank_51_plus": 5
+    },
+    "direction": "esp_to_shi"
+  },
+  "elapsed_seconds": 639.664869
+}

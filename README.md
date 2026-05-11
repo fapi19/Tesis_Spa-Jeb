@@ -13,6 +13,15 @@ generación de embeddings bilingües y entrenamiento de modelos neuronales.
 
 ## Estado actual
 
+**Ciclo de tesis cerrado.** Tanto el subsistema de embeddings como el sistema
+NMT están entrenados, evaluados y documentados. El modelo enviado es
+`v2.1b LoRA+` (NLLB-200 + LoRA `r=32, α=64` + optimizador LoRA+ con
+`lr_B = 16·lr_A`, sobre la variante `xl` del corpus de 4501 pares) con
+**avg chrF++ reranked = 44.99** (IC 95\% `[43.17, 46.96]`, bootstrap
+`n=1000`). Detalle por variante: ver
+`reports/05_nmt/evaluation_xl/leaderboard.md` y la Cuadro 5.4 / 5.5 del
+documento de tesis.
+
 La fase de preprocesamiento para embeddings Shiwlu-español está cerrada. El
 pipeline canónico quedó en `src/embeddings/preprocess_embeddings.py` y fue
 validado con `src/embeddings/audit_preprocessing.py`.
@@ -816,13 +825,38 @@ Estos pares quedan en `data/processed/07_nmt_augmented/train_bt.csv` con
 3. ~~Phase 7a: backtranslation con v0 sobre monolingüe Shiwilu (apóstrofe
    requerido por defecto), filtrado semántico ≥ 0.60, capeo a 2x del paralelo.~~
    Hecho. 12 filas sintéticas, todas en dirección `shw → spa`.
-4. Phase 7b: ya ejecutado en una iteración previa, 1338 pares aceptados en
-   `data/processed/07_nmt_augmented/train_mined.csv`.
-5. Phase 7d (pendiente, lanzamiento manual): re-entreno como v1_bt con LoRA
-   `r=32`/`alpha=64`, weighted loss (1.0 / 0.5 / 0.3), paralelo + BT + mined.
-6. Phase 8a/b/c (pendiente): comparación v0 vs v1_bt (con y sin reranker
-   α=0.5), análisis rare-token, plantilla humana ciega, tablas LaTeX y
-   actualización de tesis.
+4. ~~Phase 7b: minería bilingüe vía FAISS sobre v3 SBERT.~~ Hecho. 1338 pares
+   aceptados en `data/processed/07_nmt_augmented[/_xl]/train_mined.csv`.
+5. ~~Phase 7d: re-entreno como v1_bt con LoRA `r=32`/`alpha=64`, weighted loss
+   (1.0 / 0.5 / 0.3), paralelo + BT round-trip + mined.~~ Hecho como
+   `v1_bt_xl`; avg chrF++ reranked = 32.52.
+6. ~~Phase 8a/b/c: comparación v0 vs v1_bt (con y sin reranker), análisis
+   rare-token, plantilla humana ciega, tablas LaTeX y actualización de
+   tesis.~~ Hecho.
+7. ~~Phase 2 (ablaciones): DoRA (`v2.0`), LoRA+ aislado (`v2.1b`), DoRA+LoRA+
+   (`v2.1`), BT iter1 Wikipedia (`v2.2`).~~ Hecho. Campeón = `v2.1b` LoRA+
+   con avg chrF++ reranked = **44.99** (IC 95\% `[43.17, 46.96]`, `n=1000`
+   bootstrap). DoRA no se distingue estadísticamente del baseline; el BT con
+   Wikipedia regresó el modelo a ~32 chrF++ (la coincidencia de dominio prima
+   sobre el volumen del pool monolingüe).
+8. ~~Phase 5/6 cierre: leaderboard 6-way, intervalos de confianza bootstrap,
+   tablas LaTeX nuevas, secciones Anexo C.14 y futuro trabajo
+   actualizado, PDF recompilado (111 páginas).~~ Hecho.
+
+### Resultados finales (xl test, reranked, 892 filas direccionales)
+
+| Modelo | shw→spa chrF / BLEU | spa→shw chrF / BLEU | avg chrF | IC 95% (avg) |
+|---|---|---|---:|---|
+| v0_xl | 25.16 / 9.73 | 28.06 / 4.61 | 26.61 | [25.33, 27.88] |
+| v1_bt_xl (+BT OPUS-100) | 29.91 / 12.45 | 34.36 / 6.69 | 32.14 | [30.63, 33.80] |
+| v2.0 DoRA | 30.82 / 14.55 | 34.35 / 6.46 | 32.58 | [31.02, 34.25] |
+| v2.1 DoRA+LoRA+ | 41.05 / 23.23 | 47.54 / 12.76 | 44.30 | [42.49, 46.12] |
+| **v2.1b LoRA+ ★** | **42.42 / 24.48** | **47.56 / 12.45** | **44.99** | **[43.17, 46.96]** |
+| v2.2 +BT iter1 Wikipedia | 30.72 / 14.76 | 33.94 / 5.90 | 32.33 | [30.82, 33.94] |
+
+Fuente: `reports/05_nmt/evaluation_xl/leaderboard.md` (Phase 5,
+`scripts/nmt/72_leaderboard.py`) y `bootstrap_ci_summary.md` (Phase 6,
+`scripts/nmt/73_bootstrap_ci.py`).
 
 ### Future work (no incluido en este ciclo)
 
@@ -850,6 +884,34 @@ trabajo futuro:
   ortogonal al weighted-data y se puede combinar con él, pero requiere
   reescribir `compute_loss` para conocer la frecuencia de cada
   token-target en train.
+- **Arquitectura Two-Adapter LoRA+ (asymmetric ranks).** Una adaptación
+  LoRA+ por dirección, con rangos asimétricos: spa→shw con r=64/α=128
+  (la dirección más difícil, dominada por morfología generativa) y
+  shw→spa con r=32/α=64. Cada adapter se entrena con el flag
+  `--direction {spa2shw,shw2spa}` ya implementado en
+  `30_train_lora.py`, y la evaluación combina ambos vía
+  `40_evaluate.py --checkpoint-spa2shw … --checkpoint-shw2spa …
+  --run-name nllb_two_loraplus_xl`. El soporte de código está listo
+  (scripts 40/50 ya aceptan `--checkpoint-spa2shw`/`--checkpoint-shw2spa`);
+  queda como trabajo futuro porque el ciclo de tesis cierra con el
+  campeón bidireccional v2.1b LoRA+ (avg chrF++ = 44.99). Hipótesis a
+  validar: separar direcciones permite que cada adapter se especialice
+  y cierre el gap residual entre shw→spa y spa→shw.
+- **SWA (Stochastic Weight Averaging) sobre el ganador.** Promediar los
+  últimos 3–5 checkpoints del mejor modelo suele aportar +0.3–0.8
+  chrF++ de regularización implícita en regímenes de bajo recurso
+  (Izmailov et al., 2018). Es barato (~30 min) y no requiere
+  re-entrenar; queda como paso final antes del eval definitivo en una
+  iteración posterior de la tesis.
+- **Iterative BT con dominio in-domain.** El experimento v2.2 con
+  Wikipedia-es regresó al modelo a ~32 chrF++ (vs 44.99 de v2.1b),
+  confirmando que el dominio del corpus monolingüe es crítico. El BT
+  exitoso anterior (v1_bt_xl, +7 chrF++ sobre v0_xl) usó 1012 frases
+  de OPUS-100 con sólo 89 pares aceptados a threshold 0.70 — registro
+  conversacional, alineado con el corpus shiwilu (flashcards,
+  narrativas, frases cotidianas). Futuro: ampliar BT con Tatoeba +
+  News-commentary + corpora hispanoamericanos cuidadosamente
+  filtrados por similitud al gold corpus, evitando Wikipedia.
 
 Cada uno de estos puntos también está discutido en
 `thesis/latex/tesis.tex` capítulo 5 (Future work).

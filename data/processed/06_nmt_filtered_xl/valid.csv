@@ -1,0 +1,891 @@
+﻿id,pair_id,group_id,source,target,source_lang,target_lang,split,has_audit_flags,origin_source,score,label
+U03309__shw2spa,U03309,G03077,liinserechechek nanpia'masu',voy a escribir tu historia.,shw,spa,valid,False,flashcards_oraciones,0.5660215,flagged_for_review
+U03309__spa2shw,U03309,G03077,voy a escribir tu historia.,liinserechechek nanpia'masu',spa,shw,valid,False,flashcards_oraciones,0.5660215,flagged_for_review
+U01286__shw2spa,U01286,G01112,chiminllinkekla nampila,sobreviviste.,shw,spa,valid,False,flashcards2,0.34227723,removed
+U01286__spa2shw,U01286,G01112,sobreviviste.,chiminllinkekla nampila,spa,shw,valid,False,flashcards2,0.34227723,removed
+U03610__shw2spa,U03610,G03364,kuda ku'la pekkuia'pi'ñidek misa',nosotras no limpiamos la mesa.,shw,spa,valid,False,flashcards_oraciones,0.7870797,accepted
+U03610__spa2shw,U03610,G03364,nosotras no limpiamos la mesa.,kuda ku'la pekkuia'pi'ñidek misa',spa,shw,valid,False,flashcards_oraciones,0.7870797,accepted
+U03346__shw2spa,U03346,G03113,nawa' lansa'pi'ñina' sakek'su',ellas no bailan con alegría.,shw,spa,valid,False,flashcards_oraciones,0.86799675,accepted
+U03346__spa2shw,U03346,G03113,ellas no bailan con alegría.,nawa' lansa'pi'ñina' sakek'su',spa,shw,valid,False,flashcards_oraciones,0.86799675,accepted
+U01557__shw2spa,U01557,G01363,tom akusute'chu,tom cocinará.,shw,spa,valid,False,flashcards2,0.5597509,flagged_for_review
+U01557__spa2shw,U01557,G01363,tom cocinará.,tom akusute'chu,spa,shw,valid,False,flashcards2,0.5597509,flagged_for_review
+U04405__shw2spa,U04405,G04140,nanek ta'itula'deknanta'ser' lun'er'kek shiwilu la'la' wilalusa'.,ahí les hubiesen permitido hablar la lengua shiwilu a los niños.,shw,spa,valid,True,fidel_lomas,0.73454785,accepted
+U04405__spa2shw,U04405,G04140,ahí les hubiesen permitido hablar la lengua shiwilu a los niños.,nanek ta'itula'deknanta'ser' lun'er'kek shiwilu la'la' wilalusa'.,spa,shw,valid,True,fidel_lomas,0.73454785,accepted
+U02082__shw2spa,U02082,G01858,lataker'sa',solo pruébatela.,shw,spa,valid,False,flashcards2,0.58993226,flagged_for_review
+U02082__spa2shw,U02082,G01858,solo pruébatela.,lataker'sa',spa,shw,valid,False,flashcards2,0.58993226,flagged_for_review
+U00971__shw2spa,U00971,G00831,muisu' kankantula,te desmayaste.,shw,spa,valid,False,flashcards2,0.51670504,flagged_for_review
+U00971__spa2shw,U00971,G00831,te desmayaste.,muisu' kankantula,spa,shw,valid,False,flashcards2,0.51670504,flagged_for_review
+U01512__shw2spa,U01512,G01321,tunka'su' nu'ter',resume.,shw,spa,valid,False,flashcards2,0.27705204,removed
+U01512__spa2shw,U01512,G01321,resume.,tunka'su' nu'ter',spa,shw,valid,False,flashcards2,0.27705204,removed
+U03826__shw2spa,U03826,G03572,nana wila'ku'aperlu'sa' ku'la' lliapi'ñi'na' kek'ki,las niñas no ven el sol.,shw,spa,valid,True,flashcards_oraciones,0.67373896,accepted
+U03826__spa2shw,U03826,G03572,las niñas no ven el sol.,nana wila'ku'aperlu'sa' ku'la' lliapi'ñi'na' kek'ki,spa,shw,valid,True,flashcards_oraciones,0.67373896,accepted
+U03827__shw2spa,U03827,G03572,nana wila'ku'aperlu'sa' ku'la' lliapi'ñi'na' kek'ki,los niños no ven el sol.,shw,spa,valid,True,flashcards_oraciones,0.6660948,accepted
+U03827__spa2shw,U03827,G03572,los niños no ven el sol.,nana wila'ku'aperlu'sa' ku'la' lliapi'ñi'na' kek'ki,spa,shw,valid,True,flashcards_oraciones,0.6660948,accepted
+U01202__shw2spa,U01202,G01037,peklu'techuna',llamarán.,shw,spa,valid,False,flashcards2,0.7057241,accepted
+U01202__spa2shw,U01202,G01037,llamarán.,peklu'techuna',spa,shw,valid,False,flashcards2,0.7057241,accepted
+U03739__shw2spa,U03739,G03489,nana wilalusa ku'la lli'inu'pi'ñina' pidek'nen'nak,los niños no piensan en su casa.,shw,spa,valid,False,flashcards_oraciones,0.88650703,accepted
+U03739__spa2shw,U03739,G03489,los niños no piensan en su casa.,nana wilalusa ku'la lli'inu'pi'ñina' pidek'nen'nak,spa,shw,valid,False,flashcards_oraciones,0.88650703,accepted
+U04375__shw2spa,U04375,G04110,nanek'unta' miñiku chintulli.,ahí también meneleo ha ahumado.,shw,spa,valid,True,fidel_lomas,0.5531959,flagged_for_review
+U04375__spa2shw,U04375,G04110,ahí también meneleo ha ahumado.,nanek'unta' miñiku chintulli.,spa,shw,valid,True,fidel_lomas,0.5531959,flagged_for_review
+U02112__shw2spa,U02112,G01887,itununta'u,repítemelo.,shw,spa,valid,False,flashcards2,0.45066762,flagged_for_review
+U02112__spa2shw,U02112,G01887,repítemelo.,itununta'u,spa,shw,valid,False,flashcards2,0.45066762,flagged_for_review
+U00630__shw2spa,U00630,G00521,llia'ker' nanek,detente ahí.,shw,spa,valid,False,flashcards2,0.58782387,flagged_for_review
+U00630__spa2shw,U00630,G00521,detente ahí.,llia'ker' nanek,spa,shw,valid,False,flashcards2,0.58782387,flagged_for_review
+U01962__shw2spa,U01962,G01746,¿iya'tulama?,¿les gustó?,shw,spa,valid,False,flashcards2,0.5118029,flagged_for_review
+U01962__spa2shw,U01962,G01746,¿les gustó?,¿iya'tulama?,spa,shw,valid,False,flashcards2,0.5118029,flagged_for_review
+U02861__shw2spa,U02861,G02630,nanentu saka'tulusui'pa' muyunpak walek ektui'nchuna' tullima ali'la taserpi.,tal vez los que primero están abriendo trocha lleguen hasta moyobamba dijo el otro viejo.,shw,spa,valid,True,pdf_textos,0.57706225,flagged_for_review
+U02861__spa2shw,U02861,G02630,tal vez los que primero están abriendo trocha lleguen hasta moyobamba dijo el otro viejo.,nanentu saka'tulusui'pa' muyunpak walek ektui'nchuna' tullima ali'la taserpi.,spa,shw,valid,True,pdf_textos,0.57706225,flagged_for_review
+U00394__shw2spa,U00394,G00315,ta'iter' a'mercha,deja sitio.,shw,spa,valid,False,flashcards2,0.38017097,removed
+U00394__spa2shw,U00394,G00315,deja sitio.,ta'iter' a'mercha,spa,shw,valid,False,flashcards2,0.38017097,removed
+U00129__shw2spa,U00129,G00088,¿den'ina' teka'lli?,¿quién corría?,shw,spa,valid,True,flashcards2,0.66094744,accepted
+U00129__spa2shw,U00129,G00088,¿quién corría?,¿den'ina' teka'lli?,spa,shw,valid,True,flashcards2,0.66094744,accepted
+U00130__shw2spa,U00130,G00088,¿den'ina' teka'lli?,¿quién corrió?,shw,spa,valid,True,flashcards2,0.7599246,accepted
+U00130__spa2shw,U00130,G00088,¿quién corrió?,¿den'ina' teka'lli?,spa,shw,valid,True,flashcards2,0.7599246,accepted
+U02944__shw2spa,U02944,G02713,llinanlusi'ma tanpa'nen ukunñina'.,las ramas de las lupunas quebradas se mantenían colgadas (ya el duende los estaba hipnotizando).,shw,spa,valid,True,pdf_textos,0.3562513,removed
+U02944__spa2shw,U02944,G02713,las ramas de las lupunas quebradas se mantenían colgadas (ya el duende los estaba hipnotizando).,llinanlusi'ma tanpa'nen ukunñina'.,spa,shw,valid,True,pdf_textos,0.3562513,removed
+U02540__shw2spa,U02540,G02309,nana iteklashapenma'lek inshen'anma' ukku'.,recojan eso con sus manitos y beban.,shw,spa,valid,True,pdf_textos,0.36236522,removed
+U02540__spa2shw,U02540,G02309,recojan eso con sus manitos y beban.,nana iteklashapenma'lek inshen'anma' ukku'.,spa,shw,valid,True,pdf_textos,0.36236522,removed
+U02653__shw2spa,U02653,G02422,- ¿asu' ma'nen samer a'cha? itullina'.,¿estos qué peces son?,shw,spa,valid,True,pdf_textos,0.52824116,flagged_for_review
+U02653__spa2shw,U02653,G02422,¿estos qué peces son?,- ¿asu' ma'nen samer a'cha? itullina'.,spa,shw,valid,True,pdf_textos,0.52824116,flagged_for_review
+U01811__shw2spa,U01811,G01602,ekpa'ker kenmalek,llévalo contigo.,shw,spa,valid,False,flashcards2,0.7147029,accepted
+U01811__spa2shw,U01811,G01602,llévalo contigo.,ekpa'ker kenmalek,spa,shw,valid,False,flashcards2,0.7147029,accepted
+U00128__shw2spa,U00128,G00087,¿den'ina' ka'lli?,¿quién comió?,shw,spa,valid,False,flashcards2,0.82747495,accepted
+U00128__spa2shw,U00128,G00087,¿quién comió?,¿den'ina' ka'lli?,spa,shw,valid,False,flashcards2,0.82747495,accepted
+U04409__shw2spa,U04409,G04144,kua da'lek ñinchituna-pidik ala'waranka iskun- pasak sukta-shunka' katu'ta.,yo entré a la escuela en el año mil novecientos sesentidós.,shw,spa,valid,True,fidel_lomas,0.6042039,accepted
+U04409__spa2shw,U04409,G04144,yo entré a la escuela en el año mil novecientos sesentidós.,kua da'lek ñinchituna-pidik ala'waranka iskun- pasak sukta-shunka' katu'ta.,spa,shw,valid,True,fidel_lomas,0.6042039,accepted
+U02777__shw2spa,U02777,G02546,"ipa'la uki'lak aku'llinerkenmu'wa',","ahora esta hambruna nos dieron,",shw,spa,valid,True,pdf_textos,0.6555207,accepted
+U02777__spa2shw,U02777,G02546,"ahora esta hambruna nos dieron,","ipa'la uki'lak aku'llinerkenmu'wa',",spa,shw,valid,True,pdf_textos,0.6555207,accepted
+U03972__shw2spa,U03972,G03716,nanalek nu'itulek ka'lu'tunan.,con eso se le hace su colpa.,shw,spa,valid,True,fidel_lomas,0.65739715,accepted
+U03972__spa2shw,U03972,G03716,con eso se le hace su colpa.,nanalek nu'itulek ka'lu'tunan.,spa,shw,valid,True,fidel_lomas,0.65739715,accepted
+U02136__shw2spa,U02136,G01910,insekdiperpi ñapawiñina',estaban listos.,shw,spa,valid,False,flashcards2,0.78705513,accepted
+U02136__spa2shw,U02136,G01910,estaban listos.,insekdiperpi ñapawiñina',spa,shw,valid,False,flashcards2,0.78705513,accepted
+U04288__shw2spa,U04288,G04024,"kupin dekshadekwinpu'a'su'malek kawinak,",como no tiene ríos cerca,shw,spa,valid,True,fidel_lomas,0.5429772,flagged_for_review
+U04288__spa2shw,U04288,G04024,como no tiene ríos cerca,"kupin dekshadekwinpu'a'su'malek kawinak,",spa,shw,valid,True,fidel_lomas,0.5429772,flagged_for_review
+U03195__shw2spa,U03195,G02964,"wadunek kerkek lli'amu llillinlusa', nerpi'pu'.","ahora se escoge los nombres leyendo en papel, a veces.",shw,spa,valid,False,pdf_textos,0.6003692,accepted
+U03195__spa2shw,U03195,G02964,"ahora se escoge los nombres leyendo en papel, a veces.","wadunek kerkek lli'amu llillinlusa', nerpi'pu'.",spa,shw,valid,False,pdf_textos,0.6003692,accepted
+U01857__shw2spa,U01857,G01645,nu'misansu' chimiñina',ambos murieron.,shw,spa,valid,False,flashcards2,0.56018454,flagged_for_review
+U01857__spa2shw,U01857,G01645,ambos murieron.,nu'misansu' chimiñina',spa,shw,valid,False,flashcards2,0.56018454,flagged_for_review
+U03509__shw2spa,U03509,G03266,kenma wa'ten'chi'na musiclanlek',tú no esperas con tranquilidad.,shw,spa,valid,False,flashcards_oraciones,0.6162615,accepted
+U03509__spa2shw,U03509,G03266,tú no esperas con tranquilidad.,kenma wa'ten'chi'na musiclanlek',spa,shw,valid,False,flashcards_oraciones,0.6162615,accepted
+U03010__shw2spa,U03010,G02779,"katu' shunka' ekkilala ñisik ima ipa'a'ka panta'ku' ñinanlu'penmek, itudekllina' nana taserpiku'lusa', ma'i, mukankinpu'lusa'.","cuando ya pasaban veinte años ahora sí, vayan a su pueblo, les decían los viejos, este, los que tenían mal corazón.",shw,spa,valid,True,pdf_textos,0.72685575,accepted
+U03010__spa2shw,U03010,G02779,"cuando ya pasaban veinte años ahora sí, vayan a su pueblo, les decían los viejos, este, los que tenían mal corazón.","katu' shunka' ekkilala ñisik ima ipa'a'ka panta'ku' ñinanlu'penmek, itudekllina' nana taserpiku'lusa', ma'i, mukankinpu'lusa'.",spa,shw,valid,True,pdf_textos,0.72685575,accepted
+U02968__shw2spa,U02968,G02737,"sekllintulli iñer uklli, ala' simana', katu' simana', kala simana', ala' dukerkek ima ektu'llina' muyunpak. hicieron trocha todos los días, una semana, dos semanas, tres","semanas, un mes y llegaron a moyobamba.",shw,spa,valid,True,pdf_textos,0.29295772,removed
+U02968__spa2shw,U02968,G02737,"semanas, un mes y llegaron a moyobamba.","sekllintulli iñer uklli, ala' simana', katu' simana', kala simana', ala' dukerkek ima ektu'llina' muyunpak. hicieron trocha todos los días, una semana, dos semanas, tres",spa,shw,valid,True,pdf_textos,0.29295772,removed
+U01551__shw2spa,U01551,G01357,tom inllipu'itek'latulli,tom aplaudió.,shw,spa,valid,False,flashcards2,0.5417631,flagged_for_review
+U01551__spa2shw,U01551,G01357,tom aplaudió.,tom inllipu'itek'latulli,spa,shw,valid,False,flashcards2,0.5417631,flagged_for_review
+U01786__shw2spa,U01786,G01579,¿mudinupallincha?,¿está sano?,shw,spa,valid,False,flashcards2,0.45607144,flagged_for_review
+U01786__spa2shw,U01786,G01579,¿está sano?,¿mudinupallincha?,spa,shw,valid,False,flashcards2,0.45607144,flagged_for_review
+U00138__shw2spa,U00138,G00095,nantapitek' ñiker',sé fuerte.,shw,spa,valid,False,flashcards2,0.6662929,accepted
+U00138__spa2shw,U00138,G00095,sé fuerte.,nantapitek' ñiker',spa,shw,valid,False,flashcards2,0.6662929,accepted
+U04166__shw2spa,U04166,G03902,"kenma ma'kek pa'chi'na, uku'lu'tekken nuka'ma.","tú no vales nada, eres un afasi.",shw,spa,valid,True,fidel_lomas,0.65760434,accepted
+U04166__spa2shw,U04166,G03902,"tú no vales nada, eres un afasi.","kenma ma'kek pa'chi'na, uku'lu'tekken nuka'ma.",spa,shw,valid,True,fidel_lomas,0.65760434,accepted
+U01997__shw2spa,U01997,G01777,¡wiuker' wila!,¡apúrate niña!,shw,spa,valid,False,flashcards2,0.6342989,accepted
+U01997__spa2shw,U01997,G01777,¡apúrate niña!,¡wiuker' wila!,spa,shw,valid,False,flashcards2,0.6342989,accepted
+U01260__shw2spa,U01260,G01090,¿den yunsu'lli?,¿quién renunció?,shw,spa,valid,False,flashcards2,0.82173544,accepted
+U01260__spa2shw,U01260,G01090,¿quién renunció?,¿den yunsu'lli?,spa,shw,valid,False,flashcards2,0.82173544,accepted
+U04373__shw2spa,U04373,G04108,"nana supinak, tenmiansu'llidek wika'ak.","luego de eso, comenzamos a pishtar .",shw,spa,valid,True,fidel_lomas,0.5024762,flagged_for_review
+U04373__spa2shw,U04373,G04108,"luego de eso, comenzamos a pishtar .","nana supinak, tenmiansu'llidek wika'ak.",spa,shw,valid,True,fidel_lomas,0.5024762,flagged_for_review
+U02226__shw2spa,U02226,G01996,¿yennitulek yunsu'ak?,¿puedo salir?,shw,spa,valid,False,flashcards2,0.7338749,accepted
+U02226__spa2shw,U02226,G01996,¿puedo salir?,¿yennitulek yunsu'ak?,spa,shw,valid,False,flashcards2,0.7338749,accepted
+U01009__shw2spa,U01009,G00866,¡lli'ker' mupallinpa'!,¡compruébalo!,shw,spa,valid,False,flashcards2,0.46293825,flagged_for_review
+U01009__spa2shw,U01009,G00866,¡compruébalo!,¡lli'ker' mupallinpa'!,spa,shw,valid,False,flashcards2,0.46293825,flagged_for_review
+U02699__shw2spa,U02699,G02468,tan ima arakayu nu'wanta'lli.,diciendo esto arákayu se fue río abajo.,shw,spa,valid,True,pdf_textos,0.6645748,accepted
+U02699__spa2shw,U02699,G02468,diciendo esto arákayu se fue río abajo.,tan ima arakayu nu'wanta'lli.,spa,shw,valid,True,pdf_textos,0.6645748,accepted
+U03945__shw2spa,U03945,G03689,kananna' pa'llina' siseknalaluk.,tras hallarla se van al catahual (cerca de la cocha).,shw,spa,valid,True,fidel_lomas,0.45423406,flagged_for_review
+U03945__spa2shw,U03945,G03689,tras hallarla se van al catahual (cerca de la cocha).,kananna' pa'llina' siseknalaluk.,spa,shw,valid,True,fidel_lomas,0.45423406,flagged_for_review
+U02465__shw2spa,U02465,G02234,"pi'murllina', a'du'llina'.",llenaban el canasto y lo sentaban.,shw,spa,valid,True,pdf_textos,0.45999628,flagged_for_review
+U02465__spa2shw,U02465,G02234,llenaban el canasto y lo sentaban.,"pi'murllina', a'du'llina'.",spa,shw,valid,True,pdf_textos,0.45999628,flagged_for_review
+U03238__shw2spa,U03238,G03007,ya' panta'llidek ñinaluk,ayer fuimos al pueblo.,shw,spa,valid,False,flashcards_oraciones,0.32836783,removed
+U03238__spa2shw,U03238,G03007,ayer fuimos al pueblo.,ya' panta'llidek ñinaluk,spa,shw,valid,False,flashcards_oraciones,0.32836783,removed
+U03290__shw2spa,U03290,G03058,¿iinwanpala? | ¿i inwanpala?,¿tienes hermano?,shw,spa,valid,True,flashcards_oraciones,0.4271657,removed
+U03290__spa2shw,U03290,G03058,¿tienes hermano?,¿iinwanpala? | ¿i inwanpala?,spa,shw,valid,True,flashcards_oraciones,0.4271657,removed
+U02433__shw2spa,U02433,G02202,nu'su' nanpipalek wilaweklusa'lek.,así vivo con mis hijos.,shw,spa,valid,True,pdf_textos,0.8193468,accepted
+U02433__spa2shw,U02433,G02202,así vivo con mis hijos.,nu'su' nanpipalek wilaweklusa'lek.,spa,shw,valid,True,pdf_textos,0.8193468,accepted
+U04410__shw2spa,U04410,G04145,napi'pu' lunpawiñina'pi'la shiwilu la'la'.,en esos tiempos hablaban todavía la lengua shiwilu.,shw,spa,valid,True,fidel_lomas,0.6684672,accepted
+U04410__spa2shw,U04410,G04145,en esos tiempos hablaban todavía la lengua shiwilu.,napi'pu' lunpawiñina'pi'la shiwilu la'la'.,spa,shw,valid,True,fidel_lomas,0.6684672,accepted
+U01792__shw2spa,U01792,G01585,u'chimu lanelliek,huele bien.,shw,spa,valid,False,flashcards2,0.3059331,removed
+U01792__spa2shw,U01792,G01585,huele bien.,u'chimu lanelliek,spa,shw,valid,False,flashcards2,0.3059331,removed
+U04171__shw2spa,U04171,G03907,kaluwi'sik awawek yalli'shawek a'llupi nunkek pa'llidek.,"cuando enfermó mi mamá, viajamos en el bote de mi hermano.",shw,spa,valid,True,fidel_lomas,0.6367802,accepted
+U04171__spa2shw,U04171,G03907,"cuando enfermó mi mamá, viajamos en el bote de mi hermano.",kaluwi'sik awawek yalli'shawek a'llupi nunkek pa'llidek.,spa,shw,valid,True,fidel_lomas,0.6367802,accepted
+U01382__shw2spa,U01382,G01201,wiuk'er' tom,"apúrate, tom.",shw,spa,valid,False,flashcards2,0.51867855,flagged_for_review
+U01382__spa2shw,U01382,G01201,"apúrate, tom.",wiuk'er' tom,spa,shw,valid,False,flashcards2,0.51867855,flagged_for_review
+U01616__shw2spa,U01616,G01421,kaluwinanpu'su' lli'tula,pareces enfermo.,shw,spa,valid,False,flashcards2,0.61788243,accepted
+U01616__spa2shw,U01616,G01421,pareces enfermo.,kaluwinanpu'su' lli'tula,spa,shw,valid,False,flashcards2,0.61788243,accepted
+U00027__shw2spa,U00027,G00022,wiperi'u,abrázame.,shw,spa,valid,False,flashcards2,0.6551615,accepted
+U00027__spa2shw,U00027,G00022,abrázame.,wiperi'u,spa,shw,valid,False,flashcards2,0.6551615,accepted
+U02175__shw2spa,U02175,G01949,lumpawiñidek,estábamos hablando.,shw,spa,valid,False,flashcards2,0.4918062,flagged_for_review
+U02175__spa2shw,U02175,G01949,estábamos hablando.,lumpawiñidek,spa,shw,valid,False,flashcards2,0.4918062,flagged_for_review
+U01748__shw2spa,U01748,G01544,yayunsu'lek,quiero renunciar.,shw,spa,valid,False,flashcards2,0.61342406,accepted
+U01748__spa2shw,U01748,G01544,quiero renunciar.,yayunsu'lek,spa,shw,valid,False,flashcards2,0.61342406,accepted
+U02587__shw2spa,U02587,G02356,tanni'ma kawinta'llini'ma yunsu'lli pidekñikla. lli'dek'an peklu'deklli:,diciendo (eso) se acercaron y (arákayu) salió de su casa (a encontrarlos). al verlos los llamó:,shw,spa,valid,True,pdf_textos,0.74495065,accepted
+U02587__spa2shw,U02587,G02356,diciendo (eso) se acercaron y (arákayu) salió de su casa (a encontrarlos). al verlos los llamó:,tanni'ma kawinta'llini'ma yunsu'lli pidekñikla. lli'dek'an peklu'deklli:,spa,shw,valid,True,pdf_textos,0.74495065,accepted
+U03365__shw2spa,U03365,G03131,nana wila ku'aper nu'wan'iñi' dawik,la niña no baja al primer piso.,shw,spa,valid,False,flashcards_oraciones,0.70841384,accepted
+U03365__spa2shw,U03365,G03131,la niña no baja al primer piso.,nana wila ku'aper nu'wan'iñi' dawik,spa,shw,valid,False,flashcards_oraciones,0.70841384,accepted
+U00094__shw2spa,U00094,G00421,muin'su' ñapalek,estoy afectado.,shw,spa,valid,True,flashcards2,0.57086,flagged_for_review
+U00094__spa2shw,U00094,G00421,estoy afectado.,muin'su' ñapalek,spa,shw,valid,True,flashcards2,0.57086,flagged_for_review
+U00514__shw2spa,U00514,G00421,muin'su' ñapalek,estoy aburrida.,shw,spa,valid,True,flashcards2,0.61650366,accepted
+U00514__spa2shw,U00514,G00421,estoy aburrida.,muin'su' ñapalek,spa,shw,valid,True,flashcards2,0.61650366,accepted
+U03077__shw2spa,U03077,G02846,lli'an ima apu'tekku' enpu'nipa' yupilerkasu'tekka'lli insekkitulli wicha'pek.,viendo apu'tek que estaban bien enojados corrió y se escondió en su dormitorio.,shw,spa,valid,True,pdf_textos,0.5277893,flagged_for_review
+U03077__spa2shw,U03077,G02846,viendo apu'tek que estaban bien enojados corrió y se escondió en su dormitorio.,lli'an ima apu'tekku' enpu'nipa' yupilerkasu'tekka'lli insekkitulli wicha'pek.,spa,shw,valid,True,pdf_textos,0.5277893,flagged_for_review
+U04127__shw2spa,U04127,G03864,ipi'ma pista ta'wantusik,ya cuando terminó el baile,shw,spa,valid,True,fidel_lomas,0.33581212,removed
+U04127__spa2shw,U04127,G03864,ya cuando terminó el baile,ipi'ma pista ta'wantusik,spa,shw,valid,True,fidel_lomas,0.33581212,removed
+U03384__shw2spa,U03384,G03149,nawa' dekkuntullina' nakusu' wiu'ksu',ellas caminan muy rápido.,shw,spa,valid,True,flashcards_oraciones,0.8443241,accepted
+U03384__spa2shw,U03384,G03149,ellas caminan muy rápido.,nawa' dekkuntullina' nakusu' wiu'ksu',spa,shw,valid,True,flashcards_oraciones,0.8443241,accepted
+U03385__shw2spa,U03385,G03149,nawa' dekkuntullina' nakusu' wiu'ksu',ellos caminan muy rápido.,shw,spa,valid,True,flashcards_oraciones,0.84899724,accepted
+U03385__spa2shw,U03385,G03149,ellos caminan muy rápido.,nawa' dekkuntullina' nakusu' wiu'ksu',spa,shw,valid,True,flashcards_oraciones,0.84899724,accepted
+U01790__shw2spa,U01790,G01583,tekdiperker,mejora.,shw,spa,valid,False,flashcards2,0.3258566,removed
+U01790__spa2shw,U01790,G01583,mejora.,tekdiperker,spa,shw,valid,False,flashcards2,0.3258566,removed
+U01924__shw2spa,U01924,G01709,latek'inpu'pilusa' nuker'ka,son increíbles.,shw,spa,valid,False,flashcards2,0.6275295,accepted
+U01924__spa2shw,U01924,G01709,son increíbles.,latek'inpu'pilusa' nuker'ka,spa,shw,valid,False,flashcards2,0.6275295,accepted
+U03656__shw2spa,U03656,G03408,nawa' ñinchitullina nakupa'su,ellos estudian el presente.,shw,spa,valid,False,flashcards_oraciones,0.6446425,accepted
+U03656__spa2shw,U03656,G03408,ellos estudian el presente.,nawa' ñinchitullina nakupa'su,spa,shw,valid,False,flashcards_oraciones,0.6446425,accepted
+U00949__shw2spa,U00949,G00811,nadi'nek nuka'kawa',somos jóvenes.,shw,spa,valid,False,flashcards2,0.6021607,accepted
+U00949__spa2shw,U00949,G00811,somos jóvenes.,nadi'nek nuka'kawa',spa,shw,valid,False,flashcards2,0.6021607,accepted
+U00283__shw2spa,U00283,G00224,kishu,jesús.,shw,spa,valid,False,flashcards2,0.30621547,removed
+U00283__spa2shw,U00283,G00224,jesús.,kishu,spa,shw,valid,False,flashcards2,0.30621547,removed
+U01905__shw2spa,U01905,G01693,¿enpi' ta'wantechu?,¿cuándo termina?,shw,spa,valid,False,flashcards2,0.64654845,accepted
+U01905__spa2shw,U01905,G01693,¿cuándo termina?,¿enpi' ta'wantechu?,spa,shw,valid,False,flashcards2,0.64654845,accepted
+U02130__shw2spa,U02130,G01904,tumu'tulliner'ku,me engañaron.,shw,spa,valid,False,flashcards2,0.67123127,accepted
+U02130__spa2shw,U02130,G01904,me engañaron.,tumu'tulliner'ku,spa,shw,valid,False,flashcards2,0.67123127,accepted
+U02451__shw2spa,U02451,G02220,"- ah, enta'n'i'na dasu'laklanek uwi'nek.","ah, a ver pues, desde la mañana no he bebido nada.",shw,spa,valid,True,pdf_textos,0.7110629,accepted
+U02451__spa2shw,U02451,G02220,"ah, a ver pues, desde la mañana no he bebido nada.","- ah, enta'n'i'na dasu'laklanek uwi'nek.",spa,shw,valid,True,pdf_textos,0.7110629,accepted
+U01529__shw2spa,U01529,G01336,musuk'i'la lli'inuper',sigue positivo.,shw,spa,valid,False,flashcards2,0.3070355,removed
+U01529__spa2shw,U01529,G01336,sigue positivo.,musuk'i'la lli'inuper',spa,shw,valid,False,flashcards2,0.3070355,removed
+U01870__shw2spa,U01870,G01658,inlli'inuker',piénsatelo.,shw,spa,valid,False,flashcards2,0.73843586,accepted
+U01870__spa2shw,U01870,G01658,piénsatelo.,inlli'inuker',spa,shw,valid,False,flashcards2,0.73843586,accepted
+U01901__shw2spa,U01901,G01689,¡u'chimu ñinalu'!,¡buen país!,shw,spa,valid,False,flashcards2,0.6163076,accepted
+U01901__spa2shw,U01901,G01689,¡buen país!,¡u'chimu ñinalu'!,spa,shw,valid,False,flashcards2,0.6163076,accepted
+U00296__shw2spa,U00296,G00231,yawellekta,no llores.,shw,spa,valid,False,flashcards2,0.7340407,accepted
+U00296__spa2shw,U00296,G00231,no llores.,yawellekta,spa,shw,valid,False,flashcards2,0.7340407,accepted
+U00981__shw2spa,U00981,G00839,nantapi'na,estás débil.,shw,spa,valid,False,flashcards2,0.006845494,removed
+U00981__spa2shw,U00981,G00839,estás débil.,nantapi'na,spa,shw,valid,False,flashcards2,0.006845494,removed
+U03122__shw2spa,U03122,G02891,"shunka' katu' ekkilala a'ñamu nana lunpa'kasu' ipa'la lauktulek, kuanta' supinawantamu amiwekku'.","cuando tenia 12 años he escuchado lo que digo ahora, me ponía detrás de mi abuelita finada.",shw,spa,valid,True,pdf_textos,0.5990823,flagged_for_review
+U03122__spa2shw,U03122,G02891,"cuando tenia 12 años he escuchado lo que digo ahora, me ponía detrás de mi abuelita finada.","shunka' katu' ekkilala a'ñamu nana lunpa'kasu' ipa'la lauktulek, kuanta' supinawantamu amiwekku'.",spa,shw,valid,True,pdf_textos,0.5990823,flagged_for_review
+U00704__shw2spa,U00704,G00586,¿enñupa'cha ñapalek?,¿dónde estoy?,shw,spa,valid,False,flashcards2,0.83417857,accepted
+U00704__spa2shw,U00704,G00586,¿dónde estoy?,¿enñupa'cha ñapalek?,spa,shw,valid,False,flashcards2,0.83417857,accepted
+U03071__shw2spa,U03071,G02840,"– ¿ma'ki'na nu'taterwa?, tullima ala'sa' taserpi.","-¿por qué vamos a matarlos?, dijo un viejo.",shw,spa,valid,True,pdf_textos,0.72965103,accepted
+U03071__spa2shw,U03071,G02840,"-¿por qué vamos a matarlos?, dijo un viejo.","– ¿ma'ki'na nu'taterwa?, tullima ala'sa' taserpi.",spa,shw,valid,True,pdf_textos,0.72965103,accepted
+U01758__shw2spa,U01758,G01554,yen'nichina'ka,desearía poder.,shw,spa,valid,False,flashcards2,0.26527983,removed
+U01758__spa2shw,U01758,G01554,desearía poder.,yen'nichina'ka,spa,shw,valid,False,flashcards2,0.26527983,removed
+U01061__shw2spa,U01061,G00914,ka'lek manzanas,comí manzanas.,shw,spa,valid,False,flashcards2,0.8051686,accepted
+U01061__spa2shw,U01061,G00914,comí manzanas.,ka'lek manzanas,spa,shw,valid,False,flashcards2,0.8051686,accepted
+U00696__shw2spa,U00696,G00579,a'ñapallidek dudimpu' nu'ta'kawa'su',estamos ocupados.,shw,spa,valid,False,flashcards2,0.32736135,removed
+U00696__spa2shw,U00696,G00579,estamos ocupados.,a'ñapallidek dudimpu' nu'ta'kawa'su',spa,shw,valid,False,flashcards2,0.32736135,removed
+U00642__shw2spa,U00642,G00531,nawa dekllina',ellos votaron.,shw,spa,valid,False,flashcards2,0.631732,accepted
+U00642__spa2shw,U00642,G00531,ellos votaron.,nawa dekllina',spa,shw,valid,False,flashcards2,0.631732,accepted
+U00374__shw2spa,U00374,G00301,sek'diperker' asu',guarda esto.,shw,spa,valid,False,flashcards2,0.69198304,accepted
+U00374__spa2shw,U00374,G00301,guarda esto.,sek'diperker' asu',spa,shw,valid,False,flashcards2,0.69198304,accepted
+U02441__shw2spa,U02441,G02210,nawa' lli'apallinerku.,ellas me cuidan.,shw,spa,valid,True,pdf_textos,0.7249186,accepted
+U02441__spa2shw,U02441,G02210,ellas me cuidan.,nawa' lli'apallinerku.,spa,shw,valid,True,pdf_textos,0.7249186,accepted
+U01477__shw2spa,U01477,G01289,ku'la ikerinchu,no dolerá.,shw,spa,valid,False,flashcards2,0.67541254,accepted
+U01477__spa2shw,U01477,G01289,no dolerá.,ku'la ikerinchu,spa,shw,valid,False,flashcards2,0.67541254,accepted
+U01550__shw2spa,U01550,G01356,mui'su' nuka'a,es incorrecto.,shw,spa,valid,False,flashcards2,0.52122664,flagged_for_review
+U01550__spa2shw,U01550,G01356,es incorrecto.,mui'su' nuka'a,spa,shw,valid,False,flashcards2,0.52122664,flagged_for_review
+U01255__shw2spa,U01255,G01085,wer'apallidek,estamos perdiendo.,shw,spa,valid,False,flashcards2,0.8042673,accepted
+U01255__spa2shw,U01255,G01085,estamos perdiendo.,wer'apallidek,spa,shw,valid,False,flashcards2,0.8042673,accepted
+U01074__shw2spa,U01074,G00927,lu'wañen,te extrañé.,shw,spa,valid,False,flashcards2,0.38825417,removed
+U01074__spa2shw,U01074,G00927,te extrañé.,lu'wañen,spa,shw,valid,False,flashcards2,0.38825417,removed
+U04386__shw2spa,U04386,G04121,"nu'dunpi'la panudeklli ekkuanenlusa',","un poco más les regaló a sus amigas,",shw,spa,valid,True,fidel_lomas,0.6906326,accepted
+U04386__spa2shw,U04386,G04121,"un poco más les regaló a sus amigas,","nu'dunpi'la panudeklli ekkuanenlusa',",spa,shw,valid,True,fidel_lomas,0.6906326,accepted
+U03151__shw2spa,U03151,G02920,"papinkumapu'wa'ku' tanni'ma nana luyurka'su', luyullinerkenmu'wa', tanni'ma pa'llina'.","nuestros abuelos finados dijeron que los que aborrecían, los que nos aborrecían, diciendo se fueron.",shw,spa,valid,False,pdf_textos,0.7646377,accepted
+U03151__spa2shw,U03151,G02920,"nuestros abuelos finados dijeron que los que aborrecían, los que nos aborrecían, diciendo se fueron.","papinkumapu'wa'ku' tanni'ma nana luyurka'su', luyullinerkenmu'wa', tanni'ma pa'llina'.",spa,shw,valid,False,pdf_textos,0.7646377,accepted
+U00360__shw2spa,U00360,G00287,analli,apesta.,shw,spa,valid,False,flashcards2,0.14987263,removed
+U00360__spa2shw,U00360,G00287,apesta.,analli,spa,shw,valid,False,flashcards2,0.14987263,removed
+U02015__shw2spa,U02015,G01794,winta'kasu' ñapalli,debo advertirle.,shw,spa,valid,False,flashcards2,0.4458011,removed
+U02015__spa2shw,U02015,G01794,debo advertirle.,winta'kasu' ñapalli,spa,shw,valid,False,flashcards2,0.4458011,removed
+U01268__shw2spa,U01268,G01097,yennitula' uk'a'mak,puedes venir.,shw,spa,valid,False,flashcards2,0.81851465,accepted
+U01268__spa2shw,U01268,G01097,puedes venir.,yennitula' uk'a'mak,spa,shw,valid,False,flashcards2,0.81851465,accepted
+U01093__shw2spa,U01093,G00946,musu' ñapechek,estaré bien.,shw,spa,valid,False,flashcards2,0.7840606,accepted
+U01093__spa2shw,U01093,G00946,estaré bien.,musu' ñapechek,spa,shw,valid,False,flashcards2,0.7840606,accepted
+U02796__shw2spa,U02796,G02565,nanekla'nka kuanta' ñinchitulek asu' arakayu ma'pu'si'pa' nanpilli.,de ahí yo también he aprendido de qué manera vivió este arákayu.,shw,spa,valid,True,pdf_textos,0.74852103,accepted
+U02796__spa2shw,U02796,G02565,de ahí yo también he aprendido de qué manera vivió este arákayu.,nanekla'nka kuanta' ñinchitulek asu' arakayu ma'pu'si'pa' nanpilli.,spa,shw,valid,True,pdf_textos,0.74852103,accepted
+U02210__shw2spa,U02210,G01981,kenmama' wichi'winama',ustedes dormían.,shw,spa,valid,False,flashcards2,0.7413114,accepted
+U02210__spa2shw,U02210,G01981,ustedes dormían.,kenmama' wichi'winama',spa,shw,valid,False,flashcards2,0.7413114,accepted
+U02364__shw2spa,U02364,G02133,"ukluka'sik, ali'lak kupin uktak pekdu'a'kasu' upellek.",cuando hierve se lo echa en otra olla de barro grande que está enterrada (hasta la mitad).,shw,spa,valid,True,pdf_textos,0.49844173,flagged_for_review
+U02364__spa2shw,U02364,G02133,cuando hierve se lo echa en otra olla de barro grande que está enterrada (hasta la mitad).,"ukluka'sik, ali'lak kupin uktak pekdu'a'kasu' upellek.",spa,shw,valid,True,pdf_textos,0.49844173,flagged_for_review
+U03417__shw2spa,U03417,G03180,kua ku'la unkui'nek nana kerka',yo no cierro el libro.,shw,spa,valid,False,flashcards_oraciones,0.807363,accepted
+U03417__spa2shw,U03417,G03180,yo no cierro el libro.,kua ku'la unkui'nek nana kerka',spa,shw,valid,False,flashcards_oraciones,0.807363,accepted
+U04295__shw2spa,U04295,G04031,"nu'unta'lusa' pilli'tudeklli nawa' a'padiperllina' uwanna' patella, siwella, eucalipto akusupi.","algunos se contagiaron y se sanaron tomando matico, cebolla, eucalipto hervido.",shw,spa,valid,True,fidel_lomas,0.5657052,flagged_for_review
+U04295__spa2shw,U04295,G04031,"algunos se contagiaron y se sanaron tomando matico, cebolla, eucalipto hervido.","nu'unta'lusa' pilli'tudeklli nawa' a'padiperllina' uwanna' patella, siwella, eucalipto akusupi.",spa,shw,valid,True,fidel_lomas,0.5657052,flagged_for_review
+U01279__shw2spa,U01279,G01107,kenmama' tuwinama' nu'techuma,ustedes prometisteis.,shw,spa,valid,True,flashcards2,0.62817323,accepted
+U01279__spa2shw,U01279,G01107,ustedes prometisteis.,kenmama' tuwinama' nu'techuma,spa,shw,valid,True,flashcards2,0.62817323,accepted
+U01281__shw2spa,U01281,G01107,kenmama' tuwinama' nu'techuma,ustedes prometieron.,shw,spa,valid,True,flashcards2,0.60447574,accepted
+U01281__spa2shw,U01281,G01107,ustedes prometieron.,kenmama' tuwinama' nu'techuma,spa,shw,valid,True,flashcards2,0.60447574,accepted
+U02840__shw2spa,U02840,G02609,"nu'akkui'na ipa'la yalli'lusa', sha'walusa' enchuku' muyunpa luwetchawa' kenmu'wa'nta', ma'pu'si'pa' nana ñinanlu'.","por eso ahora hermanos y hermanas vamos a conocer moyobamba nosotros también, qué tal será esa ciudad.",shw,spa,valid,True,pdf_textos,0.711338,accepted
+U02840__spa2shw,U02840,G02609,"por eso ahora hermanos y hermanas vamos a conocer moyobamba nosotros también, qué tal será esa ciudad.","nu'akkui'na ipa'la yalli'lusa', sha'walusa' enchuku' muyunpa luwetchawa' kenmu'wa'nta', ma'pu'si'pa' nana ñinanlu'.",spa,shw,valid,True,pdf_textos,0.711338,accepted
+U03687__shw2spa,U03687,G03438,nawa' werañina mumu'su' misak,ellos comen juntos en la mesa.,shw,spa,valid,False,flashcards_oraciones,0.74053276,accepted
+U03687__spa2shw,U03687,G03438,ellos comen juntos en la mesa.,nawa' werañina mumu'su' misak,spa,shw,valid,False,flashcards_oraciones,0.74053276,accepted
+U01134__shw2spa,U01134,G00981,lli'taper'i'la,sigue mirando.,shw,spa,valid,False,flashcards2,0.8300873,accepted
+U01134__spa2shw,U01134,G00981,sigue mirando.,lli'taper'i'la,spa,shw,valid,False,flashcards2,0.8300873,accepted
+U04077__shw2spa,U04077,G03814,nanamalek nana ipa'lalek llinserchanen a'ñapalli u'chimusha.,"por eso, hasta el día de hoy ella tiene sus pintitas bonitas.",shw,spa,valid,True,fidel_lomas,0.75221217,accepted
+U04077__spa2shw,U04077,G03814,"por eso, hasta el día de hoy ella tiene sus pintitas bonitas.",nanamalek nana ipa'lalek llinserchanen a'ñapalli u'chimusha.,spa,shw,valid,True,fidel_lomas,0.75221217,accepted
+U01198__shw2spa,U01198,G01033,lumer'llina',rieron.,shw,spa,valid,False,flashcards2,0.548676,flagged_for_review
+U01198__spa2shw,U01198,G01033,rieron.,lumer'llina',spa,shw,valid,False,flashcards2,0.548676,flagged_for_review
+U02062__shw2spa,U02062,G01839,¿a'lek'tutek' nuka'a?,¿es maestro?,shw,spa,valid,False,flashcards2,0.71593434,accepted
+U02062__spa2shw,U02062,G01839,¿es maestro?,¿a'lek'tutek' nuka'a?,spa,shw,valid,False,flashcards2,0.71593434,accepted
+U02166__shw2spa,U02166,G01940,a'nañiwa' lli'inulusa',compartimos ideas.,shw,spa,valid,False,flashcards2,0.55593085,flagged_for_review
+U02166__spa2shw,U02166,G01940,compartimos ideas.,a'nañiwa' lli'inulusa',spa,shw,valid,False,flashcards2,0.55593085,flagged_for_review
+U03275__shw2spa,U03275,G03043,da'tu'tulek ala'sa' lawanlek,me inqué con una espina.,shw,spa,valid,False,flashcards_oraciones,0.56658113,flagged_for_review
+U03275__spa2shw,U03275,G03043,me inqué con una espina.,da'tu'tulek ala'sa' lawanlek,spa,shw,valid,False,flashcards_oraciones,0.56658113,flagged_for_review
+U00733__shw2spa,U00733,G00868,kawiter',acercate.,shw,spa,valid,True,flashcards2,0.60801405,accepted
+U00733__spa2shw,U00733,G00868,acercate.,kawiter',spa,shw,valid,True,flashcards2,0.60801405,accepted
+U01011__shw2spa,U01011,G00868,kawiter',acércate.,shw,spa,valid,True,flashcards2,0.5012182,flagged_for_review
+U01011__spa2shw,U01011,G00868,acércate.,kawiter',spa,shw,valid,True,flashcards2,0.5012182,flagged_for_review
+U02043__shw2spa,U02043,G01821,dunker'echek,lo buscaré.,shw,spa,valid,False,flashcards2,0.6001645,accepted
+U02043__spa2shw,U02043,G01821,lo buscaré.,dunker'echek,spa,shw,valid,False,flashcards2,0.6001645,accepted
+U03818__shw2spa,U03818,G03564,kuda ku'la saka'tapi'ñidek ñinchitunapidek'kek,tú no trabajas en la escuela.,shw,spa,valid,False,flashcards_oraciones,0.5831938,flagged_for_review
+U03818__spa2shw,U03818,G03564,tú no trabajas en la escuela.,kuda ku'la saka'tapi'ñidek ñinchitunapidek'kek,spa,shw,valid,False,flashcards_oraciones,0.5831938,flagged_for_review
+U03646__shw2spa,U03646,G03398,nana wila ku'aperlusa' luyullina' yanu'ter'kasu',las niñas odian la tarea.,shw,spa,valid,False,flashcards_oraciones,0.7027086,accepted
+U03646__spa2shw,U03646,G03398,las niñas odian la tarea.,nana wila ku'aperlusa' luyullina' yanu'ter'kasu',spa,shw,valid,False,flashcards_oraciones,0.7027086,accepted
+U01954__shw2spa,U01954,G01738,¿yennitula katupa'a'muk?,¿puedes ayudarme?,shw,spa,valid,False,flashcards2,0.82750547,accepted
+U01954__spa2shw,U01954,G01738,¿puedes ayudarme?,¿yennitula katupa'a'muk?,spa,shw,valid,False,flashcards2,0.82750547,accepted
+U02296__shw2spa,U02296,G02065,"nanpikudeksu',","nuestras costumbres,",shw,spa,valid,True,pdf_textos,0.41265234,removed
+U02296__spa2shw,U02296,G02065,"nuestras costumbres,","nanpikudeksu',",spa,shw,valid,True,pdf_textos,0.41265234,removed
+U03857__shw2spa,U03857,G03602,kua ku'la pa'inek menmik,yo no viajo al campo.,shw,spa,valid,False,flashcards_oraciones,0.79097015,accepted
+U03857__spa2shw,U03857,G03602,yo no viajo al campo.,kua ku'la pa'inek menmik,spa,shw,valid,False,flashcards_oraciones,0.79097015,accepted
+U03580__shw2spa,U03580,G03335,nana ku'la peksi'ñi kutun,él no lava la ropa.,shw,spa,valid,False,flashcards_oraciones,0.72100556,accepted
+U03580__spa2shw,U03580,G03335,él no lava la ropa.,nana ku'la peksi'ñi kutun,spa,shw,valid,False,flashcards_oraciones,0.72100556,accepted
+U02738__shw2spa,U02738,G02507,"ipa'linchi ñinanlu' indiuntun tulli,","entonces el pueblo en asamblea dijo,",shw,spa,valid,True,pdf_textos,0.645488,accepted
+U02738__spa2shw,U02738,G02507,"entonces el pueblo en asamblea dijo,","ipa'linchi ñinanlu' indiuntun tulli,",spa,shw,valid,True,pdf_textos,0.645488,accepted
+U02026__shw2spa,U02026,G01805,yalansa'lek,quiero bailar.,shw,spa,valid,False,flashcards2,0.33690777,removed
+U02026__spa2shw,U02026,G01805,quiero bailar.,yalansa'lek,spa,shw,valid,False,flashcards2,0.33690777,removed
+U04277__shw2spa,U04277,G04013,ku'li'na iñer'daper lulenpilusi'npu'pi'la.,pero todavía no están vacunados a todos.,shw,spa,valid,True,fidel_lomas,0.5672378,flagged_for_review
+U04277__spa2shw,U04277,G04013,pero todavía no están vacunados a todos.,ku'li'na iñer'daper lulenpilusi'npu'pi'la.,spa,shw,valid,True,fidel_lomas,0.5672378,flagged_for_review
+U01467__shw2spa,U01467,G01279,¿sekipia'cha?,¿es privado?,shw,spa,valid,False,flashcards2,0.3290262,removed
+U01467__spa2shw,U01467,G01279,¿es privado?,¿sekipia'cha?,spa,shw,valid,False,flashcards2,0.3290262,removed
+U02667__shw2spa,U02667,G02436,"- nu'pachi pantetchek tan ima, mitan uklliñik'inchima.","entonces voy a ir respondió (arákayu), el día central del carnaval.",shw,spa,valid,True,pdf_textos,0.5151274,flagged_for_review
+U02667__spa2shw,U02667,G02436,"entonces voy a ir respondió (arákayu), el día central del carnaval.","- nu'pachi pantetchek tan ima, mitan uklliñik'inchima.",spa,shw,valid,True,pdf_textos,0.5151274,flagged_for_review
+U02518__shw2spa,U02518,G02287,"nanek'ima ipa'linchi nu'wencha'lli ala'sa' sasa'lunpu'a'su', asu' silakun.","dicen que en ese momento bajó un catalán como hembra, este era una unchala5.",shw,spa,valid,True,pdf_textos,0.55486065,flagged_for_review
+U02518__spa2shw,U02518,G02287,"dicen que en ese momento bajó un catalán como hembra, este era una unchala5.","nanek'ima ipa'linchi nu'wencha'lli ala'sa' sasa'lunpu'a'su', asu' silakun.",spa,shw,valid,True,pdf_textos,0.55486065,flagged_for_review
+U04122__shw2spa,U04122,G03859,"inpikanpan ima, amana' lamapu'pan ikercha'su', yunsan tekka'lli makadu'lapi.","revolcándose y gritando de dolor, el tigre se levantó y corrió capado.",shw,spa,valid,True,fidel_lomas,0.49289805,flagged_for_review
+U04122__spa2shw,U04122,G03859,"revolcándose y gritando de dolor, el tigre se levantó y corrió capado.","inpikanpan ima, amana' lamapu'pan ikercha'su', yunsan tekka'lli makadu'lapi.",spa,shw,valid,True,fidel_lomas,0.49289805,flagged_for_review
+U02963__shw2spa,U02963,G02732,"ukta nudektulli ama'ladatulli nana, ma'i, kelluluñiñi'.","la olla se rompió y le bañó toda la cara al, este, tigre negro.",shw,spa,valid,True,pdf_textos,0.42024064,removed
+U02963__spa2shw,U02963,G02732,"la olla se rompió y le bañó toda la cara al, este, tigre negro.","ukta nudektulli ama'ladatulli nana, ma'i, kelluluñiñi'.",spa,shw,valid,True,pdf_textos,0.42024064,removed
+U02125__shw2spa,U02125,G01899,u'chimushala nuker'ka,son lindos.,shw,spa,valid,False,flashcards2,0.75164163,accepted
+U02125__spa2shw,U02125,G01899,son lindos.,u'chimushala nuker'ka,spa,shw,valid,False,flashcards2,0.75164163,accepted
+U03522__shw2spa,U03522,G03279,nawa' ku'la ninchitapi'ñina' nanpier'kasu',ellas no estudian historia.,shw,spa,valid,False,flashcards_oraciones,0.5381582,flagged_for_review
+U03522__spa2shw,U03522,G03279,ellas no estudian historia.,nawa' ku'la ninchitapi'ñina' nanpier'kasu',spa,shw,valid,False,flashcards_oraciones,0.5381582,flagged_for_review
+U00621__shw2spa,U00621,G00512,tuluner'ker',canta.,shw,spa,valid,False,flashcards2,0.7419674,accepted
+U00621__spa2shw,U00621,G00512,canta.,tuluner'ker',spa,shw,valid,False,flashcards2,0.7419674,accepted
+U02089__shw2spa,U02089,G01865,ta'itula'u lek'techek,déjame averiguarlo.,shw,spa,valid,False,flashcards2,0.54157305,flagged_for_review
+U02089__spa2shw,U02089,G01865,déjame averiguarlo.,ta'itula'u lek'techek,spa,shw,valid,False,flashcards2,0.54157305,flagged_for_review
+U00565__shw2spa,U00565,G00465,sha'mu'su' ñapalek,estoy flacucho.,shw,spa,valid,False,flashcards2,0.7346631,accepted
+U00565__spa2shw,U00565,G00465,estoy flacucho.,sha'mu'su' ñapalek,spa,shw,valid,False,flashcards2,0.7346631,accepted
+U03722__shw2spa,U03722,G03472,nana wilalusa' pinaner'llina' ala'sa ukli pa'ta'su',los niños olvidan una fecha importante.,shw,spa,valid,False,flashcards_oraciones,0.7709796,accepted
+U03722__spa2shw,U03722,G03472,los niños olvidan una fecha importante.,nana wilalusa' pinaner'llina' ala'sa ukli pa'ta'su',spa,shw,valid,False,flashcards_oraciones,0.7709796,accepted
+U01142__shw2spa,U01142,G00989,llinsecher'pi'la,sigue escribiendo.,shw,spa,valid,False,flashcards2,0.6010057,accepted
+U01142__spa2shw,U01142,G00989,sigue escribiendo.,llinsecher'pi'la,spa,shw,valid,False,flashcards2,0.6010057,accepted
+U02512__shw2spa,U02512,G02281,napi' ima wa'an yunsa'n luñi:,cuentan que antiguamente el gobernante (de jeberos) se levantó y habló:,shw,spa,valid,True,pdf_textos,0.6284665,accepted
+U02512__spa2shw,U02512,G02281,cuentan que antiguamente el gobernante (de jeberos) se levantó y habló:,napi' ima wa'an yunsa'n luñi:,spa,shw,valid,True,pdf_textos,0.6284665,accepted
+U04128__shw2spa,U04128,G03865,chi'lek adanta'lli pidekñik yawichi'nta'n.,el carachupa regresó a su casa a dormir.,shw,spa,valid,True,fidel_lomas,0.64865756,accepted
+U04128__spa2shw,U04128,G03865,el carachupa regresó a su casa a dormir.,chi'lek adanta'lli pidekñik yawichi'nta'n.,spa,shw,valid,True,fidel_lomas,0.64865756,accepted
+U02124__shw2spa,U02124,G01898,ñapalli la'la'lusa',hay reglas.,shw,spa,valid,False,flashcards2,0.5831107,flagged_for_review
+U02124__spa2shw,U02124,G01898,hay reglas.,ñapalli la'la'lusa',spa,shw,valid,False,flashcards2,0.5831107,flagged_for_review
+U02350__shw2spa,U02350,G02119,ipa'li'na makinak peksanpallina' damellu'shasu'.,ahora a máquina muelen bien menudito.,shw,spa,valid,True,pdf_textos,0.50587636,flagged_for_review
+U02350__spa2shw,U02350,G02119,ahora a máquina muelen bien menudito.,ipa'li'na makinak peksanpallina' damellu'shasu'.,spa,shw,valid,True,pdf_textos,0.50587636,flagged_for_review
+U03079__shw2spa,U03079,G02848,kananna' nanasa' llikantullina' dei'tullina'.,"encontrándole, a él nomás lo revolcaron golpéandolo y lo mataron.",shw,spa,valid,False,pdf_textos,0.35604674,removed
+U03079__spa2shw,U03079,G02848,"encontrándole, a él nomás lo revolcaron golpéandolo y lo mataron.",kananna' nanasa' llikantullina' dei'tullina'.,spa,shw,valid,False,pdf_textos,0.35604674,removed
+U03533__shw2spa,U03533,G03290,willalusa' ñinchitullina' ipa'la,los niños estudian hoy.,shw,spa,valid,False,flashcards_oraciones,0.83822465,accepted
+U03533__spa2shw,U03533,G03290,los niños estudian hoy.,willalusa' ñinchitullina' ipa'la,spa,shw,valid,False,flashcards_oraciones,0.83822465,accepted
+U00807__shw2spa,U00807,G00679,lata'echek,lo probaré.,shw,spa,valid,False,flashcards2,0.7263812,accepted
+U00807__spa2shw,U00807,G00679,lo probaré.,lata'echek,spa,shw,valid,False,flashcards2,0.7263812,accepted
+U01002__shw2spa,U01002,G00859,¿yennitula uk'a'mak?,¿puedes venir?,shw,spa,valid,False,flashcards2,0.76104236,accepted
+U01002__spa2shw,U01002,G00859,¿puedes venir?,¿yennitula uk'a'mak?,spa,shw,valid,False,flashcards2,0.76104236,accepted
+U04390__shw2spa,U04390,G04125,itullenma' pidir.,esto les contó fidel.,shw,spa,valid,True,fidel_lomas,0.28222024,removed
+U04390__spa2shw,U04390,G04125,esto les contó fidel.,itullenma' pidir.,spa,shw,valid,True,fidel_lomas,0.28222024,removed
+U03421__shw2spa,U03421,G03184,nana nu'tapi'ñi ala'sa' pentunan,ella construye un puente.,shw,spa,valid,False,flashcards_oraciones,0.5894282,flagged_for_review
+U03421__spa2shw,U03421,G03184,ella construye un puente.,nana nu'tapi'ñi ala'sa' pentunan,spa,shw,valid,False,flashcards_oraciones,0.5894282,flagged_for_review
+U00499__shw2spa,U00499,G00407,taitula'u'kudek,perdónenos.,shw,spa,valid,False,flashcards2,0.5398648,flagged_for_review
+U00499__spa2shw,U00499,G00407,perdónenos.,taitula'u'kudek,spa,shw,valid,False,flashcards2,0.5398648,flagged_for_review
+U03386__shw2spa,U03386,G03150,nawa' dekkuntullina' ñinchitupidek'kek',ellos caminan en la escuela.,shw,spa,valid,False,flashcards_oraciones,0.8532101,accepted
+U03386__spa2shw,U03386,G03150,ellos caminan en la escuela.,nawa' dekkuntullina' ñinchitupidek'kek',spa,shw,valid,False,flashcards_oraciones,0.8532101,accepted
+U03304__shw2spa,U03304,G03072,asek ilanchi'nek',aquí no se balea.,shw,spa,valid,False,flashcards_oraciones,0.65197825,accepted
+U03304__spa2shw,U03304,G03072,aquí no se balea.,asek ilanchi'nek',spa,shw,valid,False,flashcards_oraciones,0.65197825,accepted
+U00025__shw2spa,U00025,G00020,nana tekaklli,él corrió.,shw,spa,valid,False,flashcards2,0.76388836,accepted
+U00025__spa2shw,U00025,G00020,él corrió.,nana tekaklli,spa,shw,valid,False,flashcards2,0.76388836,accepted
+U03045__shw2spa,U03045,G02814,laukdekllidek lu'rnkasu' nana asu' muyunpa inchilala nu'ter'kasu'.,hemos escuchado lo que han hablado aquellos que hicieron el camino a moyobamba.,shw,spa,valid,True,pdf_textos,0.62465847,accepted
+U03045__spa2shw,U03045,G02814,hemos escuchado lo que han hablado aquellos que hicieron el camino a moyobamba.,laukdekllidek lu'rnkasu' nana asu' muyunpa inchilala nu'ter'kasu'.,spa,shw,valid,True,pdf_textos,0.62465847,accepted
+U02916__shw2spa,U02916,G02685,nawa'ler a'ka di'tetchuna' nana anaka'.,ellos sí van a matar a esa fiera.,shw,spa,valid,True,pdf_textos,0.71925694,accepted
+U02916__spa2shw,U02916,G02685,ellos sí van a matar a esa fiera.,nawa'ler a'ka di'tetchuna' nana anaka'.,spa,shw,valid,True,pdf_textos,0.71925694,accepted
+U00683__shw2spa,U00683,G00567,yennitulekwa' kana'tak,podemos ganar.,shw,spa,valid,False,flashcards2,0.8070401,accepted
+U00683__spa2shw,U00683,G00567,podemos ganar.,yennitulekwa' kana'tak,spa,shw,valid,False,flashcards2,0.8070401,accepted
+U01118__shw2spa,U01118,G00967,¿nusha'tusu' ñapalli?,¿está roto?,shw,spa,valid,False,flashcards2,0.56238943,flagged_for_review
+U01118__spa2shw,U01118,G00967,¿está roto?,¿nusha'tusu' ñapalli?,spa,shw,valid,False,flashcards2,0.56238943,flagged_for_review
+U01835__shw2spa,U01835,G01625,ñiden lauk'tapi'ñi,nadie escucha.,shw,spa,valid,False,flashcards2,0.8078809,accepted
+U01835__spa2shw,U01835,G01625,nadie escucha.,ñiden lauk'tapi'ñi,spa,shw,valid,False,flashcards2,0.8078809,accepted
+U02253__shw2spa,U02253,G02022,"nanpipakun tatawek ima wilawañinerku, wadekllinerku, asek i'la susulek.","conviviendo con mi padre me engendraron, me parieron y aquí mismo crecí.",shw,spa,valid,True,pdf_textos,0.61909187,accepted
+U02253__spa2shw,U02253,G02022,"conviviendo con mi padre me engendraron, me parieron y aquí mismo crecí.","nanpipakun tatawek ima wilawañinerku, wadekllinerku, asek i'la susulek.",spa,shw,valid,True,pdf_textos,0.61909187,accepted
+U01762__shw2spa,U01762,G01558,cheksu' ñechek,seré directo.,shw,spa,valid,False,flashcards2,0.6900253,accepted
+U01762__spa2shw,U01762,G01558,seré directo.,cheksu' ñechek,spa,shw,valid,False,flashcards2,0.6900253,accepted
+U03081__shw2spa,U03081,G02850,"lli'llini'ma tekka'pilasik panpadeklupa', tupitullina' ñi kasek'i'ñina'.","lo vieron corriendo hacia el pampayacu, lo siguieron pero no lo alcanzaron.",shw,spa,valid,False,pdf_textos,0.78985673,accepted
+U03081__spa2shw,U03081,G02850,"lo vieron corriendo hacia el pampayacu, lo siguieron pero no lo alcanzaron.","lli'llini'ma tekka'pilasik panpadeklupa', tupitullina' ñi kasek'i'ñina'.",spa,shw,valid,False,pdf_textos,0.78985673,accepted
+U04142__shw2spa,U04142,G03879,ipa'linchi amana' pa'lli nellupa'pi'la yadunker'an chi'lek.,"entonces, el tigre se fue por otro lado en busca del carachupa.",shw,spa,valid,True,fidel_lomas,0.5975785,flagged_for_review
+U04142__spa2shw,U04142,G03879,"entonces, el tigre se fue por otro lado en busca del carachupa.",ipa'linchi amana' pa'lli nellupa'pi'la yadunker'an chi'lek.,spa,shw,valid,True,fidel_lomas,0.5975785,flagged_for_review
+U00893__shw2spa,U00893,G00759,lansa'llina',bailaron.,shw,spa,valid,False,flashcards2,0.8470996,accepted
+U00893__spa2shw,U00893,G00759,bailaron.,lansa'llina',spa,shw,valid,False,flashcards2,0.8470996,accepted
+U02586__shw2spa,U02586,G02355,tanni'mi'na ¡enchuku' luwetchunta'wa' den'ipa'tek!,dijeron ¡vamos a conocer quién será!,shw,spa,valid,True,pdf_textos,0.6970397,accepted
+U02586__spa2shw,U02586,G02355,dijeron ¡vamos a conocer quién será!,tanni'mi'na ¡enchuku' luwetchunta'wa' den'ipa'tek!,spa,shw,valid,True,pdf_textos,0.6970397,accepted
+U02808__shw2spa,U02808,G02577,nu'sikla'nka asu' panpadek sennanlusa' wetlli.,de esa manera estos lagos de pampayacu desaparecieron.,shw,spa,valid,True,pdf_textos,0.5515334,flagged_for_review
+U02808__spa2shw,U02808,G02577,de esa manera estos lagos de pampayacu desaparecieron.,nu'sikla'nka asu' panpadek sennanlusa' wetlli.,spa,shw,valid,True,pdf_textos,0.5515334,flagged_for_review
+U01899__shw2spa,U01899,G01687,¿kenmasa' ñapawina?,¿estabas solo?,shw,spa,valid,False,flashcards2,0.816316,accepted
+U01899__spa2shw,U01899,G01687,¿estabas solo?,¿kenmasa' ñapawina?,spa,shw,valid,False,flashcards2,0.816316,accepted
+U02085__shw2spa,U02085,G01861,tupitulek inpaleriamu,seguí practicando.,shw,spa,valid,False,flashcards2,0.57638645,flagged_for_review
+U02085__spa2shw,U02085,G01861,seguí practicando.,tupitulek inpaleriamu,spa,shw,valid,False,flashcards2,0.57638645,flagged_for_review
+U00337__shw2spa,U00337,G00267,dapinantek' nuka'ka,soy ciega.,shw,spa,valid,True,flashcards2,0.63559943,accepted
+U00337__spa2shw,U00337,G00267,soy ciega.,dapinantek' nuka'ka,spa,shw,valid,True,flashcards2,0.63559943,accepted
+U00338__shw2spa,U00338,G00267,dapinantek' nuka'ka,soy ciego.,shw,spa,valid,True,flashcards2,0.58897555,flagged_for_review
+U00338__spa2shw,U00338,G00267,soy ciego.,dapinantek' nuka'ka,spa,shw,valid,True,flashcards2,0.58897555,flagged_for_review
+U03377__shw2spa,U03377,G03143,nana nu'wan'tapalli dawik,él baja al primer piso.,shw,spa,valid,False,flashcards_oraciones,0.6836912,accepted
+U03377__spa2shw,U03377,G03143,él baja al primer piso.,nana nu'wan'tapalli dawik,spa,shw,valid,False,flashcards_oraciones,0.6836912,accepted
+U03728__shw2spa,U03728,G03478,kenmama' pinaner'api'nama' ala'sa' ukli pa'ta'su',ustedes no olvidan una fecha importante.,shw,spa,valid,False,flashcards_oraciones,0.8171667,accepted
+U03728__spa2shw,U03728,G03478,ustedes no olvidan una fecha importante.,kenmama' pinaner'api'nama' ala'sa' ukli pa'ta'su',spa,shw,valid,False,flashcards_oraciones,0.8171667,accepted
+U02732__shw2spa,U02732,G02501,mukankanlusa'sa' dansu'chuna'.,sólo los de buen corazón sobrevivirán.,shw,spa,valid,True,pdf_textos,0.45689687,flagged_for_review
+U02732__spa2shw,U02732,G02501,sólo los de buen corazón sobrevivirán.,mukankanlusa'sa' dansu'chuna'.,spa,shw,valid,True,pdf_textos,0.45689687,flagged_for_review
+U04291__shw2spa,U04291,G04027,nawa' nuker'ka kaluwi' ekpa'er'kasu'.,ellos son los que llevan las enfermedades.,shw,spa,valid,True,fidel_lomas,0.60409707,accepted
+U04291__spa2shw,U04291,G04027,ellos son los que llevan las enfermedades.,nawa' nuker'ka kaluwi' ekpa'er'kasu'.,spa,shw,valid,True,fidel_lomas,0.60409707,accepted
+U01123__shw2spa,U01123,G00970,kerpi'a'cha',era negro.,shw,spa,valid,False,flashcards2,0.24663994,removed
+U01123__spa2shw,U01123,G00970,era negro.,kerpi'a'cha',spa,shw,valid,False,flashcards2,0.24663994,removed
+U00212__shw2spa,U00212,G00160,shamu'lunsu' nuka'ka,soy delgada. (femenino),shw,spa,valid,True,flashcards2,0.65947735,accepted
+U00212__spa2shw,U00212,G00160,soy delgada. (femenino),shamu'lunsu' nuka'ka,spa,shw,valid,True,flashcards2,0.65947735,accepted
+U00116__shw2spa,U00116,G01054,tom teka'lli,tom corrió.,shw,spa,valid,True,flashcards2,0.8472995,accepted
+U00116__spa2shw,U00116,G01054,tom corrió.,tom teka'lli,spa,shw,valid,True,flashcards2,0.8472995,accepted
+U01220__shw2spa,U01220,G01054,tom teka'lli,tom huyó.,shw,spa,valid,True,flashcards2,0.36748558,removed
+U01220__spa2shw,U01220,G01054,tom huyó.,tom teka'lli,spa,shw,valid,True,flashcards2,0.36748558,removed
+U00682__shw2spa,U00682,G00566,enmu'pinen nuka'kudek,somos hombres.,shw,spa,valid,False,flashcards2,0.653113,accepted
+U00682__spa2shw,U00682,G00566,somos hombres.,enmu'pinen nuka'kudek,spa,shw,valid,False,flashcards2,0.653113,accepted
+U00914__shw2spa,U00914,G00778,tom lanerlli,tom inhaló.,shw,spa,valid,False,flashcards2,0.579182,flagged_for_review
+U00914__spa2shw,U00914,G00778,tom inhaló.,tom lanerlli,spa,shw,valid,False,flashcards2,0.579182,flagged_for_review
+U03860__shw2spa,U03860,G03605,nana nanpipalli pidek'kek,ella vive en la casa.,shw,spa,valid,False,flashcards_oraciones,0.8866961,accepted
+U03860__spa2shw,U03860,G03605,ella vive en la casa.,nana nanpipalli pidek'kek,spa,shw,valid,False,flashcards_oraciones,0.8866961,accepted
+U04261__shw2spa,U04261,G03997,"dan'inpu'ak kuvi-19, inluwekter', inwinsekker' shapunlek,","para que no contraigas el covid-19, cuídate, lávate las manos con jabón,",shw,spa,valid,True,fidel_lomas,0.71323276,accepted
+U04261__spa2shw,U04261,G03997,"para que no contraigas el covid-19, cuídate, lávate las manos con jabón,","dan'inpu'ak kuvi-19, inluwekter', inwinsekker' shapunlek,",spa,shw,valid,True,fidel_lomas,0.71323276,accepted
+U01436__shw2spa,U01436,G01250,peclu'echek,lo llamaré.,shw,spa,valid,False,flashcards2,0.67110634,accepted
+U01436__spa2shw,U01436,G01250,lo llamaré.,peclu'echek,spa,shw,valid,False,flashcards2,0.67110634,accepted
+U02984__shw2spa,U02984,G02753,kenmu'wi'na asek ñiden lupa'paperwi'ñi tullima nana lli'tukunlusa'.,"sin embargo, aquí ninguno de nosotros tiene casa embarrada así dijeron los que se habían ido a ver.",shw,spa,valid,True,pdf_textos,0.44412965,removed
+U02984__spa2shw,U02984,G02753,"sin embargo, aquí ninguno de nosotros tiene casa embarrada así dijeron los que se habían ido a ver.",kenmu'wi'na asek ñiden lupa'paperwi'ñi tullima nana lli'tukunlusa'.,spa,shw,valid,True,pdf_textos,0.44412965,removed
+U01076__shw2spa,U01076,G00929,luwantulek wichi'ak,necesito dormir.,shw,spa,valid,False,flashcards2,0.8025509,accepted
+U01076__spa2shw,U01076,G00929,necesito dormir.,luwantulek wichi'ak,spa,shw,valid,False,flashcards2,0.8025509,accepted
+U03305__shw2spa,U03305,G03073,amiuk nu'tapalli ilulennalusa',mi abuela prepara las medicinas.,shw,spa,valid,False,flashcards_oraciones,0.5672264,flagged_for_review
+U03305__spa2shw,U03305,G03073,mi abuela prepara las medicinas.,amiuk nu'tapalli ilulennalusa',spa,shw,valid,False,flashcards_oraciones,0.5672264,flagged_for_review
+U03595__shw2spa,U03595,G03349,kuda ku'la lunchi'ñidek ala'sa' kerka',nosotros no leemos una revista.,shw,spa,valid,False,flashcards_oraciones,0.81962246,accepted
+U03595__spa2shw,U03595,G03349,nosotros no leemos una revista.,kuda ku'la lunchi'ñidek ala'sa' kerka',spa,shw,valid,False,flashcards_oraciones,0.81962246,accepted
+U04173__shw2spa,U04173,G03909,nanek luwerchulek erpina' chinpenñanenwalek wella'dik.,ahí conocí el río aipena hasta su desembocadura en el huallaga.,shw,spa,valid,True,fidel_lomas,0.63631475,accepted
+U04173__spa2shw,U04173,G03909,ahí conocí el río aipena hasta su desembocadura en el huallaga.,nanek luwerchulek erpina' chinpenñanenwalek wella'dik.,spa,shw,valid,True,fidel_lomas,0.63631475,accepted
+U01547__shw2spa,U01547,G01353,tumu'pallina',están mintiendo.,shw,spa,valid,False,flashcards2,0.85180265,accepted
+U01547__spa2shw,U01547,G01353,están mintiendo.,tumu'pallina',spa,shw,valid,False,flashcards2,0.85180265,accepted
+U04101__shw2spa,U04101,G03838,nu'an imi'na ma'pu'su'pi'nta' a'illiñi amana'.,"así, pues, de cualquier manera le hizo sonar el",shw,spa,valid,True,fidel_lomas,0.30095422,removed
+U04101__spa2shw,U04101,G03838,"así, pues, de cualquier manera le hizo sonar el",nu'an imi'na ma'pu'su'pi'nta' a'illiñi amana'.,spa,shw,valid,True,fidel_lomas,0.30095422,removed
+U02821__shw2spa,U02821,G02590,tan ima arakayu nana lanla' aku'lli.,dijo arákayu y puso la ballena.,shw,spa,valid,True,pdf_textos,0.59671414,flagged_for_review
+U02821__spa2shw,U02821,G02590,dijo arákayu y puso la ballena.,tan ima arakayu nana lanla' aku'lli.,spa,shw,valid,True,pdf_textos,0.59671414,flagged_for_review
+U02948__shw2spa,U02948,G02717,"da'pinima lansi'sa', enpu'ni nantapillinpi'ma.","en vano era puro hueso, pues tenía mucha fuerza.",shw,spa,valid,True,pdf_textos,0.39690888,removed
+U02948__spa2shw,U02948,G02717,"en vano era puro hueso, pues tenía mucha fuerza.","da'pinima lansi'sa', enpu'ni nantapillinpi'ma.",spa,shw,valid,True,pdf_textos,0.39690888,removed
+U02340__shw2spa,U02340,G02109,"nanentu ker' manta'lek menmikda',","primero se va a traer yuca de la chacra,",shw,spa,valid,True,pdf_textos,0.5642266,flagged_for_review
+U02340__spa2shw,U02340,G02109,"primero se va a traer yuca de la chacra,","nanentu ker' manta'lek menmikda',",spa,shw,valid,True,pdf_textos,0.5642266,flagged_for_review
+U01311__shw2spa,U01311,G01136,¿nanpiladasu' ñapala?,¿estás despierta?,shw,spa,valid,False,flashcards2,0.749933,accepted
+U01311__spa2shw,U01311,G01136,¿estás despierta?,¿nanpiladasu' ñapala?,spa,shw,valid,False,flashcards2,0.749933,accepted
+U00398__shw2spa,U00398,G00319,ta'itulau,¿perdona?,shw,spa,valid,False,flashcards2,0.2712739,removed
+U00398__spa2shw,U00398,G00319,¿perdona?,ta'itulau,spa,shw,valid,False,flashcards2,0.2712739,removed
+U02927__shw2spa,U02927,G02696,- ¿uklama' a'cha nanapu'si'la?.,¿vinieron otra vez?,shw,spa,valid,True,pdf_textos,0.19362229,removed
+U02927__spa2shw,U02927,G02696,¿vinieron otra vez?,- ¿uklama' a'cha nanapu'si'la?.,spa,shw,valid,True,pdf_textos,0.19362229,removed
+U00781__shw2spa,U00781,G00654,lauk'llien,te oí.,shw,spa,valid,False,flashcards2,0.8149549,accepted
+U00781__spa2shw,U00781,G00654,te oí.,lauk'llien,spa,shw,valid,False,flashcards2,0.8149549,accepted
+U03243__shw2spa,U03243,G03012,kencher' sawelli yusmalek,"trae el machete, por favor.",shw,spa,valid,False,flashcards_oraciones,0.605356,accepted
+U03243__spa2shw,U03243,G03012,"trae el machete, por favor.",kencher' sawelli yusmalek,spa,shw,valid,False,flashcards_oraciones,0.605356,accepted
+U03967__shw2spa,U03967,G03711,"nana enkasu'lupa'pi'nta' dekkunen nu'tapi'ñi,",no hace su camino por cualquier lugar.,shw,spa,valid,True,fidel_lomas,0.55391484,flagged_for_review
+U03967__spa2shw,U03967,G03711,no hace su camino por cualquier lugar.,"nana enkasu'lupa'pi'nta' dekkunen nu'tapi'ñi,",spa,shw,valid,True,fidel_lomas,0.55391484,flagged_for_review
+U03490__shw2spa,U03490,G03248,kuda lauk'llidek a'lektutek'nen,nosotros escuchamos a su maestro.,shw,spa,valid,False,flashcards_oraciones,0.8417916,accepted
+U03490__spa2shw,U03490,G03248,nosotros escuchamos a su maestro.,kuda lauk'llidek a'lektutek'nen,spa,shw,valid,False,flashcards_oraciones,0.8417916,accepted
+U02160__shw2spa,U02160,G01934,yennitulek'wa' katu'pa'a'kik,podemos ayudarte.,shw,spa,valid,False,flashcards2,0.87119365,accepted
+U02160__spa2shw,U02160,G01934,podemos ayudarte.,yennitulek'wa' katu'pa'a'kik,spa,shw,valid,False,flashcards2,0.87119365,accepted
+U02322__shw2spa,U02322,G02091,"shiwilu la'la',","la lengua shiwilu,",shw,spa,valid,True,pdf_textos,0.90082586,accepted
+U02322__spa2shw,U02322,G02091,"la lengua shiwilu,","shiwilu la'la',",spa,shw,valid,True,pdf_textos,0.90082586,accepted
+U04164__shw2spa,U04164,G03900,"¿ker' akusupi a'cha, lasenñan a'cha, nuka' a'cha lekllin?","¿acaso yuca cocinada, acaso caña de azúcar, acaso ají te he pedido?",shw,spa,valid,True,fidel_lomas,0.50618404,flagged_for_review
+U04164__spa2shw,U04164,G03900,"¿acaso yuca cocinada, acaso caña de azúcar, acaso ají te he pedido?","¿ker' akusupi a'cha, lasenñan a'cha, nuka' a'cha lekllin?",spa,shw,valid,True,fidel_lomas,0.50618404,flagged_for_review
+U02996__shw2spa,U02996,G02765,"tulli ala'sa' tasellunsha, nanima wa'adik tulli, wa'datulli, enpu'ninchipa' kaluwi' ektu'kerechu.","dijo una viejita, ella tuvo una visión, soñó que seguramente muchas enfermedades llegarían.",shw,spa,valid,True,pdf_textos,0.6352205,accepted
+U02996__spa2shw,U02996,G02765,"dijo una viejita, ella tuvo una visión, soñó que seguramente muchas enfermedades llegarían.","tulli ala'sa' tasellunsha, nanima wa'adik tulli, wa'datulli, enpu'ninchipa' kaluwi' ektu'kerechu.",spa,shw,valid,True,pdf_textos,0.6352205,accepted
+U02025__shw2spa,U02025,G01804,luwantulek nana,quiero aquél.,shw,spa,valid,False,flashcards2,0.78712916,accepted
+U02025__spa2shw,U02025,G01804,quiero aquél.,luwantulek nana,spa,shw,valid,False,flashcards2,0.78712916,accepted
+U04344__shw2spa,U04344,G04079,"teklapinler a'lulentulli uspitalkek, ku'li'na yennichi'ñi a'padipera'su', a'pinta' tekkikerlli.","su hija le mandó curar en el hospital, pero no pudo sanarse, más se agravó.",shw,spa,valid,True,fidel_lomas,0.4997117,flagged_for_review
+U04344__spa2shw,U04344,G04079,"su hija le mandó curar en el hospital, pero no pudo sanarse, más se agravó.","teklapinler a'lulentulli uspitalkek, ku'li'na yennichi'ñi a'padipera'su', a'pinta' tekkikerlli.",spa,shw,valid,True,fidel_lomas,0.4997117,flagged_for_review
+U02126__shw2spa,U02126,G01900,sha'pi'su'sa' ñapallina,están amarillos.,shw,spa,valid,False,flashcards2,0.63235295,accepted
+U02126__spa2shw,U02126,G01900,están amarillos.,sha'pi'su'sa' ñapallina,spa,shw,valid,False,flashcards2,0.63235295,accepted
+U01488__shw2spa,U01488,G01300,ñapalli napi'da',está obsoleto.,shw,spa,valid,False,flashcards2,0.46188217,flagged_for_review
+U01488__spa2shw,U01488,G01300,está obsoleto.,ñapalli napi'da',spa,shw,valid,False,flashcards2,0.46188217,flagged_for_review
+U02910__shw2spa,U02910,G02679,a'pa'deklli.,(el gobernante) les mandó.,shw,spa,valid,True,pdf_textos,0.3980971,removed
+U02910__spa2shw,U02910,G02679,(el gobernante) les mandó.,a'pa'deklli.,spa,shw,valid,True,pdf_textos,0.3980971,removed
+U04284__shw2spa,U04284,G04020,"kupin dekkunwi'ñi, kupin dekshadek kawinak a'ñi'ñi.",no tiene carretera ni ríos cerca.,shw,spa,valid,True,fidel_lomas,0.6707658,accepted
+U04284__spa2shw,U04284,G04020,no tiene carretera ni ríos cerca.,"kupin dekkunwi'ñi, kupin dekshadek kawinak a'ñi'ñi.",spa,shw,valid,True,fidel_lomas,0.6707658,accepted
+U02604__shw2spa,U02604,G02373,nu'anni'ma iñer inyulatekkeksa' llia'llina'.,por eso todos en el patio nomás se quedaron.,shw,spa,valid,True,pdf_textos,0.6662729,accepted
+U02604__spa2shw,U02604,G02373,por eso todos en el patio nomás se quedaron.,nu'anni'ma iñer inyulatekkeksa' llia'llina'.,spa,shw,valid,True,pdf_textos,0.6662729,accepted
+U03452__shw2spa,U03452,G03215,nana teka'lli nakusu' wiu'ksu',él corre muy rápido.,shw,spa,valid,False,flashcards_oraciones,0.76873446,accepted
+U03452__spa2shw,U03452,G03215,él corre muy rápido.,nana teka'lli nakusu' wiu'ksu',spa,shw,valid,False,flashcards_oraciones,0.76873446,accepted
+U04016__shw2spa,U04016,G03753,nu'ani'na ñinchichi'ñi ma'pu'si'pa' weietchu.,"siendo así, no sabía cómo hacer para engordarse.",shw,spa,valid,True,fidel_lomas,0.5130383,flagged_for_review
+U04016__spa2shw,U04016,G03753,"siendo así, no sabía cómo hacer para engordarse.",nu'ani'na ñinchichi'ñi ma'pu'si'pa' weietchu.,spa,shw,valid,True,fidel_lomas,0.5130383,flagged_for_review
+U04017__shw2spa,U04017,G03754,"pa'apan inlli'inutulli ¿ma'pu'su'ta' weinaseku ten?, tulli panwalalun.","estando andando pensó ¿cómo me engordaría, caramba?, dijo la mujer sachavaca.",shw,spa,valid,True,fidel_lomas,0.6736003,accepted
+U04017__spa2shw,U04017,G03754,"estando andando pensó ¿cómo me engordaría, caramba?, dijo la mujer sachavaca.","pa'apan inlli'inutulli ¿ma'pu'su'ta' weinaseku ten?, tulli panwalalun.",spa,shw,valid,True,fidel_lomas,0.6736003,accepted
+U01329__shw2spa,U01329,G01151,¡peklu'u ma'isik!,¡llámame después!,shw,spa,valid,False,flashcards2,0.5831568,flagged_for_review
+U01329__spa2shw,U01329,G01151,¡llámame después!,¡peklu'u ma'isik!,spa,shw,valid,False,flashcards2,0.5831568,flagged_for_review
+U01406__shw2spa,U01406,G01222,ilusu' ñapalek,estoy resfriado.,shw,spa,valid,True,flashcards2,0.62848055,accepted
+U01406__spa2shw,U01406,G01222,estoy resfriado.,ilusu' ñapalek,spa,shw,valid,True,flashcards2,0.62848055,accepted
+U01407__shw2spa,U01407,G01222,ilusu' ñapalek,estoy acatarrado.,shw,spa,valid,True,flashcards2,0.40697774,removed
+U01407__spa2shw,U01407,G01222,estoy acatarrado.,ilusu' ñapalek,spa,shw,valid,True,flashcards2,0.40697774,removed
+U00003__shw2spa,U00003,G00001,ma'pu'sin,hola.,shw,spa,valid,False,flashcards2,0.10805866,removed
+U00003__spa2shw,U00003,G00001,hola.,ma'pu'sin,spa,shw,valid,False,flashcards2,0.10805866,removed
+U03660__shw2spa,U03660,G03412,tanak wer'liek,en el bosque me perdí,shw,spa,valid,False,flashcards_oraciones,0.5998956,flagged_for_review
+U03660__spa2shw,U03660,G03412,en el bosque me perdí,tanak wer'liek,spa,shw,valid,False,flashcards_oraciones,0.5998956,flagged_for_review
+U02473__shw2spa,U02473,G02242,"pipektapapachenma' chiminchuma', nanpia'mama' walek.","cargando (toda su vida) van a morir, todo el tiempo que vivan. jeberos, julio 2007",shw,spa,valid,True,pdf_textos,0.6227324,accepted
+U02473__spa2shw,U02473,G02242,"cargando (toda su vida) van a morir, todo el tiempo que vivan. jeberos, julio 2007","pipektapapachenma' chiminchuma', nanpia'mama' walek.",spa,shw,valid,True,pdf_textos,0.6227324,accepted
+U01864__shw2spa,U01864,G01652,saka'tullina' nakusu',trabajan mucho.,shw,spa,valid,False,flashcards2,0.736292,accepted
+U01864__spa2shw,U01864,G01652,trabajan mucho.,saka'tullina' nakusu',spa,shw,valid,False,flashcards2,0.736292,accepted
+U01391__shw2spa,U01391,G01209,latekdeklek,les creo.,shw,spa,valid,False,flashcards2,0.5744129,flagged_for_review
+U01391__spa2shw,U01391,G01209,les creo.,latekdeklek,spa,shw,valid,False,flashcards2,0.5744129,flagged_for_review
+U02560__shw2spa,U02560,G02329,"naneklima luna'tullina', ñi a'pinta' pur'i'ñina'.","entonces (los jeberinos) se arrepintieron, no pescaron más.",shw,spa,valid,True,pdf_textos,0.7613982,accepted
+U02560__spa2shw,U02560,G02329,"entonces (los jeberinos) se arrepintieron, no pescaron más.","naneklima luna'tullina', ñi a'pinta' pur'i'ñina'.",spa,shw,valid,True,pdf_textos,0.7613982,accepted
+U02750__shw2spa,U02750,G02519,mapapa' yunsu'lli.....,la mata-mata salió....,shw,spa,valid,True,pdf_textos,0.7449374,accepted
+U02750__spa2shw,U02750,G02519,la mata-mata salió....,mapapa' yunsu'lli.....,spa,shw,valid,True,pdf_textos,0.7449374,accepted
+U04522__shw2spa,U04522,G04231,a'ñapalekila ala'sa kalalu ta'ituli'ner'kuk,y tengo aún una tercera disculpa,shw,spa,valid,False,el_principito,0.54535145,flagged_for_review
+U04522__spa2shw,U04522,G04231,y tengo aún una tercera disculpa,a'ñapalekila ala'sa kalalu ta'ituli'ner'kuk,spa,shw,valid,False,el_principito,0.54535145,flagged_for_review
+U03293__shw2spa,U03293,G03061,ipa'la mulalalli,hoy buen día.,shw,spa,valid,False,flashcards_oraciones,0.61647993,accepted
+U03293__spa2shw,U03293,G03061,hoy buen día.,ipa'la mulalalli,spa,shw,valid,False,flashcards_oraciones,0.61647993,accepted
+U03003__shw2spa,U03003,G02772,nawa' lu'rnka'su' kudanta' laukta'kudeksu' wilakudek ñamudek lunpallidek.,lo que ellos hablaron y nosotros escuchamos cuando éramos niños eso estamos contando.,shw,spa,valid,False,pdf_textos,0.7807646,accepted
+U03003__spa2shw,U03003,G02772,lo que ellos hablaron y nosotros escuchamos cuando éramos niños eso estamos contando.,nawa' lu'rnka'su' kudanta' laukta'kudeksu' wilakudek ñamudek lunpallidek.,spa,shw,valid,False,pdf_textos,0.7807646,accepted
+U04158__shw2spa,U04158,G03894,nadi'nek nanapu'si'la pa'lli aminen menmiñik.,el joven se fue nuevamente a la chacra de su abuelita.,shw,spa,valid,True,fidel_lomas,0.4673145,flagged_for_review
+U04158__spa2shw,U04158,G03894,el joven se fue nuevamente a la chacra de su abuelita.,nadi'nek nanapu'si'la pa'lli aminen menmiñik.,spa,shw,valid,True,fidel_lomas,0.4673145,flagged_for_review
+U02952__shw2spa,U02952,G02721,"da'ilek i'na kua tekpa ñichek, ñichek iyun, tunka, etchu, lu'wellu, isekpila ñichek, ukladekpenma' uwapetchekpi'la enpi'walekpi'nta',","por eso me voy a convertir en garrapata, voy a ser zancudo, tábano, tabanillo negro, mosquito, mosca grandecita voy a ser, voy a estar tomando su sangre por siempre,",shw,spa,valid,True,pdf_textos,0.49025425,flagged_for_review
+U02952__spa2shw,U02952,G02721,"por eso me voy a convertir en garrapata, voy a ser zancudo, tábano, tabanillo negro, mosquito, mosca grandecita voy a ser, voy a estar tomando su sangre por siempre,","da'ilek i'na kua tekpa ñichek, ñichek iyun, tunka, etchu, lu'wellu, isekpila ñichek, ukladekpenma' uwapetchekpi'la enpi'walekpi'nta',",spa,shw,valid,True,pdf_textos,0.49025425,flagged_for_review
+U01926__shw2spa,U01926,G01711,peklupi nuka'ma,estás invitado.,shw,spa,valid,False,flashcards2,0.48242444,flagged_for_review
+U01926__spa2shw,U01926,G01711,estás invitado.,peklupi nuka'ma,spa,shw,valid,False,flashcards2,0.48242444,flagged_for_review
+U00882__shw2spa,U00882,G00748,¡ta'ituku' du'ak!,¡dejad sitio!,shw,spa,valid,False,flashcards2,0.59783614,flagged_for_review
+U00882__spa2shw,U00882,G00748,¡dejad sitio!,¡ta'ituku' du'ak!,spa,shw,valid,False,flashcards2,0.59783614,flagged_for_review
+U00591__shw2spa,U00591,G00487,kishu wellek'lli,jesús lloró.,shw,spa,valid,False,flashcards2,0.6121536,accepted
+U00591__spa2shw,U00591,G00487,jesús lloró.,kishu wellek'lli,spa,shw,valid,False,flashcards2,0.6121536,accepted
+U02499__shw2spa,U02499,G02268,nanekla amitullinerku.,después me hicieron abuela.,shw,spa,valid,False,pdf_textos,0.6493028,accepted
+U02499__spa2shw,U02499,G02268,después me hicieron abuela.,nanekla amitullinerku.,spa,shw,valid,False,pdf_textos,0.6493028,accepted
+U01369__shw2spa,U01369,G01188,shapi'tek nuka'a,luce pálido.,shw,spa,valid,False,flashcards2,0.29515594,removed
+U01369__spa2shw,U01369,G01188,luce pálido.,shapi'tek nuka'a,spa,shw,valid,False,flashcards2,0.29515594,removed
+U03084__shw2spa,U03084,G02853,¡nantapiteklusa'sa' nanpii tan ima asu' chilenllupa' nanpilusa' lliketchuduwidillekllina'.,¡que vivan puros fuerzudos! diciendo a los que viven por el barrio bajo casi los han exterminado.,shw,spa,valid,True,pdf_textos,0.41589057,removed
+U03084__spa2shw,U03084,G02853,¡que vivan puros fuerzudos! diciendo a los que viven por el barrio bajo casi los han exterminado.,¡nantapiteklusa'sa' nanpii tan ima asu' chilenllupa' nanpilusa' lliketchuduwidillekllina'.,spa,shw,valid,True,pdf_textos,0.41589057,removed
+U01848__shw2spa,U01848,G01637,¡latek'i'nek!,¡increíble!,shw,spa,valid,False,flashcards2,0.6248299,accepted
+U01848__spa2shw,U01848,G01637,¡increíble!,¡latek'i'nek!,spa,shw,valid,False,flashcards2,0.6248299,accepted
+U01508__shw2spa,U01508,G01317,pa'awa' ekter'lupa',avancemos.,shw,spa,valid,False,flashcards2,0.45170543,flagged_for_review
+U01508__spa2shw,U01508,G01317,avancemos.,pa'awa' ekter'lupa',spa,shw,valid,False,flashcards2,0.45170543,flagged_for_review
+U01873__shw2spa,U01873,G01661,pawanpalli chuma,falta tomás.,shw,spa,valid,False,flashcards2,0.4204151,removed
+U01873__spa2shw,U01873,G01661,falta tomás.,pawanpalli chuma,spa,shw,valid,False,flashcards2,0.4204151,removed
+U03959__shw2spa,U03959,G03703,"yalli'walusa' ektercher'kasu', nawa' dei'tullina'.","los hermanos que se adelantaban, ellos mataban.",shw,spa,valid,True,fidel_lomas,0.70795333,accepted
+U03959__spa2shw,U03959,G03703,"los hermanos que se adelantaban, ellos mataban.","yalli'walusa' ektercher'kasu', nawa' dei'tullina'.",spa,shw,valid,True,fidel_lomas,0.70795333,accepted
+U01431__shw2spa,U01431,G01245,ta'itulekchek,lo permitiré.,shw,spa,valid,False,flashcards2,0.6411499,accepted
+U01431__spa2shw,U01431,G01245,lo permitiré.,ta'itulekchek,spa,shw,valid,False,flashcards2,0.6411499,accepted
+U02306__shw2spa,U02306,G02075,"iñer ñinchita'kudeksu' napi'ku'lusa'ki,","todo lo que sabemos de los antiguos,",shw,spa,valid,True,pdf_textos,0.6935841,accepted
+U02306__spa2shw,U02306,G02075,"todo lo que sabemos de los antiguos,","iñer ñinchita'kudeksu' napi'ku'lusa'ki,",spa,shw,valid,True,pdf_textos,0.6935841,accepted
+U01389__shw2spa,U01389,G01208,a'shupalek,estoy estornudando.,shw,spa,valid,False,flashcards2,0.5291964,flagged_for_review
+U01389__spa2shw,U01389,G01208,estoy estornudando.,a'shupalek,spa,shw,valid,False,flashcards2,0.5291964,flagged_for_review
+U03177__shw2spa,U03177,G02946,wileima panta'n lli'an pilli'tulli.,"el muchacho, dice, fue, miró y escogió (un santito) agarrándolo.",shw,spa,valid,True,pdf_textos,0.5781887,flagged_for_review
+U03177__spa2shw,U03177,G02946,"el muchacho, dice, fue, miró y escogió (un santito) agarrándolo.",wileima panta'n lli'an pilli'tulli.,spa,shw,valid,True,pdf_textos,0.5781887,flagged_for_review
+U00580__shw2spa,U00580,G00478,¿nana'cha?,¿es ese?,shw,spa,valid,False,flashcards2,0.7084688,accepted
+U00580__spa2shw,U00580,G00478,¿es ese?,¿nana'cha?,spa,shw,valid,False,flashcards2,0.7084688,accepted
+U03721__shw2spa,U03721,G03471,nana wilalusa' ku'la pinaner'i'ñina' yanu'ter'kasu',los niños no olvidan la tarea.,shw,spa,valid,False,flashcards_oraciones,0.8223829,accepted
+U03721__spa2shw,U03721,G03471,los niños no olvidan la tarea.,nana wilalusa' ku'la pinaner'i'ñina' yanu'ter'kasu',spa,shw,valid,False,flashcards_oraciones,0.8223829,accepted
+U04186__shw2spa,U04186,G03922,nanek luwerchulek raspadilla iter'kasu'.,ahí probé por primera vez lo que llaman,shw,spa,valid,True,fidel_lomas,0.44527966,removed
+U04186__spa2shw,U04186,G03922,ahí probé por primera vez lo que llaman,nanek luwerchulek raspadilla iter'kasu'.,spa,shw,valid,True,fidel_lomas,0.44527966,removed
+U01452__shw2spa,U01452,G01264,perwatendusu' ñapalek,estoy desesperado.,shw,spa,valid,False,flashcards2,0.6834991,accepted
+U01452__spa2shw,U01452,G01264,estoy desesperado.,perwatendusu' ñapalek,spa,shw,valid,False,flashcards2,0.6834991,accepted
+U02781__shw2spa,U02781,G02550,"wilalusa' luwetchi'ñina' panwalalan,","los niños no conocen la vacamarina,",shw,spa,valid,True,pdf_textos,0.83536434,accepted
+U02781__spa2shw,U02781,G02550,"los niños no conocen la vacamarina,","wilalusa' luwetchi'ñina' panwalalan,",spa,shw,valid,True,pdf_textos,0.83536434,accepted
+U01525__shw2spa,U01525,G01333,lunku' lachek'ak,hablen claramente.,shw,spa,valid,False,flashcards2,0.29893088,removed
+U01525__spa2shw,U01525,G01333,hablen claramente.,lunku' lachek'ak,spa,shw,valid,False,flashcards2,0.29893088,removed
+U02949__shw2spa,U02949,G02718,"dei'tanna', pen dintunna', aku'lalatullina'.","lo mataron, atizaron la candela y lo metieron (al fuego).",shw,spa,valid,True,pdf_textos,0.611561,accepted
+U02949__spa2shw,U02949,G02718,"lo mataron, atizaron la candela y lo metieron (al fuego).","dei'tanna', pen dintunna', aku'lalatullina'.",spa,shw,valid,True,pdf_textos,0.611561,accepted
+U00323__shw2spa,U00323,G00254,luyulek',lo odio.,shw,spa,valid,False,flashcards2,0.6049092,accepted
+U00323__spa2shw,U00323,G00254,lo odio.,luyulek',spa,shw,valid,False,flashcards2,0.6049092,accepted
+U01974__shw2spa,U01974,G01757,¿lli'inutapala?,¿lo recuerdas?,shw,spa,valid,False,flashcards2,0.74398375,accepted
+U01974__spa2shw,U01974,G01757,¿lo recuerdas?,¿lli'inutapala?,spa,shw,valid,False,flashcards2,0.74398375,accepted
+U01675__shw2spa,U01675,G01475,¿luwer'chapalama'u?,¿me conocen?,shw,spa,valid,False,flashcards2,0.83816636,accepted
+U01675__spa2shw,U01675,G01475,¿me conocen?,¿luwer'chapalama'u?,spa,shw,valid,False,flashcards2,0.83816636,accepted
+U00905__shw2spa,U00905,G00770,asu' analli,esto apesta.,shw,spa,valid,False,flashcards2,0.5951327,flagged_for_review
+U00905__spa2shw,U00905,G00770,esto apesta.,asu' analli,spa,shw,valid,False,flashcards2,0.5951327,flagged_for_review
+U02975__shw2spa,U02975,G02744,"naneima a'lachiktulli aner yanu'tudektama' asu' yadi'tudektama', nawa' uk'i'ñina' ya'di'nna' tullima nana a'lachikta'su'.","él ha explicado: a ellos no los traten así, a ellos no los maten, ellos no han venido a matar dijo el intérprete.",shw,spa,valid,True,pdf_textos,0.58429784,flagged_for_review
+U02975__spa2shw,U02975,G02744,"él ha explicado: a ellos no los traten así, a ellos no los maten, ellos no han venido a matar dijo el intérprete.","naneima a'lachiktulli aner yanu'tudektama' asu' yadi'tudektama', nawa' uk'i'ñina' ya'di'nna' tullima nana a'lachikta'su'.",spa,shw,valid,True,pdf_textos,0.58429784,flagged_for_review
+U03247__shw2spa,U03247,G03016,ishek nakulli asu'lupa',el murciélago pasó por aquí.,shw,spa,valid,False,flashcards_oraciones,0.6262121,accepted
+U03247__spa2shw,U03247,G03016,el murciélago pasó por aquí.,ishek nakulli asu'lupa',spa,shw,valid,False,flashcards_oraciones,0.6262121,accepted
+U03268__shw2spa,U03268,G03037,asek nanpipapillina' kala patunlusa',aquí viven tres familias.,shw,spa,valid,False,flashcards_oraciones,0.6418867,accepted
+U03268__spa2shw,U03268,G03037,aquí viven tres familias.,asek nanpipapillina' kala patunlusa',spa,shw,valid,False,flashcards_oraciones,0.6418867,accepted
+U03175__shw2spa,U03175,G02944,wilalusa' enmu'pinenwawalusa' ima peklu'deklli.,a los niños varoncitos los llamó.,shw,spa,valid,False,pdf_textos,0.64527404,accepted
+U03175__spa2shw,U03175,G02944,a los niños varoncitos los llamó.,wilalusa' enmu'pinenwawalusa' ima peklu'deklli.,spa,shw,valid,False,pdf_textos,0.64527404,accepted
+U03042__shw2spa,U03042,G02811,"muyunpak walek pa'anna', adencha'nna', indiuntunna' luñina'.","se fueron hasta moyobamba, regresaron, tuvieron reuniones y hablaron.",shw,spa,valid,False,pdf_textos,0.6909412,accepted
+U03042__spa2shw,U03042,G02811,"se fueron hasta moyobamba, regresaron, tuvieron reuniones y hablaron.","muyunpak walek pa'anna', adencha'nna', indiuntunna' luñina'.",spa,shw,valid,False,pdf_textos,0.6909412,accepted
+U02434__shw2spa,U02434,G02203,"u'chimu wilaweklusa', iñerdaper mukankañina' wilaweklusa'.","buenos son mis hijos, todos mis hijos son buenos.",shw,spa,valid,True,pdf_textos,0.6497833,accepted
+U02434__spa2shw,U02434,G02203,"buenos son mis hijos, todos mis hijos son buenos.","u'chimu wilaweklusa', iñerdaper mukankañina' wilaweklusa'.",spa,shw,valid,True,pdf_textos,0.6497833,accepted
+U03543__shw2spa,U03543,G03300,nawa' ku'la lumpi'ñina pidek'kek,ellas no hablan en la casa.,shw,spa,valid,False,flashcards_oraciones,0.8764583,accepted
+U03543__spa2shw,U03543,G03300,ellas no hablan en la casa.,nawa' ku'la lumpi'ñina pidek'kek,spa,shw,valid,False,flashcards_oraciones,0.8764583,accepted
+U02358__shw2spa,U02358,G02127,ukluka'sik pata'lek unmellinpa'ta'kasu'.,cuando hierve se tantea para estar segura de que esté suave.,shw,spa,valid,True,pdf_textos,0.49593368,flagged_for_review
+U02358__spa2shw,U02358,G02127,cuando hierve se tantea para estar segura de que esté suave.,ukluka'sik pata'lek unmellinpa'ta'kasu'.,spa,shw,valid,True,pdf_textos,0.49593368,flagged_for_review
+U00008__shw2spa,U00008,G00007,¡katu'pa'!,¡ayuda!,shw,spa,valid,True,flashcards2,0.65294874,accepted
+U00008__spa2shw,U00008,G00007,¡ayuda!,¡katu'pa'!,spa,shw,valid,True,flashcards2,0.65294874,accepted
+U00010__shw2spa,U00010,G00007,¡katu'pa'!,¡auxilio!,shw,spa,valid,True,flashcards2,0.6494249,accepted
+U00010__spa2shw,U00010,G00007,¡auxilio!,¡katu'pa'!,spa,shw,valid,True,flashcards2,0.6494249,accepted
+U01998__shw2spa,U01998,G01778,¡wiuku' wilalunlusa!,"¡apúrensen, muchachas!",shw,spa,valid,False,flashcards2,0.50436735,flagged_for_review
+U01998__spa2shw,U01998,G01778,"¡apúrensen, muchachas!",¡wiuku' wilalunlusa!,spa,shw,valid,False,flashcards2,0.50436735,flagged_for_review
+U03132__shw2spa,U03132,G02901,"ishpañakla nananta', katu'daper i'la shiwilu la'la', inka' la'la' lui'nta'ser, lachekllini'mi'na.","él era de españa también, los dos mismos no hablaban la lengua shiwilu ni la lengua inka, pero entendían.",shw,spa,valid,True,pdf_textos,0.619441,accepted
+U03132__spa2shw,U03132,G02901,"él era de españa también, los dos mismos no hablaban la lengua shiwilu ni la lengua inka, pero entendían.","ishpañakla nananta', katu'daper i'la shiwilu la'la', inka' la'la' lui'nta'ser, lachekllini'mi'na.",spa,shw,valid,True,pdf_textos,0.619441,accepted
+U00203__shw2spa,U00203,G00152,perchek' nuka'ka,soy vago.,shw,spa,valid,False,flashcards2,0.702209,accepted
+U00203__spa2shw,U00203,G00152,soy vago.,perchek' nuka'ka,spa,shw,valid,False,flashcards2,0.702209,accepted
+U01170__shw2spa,U01170,G01014,¡dakuta'ker'!,¡avergüénzate!,shw,spa,valid,False,flashcards2,0.66541463,accepted
+U01170__spa2shw,U01170,G01014,¡avergüénzate!,¡dakuta'ker'!,spa,shw,valid,False,flashcards2,0.66541463,accepted
+U00874__shw2spa,U00874,G00741,li'inuter',recuérdalo.,shw,spa,valid,False,flashcards2,0.5760994,flagged_for_review
+U00874__spa2shw,U00874,G00741,recuérdalo.,li'inuter',spa,shw,valid,False,flashcards2,0.5760994,flagged_for_review
+U02590__shw2spa,U02590,G02359,"asu'lupa' pekpikellidek, luwer'inpu'la'pi'mudek,","por este lugar hemos salido sin saber dónde,",shw,spa,valid,True,pdf_textos,0.7260003,accepted
+U02590__spa2shw,U02590,G02359,"por este lugar hemos salido sin saber dónde,","asu'lupa' pekpikellidek, luwer'inpu'la'pi'mudek,",spa,shw,valid,True,pdf_textos,0.7260003,accepted
+U01769__shw2spa,U01769,G01563,tuluner'cheku nuka'ka,soy músico.,shw,spa,valid,False,flashcards2,0.6638404,accepted
+U01769__spa2shw,U01769,G01563,soy músico.,tuluner'cheku nuka'ka,spa,shw,valid,False,flashcards2,0.6638404,accepted
+U00540__shw2spa,U00540,G00442,tuwinek,prometí.,shw,spa,valid,False,flashcards2,0.46696645,flagged_for_review
+U00540__spa2shw,U00540,G00442,prometí.,tuwinek,spa,shw,valid,False,flashcards2,0.46696645,flagged_for_review
+U02323__shw2spa,U02323,G02092,shiwilu lu'nkasu' ñinchichi'ñina'.,el shiwilu que yo hablo no lo saben.,shw,spa,valid,True,pdf_textos,0.64946795,accepted
+U02323__spa2shw,U02323,G02092,el shiwilu que yo hablo no lo saben.,shiwilu lu'nkasu' ñinchichi'ñina'.,spa,shw,valid,True,pdf_textos,0.64946795,accepted
+U02712__shw2spa,U02712,G02481,"ukilasu'tundek enñi,","el rayo caño se secó,",shw,spa,valid,True,pdf_textos,0.4669872,flagged_for_review
+U02712__spa2shw,U02712,G02481,"el rayo caño se secó,","ukilasu'tundek enñi,",spa,shw,valid,True,pdf_textos,0.4669872,flagged_for_review
+U01999__shw2spa,U01999,G01779,peklu'lek,la llamé.,shw,spa,valid,False,flashcards2,0.7668712,accepted
+U01999__spa2shw,U01999,G01779,la llamé.,peklu'lek,spa,shw,valid,False,flashcards2,0.7668712,accepted
+U04130__shw2spa,U04130,G03867,"ipa'la'ka, surinú, ka'etchen, itullima.","ahora sí, sobrino, te voy a comer, le dijo.",shw,spa,valid,True,fidel_lomas,0.7557454,accepted
+U04130__spa2shw,U04130,G03867,"ahora sí, sobrino, te voy a comer, le dijo.","ipa'la'ka, surinú, ka'etchen, itullima.",spa,shw,valid,True,fidel_lomas,0.7557454,accepted
+U03455__shw2spa,U03455,G03218,nawa' ku'la a'lek'api'ñina' wilalusa',ellas no enseñan a los niños.,shw,spa,valid,False,flashcards_oraciones,0.90679646,accepted
+U03455__spa2shw,U03455,G03218,ellas no enseñan a los niños.,nawa' ku'la a'lek'api'ñina' wilalusa',spa,shw,valid,False,flashcards_oraciones,0.90679646,accepted
+U03213__shw2spa,U03213,G02982,awa kalu'palli samer,mamá cocina pescado.,shw,spa,valid,False,flashcards_oraciones,0.7530015,accepted
+U03213__spa2shw,U03213,G02982,mamá cocina pescado.,awa kalu'palli samer,spa,shw,valid,False,flashcards_oraciones,0.7530015,accepted
+U01591__shw2spa,U01591,G01396,pilli'pi ñapalekwa',estamos atrapados.,shw,spa,valid,False,flashcards2,0.7708626,accepted
+U01591__spa2shw,U01591,G01396,estamos atrapados.,pilli'pi ñapalekwa',spa,shw,valid,False,flashcards2,0.7708626,accepted
+U01991__shw2spa,U01991,G01771,chimillinkekla nanpichu,sobrevivirá.,shw,spa,valid,False,flashcards2,0.67847216,accepted
+U01991__spa2shw,U01991,G01771,sobrevivirá.,chimillinkekla nanpichu,spa,shw,valid,False,flashcards2,0.67847216,accepted
+U02672__shw2spa,U02672,G02441,arakayu ima luntulli wa'anler.,a arákayu le habló el gobernante.,shw,spa,valid,True,pdf_textos,0.68478537,accepted
+U02672__spa2shw,U02672,G02441,a arákayu le habló el gobernante.,arakayu ima luntulli wa'anler.,spa,shw,valid,True,pdf_textos,0.68478537,accepted
+U00507__shw2spa,U00507,G00415,asek' pa'apilallidek,aquí vamos.,shw,spa,valid,False,flashcards2,0.72701514,accepted
+U00507__spa2shw,U00507,G00415,aquí vamos.,asek' pa'apilallidek,spa,shw,valid,False,flashcards2,0.72701514,accepted
+U00177__shw2spa,U00177,G00131,lachek'apalek,lo entiendo.,shw,spa,valid,False,flashcards2,0.75114524,accepted
+U00177__spa2shw,U00177,G00131,lo entiendo.,lachek'apalek,spa,shw,valid,False,flashcards2,0.75114524,accepted
+U04086__shw2spa,U04086,G03823,nu'an ima pa'apilallima asu' papinku amana'.,"entonces, andaba (por ahí) el abuelo tigre.",shw,spa,valid,True,fidel_lomas,0.61847186,accepted
+U04086__spa2shw,U04086,G03823,"entonces, andaba (por ahí) el abuelo tigre.",nu'an ima pa'apilallima asu' papinku amana'.,spa,shw,valid,True,fidel_lomas,0.61847186,accepted
+U02607__shw2spa,U02607,G02376,- a'ñapalek wapu'. enchu luwetchukerku'.,tengo abundante. vengan a conocer.,shw,spa,valid,True,pdf_textos,0.71153116,accepted
+U02607__spa2shw,U02607,G02376,tengo abundante. vengan a conocer.,- a'ñapalek wapu'. enchu luwetchukerku'.,spa,shw,valid,True,pdf_textos,0.71153116,accepted
+U04346__shw2spa,U04346,G04081,"chimiñi katu'-shunka' kala, kanchis dukerkek, katu'-waranka katu'-shunka' ala'sa' ekkilalak.","murió el veintitrés, del séptimo mes (julio), del año dos mil veintiuno.",shw,spa,valid,True,fidel_lomas,0.4536528,flagged_for_review
+U04346__spa2shw,U04346,G04081,"murió el veintitrés, del séptimo mes (julio), del año dos mil veintiuno.","chimiñi katu'-shunka' kala, kanchis dukerkek, katu'-waranka katu'-shunka' ala'sa' ekkilalak.",spa,shw,valid,True,fidel_lomas,0.4536528,flagged_for_review
+U01206__shw2spa,U01206,G01041,kadu'lusa' nuker'ka,son huevos.,shw,spa,valid,False,flashcards2,0.64055765,accepted
+U01206__spa2shw,U01206,G01041,son huevos.,kadu'lusa' nuker'ka,spa,shw,valid,False,flashcards2,0.64055765,accepted
+U03845__shw2spa,U03845,G03590,nana wila kuaperlusa' pa'llina patunen'lek,las niñas viajan con su familia.,shw,spa,valid,False,flashcards_oraciones,0.8102844,accepted
+U03845__spa2shw,U03845,G03590,las niñas viajan con su familia.,nana wila kuaperlusa' pa'llina patunen'lek,spa,shw,valid,False,flashcards_oraciones,0.8102844,accepted
+U04037__shw2spa,U04037,G03774,ipa'linchi musu' kankantulli.,"entonces, se sintió bien.",shw,spa,valid,True,fidel_lomas,0.8228509,accepted
+U04037__spa2shw,U04037,G03774,"entonces, se sintió bien.",ipa'linchi musu' kankantulli.,spa,shw,valid,True,fidel_lomas,0.8228509,accepted
+U00132__shw2spa,U00132,G00090,tek'ker',corre.,shw,spa,valid,False,flashcards2,0.52626514,flagged_for_review
+U00132__spa2shw,U00132,G00090,corre.,tek'ker',spa,shw,valid,False,flashcards2,0.52626514,flagged_for_review
+U01530__shw2spa,U01530,G01337,mumu'su' ñapaku',mantenganse juntos.,shw,spa,valid,False,flashcards2,0.57005936,flagged_for_review
+U01530__spa2shw,U01530,G01337,mantenganse juntos.,mumu'su' ñapaku',spa,shw,valid,False,flashcards2,0.57005936,flagged_for_review
+U04195__shw2spa,U04195,G03931,"ta'wantusik lulen'er'kasu' adencha'llidek shiwiluk, a'llupi nunkek i'la yalli'shawekki.","terminada la curación, regresamos a jeberos en el mismo bote de mi hermano.",shw,spa,valid,True,fidel_lomas,0.5255008,flagged_for_review
+U04195__spa2shw,U04195,G03931,"terminada la curación, regresamos a jeberos en el mismo bote de mi hermano.","ta'wantusik lulen'er'kasu' adencha'llidek shiwiluk, a'llupi nunkek i'la yalli'shawekki.",spa,shw,valid,True,fidel_lomas,0.5255008,flagged_for_review
+U03702__shw2spa,U03702,G03453,kua yunek'apalek' pektu'nanlek' nala ekdenpilek,yo cazo con arco y flecha.,shw,spa,valid,False,flashcards_oraciones,0.41526556,removed
+U03702__spa2shw,U03702,G03453,yo cazo con arco y flecha.,kua yunek'apalek' pektu'nanlek' nala ekdenpilek,spa,shw,valid,False,flashcards_oraciones,0.41526556,removed
+U03012__shw2spa,U03012,G02781,"nanadaper ima, yus luwanta'su' malek, nana nu'apilalekwa'.","todas esas cosas, porque dios quiere, estamos cambiando.",shw,spa,valid,False,pdf_textos,0.6686468,accepted
+U03012__spa2shw,U03012,G02781,"todas esas cosas, porque dios quiere, estamos cambiando.","nanadaper ima, yus luwanta'su' malek, nana nu'apilalekwa'.",spa,shw,valid,False,pdf_textos,0.6686468,accepted
+U01836__shw2spa,U01836,G01626,a'lli'u,demuéstramelo.,shw,spa,valid,False,flashcards2,0.59740686,flagged_for_review
+U01836__spa2shw,U01836,G01626,demuéstramelo.,a'lli'u,spa,shw,valid,False,flashcards2,0.59740686,flagged_for_review
+U02315__shw2spa,U02315,G02084,"ekpanta'n nananta' a'lekchii, a'lektan nanalupa'",llevándolo ella también que enseñe por otros lugares,shw,spa,valid,True,pdf_textos,0.6262114,accepted
+U02315__spa2shw,U02315,G02084,llevándolo ella también que enseñe por otros lugares,"ekpanta'n nananta' a'lekchii, a'lektan nanalupa'",spa,shw,valid,True,pdf_textos,0.6262114,accepted
+U02856__shw2spa,U02856,G02625,"naneklan, pa'nunta'lusa' nawa' a'ka di'tetchuna' nana anaka'.","después, los que van de nuevo (el segundo grupo) ellos sí van a matar a las fieras.",shw,spa,valid,True,pdf_textos,0.569679,flagged_for_review
+U02856__spa2shw,U02856,G02625,"después, los que van de nuevo (el segundo grupo) ellos sí van a matar a las fieras.","naneklan, pa'nunta'lusa' nawa' a'ka di'tetchuna' nana anaka'.",spa,shw,valid,True,pdf_textos,0.569679,flagged_for_review
+U01614__shw2spa,U01614,G01419,¡katu'lada!,¡hipócrita!,shw,spa,valid,False,flashcards2,0.35024843,removed
+U01614__spa2shw,U01614,G01419,¡hipócrita!,¡katu'lada!,spa,shw,valid,False,flashcards2,0.35024843,removed
+U04384__shw2spa,U04384,G04119,"er'washinchi ektu'llidek ama'winan llishanak, pidekwidektak.","tardecito hemos llegado al puerto del armanayacu, cerca de nuestra casa.",shw,spa,valid,True,fidel_lomas,0.72319424,accepted
+U04384__spa2shw,U04384,G04119,"tardecito hemos llegado al puerto del armanayacu, cerca de nuestra casa.","er'washinchi ektu'llidek ama'winan llishanak, pidekwidektak.",spa,shw,valid,True,fidel_lomas,0.72319424,accepted
+U03399__shw2spa,U03399,G03163,kua dekkuntapinek enpu'ni wiu'ksu',yo no camino muy rápido.,shw,spa,valid,False,flashcards_oraciones,0.6288283,accepted
+U03399__spa2shw,U03399,G03163,yo no camino muy rápido.,kua dekkuntapinek enpu'ni wiu'ksu',spa,shw,valid,False,flashcards_oraciones,0.6288283,accepted
+U00320__shw2spa,U00320,G00252,lliya'lek inlli'inui'su',quedé inconsciente.,shw,spa,valid,False,flashcards2,0.35619885,removed
+U00320__spa2shw,U00320,G00252,quedé inconsciente.,lliya'lek inlli'inui'su',spa,shw,valid,False,flashcards2,0.35619885,removed
+U03790__shw2spa,U03790,G03537,kuda ku'la chintek'iñidek mutupik,nosotros no subimos a la montaña.,shw,spa,valid,False,flashcards_oraciones,0.7999033,accepted
+U03790__spa2shw,U03790,G03537,nosotros no subimos a la montaña.,kuda ku'la chintek'iñidek mutupik,spa,shw,valid,False,flashcards_oraciones,0.7999033,accepted
+U01288__shw2spa,U01288,G01113,chiminllinkekla nampilli,sobrevivió.,shw,spa,valid,False,flashcards2,0.4494927,removed
+U01288__spa2shw,U01288,G01113,sobrevivió.,chiminllinkekla nampilli,spa,shw,valid,False,flashcards2,0.4494927,removed
+U01516__shw2spa,U01516,G01325,¡tuker' ma'nen'unta'!,¡di algo!,shw,spa,valid,False,flashcards2,0.6792248,accepted
+U01516__spa2shw,U01516,G01325,¡di algo!,¡tuker' ma'nen'unta'!,spa,shw,valid,False,flashcards2,0.6792248,accepted
+U01831__shw2spa,U01831,G01621,¿yennitulek ka'tan'an'masu'?,¿puedo acompañarles?,shw,spa,valid,False,flashcards2,0.63495904,accepted
+U01831__spa2shw,U01831,G01621,¿puedo acompañarles?,¿yennitulek ka'tan'an'masu'?,spa,shw,valid,False,flashcards2,0.63495904,accepted
+U00888__shw2spa,U00888,G00754,nana katu'pa'tulli,eso ayudó.,shw,spa,valid,False,flashcards2,0.8618293,accepted
+U00888__spa2shw,U00888,G00754,eso ayudó.,nana katu'pa'tulli,spa,shw,valid,False,flashcards2,0.8618293,accepted
+U02932__shw2spa,U02932,G02701,ekpantasik ima taserpiler pilli'tan lutu'lli.,"cuando se la llevaron, el viejo la agarró y la detectó.",shw,spa,valid,True,pdf_textos,0.42721504,removed
+U02932__spa2shw,U02932,G02701,"cuando se la llevaron, el viejo la agarró y la detectó.",ekpantasik ima taserpiler pilli'tan lutu'lli.,spa,shw,valid,True,pdf_textos,0.42721504,removed
+U00112__shw2spa,U00112,G00075,maker',cógelo.,shw,spa,valid,False,flashcards2,0.20776093,removed
+U00112__spa2shw,U00112,G00075,cógelo.,maker',spa,shw,valid,False,flashcards2,0.20776093,removed
+U04360__shw2spa,U04360,G04095,"iñer' damulanen, kaser'lu'nen ekpa'pila'su', dekler su'ker'lli.",toda su sal y su azúcar que estaba llevando la disolvió el agua.,shw,spa,valid,True,fidel_lomas,0.60755223,accepted
+U04360__spa2shw,U04360,G04095,toda su sal y su azúcar que estaba llevando la disolvió el agua.,"iñer' damulanen, kaser'lu'nen ekpa'pila'su', dekler su'ker'lli.",spa,shw,valid,True,fidel_lomas,0.60755223,accepted
+U01046__shw2spa,U01046,G00900,katu'pa',la ayuda.,shw,spa,valid,False,flashcards2,0.6080633,accepted
+U01046__spa2shw,U01046,G00900,la ayuda.,katu'pa',spa,shw,valid,False,flashcards2,0.6080633,accepted
+U03820__shw2spa,U03820,G03566,kenmama ku'la' saka'tapi'nama' ñinchitunapidekek,ustedes no trabajan en la escuela.,shw,spa,valid,False,flashcards_oraciones,0.85288894,accepted
+U03820__spa2shw,U03820,G03566,ustedes no trabajan en la escuela.,kenmama ku'la' saka'tapi'nama' ñinchitunapidekek,spa,shw,valid,False,flashcards_oraciones,0.85288894,accepted
+U03496__shw2spa,U03496,G03254,wila ku'la wa'tenchi'ñi pidek'kek,el niño no espera en la casa.,shw,spa,valid,False,flashcards_oraciones,0.9020248,accepted
+U03496__spa2shw,U03496,G03254,el niño no espera en la casa.,wila ku'la wa'tenchi'ñi pidek'kek,spa,shw,valid,False,flashcards_oraciones,0.9020248,accepted
+U03603__shw2spa,U03603,G03357,nawa'ku'la pekkui'iñina misa',ellos no limpian la mesa.,shw,spa,valid,False,flashcards_oraciones,0.81597924,accepted
+U03603__spa2shw,U03603,G03357,ellos no limpian la mesa.,nawa'ku'la pekkui'iñina misa',spa,shw,valid,False,flashcards_oraciones,0.81597924,accepted
+U01413__shw2spa,U01413,G01228,kalutulek,preparé cena.,shw,spa,valid,False,flashcards2,0.17717764,removed
+U01413__spa2shw,U01413,G01228,preparé cena.,kalutulek,spa,shw,valid,False,flashcards2,0.17717764,removed
+U01608__shw2spa,U01608,G01413,¡lupersu' ñapala!,¡estás borracho!,shw,spa,valid,False,flashcards2,0.7889803,accepted
+U01608__spa2shw,U01608,G01413,¡estás borracho!,¡lupersu' ñapala!,spa,shw,valid,False,flashcards2,0.7889803,accepted
+U02106__shw2spa,U02106,G01881,watendawa' asek,esperemos aquí.,shw,spa,valid,False,flashcards2,0.6737622,accepted
+U02106__spa2shw,U02106,G01881,esperemos aquí.,watendawa' asek,spa,shw,valid,False,flashcards2,0.6737622,accepted
+U03586__shw2spa,U03586,G03341,nawa' luntullina' ala'sa' cuentu,ellos leen un cuento.,shw,spa,valid,False,flashcards_oraciones,0.7120038,accepted
+U03586__spa2shw,U03586,G03341,ellos leen un cuento.,nawa' luntullina' ala'sa' cuentu,spa,shw,valid,False,flashcards_oraciones,0.7120038,accepted
+U00916__shw2spa,U00916,G00780,tom a'shulli,tom estornudó.,shw,spa,valid,False,flashcards2,0.4674042,flagged_for_review
+U00916__spa2shw,U00916,G00780,tom estornudó.,tom a'shulli,spa,shw,valid,False,flashcards2,0.4674042,flagged_for_review
+U01020__shw2spa,U01020,G00876,¿katu'pa'tula?,¿ayudaste?,shw,spa,valid,False,flashcards2,0.70396537,accepted
+U01020__spa2shw,U01020,G00876,¿ayudaste?,¿katu'pa'tula?,spa,shw,valid,False,flashcards2,0.70396537,accepted
+U02149__shw2spa,U02149,G01923,u'chimuinchilusa' nuker'ka,son especiales.,shw,spa,valid,False,flashcards2,0.54224914,flagged_for_review
+U02149__spa2shw,U02149,G01923,son especiales.,u'chimuinchilusa' nuker'ka,spa,shw,valid,False,flashcards2,0.54224914,flagged_for_review
+U03765__shw2spa,U03765,G03513,nawa'ku'la lli'inutapi'ñina ala'sa histuria,ellas no recuerdan una historia.,shw,spa,valid,False,flashcards_oraciones,0.87496924,accepted
+U03765__spa2shw,U03765,G03513,ellas no recuerdan una historia.,nawa'ku'la lli'inutapi'ñina ala'sa histuria,spa,shw,valid,False,flashcards_oraciones,0.87496924,accepted
+U00179__shw2spa,U00179,G00133,luwanchi'nek,me niego.,shw,spa,valid,False,flashcards2,0.37110922,removed
+U00179__spa2shw,U00179,G00133,me niego.,luwanchi'nek,spa,shw,valid,False,flashcards2,0.37110922,removed
+U03824__shw2spa,U03824,G03570,nana wila llia'palli ekkuanenlu'sa',el niño ve a sus amigos.,shw,spa,valid,False,flashcards_oraciones,0.7555703,accepted
+U03824__spa2shw,U03824,G03570,el niño ve a sus amigos.,nana wila llia'palli ekkuanenlu'sa',spa,shw,valid,False,flashcards_oraciones,0.7555703,accepted
+U01756__shw2spa,U01756,G01552,musu' sekaper'llinerku,fui bienvenido.,shw,spa,valid,False,flashcards2,0.441295,removed
+U01756__spa2shw,U01756,G01552,fui bienvenido.,musu' sekaper'llinerku,spa,shw,valid,False,flashcards2,0.441295,removed
+U00505__shw2spa,U00505,G00413,ñinchidinusu'nuka'a,es inteligente.,shw,spa,valid,False,flashcards2,0.4745219,flagged_for_review
+U00505__spa2shw,U00505,G00413,es inteligente.,ñinchidinusu'nuka'a,spa,shw,valid,False,flashcards2,0.4745219,flagged_for_review
+U03101__shw2spa,U03101,G02870,nu'su' nanpillina' napi'.,así han vivido antes.,shw,spa,valid,False,pdf_textos,0.72902006,accepted
+U03101__spa2shw,U03101,G02870,así han vivido antes.,nu'su' nanpillina' napi'.,spa,shw,valid,False,pdf_textos,0.72902006,accepted
+U03459__shw2spa,U03459,G03222,kuda ku'la a'lektapi'ñidek ala'sa' lección,nosotros no enseñamos una lección.,shw,spa,valid,False,flashcards_oraciones,0.8753717,accepted
+U03459__spa2shw,U03459,G03222,nosotros no enseñamos una lección.,kuda ku'la a'lektapi'ñidek ala'sa' lección,spa,shw,valid,False,flashcards_oraciones,0.8753717,accepted
+U00734__shw2spa,U00734,G00610,akusuitu'u,cocíname (sin sopa).,shw,spa,valid,True,flashcards2,0.3459406,removed
+U00734__spa2shw,U00734,G00610,cocíname (sin sopa).,akusuitu'u,spa,shw,valid,True,flashcards2,0.3459406,removed
+U01232__shw2spa,U01232,G01065,"nanpiladaker', tom","despiértate, tom.",shw,spa,valid,False,flashcards2,0.67004657,accepted
+U01232__spa2shw,U01232,G01065,"despiértate, tom.","nanpiladaker', tom",spa,shw,valid,False,flashcards2,0.67004657,accepted
+U01138__shw2spa,U01138,G00985,tuluner'aper'i'la,sigue cantando.,shw,spa,valid,False,flashcards2,0.8110415,accepted
+U01138__spa2shw,U01138,G00985,sigue cantando.,tuluner'aper'i'la,spa,shw,valid,False,flashcards2,0.8110415,accepted
+U03944__shw2spa,U03944,G03688,wadi' ta'wantusik a'pinta' enpu'ni weranwi'ñina'.,cuando termina el mijano ya no tienen mucha comida.,shw,spa,valid,True,fidel_lomas,0.7598076,accepted
+U03944__spa2shw,U03944,G03688,cuando termina el mijano ya no tienen mucha comida.,wadi' ta'wantusik a'pinta' enpu'ni weranwi'ñina'.,spa,shw,valid,True,fidel_lomas,0.7598076,accepted
+U03239__shw2spa,U03239,G03008,wilalusa' inteklitullina' mumulu'lek,los niños juegan con barro.,shw,spa,valid,False,flashcards_oraciones,0.7310821,accepted
+U03239__spa2shw,U03239,G03008,los niños juegan con barro.,wilalusa' inteklitullina' mumulu'lek,spa,shw,valid,False,flashcards_oraciones,0.7310821,accepted
+U03789__shw2spa,U03789,G03536,kuda ku'la chintek'iñidek chinten'nak,nosotros no subimos la escalera.,shw,spa,valid,False,flashcards_oraciones,0.8087923,accepted
+U03789__spa2shw,U03789,G03536,nosotros no subimos la escalera.,kuda ku'la chintek'iñidek chinten'nak,spa,shw,valid,False,flashcards_oraciones,0.8087923,accepted
+U04090__shw2spa,U04090,G03827,kudanta' nana luwantamudek pilenñantusik lansa'pallidek na'pillina''.,"ya que a nosotras nos gusta cuando él pifuanea, estamos bailando, le contestaron.",shw,spa,valid,True,fidel_lomas,0.71595347,accepted
+U04090__spa2shw,U04090,G03827,"ya que a nosotras nos gusta cuando él pifuanea, estamos bailando, le contestaron.",kudanta' nana luwantamudek pilenñantusik lansa'pallidek na'pillina''.,spa,shw,valid,True,fidel_lomas,0.71595347,accepted
+U03525__shw2spa,U03525,G03282,nawa' ñinchitullina nakua'su,ellos estudian el pasado.,shw,spa,valid,False,flashcards_oraciones,0.74512625,accepted
+U03525__spa2shw,U03525,G03282,ellos estudian el pasado.,nawa' ñinchitullina nakua'su,spa,shw,valid,False,flashcards_oraciones,0.74512625,accepted
+U01888__shw2spa,U01888,G01676,musu' ñape'chidek,estaremos felices.,shw,spa,valid,False,flashcards2,0.78959936,accepted
+U01888__spa2shw,U01888,G01676,estaremos felices.,musu' ñape'chidek,spa,shw,valid,False,flashcards2,0.78959936,accepted
+U03438__shw2spa,U03438,G03201,nawa' teka'llina inyulatek'kek,ellos corren en el patio.,shw,spa,valid,False,flashcards_oraciones,0.6933378,accepted
+U03438__spa2shw,U03438,G03201,ellos corren en el patio.,nawa' teka'llina inyulatek'kek,spa,shw,valid,False,flashcards_oraciones,0.6933378,accepted
+U01535__shw2spa,U01535,G01341,asek a'ñapala,aquí tienes.,shw,spa,valid,False,flashcards2,0.84808654,accepted
+U01535__spa2shw,U01535,G01341,aquí tienes.,asek a'ñapala,spa,shw,valid,False,flashcards2,0.84808654,accepted
+U03245__shw2spa,U03245,G03014,enpu'dun ekkilali'na a'ñapala,¿cuántos años tienes?,shw,spa,valid,False,flashcards_oraciones,0.42709923,removed
+U03245__spa2shw,U03245,G03014,¿cuántos años tienes?,enpu'dun ekkilali'na a'ñapala,spa,shw,valid,False,flashcards_oraciones,0.42709923,removed
+U00822__shw2spa,U00822,G00693,sudasu' nuka'ka,soy casada.,shw,spa,valid,False,flashcards2,0.7158441,accepted
+U00822__spa2shw,U00822,G00693,soy casada.,sudasu' nuka'ka,spa,shw,valid,False,flashcards2,0.7158441,accepted
+U00117__shw2spa,U00117,G00079,tom kana'tulli,tom ganó.,shw,spa,valid,False,flashcards2,0.8557561,accepted
+U00117__spa2shw,U00117,G00079,tom ganó.,tom kana'tulli,spa,shw,valid,False,flashcards2,0.8557561,accepted
+U01890__shw2spa,U01890,G01678,llinserllidek,lo pintaremos.,shw,spa,valid,False,flashcards2,0.41172218,removed
+U01890__spa2shw,U01890,G01678,lo pintaremos.,llinserllidek,spa,shw,valid,False,flashcards2,0.41172218,removed
+U03863__shw2spa,U03863,G03608,nana wila kuaper ku'la nanpi'pi'ñi pidek'kek,la niña no vive en la casa.,shw,spa,valid,False,flashcards_oraciones,0.87792957,accepted
+U03863__spa2shw,U03863,G03608,la niña no vive en la casa.,nana wila kuaper ku'la nanpi'pi'ñi pidek'kek,spa,shw,valid,False,flashcards_oraciones,0.87792957,accepted
+U00812__shw2spa,U00812,G00684,ku'aper nuka'ka,soy mujer.,shw,spa,valid,False,flashcards2,0.861616,accepted
+U00812__spa2shw,U00812,G00684,soy mujer.,ku'aper nuka'ka,spa,shw,valid,False,flashcards2,0.861616,accepted
+U03560__shw2spa,U03560,G03317,kenmama lumpa'lama kenmamatuchi,ustedes hablan entre ustedes.,shw,spa,valid,False,flashcards_oraciones,0.67654467,accepted
+U03560__spa2shw,U03560,G03317,ustedes hablan entre ustedes.,kenmama lumpa'lama kenmamatuchi,spa,shw,valid,False,flashcards_oraciones,0.67654467,accepted
+U03516__shw2spa,U03516,G03273,nana ku'la wa'tenchi'ñi musiclanlek',él no espera con tranquilidad.,shw,spa,valid,False,flashcards_oraciones,0.7609558,accepted
+U03516__spa2shw,U03516,G03273,él no espera con tranquilidad.,nana ku'la wa'tenchi'ñi musiclanlek',spa,shw,valid,False,flashcards_oraciones,0.7609558,accepted
+U00749__shw2spa,U00749,G00624,a'ta'wantuku' asu',terminen esto.,shw,spa,valid,False,flashcards2,0.80462515,accepted
+U00749__spa2shw,U00749,G00624,terminen esto.,a'ta'wantuku' asu',spa,shw,valid,False,flashcards2,0.80462515,accepted
+U04163__shw2spa,U04163,G03899,ipa'linchi wilanlunler itulli:,"entonces, la señorita le dijo:",shw,spa,valid,True,fidel_lomas,0.7190746,accepted
+U04163__spa2shw,U04163,G03899,"entonces, la señorita le dijo:",ipa'linchi wilanlunler itulli:,spa,shw,valid,True,fidel_lomas,0.7190746,accepted
+U01083__shw2spa,U01083,G00936,musu' lli'apalek,simpatizo.,shw,spa,valid,False,flashcards2,0.3213985,removed
+U01083__spa2shw,U01083,G00936,simpatizo.,musu' lli'apalek,spa,shw,valid,False,flashcards2,0.3213985,removed
+U00712__shw2spa,U00712,G00594,mukankaninpu' nuka'ma,eres mala.,shw,spa,valid,False,flashcards2,0.7670685,accepted
+U00712__spa2shw,U00712,G00594,eres mala.,mukankaninpu' nuka'ma,spa,shw,valid,False,flashcards2,0.7670685,accepted
+U03298__shw2spa,U03298,G03066,tandulalusa' uklala'tullina' nakusu',las estrellas brillan mucho.,shw,spa,valid,False,flashcards_oraciones,0.3962872,removed
+U03298__spa2shw,U03298,G03066,las estrellas brillan mucho.,tandulalusa' uklala'tullina' nakusu',spa,shw,valid,False,flashcards_oraciones,0.3962872,removed
+U02771__shw2spa,U02771,G02540,iñerdaper ¿ma'ki'nta' nu'tullinerkenmu'wa' ten?,todos dijeron ¿por qué nos hicieron eso?,shw,spa,valid,True,pdf_textos,0.6263906,accepted
+U02771__spa2shw,U02771,G02540,todos dijeron ¿por qué nos hicieron eso?,iñerdaper ¿ma'ki'nta' nu'tullinerkenmu'wa' ten?,spa,shw,valid,True,pdf_textos,0.6263906,accepted
+U04329__shw2spa,U04329,G04064,"ipa'linchi miñiku adencha'lli shiwiluk, ka'tanencha'lli awamapu'.","entonces meneleo regresó a jeberos, vino para acompañar a nuestra mamá.",shw,spa,valid,True,fidel_lomas,0.5196471,flagged_for_review
+U04329__spa2shw,U04329,G04064,"entonces meneleo regresó a jeberos, vino para acompañar a nuestra mamá.","ipa'linchi miñiku adencha'lli shiwiluk, ka'tanencha'lli awamapu'.",spa,shw,valid,True,fidel_lomas,0.5196471,flagged_for_review
+U03835__shw2spa,U03835,G03580,nana wila ku'la' pa'api'ñi ñinanluk,el niño no viaja a la ciudad.,shw,spa,valid,False,flashcards_oraciones,0.8236251,accepted
+U03835__spa2shw,U03835,G03580,el niño no viaja a la ciudad.,nana wila ku'la' pa'api'ñi ñinanluk,spa,shw,valid,False,flashcards_oraciones,0.8236251,accepted
+U03875__shw2spa,U03875,G03619,nana ku'la nanpi'piñi patunenlek,él no vive con su familia.,shw,spa,valid,False,flashcards_oraciones,0.8472927,accepted
+U03875__spa2shw,U03875,G03619,él no vive con su familia.,nana ku'la nanpi'piñi patunenlek,spa,shw,valid,False,flashcards_oraciones,0.8472927,accepted
+U02522__shw2spa,U02522,G02291,"napi'pui'mi'na wa'an ñapawiñi asu' kuntek, kuntek wa'an.","dicen que en esos tiempos el gobernante (de jeberos) era el pelejo, el pelejo era gobernante.",shw,spa,valid,True,pdf_textos,0.48823363,flagged_for_review
+U02522__spa2shw,U02522,G02291,"dicen que en esos tiempos el gobernante (de jeberos) era el pelejo, el pelejo era gobernante.","napi'pui'mi'na wa'an ñapawiñi asu' kuntek, kuntek wa'an.",spa,shw,valid,True,pdf_textos,0.48823363,flagged_for_review
+U03429__shw2spa,U03429,G03192,kenma nu'tula ala'sa' pidek,tú construyes una casa.,shw,spa,valid,False,flashcards_oraciones,0.7858641,accepted
+U03429__spa2shw,U03429,G03192,tú construyes una casa.,kenma nu'tula ala'sa' pidek,spa,shw,valid,False,flashcards_oraciones,0.7858641,accepted
+U01624__shw2spa,U01624,G01429,¿asu' luwantula?,¿quieres esto?,shw,spa,valid,False,flashcards2,0.6859956,accepted
+U01624__spa2shw,U01624,G01429,¿quieres esto?,¿asu' luwantula?,spa,shw,valid,False,flashcards2,0.6859956,accepted
+U00484__shw2spa,U00484,G00393,¡yaindektama'!,¡no salten!,shw,spa,valid,False,flashcards2,0.7629886,accepted
+U00484__spa2shw,U00484,G00393,¡no salten!,¡yaindektama'!,spa,shw,valid,False,flashcards2,0.7629886,accepted
+U02960__shw2spa,U02960,G02729,uk'apinlencha'ni'ma kelluluñiñi' kanañina'.,"en lo que estaban llevando, encontraron al tigre negro.",shw,spa,valid,True,pdf_textos,0.35705313,removed
+U02960__spa2shw,U02960,G02729,"en lo que estaban llevando, encontraron al tigre negro.",uk'apinlencha'ni'ma kelluluñiñi' kanañina'.,spa,shw,valid,True,pdf_textos,0.35705313,removed
+U04430__shw2spa,U04430,G04165,ipa'la nalli'inutullina'.,ahora recién se acuerdan.,shw,spa,valid,True,fidel_lomas,0.74103665,accepted
+U04430__spa2shw,U04430,G04165,ahora recién se acuerdan.,ipa'la nalli'inutullina'.,spa,shw,valid,True,fidel_lomas,0.74103665,accepted
+U03022__shw2spa,U03022,G02791,"napi', kuanta' wilakuñamu laukta'kasu' nana muyunpa inchilalak taker'llina', lansi' wa'danler ka'deklli tullina'.","antes cuando yo era niño he escuchado que en ese camino de moyobamba perecieron, el duende puro hueso les comió dijeron.",shw,spa,valid,True,pdf_textos,0.62900573,accepted
+U03022__spa2shw,U03022,G02791,"antes cuando yo era niño he escuchado que en ese camino de moyobamba perecieron, el duende puro hueso les comió dijeron.","napi', kuanta' wilakuñamu laukta'kasu' nana muyunpa inchilalak taker'llina', lansi' wa'danler ka'deklli tullina'.",spa,shw,valid,True,pdf_textos,0.62900573,accepted
+U00964__shw2spa,U00964,G00824,¿den chi'yeklli?,¿quién escapó?,shw,spa,valid,False,flashcards2,0.7662114,accepted
+U00964__spa2shw,U00964,G00824,¿quién escapó?,¿den chi'yeklli?,spa,shw,valid,False,flashcards2,0.7662114,accepted
+U01643__shw2spa,U01643,G01447,¿mupalek saka'tunanki?,¿estoy calificado para el trabajo?,shw,spa,valid,False,flashcards2,0.5218859,flagged_for_review
+U01643__spa2shw,U01643,G01447,¿estoy calificado para el trabajo?,¿mupalek saka'tunanki?,spa,shw,valid,False,flashcards2,0.5218859,flagged_for_review
+U03935__shw2spa,U03935,G03679,nerpi'pu' dunanler latuñi utekkunanmapu'.,nerpi'pu' dunanler latuñi utekkunanmapu'.,shw,spa,valid,True,fidel_lomas,1.0,accepted
+U03935__spa2shw,U03935,G03679,nerpi'pu' dunanler latuñi utekkunanmapu'.,nerpi'pu' dunanler latuñi utekkunanmapu'.,spa,shw,valid,True,fidel_lomas,1.0,accepted
+U00184__shw2spa,U00184,G00136,lliya'lek',me quedé.,shw,spa,valid,False,flashcards2,0.44985667,removed
+U00184__spa2shw,U00184,G00136,me quedé.,lliya'lek',spa,shw,valid,False,flashcards2,0.44985667,removed
+U03775__shw2spa,U03775,G03523,kenmama' ku'la lli'inutapi'nama' llillinen,ustedes no recuerdan su nombre.,shw,spa,valid,False,flashcards_oraciones,0.85005,accepted
+U03775__spa2shw,U03775,G03523,ustedes no recuerdan su nombre.,kenmama' ku'la lli'inutapi'nama' llillinen,spa,shw,valid,False,flashcards_oraciones,0.85005,accepted
+U03499__shw2spa,U03499,G03259,nawa' ku'la wa'tenchi'ñina' ta'tulan'na',ellas no esperan en silencio.,shw,spa,valid,True,flashcards_oraciones,0.81136155,accepted
+U03499__spa2shw,U03499,G03259,ellas no esperan en silencio.,nawa' ku'la wa'tenchi'ñina' ta'tulan'na',spa,shw,valid,True,flashcards_oraciones,0.81136155,accepted
+U03502__shw2spa,U03502,G03259,nawa' ku'la wa'tenchi'ñina' ta'tulan'na',ellos no esperan en silencio.,shw,spa,valid,True,flashcards_oraciones,0.8146471,accepted
+U03502__spa2shw,U03502,G03259,ellos no esperan en silencio.,nawa' ku'la wa'tenchi'ñina' ta'tulan'na',spa,shw,valid,True,flashcards_oraciones,0.8146471,accepted
+U03936__shw2spa,U03936,G03680,yan'uklu'lusa' ka'api'ñina' ma'nenpi'nta'.,las uchpa-garzas no comen cualquier cosa.,shw,spa,valid,True,fidel_lomas,0.73817086,accepted
+U03936__spa2shw,U03936,G03680,las uchpa-garzas no comen cualquier cosa.,yan'uklu'lusa' ka'api'ñina' ma'nenpi'nta'.,spa,shw,valid,True,fidel_lomas,0.73817086,accepted
+U01677__shw2spa,U01677,G01477,¿iyatula?,¿te gusta?,shw,spa,valid,False,flashcards2,0.6692037,accepted
+U01677__spa2shw,U01677,G01477,¿te gusta?,¿iyatula?,spa,shw,valid,False,flashcards2,0.6692037,accepted
+U01427__shw2spa,U01427,G01241,apisadatutek ñapawinek,estaba celoso.,shw,spa,valid,False,flashcards2,0.44500515,removed
+U01427__spa2shw,U01427,G01241,estaba celoso.,apisadatutek ñapawinek,spa,shw,valid,False,flashcards2,0.44500515,removed
+U00192__shw2spa,U00192,G00143,u'chimuñapalek,estoy tranquilo. (estoy bien),shw,spa,valid,True,flashcards2,0.6162886,accepted
+U00192__spa2shw,U00192,G00143,estoy tranquilo. (estoy bien),u'chimuñapalek,spa,shw,valid,True,flashcards2,0.6162886,accepted
+U00592__shw2spa,U00592,G00488,¡tupiter'!,¡continúa!,shw,spa,valid,False,flashcards2,0.6520929,accepted
+U00592__spa2shw,U00592,G00488,¡continúa!,¡tupiter'!,spa,shw,valid,False,flashcards2,0.6520929,accepted
+U01968__shw2spa,U01968,G01751,¿chuchu ka'a'pala?,¿comés carne?,shw,spa,valid,False,flashcards2,0.59223527,flagged_for_review
+U01968__spa2shw,U01968,G01751,¿comés carne?,¿chuchu ka'a'pala?,spa,shw,valid,False,flashcards2,0.59223527,flagged_for_review
+U00685__shw2spa,U00685,G00569,yamerlek'wa',nos reímos.,shw,spa,valid,False,flashcards2,0.56502306,flagged_for_review
+U00685__spa2shw,U00685,G00569,nos reímos.,yamerlek'wa',spa,shw,valid,False,flashcards2,0.56502306,flagged_for_review
+U02492__shw2spa,U02492,G02261,kaikshawekleksa' llia'lek.,con mi hermana mayor nomás me quedé.,shw,spa,valid,True,pdf_textos,0.5541346,flagged_for_review
+U02492__spa2shw,U02492,G02261,con mi hermana mayor nomás me quedé.,kaikshawekleksa' llia'lek.,spa,shw,valid,True,pdf_textos,0.5541346,flagged_for_review
+U02614__shw2spa,U02614,G02383,penwek i'na nerpi'la.,mi candela es diferente.,shw,spa,valid,True,pdf_textos,0.51809496,flagged_for_review
+U02614__spa2shw,U02614,G02383,mi candela es diferente.,penwek i'na nerpi'la.,spa,shw,valid,True,pdf_textos,0.51809496,flagged_for_review
+U01700__shw2spa,U01700,G01497,uku'latapalli wayupilusa',vende frutas.,shw,spa,valid,False,flashcards2,0.48642695,flagged_for_review
+U01700__spa2shw,U01700,G01497,vende frutas.,uku'latapalli wayupilusa',spa,shw,valid,False,flashcards2,0.48642695,flagged_for_review
+U03664__shw2spa,U03664,G03416,awauk kalu'palli samer,mi mamá cocina pescado.,shw,spa,valid,False,flashcards_oraciones,0.80160594,accepted
+U03664__spa2shw,U03664,G03416,mi mamá cocina pescado.,awauk kalu'palli samer,spa,shw,valid,False,flashcards_oraciones,0.80160594,accepted
+U00168__shw2spa,U00168,G00122,¡empu'ni mushipa'!,¡qué encanto!,shw,spa,valid,False,flashcards2,0.6338353,accepted
+U00168__spa2shw,U00168,G00122,¡qué encanto!,¡empu'ni mushipa'!,spa,shw,valid,False,flashcards2,0.6338353,accepted
+U02463__shw2spa,U02463,G02232,napi'ku'lusa'ler ekpa'llina' menminennak.,los antiguos lo llevaban a sus chacras.,shw,spa,valid,True,pdf_textos,0.54384255,flagged_for_review
+U02463__spa2shw,U02463,G02232,los antiguos lo llevaban a sus chacras.,napi'ku'lusa'ler ekpa'llina' menminennak.,spa,shw,valid,True,pdf_textos,0.54384255,flagged_for_review
+U00689__shw2spa,U00689,G00572,tantenlek'wa',lo queremos.,shw,spa,valid,False,flashcards2,0.46955484,flagged_for_review
+U00689__spa2shw,U00689,G00572,lo queremos.,tantenlek'wa',spa,shw,valid,False,flashcards2,0.46955484,flagged_for_review
+U03956__shw2spa,U03956,G03700,napi' laman chipitek pa'tuwiñi.,antes el cuero de la huangana costaba.,shw,spa,valid,True,fidel_lomas,0.452921,flagged_for_review
+U03956__spa2shw,U03956,G03700,antes el cuero de la huangana costaba.,napi' laman chipitek pa'tuwiñi.,spa,shw,valid,True,fidel_lomas,0.452921,flagged_for_review
+U03059__shw2spa,U03059,G02828,nakupila'ser yasaka'tanna' nana kaschilla lu'nsu'lek peklu'dek'an itudeklli:,y cuando (los shawala) estaban pasando a trabajar con esos castellano-hablantes los llamó y les dijo:,shw,spa,valid,True,pdf_textos,0.49820217,flagged_for_review
+U03059__spa2shw,U03059,G02828,y cuando (los shawala) estaban pasando a trabajar con esos castellano-hablantes los llamó y les dijo:,nakupila'ser yasaka'tanna' nana kaschilla lu'nsu'lek peklu'dek'an itudeklli:,spa,shw,valid,True,pdf_textos,0.49820217,flagged_for_review
+U03871__shw2spa,U03871,G03615,kenmama' ku'la nanpi'pinama' pidek'kek,ustedes no viven en la casa.,shw,spa,valid,False,flashcards_oraciones,0.8360113,accepted
+U03871__spa2shw,U03871,G03615,ustedes no viven en la casa.,kenmama' ku'la nanpi'pinama' pidek'kek,spa,shw,valid,False,flashcards_oraciones,0.8360113,accepted
+U04185__shw2spa,U04185,G03921,kallilusa' luwerchi'nek.,no conocía las calles.,shw,spa,valid,True,fidel_lomas,0.6531774,accepted
+U04185__spa2shw,U04185,G03921,no conocía las calles.,kallilusa' luwerchi'nek.,spa,shw,valid,True,fidel_lomas,0.6531774,accepted
+U04319__shw2spa,U04319,G04054,yalli'shawekku' wilaklanen luñi shiwilu la'la'.,mi finado hermano desde niño hablaba la lengua shiwilu.,shw,spa,valid,True,fidel_lomas,0.7929652,accepted
+U04319__spa2shw,U04319,G04054,mi finado hermano desde niño hablaba la lengua shiwilu.,yalli'shawekku' wilaklanen luñi shiwilu la'la'.,spa,shw,valid,True,fidel_lomas,0.7929652,accepted
+U00043__shw2spa,U00043,G00035,¡saka'dek!,¡imposible!,shw,spa,valid,False,flashcards2,0.33421105,removed
+U00043__spa2shw,U00043,G00035,¡imposible!,¡saka'dek!,spa,shw,valid,False,flashcards2,0.33421105,removed
+U02526__shw2spa,U02526,G02295,¿ma'ki'na kenmama' asu'lupa' uklama'? sa'la' a'dantetchenmu'wa'.,¿por qué ustedes han venido por acá? nos van a contagiar la viruela.,shw,spa,valid,True,pdf_textos,0.6625748,accepted
+U02526__spa2shw,U02526,G02295,¿por qué ustedes han venido por acá? nos van a contagiar la viruela.,¿ma'ki'na kenmama' asu'lupa' uklama'? sa'la' a'dantetchenmu'wa'.,spa,shw,valid,True,pdf_textos,0.6625748,accepted
+U01958__shw2spa,U01958,G01742,"yunsanker', enchu","vamos, levántate.",shw,spa,valid,False,flashcards2,0.6850172,accepted
+U01958__spa2shw,U01958,G01742,"vamos, levántate.","yunsanker', enchu",spa,shw,valid,False,flashcards2,0.6850172,accepted
+U03119__shw2spa,U03119,G02888,asu' a'lektupideklusek ñinchitupideklusek nana kaschillasa' luñina'.,en la escuela primaria y secundaria soló hablan puro castellano.,shw,spa,valid,True,pdf_textos,0.43078646,removed
+U03119__spa2shw,U03119,G02888,en la escuela primaria y secundaria soló hablan puro castellano.,asu' a'lektupideklusek ñinchitupideklusek nana kaschillasa' luñina'.,spa,shw,valid,True,pdf_textos,0.43078646,removed
+U02488__shw2spa,U02488,G02257,awawek tatawek chimiñina' simirkek.,mi madre y mi padre murieron en varadero.,shw,spa,valid,True,pdf_textos,0.8126065,accepted
+U02488__spa2shw,U02488,G02257,mi madre y mi padre murieron en varadero.,awawek tatawek chimiñina' simirkek.,spa,shw,valid,True,pdf_textos,0.8126065,accepted
+U02023__shw2spa,U02023,G01802,alek'apalliner'ku ingles,estudio inglés.,shw,spa,valid,False,flashcards2,0.59009135,flagged_for_review
+U02023__spa2shw,U02023,G01802,estudio inglés.,alek'apalliner'ku ingles,spa,shw,valid,False,flashcards2,0.59009135,flagged_for_review
+U03265__shw2spa,U03265,G03034,ya lau'i'nek illinasu' empu'ninchi,no me gusta escuchar mucho ruido.,shw,spa,valid,False,flashcards_oraciones,0.64414924,accepted
+U03265__spa2shw,U03265,G03034,no me gusta escuchar mucho ruido.,ya lau'i'nek illinasu' empu'ninchi,spa,shw,valid,False,flashcards_oraciones,0.64414924,accepted
+U04331__shw2spa,U04331,G04066,nanekla adencha'n saka'tulli teatruk.,"luego, volviendo (del marañón) participó en un grupo de teatro.",shw,spa,valid,True,fidel_lomas,0.6713188,accepted
+U04331__spa2shw,U04331,G04066,"luego, volviendo (del marañón) participó en un grupo de teatro.",nanekla adencha'n saka'tulli teatruk.,spa,shw,valid,True,fidel_lomas,0.6713188,accepted
+U01209__shw2spa,U01209,G01044,u'chimulusa' nuker'ka,son buenos.,shw,spa,valid,False,flashcards2,0.74005806,accepted
+U01209__spa2shw,U01209,G01044,son buenos.,u'chimulusa' nuker'ka,spa,shw,valid,False,flashcards2,0.74005806,accepted
+U02838__shw2spa,U02838,G02607,"nerpi'la la'la' ipa' lunpallina', ta'kawa'su'.","diferente lengua hablarán, decimos.",shw,spa,valid,True,pdf_textos,0.6326003,accepted
+U02838__spa2shw,U02838,G02607,"diferente lengua hablarán, decimos.","nerpi'la la'la' ipa' lunpallina', ta'kawa'su'.",spa,shw,valid,True,pdf_textos,0.6326003,accepted
+U00607__shw2spa,U00607,G00499,idunwa',nademos.,shw,spa,valid,False,flashcards2,0.3374989,removed
+U00607__spa2shw,U00607,G00499,nademos.,idunwa',spa,shw,valid,False,flashcards2,0.3374989,removed
+U03390__shw2spa,U03390,G03154,wila ku'aperlusa dekkunchi'ñina' enpuni wiu'ksu',las niñas no caminan muy rápido.,shw,spa,valid,False,flashcards_oraciones,0.8482153,accepted
+U03390__spa2shw,U03390,G03154,las niñas no caminan muy rápido.,wila ku'aperlusa dekkunchi'ñina' enpuni wiu'ksu',spa,shw,valid,False,flashcards_oraciones,0.8482153,accepted
+U01541__shw2spa,U01541,G01347,lamapu'llina',gritaron.,shw,spa,valid,False,flashcards2,0.7974533,accepted
+U01541__spa2shw,U01541,G01347,gritaron.,lamapu'llina',spa,shw,valid,False,flashcards2,0.7974533,accepted
+U00017__shw2spa,U00017,G00014,¡asha!,"¡oh, no! (femenino)",shw,spa,valid,True,flashcards2,0.4644134,flagged_for_review
+U00017__spa2shw,U00017,G00014,"¡oh, no! (femenino)",¡asha!,spa,shw,valid,True,flashcards2,0.4644134,flagged_for_review
+U00202__shw2spa,U00202,G00151,erwa' ektu'lek,llego tarde.,shw,spa,valid,False,flashcards2,0.5997292,flagged_for_review
+U00202__spa2shw,U00202,G00151,llego tarde.,erwa' ektu'lek,spa,shw,valid,False,flashcards2,0.5997292,flagged_for_review
+U04377__shw2spa,U04377,G04112,utawansik wichi'llidek.,tarde en la noche dormimos.,shw,spa,valid,True,fidel_lomas,0.67988306,accepted
+U04377__spa2shw,U04377,G04112,tarde en la noche dormimos.,utawansik wichi'llidek.,spa,shw,valid,True,fidel_lomas,0.67988306,accepted
+U03641__shw2spa,U03641,G03394,nana wila luyulli kasiser'lu',el niño odia la oscuridad.,shw,spa,valid,False,flashcards_oraciones,0.7574241,accepted
+U03641__spa2shw,U03641,G03394,el niño odia la oscuridad.,nana wila luyulli kasiser'lu',spa,shw,valid,False,flashcards_oraciones,0.7574241,accepted
+U04215__shw2spa,U04215,G03951,nanek kana'lek kulliker'chawek.,ahí he ganado mi platita.,shw,spa,valid,True,fidel_lomas,0.7540938,accepted
+U04215__spa2shw,U04215,G03951,ahí he ganado mi platita.,nanek kana'lek kulliker'chawek.,spa,shw,valid,True,fidel_lomas,0.7540938,accepted
+U02827__shw2spa,U02827,G02596,nanek da'an lli'itulli dinlupinen.,"ahí entrando (dentro de la ballena, marcel) le vio su corazón.",shw,spa,valid,True,pdf_textos,0.6995077,accepted
+U02827__spa2shw,U02827,G02596,"ahí entrando (dentro de la ballena, marcel) le vio su corazón.",nanek da'an lli'itulli dinlupinen.,spa,shw,valid,True,pdf_textos,0.6995077,accepted
+U00438__shw2spa,U00438,G00351,tom dekkuntulli,tom camina.,shw,spa,valid,False,flashcards2,0.7667659,accepted
+U00438__spa2shw,U00438,G00351,tom camina.,tom dekkuntulli,spa,shw,valid,False,flashcards2,0.7667659,accepted
+U00231__shw2spa,U00231,G00177,ku'la nakui'nchu,prohibido pasar.,shw,spa,valid,False,flashcards2,0.5037441,flagged_for_review
+U00231__spa2shw,U00231,G00177,prohibido pasar.,ku'la nakui'nchu,spa,shw,valid,False,flashcards2,0.5037441,flagged_for_review
+U03712__shw2spa,U03712,G03463,kenmu'wa' pur'lek'wa' mumu'su',nosotros pescamos en grupo.,shw,spa,valid,False,flashcards_oraciones,0.59096384,flagged_for_review
+U03712__spa2shw,U03712,G03463,nosotros pescamos en grupo.,kenmu'wa' pur'lek'wa' mumu'su',spa,shw,valid,False,flashcards_oraciones,0.59096384,flagged_for_review
+U03973__shw2spa,U03973,G03717,asu' añimar dekpilli' ka'lu'tapalli.,"en la noche, este animal come la colpa.",shw,spa,valid,True,fidel_lomas,0.45083493,flagged_for_review
+U03973__spa2shw,U03973,G03717,"en la noche, este animal come la colpa.",asu' añimar dekpilli' ka'lu'tapalli.,spa,shw,valid,True,fidel_lomas,0.45083493,flagged_for_review
+U04245__shw2spa,U04245,G03981,"asu' kaluwi' iñer' lupak panker'chulli,","esta enfermedad ha arrasado en toda la tierra,",shw,spa,valid,True,fidel_lomas,0.7553948,accepted
+U04245__spa2shw,U04245,G03981,"esta enfermedad ha arrasado en toda la tierra,","asu' kaluwi' iñer' lupak panker'chulli,",spa,shw,valid,True,fidel_lomas,0.7553948,accepted
+U01151__shw2spa,U01151,G00998,teklerier' ninchita'mak,adivina.,shw,spa,valid,False,flashcards2,0.09019916,removed
+U01151__spa2shw,U01151,G00998,adivina.,teklerier' ninchita'mak,spa,shw,valid,False,flashcards2,0.09019916,removed
+U04321__shw2spa,U04321,G04056,kerka'nen a'ta'wanchi'ñi kulliker' pawansu'malek.,no terminó su primaria por falta de dinero.,shw,spa,valid,True,fidel_lomas,0.6558784,accepted
+U04321__spa2shw,U04321,G04056,no terminó su primaria por falta de dinero.,kerka'nen a'ta'wanchi'ñi kulliker' pawansu'malek.,spa,shw,valid,True,fidel_lomas,0.6558784,accepted
+U02299__shw2spa,U02299,G02068,ñienkasu' wilaweklusa' lachek'i'ñina'.,ninguno de mis hijos entiende.,shw,spa,valid,True,pdf_textos,0.6834142,accepted
+U02299__spa2shw,U02299,G02068,ninguno de mis hijos entiende.,ñienkasu' wilaweklusa' lachek'i'ñina'.,spa,shw,valid,True,pdf_textos,0.6834142,accepted
+U01219__shw2spa,U01219,G01053,tom tekinchi'walek tulli,tom prometió.,shw,spa,valid,False,flashcards2,0.53486836,flagged_for_review
+U01219__spa2shw,U01219,G01053,tom prometió.,tom tekinchi'walek tulli,spa,shw,valid,False,flashcards2,0.53486836,flagged_for_review
+U03741__shw2spa,U03741,G03491,kuda ku'la lli'inu'pi'ñidek pa'tu'nen'kek,nosotras no piensamos en su familia.,shw,spa,valid,False,flashcards_oraciones,0.8370786,accepted
+U03741__spa2shw,U03741,G03491,nosotras no piensamos en su familia.,kuda ku'la lli'inu'pi'ñidek pa'tu'nen'kek,spa,shw,valid,False,flashcards_oraciones,0.8370786,accepted
+U02826__shw2spa,U02826,G02595,marcel ima pachishak nu'wantan lanla'ler lanpi'tulli.,dicen que cuando marcel bajaba el río en un patecito la ballena se lo tragó.,shw,spa,valid,True,pdf_textos,0.65775204,accepted
+U02826__spa2shw,U02826,G02595,dicen que cuando marcel bajaba el río en un patecito la ballena se lo tragó.,marcel ima pachishak nu'wantan lanla'ler lanpi'tulli.,spa,shw,valid,True,pdf_textos,0.65775204,accepted
+U03044__shw2spa,U03044,G02813,"nu'taminerkenmu'wa' nanadaper a'ka asu' kudanta' ñinchipa'tullidek wilakudek ñamudek, du'pa'dek'amudek.","tratándonos así todas esas cosas nosotros hemos aprendido de otros cuando éramos niños, sentándonos muy cerca a su lado.",shw,spa,valid,True,pdf_textos,0.63752925,accepted
+U03044__spa2shw,U03044,G02813,"tratándonos así todas esas cosas nosotros hemos aprendido de otros cuando éramos niños, sentándonos muy cerca a su lado.","nu'taminerkenmu'wa' nanadaper a'ka asu' kudanta' ñinchipa'tullidek wilakudek ñamudek, du'pa'dek'amudek.",spa,shw,valid,True,pdf_textos,0.63752925,accepted
+U00934__shw2spa,U00934,G00797,tandenñiden,te queremos.,shw,spa,valid,True,flashcards2,0.3764983,removed
+U00934__spa2shw,U00934,G00797,te queremos.,tandenñiden,spa,shw,valid,True,flashcards2,0.3764983,removed
+U00935__shw2spa,U00935,G00797,tandenñiden,te amamos.,shw,spa,valid,True,flashcards2,0.33632573,removed
+U00935__spa2shw,U00935,G00797,te amamos.,tandenñiden,spa,shw,valid,True,flashcards2,0.33632573,removed
+U01580__shw2spa,U01580,G01385,yalli'walusa' nuka'kawa',somos primos.,shw,spa,valid,False,flashcards2,0.75127375,accepted
+U01580__spa2shw,U01580,G01385,somos primos.,yalli'walusa' nuka'kawa',spa,shw,valid,False,flashcards2,0.75127375,accepted
+U03168__shw2spa,U03168,G02937,naneklima asu' kineklada' llillin lli'tencha'lli.,de allí dice se originaron los nombres shiwilu.,shw,spa,valid,False,pdf_textos,0.37359113,removed
+U03168__spa2shw,U03168,G02937,de allí dice se originaron los nombres shiwilu.,naneklima asu' kineklada' llillin lli'tencha'lli.,spa,shw,valid,False,pdf_textos,0.37359113,removed
+U00966__shw2spa,U00966,G00826,a'lliupiken nuka'ma,sos grande.,shw,spa,valid,False,flashcards2,0.467449,flagged_for_review
+U00966__spa2shw,U00966,G00826,sos grande.,a'lliupiken nuka'ma,spa,shw,valid,False,flashcards2,0.467449,flagged_for_review
+U02706__shw2spa,U02706,G02475,"nu'wanta'sik ima sameller tupitunta'lli,","dice que cuando iba río abajo los peces lo siguieron,",shw,spa,valid,True,pdf_textos,0.5601336,flagged_for_review
+U02706__spa2shw,U02706,G02475,"dice que cuando iba río abajo los peces lo siguieron,","nu'wanta'sik ima sameller tupitunta'lli,",spa,shw,valid,True,pdf_textos,0.5601336,flagged_for_review
+U01302__shw2spa,U01302,G01127,saka'tusu' ñapala,estás cansado.,shw,spa,valid,False,flashcards2,0.8465866,accepted
+U01302__spa2shw,U01302,G01127,estás cansado.,saka'tusu' ñapala,spa,shw,valid,False,flashcards2,0.8465866,accepted
+U01258__shw2spa,U01258,G01088,¿den ata'wantulli?,¿quién canceló?,shw,spa,valid,False,flashcards2,0.5691535,flagged_for_review
+U01258__spa2shw,U01258,G01088,¿quién canceló?,¿den ata'wantulli?,spa,shw,valid,False,flashcards2,0.5691535,flagged_for_review
+U00715__shw2spa,U00715,G01718,¿a'ta'wantulekwa'?,¿hemos terminado?,shw,spa,valid,True,flashcards2,0.7785231,accepted
+U00715__spa2shw,U00715,G01718,¿hemos terminado?,¿a'ta'wantulekwa'?,spa,shw,valid,True,flashcards2,0.7785231,accepted
+U01933__shw2spa,U01933,G01718,¿a'ta'wantulekwa'?,¿terminamos?,shw,spa,valid,True,flashcards2,0.7860536,accepted
+U01933__spa2shw,U01933,G01718,¿terminamos?,¿a'ta'wantulekwa'?,spa,shw,valid,True,flashcards2,0.7860536,accepted
+U02495__shw2spa,U02495,G02264,kua wek'amu suktasa' willaweklusa' a'ñilek.,viniendo he tenido sólo seis hijos.,shw,spa,valid,True,pdf_textos,0.6584544,accepted
+U02495__spa2shw,U02495,G02264,viniendo he tenido sólo seis hijos.,kua wek'amu suktasa' willaweklusa' a'ñilek.,spa,shw,valid,True,pdf_textos,0.6584544,accepted
+U03269__shw2spa,U03269,G03038,¿lli'lan'cha yalli'shauk?,¿has visto a mi hermano?,shw,spa,valid,False,flashcards_oraciones,0.63596046,accepted
+U03269__spa2shw,U03269,G03038,¿has visto a mi hermano?,¿lli'lan'cha yalli'shauk?,spa,shw,valid,False,flashcards_oraciones,0.63596046,accepted
+U00501__shw2spa,U00501,G00409,chinku'lli,tosió.,shw,spa,valid,False,flashcards2,0.3605095,removed
+U00501__spa2shw,U00501,G00409,tosió.,chinku'lli,spa,shw,valid,False,flashcards2,0.3605095,removed
+U03898__shw2spa,U03898,G03642,dakalamek mulli ukaki.,la hoja de muenilla es buena para la fiebre.,shw,spa,valid,False,fidel_lomas,0.48143002,flagged_for_review
+U03898__spa2shw,U03898,G03642,la hoja de muenilla es buena para la fiebre.,dakalamek mulli ukaki.,spa,shw,valid,False,fidel_lomas,0.48143002,flagged_for_review
+U00539__shw2spa,U00539,G00441,luwantulek sanek,necesito hielo.,shw,spa,valid,False,flashcards2,0.54664534,flagged_for_review
+U00539__spa2shw,U00539,G00441,necesito hielo.,luwantulek sanek,spa,shw,valid,False,flashcards2,0.54664534,flagged_for_review
+U01222__shw2spa,U01222,G01056,chuma yunsu'lli,tomás renunció.,shw,spa,valid,False,flashcards2,0.79540884,accepted
+U01222__spa2shw,U01222,G01056,tomás renunció.,chuma yunsu'lli,spa,shw,valid,False,flashcards2,0.79540884,accepted
+U00625__shw2spa,U00625,G00516,ñapaker' insek'dipersu',mantente alerta.,shw,spa,valid,False,flashcards2,0.51851934,flagged_for_review
+U00625__spa2shw,U00625,G00516,mantente alerta.,ñapaker' insek'dipersu',spa,shw,valid,False,flashcards2,0.51851934,flagged_for_review
+U04307__shw2spa,U04307,G04043,"wa'na punka'a'su'daperler,","las lanchas,",shw,spa,valid,True,fidel_lomas,0.4771029,flagged_for_review
+U04307__spa2shw,U04307,G04043,"las lanchas,","wa'na punka'a'su'daperler,",spa,shw,valid,True,fidel_lomas,0.4771029,flagged_for_review
+U00487__shw2spa,U00487,G00396,yatulener'tama,no canten.,shw,spa,valid,False,flashcards2,0.6712769,accepted
+U00487__spa2shw,U00487,G00396,no canten.,yatulener'tama,spa,shw,valid,False,flashcards2,0.6712769,accepted
+U02946__shw2spa,U02946,G02715,"¡nantapiku'la', nasu'ku', wilalusa'! itudekllima.","¡ánimo muchachos, tengan valor, en acción! les dijo.",shw,spa,valid,True,pdf_textos,0.5860975,flagged_for_review
+U02946__spa2shw,U02946,G02715,"¡ánimo muchachos, tengan valor, en acción! les dijo.","¡nantapiku'la', nasu'ku', wilalusa'! itudekllima.",spa,shw,valid,True,pdf_textos,0.5860975,flagged_for_review
+U01385__shw2spa,U01385,G01204,americano nuka'ka,soy americano.,shw,spa,valid,False,flashcards2,0.86072505,accepted
+U01385__spa2shw,U01385,G01204,soy americano.,americano nuka'ka,spa,shw,valid,False,flashcards2,0.86072505,accepted
+U02500__shw2spa,U02500,G02269,nanek kua wek'amu ipa'la asek asu' senñula' a'lunpallun.,entonces a mí viniendo ahora esta señora me está haciendo contar.,shw,spa,valid,True,pdf_textos,0.6772828,accepted
+U02500__spa2shw,U02500,G02269,entonces a mí viniendo ahora esta señora me está haciendo contar.,nanek kua wek'amu ipa'la asek asu' senñula' a'lunpallun.,spa,shw,valid,True,pdf_textos,0.6772828,accepted
+U03588__shw2spa,U03588,G03343,nana wila kuaperlusa' luntullina' ala'sa' cuentu,las niñas leen un cuento.,shw,spa,valid,False,flashcards_oraciones,0.72633564,accepted
+U03588__spa2shw,U03588,G03343,las niñas leen un cuento.,nana wila kuaperlusa' luntullina' ala'sa' cuentu,spa,shw,valid,False,flashcards_oraciones,0.72633564,accepted
+U02964__shw2spa,U02964,G02733,"nana inpikanpasik ima, pa'anna', pasek pasekka'tullina', paki'tullina'.","dice que mientras (el tigre negro) se revolcaba, (los hombres) se acercaron, lo picaron varias veces y lo mataron violentamente.",shw,spa,valid,True,pdf_textos,0.3444438,removed
+U02964__spa2shw,U02964,G02733,"dice que mientras (el tigre negro) se revolcaba, (los hombres) se acercaron, lo picaron varias veces y lo mataron violentamente.","nana inpikanpasik ima, pa'anna', pasek pasekka'tullina', paki'tullina'.",spa,shw,valid,True,pdf_textos,0.3444438,removed
+U00035__shw2spa,U00035,G00030,a'ñapalek shunka'iskun,tengo diecinueve.,shw,spa,valid,False,flashcards2,0.38369858,removed
+U00035__spa2shw,U00035,G00030,tengo diecinueve.,a'ñapalek shunka'iskun,spa,shw,valid,False,flashcards2,0.38369858,removed
+U04433__shw2spa,U04433,G04168,kuda chimia'nsekudek' la'la'mapu'wa' wer'etchu.,cuando nosotros muramos nuestra lengua se perderá.,shw,spa,valid,True,fidel_lomas,0.60370547,accepted
+U04433__spa2shw,U04433,G04168,cuando nosotros muramos nuestra lengua se perderá.,kuda chimia'nsekudek' la'la'mapu'wa' wer'etchu.,spa,shw,valid,True,fidel_lomas,0.60370547,accepted
+U02907__shw2spa,U02907,G02676,¿den ilanma' a'cha yapa'etchunma'?,¿quiénes de ustedes quisieran ir (a buscar a los otros hombres)?,shw,spa,valid,True,pdf_textos,0.4416008,removed
+U02907__spa2shw,U02907,G02676,¿quiénes de ustedes quisieran ir (a buscar a los otros hombres)?,¿den ilanma' a'cha yapa'etchunma'?,spa,shw,valid,True,pdf_textos,0.4416008,removed
+U03545__shw2spa,U03545,G03302,nawa' lunpallina' pidek'kek,ellos hablan en la casa.,shw,spa,valid,False,flashcards_oraciones,0.8716446,accepted
+U03545__spa2shw,U03545,G03302,ellos hablan en la casa.,nawa' lunpallina' pidek'kek,spa,shw,valid,False,flashcards_oraciones,0.8716446,accepted

@@ -50,15 +50,30 @@ def load_source(source_config: dict) -> pd.DataFrame | None:
         return None
     
     source_path = PROJECT_ROOT / source_config["path"]
+    filtered_candidate = (
+        PROJECT_ROOT / "data" / "intermediate" / "01_filtrado" / f"{source_config['name']}.csv"
+    )
+    using_filtered = filtered_candidate.exists()
+    if using_filtered:
+        source_path = filtered_candidate
+
     if not source_path.exists():
         print(f"  ADVERTENCIA: Archivo no encontrado para fuente '{source_config['name']}': {source_path}")
         return None
-    
-    df = pd.read_csv(source_path, encoding="utf-8-sig")
-    
-    esp_col = source_config.get("esp_column", "ESP")
-    shi_col = source_config.get("shiwilu_column", "SHIWILU")
-    pair_id_col = source_config.get("pair_id_column", "pair_id")
+
+    read_options = source_config.get("read_options", {})
+    if using_filtered:
+        # 01_filtrar always emits canonical ESP/SHIWILU/pair_id columns,
+        # ignoring the per-source read_options used on the raw input.
+        df = pd.read_csv(source_path, encoding="utf-8-sig")
+        esp_col = "ESP"
+        shi_col = "SHIWILU"
+        pair_id_col = "pair_id"
+    else:
+        df = pd.read_csv(source_path, encoding="utf-8-sig", **read_options)
+        esp_col = source_config.get("esp_column", "ESP")
+        shi_col = source_config.get("shiwilu_column", "SHIWILU")
+        pair_id_col = source_config.get("pair_id_column", "pair_id")
     
     if esp_col not in df.columns or shi_col not in df.columns:
         print(f"  ADVERTENCIA: Columnas ESP/SHIWILU no encontradas en '{source_config['name']}'")

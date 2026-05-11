@@ -1,0 +1,2 @@
+[phase8a] wrote reports\05_nmt\evaluation_xl\comparison_nllb_bidi_lora_v0_xl_vs_nllb_bidi_lora_v1_bt_xl.md
+[phase8a] available metric sources: {'nllb_bidi_lora_v0_xl_eval': True, 'nllb_bidi_lora_v0_xl_rerank': True, 'nllb_bidi_lora_v0_xl_rare': False, 'nllb_bidi_lora_v0_xl_rare_rerank': False, 'nllb_bidi_lora_v1_bt_xl_eval': True, 'nllb_bidi_lora_v1_bt_xl_rerank': True, 'nllb_bidi_lora_v1_bt_xl_rare': False, 'nllb_bidi_lora_v1_bt_xl_rare_rerank': False}

@@ -1,0 +1,213 @@
+﻿id,pair_id,group_id,source,target,source_lang,target_lang,split,has_audit_flags,origin_source,score,label
+RTBT000000__spa2shw,RTBT000000,GRTBT000000,Hola Dean.,Hola Dean,spa,shw,train,False,backtranslation_roundtrip_v0,0.9119168519973755,accepted
+RTBT000000__shw2spa,RTBT000000,GRTBT000000,Hola Dean,Hola Dean.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9119168519973755,accepted
+RTBT000002__spa2shw,RTBT000002,GRTBT000002,¡Dios mío! ¡Bertie!,¡lupa'u! Bertie!,spa,shw,train,False,backtranslation_roundtrip_v0,0.70378577709198,accepted
+RTBT000002__shw2spa,RTBT000002,GRTBT000002,¡lupa'u! Bertie!,¡Dios mío! ¡Bertie!,shw,spa,train,False,backtranslation_roundtrip_v0,0.70378577709198,accepted
+RTBT000034__spa2shw,RTBT000034,GRTBT000034,Tómalo.,wer'ker',spa,shw,train,False,backtranslation_roundtrip_v0,0.7536224126815796,accepted
+RTBT000034__shw2spa,RTBT000034,GRTBT000034,wer'ker',Tómalo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7536224126815796,accepted
+RTBT000051__spa2shw,RTBT000051,GRTBT000051,"Sat, 05/18/2013 - 10:00","sat, 05/18/2013 - 10:00",spa,shw,train,False,backtranslation_roundtrip_v0,0.9617973566055298,accepted
+RTBT000051__shw2spa,RTBT000051,GRTBT000051,"sat, 05/18/2013 - 10:00","Sat, 05/18/2013 - 10:00",shw,spa,train,False,backtranslation_roundtrip_v0,0.9617973566055298,accepted
+RTBT000065__spa2shw,RTBT000065,GRTBT000065,- ¿Eh?,- ¿eh?,spa,shw,train,False,backtranslation_roundtrip_v0,0.936714231967926,accepted
+RTBT000065__shw2spa,RTBT000065,GRTBT000065,- ¿eh?,- ¿Eh?,shw,spa,train,False,backtranslation_roundtrip_v0,0.936714231967926,accepted
+RTBT000072__spa2shw,RTBT000072,GRTBT000072,"¡No, no!","¡a'cha, a'cha!",spa,shw,train,False,backtranslation_roundtrip_v0,0.8064627647399902,accepted
+RTBT000072__shw2spa,RTBT000072,GRTBT000072,"¡a'cha, a'cha!","¡No, no!",shw,spa,train,False,backtranslation_roundtrip_v0,0.8064627647399902,accepted
+RTBT000094__spa2shw,RTBT000094,GRTBT000094,¿Qué es esto?,¿ma'su' asu'?,spa,shw,train,False,backtranslation_roundtrip_v0,0.994415819644928,accepted
+RTBT000094__shw2spa,RTBT000094,GRTBT000094,¿ma'su' asu'?,¿Qué es esto?,shw,spa,train,False,backtranslation_roundtrip_v0,0.994415819644928,accepted
+RTBT000112__spa2shw,RTBT000112,GRTBT000112,¿Max?,¿Max?,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000112__shw2spa,RTBT000112,GRTBT000112,¿Max?,¿Max?,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000124__spa2shw,RTBT000124,GRTBT000124,¡Leo!,Leo!,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000124__shw2spa,RTBT000124,GRTBT000124,Leo!,¡Leo!,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000128__spa2shw,RTBT000128,GRTBT000128,- ¡Sí!,- ¡yes!,spa,shw,train,False,backtranslation_roundtrip_v0,0.8681895732879639,accepted
+RTBT000128__shw2spa,RTBT000128,GRTBT000128,- ¡yes!,- ¡Sí!,shw,spa,train,False,backtranslation_roundtrip_v0,0.8681895732879639,accepted
+RTBT000144__spa2shw,RTBT000144,GRTBT000144,Eritrea,Eritrea,spa,shw,train,False,backtranslation_roundtrip_v0,1.000000238418579,accepted
+RTBT000144__shw2spa,RTBT000144,GRTBT000144,Eritrea,Eritrea,shw,spa,train,False,backtranslation_roundtrip_v0,1.000000238418579,accepted
+RTBT000146__spa2shw,RTBT000146,GRTBT000146,Oh.,oh,spa,shw,train,False,backtranslation_roundtrip_v0,0.8205899000167847,accepted
+RTBT000146__shw2spa,RTBT000146,GRTBT000146,oh,Oh.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8205899000167847,accepted
+RTBT000152__spa2shw,RTBT000152,GRTBT000152,- ¿Qué?,- ¿malek?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7162303924560547,accepted
+RTBT000152__shw2spa,RTBT000152,GRTBT000152,- ¿malek?,- ¿Qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7162303924560547,accepted
+RTBT000164__spa2shw,RTBT000164,GRTBT000164,- H-O-R.,- h-O-R,spa,shw,train,False,backtranslation_roundtrip_v0,0.8242034912109375,accepted
+RTBT000164__shw2spa,RTBT000164,GRTBT000164,- h-O-R,- H-O-R.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8242034912109375,accepted
+RTBT000175__spa2shw,RTBT000175,GRTBT000175,¡Oh!,¡Oh!,spa,shw,train,False,backtranslation_roundtrip_v0,0.9807793498039246,accepted
+RTBT000175__shw2spa,RTBT000175,GRTBT000175,¡Oh!,¡Oh!,shw,spa,train,False,backtranslation_roundtrip_v0,0.9807793498039246,accepted
+RTBT000177__spa2shw,RTBT000177,GRTBT000177,"- Bueno, ¿qué vamos a hacer?","- ipa'la, ¿ma'nenwa'pu'cha?",spa,shw,train,False,backtranslation_roundtrip_v0,0.8738739490509033,accepted
+RTBT000177__shw2spa,RTBT000177,GRTBT000177,"- ipa'la, ¿ma'nenwa'pu'cha?","- Bueno, ¿qué vamos a hacer?",shw,spa,train,False,backtranslation_roundtrip_v0,0.8738739490509033,accepted
+RTBT000198__spa2shw,RTBT000198,GRTBT000198,- ¿Para qué?,- ¿malek?,spa,shw,train,False,backtranslation_roundtrip_v0,0.9085455536842346,accepted
+RTBT000198__shw2spa,RTBT000198,GRTBT000198,- ¿malek?,- ¿Para qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.9085455536842346,accepted
+RTBT000202__spa2shw,RTBT000202,GRTBT000202,Ojeé su página web.,wichi'lek web'na',spa,shw,train,False,backtranslation_roundtrip_v0,0.8159286379814148,accepted
+RTBT000202__shw2spa,RTBT000202,GRTBT000202,wichi'lek web'na',Ojeé su página web.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8159286379814148,accepted
+RTBT000206__spa2shw,RTBT000206,GRTBT000206,- Patria!,¡patria!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7938962578773499,accepted
+RTBT000206__shw2spa,RTBT000206,GRTBT000206,¡patria!,- Patria!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7938962578773499,accepted
+RTBT000236__spa2shw,RTBT000236,GRTBT000236,Bobby!,¡Bobby!,spa,shw,train,False,backtranslation_roundtrip_v0,0.9152144193649292,accepted
+RTBT000236__shw2spa,RTBT000236,GRTBT000236,¡Bobby!,Bobby!,shw,spa,train,False,backtranslation_roundtrip_v0,0.9152144193649292,accepted
+RTBT000252__spa2shw,RTBT000252,GRTBT000252,¿El doctor?,¿ doctor?,spa,shw,train,False,backtranslation_roundtrip_v0,0.8351715803146362,accepted
+RTBT000252__shw2spa,RTBT000252,GRTBT000252,¿ doctor?,¿El doctor?,shw,spa,train,False,backtranslation_roundtrip_v0,0.8351715803146362,accepted
+RTBT000264__spa2shw,RTBT000264,GRTBT000264,Tú el primero.,kenma nuka'a,spa,shw,train,False,backtranslation_roundtrip_v0,0.7080602645874023,accepted
+RTBT000264__shw2spa,RTBT000264,GRTBT000264,kenma nuka'a,Tú el primero.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7080602645874023,accepted
+RTBT000286__spa2shw,RTBT000286,GRTBT000286,Mei.,Mei,spa,shw,train,False,backtranslation_roundtrip_v0,0.7126882076263428,accepted
+RTBT000286__shw2spa,RTBT000286,GRTBT000286,Mei,Mei.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7126882076263428,accepted
+RTBT000290__spa2shw,RTBT000290,GRTBT000290,Así.,nu'su',spa,shw,train,False,backtranslation_roundtrip_v0,0.7445400357246399,accepted
+RTBT000290__shw2spa,RTBT000290,GRTBT000290,nu'su',Así.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7445400357246399,accepted
+RTBT000296__spa2shw,RTBT000296,GRTBT000296,¿Stephen?,¿Stephen?,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000296__shw2spa,RTBT000296,GRTBT000296,¿Stephen?,¿Stephen?,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000298__spa2shw,RTBT000298,GRTBT000298,¿Qué?,¿ma'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000298__shw2spa,RTBT000298,GRTBT000298,¿ma'cha?,¿Qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000305__spa2shw,RTBT000305,GRTBT000305,"- No, no.","- nu'a, nu'a",spa,shw,train,False,backtranslation_roundtrip_v0,0.7122565507888794,accepted
+RTBT000305__shw2spa,RTBT000305,GRTBT000305,"- nu'a, nu'a","- No, no.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7122565507888794,accepted
+RTBT000308__spa2shw,RTBT000308,GRTBT000308,66.,66,spa,shw,train,False,backtranslation_roundtrip_v0,0.7532280087471008,accepted
+RTBT000308__shw2spa,RTBT000308,GRTBT000308,66,66.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7532280087471008,accepted
+RTBT000316__spa2shw,RTBT000316,GRTBT000316,Mira.,lli'ker',spa,shw,train,False,backtranslation_roundtrip_v0,0.9834880828857422,accepted
+RTBT000316__shw2spa,RTBT000316,GRTBT000316,lli'ker',Mira.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9834880828857422,accepted
+RTBT000317__spa2shw,RTBT000317,GRTBT000317,7.,7,spa,shw,train,False,backtranslation_roundtrip_v0,0.7455740571022034,accepted
+RTBT000317__shw2spa,RTBT000317,GRTBT000317,7,7.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7455740571022034,accepted
+RTBT000330__spa2shw,RTBT000330,GRTBT000330,¿Qué?,¿ma'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000330__shw2spa,RTBT000330,GRTBT000330,¿ma'cha?,¿Qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000339__spa2shw,RTBT000339,GRTBT000339,¿PPG PIP?,¿PPG PIP?,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000339__shw2spa,RTBT000339,GRTBT000339,¿PPG PIP?,¿PPG PIP?,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000340__spa2shw,RTBT000340,GRTBT000340,"Ya entramos en King""s Cross.",nu'ta' ñapallidek King's Cross.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7164509892463684,accepted
+RTBT000340__shw2spa,RTBT000340,GRTBT000340,nu'ta' ñapallidek King's Cross.,"Ya entramos en King""s Cross.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7164509892463684,accepted
+RTBT000348__spa2shw,RTBT000348,GRTBT000348,¿Quién?,¿den?,spa,shw,train,False,backtranslation_roundtrip_v0,0.9491876363754272,accepted
+RTBT000348__shw2spa,RTBT000348,GRTBT000348,¿den?,¿Quién?,shw,spa,train,False,backtranslation_roundtrip_v0,0.9491876363754272,accepted
+RTBT000351__spa2shw,RTBT000351,GRTBT000351,"Dirección European Development Centre, 3 Milton Park, Abingdon, Oxon OX14 4RN, Reino Unido","European Development Centre, 3 Milton Park, Abingdon, Oxon OX14 4RN, UK",spa,shw,train,False,backtranslation_roundtrip_v0,0.8940699696540833,accepted
+RTBT000351__shw2spa,RTBT000351,GRTBT000351,"European Development Centre, 3 Milton Park, Abingdon, Oxon OX14 4RN, UK","Dirección European Development Centre, 3 Milton Park, Abingdon, Oxon OX14 4RN, Reino Unido",shw,spa,train,False,backtranslation_roundtrip_v0,0.8940699696540833,accepted
+RTBT000370__spa2shw,RTBT000370,GRTBT000370,"Países Bajos y Luxemburgo, Harhet Axelsson (Universidad de Halmstad) sobre Suécia, Theo Papatheodossiou (Instituto de Educación Tecnológica) sobre Grecia, Alvaro Martins sobre Portugal y Virpi Ripatti (Consejo Nacional Educativo) sobre Finlandia.","U'la'lusa' uklusa', Harhet Axelsson (Halmstad University) su'edek, Theo Papatheodossiou (Instituto de Educación Tecnológica) Grecia, Alvaro Martins Portugal, Virpi Ripatti (Consejo Nacional Educativo) Finlandia.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7845247387886047,accepted
+RTBT000370__shw2spa,RTBT000370,GRTBT000370,"U'la'lusa' uklusa', Harhet Axelsson (Halmstad University) su'edek, Theo Papatheodossiou (Instituto de Educación Tecnológica) Grecia, Alvaro Martins Portugal, Virpi Ripatti (Consejo Nacional Educativo) Finlandia.","Países Bajos y Luxemburgo, Harhet Axelsson (Universidad de Halmstad) sobre Suécia, Theo Papatheodossiou (Instituto de Educación Tecnológica) sobre Grecia, Alvaro Martins sobre Portugal y Virpi Ripatti (Consejo Nacional Educativo) sobre Finlandia.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7845247387886047,accepted
+RTBT000388__spa2shw,RTBT000388,GRTBT000388,177.,177.,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000388__shw2spa,RTBT000388,GRTBT000388,177.,177.,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000399__spa2shw,RTBT000399,GRTBT000399,"(DO L 229 de 28.8.1985, p. 20)","(DO L 229 de 28.8.1985, p. 20)",spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000399__shw2spa,RTBT000399,GRTBT000399,"(DO L 229 de 28.8.1985, p. 20)","(DO L 229 de 28.8.1985, p. 20)",shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000400__spa2shw,RTBT000400,GRTBT000400,¿Qué?,¿ma'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000400__shw2spa,RTBT000400,GRTBT000400,¿ma'cha?,¿Qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000411__spa2shw,RTBT000411,GRTBT000411,EU/ 2/ 06/ 065/ 003,EU/ 2/ 06/ 065/ 003,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000411__shw2spa,RTBT000411,GRTBT000411,EU/ 2/ 06/ 065/ 003,EU/ 2/ 06/ 065/ 003,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000421__spa2shw,RTBT000421,GRTBT000421,Yo...,kua...,spa,shw,train,False,backtranslation_roundtrip_v0,0.9438779354095459,accepted
+RTBT000421__shw2spa,RTBT000421,GRTBT000421,kua...,Yo...,shw,spa,train,False,backtranslation_roundtrip_v0,0.9438779354095459,accepted
+RTBT000425__spa2shw,RTBT000425,GRTBT000425,¿Por qué?,¿ma'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.9965822696685791,accepted
+RTBT000425__shw2spa,RTBT000425,GRTBT000425,¿ma'cha?,¿Por qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.9965822696685791,accepted
+RTBT000428__spa2shw,RTBT000428,GRTBT000428,¡Papá!,tata!,spa,shw,train,False,backtranslation_roundtrip_v0,0.825710654258728,accepted
+RTBT000428__shw2spa,RTBT000428,GRTBT000428,tata!,¡Papá!,shw,spa,train,False,backtranslation_roundtrip_v0,0.825710654258728,accepted
+RTBT000430__spa2shw,RTBT000430,GRTBT000430,Yo...,kua...,spa,shw,train,False,backtranslation_roundtrip_v0,0.9438780546188354,accepted
+RTBT000430__shw2spa,RTBT000430,GRTBT000430,kua...,Yo...,shw,spa,train,False,backtranslation_roundtrip_v0,0.9438780546188354,accepted
+RTBT000435__spa2shw,RTBT000435,GRTBT000435,Doctores.,doctor'lusa',spa,shw,train,False,backtranslation_roundtrip_v0,0.8321895599365234,accepted
+RTBT000435__shw2spa,RTBT000435,GRTBT000435,doctor'lusa',Doctores.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8321895599365234,accepted
+RTBT000444__spa2shw,RTBT000444,GRTBT000444,"Véase también supra, nota 22, párrs.","a'ta'pinta' upper, nota 22, párr.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8140994310379028,accepted
+RTBT000444__shw2spa,RTBT000444,GRTBT000444,"a'ta'pinta' upper, nota 22, párr.","Véase también supra, nota 22, párrs.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8140994310379028,accepted
+RTBT000449__spa2shw,RTBT000449,GRTBT000449,Mmm!,¡mamu!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7041785717010498,accepted
+RTBT000449__shw2spa,RTBT000449,GRTBT000449,¡mamu!,Mmm!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7041785717010498,accepted
+RTBT000452__spa2shw,RTBT000452,GRTBT000452,- Es Joe.,- Joe nuka'a,spa,shw,train,False,backtranslation_roundtrip_v0,0.9641522765159607,accepted
+RTBT000452__shw2spa,RTBT000452,GRTBT000452,- Joe nuka'a,- Es Joe.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9641522765159607,accepted
+RTBT000456__spa2shw,RTBT000456,GRTBT000456,"Yvon, enciende la pantalla.","Yvon, u'tulli ekrano.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8657721281051636,accepted
+RTBT000456__shw2spa,RTBT000456,GRTBT000456,"Yvon, u'tulli ekrano.","Yvon, enciende la pantalla.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8657721281051636,accepted
+RTBT000464__spa2shw,RTBT000464,GRTBT000464,-Denis.,-Denis,spa,shw,train,False,backtranslation_roundtrip_v0,0.8599530458450317,accepted
+RTBT000464__shw2spa,RTBT000464,GRTBT000464,-Denis,-Denis.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8599530458450317,accepted
+RTBT000481__spa2shw,RTBT000481,GRTBT000481,1.,1.,spa,shw,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT000481__shw2spa,RTBT000481,GRTBT000481,1.,1.,shw,spa,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT000483__spa2shw,RTBT000483,GRTBT000483,¡Sí!,¡yes!,spa,shw,train,False,backtranslation_roundtrip_v0,0.896821141242981,accepted
+RTBT000483__shw2spa,RTBT000483,GRTBT000483,¡yes!,¡Sí!,shw,spa,train,False,backtranslation_roundtrip_v0,0.896821141242981,accepted
+RTBT000501__spa2shw,RTBT000501,GRTBT000501,"Ella no lo hará, papá.","nana ku'la lli'inchitulli, papak.",spa,shw,train,False,backtranslation_roundtrip_v0,0.734453558921814,accepted
+RTBT000501__shw2spa,RTBT000501,GRTBT000501,"nana ku'la lli'inchitulli, papak.","Ella no lo hará, papá.",shw,spa,train,False,backtranslation_roundtrip_v0,0.734453558921814,accepted
+RTBT000503__spa2shw,RTBT000503,GRTBT000503,"Y bien, Ross...","ipa'la, Ross...",spa,shw,train,False,backtranslation_roundtrip_v0,0.8390719890594482,accepted
+RTBT000503__shw2spa,RTBT000503,GRTBT000503,"ipa'la, Ross...","Y bien, Ross...",shw,spa,train,False,backtranslation_roundtrip_v0,0.8390719890594482,accepted
+RTBT000506__spa2shw,RTBT000506,GRTBT000506,¡Por Dios!,¡Dios!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7180824279785156,accepted
+RTBT000506__shw2spa,RTBT000506,GRTBT000506,¡Dios!,¡Por Dios!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7180824279785156,accepted
+RTBT000508__spa2shw,RTBT000508,GRTBT000508,Lea esto.,lek'ker' asu',spa,shw,train,False,backtranslation_roundtrip_v0,0.9726207256317139,accepted
+RTBT000508__shw2spa,RTBT000508,GRTBT000508,lek'ker' asu',Lea esto.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9726207256317139,accepted
+RTBT000510__spa2shw,RTBT000510,GRTBT000510,- ¿Yo?,- ¿kua?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7535445690155029,accepted
+RTBT000510__shw2spa,RTBT000510,GRTBT000510,- ¿kua?,- ¿Yo?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7535445690155029,accepted
+RTBT000539__spa2shw,RTBT000539,GRTBT000539,¿Qué es esto?,¿ma'su' asu'?,spa,shw,train,False,backtranslation_roundtrip_v0,0.994415819644928,accepted
+RTBT000539__shw2spa,RTBT000539,GRTBT000539,¿ma'su' asu'?,¿Qué es esto?,shw,spa,train,False,backtranslation_roundtrip_v0,0.994415819644928,accepted
+RTBT000558__spa2shw,RTBT000558,GRTBT000558,¿Por qué no?,¿ma'pu'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7545263171195984,accepted
+RTBT000558__shw2spa,RTBT000558,GRTBT000558,¿ma'pu'cha?,¿Por qué no?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7545263171195984,accepted
+RTBT000570__spa2shw,RTBT000570,GRTBT000570,¡Piérdete!,¡aner'ker'!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7363764643669128,accepted
+RTBT000570__shw2spa,RTBT000570,GRTBT000570,¡aner'ker'!,¡Piérdete!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7363764643669128,accepted
+RTBT000571__spa2shw,RTBT000571,GRTBT000571,¡Bien!,¡musu'!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7212384343147278,accepted
+RTBT000571__shw2spa,RTBT000571,GRTBT000571,¡musu'!,¡Bien!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7212384343147278,accepted
+RTBT000576__spa2shw,RTBT000576,GRTBT000576,¿Y mis hijos?,¿ wilaweklusa'?,spa,shw,train,False,backtranslation_roundtrip_v0,0.9179192781448364,accepted
+RTBT000576__shw2spa,RTBT000576,GRTBT000576,¿ wilaweklusa'?,¿Y mis hijos?,shw,spa,train,False,backtranslation_roundtrip_v0,0.9179192781448364,accepted
+RTBT000582__spa2shw,RTBT000582,GRTBT000582,- ¿Es aquí?,- ¿asek ñapalek?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7315995693206787,accepted
+RTBT000582__shw2spa,RTBT000582,GRTBT000582,- ¿asek ñapalek?,- ¿Es aquí?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7315995693206787,accepted
+RTBT000588__spa2shw,RTBT000588,GRTBT000588,¿Elise?,¿Elisa?,spa,shw,train,False,backtranslation_roundtrip_v0,0.8611142039299011,accepted
+RTBT000588__shw2spa,RTBT000588,GRTBT000588,¿Elisa?,¿Elise?,shw,spa,train,False,backtranslation_roundtrip_v0,0.8611142039299011,accepted
+RTBT000596__spa2shw,RTBT000596,GRTBT000596,- ¿De Western Union?,- Western Union?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7654598951339722,accepted
+RTBT000596__shw2spa,RTBT000596,GRTBT000596,- Western Union?,- ¿De Western Union?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7654598951339722,accepted
+RTBT000607__spa2shw,RTBT000607,GRTBT000607,Permíteme llevarte a casa.,ta'itula'u pa'ater'ku pidek,spa,shw,train,False,backtranslation_roundtrip_v0,0.7673940062522888,accepted
+RTBT000607__shw2spa,RTBT000607,GRTBT000607,ta'itula'u pa'ater'ku pidek,Permíteme llevarte a casa.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7673940062522888,accepted
+RTBT000617__spa2shw,RTBT000617,GRTBT000617,Primero ustedes.,kenmama' kenmama',spa,shw,train,False,backtranslation_roundtrip_v0,0.7297866940498352,accepted
+RTBT000617__shw2spa,RTBT000617,GRTBT000617,kenmama' kenmama',Primero ustedes.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7297866940498352,accepted
+RTBT000635__spa2shw,RTBT000635,GRTBT000635,- Mercy.,- Mercy,spa,shw,train,False,backtranslation_roundtrip_v0,0.949795126914978,accepted
+RTBT000635__shw2spa,RTBT000635,GRTBT000635,- Mercy,- Mercy.,shw,spa,train,False,backtranslation_roundtrip_v0,0.949795126914978,accepted
+RTBT000637__spa2shw,RTBT000637,GRTBT000637,Señor.,sir',spa,shw,train,False,backtranslation_roundtrip_v0,0.9231662750244141,accepted
+RTBT000637__shw2spa,RTBT000637,GRTBT000637,sir',Señor.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9231662750244141,accepted
+RTBT000647__spa2shw,RTBT000647,GRTBT000647,ARTICULO 3° - 1.,ARTIKULA 3° - 1.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9922220706939697,accepted
+RTBT000647__shw2spa,RTBT000647,GRTBT000647,ARTIKULA 3° - 1.,ARTICULO 3° - 1.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9922220706939697,accepted
+RTBT000661__spa2shw,RTBT000661,GRTBT000661,¡Cloé!,¡Cloé!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7896232008934021,accepted
+RTBT000661__shw2spa,RTBT000661,GRTBT000661,¡Cloé!,¡Cloé!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7896232008934021,accepted
+RTBT000678__spa2shw,RTBT000678,GRTBT000678,"Sí, señor.","yes, sir",spa,shw,train,False,backtranslation_roundtrip_v0,0.9926875233650208,accepted
+RTBT000678__shw2spa,RTBT000678,GRTBT000678,"yes, sir","Sí, señor.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9926875233650208,accepted
+RTBT000684__spa2shw,RTBT000684,GRTBT000684,"Álvaro, soy yo.","Álvaro, kua ku'la",spa,shw,train,False,backtranslation_roundtrip_v0,0.7192064523696899,accepted
+RTBT000684__shw2spa,RTBT000684,GRTBT000684,"Álvaro, kua ku'la","Álvaro, soy yo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7192064523696899,accepted
+RTBT000691__spa2shw,RTBT000691,GRTBT000691,United Kingdom Bristol-Myers Squibb Pharmaceuticals Ltd.,United Kingdom Bristol-Myers Squibb Pharmaceuticals Ltd.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9296222925186157,accepted
+RTBT000691__shw2spa,RTBT000691,GRTBT000691,United Kingdom Bristol-Myers Squibb Pharmaceuticals Ltd.,United Kingdom Bristol-Myers Squibb Pharmaceuticals Ltd.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9296222925186157,accepted
+RTBT000693__spa2shw,RTBT000693,GRTBT000693,2 2.,2 2.,spa,shw,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT000693__shw2spa,RTBT000693,GRTBT000693,2 2.,2 2.,shw,spa,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT000701__spa2shw,RTBT000701,GRTBT000701,"¡Oye, Charlie!","¡wa'ker, Charlie!",spa,shw,train,False,backtranslation_roundtrip_v0,0.7558956146240234,accepted
+RTBT000701__shw2spa,RTBT000701,GRTBT000701,"¡wa'ker, Charlie!","¡Oye, Charlie!",shw,spa,train,False,backtranslation_roundtrip_v0,0.7558956146240234,accepted
+RTBT000727__spa2shw,RTBT000727,GRTBT000727,¿Qué?,¿ma'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000727__shw2spa,RTBT000727,GRTBT000727,¿ma'cha?,¿Qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7108688950538635,accepted
+RTBT000741__spa2shw,RTBT000741,GRTBT000741,"24, 23, 22, 21, 20, 19, 18, 17...","24, 23, 22, 21, 20, 19, 18, 17...",spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000741__shw2spa,RTBT000741,GRTBT000741,"24, 23, 22, 21, 20, 19, 18, 17...","24, 23, 22, 21, 20, 19, 18, 17...",shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000763__spa2shw,RTBT000763,GRTBT000763,- Edgar.,- Edgar,spa,shw,train,False,backtranslation_roundtrip_v0,0.9253671169281006,accepted
+RTBT000763__shw2spa,RTBT000763,GRTBT000763,- Edgar,- Edgar.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9253671169281006,accepted
+RTBT000764__spa2shw,RTBT000764,GRTBT000764,http://texas.guiatrabajo.com,http://texas.guiatrabajo.com,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000764__shw2spa,RTBT000764,GRTBT000764,http://texas.guiatrabajo.com,http://texas.guiatrabajo.com,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000766__spa2shw,RTBT000766,GRTBT000766,- ¡Usted!,- kenma!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7594746351242065,accepted
+RTBT000766__shw2spa,RTBT000766,GRTBT000766,- kenma!,- ¡Usted!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7594746351242065,accepted
+RTBT000768__spa2shw,RTBT000768,GRTBT000768,"- Ah, OK.","- Ah, ok.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8747091293334961,accepted
+RTBT000768__shw2spa,RTBT000768,GRTBT000768,"- Ah, ok.","- Ah, OK.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8747091293334961,accepted
+RTBT000772__spa2shw,RTBT000772,GRTBT000772,¿Qué es esto?,¿ma'su' asu'?,spa,shw,train,False,backtranslation_roundtrip_v0,0.994415819644928,accepted
+RTBT000772__shw2spa,RTBT000772,GRTBT000772,¿ma'su' asu'?,¿Qué es esto?,shw,spa,train,False,backtranslation_roundtrip_v0,0.994415819644928,accepted
+RTBT000799__spa2shw,RTBT000799,GRTBT000799,Mira esto.,lli'ker' asu',spa,shw,train,False,backtranslation_roundtrip_v0,0.9864097833633423,accepted
+RTBT000799__shw2spa,RTBT000799,GRTBT000799,lli'ker' asu',Mira esto.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9864097833633423,accepted
+RTBT000801__spa2shw,RTBT000801,GRTBT000801,"2,25 1,125 0,56 1,35 0,68 0,34 0,9 0,45 0,225","2,25 1,125 0,56 1,35 0,68 0,34 0,9 0,45 0,225",spa,shw,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT000801__shw2spa,RTBT000801,GRTBT000801,"2,25 1,125 0,56 1,35 0,68 0,34 0,9 0,45 0,225","2,25 1,125 0,56 1,35 0,68 0,34 0,9 0,45 0,225",shw,spa,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT000812__spa2shw,RTBT000812,GRTBT000812,Chen!,¡ Chen!,spa,shw,train,False,backtranslation_roundtrip_v0,0.7435335516929626,accepted
+RTBT000812__shw2spa,RTBT000812,GRTBT000812,¡ Chen!,Chen!,shw,spa,train,False,backtranslation_roundtrip_v0,0.7435335516929626,accepted
+RTBT000821__spa2shw,RTBT000821,GRTBT000821,"Espera, ¿qué?","wa'ten, ¿ma'nen?",spa,shw,train,False,backtranslation_roundtrip_v0,0.8941088914871216,accepted
+RTBT000821__shw2spa,RTBT000821,GRTBT000821,"wa'ten, ¿ma'nen?","Espera, ¿qué?",shw,spa,train,False,backtranslation_roundtrip_v0,0.8941088914871216,accepted
+RTBT000825__spa2shw,RTBT000825,GRTBT000825,Tú.,kenma,spa,shw,train,False,backtranslation_roundtrip_v0,0.8628199696540833,accepted
+RTBT000825__shw2spa,RTBT000825,GRTBT000825,kenma,Tú.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8628199696540833,accepted
+RTBT000833__spa2shw,RTBT000833,GRTBT000833,.,.,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000833__shw2spa,RTBT000833,GRTBT000833,.,.,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000846__spa2shw,RTBT000846,GRTBT000846,Kat.,kat,spa,shw,train,False,backtranslation_roundtrip_v0,0.7455925941467285,accepted
+RTBT000846__shw2spa,RTBT000846,GRTBT000846,kat,Kat.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7455925941467285,accepted
+RTBT000872__spa2shw,RTBT000872,GRTBT000872,"-¿Qué tal? -¿Para qué el sombrero, mamá?","- ¿ma'pinta'chu? - ¿ma'pinta' chapel, ama?",spa,shw,train,False,backtranslation_roundtrip_v0,0.7641812562942505,accepted
+RTBT000872__shw2spa,RTBT000872,GRTBT000872,"- ¿ma'pinta'chu? - ¿ma'pinta' chapel, ama?","-¿Qué tal? -¿Para qué el sombrero, mamá?",shw,spa,train,False,backtranslation_roundtrip_v0,0.7641812562942505,accepted
+RTBT000873__spa2shw,RTBT000873,GRTBT000873,Bingo.,bingo,spa,shw,train,False,backtranslation_roundtrip_v0,0.739230215549469,accepted
+RTBT000873__shw2spa,RTBT000873,GRTBT000873,bingo,Bingo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.739230215549469,accepted
+RTBT000878__spa2shw,RTBT000878,GRTBT000878,"Hey, muchachos, ¿alguno de ustedes conoce a José Jiménez?","- ¿ma'la, wilalusa', ¿ma'la'lusa' kenma' José Jiménez?",spa,shw,train,False,backtranslation_roundtrip_v0,0.7039523124694824,accepted
+RTBT000878__shw2spa,RTBT000878,GRTBT000878,"- ¿ma'la, wilalusa', ¿ma'la'lusa' kenma' José Jiménez?","Hey, muchachos, ¿alguno de ustedes conoce a José Jiménez?",shw,spa,train,False,backtranslation_roundtrip_v0,0.7039523124694824,accepted
+RTBT000896__spa2shw,RTBT000896,GRTBT000896,WOLDS. son las Cotswolds.,WOLDS. asu' Cotswolds.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8300312757492065,accepted
+RTBT000896__shw2spa,RTBT000896,GRTBT000896,WOLDS. asu' Cotswolds.,WOLDS. son las Cotswolds.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8300312757492065,accepted
+RTBT000905__spa2shw,RTBT000905,GRTBT000905,¿Puede...?,¿yennitula...?,spa,shw,train,False,backtranslation_roundtrip_v0,0.7934037446975708,accepted
+RTBT000905__shw2spa,RTBT000905,GRTBT000905,¿yennitula...?,¿Puede...?,shw,spa,train,False,backtranslation_roundtrip_v0,0.7934037446975708,accepted
+RTBT000914__spa2shw,RTBT000914,GRTBT000914,- Oh...,- oh...,spa,shw,train,False,backtranslation_roundtrip_v0,0.9715956449508667,accepted
+RTBT000914__shw2spa,RTBT000914,GRTBT000914,- oh...,- Oh...,shw,spa,train,False,backtranslation_roundtrip_v0,0.9715956449508667,accepted
+RTBT000916__spa2shw,RTBT000916,GRTBT000916,¿Y por qué?,¿ma'cha?,spa,shw,train,False,backtranslation_roundtrip_v0,0.910109281539917,accepted
+RTBT000916__shw2spa,RTBT000916,GRTBT000916,¿ma'cha?,¿Y por qué?,shw,spa,train,False,backtranslation_roundtrip_v0,0.910109281539917,accepted
+RTBT000945__spa2shw,RTBT000945,GRTBT000945,"Hola, Johnny.","hola, Johnny",spa,shw,train,False,backtranslation_roundtrip_v0,0.9126740097999573,accepted
+RTBT000945__shw2spa,RTBT000945,GRTBT000945,"hola, Johnny","Hola, Johnny.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9126740097999573,accepted
+RTBT000946__spa2shw,RTBT000946,GRTBT000946,"Pero... tú no merecías matarlo, Peter.","kenma... kenma ku'la lli'inpu'i'ñina', Peter.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7152202129364014,accepted
+RTBT000946__shw2spa,RTBT000946,GRTBT000946,"kenma... kenma ku'la lli'inpu'i'ñina', Peter.","Pero... tú no merecías matarlo, Peter.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7152202129364014,accepted
+RTBT000958__spa2shw,RTBT000958,GRTBT000958,Habla Paul.,paul lunter',spa,shw,train,False,backtranslation_roundtrip_v0,0.7632636427879333,accepted
+RTBT000958__shw2spa,RTBT000958,GRTBT000958,paul lunter',Habla Paul.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7632636427879333,accepted
+RTBT000962__spa2shw,RTBT000962,GRTBT000962,- Espera.,- wa'tenker',spa,shw,train,False,backtranslation_roundtrip_v0,0.9401347637176514,accepted
+RTBT000962__shw2spa,RTBT000962,GRTBT000962,- wa'tenker',- Espera.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9401347637176514,accepted
+RTBT000965__spa2shw,RTBT000965,GRTBT000965,C95-132/ I95-143 C95-132/ I95-143,C95-132/ I95-143 C95-132/ I95-143,spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000965__shw2spa,RTBT000965,GRTBT000965,C95-132/ I95-143 C95-132/ I95-143,C95-132/ I95-143 C95-132/ I95-143,shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000968__spa2shw,RTBT000968,GRTBT000968,- ¿Quién es esa?,- ¿den nana?,spa,shw,train,False,backtranslation_roundtrip_v0,0.744995653629303,accepted
+RTBT000968__shw2spa,RTBT000968,GRTBT000968,- ¿den nana?,- ¿Quién es esa?,shw,spa,train,False,backtranslation_roundtrip_v0,0.744995653629303,accepted
+RTBT000969__spa2shw,RTBT000969,GRTBT000969,"Naciones Unidas, Recueil des Traités, vol. 75, Nos.","Naciones Unidas, Recueil des Traités, vol. 75, no.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8977924585342407,accepted
+RTBT000969__shw2spa,RTBT000969,GRTBT000969,"Naciones Unidas, Recueil des Traités, vol. 75, no.","Naciones Unidas, Recueil des Traités, vol. 75, Nos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8977924585342407,accepted
+RTBT000982__spa2shw,RTBT000982,GRTBT000982,"¡Ven acá, Oprah!","¡wa'ker' asek, Oprah!",spa,shw,train,False,backtranslation_roundtrip_v0,0.9854649305343628,accepted
+RTBT000982__shw2spa,RTBT000982,GRTBT000982,"¡wa'ker' asek, Oprah!","¡Ven acá, Oprah!",shw,spa,train,False,backtranslation_roundtrip_v0,0.9854649305343628,accepted
+RTBT001009__spa2shw,RTBT001009,GRTBT001009,Tatiana.,Tatiana,spa,shw,train,False,backtranslation_roundtrip_v0,0.851722240447998,accepted
+RTBT001009__shw2spa,RTBT001009,GRTBT001009,Tatiana,Tatiana.,shw,spa,train,False,backtranslation_roundtrip_v0,0.851722240447998,accepted

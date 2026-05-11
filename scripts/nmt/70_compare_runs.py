@@ -18,12 +18,14 @@ import datetime as dt
 import json
 import sys
 from pathlib import Path
+from scripts.nmt._paths import resolve_paths
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--splits-variant", choices=["main", "xl"], default="main")
     p.add_argument("--v0", default="nllb_bidi_lora_v0")
     p.add_argument("--v1", default="nllb_bidi_lora_v1_bt")
     p.add_argument("--split", choices=["valid", "test"], default="test")
@@ -106,8 +108,9 @@ def _avg_row(label: str, metrics: dict | None, rare: dict | None = None) -> str:
 
 def main() -> int:
     args = parse_args()
-    eval_dir = PROJECT_ROOT / "reports" / "05_nmt" / "evaluation"
-    rerank_dir = PROJECT_ROOT / "reports" / "05_nmt" / "reranking"
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.splits_variant)
+    eval_dir = nmt_paths.reports_evaluation_dir
+    rerank_dir = nmt_paths.reports_reranking_dir
 
     v0_eval = _read_metric_json(eval_dir / args.v0 / f"{args.split}_metrics.json")
     v0_rerank = _read_metric_json(rerank_dir / args.v0 / f"{args.split}_metrics_reranked.json")
@@ -125,6 +128,7 @@ def main() -> int:
     sections.append(f"# SA-BiNLLB run comparison ({args.v0} vs {args.v1})")
     sections.append("")
     sections.append(f"- Split: `{args.split}`")
+    sections.append(f"- Variant: `{args.splits_variant}`")
     sections.append(f"- Timestamp UTC: {dt.datetime.now(dt.timezone.utc).isoformat()}")
     sections.append("- Headline metric: chrF++ (per plan section 31)")
     sections.append("")

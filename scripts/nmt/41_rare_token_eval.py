@@ -28,6 +28,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from scripts.nmt._paths import resolve_paths  # noqa: E402
 from src.nmt.evaluation.metrics import MetricsConfig  # noqa: E402
 from src.nmt.evaluation.rare_token import (  # noqa: E402
     RareTokenConfig,
@@ -37,12 +38,11 @@ from src.nmt.evaluation.rare_token import (  # noqa: E402
 )
 
 EVAL_CFG_PATH = PROJECT_ROOT / "config" / "nmt" / "eval.yaml"
-DEFAULT_TRAIN = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered" / "train.csv"
-DEFAULT_TEST = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered" / "test.csv"
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
     p.add_argument(
         "--run",
         type=str,
@@ -69,12 +69,14 @@ def parse_args() -> argparse.Namespace:
 
 
 def _resolve_paths(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
+    nmt = resolve_paths(PROJECT_ROOT, args.variant)
+    suffix = "_xl" if args.variant == "xl" else ""
     if args.predictions is not None:
         predictions_path = Path(args.predictions).resolve()
     else:
         if args.run is None:
             raise SystemExit("[phase5b] either --run or --predictions is required")
-        sub = "reranking" if args.reranked else "evaluation"
+        sub = f"reranking{suffix}" if args.reranked else f"evaluation{suffix}"
         filename = (
             f"{args.split}_predictions_reranked.jsonl"
             if args.reranked
@@ -84,18 +86,18 @@ def _resolve_paths(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
             PROJECT_ROOT / "reports" / "05_nmt" / sub / args.run / filename
         )
 
-    train_path = Path(args.train).resolve() if args.train else DEFAULT_TRAIN
-    test_path = Path(args.test_csv).resolve() if args.test_csv else DEFAULT_TEST
+    train_path = Path(args.train).resolve() if args.train else nmt.filtered_dir / "train.csv"
+    test_path = Path(args.test_csv).resolve() if args.test_csv else nmt.filtered_dir / "test.csv"
 
     if args.output is not None:
         out_path = Path(args.output).resolve()
     else:
         if args.run is None:
             raise SystemExit("[phase5b] --output is required when --run is omitted")
-        out_dir = PROJECT_ROOT / "reports" / "05_nmt" / "evaluation" / args.run
+        out_dir = nmt.reports_evaluation_dir / args.run
         out_dir.mkdir(parents=True, exist_ok=True)
-        suffix = "_reranked" if args.reranked else ""
-        out_path = out_dir / f"rare_token_analysis{suffix}.json"
+        rsuffix = "_reranked" if args.reranked else ""
+        out_path = out_dir / f"rare_token_analysis{rsuffix}.json"
 
     return predictions_path, train_path, test_path, out_path
 

@@ -1,0 +1,32 @@
+[boot] nllb_bidi_lora_v0_xl
+  wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\nllb_bidi_lora_v0_xl\bootstrap_ci.json
+    shw2spa: chrF++=25.16  95% CI [23.07, 27.47]
+    spa2shw: chrF++=28.06  95% CI [26.56, 29.74]
+    avg: chrF++=26.61  95% CI [25.33, 27.88]
+[boot] nllb_bidi_lora_v1_bt_xl
+  wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\nllb_bidi_lora_v1_bt_xl\bootstrap_ci.json
+    shw2spa: chrF++=29.91  95% CI [27.55, 32.35]
+    spa2shw: chrF++=34.36  95% CI [32.42, 36.69]
+    avg: chrF++=32.14  95% CI [30.63, 33.80]
+[boot] nllb_bidi_lora_v2_0_dora_xl
+  wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\nllb_bidi_lora_v2_0_dora_xl\bootstrap_ci.json
+    shw2spa: chrF++=30.82  95% CI [28.44, 33.12]
+    spa2shw: chrF++=34.35  95% CI [32.54, 36.59]
+    avg: chrF++=32.58  95% CI [31.02, 34.25]
+[boot] nllb_bidi_lora_v2_1_dora_loraplus_xl
+  wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\nllb_bidi_lora_v2_1_dora_loraplus_xl\bootstrap_ci.json
+    shw2spa: chrF++=41.05  95% CI [38.34, 43.56]
+    spa2shw: chrF++=47.54  95% CI [45.36, 49.95]
+    avg: chrF++=44.30  95% CI [42.49, 46.12]
+[boot] nllb_bidi_lora_v2_1b_loraplus_xl
+  wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\nllb_bidi_lora_v2_1b_loraplus_xl\bootstrap_ci.json
+    shw2spa: chrF++=42.42  95% CI [39.65, 44.94]
+    spa2shw: chrF++=47.56  95% CI [45.02, 50.27]
+    avg: chrF++=44.99  95% CI [43.17, 46.96]
+[boot] nllb_bidi_lora_v2_2_bt_iter1_xl
+  wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\nllb_bidi_lora_v2_2_bt_iter1_xl\bootstrap_ci.json
+    shw2spa: chrF++=30.72  95% CI [28.41, 33.07]
+    spa2shw: chrF++=33.94  95% CI [31.87, 36.26]
+    avg: chrF++=32.33  95% CI [30.82, 33.94]
+
+[boot] wrote C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\05_nmt\evaluation_xl\bootstrap_ci_summary.md

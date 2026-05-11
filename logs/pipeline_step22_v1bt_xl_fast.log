@@ -1,0 +1,9 @@
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[phase7d] variant=xl output=models/nmt/nllb_bidi_lora_v1_bt_xl_fast
+[phase7d] augmented CSVs: ['data\\processed\\07_nmt_augmented_xl\\train_mined.csv', 'data\\processed\\07_nmt_augmented_xl\\train_bt_roundtrip.csv']
+[phase7d] weighting (Enhancement #4): {'flashcards': 1.0, 'pdf_textos': 1.0, 'mined_v3_sbert': 0.5, 'backtranslation_v0': 0.3, 'morphological_variant': 0.3}
+[phase7d] LoRA: r=32, alpha=64, dropout=0.05, dora=False, loraplus_ratio=0.0
+[phase7d] precision=bf16 compile=False direction_filter=None
+trainable params: 4,718,592 || all params: 619,793,408 || trainable%: 0.7613
+Filter:   0%|          | 0/900 [00:00<?, ? examples/s]Filter: 100%|##########| 900/900 [00:00<00:00, 30173.16 examples/s]
+Filter:   0%|          | 0/900 [00:00<?, ? examples/s]Filter: 100%|##########| 900/900 [00:00<00:00, 68300.02 examples/s]

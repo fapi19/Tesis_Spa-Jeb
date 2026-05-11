@@ -1,0 +1,7 @@
+Preprocesamiento canónico de embeddings completado.
+Variante: xl
+Total incluido: 4814
+Train: 3923
+Valid: 445
+Test: 446
+Manifiesto: C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\04_embeddings\preprocessing_xl\preprocess_manifest.json

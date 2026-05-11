@@ -1,0 +1,323 @@
+﻿pair_id,ESP,SHIWILU,ESP_n,SHI_n,shi_word,esp_word,shi_in_corpus,esp_in_corpus,pair_exact_dup
+P00000,mamá,awa,mamá,awa,awa,mamá,True,True,True
+P00001,fracaso,ananan,fracaso,ananan,ananan,fracaso,False,False,False
+P00002,opaco,dawan',opaco,dawan',dawan',opaco,False,False,False
+P00003,dueño espiritual; madre,ashin,dueño espiritual; madre,ashin,ashin,dueño,False,True,False
+P00004,zorro,anaser',zorro,anaser',anaser',zorro,False,False,False
+P00005,tigre,amana',tigre,amana',amana',tigre,True,True,False
+P00006,(a) tiene; (b) ha tenido,anhili,(a) tiene; (b) ha tenido,anhili,anhili,a,False,True,False
+P00007,yo,ku,yo,ku,ku,yo,False,True,False
+P00008,cuatro,inkatu',cuatro,inkatu',inkatu',cuatro,False,True,False
+P00009,manteca,iyadek',manteca,iyadek',iyadek',manteca,False,False,False
+P00010,vamos,enyu,vamos,enyu,enyu,vamos,False,True,False
+P00011,caimito,ek'pa,caimito,ek'pa,ek'pa,caimito,False,False,False
+P00012,pelo,enchek,pelo,enchek,enchek,pelo,False,True,False
+P00013,donde,enupa',donde,enupa',enupa',donde,False,True,False
+P00014,añañinga,ellek,añañinga,ellek,ellek,añañinga,False,False,False
+P00015,fuego,pen,fuego,pen,pen,fuego,True,True,False
+P00016,agua,dek,agua,dek,dek,agua,True,True,False
+P00017,oreja; cuerno,wi'wek,oreja; cuerno,wi'wek,wi'wek,oreja,False,False,False
+P00018,boquichico,wankechek,boquichico,wankechek,wankechek,boquichico,False,False,False
+P00019,fluyo el agua,teka'linidek,fluyo el agua,teka'linidek,teka'linidek,agua,False,True,False
+P00020,murciélago,liishek',murciélago,liishek',liishek',murciélago,False,True,False
+P00021,parijí,isha,parijí,isha,isha,parijí,True,False,False
+P00022,murciélago,ishek',murciélago,ishek',ishek',murciélago,False,True,False
+P00023,sonidos,illin,sonidos,illin,illin,sonidos,False,False,False
+P00025,despertó,mampilin,despertó,mampilin,mampilin,despertó,False,False,False
+P00026,garganta,kulupi,garganta,kulupi,kulupi,garganta,False,True,False
+P00027,cangrejo,chinyi,cangrejo,chinyi,chinyi,cangrejo,False,False,False
+P00028,dolor,iker',dolor,iker',iker',dolor,False,True,False
+P00029,Manteca,iyadek',manteca,iyadek',iyadek',manteca,False,False,False
+P00030,Cuatro,inkatu,cuatro,inkatu,inkatu,cuatro,False,True,False
+P00031,Raíz,itek',raíz,itek',itek',raíz,False,True,False
+P00032,Achuni,itek',achuni,itek',itek',achuni,False,False,False
+P00033,bebe toma,u'ker',bebe toma,u'ker',u'ker',toma,False,True,False
+P00034,así,unsu',así,unsu',unsu',así,False,True,False
+P00035,día,ukli,día,ukli,ukli,día,True,True,False
+P00036,cenicidor,u'klin,cenicidor,u'klin,u'klin,cenicidor,False,False,False
+P00037,páiche,unma',páiche,unma',unma',páiche,False,False,False
+P00038,jalar,uala,jalar,uala,uala,jalar,False,False,False
+P00039,mono choro,sulu',mono choro,sulu',sulu',choro,False,False,False
+P00040,cotomono,lu'lu',cotomono,lu'lu',lu'lu',cotomono,False,False,False
+P00041,carne,chuchu,carne,chuchu,chuchu,carne,True,True,False
+P00042,pihuicho,shu'pi,pihuicho,shu'pi,shu'pi,pihuicho,False,False,False
+P00043,corazón,dinlupi,corazón,dinlupi,dinlupi,corazón,False,True,False
+P00044,Nuevo,nalu,nuevo,nalu,nalu,nuevo,True,True,False
+P00045,Chiricles,kupinshupi,chiricles,kupinshupi,kupinshupi,chiricles,False,False,False
+P00046,Negro,kellulu,negro,kellulu,kellulu,negro,False,True,False
+P00047,Mujer,ku'aper,mujer,ku'aper,ku'aper,mujer,True,True,False
+P00048,diviesos; chupos,cha'cha',diviesos; chupos,cha'cha',cha'cha',chupos,False,True,False
+P00049,tipo de pajarito malagüero,wa'cha'cha',tipo de pajarito malagüero,wa'cha'cha',wa'cha'cha',malag,False,True,False
+P00050,derecho,chek',derecho,chek',chek',derecho,False,True,False
+P00051,panza,mechek,panza,mechek,mechek,panza,False,False,False
+P00052,voy a coger,mechek,voy a coger,mechek,mechek,a,False,True,False
+P00054,cabello,enchek,cabello,enchek,enchek,cabello,False,False,False
+P00055,voy a llevar,ekpekchek,voy a llevar,ekpekchek,ekpekchek,llevar,False,True,False
+P00056,ven a llevar,mencher,ven a llevar,mencher,mencher,llevar,False,True,False
+P00057,tímpano; caracolito,mincher,tímpano; caracolito,mincher,mincher,caracolito,False,False,False
+P00058,pecho,chi'tek',pecho,chi'tek',chi'tek',pecho,False,True,False
+P00059,cangrejo,chinchi,cangrejo,chinchi,chinchi,cangrejo,False,False,False
+P00060,carachupa,chi'lek,carachupa,chi'lek,chi'lek,carachupa,False,True,False
+P00062,pucacunga,chunser',pucacunga,chunser',chunser',pucacunga,False,True,False
+P00063,sucio,u'chu',sucio,u'chu',u'chu',sucio,False,False,False
+P00064,caracolito de tahuampa,chumpi,caracolito de tahuampa,chumpi,chumpi,de,False,True,False
+P00065,vamos,enchu,vamos,enchu,enchu,vamos,True,True,False
+P00066,cortar,enchun,cortar,enchun,enchun,cortar,False,False,False
+P00067,dolor de ojo,dapi,dolor de ojo,dapi,dapi,de,False,True,False
+P00068,flor,danku,flor,danku,danku,flor,True,True,False
+P00069,sal,damula,sal,damula,damula,sal,True,True,False
+P00070,chonta,dawer,chonta,dawer,dawer,chonta,False,False,False
+P00071,lagarto,tada,lagarto,tada,tada,lagarto,True,True,False
+P00072,esposo,suda,esposo,suda,suda,esposo,False,True,False
+P00073,quien,den,quien,den,den,quien,True,True,False
+P00075,pelear,idenma,pelear,idenma,idenma,pelear,False,True,False
+P00076,afilar,suden,afilar,suden,suden,afilar,False,False,False
+P00078,leña,diwek,leña,diwek,diwek,leña,False,True,False
+P00079,espuma,dampu,espuma,dampu,dampu,espuma,False,True,False
+P00080,cobija,idimunan,cobija,idimunan,idimunan,cobija,False,False,False
+P00081,su esposo,sadin,su esposo,sadin,sadin,esposo,True,True,False
+P00082,ha matado,dili,ha matado,dili,dili,ha,False,True,False
+P00083,tripas,dulin,tripas,dulin,dulin,tripas,False,True,False
+P00084,luna,duker,luna,duker,duker,luna,True,True,True
+P00085,siéntate,dunker',siéntate,dunker',dunker',siéntate,False,True,False
+P00086,paña; cintura (?),dunan,paña; cintura (?),dunan,dunan,paña,True,True,False
+P00087,ancho,du'wan,ancho,du'wan,du'wan,ancho,False,True,False
+P00088,huevo,kadu',huevo,kadu',kadu',huevo,True,False,False
+P00089,buyurqui,adula,buyurqui,adula,adula,buyurqui,False,False,False
+P00090,estrella,tandula,estrella,tandula,tandula,estrella,True,False,False
+P00092,dos,katu'a',dos,katu'a',katu'a',dos,False,True,False
+P00093,tres,kala,tres,kala,kala,tres,True,True,False
+P00094,hígado,kankai,hígado,kankai,kankai,hígado,False,True,False
+P00095,está viniendo,ukapinla'li,está viniendo,ukapinla'li,ukapinla'li,viniendo,False,True,False
+P00096,maíz,dek'kanan,maíz,dek'kanan,dek'kanan,maíz,False,True,False
+P00097,tú,kenmu,tú,kenmu,kenmu,tú,False,True,False
+P00098,yuca,ker',yuca,ker',ker',yuca,True,True,False
+P00099,sol,keki,sol,keki,keki,sol,False,True,False
+P00100,humo,kellu,humo,kellu,kellu,humo,False,True,False
+P00101,sangre que huele mal,ukeklli,sangre que huele mal,ukeklli,ukeklli,mal,False,True,False
+P00102,tiene frío,umkelli,tiene frío,umkelli,umkelli,tiene,False,True,False
+P00103,añsua (k. fish),kilen,añsua (k. fish),kilen,kilen,añsua,False,False,False
+P00104,adentro,kinekla,adentro,kinekla,kinekla,adentro,True,True,False
+P00105,para papa,tatain,para papa,tatain,tatain,papa,False,True,False
+P00107,mujer,ku'aper,mujer,ku'aper,ku'aper,mujer,True,True,False
+P00108,boa,kupiwin,boa,kupiwin,kupiwin,boa,False,True,False
+P00109,pasó,nakulli,pasó,nakulli,nakulli,pasó,True,True,False
+P00110,dinero,kuiker',dinero,kuiker',kuiker',dinero,False,True,False
+P00111,me hicieron abuela,amituinerku,me hicieron abuela,amituinerku,amituinerku,me,False,True,False
+P00112,pie,lantek,pie,lantek,lantek,pie,False,True,False
+P00115,enseñó,a'lek,enseñó,a'lek,a'lek,enseñó,False,True,False
+P00116,de ahí,nanekla,de ahí,nanekla,nanekla,ahí,True,True,False
+P00117,ahí,nanek',ahí,nanek',nanek',ahí,False,True,False
+P00118,vereda,pidek'sek'lla,vereda,pidek'sek'lla,pidek'sek'lla,vereda,False,True,False
+P00119,yo,kwa,yo,kwa,kwa,yo,False,True,False
+P00120,Juan,kwaini,juan,kwaini,kwaini,juan,False,False,False
+P00121,esto es pesado,asu'kwe'li,esto es pesado,asu'kwe'li,asu'kwe'li,pesado,False,True,False
+P00122,y yo,kwina,y yo,kwina,kwina,y,False,True,False
+P00123,pesado,kwer'li,pesado,kwer'li,kwer'li,pesado,False,True,False
+P00124,pesado,kwer,pesado,kwer,kwer,pesado,False,True,False
+P00125,hueco,lala,hueco,lala,lala,hueco,False,True,False
+P00126,ojo,lada,ojo,lada,lada,ojo,False,False,False
+P00127,diente,latek',diente,latek',latek',diente,False,False,False
+P00128,huele,laner,huele,laner,laner,huele,False,True,False
+P00130,idioma,la'la',idioma,la'la',la'la',idioma,True,True,False
+P00131,naranja,lalansu',naranja,lalansu',lalansu',naranja,False,False,False
+P00132,surí de aguaje,lenmasun,surí de aguaje,lenmasun,lenmasun,de,False,True,False
+P00133,añsua,kilen,añsua,kilen,kilen,añsua,False,False,False
+P00135,yo hablo,kwa lumbalek,yo hablo,kwa lumbalek,lumbalek,yo,False,True,False
+P00136,cinco,ala'tek'lun,cinco,ala'tek'lun,ala'tek'lun,cinco,False,True,False
+P00137,otro,ali'a,otro,ali'a,ali'a,otro,False,True,False
+P00139,entonces,ipa'linli,entonces,ipa'linli,ipa'linli,entonces,False,True,False
+P00140,tierra; suelo,lu'pa',tierra; suelo,lu'pa',lu'pa',tierra,False,True,False
+P00141,soga,lulinlintek',soga,lulinlintek',lulinlintek',soga,False,False,False
+P00142,arpienteete,luna'te',arpienteete,luna'te',luna'te',arpienteete,False,False,False
+P00143,conversador,tuntek',conversador,tuntek',tuntek',conversador,False,False,False
+P00145,niño(s),wila,niño(s),wila,wila,niño,True,True,False
+P00148,uña de la menstruación,lek'lun,uña de la menstruación,lek'lun,lek'lun,menstruación,False,True,False
+P00151,cunchi,ikellala,cunchi,ikellala,ikellala,cunchi,False,False,False
+P00152,shamillito,samellu',shamillito,samellu',samellu',shamillito,False,False,False
+P00153,pescado,samer,pescado,samer,samer,pescado,True,True,False
+P00154,varios pescados,samerlisa',varios pescados,samerlisa',samerlisa',varios,False,True,False
+P00155,nombre antiguo de hombre,llachek',nombre antiguo de hombre,llachek',llachek',hombre,False,True,False
+P00156,afrecho,ketlla,afrecho,ketlla,ketlla,afrecho,False,True,False
+P00157,vereda,setla,vereda,setla,setla,vereda,False,True,False
+P00158,tipo de bagrecito; cunchi,ikellala,tipo de bagrecito; cunchi,ikellala,ikellala,tipo,False,True,False
+P00159,escopeta,illapa,escopeta,illapa,illapa,escopeta,False,False,False
+P00160,he olido,llanellek,he olido,llanellek,llanellek,olido,False,False,False
+P00162,Lima,llima',lima,llima',llima',lima,False,True,False
+P00163,limón,llimu',limón,llimu',llimu',limón,False,False,False
+P00164,río,lli'li,río,lli'li,lli'li,río,False,True,False
+P00165,nombre,llinlin,nombre,llinlin,llinlin,nombre,False,True,False
+P00166,cola,llindek',cola,llindek',llindek',cola,False,True,False
+P00167,apodo de Dolores,yullu,apodo de dolores,yullu,yullu,de,False,True,False
+P00168,me vio,lli'linu,me vio,lli'linu,lli'linu,me,False,True,False
+P00171,motelo,madu,motelo,madu,madu,motelo,True,True,False
+P00172,comprar,mapa',comprar,mapa',mapa',comprar,False,True,False
+P00173,cerdo,nana malli,cerdo,nana malli,nana,cerdo,True,False,False
+P00174,qué es?,ma'nen,qué es?,ma'nen,ma'nen,qué,True,True,False
+P00175,no,ma'shia,no,ma'shia,ma'shia,no,False,True,False
+P00177,sajino,amandek',sajino,amandek',amandek',sajino,False,True,False
+P00178,suave,meru',suave,meru',meru',suave,False,True,False
+P00179,voy a coger; voy a levantar,useyek',voy a coger; voy a levantar,useyek',useyek',levantar,False,True,False
+P00181,panza,merchek',panza,merchek',merchek',panza,False,False,False
+P00182,barriga,merpi,barriga,merpi,merpi,barriga,False,True,False
+P00183,maduro,merpi,maduro,merpi,merpi,maduro,False,False,False
+P00185,cuñado del hombre,mek'shi,cuñado del hombre,mek'shi,mek'shi,hombre,False,True,False
+P00186,chacra,memin,chacra,memin,memin,chacra,False,True,False
+P00187,estoy lleno,merllek,estoy lleno,merllek,merllek,lleno,False,True,False
+P00188,hoja,lalune',hoja,lalune',lalune',hoja,False,True,False
+P00189,yarina,milek,yarina,milek,milek,yarina,False,False,False
+P00190,collar,midu,collar,midu,midu,collar,False,True,False
+P00191,pavo,mikarawa',pavo,mikarawa',mikarawa',pavo,False,False,False
+P00192,nido,mipek,nido,mipek,mipek,nido,False,False,False
+P00193,abuela,ami,abuela,ami,ami,abuela,True,True,True
+P00194,murió,chininiñin,murió,chininiñin,chininiñin,murió,False,True,False
+P00197,cabeza,mu'tu',cabeza,mu'tu',mu'tu',cabeza,False,True,False
+P00198,teta,mudin,teta,mudin,mudin,teta,False,False,False
+P00199,gente,muda?,gente,muda?,muda,gente,False,True,False
+P00200,bueno,mukangan,bueno,mukangan,mukangan,bueno,False,True,False
+P00201,copa de árbol,mulu',copa de árbol,mulu',mulu',de,False,True,False
+P00202,así siendo,nu'amu,así siendo,nu'amu,nu'amu,siendo,False,True,False
+P00203,malo,mukanganibu',malo,mukanganibu',mukanganibu',malo,False,True,False
+P00204,torcacita,munchi,torcacita,munchi,munchi,torcacita,False,False,False
+P00205,flaco,shamuntek',flaco,shamuntek',shamuntek',flaco,False,False,False
+P00206,nosotros,kanmu'wa',nosotros,kanmu'wa',kanmu'wa',nosotros,False,True,False
+P00207,él; ella,nana,él; ella,nana,nana,ella,True,True,False
+P00208,antiguamente,napi',antiguamente,napi',napi',antiguamente,True,True,False
+P00209,palo,nala,palo,nala,nala,palo,True,True,False
+P00210,nuevo,nalu,nuevo,nalu,nalu,nuevo,True,True,False
+P00211,shushupe,nater,shushupe,nater,nater,shushupe,False,True,False
+P00212,podrido (pescado),analu',podrido (pescado),analu',analu',pescado,False,True,False
+P00214,se despertó,nambilin,se despertó,nambilin,nambilin,despertó,False,False,False
+P00215,aliento,neri,aliento,neri,neri,aliento,False,False,False
+P00216,nariz,nerek',nariz,nerek',nerek',nariz,False,False,False
+P00217,diferente,nerpi'la,diferente,nerpi'la,nerpi'la,diferente,True,True,False
+P00219,he olido,lanellek,he olido,lanellek,lanellek,olido,False,False,False
+P00220,evader,nanet'lli,evader,nanet'lli,nanet'lli,evader,False,False,False
+P00221,así dice,nanim'na,así dice,nanim'na,nanim'na,dice,False,True,False
+P00222,dijeron,tullina',dijeron,tullina',tullina',dijeron,True,True,False
+P00223,no se puede apagar,inichiñitashu'unsu,no se puede apagar,inichiñitashu'unsu,inichiñitashu'unsu,puede,False,True,False
+P00224,soy,nuka'ka,soy,nuka'ka,nuka'ka,soy,True,True,False
+P00225,ha hecho,nu'tulli,ha hecho,nu'tulli,nu'tulli,ha,True,True,False
+P00226,entonces,nu'pachin,entonces,nu'pachin,nu'pachin,entonces,True,True,False
+P00227,animal sin cola,unu'lli,animal sin cola,unu'lli,unu'lli,sin,False,True,False
+P00228,elefante,unu'kañi',elefante,unu'kañi',unu'kañi',elefante,False,False,False
+P00229,canoa,num,canoa,num,num,canoa,False,True,False
+P00230,Narcisa,ñashi,narcisa,ñashi,ñashi,narcisa,False,False,False
+P00231,lo que es; lo que ha estado,ña?su?,lo que es; lo que ha estado,ña?su?,su,estado,False,True,False
+P00232,todo,iñer,todo,iñer,iñer,todo,True,True,False
+P00233,entero,iñer'pi,entero,iñer'pi,iñer'pi,entero,False,False,False
+P00234,donde vivo,ñer',donde vivo,ñer',ñer',vivo,False,True,False
+P00235,perro,ñini'wa,perro,ñini'wa,ñini'wa,perro,False,True,False
+P00236,lengua,ñinek'la,lengua,ñinek'la,ñinek'la,lengua,False,True,False
+P00237,se ha extraviado,pektuñin,se ha extraviado,pektuñin,pektuñin,ha,False,True,False
+P00238,donde no hay,ñinupek,donde no hay,ñinupek,ñinupek,hay,False,True,False
+P00239,de dónde?,i'ñupa?la,de dónde?,i'ñupa?la,i'ñupa,de,False,True,False
+P00240,vasija para sacar agua,puiñu,vasija para sacar agua,puiñu,puiñu,sacar,False,False,False
+P00241,palmera pulponota; tasha ponilla,pada,palmera pulponota; tasha ponilla,pada,pada,tasha,False,False,False
+P00242,perforar,patala',perforar,patala',patala',perforar,False,False,False
+P00243,abuelo,papinku,abuelo,papinku,papinku,abuelo,True,True,True
+P00244,bufeo; lombriz gruesa,sapana',bufeo; lombriz gruesa,sapana',sapana',lombriz,True,True,False
+P00245,anda; vete,panter',anda; vete,panter',panter',anda,False,True,False
+P00246,se ha ido,pa'lli,se ha ido,pa'lli,pa'lli,ha,True,True,False
+P00247,tierra,lu'pa',tierra,lu'pa',lu'pa',tierra,False,True,False
+P00248,Pampayacu,pampadek',pampayacu,pampadek',pampadek',pampayacu,False,True,False
+P00249,candela,pen,candela,pen,pen,candela,True,True,False
+P00250,pato,penku,pato,penku,penku,pato,False,False,False
+P00251,sóplale,pekuter',sóplale,pekuter',pekuter',sóplale,False,False,False
+P00252,lavar ropa,peksadun,lavar ropa,peksadun,peksadun,lavar,False,False,False
+P00253,agarrar,pillinter',agarrar,pillinter',pillinter',agarrar,False,True,False
+P00254,espalda,pi'tek',espalda,pi'tek',pi'tek',espalda,False,True,False
+P00255,casa,pidek',casa,pidek',pidek',casa,True,True,False
+P00257,tabaco,pinder,tabaco,pinder,pinder,tabaco,False,True,False
+P00258,alúmbrale,pinter',alúmbrale,pinter',pinter',alúmbrale,False,False,False
+P00259,boa,kupiwan,boa,kupiwan,kupiwan,boa,True,True,False
+P00260,hierba,pumu,hierba,pumu,pumu,hierba,False,False,False
+P00261,pucahuicsa,pupun,pucahuicsa,pupun,pupun,pucahuicsa,False,True,False
+P00262,charapa,puka',charapa,puka',puka',charapa,False,True,False
+P00263,lechuza,putek,lechuza,putek,putek,lechuza,False,False,False
+P00264,pescar,pur',pescar,pur',pur',pescar,False,True,False
+P00265,hartos,wapu',hartos,wapu',wapu',hartos,True,True,False
+P00266,vamos a desgranar,'enchupua,vamos a desgranar,'enchupua,'enchupua,desgranar,False,False,False
+P00267,está pescando,pur'apalli,está pescando,pur'apalli,pur'apalli,pescando,True,True,False
+P00268,vasija de barro para agua,puiñu,vasija de barro para agua,puiñu,puiñu,agua,False,True,False
+P00269,no tiene nada,ma'puñi,no tiene nada,ma'puñi,ma'puñi,tiene,False,True,False
+P00270,Francisco,ransisco,francisco,ransisco,ransisco,francisco,False,True,False
+P00271,anda planta,terer',anda planta,terer',terer',planta,False,False,False
+P00273,comida; comer,uran,comida; comer,uran,uran,comida,True,True,False
+P00274,venado,uru,venado,uru,uru,venado,False,False,False
+P00277,lleno,mur',lleno,mur',mur',lleno,False,True,False
+P00280,no son hartos,wapu' daper' imbu',no son hartos,wapu' daper' imbu',imbu',hartos,False,True,False
+P00281,Viejo,taserpi,viejo,taserpi,taserpi,viejo,True,True,False
+P00282,Barriga,merpi,barriga,merpi,merpi,barriga,False,True,False
+P00283,Maduro,mer'pi,maduro,mer'pi,mer'pi,maduro,True,False,False
+P00284,bufeo,sapana',bufeo,sapana',sapana',bufeo,True,True,False
+P00285,catalán,sasa',catalán,sasa',sasa',catalán,False,True,False
+P00287,viruela,sa'la',viruela,sa'la',sa'la',viruela,False,True,False
+P00288,guaba,sa'lek',guaba,sa'lek',sa'lek',guaba,False,False,False
+P00289,lago,sennan,lago,sennan,sennan,lago,True,True,False
+P00290,gotera,set'lla,gotera,set'lla,set'lla,gotera,False,False,False
+P00291,viejo,taserpi,viejo,taserpi,taserpi,viejo,True,True,False
+P00292,vieja,tasellun,vieja,tasellun,tasellun,vieja,True,True,False
+P00293,doncella,da'wanser,doncella,da'wanser,da'wanser,doncella,False,True,False
+P00294,erizo,sisek',erizo,sisek',sisek',erizo,False,False,False
+P00295,delgado; finito,simek',delgado; finito,simek',simek',delgado,False,True,False
+P00296,noche; oscuro,kasiser',noche; oscuro,kasiser',kasiser',noche,True,True,False
+P00297,tubo grueso,a'llupisi,tubo grueso,a'llupisi,a'llupisi,grueso,False,False,False
+P00298,gallinazo,supu',gallinazo,supu',supu',gallinazo,False,True,False
+P00299,a pie del árbol,sunan,a pie del árbol,sunan,sunan,árbol,False,True,False
+P00301,soga; pretina,sudutek',soga; pretina,sudutek',sudutek',pretina,False,False,False
+P00302,machete (antiguo),sunki,machete (antiguo),sunki,sunki,antiguo,False,True,False
+P00303,esto,asu',esto,asu',asu',esto,True,True,False
+P00304,pichico,sha'kek',pichico,sha'kek',sha'kek',pichico,False,False,False
+P00305,mujer; hermana,shaya',mujer; hermana,shaya',shaya',mujer,True,True,False
+P00306,paujil,isha,paujil,isha,isha,paujil,True,True,False
+P00307,mujer de edad; hermana mayor,sha'sha,mujer de edad; hermana mayor,sha'sha,sha'sha,edad,True,True,False
+P00308,empapado,pisha',empapado,pisha',pisha',empapado,False,False,False
+P00309,Amarillo,sha'pi',amarillo,sha'pi',sha'pi',amarillo,False,False,False
+P00310,mono fraile,sha'wan,mono fraile,sha'wan,sha'wan,fraile,True,False,False
+P00311,chancho,kusher,chancho,kusher,kusher,chancho,False,True,False
+P00312,joven alto,shi'pan,joven alto,shi'pan,shi'pan,alto,False,True,False
+P00313,soga larga,shillin,soga larga,shillin,shillin,soga,False,False,False
+P00315,mandar,kamashir',mandar,kamashir',kamashir',mandar,False,True,False
+P00316,largo,shillin,largo,shillin,shillin,largo,False,True,False
+P00317,sol cuando levanta,shinker,sol cuando levanta,shinker,shinker,levanta,False,True,False
+P00318,camarón,wanshen,camarón,wanshen,wanshen,camarón,False,False,False
+P00319,padre,tata,padre,tata,tata,padre,True,True,False
+P00321,mojarra,pek'ta,mojarra,pek'ta,pek'ta,mojarra,False,False,False
+P00323,brazo; rama,tamba',brazo; rama,tamba',tamba',brazo,False,False,False
+P00325,viento,tanlua,viento,tanlua,tanlua,viento,True,True,False
+P00326,chinchi,tanker,chinchi,tanker,tanker,chinchi,False,False,False
+P00327,palometa,terek',palometa,terek',terek',palometa,False,True,False
+P00328,plantar,tera',plantar,tera',tera',plantar,False,False,False
+P00329,piel,chipitek',piel,chipitek',chipitek',piel,False,True,False
+P00330,voy a decir,windechek' itek'chek',voy a decir,windechek' itek'chek',itek'chek',a,False,True,False
+P00331,dile,iter',dile,iter',iter',dile,False,False,False
+P00332,mi tío,tiuwak',mi tío,tiuwak',tiuwak',mi,False,True,False
+P00333,tu tía,tiapen,tu tía,tiapen,tiapen,tu,False,True,False
+P00334,mi tía,tiawek',mi tía,tiawek',tiawek',mi,False,True,False
+P00335,que se vayan,pan'dina',que se vayan,pan'dina',pan'dina',vayan,False,True,False
+P00336,rodilla,tu'tu'pi,rodilla,tu'tu'pi,tu'tu'pi,rodilla,False,False,False
+P00337,muslo,tula,muslo,tula,tula,muslo,False,False,False
+P00338,palmera para cumba,tumek',palmera para cumba,tumek',tumek',cumba,False,False,False
+P00339,cabeza,mutu',cabeza,mutu',mutu',cabeza,False,True,False
+P00341,bebé,wawaser',bebé,wawaser',wawaser',bebé,True,True,False
+P00342,párate,warenker',párate,warenker',warenker',párate,False,False,False
+P00344,mijano,wadi',mijano,wadi',wadi',mijano,False,True,False
+P00345,carachama grande,walatek',carachama grande,walatek',walatek',grande,False,True,False
+P00346,sonar,wa'la,sonar,wa'la,wa'la,sonar,False,True,False
+P00347,viento,tanluwa,viento,tanluwa,tanluwa,viento,True,True,False
+P00348,lejos,we',lejos,we',we',lejos,False,True,False
+P00349,viene,uk'apinya'lli,viene,uk'apinya'lli,uk'apinya'lli,viene,False,True,False
+P00350,comida,uran,comida,uran,uran,comida,True,True,False
+P00351,llorar,wellek,llorar,wellek,wellek,llorar,False,True,False
+P00352,oír,lauk',oír,lauk',lauk',oír,True,False,False
+P00353,niño,wila,niño,wila,wila,niño,True,True,False
+P00354,poner al niño en brazos,wi'pu,poner al niño en brazos,wi'pu,wi'pu,poner,False,True,False
+P00355,oreja; cuerno,wi'wek',oreja; cuerno,wi'wek',wi'wek',oreja,False,False,False
+P00356,cerca,kawi,cerca,kawi,kawi,cerca,False,True,False
+P00357,curhuinsi,wilek,curhuinsi,wilek,wilek,curhuinsi,False,False,False
+P00358,Qué vamos a hacer?,yama'pu'lan,qué vamos a hacer?,yama'pu'lan,yama'pu'lan,qué,False,True,False
+P00360,solearse el cuerpo,yenbilli,solearse el cuerpo,yenbilli,yenbilli,solearse,False,False,False
+P00361,rabioso,yutek',rabioso,yutek',yutek',rabioso,False,False,False
+P00362,flor de Santa Rosa,yulu'danku,flor de santa rosa,yulu'danku,yulu'danku,flor,False,True,False
+P00363,cascabel,siyuwa,cascabel,siyuwa,siyuwa,cascabel,False,False,False

@@ -1,13 +1,19 @@
 {
   "pipeline": "01b_unificar_fuentes",
-  "timestamp": "2026-03-25T21:38:22.077274+00:00",
+  "timestamp": "2026-05-10T05:27:34.725560+00:00",
   "config_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\config\\sources.json",
   "output_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\01b_unificado\\dataset_unificado.csv",
   "sources": {
-    "flashcards": 2251,
-    "pdf_textos": 956
+    "flashcards2": 2251,
+    "pdf_textos": 956,
+    "flashcards_oraciones": 669,
+    "fidel_lomas": 562,
+    "vs_textos_narrativos": 35,
+    "cotidianas": 44,
+    "el_principito": 13,
+    "extra": 364
   },
-  "total_rows": 3207,
-  "cross_source_duplicates": 0,
-  "unique_sources": 2
+  "total_rows": 4894,
+  "cross_source_duplicates": 40,
+  "unique_sources": 8
 }

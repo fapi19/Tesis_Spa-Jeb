@@ -28,10 +28,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from dataclasses import replace  # noqa: E402
+
+from scripts.nmt._paths import resolve_paths  # noqa: E402
 from src.nmt.training.dataset import DEFAULT_WEIGHT_MAP  # noqa: E402
 from src.nmt.training.train_lora import LoraHyperparams, TrainingConfig, build_trainer  # noqa: E402
-
-AUGMENTED_DIR = PROJECT_ROOT / "data" / "processed" / "07_nmt_augmented"
 
 V1_BT_LORA = LoraHyperparams(
     r=32,
@@ -46,12 +47,14 @@ V1_BT_LORA = LoraHyperparams(
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--config", default="config/nmt/training.yaml", type=str)
-    p.add_argument("--output", default="models/nmt/nllb_bidi_lora_v1_bt", type=str)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
+    p.add_argument("--output", default=None, type=str,
+                   help="Default: models/nmt/nllb_bidi_lora_v1_bt[_xl].")
     p.add_argument("--dry-run", action="store_true")
     p.add_argument(
         "--skip",
         action="append",
-        choices=["bt", "mined", "morph"],
+        choices=["bt", "bt_roundtrip", "mined", "morph"],
         default=[],
         help="Skip specific augmentation source(s). Repeatable.",
     )
@@ -77,20 +80,42 @@ def parse_args() -> argparse.Namespace:
         metavar="ORIGIN=VALUE",
         help="Override one weight (e.g. --weight backtranslation_v0=0.4). Repeatable.",
     )
+    # Phase 0 ablation flags. Default off → preserves existing v1_bt behaviour.
+    p.add_argument("--use-dora", action="store_true",
+                   help="DoRA instead of LoRA (better for low-resource).")
+    p.add_argument("--loraplus-lr-ratio", type=float, default=0.0,
+                   help="LoRA+ asymmetric LR ratio. 0 disables. 16.0 is paper default.")
+    p.add_argument("--rank", type=int, default=None,
+                   help="Override LoRA r (default: V1_BT_LORA r=32).")
+    p.add_argument("--alpha", type=int, default=None,
+                   help="Override LoRA alpha (default: V1_BT_LORA alpha=64).")
+    p.add_argument("--bf16", action="store_true",
+                   help="Use bf16 instead of fp16.")
+    p.add_argument("--compile", dest="compile_model", action="store_true",
+                   help="Apply torch.compile to model.")
+    p.add_argument("--direction", choices=["shw2spa", "spa2shw"], default=None,
+                   help="Train only this direction (used for Two-DoRA).")
     return p.parse_args()
 
 
-def _augmented_csvs(skip: list[str], include_morph: bool) -> list[Path]:
+def _augmented_csvs(augmented_dir: Path, skip: list[str], include_morph: bool) -> list[Path]:
     out: list[Path] = []
-    for name, key, opt in (
+    fixed_specs = (
         ("train_bt.csv", "bt", True),
         ("train_mined.csv", "mined", True),
         ("train_morph.csv", "morph", include_morph),
-    ):
+    )
+    for name, key, opt in fixed_specs:
         if not opt or key in skip:
             continue
-        p = AUGMENTED_DIR / name
+        p = augmented_dir / name
         if p.exists():
+            out.append(p)
+    # Round-trip BT may produce multiple iter files (train_bt_roundtrip.csv,
+    # train_bt_roundtrip_iter1.csv, train_bt_roundtrip_iter2.csv, ...). Pick all
+    # unless --skip bt_roundtrip is given.
+    if "bt_roundtrip" not in skip:
+        for p in sorted(augmented_dir.glob("train_bt_roundtrip*.csv")):
             out.append(p)
     return out
 
@@ -107,26 +132,62 @@ def _parse_weight_overrides(items: list[str]) -> dict[str, float]:
 
 def main() -> int:
     args = parse_args()
+    nmt = resolve_paths(PROJECT_ROOT, args.variant)
+    augmented_dir = nmt.augmented_dir
+    suffix = "_xl" if args.variant == "xl" else ""
+    default_output = f"models/nmt/nllb_bidi_lora_v1_bt{suffix}"
+    output = args.output or default_output
+
     cfg = TrainingConfig.from_yaml(PROJECT_ROOT / args.config, PROJECT_ROOT)
-    object.__setattr__(cfg.training, "output_dir", args.output)
+    if args.variant == "xl":
+        data_cfg = replace(
+            cfg.data,
+            train_csv=nmt.filtered_dir / "train.csv",
+            valid_csv=nmt.filtered_dir / "valid.csv",
+            test_csv=nmt.filtered_dir / "test.csv",
+        )
+        cfg = replace(cfg, data=data_cfg)
+    object.__setattr__(cfg.training, "output_dir", output)
     if not args.no_lora_bump:
         object.__setattr__(cfg, "lora", V1_BT_LORA)
+
+    # Phase 0 ablation overrides: applied AFTER the v1_bt LoRA bump so flags win.
+    lora_overrides: dict = {}
+    if args.use_dora:
+        lora_overrides["use_dora"] = True
+    if args.loraplus_lr_ratio > 0:
+        lora_overrides["loraplus_lr_ratio"] = args.loraplus_lr_ratio
+    if args.rank is not None:
+        lora_overrides["r"] = args.rank
+    if args.alpha is not None:
+        lora_overrides["alpha"] = args.alpha
+    if lora_overrides:
+        cfg = replace(cfg, lora=replace(cfg.lora, **lora_overrides))
+
+    if args.bf16:
+        object.__setattr__(cfg.training, "precision", "bf16")
+    if args.compile_model:
+        object.__setattr__(cfg.training, "compile_model", True)
 
     weight_map: dict[str, float] | None = None
     if not args.no_weighting:
         weight_map = dict(DEFAULT_WEIGHT_MAP)
         weight_map.update(_parse_weight_overrides(args.weight))
 
-    extra_csvs = _augmented_csvs(args.skip, args.include_morph)
+    extra_csvs = _augmented_csvs(augmented_dir, args.skip, args.include_morph)
+    print(f"[phase7d] variant={args.variant} output={output}")
     print(f"[phase7d] augmented CSVs: {[str(p.relative_to(PROJECT_ROOT)) for p in extra_csvs] or '<none>'}")
     if weight_map is not None:
         print(f"[phase7d] weighting (Enhancement #4): {weight_map}")
     else:
         print("[phase7d] weighting disabled (--no-weighting)")
-    print(f"[phase7d] LoRA: r={cfg.lora.r}, alpha={cfg.lora.alpha}, dropout={cfg.lora.dropout}")
+    print(f"[phase7d] LoRA: r={cfg.lora.r}, alpha={cfg.lora.alpha}, dropout={cfg.lora.dropout}, "
+          f"dora={cfg.lora.use_dora}, loraplus_ratio={cfg.lora.loraplus_lr_ratio}")
+    print(f"[phase7d] precision={cfg.training.precision} compile={cfg.training.compile_model} "
+          f"direction_filter={args.direction}")
 
-    run_name = Path(args.output).name
-    report_dir = PROJECT_ROOT / "reports" / "05_nmt" / "training" / run_name
+    run_name = Path(output).name
+    report_dir = nmt.reports_training_dir / run_name
     report_dir.mkdir(parents=True, exist_ok=True)
 
     trainer, info = build_trainer(
@@ -134,6 +195,7 @@ def main() -> int:
         project_root=PROJECT_ROOT,
         extra_train_csvs=extra_csvs,
         weight_map=weight_map,
+        direction_filter=args.direction,
     )
     info["augmented_csvs"] = [str(p.relative_to(PROJECT_ROOT)) for p in extra_csvs]
     print(f"[phase7d] train rows: {info['train_rows']}")
@@ -160,12 +222,12 @@ def main() -> int:
         )
         return 0
 
-    print(f"[phase7d] calling trainer.train() (output_dir={args.output})")
+    print(f"[phase7d] calling trainer.train() (output_dir={output})")
     train_result = trainer.train()
 
     print("[phase7d] saving best LoRA adapter + tokenizer")
-    trainer.save_model(args.output)
-    trainer.processing_class.save_pretrained(args.output)
+    trainer.save_model(output)
+    trainer.processing_class.save_pretrained(output)
 
     summary = {
         "phase": "7d",

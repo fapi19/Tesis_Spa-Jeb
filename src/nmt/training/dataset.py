@@ -22,9 +22,21 @@ from transformers import PreTrainedTokenizerBase
 
 DEFAULT_WEIGHT_MAP: dict[str, float] = {
     "flashcards": 1.0,
+    "flashcards2": 1.0,
+    "flashcards_oraciones": 1.0,
     "pdf_textos": 1.0,
+    "fidel_lomas": 1.0,
+    "vs_textos_narrativos": 1.0,
+    "el_principito": 1.0,
+    # Lexical sources (vocabulary-level, train-only): downweighted to 0.3 so
+    # their distribution does not dominate the loss while their lexical signal
+    # is still incorporated.
+    "extra": 0.3,
+    "cotidianas": 0.3,
+    # Synthetic origins (augmentation):
     "mined_v3_sbert": 0.5,
     "backtranslation_v0": 0.3,
+    "backtranslation_roundtrip_v0": 0.3,
     "morphological_variant": 0.3,
 }
 

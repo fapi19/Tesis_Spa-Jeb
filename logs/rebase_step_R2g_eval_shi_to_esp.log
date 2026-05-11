@@ -1,0 +1,35 @@
+======================================================================
+  EVALUACIÓN DE RETRIEVAL BILINGÜE
+======================================================================
+
+  Modelo: C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\models\sentence_transformers\v3_iterative_hn_e5_base_bidirectional_xl
+  Dirección: shi_to_esp
+  Cargando split: test (xl)
+  Pares: 481
+
+  Evaluando retrieval...
+Batches:   0%|          | 0/8 [00:00<?, ?it/s]Batches:  12%|#2        | 1/8 [00:00<00:02,  2.70it/s]Batches:  38%|###7      | 3/8 [00:00<00:00,  6.60it/s]Batches:  75%|#######5  | 6/8 [00:00<00:00, 11.74it/s]Batches: 100%|##########| 8/8 [00:00<00:00, 11.32it/s]
+Batches:   0%|          | 0/8 [00:00<?, ?it/s]Batches:  12%|#2        | 1/8 [00:00<00:00,  7.65it/s]Batches:  50%|#####     | 4/8 [00:00<00:00, 16.98it/s]Batches: 100%|##########| 8/8 [00:00<00:00, 25.24it/s]Batches: 100%|##########| 8/8 [00:00<00:00, 21.88it/s]
+
+  --------------------------------------------------
+  RETRIEVAL [v3_iterative_hn_e5_base_bidirectional_xl_shi_to_esp] — C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\models\sentence_transformers\v3_iterative_hn_e5_base_bidirectional_xl
+  --------------------------------------------------
+    Total pares:  481
+    Recall@1:     0.7484
+    Recall@5:     0.8898
+    Recall@10:    0.9293
+    MRR:          0.8133
+    Mean Rank:    7.5
+    Positivos/q:  1.15
+
+    Distribución de ranks:
+      Rank 1:      360
+      Rank 2-5:    68
+      Rank 6-10:   19
+      Rank 11-50:  19
+      Rank 51+:    15
+
+    Reporte:      C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\04_embeddings\experiments\v3_iterative_hn_e5_base_bidirectional_xl\v3_iterative_hn_e5_base_bidirectional_xl_shi_to_esp_retrieval.json
+    Cualitativo:  C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\reports\04_embeddings\experiments\v3_iterative_hn_e5_base_bidirectional_xl\v3_iterative_hn_e5_base_bidirectional_xl_shi_to_esp_qualitative.csv
+
+======================================================================

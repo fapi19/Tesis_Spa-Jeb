@@ -1,0 +1,12 @@
+[phase5b] predictions=reports\05_nmt\reranking_xl\nllb_bidi_lora_v1_bt_xl\test_predictions_reranked.jsonl
+[phase5b] train=data\processed\06_nmt_filtered_xl\train.csv
+[phase5b] test=data\processed\06_nmt_filtered_xl\test.csv
+[phase5b] loaded 902 predictions
+[phase5b]   train vocab[shw]: 5588 unique words, 10608 tokens
+[phase5b]   train vocab[spa]: 5031 unique words, 16971 tokens
+[phase5b] wrote reports\05_nmt\evaluation_xl\nllb_bidi_lora_v1_bt_xl\rare_token_analysis_reranked.json
+[phase5b] headline rare-token chrF++ (>=20% rare bucket):
+[phase5b]   shw2spa: chrF++=26.97 (n=400), oov_recovery=0.062 (27/437)
+[phase5b]   spa2shw: chrF++=33.33 (n=438), oov_recovery=0.034 (19/561)
+[phase5b]   avg rare-bucket chrF++ = 30.15
+[phase5b]   avg oov_recovery       = 0.048

@@ -32,6 +32,7 @@ from sentence_transformers.util import cos_sim
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
+SPLITS_DIR_XL = PROJECT_ROOT / "data" / "processed" / "04_splits_xl"
 REPORTS_DIR = PROJECT_ROOT / "reports" / "04_embeddings"
 Direction = Literal["esp_to_shi", "shi_to_esp"]
 
@@ -86,12 +87,29 @@ def parse_args() -> argparse.Namespace:
         default="esp_to_shi",
         help="Dirección de retrieval a evaluar (default: esp_to_shi)"
     )
+    parser.add_argument(
+        "--splits-variant",
+        choices=["main", "xl"],
+        default="main",
+        help="Usar splits canónicos (main) o expandidos (xl).",
+    )
     return parser.parse_args()
 
 
-def load_split(split_name: str, splits_dir: Path | None = None) -> pd.DataFrame:
+def resolve_splits_dir(variant: str = "main") -> Path:
+    if variant == "xl":
+        return SPLITS_DIR_XL
+    return SPLITS_DIR
+
+
+def load_split(
+    split_name: str,
+    splits_dir: Path | None = None,
+    *,
+    splits_variant: str = "main",
+) -> pd.DataFrame:
     """Carga un split CSV."""
-    splits_dir = splits_dir or SPLITS_DIR
+    splits_dir = splits_dir or resolve_splits_dir(splits_variant)
     filepath = splits_dir / f"{split_name}.csv"
     if not filepath.exists():
         raise FileNotFoundError(
@@ -418,8 +436,8 @@ def main() -> None:
     print(f"  Dirección: {args.direction}")
     model = SentenceTransformer(model_path)
 
-    print(f"  Cargando split: {args.split}")
-    df = load_split(args.split)
+    print(f"  Cargando split: {args.split} ({args.splits_variant})")
+    df = load_split(args.split, splits_variant=args.splits_variant)
     print(f"  Pares: {len(df):,}")
 
     print("\n  Evaluando retrieval...")

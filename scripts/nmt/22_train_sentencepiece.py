@@ -11,6 +11,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import random
+import argparse
 import sys
 from pathlib import Path
 
@@ -28,11 +29,9 @@ from src.nmt.preprocessing.train_sentencepiece import (  # noqa: E402
     train_sentencepiece,
     write_corpus,
 )
+from scripts.nmt._paths import resolve_paths
 
-CANON_DIR = PROJECT_ROOT / "data" / "processed" / "05_nmt_canonical"
-FILTERED_DIR = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered"
 SP_OUT_DIR = PROJECT_ROOT / "models" / "nmt" / "sentencepiece"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "preprocessing"
 
 NLLB_BASE = "facebook/nllb-200-distilled-600M"
 SAMPLE_SIZE = 50
@@ -51,9 +50,17 @@ def shiwilu_sample(filtered_train_csv: Path, n: int, seed: int) -> list[str]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--variant", choices=["main", "xl"], default="main")
+    args = parser.parse_args()
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.variant)
+    canon_dir = nmt_paths.canonical_dir
+    filtered_dir = nmt_paths.filtered_dir
+    reports_dir = nmt_paths.reports_preprocessing_dir
+
     # 1) Build the SP corpus from accepted train.
-    sentences = collect_corpus(FILTERED_DIR / "train.csv")
-    corpus_path = CANON_DIR / "all_text_for_sp_nmt.txt"
+    sentences = collect_corpus(filtered_dir / "train.csv")
+    corpus_path = canon_dir / "all_text_for_sp_nmt.txt"
     n_lines = write_corpus(sentences, corpus_path)
     print(f"[phase3] corpus -> {corpus_path.relative_to(PROJECT_ROOT)} ({n_lines} lines)")
 
@@ -71,7 +78,7 @@ def main() -> int:
     print(f"[phase3] loading NLLB tokenizer ({NLLB_BASE}) for comparison ...")
     nllb_tok = AutoTokenizer.from_pretrained(NLLB_BASE)
 
-    samples = shiwilu_sample(FILTERED_DIR / "train.csv", SAMPLE_SIZE, SAMPLE_SEED)
+    samples = shiwilu_sample(filtered_dir / "train.csv", SAMPLE_SIZE, SAMPLE_SEED)
 
     comparisons: list[dict] = []
     sp_token_counts: list[int] = []
@@ -95,7 +102,7 @@ def main() -> int:
             }
         )
 
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
     report = {
         "phase": 3,
         "step": "train_sentencepiece",
@@ -133,7 +140,7 @@ def main() -> int:
             "as a comparison fixture, not the runtime tokenizer."
         ),
     }
-    out_path = REPORTS_DIR / "sentencepiece_stats.json"
+    out_path = reports_dir / "sentencepiece_stats.json"
     out_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[phase3] report -> {out_path.relative_to(PROJECT_ROOT)}")
     print(

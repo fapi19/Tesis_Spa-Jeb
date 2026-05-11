@@ -1,0 +1,821 @@
+﻿id,pair_id,group_id,source,target,source_lang,target_lang,split,has_audit_flags,origin_source,score,label
+RTBT000000__spa2shw,RTBT000000,GRTBT000000,"Andorra, oficialmente Principado de Andorra () es un micro-Estado soberano sin litoral ubicado en el suroeste de Europa, entre España y Francia, en el límite de la península ibérica.","Andorra, ku'apallina' Principalidad de Andorra (Andorra Principado de Andorra) i'la micro-estado soberano de la costa situado en el suroeste de Europa, en España y Francia, en el límite de la península ibérica.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8978156447410583,accepted
+RTBT000000__shw2spa,RTBT000000,GRTBT000000,"Andorra, ku'apallina' Principalidad de Andorra (Andorra Principado de Andorra) i'la micro-estado soberano de la costa situado en el suroeste de Europa, en España y Francia, en el límite de la península ibérica.","Andorra, oficialmente Principado de Andorra () es un micro-Estado soberano sin litoral ubicado en el suroeste de Europa, entre España y Francia, en el límite de la península ibérica.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8978156447410583,accepted
+RTBT000099__spa2shw,RTBT000099,GRTBT000099,"La densidad de población equivale a 344 hab./km², contando con 1136 km² de superficie total.","ñinanpu'lusa' ñinanpu'lusa' enpu'llina' 344 hab/km2, enpu'llina' 1136 km2 ñinanpu'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7239183187484741,accepted
+RTBT000099__shw2spa,RTBT000099,GRTBT000099,"ñinanpu'lusa' ñinanpu'lusa' enpu'llina' 344 hab/km2, enpu'llina' 1136 km2 ñinanpu'.","La densidad de población equivale a 344 hab./km², contando con 1136 km² de superficie total.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7239183187484741,accepted
+RTBT000138__spa2shw,RTBT000138,GRTBT000138,"Agrestis Bubani (SUS) 
+ Anomalotis Steud.",Agrestis Bubani (SUS) Anomalotis Steud.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7625771760940552,accepted
+RTBT000138__shw2spa,RTBT000138,GRTBT000138,Agrestis Bubani (SUS) Anomalotis Steud.,"Agrestis Bubani (SUS) 
+ Anomalotis Steud.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7625771760940552,accepted
+RTBT000147__spa2shw,RTBT000147,GRTBT000147,Es originario de las regiones templadas de Eurasia y Sudamérica.,originario de las regiones templadas de Eurasia y América del Sur.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8645480871200562,accepted
+RTBT000147__shw2spa,RTBT000147,GRTBT000147,originario de las regiones templadas de Eurasia y América del Sur.,Es originario de las regiones templadas de Eurasia y Sudamérica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8645480871200562,accepted
+RTBT000152__spa2shw,RTBT000152,GRTBT000152,Es originario de la región del Mediterráneo y de Eurasia.,originario de la region del mediterraneo y Eurasia.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8654699325561523,accepted
+RTBT000152__shw2spa,RTBT000152,GRTBT000152,originario de la region del mediterraneo y Eurasia.,Es originario de la región del Mediterráneo y de Eurasia.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8654699325561523,accepted
+RTBT000155__spa2shw,RTBT000155,GRTBT000155,Es originario del este de los Estados Unidos y Sudamérica.,originario de este de los Estados Unidos y América del Sur.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8435925841331482,accepted
+RTBT000155__shw2spa,RTBT000155,GRTBT000155,originario de este de los Estados Unidos y América del Sur.,Es originario del este de los Estados Unidos y Sudamérica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8435925841331482,accepted
+RTBT000160__spa2shw,RTBT000160,GRTBT000160,Es originario de la región del Mediterráneo.,originario de la region mediterranea.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT000160__shw2spa,RTBT000160,GRTBT000160,originario de la region mediterranea.,Es originario de la región del Mediterráneo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT000178__spa2shw,RTBT000178,GRTBT000178,"Sinonimia
+ Avena blaui Asch. & Janka	
+ Helictotrichon blaui'' (Asch. & Janka) C.E.",Sinonimia Avena blaui Asch. & Janka Helictotrichon blaui' (Asch. & Janka) C.E.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9802706837654114,accepted
+RTBT000178__shw2spa,RTBT000178,GRTBT000178,Sinonimia Avena blaui Asch. & Janka Helictotrichon blaui' (Asch. & Janka) C.E.,"Sinonimia
+ Avena blaui Asch. & Janka	
+ Helictotrichon blaui'' (Asch. & Janka) C.E.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9802706837654114,accepted
+RTBT000208__spa2shw,RTBT000208,GRTBT000208,"Descripción 
+Planta anual herbácea, o perenne; erecta.","Descripcion Planta anu'la herbacea, perenne; erecta.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7655631303787231,accepted
+RTBT000208__shw2spa,RTBT000208,GRTBT000208,"Descripcion Planta anu'la herbacea, perenne; erecta.","Descripción 
+Planta anual herbácea, o perenne; erecta.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7655631303787231,accepted
+RTBT000211__spa2shw,RTBT000211,GRTBT000211,"Los aeroplanos incluyen a los monoplanos, los biplanos y los triplanos.","aeroplaner'lusa' monoplaner'lusa', biplaner'lusa', triplaner'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8667290210723877,accepted
+RTBT000211__shw2spa,RTBT000211,GRTBT000211,"aeroplaner'lusa' monoplaner'lusa', biplaner'lusa', triplaner'lusa'.","Los aeroplanos incluyen a los monoplanos, los biplanos y los triplanos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8667290210723877,accepted
+RTBT000219__spa2shw,RTBT000219,GRTBT000219,Entró en la Bolsa de Londres en 1980.,iñer'lli London Borsa'lek 1980.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7377422451972961,accepted
+RTBT000219__shw2spa,RTBT000219,GRTBT000219,iñer'lli London Borsa'lek 1980.,Entró en la Bolsa de Londres en 1980.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7377422451972961,accepted
+RTBT000222__spa2shw,RTBT000222,GRTBT000222,"Atlante (superordenador), supercomputadora situada en Las Palmas de Gran Canaria (España).","Atlante (supercomputador), supercomputador uklli Gran Canaria Las Palmas (España).",spa,shw,train,False,backtranslation_roundtrip_v0,0.7710304260253906,accepted
+RTBT000222__shw2spa,RTBT000222,GRTBT000222,"Atlante (supercomputador), supercomputador uklli Gran Canaria Las Palmas (España).","Atlante (superordenador), supercomputadora situada en Las Palmas de Gran Canaria (España).",shw,spa,train,False,backtranslation_roundtrip_v0,0.7710304260253906,accepted
+RTBT000223__spa2shw,RTBT000223,GRTBT000223,"Anaximandro (en griego antiguo Ἀναξίμανδρος; Mileto, Jonia; c. 610 a.","Anaximandro (ancien griego ναξίμανδρος; Mileto, Jonia; c. 610 a.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9471647143363953,accepted
+RTBT000223__shw2spa,RTBT000223,GRTBT000223,"Anaximandro (ancien griego ναξίμανδρος; Mileto, Jonia; c. 610 a.","Anaximandro (en griego antiguo Ἀναξίμανδρος; Mileto, Jonia; c. 610 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9471647143363953,accepted
+RTBT000236__spa2shw,RTBT000236,GRTBT000236,"Citología 
+Su número de cromosomas es de: 2n = 20 y 40.",Citologien iñer'ku'la: 2n = 20 y 40.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7552332878112793,accepted
+RTBT000236__shw2spa,RTBT000236,GRTBT000236,Citologien iñer'ku'la: 2n = 20 y 40.,"Citología 
+Su número de cromosomas es de: 2n = 20 y 40.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7552332878112793,accepted
+RTBT000241__spa2shw,RTBT000241,GRTBT000241,"Taxonomía 
+El género fue descrito por August Heinrich Rudolf Grisebach y publicado en Flora Rossica 4(13): 434. 1852.",Taxonomia August Heinrich Rudolf Grisebach itullina' a'pinta'llina' Flora Rossica 4(13): 434. 1852.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7318567037582397,accepted
+RTBT000241__shw2spa,RTBT000241,GRTBT000241,Taxonomia August Heinrich Rudolf Grisebach itullina' a'pinta'llina' Flora Rossica 4(13): 434. 1852.,"Taxonomía 
+El género fue descrito por August Heinrich Rudolf Grisebach y publicado en Flora Rossica 4(13): 434. 1852.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7318567037582397,accepted
+RTBT000265__spa2shw,RTBT000265,GRTBT000265,"Anaxímenes de Mileto (en griego: Ἀναξιμένης; Mileto, ca.. 590 a.","Mileto anaximenes (Greek: ναξιμένης; Mileto, ca. 590 a.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8678581714630127,accepted
+RTBT000265__shw2spa,RTBT000265,GRTBT000265,"Mileto anaximenes (Greek: ναξιμένης; Mileto, ca. 590 a.","Anaxímenes de Mileto (en griego: Ἀναξιμένης; Mileto, ca.. 590 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8678581714630127,accepted
+RTBT000266__spa2shw,RTBT000266,GRTBT000266,C. – entre 528 y 525 a.,C.  528 a 525 a.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8052741289138794,accepted
+RTBT000266__shw2spa,RTBT000266,GRTBT000266,C.  528 a 525 a.,C. – entre 528 y 525 a.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8052741289138794,accepted
+RTBT000328__spa2shw,RTBT000328,GRTBT000328,"Manuel Antonio Rodolfo Quinn Oaxaca (Chihuahua, 21 de abril de 1915-Boston, Massachusetts, 3 de junio de 2001), conocido como Anthony Quinn, fue un actor mexicanoestadounidense.","Manuel Antonio Rodolfo Quinn Oaxaca (Chihuahua, abril 21, 1915-Boston, Massachusetts, yunusu 3, 2001), itullina' Anthony Quinn, a'pinta' mexicanoamerican actor.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8889029026031494,accepted
+RTBT000328__shw2spa,RTBT000328,GRTBT000328,"Manuel Antonio Rodolfo Quinn Oaxaca (Chihuahua, abril 21, 1915-Boston, Massachusetts, yunusu 3, 2001), itullina' Anthony Quinn, a'pinta' mexicanoamerican actor.","Manuel Antonio Rodolfo Quinn Oaxaca (Chihuahua, 21 de abril de 1915-Boston, Massachusetts, 3 de junio de 2001), conocido como Anthony Quinn, fue un actor mexicanoestadounidense.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8889029026031494,accepted
+RTBT000339__spa2shw,RTBT000339,GRTBT000339,"Astorga (Estorga en el leonés de la Maragatería) es un municipio y ciudad española de la provincia de León, en la comunidad autónoma de Castilla y León.","Astorga (Estorga en leonés de la Maragatería) ispañulli municipio, ispañulli provincia de León, Castilla y León autónoma comunidad.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9735825061798096,accepted
+RTBT000339__shw2spa,RTBT000339,GRTBT000339,"Astorga (Estorga en leonés de la Maragatería) ispañulli municipio, ispañulli provincia de León, Castilla y León autónoma comunidad.","Astorga (Estorga en el leonés de la Maragatería) es un municipio y ciudad española de la provincia de León, en la comunidad autónoma de Castilla y León.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9735825061798096,accepted
+RTBT000351__spa2shw,RTBT000351,GRTBT000351,AIX (Advanced Interactive eXecutive) es un sistema operativo UNIX System V que fue desarrollado por la empresa IBM.,AIX (Advanced Interactive eXecutive) a'chimu'na UNIX System V a'chimu'npu'su' itullina' IBM.,spa,shw,train,False,backtranslation_roundtrip_v0,0.765546977519989,accepted
+RTBT000351__shw2spa,RTBT000351,GRTBT000351,AIX (Advanced Interactive eXecutive) a'chimu'na UNIX System V a'chimu'npu'su' itullina' IBM.,AIX (Advanced Interactive eXecutive) es un sistema operativo UNIX System V que fue desarrollado por la empresa IBM.,shw,spa,train,False,backtranslation_roundtrip_v0,0.765546977519989,accepted
+RTBT000366__spa2shw,RTBT000366,GRTBT000366,"Atlas (satélite), satélite de Saturno.","Atlas, Saturn satelita.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9318228960037231,accepted
+RTBT000366__shw2spa,RTBT000366,GRTBT000366,"Atlas, Saturn satelita.","Atlas (satélite), satélite de Saturno.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9318228960037231,accepted
+RTBT000369__spa2shw,RTBT000369,GRTBT000369,"Alicante (cooficialmente en valenciano: Alacant) es una ciudad y un municipio de España, capital de la provincia homónima, en la Comunidad Valenciana.",Alicante (ku'apallina' valenciano'la: Alacant) ispañilusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'llina'.,spa,shw,train,False,backtranslation_roundtrip_v0,0.772479236125946,accepted
+RTBT000369__shw2spa,RTBT000369,GRTBT000369,Alicante (ku'apallina' valenciano'la: Alacant) ispañilusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'lusa' ñinanpu'llina'.,"Alicante (cooficialmente en valenciano: Alacant) es una ciudad y un municipio de España, capital de la provincia homónima, en la Comunidad Valenciana.",shw,spa,train,False,backtranslation_roundtrip_v0,0.772479236125946,accepted
+RTBT000391__spa2shw,RTBT000391,GRTBT000391,"Burgos es una provincia de España perteneciente a la comunidad autónoma de Castilla y León, situada en el norte de la península ibérica.","Burgos ispanya provincia a'pinta' municipio autonoma de Castilla y León, ka'apallina' peninsula iberica.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9059040546417236,accepted
+RTBT000391__shw2spa,RTBT000391,GRTBT000391,"Burgos ispanya provincia a'pinta' municipio autonoma de Castilla y León, ka'apallina' peninsula iberica.","Burgos es una provincia de España perteneciente a la comunidad autónoma de Castilla y León, situada en el norte de la península ibérica.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9059040546417236,accepted
+RTBT000430__spa2shw,RTBT000430,GRTBT000430,"Biografía 
+Bernal Díaz del Castillo nació entre octubre de 1495 y marzo de 1496 en Medina del Campo, Castilla, hijo del regidor Francisco Díaz del Castillo, apodado ""El Galán"".","Bernal Díaz del Castillo biografia shiñinchiñina' uktuber 1495-lusa' uktuber 1496lusa' Medina del Campo, Castilla, regidor Francisco Díaz del Castillo, shiñinchiñina' ""El Galán"".",spa,shw,train,False,backtranslation_roundtrip_v0,0.7842140197753906,accepted
+RTBT000430__shw2spa,RTBT000430,GRTBT000430,"Bernal Díaz del Castillo biografia shiñinchiñina' uktuber 1495-lusa' uktuber 1496lusa' Medina del Campo, Castilla, regidor Francisco Díaz del Castillo, shiñinchiñina' ""El Galán"".","Biografía 
+Bernal Díaz del Castillo nació entre octubre de 1495 y marzo de 1496 en Medina del Campo, Castilla, hijo del regidor Francisco Díaz del Castillo, apodado ""El Galán"".",shw,spa,train,False,backtranslation_roundtrip_v0,0.7842140197753906,accepted
+RTBT000466__spa2shw,RTBT000466,GRTBT000466,Del Este de Asia y en América del Norte.,"Asia del Este, América del Norte.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8672633171081543,accepted
+RTBT000466__shw2spa,RTBT000466,GRTBT000466,"Asia del Este, América del Norte.",Del Este de Asia y en América del Norte.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8672633171081543,accepted
+RTBT000471__spa2shw,RTBT000471,GRTBT000471,"Es originario de América del Norte, Japón y Corea.","originario'na América del Norte, Japón, korea.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9038484692573547,accepted
+RTBT000471__shw2spa,RTBT000471,GRTBT000471,"originario'na América del Norte, Japón, korea.","Es originario de América del Norte, Japón y Corea.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9038484692573547,accepted
+RTBT000476__spa2shw,RTBT000476,GRTBT000476,"También es conocido como BIOS del sistema, ROM BIOS y BIOS de PC.","a'pinta' ñinchitapallina' sistem BIOS, ROM BIOS, PC BIOS.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7133241891860962,accepted
+RTBT000476__shw2spa,RTBT000476,GRTBT000476,"a'pinta' ñinchitapallina' sistem BIOS, ROM BIOS, PC BIOS.","También es conocido como BIOS del sistema, ROM BIOS y BIOS de PC.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7133241891860962,accepted
+RTBT000489__spa2shw,RTBT000489,GRTBT000489,"Brasil, oficialmente República Federativa de Brasil (, pron.","Brasil, oficialmente República Federativa de Brasil (, pron.",spa,shw,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000489__shw2spa,RTBT000489,GRTBT000489,"Brasil, oficialmente República Federativa de Brasil (, pron.","Brasil, oficialmente República Federativa de Brasil (, pron.",shw,spa,train,False,backtranslation_roundtrip_v0,1.0,accepted
+RTBT000537__spa2shw,RTBT000537,GRTBT000537,"En Colombia se hablan 70 lenguas, de entre las cuales el español es la lengua mayoritaria.","Colombia'la luñinpu'llina' 70 la'la' la'la' la'la'lusa', nanpi'lusa' ispanilusa' la'la la'la'llina'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8314263820648193,accepted
+RTBT000537__shw2spa,RTBT000537,GRTBT000537,"Colombia'la luñinpu'llina' 70 la'la' la'la' la'la'lusa', nanpi'lusa' ispanilusa' la'la la'la'llina'.","En Colombia se hablan 70 lenguas, de entre las cuales el español es la lengua mayoritaria.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8314263820648193,accepted
+RTBT000541__spa2shw,RTBT000541,GRTBT000541,"Las ciencias de la salud son disciplinas que se ven relacionadas con la protección, el fomento y la restauración de la salud y de sus servicios.","ciencias de la salud ñinanlusa' ñinanlusa' ñinanlusa' ñinanlusa', ñinanlusa' ñinanlusa', ñinanlusa' ñinanlusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7414782047271729,accepted
+RTBT000541__shw2spa,RTBT000541,GRTBT000541,"ciencias de la salud ñinanlusa' ñinanlusa' ñinanlusa' ñinanlusa', ñinanlusa' ñinanlusa', ñinanlusa' ñinanlusa'.","Las ciencias de la salud son disciplinas que se ven relacionadas con la protección, el fomento y la restauración de la salud y de sus servicios.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7414782047271729,accepted
+RTBT000542__spa2shw,RTBT000542,GRTBT000542,"El cristianismo (del latín christianismus, y este del griego χριστιανισμός) es una religión abrahámica monoteísta basada en la vida y enseñanzas de Jesús de Nazaret.","cristianismo (latinin christianismus, helenchek χριστιανισμός) ala'sa' iñer'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7900385856628418,accepted
+RTBT000542__shw2spa,RTBT000542,GRTBT000542,"cristianismo (latinin christianismus, helenchek χριστιανισμός) ala'sa' iñer'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa' iser'sa'.","El cristianismo (del latín christianismus, y este del griego χριστιανισμός) es una religión abrahámica monoteísta basada en la vida y enseñanzas de Jesús de Nazaret.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7900385856628418,accepted
+RTBT000564__spa2shw,RTBT000564,GRTBT000564,La Comunidad Valenciana (oficialmente en valenciano: Comunitat Valenciana) es una comunidad autónoma española situada en el este de la península ibérica.,Comunidad Valenciana (ku'apallina' Valencia'la: Comunitat Valenciana) ispañullima ñinanlupa' ñinanlupa' ispañullima.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7076290845870972,accepted
+RTBT000564__shw2spa,RTBT000564,GRTBT000564,Comunidad Valenciana (ku'apallina' Valencia'la: Comunitat Valenciana) ispañullima ñinanlupa' ñinanlupa' ispañullima.,La Comunidad Valenciana (oficialmente en valenciano: Comunitat Valenciana) es una comunidad autónoma española situada en el este de la península ibérica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7076290845870972,accepted
+RTBT000570__spa2shw,RTBT000570,GRTBT000570,"Cuba es uno de los trece países que forman la América Insular, Antillas o islas del mar Caribe, y uno de los treinta y cinco del continente americano.","Cuba ala'sa' ñinanlu'sa' ñinanlu'lusa' insula América, antilla'lusa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7274643778800964,accepted
+RTBT000570__shw2spa,RTBT000570,GRTBT000570,"Cuba ala'sa' ñinanlu'sa' ñinanlu'lusa' insula América, antilla'lusa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa' ñinanlu'sa'.","Cuba es uno de los trece países que forman la América Insular, Antillas o islas del mar Caribe, y uno de los treinta y cinco del continente americano.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7274643778800964,accepted
+RTBT000586__spa2shw,RTBT000586,GRTBT000586,"Sinonimia 
+Grubbiales, Hortensiales, Hydrangeales, Hydrostachyales, Loasales.","Sinonimia Grubbiales, Hortensiales, Hydrangeales, Hydrostachyales, Loasales.",spa,shw,train,False,backtranslation_roundtrip_v0,0.908490777015686,accepted
+RTBT000586__shw2spa,RTBT000586,GRTBT000586,"Sinonimia Grubbiales, Hortensiales, Hydrangeales, Hydrostachyales, Loasales.","Sinonimia 
+Grubbiales, Hortensiales, Hydrangeales, Hydrostachyales, Loasales.",shw,spa,train,False,backtranslation_roundtrip_v0,0.908490777015686,accepted
+RTBT000595__spa2shw,RTBT000595,GRTBT000595,"Cneorum
+ Cneorum tricoccon L., olivillo.","Cneorum Cneorum tricoccon L., olivillo.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9807056188583374,accepted
+RTBT000595__shw2spa,RTBT000595,GRTBT000595,"Cneorum Cneorum tricoccon L., olivillo.","Cneorum
+ Cneorum tricoccon L., olivillo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9807056188583374,accepted
+RTBT000601__spa2shw,RTBT000601,GRTBT000601,"Los clorofluorocarburos (CFC), clorofluorocarbonos o gases clorofluorocarbonados son derivados de los hidrocarburos saturados obtenidos mediante la sustitución de átomos de hidrógeno por átomos de flúor y/o cloro principalmente.","klorofluorocarburos (CFC), klorofluorocarburos (chlorofluorocarburos) o gases clorofluorocarburos (gases clorofluorocarburos) a'pinta'llina' hydrocarburos saturados (hydrocarburos saturados) a'pinta'lusa' a'pinta'lusa' a'pinta'llina' a'pinta'llina' a'pinta'llina' a'pinta'llina' a'pinta'llina'",spa,shw,train,False,backtranslation_roundtrip_v0,0.7008914947509766,accepted
+RTBT000601__shw2spa,RTBT000601,GRTBT000601,"klorofluorocarburos (CFC), klorofluorocarburos (chlorofluorocarburos) o gases clorofluorocarburos (gases clorofluorocarburos) a'pinta'llina' hydrocarburos saturados (hydrocarburos saturados) a'pinta'lusa' a'pinta'lusa' a'pinta'llina' a'pinta'llina' a'pinta'llina' a'pinta'llina' a'pinta'llina'","Los clorofluorocarburos (CFC), clorofluorocarbonos o gases clorofluorocarbonados son derivados de los hidrocarburos saturados obtenidos mediante la sustitución de átomos de hidrógeno por átomos de flúor y/o cloro principalmente.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7008914947509766,accepted
+RTBT000605__spa2shw,RTBT000605,GRTBT000605,"Cono hace referencia a varios artículos:
+
+Concepto
+ Cono (geometría), cuerpo geométrico, sólido de revolución.","Cono itullina' a'pinta' tulli: Concepto Cono (geometría), cuerpo geométrico, revolución.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7576918005943298,accepted
+RTBT000605__shw2spa,RTBT000605,GRTBT000605,"Cono itullina' a'pinta' tulli: Concepto Cono (geometría), cuerpo geométrico, revolución.","Cono hace referencia a varios artículos:
+
+Concepto
+ Cono (geometría), cuerpo geométrico, sólido de revolución.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7576918005943298,accepted
+RTBT000614__spa2shw,RTBT000614,GRTBT000614,"Centro Cultural de la Cooperación, un centro cultural cooperativista en la ciudad de Buenos Aires.","Cientro Cultural de la Cooperación, cientro cultural cooperativo de la ciudad de Buenos Aires.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9690507650375366,accepted
+RTBT000614__shw2spa,RTBT000614,GRTBT000614,"Cientro Cultural de la Cooperación, cientro cultural cooperativo de la ciudad de Buenos Aires.","Centro Cultural de la Cooperación, un centro cultural cooperativista en la ciudad de Buenos Aires.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9690507650375366,accepted
+RTBT000616__spa2shw,RTBT000616,GRTBT000616,"Camilo José Cela y Trulock (Iria Flavia, 11 de mayo de 1916-Madrid, 17 de enero de 2002) fue un escritor español.","Camilo José Cela y Trulock (Iria Flavia, 11 ma'i'n, 1916-Madrid, 17 januuari'n, 2002) ispanya ñinchitapalli.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7895066738128662,accepted
+RTBT000616__shw2spa,RTBT000616,GRTBT000616,"Camilo José Cela y Trulock (Iria Flavia, 11 ma'i'n, 1916-Madrid, 17 januuari'n, 2002) ispanya ñinchitapalli.","Camilo José Cela y Trulock (Iria Flavia, 11 de mayo de 1916-Madrid, 17 de enero de 2002) fue un escritor español.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7895066738128662,accepted
+RTBT000668__spa2shw,RTBT000668,GRTBT000668,"Especies aceptadas 
+Ceuthostoma terminale L.A.S.Johnson, 1988
+Ceuthostoma palawanensis L.A.S.Johnson, 1988
+
+Referencias
+
+Enlaces externos 
+
+Iconografía en Google Imágenes
+
+Casuarinaceae","enpu'llina' Ceuthostoma termininale L.A.S.Johnson, 1988 Ceuthostoma palawanensis L.A.S.Johnson, 1988 References External Links Iconography on Google Images Casuarinaceae",spa,shw,train,False,backtranslation_roundtrip_v0,0.7704747319221497,accepted
+RTBT000668__shw2spa,RTBT000668,GRTBT000668,"enpu'llina' Ceuthostoma termininale L.A.S.Johnson, 1988 Ceuthostoma palawanensis L.A.S.Johnson, 1988 References External Links Iconography on Google Images Casuarinaceae","Especies aceptadas 
+Ceuthostoma terminale L.A.S.Johnson, 1988
+Ceuthostoma palawanensis L.A.S.Johnson, 1988
+
+Referencias
+
+Enlaces externos 
+
+Iconografía en Google Imágenes
+
+Casuarinaceae",shw,spa,train,False,backtranslation_roundtrip_v0,0.7704747319221497,accepted
+RTBT000671__spa2shw,RTBT000671,GRTBT000671,"Etimología 
+carya: derivado del griego κάρυον, ""nuez"".","carya etimologia: yun yunsu'la karρυον, ""nuez"".",spa,shw,train,False,backtranslation_roundtrip_v0,0.7714637517929077,accepted
+RTBT000671__shw2spa,RTBT000671,GRTBT000671,"carya etimologia: yun yunsu'la karρυον, ""nuez"".","Etimología 
+carya: derivado del griego κάρυον, ""nuez"".",shw,spa,train,False,backtranslation_roundtrip_v0,0.7714637517929077,accepted
+RTBT000676__spa2shw,RTBT000676,GRTBT000676,Es originario de las regiones templadas del Hemisferio Norte.,originario de las regiones templadas del hemisferio norte.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8510103821754456,accepted
+RTBT000676__shw2spa,RTBT000676,GRTBT000676,originario de las regiones templadas del hemisferio norte.,Es originario de las regiones templadas del Hemisferio Norte.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8510103821754456,accepted
+RTBT000682__spa2shw,RTBT000682,GRTBT000682,Es originario de Asia tropical.,originario de Asia tropical.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8815758228302002,accepted
+RTBT000682__shw2spa,RTBT000682,GRTBT000682,originario de Asia tropical.,Es originario de Asia tropical.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8815758228302002,accepted
+RTBT000690__spa2shw,RTBT000690,GRTBT000690,Es originario de la región del Mediterráneo hasta el norte de China.,originario de la region mediterranea a'la chinas.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7533439993858337,accepted
+RTBT000690__shw2spa,RTBT000690,GRTBT000690,originario de la region mediterranea a'la chinas.,Es originario de la región del Mediterráneo hasta el norte de China.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7533439993858337,accepted
+RTBT000695__spa2shw,RTBT000695,GRTBT000695,Es originario del Mediterráneo y Asia occidental.,"originario Mediterráneo, Asia occidental.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7879924178123474,accepted
+RTBT000695__shw2spa,RTBT000695,GRTBT000695,"originario Mediterráneo, Asia occidental.",Es originario del Mediterráneo y Asia occidental.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7879924178123474,accepted
+RTBT000766__spa2shw,RTBT000766,GRTBT000766,"Taxonomía
+
+Etimología 
+El nombre del género fue otorgado en honor de C.E.Calderón, botánica argentina.","Taxonomía Etimología dinerlusa' itullina' C.E.Calderon, argentina botanik.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8408126831054688,accepted
+RTBT000766__shw2spa,RTBT000766,GRTBT000766,"Taxonomía Etimología dinerlusa' itullina' C.E.Calderon, argentina botanik.","Taxonomía
+
+Etimología 
+El nombre del género fue otorgado en honor de C.E.Calderón, botánica argentina.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8408126831054688,accepted
+RTBT000768__spa2shw,RTBT000768,GRTBT000768,"Es originario de Norteamérica en Estados Unidos, México y el Caribe.","originario de América del Norte en Estados Unidos, México y Caribe.",spa,shw,train,False,backtranslation_roundtrip_v0,0.906476616859436,accepted
+RTBT000768__shw2spa,RTBT000768,GRTBT000768,"originario de América del Norte en Estados Unidos, México y Caribe.","Es originario de Norteamérica en Estados Unidos, México y el Caribe.",shw,spa,train,False,backtranslation_roundtrip_v0,0.906476616859436,accepted
+RTBT000769__spa2shw,RTBT000769,GRTBT000769,"Citología 
+Número de la base del cromosoma, x = 10. 2n = 60.","Citología number, x = 10. 2n = 60.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7909277081489563,accepted
+RTBT000769__shw2spa,RTBT000769,GRTBT000769,"Citología number, x = 10. 2n = 60.","Citología 
+Número de la base del cromosoma, x = 10. 2n = 60.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7909277081489563,accepted
+RTBT000771__spa2shw,RTBT000771,GRTBT000771,Es originario de las regiones templadas y tropicales del globo.,originario de las regiones templadas yulos del globo.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7189529538154602,accepted
+RTBT000771__shw2spa,RTBT000771,GRTBT000771,originario de las regiones templadas yulos del globo.,Es originario de las regiones templadas y tropicales del globo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7189529538154602,accepted
+RTBT000780__spa2shw,RTBT000780,GRTBT000780,"Es originario de Madagascar, India, China e Indochina.","originario ma'madagascar, India, China, Indochina.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9112045168876648,accepted
+RTBT000780__shw2spa,RTBT000780,GRTBT000780,"originario ma'madagascar, India, China, Indochina.","Es originario de Madagascar, India, China e Indochina.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9112045168876648,accepted
+RTBT000789__spa2shw,RTBT000789,GRTBT000789,Es originario de las regiones templadas y tropicales del globo.,originario de las regiones templadas yulos del globo.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7189529538154602,accepted
+RTBT000789__shw2spa,RTBT000789,GRTBT000789,originario de las regiones templadas yulos del globo.,Es originario de las regiones templadas y tropicales del globo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7189529538154602,accepted
+RTBT000792__spa2shw,RTBT000792,GRTBT000792,Es originario de las regiones tropicales y subtropicales del globo.,originario de las regiones tropicales y subtropicales del globo.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8567006587982178,accepted
+RTBT000792__shw2spa,RTBT000792,GRTBT000792,originario de las regiones tropicales y subtropicales del globo.,Es originario de las regiones tropicales y subtropicales del globo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8567006587982178,accepted
+RTBT000796__spa2shw,RTBT000796,GRTBT000796,"Es originario de las regiones templadas de Eurasia, América del Norte y América del Sur.","originario de las regiones templadas de Eurasia, América del Norte y América del Sur.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8983697891235352,accepted
+RTBT000796__shw2spa,RTBT000796,GRTBT000796,"originario de las regiones templadas de Eurasia, América del Norte y América del Sur.","Es originario de las regiones templadas de Eurasia, América del Norte y América del Sur.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8983697891235352,accepted
+RTBT000808__spa2shw,RTBT000808,GRTBT000808,"Es originario de la región del Caribe, el Amazonas y los Andes.","originario de la region del Caribe, el amazonas y los Andes.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8697725534439087,accepted
+RTBT000808__shw2spa,RTBT000808,GRTBT000808,"originario de la region del Caribe, el amazonas y los Andes.","Es originario de la región del Caribe, el Amazonas y los Andes.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8697725534439087,accepted
+RTBT000860__spa2shw,RTBT000860,GRTBT000860,"En España, una comunidad autónoma (C.","España, ala'sa' ñinanpu'la (C.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7395445704460144,accepted
+RTBT000860__shw2spa,RTBT000860,GRTBT000860,"España, ala'sa' ñinanpu'la (C.","En España, una comunidad autónoma (C.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7395445704460144,accepted
+RTBT000871__spa2shw,RTBT000871,GRTBT000871,"Clasificación puede referirse a:
+
+Bibliografía 
+
+ Clasificación bibliográfica, la clasificación de libros y documentos.","Clasificación itulli: Bibliografía Clasificación bibliográfica, clasificación de libros y documentos.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7707582712173462,accepted
+RTBT000871__shw2spa,RTBT000871,GRTBT000871,"Clasificación itulli: Bibliografía Clasificación bibliográfica, clasificación de libros y documentos.","Clasificación puede referirse a:
+
+Bibliografía 
+
+ Clasificación bibliográfica, la clasificación de libros y documentos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7707582712173462,accepted
+RTBT000873__spa2shw,RTBT000873,GRTBT000873,"Clasificación Decimal Dewey, la clasificación decimal usual en bibliotecas anglófonas.","Dewey decimal classification, anglophone libraries a'pinta' decimal classification.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7288732528686523,accepted
+RTBT000873__shw2spa,RTBT000873,GRTBT000873,"Dewey decimal classification, anglophone libraries a'pinta' decimal classification.","Clasificación Decimal Dewey, la clasificación decimal usual en bibliotecas anglófonas.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7288732528686523,accepted
+RTBT000878__spa2shw,RTBT000878,GRTBT000878,Ver también: Clasificación UNESCO y Clasificación UNESCO 6 dígitos.,"a'wer'ker': UNESCO Clasificación, UNESCO Clasificación 6 cifre.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8006075620651245,accepted
+RTBT000878__shw2spa,RTBT000878,GRTBT000878,"a'wer'ker': UNESCO Clasificación, UNESCO Clasificación 6 cifre.",Ver también: Clasificación UNESCO y Clasificación UNESCO 6 dígitos.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8006075620651245,accepted
+RTBT000879__spa2shw,RTBT000879,GRTBT000879,"Véase también 
+ Clasificación UNESCO
+ Clasificación UNESCO 6 dígitos
+
+4 digitos",ali'la lli'ker' UNESCO Clasificación UNESCO 6 cifre 4 cifre,spa,shw,train,False,backtranslation_roundtrip_v0,0.761958122253418,accepted
+RTBT000879__shw2spa,RTBT000879,GRTBT000879,ali'la lli'ker' UNESCO Clasificación UNESCO 6 cifre 4 cifre,"Véase también 
+ Clasificación UNESCO
+ Clasificación UNESCO 6 dígitos
+
+4 digitos",shw,spa,train,False,backtranslation_roundtrip_v0,0.761958122253418,accepted
+RTBT000909__spa2shw,RTBT000909,GRTBT000909,La cristalografía es la ciencia que estudia los cristales.,crystallography ñinchitapalli lli'inutapalli kristallusa'.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7078040242195129,accepted
+RTBT000909__shw2spa,RTBT000909,GRTBT000909,crystallography ñinchitapalli lli'inutapalli kristallusa'.,La cristalografía es la ciencia que estudia los cristales.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7078040242195129,accepted
+RTBT000915__spa2shw,RTBT000915,GRTBT000915,"Está formada por 919 municipios que integran las provincias de Albacete, Ciudad Real, Cuenca, Guadalajara y Toledo.","ukllina' nu'llina' 919 municipi'lusa' albacete, Ciudad Real, Cuenca, Guadalajara, Toledo province'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7060332298278809,accepted
+RTBT000915__shw2spa,RTBT000915,GRTBT000915,"ukllina' nu'llina' 919 municipi'lusa' albacete, Ciudad Real, Cuenca, Guadalajara, Toledo province'lusa'.","Está formada por 919 municipios que integran las provincias de Albacete, Ciudad Real, Cuenca, Guadalajara y Toledo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7060332298278809,accepted
+RTBT000937__spa2shw,RTBT000937,GRTBT000937,Don Quijote de la Mancha es una novela escrita por el español Miguel de Cervantes Saavedra.,Don Quijote de la Mancha ali'la ispaniku Miguel de Cervantes Saavedra llinserlli.,spa,shw,train,False,backtranslation_roundtrip_v0,0.717599630355835,accepted
+RTBT000937__shw2spa,RTBT000937,GRTBT000937,Don Quijote de la Mancha ali'la ispaniku Miguel de Cervantes Saavedra llinserlli.,Don Quijote de la Mancha es una novela escrita por el español Miguel de Cervantes Saavedra.,shw,spa,train,False,backtranslation_roundtrip_v0,0.717599630355835,accepted
+RTBT000966__spa2shw,RTBT000966,GRTBT000966,"Es decir:
+
+ 1 dyn = 1g·cm/s² = 10−5kg·m/s² = 10−5N
+ 1 N = 1kg·m/s² = 105g·cm/s² = 100000dyn
+
+Tradicionalmente, la dina/centímetro se ha usado para medir tensiones superficiales.",tan: 1 dyn = 1g·cm/s2 = 10−5kg·m/s2 = 10−5N 1 N = 1kg·m/s2 = 105g·cm/s2 = 100000dyn.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8218207359313965,accepted
+RTBT000966__shw2spa,RTBT000966,GRTBT000966,tan: 1 dyn = 1g·cm/s2 = 10−5kg·m/s2 = 10−5N 1 N = 1kg·m/s2 = 105g·cm/s2 = 100000dyn.,"Es decir:
+
+ 1 dyn = 1g·cm/s² = 10−5kg·m/s² = 10−5N
+ 1 N = 1kg·m/s² = 105g·cm/s² = 100000dyn
+
+Tradicionalmente, la dina/centímetro se ha usado para medir tensiones superficiales.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8218207359313965,accepted
+RTBT000984__spa2shw,RTBT000984,GRTBT000984,"Orden Coniocarpales
+Orden Graphidiales
+Orden Cyclocarpales
+
+Bibliografía 
+ Dughi, R. (1954).","Orden Coniocarpales Orden Graphidiales Orden Cyclocarpales Bibliografía Dughi, R. (1954).",spa,shw,train,False,backtranslation_roundtrip_v0,1.000000238418579,accepted
+RTBT000984__shw2spa,RTBT000984,GRTBT000984,"Orden Coniocarpales Orden Graphidiales Orden Cyclocarpales Bibliografía Dughi, R. (1954).","Orden Coniocarpales
+Orden Graphidiales
+Orden Cyclocarpales
+
+Bibliografía 
+ Dughi, R. (1954).",shw,spa,train,False,backtranslation_roundtrip_v0,1.000000238418579,accepted
+RTBT000987__spa2shw,RTBT000987,GRTBT000987,"Organismos unicelulares de la superclase Dinoflagellata, Clase Dinophyceae.","peklu'lusa' peklu'lusa' Dinoflagellata, Dinophyceae.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7104483842849731,accepted
+RTBT000987__shw2spa,RTBT000987,GRTBT000987,"peklu'lusa' peklu'lusa' Dinoflagellata, Dinophyceae.","Organismos unicelulares de la superclase Dinoflagellata, Clase Dinophyceae.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7104483842849731,accepted
+RTBT000991__spa2shw,RTBT000991,GRTBT000991,"Orden Gymnodiniales
+ Orden Dinophysales
+ Orden Peridiniales
+ Orden Rhizodiniales
+ Orden Dinococcales
+ Orden Dinocapsales
+ Orden Dinotricales
+ Orden Blastodiniales
+
+Véase también 
+ Dinoflagellata
+ Dinophyceae
+
+Dinophyceae",Orden Gymnodiniales Orden Dinophysales Orden Peridiniales Orden Rhizodiniales Orden Dinococcales Orden Dinocapsales Orden Dinotricales Orden Blastodiniales,spa,shw,train,False,backtranslation_roundtrip_v0,0.8867401480674744,accepted
+RTBT000991__shw2spa,RTBT000991,GRTBT000991,Orden Gymnodiniales Orden Dinophysales Orden Peridiniales Orden Rhizodiniales Orden Dinococcales Orden Dinocapsales Orden Dinotricales Orden Blastodiniales,"Orden Gymnodiniales
+ Orden Dinophysales
+ Orden Peridiniales
+ Orden Rhizodiniales
+ Orden Dinococcales
+ Orden Dinocapsales
+ Orden Dinotricales
+ Orden Blastodiniales
+
+Véase también 
+ Dinoflagellata
+ Dinophyceae
+
+Dinophyceae",shw,spa,train,False,backtranslation_roundtrip_v0,0.8867401480674744,accepted
+RTBT001000__spa2shw,RTBT001000,GRTBT001000,"Características botánicas 
+
+Inflorescencia en panícula ramosa unilateral verdosa o violácea.",botanical features Inflorescencia unilateral panicula ramosa greenosa.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7322921752929688,accepted
+RTBT001000__shw2spa,RTBT001000,GRTBT001000,botanical features Inflorescencia unilateral panicula ramosa greenosa.,"Características botánicas 
+
+Inflorescencia en panícula ramosa unilateral verdosa o violácea.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7322921752929688,accepted
+RTBT001054__spa2shw,RTBT001054,GRTBT001054,"Es originario del sudeste de Asia, India y Malasia.","originario de Asia del sudeste, India y Malaisia.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8819749355316162,accepted
+RTBT001054__shw2spa,RTBT001054,GRTBT001054,"originario de Asia del sudeste, India y Malaisia.","Es originario del sudeste de Asia, India y Malasia.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8819749355316162,accepted
+RTBT001057__spa2shw,RTBT001057,GRTBT001057,Es originario de las regiones tropicales y templadas de Asia.,originario de las regiones tropicales yulas de Asia.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7762308120727539,accepted
+RTBT001057__shw2spa,RTBT001057,GRTBT001057,originario de las regiones tropicales yulas de Asia.,Es originario de las regiones tropicales y templadas de Asia.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7762308120727539,accepted
+RTBT001074__spa2shw,RTBT001074,GRTBT001074,"Darwin forma el núcleo de los componentes en los que se basan macOS (anteriormente OS X y Mac OS X), iOS, watchOS, tvOS, y iPadOS.","Darwin a'pinta' a'pinta' a'pinta' a'pinta' a'pinta' macos, iOS, watchOS, tvOS, iPadOS.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7372819185256958,accepted
+RTBT001074__shw2spa,RTBT001074,GRTBT001074,"Darwin a'pinta' a'pinta' a'pinta' a'pinta' a'pinta' macos, iOS, watchOS, tvOS, iPadOS.","Darwin forma el núcleo de los componentes en los que se basan macOS (anteriormente OS X y Mac OS X), iOS, watchOS, tvOS, y iPadOS.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7372819185256958,accepted
+RTBT001075__spa2shw,RTBT001075,GRTBT001075,Los dasiuromorfos (Dasyuromorphia) son un orden de mamíferos marsupiales endémicos del continente australiano.,Dasyuromorphus (Dasyuromorphia) ala'sa' enpu'nipa'su' samellusa' enpu'nipa'su' australiana.,spa,shw,train,False,backtranslation_roundtrip_v0,0.727712869644165,accepted
+RTBT001075__shw2spa,RTBT001075,GRTBT001075,Dasyuromorphus (Dasyuromorphia) ala'sa' enpu'nipa'su' samellusa' enpu'nipa'su' australiana.,Los dasiuromorfos (Dasyuromorphia) son un orden de mamíferos marsupiales endémicos del continente australiano.,shw,spa,train,False,backtranslation_roundtrip_v0,0.727712869644165,accepted
+RTBT001080__spa2shw,RTBT001080,GRTBT001080,Viven desde el Cretácico Superior.,nanpinta' nanpallina' Cretaceo Superior.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7167342901229858,accepted
+RTBT001080__shw2spa,RTBT001080,GRTBT001080,nanpinta' nanpallina' Cretaceo Superior.,Viven desde el Cretácico Superior.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7167342901229858,accepted
+RTBT001093__spa2shw,RTBT001093,GRTBT001093,"EV, Ev o eV puede referirse a:
+
+ Astronegro (eV) - Unidad de medida de energía.
+ e. v., era vulgar.","EV, Ev, eV itullina': Astronegro (eV) - Unidad de medición de energía.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7308979034423828,accepted
+RTBT001093__shw2spa,RTBT001093,GRTBT001093,"EV, Ev, eV itullina': Astronegro (eV) - Unidad de medición de energía.","EV, Ev o eV puede referirse a:
+
+ Astronegro (eV) - Unidad de medida de energía.
+ e. v., era vulgar.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7308979034423828,accepted
+RTBT001098__spa2shw,RTBT001098,GRTBT001098,"Ernesto Sabato (; Rojas, 24 de junio de 1911-Santos Lugares, 30 de abril de 2011) fue un escritor, pintor y físico argentino.","Ernesto Sabato (; Rojas, junio 24, 1911-Santos Lugares, abril 30, 2011) argentino pintor, pintor, fyisik.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9575027823448181,accepted
+RTBT001098__shw2spa,RTBT001098,GRTBT001098,"Ernesto Sabato (; Rojas, junio 24, 1911-Santos Lugares, abril 30, 2011) argentino pintor, pintor, fyisik.","Ernesto Sabato (; Rojas, 24 de junio de 1911-Santos Lugares, 30 de abril de 2011) fue un escritor, pintor y físico argentino.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9575027823448181,accepted
+RTBT001116__spa2shw,RTBT001116,GRTBT001116,"Entropía de formación, la diferencia de entropía en el proceso de formación de sustancias a partir de sus elementos constituyentes.","entropio de formación, entropia diferencia de proceso de formación de sustancias a partir de sus componentes.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7494456171989441,accepted
+RTBT001116__shw2spa,RTBT001116,GRTBT001116,"entropio de formación, entropia diferencia de proceso de formación de sustancias a partir de sus componentes.","Entropía de formación, la diferencia de entropía en el proceso de formación de sustancias a partir de sus elementos constituyentes.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7494456171989441,accepted
+RTBT001161__spa2shw,RTBT001161,GRTBT001161,"Flores unisexuales, aclamídeas o monoclamídeas, con gineceo de tres carpelos soldados y cerrados, placentación axial, con 1-2 óvulos.","unisexuales, aclamides, monoclamides, tres carpelos soldados ylosados, plantación axial, 1-2 egg.",spa,shw,train,False,backtranslation_roundtrip_v0,0.848191499710083,accepted
+RTBT001161__shw2spa,RTBT001161,GRTBT001161,"unisexuales, aclamides, monoclamides, tres carpelos soldados ylosados, plantación axial, 1-2 egg.","Flores unisexuales, aclamídeas o monoclamídeas, con gineceo de tres carpelos soldados y cerrados, placentación axial, con 1-2 óvulos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.848191499710083,accepted
+RTBT001197__spa2shw,RTBT001197,GRTBT001197,"Véase también 
+
+ Circuito 
+ Datos
+ Equipo terminal de datos (ETD)
+ Módem
+ RS-232
+ Terminal de computadora
+ etcd (software)
+
+Enlaces externos 
+
+ Data Circuit-terminating Equipment (DCE)
+
+Hardware
+Siglas de informática",ali'la chi'lek Circuito Datos Equipo terminal de datos (ETD) Modem RS-232 terminal de computadora etcd (software) External Links Data Circuit-terminating Equipment (DCE) Hardware,spa,shw,train,False,backtranslation_roundtrip_v0,0.7150978446006775,accepted
+RTBT001197__shw2spa,RTBT001197,GRTBT001197,ali'la chi'lek Circuito Datos Equipo terminal de datos (ETD) Modem RS-232 terminal de computadora etcd (software) External Links Data Circuit-terminating Equipment (DCE) Hardware,"Véase también 
+
+ Circuito 
+ Datos
+ Equipo terminal de datos (ETD)
+ Módem
+ RS-232
+ Terminal de computadora
+ etcd (software)
+
+Enlaces externos 
+
+ Data Circuit-terminating Equipment (DCE)
+
+Hardware
+Siglas de informática",shw,spa,train,False,backtranslation_roundtrip_v0,0.7150978446006775,accepted
+RTBT001221__spa2shw,RTBT001221,GRTBT001221,Es originario de las regiones tropicales y subtropicales.,originario de las regiones tropicales y subtropicales.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8449392318725586,accepted
+RTBT001221__shw2spa,RTBT001221,GRTBT001221,originario de las regiones tropicales y subtropicales.,Es originario de las regiones tropicales y subtropicales.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8449392318725586,accepted
+RTBT001224__spa2shw,RTBT001224,GRTBT001224,Es originario de las regiones tropicals y subtropicales.,originario de las regiones tropicales y subtropicales.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8477838635444641,accepted
+RTBT001224__shw2spa,RTBT001224,GRTBT001224,originario de las regiones tropicales y subtropicales.,Es originario de las regiones tropicals y subtropicales.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8477838635444641,accepted
+RTBT001232__spa2shw,RTBT001232,GRTBT001232,"Es originario de la India, Ceilán, sur de China, el sudeste de Asia, el oeste de Malasia, Australia.","India, Ceilán, south China, southeast Asia, western Malaysia, Australia.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7859784364700317,accepted
+RTBT001232__shw2spa,RTBT001232,GRTBT001232,"India, Ceilán, south China, southeast Asia, western Malaysia, Australia.","Es originario de la India, Ceilán, sur de China, el sudeste de Asia, el oeste de Malasia, Australia.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7859784364700317,accepted
+RTBT001235__spa2shw,RTBT001235,GRTBT001235,"Es originario de China, la región Indomalaya y Australia.","originario de China, region Indomalaya, Australia.",spa,shw,train,False,backtranslation_roundtrip_v0,0.895866870880127,accepted
+RTBT001235__shw2spa,RTBT001235,GRTBT001235,"originario de China, region Indomalaya, Australia.","Es originario de China, la región Indomalaya y Australia.",shw,spa,train,False,backtranslation_roundtrip_v0,0.895866870880127,accepted
+RTBT001238__spa2shw,RTBT001238,GRTBT001238,"Es originario de América tropical, del sudeste de Europa a Asia oriental, región Indomalaya, Polinesia, Sahara, Madagascar.","originario de América tropical, sudeste de Europa a Asia oriental, region Indomalaya, Polinesia, Sahara, Madagascar.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9291924834251404,accepted
+RTBT001238__shw2spa,RTBT001238,GRTBT001238,"originario de América tropical, sudeste de Europa a Asia oriental, region Indomalaya, Polinesia, Sahara, Madagascar.","Es originario de América tropical, del sudeste de Europa a Asia oriental, región Indomalaya, Polinesia, Sahara, Madagascar.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9291924834251404,accepted
+RTBT001250__spa2shw,RTBT001250,GRTBT001250,Es originario de América tropical y en Sudáfrica.,"originario'na América tropical, sud'a'frica.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7830784916877747,accepted
+RTBT001250__shw2spa,RTBT001250,GRTBT001250,"originario'na América tropical, sud'a'frica.",Es originario de América tropical y en Sudáfrica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7830784916877747,accepted
+RTBT001279__spa2shw,RTBT001279,GRTBT001279,La etiología (del griego αἰτιολογία ‘estudio de la causa’) es la ciencia centrada en el estudio de la causalidad.,Etiologia (grego'la αἰτιολογία estudio de la causa) a'na ciencia a'pinta'llina' causalidad.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8960757255554199,accepted
+RTBT001279__shw2spa,RTBT001279,GRTBT001279,Etiologia (grego'la αἰτιολογία estudio de la causa) a'na ciencia a'pinta'llina' causalidad.,La etiología (del griego αἰτιολογία ‘estudio de la causa’) es la ciencia centrada en el estudio de la causalidad.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8960757255554199,accepted
+RTBT001294__spa2shw,RTBT001294,GRTBT001294,Extremadura es una comunidad autónoma española situada en el centro-oeste de la península ibérica.,Extremadura ispañulusa' ñinanpu'su' ñinanpu'su' ñinanpu'llina' iberiyan.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8492010831832886,accepted
+RTBT001294__shw2spa,RTBT001294,GRTBT001294,Extremadura ispañulusa' ñinanpu'su' ñinanpu'su' ñinanpu'llina' iberiyan.,Extremadura es una comunidad autónoma española situada en el centro-oeste de la península ibérica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8492010831832886,accepted
+RTBT001304__spa2shw,RTBT001304,GRTBT001304,"Biografía 
+Lubitsch nació en 1892 en Berlín.",Lubitsch biografia nulli'llina' 1892 Berlin.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7960128784179688,accepted
+RTBT001304__shw2spa,RTBT001304,GRTBT001304,Lubitsch biografia nulli'llina' 1892 Berlin.,"Biografía 
+Lubitsch nació en 1892 en Berlín.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7960128784179688,accepted
+RTBT001307__spa2shw,RTBT001307,GRTBT001307,"Euclides (en griego Εὐκλείδης, Eukleidēs, latín Euclīdēs) fue un matemático y geómetra griego (ca. 325 a.","Euclides (en griego Εὐκλείδης, Eukleidēs, latinen Euclīdēs) yun yun yunyan mathematician, geometra (ca. 325 a.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9662106037139893,accepted
+RTBT001307__shw2spa,RTBT001307,GRTBT001307,"Euclides (en griego Εὐκλείδης, Eukleidēs, latinen Euclīdēs) yun yun yunyan mathematician, geometra (ca. 325 a.","Euclides (en griego Εὐκλείδης, Eukleidēs, latín Euclīdēs) fue un matemático y geómetra griego (ca. 325 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9662106037139893,accepted
+RTBT001317__spa2shw,RTBT001317,GRTBT001317,"Federico García Lorca (Fuente Vaqueros, Granada, 5 de junio de 1898-camino de Víznar a Alfacar, Granada, 18 de agosto de 1936) fue un poeta, dramaturgo y prosista español.","Federico García Lorca (Fuente Vaqueros, Granada, 6 yunusu' 1898-Viznardek Alfacar, Granada, 18 agustus 1936) ispañul poeta, dramaturgo, prosista.",spa,shw,train,False,backtranslation_roundtrip_v0,0.988267719745636,accepted
+RTBT001317__shw2spa,RTBT001317,GRTBT001317,"Federico García Lorca (Fuente Vaqueros, Granada, 6 yunusu' 1898-Viznardek Alfacar, Granada, 18 agustus 1936) ispañul poeta, dramaturgo, prosista.","Federico García Lorca (Fuente Vaqueros, Granada, 5 de junio de 1898-camino de Víznar a Alfacar, Granada, 18 de agosto de 1936) fue un poeta, dramaturgo y prosista español.",shw,spa,train,False,backtranslation_roundtrip_v0,0.988267719745636,accepted
+RTBT001320__spa2shw,RTBT001320,GRTBT001320,"El término función puede referirse a:
+Función (biología) - la actividad específica de un órgano, de un tejido, de una célula o de un organelo.","term function itullina': function (biology) - ala'sa' organ, tissue, cell, organel.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7160611152648926,accepted
+RTBT001320__shw2spa,RTBT001320,GRTBT001320,"term function itullina': function (biology) - ala'sa' organ, tissue, cell, organel.","El término función puede referirse a:
+Función (biología) - la actividad específica de un órgano, de un tejido, de una célula o de un organelo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7160611152648926,accepted
+RTBT001359__spa2shw,RTBT001359,GRTBT001359,"Según las clases de organismos, el campo se puede dividir en: fisiología humana, fisiología médica, fisiología animal, fisiología vegetal, fisiología celular y fisiología comparada.","organisme'lusa' a'pinta'lusa' itullina': fisiologia humana, fisiologia medicinal, fisiología animal, fisiología vegetal, fisiología cellula, fisiología comparada.",spa,shw,train,False,backtranslation_roundtrip_v0,0.759819746017456,accepted
+RTBT001359__shw2spa,RTBT001359,GRTBT001359,"organisme'lusa' a'pinta'lusa' itullina': fisiologia humana, fisiologia medicinal, fisiología animal, fisiología vegetal, fisiología cellula, fisiología comparada.","Según las clases de organismos, el campo se puede dividir en: fisiología humana, fisiología médica, fisiología animal, fisiología vegetal, fisiología celular y fisiología comparada.",shw,spa,train,False,backtranslation_roundtrip_v0,0.759819746017456,accepted
+RTBT001382__spa2shw,RTBT001382,GRTBT001382,"Esta licencia fue creada originalmente por Richard Stallman, fundador de la Free Software Foundation (FSF) para el proyecto GNU.","asu' licencia nu'su' ima Richard Stallman, a'pinta'llina' Free Software Foundation (FSF) GNU project.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9152123928070068,accepted
+RTBT001382__shw2spa,RTBT001382,GRTBT001382,"asu' licencia nu'su' ima Richard Stallman, a'pinta'llina' Free Software Foundation (FSF) GNU project.","Esta licencia fue creada originalmente por Richard Stallman, fundador de la Free Software Foundation (FSF) para el proyecto GNU.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9152123928070068,accepted
+RTBT001393__spa2shw,RTBT001393,GRTBT001393,"Biografía 
+Gustave Flaubert fue el segundo hijo de Achille Cléophas (1784-1846) y de Anne Justine, de soltera Fleuriot (1793-1872).","Biografía Gustave Flaubert ali'la shiñinpu'lli Achille Cléophas (1784-1846) i Anne Justine, shiñik Fleuriot (1793-1872).",spa,shw,train,False,backtranslation_roundtrip_v0,0.7503832578659058,accepted
+RTBT001393__shw2spa,RTBT001393,GRTBT001393,"Biografía Gustave Flaubert ali'la shiñinpu'lli Achille Cléophas (1784-1846) i Anne Justine, shiñik Fleuriot (1793-1872).","Biografía 
+Gustave Flaubert fue el segundo hijo de Achille Cléophas (1784-1846) y de Anne Justine, de soltera Fleuriot (1793-1872).",shw,spa,train,False,backtranslation_roundtrip_v0,0.7503832578659058,accepted
+RTBT001429__spa2shw,RTBT001429,GRTBT001429,"Es originario de Canarias, Europa occidental, del Mediterráneo.","originario de Canarias, Europa occidental, Mediterráneo.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8819350004196167,accepted
+RTBT001429__shw2spa,RTBT001429,GRTBT001429,"originario de Canarias, Europa occidental, Mediterráneo.","Es originario de Canarias, Europa occidental, del Mediterráneo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8819350004196167,accepted
+RTBT001445__spa2shw,RTBT001445,GRTBT001445,Es originario de México a Argentina.,originario Mexiko Argentina.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8329552412033081,accepted
+RTBT001445__shw2spa,RTBT001445,GRTBT001445,originario Mexiko Argentina.,Es originario de México a Argentina.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8329552412033081,accepted
+RTBT001448__spa2shw,RTBT001448,GRTBT001448,"Su única especie: Gouldochloa curvifolia Valdés-Reyna, Morden et S.L.Hatch, es originaria de México.","enpu'ni'na: Gouldochloa curvifolia Valdés-Reyna, Morden et S.L.Hatch, mexiku ñinanpu'lli.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7539016008377075,accepted
+RTBT001448__shw2spa,RTBT001448,GRTBT001448,"enpu'ni'na: Gouldochloa curvifolia Valdés-Reyna, Morden et S.L.Hatch, mexiku ñinanpu'lli.","Su única especie: Gouldochloa curvifolia Valdés-Reyna, Morden et S.L.Hatch, es originaria de México.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7539016008377075,accepted
+RTBT001451__spa2shw,RTBT001451,GRTBT001451,Es originario de Norteamérica y el Caribe.,originario de América del Norte y del Caribe.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8578747510910034,accepted
+RTBT001451__shw2spa,RTBT001451,GRTBT001451,originario de América del Norte y del Caribe.,Es originario de Norteamérica y el Caribe.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8578747510910034,accepted
+RTBT001477__spa2shw,RTBT001477,GRTBT001477,"Emmet Walsh, Daryl Hannah, William Sanderson, Brion James, Joe Turkel y Joanna Cassidy.","Emmet Walsh, Daryl Hannah, William Sanderson, Brion James, Joe Turkel, Joanna Cassidy.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9311872124671936,accepted
+RTBT001477__shw2spa,RTBT001477,GRTBT001477,"Emmet Walsh, Daryl Hannah, William Sanderson, Brion James, Joe Turkel, Joanna Cassidy.","Emmet Walsh, Daryl Hannah, William Sanderson, Brion James, Joe Turkel y Joanna Cassidy.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9311872124671936,accepted
+RTBT001479__spa2shw,RTBT001479,GRTBT001479,"Rosemary's Baby (en Hispanoamérica, El bebé de Rosemary; en España, La semilla del diablo) es una película de terror dramático estadounidense de 1968.","Rosemary's Baby (en Español Americas, El bebé de Rosemary; en España, La semilla del diablo) enpiñina' encinema de terror dramático estadounidense de 1968.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8965431451797485,accepted
+RTBT001479__shw2spa,RTBT001479,GRTBT001479,"Rosemary's Baby (en Español Americas, El bebé de Rosemary; en España, La semilla del diablo) enpiñina' encinema de terror dramático estadounidense de 1968.","Rosemary's Baby (en Hispanoamérica, El bebé de Rosemary; en España, La semilla del diablo) es una película de terror dramático estadounidense de 1968.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8965431451797485,accepted
+RTBT001491__spa2shw,RTBT001491,GRTBT001491,"Sanders
+|guion                = James V.",―Sandersguion = James V.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8006206154823303,accepted
+RTBT001491__shw2spa,RTBT001491,GRTBT001491,―Sandersguion = James V.,"Sanders
+|guion                = James V.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8006206154823303,accepted
+RTBT001493__spa2shw,RTBT001493,GRTBT001493,"Coogan's Bluff (en España, La jungla humana; en Hispanoamérica, Mi nombre es violencia) es una película estadounidense de 1968 del género policíaco.","Coogan's Bluff (en España, La jungla humana; en Hispanoamérica, Mi nombre es violencia) encuentuna' encuentuna de 1968 encuentuna de la policía.",spa,shw,train,False,backtranslation_roundtrip_v0,0.70486980676651,accepted
+RTBT001493__shw2spa,RTBT001493,GRTBT001493,"Coogan's Bluff (en España, La jungla humana; en Hispanoamérica, Mi nombre es violencia) encuentuna' encuentuna de 1968 encuentuna de la policía.","Coogan's Bluff (en España, La jungla humana; en Hispanoamérica, Mi nombre es violencia) es una película estadounidense de 1968 del género policíaco.",shw,spa,train,False,backtranslation_roundtrip_v0,0.70486980676651,accepted
+RTBT001498__spa2shw,RTBT001498,GRTBT001498,"Espacio
+Rosetta (sonda espacial), lanzada por la Agencia Espacial Europea con el módulo de aterrizaje Philae para orbitar alrededor del cometa 67P/Churiumov-Guerasimenko.","Rosetta space (space probe), lansa'llina' Agencia Espacial Europea ñinchitunpu'lusa' ñinchitunpu'lusa' Philae ñinchitunpu'lusa' ñinchitunpu'lusa' 67P/Churiumov-Guerasimenko.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7248921394348145,accepted
+RTBT001498__shw2spa,RTBT001498,GRTBT001498,"Rosetta space (space probe), lansa'llina' Agencia Espacial Europea ñinchitunpu'lusa' ñinchitunpu'lusa' Philae ñinchitunpu'lusa' ñinchitunpu'lusa' 67P/Churiumov-Guerasimenko.","Espacio
+Rosetta (sonda espacial), lanzada por la Agencia Espacial Europea con el módulo de aterrizaje Philae para orbitar alrededor del cometa 67P/Churiumov-Guerasimenko.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7248921394348145,accepted
+RTBT001502__spa2shw,RTBT001502,GRTBT001502,"Ciencia 
+
+ GLORIA (proyecto de investigación)
+ GLORIA (proyecto astronómico) - GLObal Robotic telescope Intelligent Array
+
+Literatura 
+
+ Gloria (novela) (1876-1877), novela de Benito Pérez Galdós.","Ciencia GLORIA (proyecto de investigación) GLORIA (proyecto astronómico) - GLObal Robotic telescope Intelligent Array Literatura Gloria (novela) (1876-1877), benito Pérez Galdós nobela.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9263050556182861,accepted
+RTBT001502__shw2spa,RTBT001502,GRTBT001502,"Ciencia GLORIA (proyecto de investigación) GLORIA (proyecto astronómico) - GLObal Robotic telescope Intelligent Array Literatura Gloria (novela) (1876-1877), benito Pérez Galdós nobela.","Ciencia 
+
+ GLORIA (proyecto de investigación)
+ GLORIA (proyecto astronómico) - GLObal Robotic telescope Intelligent Array
+
+Literatura 
+
+ Gloria (novela) (1876-1877), novela de Benito Pérez Galdós.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9263050556182861,accepted
+RTBT001553__spa2shw,RTBT001553,GRTBT001553,"Definición 
+Nombrado en honor al físico alemán Heinrich Rudolf Hertz (1857-1894), que descubrió la propagación de las ondas electromagnéticas.","Definición Namu'llina' ali'la phyiki Heinrich Rudolf Hertz (1857-1894), yañinchitullina' wa'la' electromagnetik.",spa,shw,train,False,backtranslation_roundtrip_v0,0.759426474571228,accepted
+RTBT001553__shw2spa,RTBT001553,GRTBT001553,"Definición Namu'llina' ali'la phyiki Heinrich Rudolf Hertz (1857-1894), yañinchitullina' wa'la' electromagnetik.","Definición 
+Nombrado en honor al físico alemán Heinrich Rudolf Hertz (1857-1894), que descubrió la propagación de las ondas electromagnéticas.",shw,spa,train,False,backtranslation_roundtrip_v0,0.759426474571228,accepted
+RTBT001560__spa2shw,RTBT001560,GRTBT001560,"La herpetología comprende la biología, ecología, etología, taxonomía, genética y manejo de estos organismos.","herpetology a'pinta'llina' biology, ecology, etology, taxonomy, genetics, asu' organisma a'pinta'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9120608568191528,accepted
+RTBT001560__shw2spa,RTBT001560,GRTBT001560,"herpetology a'pinta'llina' biology, ecology, etology, taxonomy, genetics, asu' organisma a'pinta'lusa'.","La herpetología comprende la biología, ecología, etología, taxonomía, genética y manejo de estos organismos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9120608568191528,accepted
+RTBT001563__spa2shw,RTBT001563,GRTBT001563,"Es originario Europa, África, Sudeste Asiático, Norte y Sur de América.","originario Europa, Afrika, Asia del Sudeste, Norte y Sur América.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9172358512878418,accepted
+RTBT001563__shw2spa,RTBT001563,GRTBT001563,"originario Europa, Afrika, Asia del Sudeste, Norte y Sur América.","Es originario Europa, África, Sudeste Asiático, Norte y Sur de América.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9172358512878418,accepted
+RTBT001572__spa2shw,RTBT001572,GRTBT001572,"Especies 
+ Hordelymus asper, ahora en Taeniatherum
+ Hordelymus caput-medusae, ahora en Taeniatherum
+ Hordelymus europaeus
+
+Referencias
+
+Enlaces externos 
+
+ Grassbase - The World Online Grass Flora 
+ Global Biodiversity Information Facility
+
+Triticeae","Hordelymus asper, ipa'la Taeniatherum Hordelymus caput-medusae, ipa'la Taeniatherum Hordelymus europaeus References External Links Grassbase - The World Online Grass Flora Global Biodiversity Information Facility Triticeae",spa,shw,train,False,backtranslation_roundtrip_v0,0.876763105392456,accepted
+RTBT001572__shw2spa,RTBT001572,GRTBT001572,"Hordelymus asper, ipa'la Taeniatherum Hordelymus caput-medusae, ipa'la Taeniatherum Hordelymus europaeus References External Links Grassbase - The World Online Grass Flora Global Biodiversity Information Facility Triticeae","Especies 
+ Hordelymus asper, ahora en Taeniatherum
+ Hordelymus caput-medusae, ahora en Taeniatherum
+ Hordelymus europaeus
+
+Referencias
+
+Enlaces externos 
+
+ Grassbase - The World Online Grass Flora 
+ Global Biodiversity Information Facility
+
+Triticeae",shw,spa,train,False,backtranslation_roundtrip_v0,0.876763105392456,accepted
+RTBT001574__spa2shw,RTBT001574,GRTBT001574,Es originario de Norteamérica y del norte de Asia.,originario de América del Norte y Asia del Norte.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8499836325645447,accepted
+RTBT001574__shw2spa,RTBT001574,GRTBT001574,originario de América del Norte y Asia del Norte.,Es originario de Norteamérica y del norte de Asia.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8499836325645447,accepted
+RTBT001584__spa2shw,RTBT001584,GRTBT001584,"Heráclito de Éfeso (en griego antiguo: Ἡράκλειτος ὁ Ἐφέσιος Herákleitos ho Ephésios; Éfeso, c. 540 a.","Heraklito Éfeso (ancien griego: ράκλειτος ὁ φέσιος Herákleitos ho Ephésios; Éfeso, c. 540 a.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9087635278701782,accepted
+RTBT001584__shw2spa,RTBT001584,GRTBT001584,"Heraklito Éfeso (ancien griego: ράκλειτος ὁ φέσιος Herákleitos ho Ephésios; Éfeso, c. 540 a.","Heráclito de Éfeso (en griego antiguo: Ἡράκλειτος ὁ Ἐφέσιος Herákleitos ho Ephésios; Éfeso, c. 540 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9087635278701782,accepted
+RTBT001590__spa2shw,RTBT001590,GRTBT001590,Es originario del suroeste de EE.UU. y México a Venezuela.,originario de la'lusa' sudeste de los Estados Unidos y México Venezuela.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7845706343650818,accepted
+RTBT001590__shw2spa,RTBT001590,GRTBT001590,originario de la'lusa' sudeste de los Estados Unidos y México Venezuela.,Es originario del suroeste de EE.UU. y México a Venezuela.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7845706343650818,accepted
+RTBT001610__spa2shw,RTBT001610,GRTBT001610,"Las Islas Baleares (oficialmente ) son una comunidad autónoma uniprovincial española, compuesta por las islas del archipiélago balear.","Islusa' Baleares (officially ) ispañullima uniprovincial autonom community, islusa' uklu'lusa' uklu'lusa' ukllina'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7535382509231567,accepted
+RTBT001610__shw2spa,RTBT001610,GRTBT001610,"Islusa' Baleares (officially ) ispañullima uniprovincial autonom community, islusa' uklu'lusa' uklu'lusa' ukllina'.","Las Islas Baleares (oficialmente ) son una comunidad autónoma uniprovincial española, compuesta por las islas del archipiélago balear.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7535382509231567,accepted
+RTBT001634__spa2shw,RTBT001634,GRTBT001634,"Descripción 
+
+Con los caracteres generales de la familia Schisandraceae.",Descripción con los caracteres generales de la familia Schisandraceae.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9702932834625244,accepted
+RTBT001634__shw2spa,RTBT001634,GRTBT001634,Descripción con los caracteres generales de la familia Schisandraceae.,"Descripción 
+
+Con los caracteres generales de la familia Schisandraceae.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9702932834625244,accepted
+RTBT001640__spa2shw,RTBT001640,GRTBT001640,"En ciencias de la computación, intérprete o interpretador es un programa informático capaz de analizar y ejecutar otros programas.","ciencias de la computación, interprete o interprete i'la programa de la computación yañinchitapalli lli'inpu'lusa' a'pinta'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7770189046859741,accepted
+RTBT001640__shw2spa,RTBT001640,GRTBT001640,"ciencias de la computación, interprete o interprete i'la programa de la computación yañinchitapalli lli'inpu'lusa' a'pinta'lusa'.","En ciencias de la computación, intérprete o interpretador es un programa informático capaz de analizar y ejecutar otros programas.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7770189046859741,accepted
+RTBT001653__spa2shw,RTBT001653,GRTBT001653,"Taxonomía 
+El género fue descrito por Carlos Linneo y publicado en Journal of Botany, British and Foreign 66: 141. 1928.","Taxonomy Carlos Linneo a'tullina', Journal of Botany, British and Foreign 66: 141. 1928.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8530141115188599,accepted
+RTBT001653__shw2spa,RTBT001653,GRTBT001653,"Taxonomy Carlos Linneo a'tullina', Journal of Botany, British and Foreign 66: 141. 1928.","Taxonomía 
+El género fue descrito por Carlos Linneo y publicado en Journal of Botany, British and Foreign 66: 141. 1928.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8530141115188599,accepted
+RTBT001658__spa2shw,RTBT001658,GRTBT001658,Estos mensajes del protocolo ICMP se envían a la dirección IP de origen del paquete.,asu' ICMP protocol message'lusa' pa'llina' pa'an IP pa'an pa'an.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7503961324691772,accepted
+RTBT001658__shw2spa,RTBT001658,GRTBT001658,asu' ICMP protocol message'lusa' pa'llina' pa'an IP pa'an pa'an.,Estos mensajes del protocolo ICMP se envían a la dirección IP de origen del paquete.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7503961324691772,accepted
+RTBT001679__spa2shw,RTBT001679,GRTBT001679,"Jesús de Nazaret, también llamado Cristo, Jesucristo o simplemente Jesús  (Reino de Judea, Imperio romano; ca. 4 a.","Nazaret Jesus, a'pinta' asu' Cristo, Jesucristo, a'pinta' Jesús (Yudea, Roma imperium; ca.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7343104481697083,accepted
+RTBT001679__shw2spa,RTBT001679,GRTBT001679,"Nazaret Jesus, a'pinta' asu' Cristo, Jesucristo, a'pinta' Jesús (Yudea, Roma imperium; ca.","Jesús de Nazaret, también llamado Cristo, Jesucristo o simplemente Jesús  (Reino de Judea, Imperio romano; ca. 4 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7343104481697083,accepted
+RTBT001682__spa2shw,RTBT001682,GRTBT001682,Recibió el Premio Cervantes en 2008.,enpu'lli Cervantes Prize enpu'la 2008.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9683295488357544,accepted
+RTBT001682__shw2spa,RTBT001682,GRTBT001682,enpu'lli Cervantes Prize enpu'la 2008.,Recibió el Premio Cervantes en 2008.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9683295488357544,accepted
+RTBT001686__spa2shw,RTBT001686,GRTBT001686,"Java (España), lugar y parroquia del concello de El Bollo, provincia de Orense, Galicia, España.","Java (España), El Bollo municipio, Orense provincia, Galicia, España.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9584503769874573,accepted
+RTBT001686__shw2spa,RTBT001686,GRTBT001686,"Java (España), El Bollo municipio, Orense provincia, Galicia, España.","Java (España), lugar y parroquia del concello de El Bollo, provincia de Orense, Galicia, España.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9584503769874573,accepted
+RTBT001701__spa2shw,RTBT001701,GRTBT001701,"Biografía  
+Hijo del abogado criminalista, político y empresario Juan de la Cierva y Peñafiel y de María Codorníu Bosch.","Biografía Hijo del abogado criminalista, politico y empresario Juan de la Cierva y Peñafiel y María Codorníu Bosch.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9959235191345215,accepted
+RTBT001701__shw2spa,RTBT001701,GRTBT001701,"Biografía Hijo del abogado criminalista, politico y empresario Juan de la Cierva y Peñafiel y María Codorníu Bosch.","Biografía  
+Hijo del abogado criminalista, político y empresario Juan de la Cierva y Peñafiel y de María Codorníu Bosch.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9959235191345215,accepted
+RTBT001710__spa2shw,RTBT001710,GRTBT001710,"Etimología 
+El término en latín Juglans deriva de Jovis glans, ""bellotas de Júpiter"": figuradamente, una nuez apropiada para un dios.","Etimologia latinu'lusa' term juglans a'pinta'lli Jovis glans, ""Jupiterlusa' muñinpu'lusa': ima, ala'sa' ala'sa' ala'sa' ala'sa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7333222031593323,accepted
+RTBT001710__shw2spa,RTBT001710,GRTBT001710,"Etimologia latinu'lusa' term juglans a'pinta'lli Jovis glans, ""Jupiterlusa' muñinpu'lusa': ima, ala'sa' ala'sa' ala'sa' ala'sa'.","Etimología 
+El término en latín Juglans deriva de Jovis glans, ""bellotas de Júpiter"": figuradamente, una nuez apropiada para un dios.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7333222031593323,accepted
+RTBT001734__spa2shw,RTBT001734,GRTBT001734,"Jijona (en valenciano y cooficialmente Xixona) es un municipio español situado en el interior de la provincia de Alicante, en la Comunidad Valenciana, España.","Jijona (Valenciano la'la Xixona) ispañulusa' municipio a'pinta' ñinanpu'lli Alicante provincia, ispañullima.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9041590690612793,accepted
+RTBT001734__shw2spa,RTBT001734,GRTBT001734,"Jijona (Valenciano la'la Xixona) ispañulusa' municipio a'pinta' ñinanpu'lli Alicante provincia, ispañullima.","Jijona (en valenciano y cooficialmente Xixona) es un municipio español situado en el interior de la provincia de Alicante, en la Comunidad Valenciana, España.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9041590690612793,accepted
+RTBT001762__spa2shw,RTBT001762,GRTBT001762,"Konqueror es un navegador web, administrador de archivos y visor de archivos.","Konqueror a'pinta' web browser, a'ñinpu'lusa', a'ñinpu'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8138874173164368,accepted
+RTBT001762__shw2spa,RTBT001762,GRTBT001762,"Konqueror a'pinta' web browser, a'ñinpu'lusa', a'ñinpu'lusa'.","Konqueror es un navegador web, administrador de archivos y visor de archivos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8138874173164368,accepted
+RTBT001767__spa2shw,RTBT001767,GRTBT001767,"Taxonomía
+El género fue descrito por Laurentius Willem Chatrou y publicado en Changing Genera.",Taxonomía El género fue descrito por Laurentius Willem Chatrou yunta'llina' Changing Genera.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7949492335319519,accepted
+RTBT001767__shw2spa,RTBT001767,GRTBT001767,Taxonomía El género fue descrito por Laurentius Willem Chatrou yunta'llina' Changing Genera.,"Taxonomía
+El género fue descrito por Laurentius Willem Chatrou y publicado en Changing Genera.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7949492335319519,accepted
+RTBT001768__spa2shw,RTBT001768,GRTBT001768,"Kofi Atta Annan (Kumasi, 8 de abril de 1938-Berna, 18 de agosto de 2018) fue un economista ghanés.","Kofi Atta Annan (Kumasi, abril 8, 1938-Berna, agustus 18, 2018) shi'nchan ekonomista.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8598755598068237,accepted
+RTBT001768__shw2spa,RTBT001768,GRTBT001768,"Kofi Atta Annan (Kumasi, abril 8, 1938-Berna, agustus 18, 2018) shi'nchan ekonomista.","Kofi Atta Annan (Kumasi, 8 de abril de 1938-Berna, 18 de agosto de 2018) fue un economista ghanés.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8598755598068237,accepted
+RTBT001790__spa2shw,RTBT001790,GRTBT001790,Lovecraft en el año 1926.,Lovecraft enpu'llima 1926.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7170196175575256,accepted
+RTBT001790__shw2spa,RTBT001790,GRTBT001790,Lovecraft enpu'llima 1926.,Lovecraft en el año 1926.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7170196175575256,accepted
+RTBT001794__spa2shw,RTBT001794,GRTBT001794,"La Bañeza es un municipio y ciudad española de la provincia de León, en la comunidad autónoma de Castilla y León.","La Bañeza ispañulusa' municipio, a'pinta' ispañulusa' province de León, Castilla y León autónoma comunidad.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9140470027923584,accepted
+RTBT001794__shw2spa,RTBT001794,GRTBT001794,"La Bañeza ispañulusa' municipio, a'pinta' ispañulusa' province de León, Castilla y León autónoma comunidad.","La Bañeza es un municipio y ciudad española de la provincia de León, en la comunidad autónoma de Castilla y León.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9140470027923584,accepted
+RTBT001820__spa2shw,RTBT001820,GRTBT001820,Es originario de la región del Mediterráneo.,originario de la region mediterranea.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT001820__shw2spa,RTBT001820,GRTBT001820,originario de la region mediterranea.,Es originario de la región del Mediterráneo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT001839__spa2shw,RTBT001839,GRTBT001839,"Letras & Poesia, colectivo literario en idioma español.","Litras & Poesia, ispanya la'la' la'la'lusa' ñinchitapallina'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.722928524017334,accepted
+RTBT001839__shw2spa,RTBT001839,GRTBT001839,"Litras & Poesia, ispanya la'la' la'la'lusa' ñinchitapallina'.","Letras & Poesia, colectivo literario en idioma español.",shw,spa,train,False,backtranslation_roundtrip_v0,0.722928524017334,accepted
+RTBT001852__spa2shw,RTBT001852,GRTBT001852,"Especies 
+ Lophopogon duthiei
+ Lophopogon intermedius
+ Lophopogon kingii
+ Lophopogon tenax
+ Lophopogon tridentatus
+ Lophopogon truncatiglumis
+
+Referencias
+
+Enlaces externos 
+
+  Grassbase - The World Online Grass Flora
+ Imágenes en Google
+ Global Biodiversity Information Facility",especies Lophopogon duthiei Lophopogon intermedius Lophopogon kingii Lophopogon tenax Lophopogon tridentatus Lophopogon truncatiglumis References External links Grassbase - The World Online Grass Flora Images on Google Global Biodiversity Information Facility,spa,shw,train,False,backtranslation_roundtrip_v0,0.8801782131195068,accepted
+RTBT001852__shw2spa,RTBT001852,GRTBT001852,especies Lophopogon duthiei Lophopogon intermedius Lophopogon kingii Lophopogon tenax Lophopogon tridentatus Lophopogon truncatiglumis References External links Grassbase - The World Online Grass Flora Images on Google Global Biodiversity Information Facility,"Especies 
+ Lophopogon duthiei
+ Lophopogon intermedius
+ Lophopogon kingii
+ Lophopogon tenax
+ Lophopogon tridentatus
+ Lophopogon truncatiglumis
+
+Referencias
+
+Enlaces externos 
+
+  Grassbase - The World Online Grass Flora
+ Imágenes en Google
+ Global Biodiversity Information Facility",shw,spa,train,False,backtranslation_roundtrip_v0,0.8801782131195068,accepted
+RTBT001866__spa2shw,RTBT001866,GRTBT001866,Es originario de América tropical y subtropical.,originario de América tropical y subtropical.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8597585558891296,accepted
+RTBT001866__shw2spa,RTBT001866,GRTBT001866,originario de América tropical y subtropical.,Es originario de América tropical y subtropical.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8597585558891296,accepted
+RTBT001874__spa2shw,RTBT001874,GRTBT001874,"Taxonomía 
+El género fue descrito por Robert Brown y publicado en Prodromus Florae Novae Hollandiae 207. 1810.",Taxonomía El género fue describido por Robert Brown y publicado en Prodromus Florae Novae Hollandiae 207. 1810.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9764537215232849,accepted
+RTBT001874__shw2spa,RTBT001874,GRTBT001874,Taxonomía El género fue describido por Robert Brown y publicado en Prodromus Florae Novae Hollandiae 207. 1810.,"Taxonomía 
+El género fue descrito por Robert Brown y publicado en Prodromus Florae Novae Hollandiae 207. 1810.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9764537215232849,accepted
+RTBT001908__spa2shw,RTBT001908,GRTBT001908,El metro (símbolo: m) es la unidad coherente de longitud del Sistema Internacional de Unidades.,metro (simbulu: m) internañinal sistema de unidadas unidadas unidadas unidadas unidadas.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7492208480834961,accepted
+RTBT001908__shw2spa,RTBT001908,GRTBT001908,metro (simbulu: m) internañinal sistema de unidadas unidadas unidadas unidadas unidadas.,El metro (símbolo: m) es la unidad coherente de longitud del Sistema Internacional de Unidades.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7492208480834961,accepted
+RTBT001915__spa2shw,RTBT001915,GRTBT001915,Marte posee dos satélites naturales: Fobos y Deimos.,"Mars a'pinta' a'pinta' satellites: Fobos, Deimos.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8769001960754395,accepted
+RTBT001915__shw2spa,RTBT001915,GRTBT001915,"Mars a'pinta' a'pinta' satellites: Fobos, Deimos.",Marte posee dos satélites naturales: Fobos y Deimos.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8769001960754395,accepted
+RTBT001993__spa2shw,RTBT001993,GRTBT001993,"Origen del nombre
+El género lleva el nombre de Pierre Magnol, botánico de Montpellier (Francia).","su'lusa' origin del nombre El género lleva el nombre de Pierre Magnol, botánico de Montpellier (Francia).",spa,shw,train,False,backtranslation_roundtrip_v0,0.9378339648246765,accepted
+RTBT001993__shw2spa,RTBT001993,GRTBT001993,"su'lusa' origin del nombre El género lleva el nombre de Pierre Magnol, botánico de Montpellier (Francia).","Origen del nombre
+El género lleva el nombre de Pierre Magnol, botánico de Montpellier (Francia).",shw,spa,train,False,backtranslation_roundtrip_v0,0.9378339648246765,accepted
+RTBT001998__spa2shw,RTBT001998,GRTBT001998,"Ahora, este género es un sinónimo de Magnolia.",ipa'li'na asu' ñinchitapalli magnolia.,spa,shw,train,False,backtranslation_roundtrip_v0,0.715284526348114,accepted
+RTBT001998__shw2spa,RTBT001998,GRTBT001998,ipa'li'na asu' ñinchitapalli magnolia.,"Ahora, este género es un sinónimo de Magnolia.",shw,spa,train,False,backtranslation_roundtrip_v0,0.715284526348114,accepted
+RTBT002008__spa2shw,RTBT002008,GRTBT002008,"El Motorola 68020 es un microprocesador de 32 bits de Motorola, lanzado en 1984.","Motorola 68020 microprocessor de 32 bits de Motorola, lansa'lli 1984.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9225995540618896,accepted
+RTBT002008__shw2spa,RTBT002008,GRTBT002008,"Motorola 68020 microprocessor de 32 bits de Motorola, lansa'lli 1984.","El Motorola 68020 es un microprocesador de 32 bits de Motorola, lanzado en 1984.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9225995540618896,accepted
+RTBT002018__spa2shw,RTBT002018,GRTBT002018,Es originario de la región del Mediterráneo.,originario de la region mediterranea.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT002018__shw2spa,RTBT002018,GRTBT002018,originario de la region mediterranea.,Es originario de la región del Mediterráneo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT002033__spa2shw,RTBT002033,GRTBT002033,El Motorola 68000 (MC68000) es un microprocesador CISC 16/32 -bit diseñado y comercializado por Motorola (actualmente producido por Freescale).,Motorola 68000 (MC68000) microprocessor CISC 16/32 -bit a'pinta'llina' Motorola.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7680027484893799,accepted
+RTBT002033__shw2spa,RTBT002033,GRTBT002033,Motorola 68000 (MC68000) microprocessor CISC 16/32 -bit a'pinta'llina' Motorola.,El Motorola 68000 (MC68000) es un microprocesador CISC 16/32 -bit diseñado y comercializado por Motorola (actualmente producido por Freescale).,shw,spa,train,False,backtranslation_roundtrip_v0,0.7680027484893799,accepted
+RTBT002036__spa2shw,RTBT002036,GRTBT002036,Es originario de Venezuela y Surinam.,"originario Venezuela, Surinam.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7672674059867859,accepted
+RTBT002036__shw2spa,RTBT002036,GRTBT002036,"originario Venezuela, Surinam.",Es originario de Venezuela y Surinam.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7672674059867859,accepted
+RTBT002040__spa2shw,RTBT002040,GRTBT002040,"Taxonomía 
+El género fue descrito por Johann Christian Daniel von Schreber y publicado en Genera Plantarum 1: 44. 1789.","Taxonomía ñinchitapalli Johann Christian Daniel von Schreber, a'pinta'lli Genera Plantarum 1: 44. 1789.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7418068647384644,accepted
+RTBT002040__shw2spa,RTBT002040,GRTBT002040,"Taxonomía ñinchitapalli Johann Christian Daniel von Schreber, a'pinta'lli Genera Plantarum 1: 44. 1789.","Taxonomía 
+El género fue descrito por Johann Christian Daniel von Schreber y publicado en Genera Plantarum 1: 44. 1789.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7418068647384644,accepted
+RTBT002055__spa2shw,RTBT002055,GRTBT002055,"Es originaria de las zonas tropicales de América del Sur, las Antillas,  y en Sudáfrica y Madagascar.","originario de las zonas tropicales de América del Sur, las Antillas, Sudáfrica y Madagascar.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8812737464904785,accepted
+RTBT002055__shw2spa,RTBT002055,GRTBT002055,"originario de las zonas tropicales de América del Sur, las Antillas, Sudáfrica y Madagascar.","Es originaria de las zonas tropicales de América del Sur, las Antillas,  y en Sudáfrica y Madagascar.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8812737464904785,accepted
+RTBT002058__spa2shw,RTBT002058,GRTBT002058,"Especies
+Manisuris leonin Hitchc. et Chase 
+Manisuris tuberculosa Nash
+
+Referencias
+
+Enlaces externos
+
+ Global Biodiversity Information Facility
+ Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).","Especies Manisuris leonin Hitchc. et Chase Manisuris tuberculosa Nash References External Links Global Biodiversity Information Facility Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).",spa,shw,train,False,backtranslation_roundtrip_v0,0.9502500891685486,accepted
+RTBT002058__shw2spa,RTBT002058,GRTBT002058,"Especies Manisuris leonin Hitchc. et Chase Manisuris tuberculosa Nash References External Links Global Biodiversity Information Facility Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).","Especies
+Manisuris leonin Hitchc. et Chase 
+Manisuris tuberculosa Nash
+
+Referencias
+
+Enlaces externos
+
+ Global Biodiversity Information Facility
+ Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).",shw,spa,train,False,backtranslation_roundtrip_v0,0.9502500891685486,accepted
+RTBT002077__spa2shw,RTBT002077,GRTBT002077,"El modelo electrodébil fue desarrollado en la década de los años 1960 por Sheldon Lee Glashow, Abdus Salam y Steven Weinberg.","electrodebible model lansa'lli Sheldon Lee Glashow, Abdus Salam, Steven Weinberg.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7191168069839478,accepted
+RTBT002077__shw2spa,RTBT002077,GRTBT002077,"electrodebible model lansa'lli Sheldon Lee Glashow, Abdus Salam, Steven Weinberg.","El modelo electrodébil fue desarrollado en la década de los años 1960 por Sheldon Lee Glashow, Abdus Salam y Steven Weinberg.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7191168069839478,accepted
+RTBT002079__spa2shw,RTBT002079,GRTBT002079,"Ernst Mach (1838-1916), físico y filósofo austríaco.","Ernst Mach (1838-1916), Austrian physicist and philosopher.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9876964092254639,accepted
+RTBT002079__shw2spa,RTBT002079,GRTBT002079,"Ernst Mach (1838-1916), Austrian physicist and philosopher.","Ernst Mach (1838-1916), físico y filósofo austríaco.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9876964092254639,accepted
+RTBT002104__spa2shw,RTBT002104,GRTBT002104,Mozilla Application Suite es un navegador web y una plataforma de desarrollo libre y de código abierto.,"Mozilla Application Suite a'pinta' web browser, a'pinta' a'pinta' a'pinta' ñinchitapalli.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7464454770088196,accepted
+RTBT002104__shw2spa,RTBT002104,GRTBT002104,"Mozilla Application Suite a'pinta' web browser, a'pinta' a'pinta' a'pinta' ñinchitapalli.",Mozilla Application Suite es un navegador web y una plataforma de desarrollo libre y de código abierto.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7464454770088196,accepted
+RTBT002122__spa2shw,RTBT002122,GRTBT002122,"El neutrón es una partícula subatómica, un nucleón, sin carga neta, presente en el núcleo atómico de prácticamente todos los átomos, excepto el protio.","neutron ala'sa' partikula subatomika, nucleon, a'pinta'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7216252684593201,accepted
+RTBT002122__shw2spa,RTBT002122,GRTBT002122,"neutron ala'sa' partikula subatomika, nucleon, a'pinta'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su'.","El neutrón es una partícula subatómica, un nucleón, sin carga neta, presente en el núcleo atómico de prácticamente todos los átomos, excepto el protio.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7216252684593201,accepted
+RTBT002156__spa2shw,RTBT002156,GRTBT002156,"Su única especie: Narduroides salzmannii (Boiss.) Rouy, es originaria de la región del Mediterráneo.","ñinanlu'na: Narduroides salzmannii (Boiss.) Rouy, originario de la región del Mediterráneo.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7733516693115234,accepted
+RTBT002156__shw2spa,RTBT002156,GRTBT002156,"ñinanlu'na: Narduroides salzmannii (Boiss.) Rouy, originario de la región del Mediterráneo.","Su única especie: Narduroides salzmannii (Boiss.) Rouy, es originaria de la región del Mediterráneo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7733516693115234,accepted
+RTBT002173__spa2shw,RTBT002173,GRTBT002173,"Especies seleccionadas 
+ Nastus obtusus Holttum
+ Nastus borbonicus
+
+Referencias
+
+Enlaces externos 
+
+ Imágenes en Google
+  Grassbase - The World Online Grass Flora",ali'lusa' Nastus obtusus Holttum Nastus borbonicus References External Links Images on Google Grassbase - The World Online Grass Flora,spa,shw,train,False,backtranslation_roundtrip_v0,0.7646397948265076,accepted
+RTBT002173__shw2spa,RTBT002173,GRTBT002173,ali'lusa' Nastus obtusus Holttum Nastus borbonicus References External Links Images on Google Grassbase - The World Online Grass Flora,"Especies seleccionadas 
+ Nastus obtusus Holttum
+ Nastus borbonicus
+
+Referencias
+
+Enlaces externos 
+
+ Imágenes en Google
+  Grassbase - The World Online Grass Flora",shw,spa,train,False,backtranslation_roundtrip_v0,0.7646397948265076,accepted
+RTBT002216__spa2shw,RTBT002216,GRTBT002216,"La oleorresina son extractos semisólidos compuestos de una resina en solución en un aceite esencial o graso, obtenido por la evaporación del solvente(s) utilizado para su producción.","oleorresina' semisoluda extractos compuestos de una resina en solución en un aceite esencial o graso, obtenido por el vaporamiento del solvente (solvente) (solvente) (solvente) (solvente) (solvente) (solvente)) (solvente) (solvente) (solvente)) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente)",spa,shw,train,False,backtranslation_roundtrip_v0,0.9285850524902344,accepted
+RTBT002216__shw2spa,RTBT002216,GRTBT002216,"oleorresina' semisoluda extractos compuestos de una resina en solución en un aceite esencial o graso, obtenido por el vaporamiento del solvente (solvente) (solvente) (solvente) (solvente) (solvente) (solvente)) (solvente) (solvente) (solvente)) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente) (solvente)","La oleorresina son extractos semisólidos compuestos de una resina en solución en un aceite esencial o graso, obtenido por la evaporación del solvente(s) utilizado para su producción.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9285850524902344,accepted
+RTBT002225__spa2shw,RTBT002225,GRTBT002225,"Olivares es un municipio español de la provincia de Sevilla, Andalucía, España.","Olivares ispañulusa' municipi de la provincia de Sevilla, Andalucía, España.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9864488840103149,accepted
+RTBT002225__shw2spa,RTBT002225,GRTBT002225,"Olivares ispañulusa' municipi de la provincia de Sevilla, Andalucía, España.","Olivares es un municipio español de la provincia de Sevilla, Andalucía, España.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9864488840103149,accepted
+RTBT002253__spa2shw,RTBT002253,GRTBT002253,"Especies 
+ Olyra amapana Soderstr. et Zuloaga 
+ Olyra cordifolia Humb., Bonpl. et Kunth 
+ Olyra fasciculata Trin.","especies Olyra amapana Soderstr. et Zuloaga Olyra cordifolia Humb., Bonpl. et Kunth Olyra fasciculata Trin.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8650467395782471,accepted
+RTBT002253__shw2spa,RTBT002253,GRTBT002253,"especies Olyra amapana Soderstr. et Zuloaga Olyra cordifolia Humb., Bonpl. et Kunth Olyra fasciculata Trin.","Especies 
+ Olyra amapana Soderstr. et Zuloaga 
+ Olyra cordifolia Humb., Bonpl. et Kunth 
+ Olyra fasciculata Trin.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8650467395782471,accepted
+RTBT002259__spa2shw,RTBT002259,GRTBT002259,"Política
+ Código Orgánico de Tribunales
+ Democracia orgánica, sistema político instaurado en España por el franquismo en 1942;
+
+Nota","Politica Código Organico de Tribunales Democracia orgánica, sistema político usha'llina' España'la franquismo en 1942; Nota",spa,shw,train,False,backtranslation_roundtrip_v0,0.9126618504524231,accepted
+RTBT002259__shw2spa,RTBT002259,GRTBT002259,"Politica Código Organico de Tribunales Democracia orgánica, sistema político usha'llina' España'la franquismo en 1942; Nota","Política
+ Código Orgánico de Tribunales
+ Democracia orgánica, sistema político instaurado en España por el franquismo en 1942;
+
+Nota",shw,spa,train,False,backtranslation_roundtrip_v0,0.9126618504524231,accepted
+RTBT002260__spa2shw,RTBT002260,GRTBT002260,Ontario (; ) es una provincia de Canadá.,Ontario (; ) Kanada provincia.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9593099355697632,accepted
+RTBT002260__shw2spa,RTBT002260,GRTBT002260,Ontario (; ) Kanada provincia.,Ontario (; ) es una provincia de Canadá.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9593099355697632,accepted
+RTBT002294__spa2shw,RTBT002294,GRTBT002294,"Está ubicado en América Insular, al noreste del Caribe, al este de la isla de La Española y al oeste de las Islas Vírgenes de los Estados Unidos.","ñapawi'llina' en América Insular, norteste del Caribe, este de la isla de la Española y a oeste de las Islas Virgen de Estados Unidos.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8196695446968079,accepted
+RTBT002294__shw2spa,RTBT002294,GRTBT002294,"ñapawi'llina' en América Insular, norteste del Caribe, este de la isla de la Española y a oeste de las Islas Virgen de Estados Unidos.","Está ubicado en América Insular, al noreste del Caribe, al este de la isla de La Española y al oeste de las Islas Vírgenes de los Estados Unidos.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8196695446968079,accepted
+RTBT002300__spa2shw,RTBT002300,GRTBT002300,Perú tiene una población de 32 440 172 habitantes en 2023.,Peru a'pinta' a'pinta' 32 440 172 ñinanlu'lusa' nanpi'llina' 2023.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7258238792419434,accepted
+RTBT002300__shw2spa,RTBT002300,GRTBT002300,Peru a'pinta' a'pinta' 32 440 172 ñinanlu'lusa' nanpi'llina' 2023.,Perú tiene una población de 32 440 172 habitantes en 2023.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7258238792419434,accepted
+RTBT002302__spa2shw,RTBT002302,GRTBT002302,"Pablo Ruiz Picasso (Málaga, 25 de octubre de 1881-Mougins, 8 de abril de 1973) fue un pintor y escultor español, creador, junto con Georges Braque, del cubismo.","Pablo Ruiz Picasso (Málaga, ukalli 25, 1881-Mougins, ukalli 8, 1973) ispañululum pintur'lusa' ñinchitapallina', pa'apallina', Georges Braquelek, cubismo.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7361257076263428,accepted
+RTBT002302__shw2spa,RTBT002302,GRTBT002302,"Pablo Ruiz Picasso (Málaga, ukalli 25, 1881-Mougins, ukalli 8, 1973) ispañululum pintur'lusa' ñinchitapallina', pa'apallina', Georges Braquelek, cubismo.","Pablo Ruiz Picasso (Málaga, 25 de octubre de 1881-Mougins, 8 de abril de 1973) fue un pintor y escultor español, creador, junto con Georges Braque, del cubismo.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7361257076263428,accepted
+RTBT002349__spa2shw,RTBT002349,GRTBT002349,"El término Pascal puede referirse a una de las siguientes acepciones:
+
+Personas 
+ Blaise Pascal, matemático, físico, filósofo y teólogo francés.","Pascal la'la'tullina' a'pinta' a'pinta' a'pinta'la: Personas Blaise Pascal, matematica, fizikus, filosofo, teologo frances.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7253144979476929,accepted
+RTBT002349__shw2spa,RTBT002349,GRTBT002349,"Pascal la'la'tullina' a'pinta' a'pinta' a'pinta'la: Personas Blaise Pascal, matematica, fizikus, filosofo, teologo frances.","El término Pascal puede referirse a una de las siguientes acepciones:
+
+Personas 
+ Blaise Pascal, matemático, físico, filósofo y teólogo francés.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7253144979476929,accepted
+RTBT002351__spa2shw,RTBT002351,GRTBT002351,"Jacqueline Pascal, escritora y religiosa francesa, hermana de Blaise Pascal.","Jacqueline Pascal, ala'sa' kulliker'a'su' Francia, kulliker'a'su' Blaise Pascal.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8509652018547058,accepted
+RTBT002351__shw2spa,RTBT002351,GRTBT002351,"Jacqueline Pascal, ala'sa' kulliker'a'su' Francia, kulliker'a'su' Blaise Pascal.","Jacqueline Pascal, escritora y religiosa francesa, hermana de Blaise Pascal.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8509652018547058,accepted
+RTBT002432__spa2shw,RTBT002432,GRTBT002432,"El LRC: Longitudinal Redundancy Checking (""Chequeo de Redundancia Horizontal"") y el VRC: Vertical Redundancy Checking (""Chequeo de Redundancia Vertical"").","LRC: Longitudinal Redundancy Checking (Horizontal Redundancy Checking), VRC: Vertical Redundancy Checking (Vertical Redundancy Checking).",spa,shw,train,False,backtranslation_roundtrip_v0,0.8370554447174072,accepted
+RTBT002432__shw2spa,RTBT002432,GRTBT002432,"LRC: Longitudinal Redundancy Checking (Horizontal Redundancy Checking), VRC: Vertical Redundancy Checking (Vertical Redundancy Checking).","El LRC: Longitudinal Redundancy Checking (""Chequeo de Redundancia Horizontal"") y el VRC: Vertical Redundancy Checking (""Chequeo de Redundancia Vertical"").",shw,spa,train,False,backtranslation_roundtrip_v0,0.8370554447174072,accepted
+RTBT002441__spa2shw,RTBT002441,GRTBT002441,Es originario de las regiones templadas del hemisferio norte.,originario de las regiones templadas del hemisferio del norte.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8495761156082153,accepted
+RTBT002441__shw2spa,RTBT002441,GRTBT002441,originario de las regiones templadas del hemisferio del norte.,Es originario de las regiones templadas del hemisferio norte.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8495761156082153,accepted
+RTBT002450__spa2shw,RTBT002450,GRTBT002450,Es originario de la región del Mediterráneo hasta el oeste de Asia.,originario de la region mediterranea a'yapi Asia.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7524786591529846,accepted
+RTBT002450__shw2spa,RTBT002450,GRTBT002450,originario de la region mediterranea a'yapi Asia.,Es originario de la región del Mediterráneo hasta el oeste de Asia.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7524786591529846,accepted
+RTBT002453__spa2shw,RTBT002453,GRTBT002453,"Bibliografía 
+
+ ;  2008: Review of the family Asterolecaniidae (Hemiptera: Coccoidea) in South Africa, with the description of a new species.","Bibliografia; 2008: Review of the family Asterolecaniidae (Hemiptera: Coccoidea) in South Africa, with the description of a new species.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9705022573471069,accepted
+RTBT002453__shw2spa,RTBT002453,GRTBT002453,"Bibliografia; 2008: Review of the family Asterolecaniidae (Hemiptera: Coccoidea) in South Africa, with the description of a new species.","Bibliografía 
+
+ ;  2008: Review of the family Asterolecaniidae (Hemiptera: Coccoidea) in South Africa, with the description of a new species.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9705022573471069,accepted
+RTBT002466__spa2shw,RTBT002466,GRTBT002466,Es originario de Eurasia y Estados Unidos.,originario de Eurasia y Estados Unidos.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8944888114929199,accepted
+RTBT002466__shw2spa,RTBT002466,GRTBT002466,originario de Eurasia y Estados Unidos.,Es originario de Eurasia y Estados Unidos.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8944888114929199,accepted
+RTBT002477__spa2shw,RTBT002477,GRTBT002477,Es originario de la región del Mediterráneo.,originario de la region mediterranea.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT002477__shw2spa,RTBT002477,GRTBT002477,originario de la region mediterranea.,Es originario de la región del Mediterráneo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8258993625640869,accepted
+RTBT002483__spa2shw,RTBT002483,GRTBT002483,"Especies 
+ Pariana bicolor Tutin 
+ Pariana gleasonii Hitchc.",pariana species bicolor Tutin pariana gleasonii Hitchc.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8493373394012451,accepted
+RTBT002483__shw2spa,RTBT002483,GRTBT002483,pariana species bicolor Tutin pariana gleasonii Hitchc.,"Especies 
+ Pariana bicolor Tutin 
+ Pariana gleasonii Hitchc.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8493373394012451,accepted
+RTBT002486__spa2shw,RTBT002486,GRTBT002486,"Especies 
+ Paratheria glaberrima
+ Paratheria prostrata Griseb.",species Paratheria glaberrima Paratheria prostrata Griseb.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8331921100616455,accepted
+RTBT002486__shw2spa,RTBT002486,GRTBT002486,species Paratheria glaberrima Paratheria prostrata Griseb.,"Especies 
+ Paratheria glaberrima
+ Paratheria prostrata Griseb.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8331921100616455,accepted
+RTBT002499__spa2shw,RTBT002499,GRTBT002499,Las imágenes PNG usan la extensión .png y han obtenido un tipo MIME (image/png) aprobado el 14 de octubre de 1996.,"PNG imawi'lusa' uk'llina' .png ekstensi'na, enpu'llina' enpu'lusa' MIME (imagen/png) enpu'lusa' a'pinta'su' a'pinta'su' ektuber 14, 1996.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7432805299758911,accepted
+RTBT002499__shw2spa,RTBT002499,GRTBT002499,"PNG imawi'lusa' uk'llina' .png ekstensi'na, enpu'llina' enpu'lusa' MIME (imagen/png) enpu'lusa' a'pinta'su' a'pinta'su' ektuber 14, 1996.",Las imágenes PNG usan la extensión .png y han obtenido un tipo MIME (image/png) aprobado el 14 de octubre de 1996.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7432805299758911,accepted
+RTBT002512__spa2shw,RTBT002512,GRTBT002512,"Música 
+ Solas (1994-), grupo irlandés-estadounidense de música folk irlandesa:
+ Solas (1996), primer LP.","Musica Solas (1994-), irlandes-estadounidense grupo de música folk irlandesa: Solas (1996), primer LP.",spa,shw,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT002512__shw2spa,RTBT002512,GRTBT002512,"Musica Solas (1994-), irlandes-estadounidense grupo de música folk irlandesa: Solas (1996), primer LP.","Música 
+ Solas (1994-), grupo irlandés-estadounidense de música folk irlandesa:
+ Solas (1996), primer LP.",shw,spa,train,False,backtranslation_roundtrip_v0,1.0000001192092896,accepted
+RTBT002543__spa2shw,RTBT002543,GRTBT002543,"Ponferrada es un municipio y ciudad española de la provincia de León, en la comunidad autónoma de Castilla y León.","Ponferrada ispañulusa' municipio, a'pinta' ispañulusa' province de León, autonoma comunidad de Castilla y León.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7871321439743042,accepted
+RTBT002543__shw2spa,RTBT002543,GRTBT002543,"Ponferrada ispañulusa' municipio, a'pinta' ispañulusa' province de León, autonoma comunidad de Castilla y León.","Ponferrada es un municipio y ciudad española de la provincia de León, en la comunidad autónoma de Castilla y León.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7871321439743042,accepted
+RTBT002550__spa2shw,RTBT002550,GRTBT002550,"Provincias 
+
+Las provincias que componen esta región son:
+  Nuevo Brunswick
+  Nueva Escocia
+  Isla del Príncipe Eduardo
+
+Enlaces externos
+
+Provincias de Canadá",provincia'lusa' asu' ñinanlusa' asu' ñinanlusa' nana: New Brunswick New Scotland Prince Edward Island,spa,shw,train,False,backtranslation_roundtrip_v0,0.8150087594985962,accepted
+RTBT002550__shw2spa,RTBT002550,GRTBT002550,provincia'lusa' asu' ñinanlusa' asu' ñinanlusa' nana: New Brunswick New Scotland Prince Edward Island,"Provincias 
+
+Las provincias que componen esta región son:
+  Nuevo Brunswick
+  Nueva Escocia
+  Isla del Príncipe Eduardo
+
+Enlaces externos
+
+Provincias de Canadá",shw,spa,train,False,backtranslation_roundtrip_v0,0.8150087594985962,accepted
+RTBT002567__spa2shw,RTBT002567,GRTBT002567,"Solanum phureja, la papa criolla, papa amarilla, papa redonda o papa chaucha.","phureja solanum, kriol papapapapapapapapapapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapa.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7005113363265991,accepted
+RTBT002567__shw2spa,RTBT002567,GRTBT002567,"phureja solanum, kriol papapapapapapapapapapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapaapa.","Solanum phureja, la papa criolla, papa amarilla, papa redonda o papa chaucha.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7005113363265991,accepted
+RTBT002574__spa2shw,RTBT002574,GRTBT002574,"Publio Sulpicio Quirinio (en latín: Publius Sulpicius Quirinius), a veces llamado también Publio Sulpicio Quirino o Cirenio (en griego Κυρήνιος, c. 51 a.","Publio Sulpicio Quirinio (latinlek: Publius Sulpicius Quirinius), nerpi'na Publio Sulpicio Quirino itullina' cirenio (yunik Κυρήνιος, c.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8469218015670776,accepted
+RTBT002574__shw2spa,RTBT002574,GRTBT002574,"Publio Sulpicio Quirinio (latinlek: Publius Sulpicius Quirinius), nerpi'na Publio Sulpicio Quirino itullina' cirenio (yunik Κυρήνιος, c.","Publio Sulpicio Quirinio (en latín: Publius Sulpicius Quirinius), a veces llamado también Publio Sulpicio Quirino o Cirenio (en griego Κυρήνιος, c. 51 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8469218015670776,accepted
+RTBT002633__spa2shw,RTBT002633,GRTBT002633,"La robótica combina diversas disciplinas como la mecánica, la electrónica, la informática, la inteligencia artificial, la ingeniería de control y la física.","robotika nu'su' ñinchitapallina' mechanics, electronics, computer, artificial intelligence, control engineering, fizika.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7722562551498413,accepted
+RTBT002633__shw2spa,RTBT002633,GRTBT002633,"robotika nu'su' ñinchitapallina' mechanics, electronics, computer, artificial intelligence, control engineering, fizika.","La robótica combina diversas disciplinas como la mecánica, la electrónica, la informática, la inteligencia artificial, la ingeniería de control y la física.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7722562551498413,accepted
+RTBT002639__spa2shw,RTBT002639,GRTBT002639,Es originario de las regiones tropicales y subtropicales de Asia y África.,originario de las regiones tropicales y subtropicales de Asia y África.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8757282495498657,accepted
+RTBT002639__shw2spa,RTBT002639,GRTBT002639,originario de las regiones tropicales y subtropicales de Asia y África.,Es originario de las regiones tropicales y subtropicales de Asia y África.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8757282495498657,accepted
+RTBT002640__spa2shw,RTBT002640,GRTBT002640,"Etimología 
+El nombre del género fue otorgado en honor de Christen Friis Rottbøll.",Etimología llillina' asu' llillina' Christen Friis Rottbøll.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7389965057373047,accepted
+RTBT002640__shw2spa,RTBT002640,GRTBT002640,Etimología llillina' asu' llillina' Christen Friis Rottbøll.,"Etimología 
+El nombre del género fue otorgado en honor de Christen Friis Rottbøll.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7389965057373047,accepted
+RTBT002651__spa2shw,RTBT002651,GRTBT002651,"Es originario de Sudamérica tropical, Madagascar y África tropical.","originario de América del Sur tropical, madagascar y afrika tropical.",spa,shw,train,False,backtranslation_roundtrip_v0,0.876554548740387,accepted
+RTBT002651__shw2spa,RTBT002651,GRTBT002651,"originario de América del Sur tropical, madagascar y afrika tropical.","Es originario de Sudamérica tropical, Madagascar y África tropical.",shw,spa,train,False,backtranslation_roundtrip_v0,0.876554548740387,accepted
+RTBT002652__spa2shw,RTBT002652,GRTBT002652,"Especies
+
+Referencias
+
+Enlaces externos 
+
+ Imágenes en Google
+ Global Biodiversity Information Facility
+ Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).","Species References External links Images in Google Global Biodiversity Information Facility Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).",spa,shw,train,False,backtranslation_roundtrip_v0,0.9509137272834778,accepted
+RTBT002652__shw2spa,RTBT002652,GRTBT002652,"Species References External links Images in Google Global Biodiversity Information Facility Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).","Especies
+
+Referencias
+
+Enlaces externos 
+
+ Imágenes en Google
+ Global Biodiversity Information Facility
+ Clayton, W.D., Harman, K.T. and Williamson, H. (2006 en adelante).",shw,spa,train,False,backtranslation_roundtrip_v0,0.9509137272834778,accepted
+RTBT002657__spa2shw,RTBT002657,GRTBT002657,"Descripción morfológica 
+Rizomas paquimorfos, culmos de 7 a 22 m de largo, generalmente decumbentes en la vegetación aledaña; 1 hasta 1,5 cm de diámetro.","morphological description Rizomas pachimorfos, enpu'lusa' 7 a 22 m enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7666701078414917,accepted
+RTBT002657__shw2spa,RTBT002657,GRTBT002657,"morphological description Rizomas pachimorfos, enpu'lusa' 7 a 22 m enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa' enpu'lusa'.","Descripción morfológica 
+Rizomas paquimorfos, culmos de 7 a 22 m de largo, generalmente decumbentes en la vegetación aledaña; 1 hasta 1,5 cm de diámetro.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7666701078414917,accepted
+RTBT002659__spa2shw,RTBT002659,GRTBT002659,Es originario de América tropical.,originario de América tropical.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8792018890380859,accepted
+RTBT002659__shw2spa,RTBT002659,GRTBT002659,originario de América tropical.,Es originario de América tropical.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8792018890380859,accepted
+RTBT002662__spa2shw,RTBT002662,GRTBT002662,"Especies 
+Las especies descritas de Raddia son 9:
+ Raddia angustifolia Soderstr. y Zuloaga
+ Raddia brasiliensis Bertol.",Species Raddia yañinchitapalli: Raddia angustifolia Soderstr. yuloaga Raddia brasiliensis Bertol.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8076475858688354,accepted
+RTBT002662__shw2spa,RTBT002662,GRTBT002662,Species Raddia yañinchitapalli: Raddia angustifolia Soderstr. yuloaga Raddia brasiliensis Bertol.,"Especies 
+Las especies descritas de Raddia son 9:
+ Raddia angustifolia Soderstr. y Zuloaga
+ Raddia brasiliensis Bertol.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8076475858688354,accepted
+RTBT002665__spa2shw,RTBT002665,GRTBT002665,"Historia
+
+Primera Parte 
+
+La en origen Banda de Baile Runrig, debutó como tal en el Glasgow Kelvin Hall en 1973.","Historia Primera Parte La originalmente Banda de Baile Runrig, enpu'lusa' uklli Glasgow Kelvin Hall in 1973.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7886511087417603,accepted
+RTBT002665__shw2spa,RTBT002665,GRTBT002665,"Historia Primera Parte La originalmente Banda de Baile Runrig, enpu'lusa' uklli Glasgow Kelvin Hall in 1973.","Historia
+
+Primera Parte 
+
+La en origen Banda de Baile Runrig, debutó como tal en el Glasgow Kelvin Hall en 1973.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7886511087417603,accepted
+RTBT002676__spa2shw,RTBT002676,GRTBT002676,"Roger de Flor (Brindisi, c.1267-Adrianópolis, 1305) fue un caballero templario y caudillo mercenario italiano al servicio de la Corona de Aragón.","Roger de Flor (Brindisi, c.1267-Adrianópolis, 1305) italiyulusa' pa'apallina' tansa' pa'apallina' Aragon Corona.",spa,shw,train,False,backtranslation_roundtrip_v0,0.722453773021698,accepted
+RTBT002676__shw2spa,RTBT002676,GRTBT002676,"Roger de Flor (Brindisi, c.1267-Adrianópolis, 1305) italiyulusa' pa'apallina' tansa' pa'apallina' Aragon Corona.","Roger de Flor (Brindisi, c.1267-Adrianópolis, 1305) fue un caballero templario y caudillo mercenario italiano al servicio de la Corona de Aragón.",shw,spa,train,False,backtranslation_roundtrip_v0,0.722453773021698,accepted
+RTBT002679__spa2shw,RTBT002679,GRTBT002679,"La Real Academia Española (RAE) es una institución cultural española con sede en Madrid, España.","Español Academia Real (RAE) ispañullima a'pinta' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' Madrid, España.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8562377691268921,accepted
+RTBT002679__shw2spa,RTBT002679,GRTBT002679,"Español Academia Real (RAE) ispañullima a'pinta' ñinanpu'su' ñinanpu'su' ñinanpu'su' ñinanpu'su' Madrid, España.","La Real Academia Española (RAE) es una institución cultural española con sede en Madrid, España.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8562377691268921,accepted
+RTBT002700__spa2shw,RTBT002700,GRTBT002700,Su nombre proviene del dios romano Saturno.,llillinen ima roma dios Saturno.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8747431039810181,accepted
+RTBT002700__shw2spa,RTBT002700,GRTBT002700,llillinen ima roma dios Saturno.,Su nombre proviene del dios romano Saturno.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8747431039810181,accepted
+RTBT002709__spa2shw,RTBT002709,GRTBT002709,"El municipio está formado por Cebrones del Río, San Martín de Torres y San Juan de Torres.","municipio uk'llina' Cebrones del Río, San Martín de Torres, San Juan de Torres.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7574468851089478,accepted
+RTBT002709__shw2spa,RTBT002709,GRTBT002709,"municipio uk'llina' Cebrones del Río, San Martín de Torres, San Juan de Torres.","El municipio está formado por Cebrones del Río, San Martín de Torres y San Juan de Torres.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7574468851089478,accepted
+RTBT002734__spa2shw,RTBT002734,GRTBT002734,Sistema métrico decimal: primer sistema unificado de medidas.,decimal metric system: first unified system of measures.,spa,shw,train,False,backtranslation_roundtrip_v0,0.9773651957511902,accepted
+RTBT002734__shw2spa,RTBT002734,GRTBT002734,decimal metric system: first unified system of measures.,Sistema métrico decimal: primer sistema unificado de medidas.,shw,spa,train,False,backtranslation_roundtrip_v0,0.9773651957511902,accepted
+RTBT002753__spa2shw,RTBT002753,GRTBT002753,"Es originario de la región del Mediterráneo, este de Europa hasta centro de Asia y Sudáfrica.","originario de la region del mediterraneo, este de Europa hasta centro de Asia y Sudáfrica.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9030535221099854,accepted
+RTBT002753__shw2spa,RTBT002753,GRTBT002753,"originario de la region del mediterraneo, este de Europa hasta centro de Asia y Sudáfrica.","Es originario de la región del Mediterráneo, este de Europa hasta centro de Asia y Sudáfrica.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9030535221099854,accepted
+RTBT002756__spa2shw,RTBT002756,GRTBT002756,"Algunos autores excluyen los géneros Oreochloa, Psilathera, Sesleriella.","ali'la'llina' panlu'llina' Oreochloa, Psilathera, Sesleriella genreslusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7307272553443909,accepted
+RTBT002756__shw2spa,RTBT002756,GRTBT002756,"ali'la'llina' panlu'llina' Oreochloa, Psilathera, Sesleriella genreslusa'.","Algunos autores excluyen los géneros Oreochloa, Psilathera, Sesleriella.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7307272553443909,accepted
+RTBT002760__spa2shw,RTBT002760,GRTBT002760,"Es originario de las regiones templadas de América, Europa y África.","originario de las regiones templadas de América, Europa y África.",spa,shw,train,False,backtranslation_roundtrip_v0,0.9044783115386963,accepted
+RTBT002760__shw2spa,RTBT002760,GRTBT002760,"originario de las regiones templadas de América, Europa y África.","Es originario de las regiones templadas de América, Europa y África.",shw,spa,train,False,backtranslation_roundtrip_v0,0.9044783115386963,accepted
+RTBT002763__spa2shw,RTBT002763,GRTBT002763,Es originario de la región del Mediterráneo hasta el oeste de Asia.,originario de la region mediterranea a'yapi Asia.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7524786591529846,accepted
+RTBT002763__shw2spa,RTBT002763,GRTBT002763,originario de la region mediterranea a'yapi Asia.,Es originario de la región del Mediterráneo hasta el oeste de Asia.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7524786591529846,accepted
+RTBT002765__spa2shw,RTBT002765,GRTBT002765,Es originario de las regiones templadas y tropicales del globo.,originario de las regiones templadas yulos del globo.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7189529538154602,accepted
+RTBT002765__shw2spa,RTBT002765,GRTBT002765,originario de las regiones templadas yulos del globo.,Es originario de las regiones templadas y tropicales del globo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.7189529538154602,accepted
+RTBT002768__spa2shw,RTBT002768,GRTBT002768,Es originario de las regiones tropicales y subtropicales del globo.,originario de las regiones tropicales y subtropicales del globo.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8567006587982178,accepted
+RTBT002768__shw2spa,RTBT002768,GRTBT002768,originario de las regiones tropicales y subtropicales del globo.,Es originario de las regiones tropicales y subtropicales del globo.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8567006587982178,accepted
+RTBT002785__spa2shw,RTBT002785,GRTBT002785,"Televisión
+ El gato Spot: gato actor de la serie de televisión ALF.",Televizion El cat Spot: cat actor de la serie de televisión ALF.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8567720055580139,accepted
+RTBT002785__shw2spa,RTBT002785,GRTBT002785,Televizion El cat Spot: cat actor de la serie de televisión ALF.,"Televisión
+ El gato Spot: gato actor de la serie de televisión ALF.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8567720055580139,accepted
+RTBT002791__spa2shw,RTBT002791,GRTBT002791,Es originario del norte de Sudamérica.,originario nuka'a sud'america.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8889727592468262,accepted
+RTBT002791__shw2spa,RTBT002791,GRTBT002791,originario nuka'a sud'america.,Es originario del norte de Sudamérica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8889727592468262,accepted
+RTBT002794__spa2shw,RTBT002794,GRTBT002794,Es originario de América desde México hasta Argentina.,originario de América del Mexico a'ser Argentina.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8074339628219604,accepted
+RTBT002794__shw2spa,RTBT002794,GRTBT002794,originario de América del Mexico a'ser Argentina.,Es originario de América desde México hasta Argentina.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8074339628219604,accepted
+RTBT002797__spa2shw,RTBT002797,GRTBT002797,"Especies
+Stiporyzopsis caduca (Beal) B.",Especies Stiporyzopsis caduca (Beal) B.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8397859930992126,accepted
+RTBT002797__shw2spa,RTBT002797,GRTBT002797,Especies Stiporyzopsis caduca (Beal) B.,"Especies
+Stiporyzopsis caduca (Beal) B.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8397859930992126,accepted
+RTBT002807__spa2shw,RTBT002807,GRTBT002807,Es originario de las regiones templadas de Norteamérica.,originario de las regiones templadas de América del Norte.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8525619506835938,accepted
+RTBT002807__shw2spa,RTBT002807,GRTBT002807,originario de las regiones templadas de América del Norte.,Es originario de las regiones templadas de Norteamérica.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8525619506835938,accepted
+RTBT002813__spa2shw,RTBT002813,GRTBT002813,"Especies seleccionadas 
+ Schizostachyum hallieri Gamble 
+ Schizostachyum hirtiflorum Hack.",su'llina' Schizostachyum hallieri Gamble Schizostachyum hirtiflorum Hack.,spa,shw,train,False,backtranslation_roundtrip_v0,0.7128216028213501,accepted
+RTBT002813__shw2spa,RTBT002813,GRTBT002813,su'llina' Schizostachyum hallieri Gamble Schizostachyum hirtiflorum Hack.,"Especies seleccionadas 
+ Schizostachyum hallieri Gamble 
+ Schizostachyum hirtiflorum Hack.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7128216028213501,accepted
+RTBT002818__spa2shw,RTBT002818,GRTBT002818,Es originario de las Indias Occidentales.,originario de las Indias occidentales.,spa,shw,train,False,backtranslation_roundtrip_v0,0.872626543045044,accepted
+RTBT002818__shw2spa,RTBT002818,GRTBT002818,originario de las Indias occidentales.,Es originario de las Indias Occidentales.,shw,spa,train,False,backtranslation_roundtrip_v0,0.872626543045044,accepted
+RTBT002833__spa2shw,RTBT002833,GRTBT002833,"En Europa, el Sinclair ZX Spectrum fue uno de los microordenadores domésticos más populares de los años 1980.","Europa'la, Sinclair ZX Spectrum ala'sa' a'pinta' ñinanpu'lusa' iñer' uklusa' microcomputera'lusa' a'pinta'lusa'.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7097762823104858,accepted
+RTBT002833__shw2spa,RTBT002833,GRTBT002833,"Europa'la, Sinclair ZX Spectrum ala'sa' a'pinta' ñinanpu'lusa' iñer' uklusa' microcomputera'lusa' a'pinta'lusa'.","En Europa, el Sinclair ZX Spectrum fue uno de los microordenadores domésticos más populares de los años 1980.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7097762823104858,accepted
+RTBT002841__spa2shw,RTBT002841,GRTBT002841,"Gran Santa Fe, aglomerado urbano en torno a la ciudad de Santa Fe.","Gran Santa Fe, a'pinta' ñinanpu'su' ñinanpu' ñinanpu' Santa Fe.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7168233394622803,accepted
+RTBT002841__shw2spa,RTBT002841,GRTBT002841,"Gran Santa Fe, a'pinta' ñinanpu'su' ñinanpu' ñinanpu' Santa Fe.","Gran Santa Fe, aglomerado urbano en torno a la ciudad de Santa Fe.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7168233394622803,accepted
+RTBT002863__spa2shw,RTBT002863,GRTBT002863,"Arte 
+ Santísima Trinidad (1425-1426), fresco y pintado por Masaccio en la iglesia de Santa María Novella (Florencia).","Santísima Trinidad arte (1425-1426), masaccio a'pinta'llina' Santa María Novella iglesian (Florencia).",spa,shw,train,False,backtranslation_roundtrip_v0,0.7576326131820679,accepted
+RTBT002863__shw2spa,RTBT002863,GRTBT002863,"Santísima Trinidad arte (1425-1426), masaccio a'pinta'llina' Santa María Novella iglesian (Florencia).","Arte 
+ Santísima Trinidad (1425-1426), fresco y pintado por Masaccio en la iglesia de Santa María Novella (Florencia).",shw,spa,train,False,backtranslation_roundtrip_v0,0.7576326131820679,accepted
+RTBT002864__spa2shw,RTBT002864,GRTBT002864,"Santísima Trinidad, obra del pintor renacentista italiano Sandro Botticelli (1445-1510).","Santísima Trinidad, italiana renacentista pintur Sandro Botticelli (1445-1510).",spa,shw,train,False,backtranslation_roundtrip_v0,0.9112173318862915,accepted
+RTBT002864__shw2spa,RTBT002864,GRTBT002864,"Santísima Trinidad, italiana renacentista pintur Sandro Botticelli (1445-1510).","Santísima Trinidad, obra del pintor renacentista italiano Sandro Botticelli (1445-1510).",shw,spa,train,False,backtranslation_roundtrip_v0,0.9112173318862915,accepted
+RTBT002878__spa2shw,RTBT002878,GRTBT002878,Es originario del centro y sur de  Europa.,originario de Europa del centro y del sur.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8540987372398376,accepted
+RTBT002878__shw2spa,RTBT002878,GRTBT002878,originario de Europa del centro y del sur.,Es originario del centro y sur de  Europa.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8540987372398376,accepted
+RTBT002887__spa2shw,RTBT002887,GRTBT002887,"John Ronald Reuel Tolkien () (Bloemfontein, hoy Sudáfrica; 3 de enero de 1892-Bournemouth, Dorset; 2 de septiembre de 1973), a menudo citado como J.","John Ronald Reuel Tolkien () (Bloemfontein, anta'la' suk'a'a'a'ñina'; 3 januuari 1892-Bournemouth, Dorset; 2 septuari 1973), a'pinta' a'pinta' a'tullina' J.",spa,shw,train,False,backtranslation_roundtrip_v0,0.809878408908844,accepted
+RTBT002887__shw2spa,RTBT002887,GRTBT002887,"John Ronald Reuel Tolkien () (Bloemfontein, anta'la' suk'a'a'a'ñina'; 3 januuari 1892-Bournemouth, Dorset; 2 septuari 1973), a'pinta' a'pinta' a'tullina' J.","John Ronald Reuel Tolkien () (Bloemfontein, hoy Sudáfrica; 3 de enero de 1892-Bournemouth, Dorset; 2 de septiembre de 1973), a menudo citado como J.",shw,spa,train,False,backtranslation_roundtrip_v0,0.809878408908844,accepted
+RTBT002923__spa2shw,RTBT002923,GRTBT002923,"TVR, Televisión Regional de Chile, un canal de televisión.","TVR, chile'lusa' televisiones, a'pinta' televisiones.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7008402347564697,accepted
+RTBT002923__shw2spa,RTBT002923,GRTBT002923,"TVR, chile'lusa' televisiones, a'pinta' televisiones.","TVR, Televisión Regional de Chile, un canal de televisión.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7008402347564697,accepted
+RTBT002924__spa2shw,RTBT002924,GRTBT002924,"TVR, Televisión Regional de Curicó, un canal de televisión de Chile.","TVR, Curicó Regional Televisión, chile'lusa' channel.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7674323320388794,accepted
+RTBT002924__shw2spa,RTBT002924,GRTBT002924,"TVR, Curicó Regional Televisión, chile'lusa' channel.","TVR, Televisión Regional de Curicó, un canal de televisión de Chile.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7674323320388794,accepted
+RTBT002952__spa2shw,RTBT002952,GRTBT002952,"Además
+ Troyano (informática) o caballos de Troya, software malicioso;
+ Asteroide troyano, en la órbita del planeta Júpiter;
+ Troyanos (película), documental sobre los skinheads de Buenos Aires","Troyano (informatik) o Troya pa'lusa', software malicioso; Troyano asteroide, orbit planet Jupiter; Troyanos (film), documental sobre los skinheads de Buenos Aires",spa,shw,train,False,backtranslation_roundtrip_v0,0.9137027859687805,accepted
+RTBT002952__shw2spa,RTBT002952,GRTBT002952,"Troyano (informatik) o Troya pa'lusa', software malicioso; Troyano asteroide, orbit planet Jupiter; Troyanos (film), documental sobre los skinheads de Buenos Aires","Además
+ Troyano (informática) o caballos de Troya, software malicioso;
+ Asteroide troyano, en la órbita del planeta Júpiter;
+ Troyanos (película), documental sobre los skinheads de Buenos Aires",shw,spa,train,False,backtranslation_roundtrip_v0,0.9137027859687805,accepted
+RTBT002956__spa2shw,RTBT002956,GRTBT002956,"Tales de Mileto (en griego antiguo: Θαλῆς ὁ Μιλήσιος Thalē̂s ho Milḗsios; Mileto, c. 624 a.","Miletu'lusa' (ancien griego: Θαλῆς ὁ Μιλήσιος Thalē̂s ho Milsios; Mileto, c. 624 a.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8800961375236511,accepted
+RTBT002956__shw2spa,RTBT002956,GRTBT002956,"Miletu'lusa' (ancien griego: Θαλῆς ὁ Μιλήσιος Thalē̂s ho Milsios; Mileto, c. 624 a.","Tales de Mileto (en griego antiguo: Θαλῆς ὁ Μιλήσιος Thalē̂s ho Milḗsios; Mileto, c. 624 a.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8800961375236511,accepted
+RTBT002957__spa2shw,RTBT002957,GRTBT002957,"C.) fue un filósofo, matemático, geómetra, físico y legislador griego.","C.) ima filosofu, matematik, geometra, fizikus, yununlusa' legislador.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8630726337432861,accepted
+RTBT002957__shw2spa,RTBT002957,GRTBT002957,"C.) ima filosofu, matematik, geometra, fizikus, yununlusa' legislador.","C.) fue un filósofo, matemático, geómetra, físico y legislador griego.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8630726337432861,accepted
+RTBT002970__spa2shw,RTBT002970,GRTBT002970,Es originario de Sudamérica tropical.,originario de América del Sur tropical.,spa,shw,train,False,backtranslation_roundtrip_v0,0.8096701502799988,accepted
+RTBT002970__shw2spa,RTBT002970,GRTBT002970,originario de América del Sur tropical.,Es originario de Sudamérica tropical.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8096701502799988,accepted
+RTBT002979__spa2shw,RTBT002979,GRTBT002979,"Es originario de América, África tropical y Madagascar.","originario de América, África tropical yusa' Madagascar.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8903059363365173,accepted
+RTBT002979__shw2spa,RTBT002979,GRTBT002979,"originario de América, África tropical yusa' Madagascar.","Es originario de América, África tropical y Madagascar.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8903059363365173,accepted
+RTBT002988__spa2shw,RTBT002988,GRTBT002988,Es originario de México a Ecuador y Perú.,"originario Mexiko Ecuador, Peru.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8205717206001282,accepted
+RTBT002988__shw2spa,RTBT002988,GRTBT002988,"originario Mexiko Ecuador, Peru.",Es originario de México a Ecuador y Perú.,shw,spa,train,False,backtranslation_roundtrip_v0,0.8205717206001282,accepted
+RTBT002991__spa2shw,RTBT002991,GRTBT002991,"Es originario de América tropical, África y Madagascar.","originario de América tropical, África, Madagascar.",spa,shw,train,False,backtranslation_roundtrip_v0,0.8900272846221924,accepted
+RTBT002991__shw2spa,RTBT002991,GRTBT002991,"originario de América tropical, África, Madagascar.","Es originario de América tropical, África y Madagascar.",shw,spa,train,False,backtranslation_roundtrip_v0,0.8900272846221924,accepted
+RTBT002999__spa2shw,RTBT002999,GRTBT002999,"Tomaso Giovanni Albinoni (Venecia, 8 de junio de 1671-ibídem, 17 de enero de 1751) fue un compositor italiano del Barroco.","Tomaso Giovanni Albinoni (Venice, 6 yunusu 1671-ibídem, 17 januuari 1751) italiki'llina' tuluner'su' barok.",spa,shw,train,False,backtranslation_roundtrip_v0,0.7266572713851929,accepted
+RTBT002999__shw2spa,RTBT002999,GRTBT002999,"Tomaso Giovanni Albinoni (Venice, 6 yunusu 1671-ibídem, 17 januuari 1751) italiki'llina' tuluner'su' barok.","Tomaso Giovanni Albinoni (Venecia, 8 de junio de 1671-ibídem, 17 de enero de 1751) fue un compositor italiano del Barroco.",shw,spa,train,False,backtranslation_roundtrip_v0,0.7266572713851929,accepted

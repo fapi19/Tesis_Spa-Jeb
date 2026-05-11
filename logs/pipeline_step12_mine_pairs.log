@@ -1,0 +1,5 @@
+[phase7b] variant=xl min_ip=0.65 top_k=5 reciprocal=True
+[phase7b] filtered_dir=data\processed\06_nmt_filtered_xl
+[phase7b] internal candidates: 1749
+[phase7b] wrote data\processed\07_nmt_augmented_xl\train_mined.csv (3156 rows from 1578 pairs)
+[phase7b] report -> reports\05_nmt\augmentation_xl\mining.json

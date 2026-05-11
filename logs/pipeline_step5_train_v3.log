@@ -1,0 +1,3 @@
+Epoch 01 | train_loss=0.1182
+Epoch 02 | train_loss=0.0832
+Modelo guardado en C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\models\sentence_transformers\v3_iterative_hn_e5_base_bidirectional_xl

@@ -1,0 +1,9 @@
+﻿id,pair_id,group_id,source,target,source_lang,target_lang,split,has_audit_flags,origin_source,score,label
+U03299__shw2spa,U03299,G03067,tandulalusa' uklala'tullina',las estrellas brillan,shw,spa,train,False,flashcards_oraciones,0.39010546,removed
+U03299__spa2shw,U03299,G03067,las estrellas brillan,tandulalusa' uklala'tullina',spa,shw,train,False,flashcards_oraciones,0.39010546,removed
+U04449__shw2spa,U04449,G04184,kikiteknen pekchitektusu'.,mejillas templadas.,shw,spa,train,True,vs_textos_narrativos,0.4034536,removed
+U04449__spa2shw,U04449,G04184,mejillas templadas.,kikiteknen pekchitektusu'.,spa,shw,train,True,vs_textos_narrativos,0.4034536,removed
+U04678__shw2spa,U04678,G04349,lek'lun,uña de la menstruación,shw,spa,train,True,extra,0.41780192,removed
+U04678__spa2shw,U04678,G04349,uña de la menstruación,lek'lun,spa,shw,train,True,extra,0.41780192,removed
+U04705__shw2spa,U04705,G04369,ma'shia,no,shw,spa,train,False,extra,0.40639037,removed
+U04705__spa2shw,U04705,G04369,no,ma'shia,spa,shw,train,False,extra,0.40639037,removed

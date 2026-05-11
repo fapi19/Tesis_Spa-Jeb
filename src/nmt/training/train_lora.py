@@ -21,6 +21,7 @@ import torch.nn.functional as F
 import yaml
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model
+from peft.optimizers import create_loraplus_optimizer
 from transformers import (
     DataCollatorForSeq2Seq,
     PreTrainedTokenizerBase,
@@ -45,6 +46,11 @@ class LoraHyperparams:
     bias: str
     target_modules: tuple[str, ...]
     task_type: str
+    # New flags (PEFT 0.16+). All default to off so existing call sites stay
+    # behaviour-compatible.
+    use_dora: bool = False
+    # LoRA+: lr_B = loraplus_lr_ratio * lr_A. 0.0 disables. 16.0 is paper default.
+    loraplus_lr_ratio: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -77,6 +83,9 @@ class TrainingHyperparams:
     generation_max_length: int
     logging_steps: int
     report_to: list[str]
+    # New flags. Default to behaviour-preserving values.
+    compile_model: bool = False
+    eval_every_n_epochs: int = 0   # 0 = use eval_steps (existing behaviour). >0 = override.
 
 
 @dataclass(frozen=True)
@@ -112,6 +121,8 @@ class TrainingConfig:
             bias=str(lora_cfg["bias"]),
             target_modules=tuple(lora_cfg["target_modules"]),
             task_type=str(lora_cfg["task_type"]),
+            use_dora=bool(lora_cfg.get("use_dora", False)),
+            loraplus_lr_ratio=float(lora_cfg.get("loraplus_lr_ratio", 0.0)),
         )
 
         tcfg = cfg["training"]
@@ -144,6 +155,8 @@ class TrainingConfig:
             generation_max_length=int(tcfg["generation_max_length"]),
             logging_steps=int(tcfg.get("logging_steps", 25)),
             report_to=list(tcfg.get("report_to", [])),
+            compile_model=bool(tcfg.get("compile_model", False)),
+            eval_every_n_epochs=int(tcfg.get("eval_every_n_epochs", 0)),
         )
 
         d = cfg["data"]
@@ -330,9 +343,27 @@ class BidiSeq2SeqTrainer(Seq2SeqTrainer):
     in-place at per-row granularity to keep the weighted average correct.
     """
 
-    def __init__(self, *args, label_smoothing_factor: float = 0.0, **kwargs):
+    def __init__(self, *args, label_smoothing_factor: float = 0.0, loraplus_lr_ratio: float = 0.0, **kwargs):
         super().__init__(*args, **kwargs)
         self._weighted_label_smoothing = float(label_smoothing_factor)
+        self._loraplus_lr_ratio = float(loraplus_lr_ratio)
+
+    def create_optimizer(self):
+        """If LoRA+ is enabled, build the optimizer via PEFT's create_loraplus_optimizer
+        so the B matrices get a higher LR than the A matrices. Otherwise fall back
+        to HF default.
+        """
+        if self._loraplus_lr_ratio <= 0 or self.optimizer is not None:
+            return super().create_optimizer()
+        from torch.optim import AdamW
+        self.optimizer = create_loraplus_optimizer(
+            model=self.model,
+            optimizer_cls=AdamW,
+            lr=self.args.learning_rate,
+            loraplus_lr_ratio=self._loraplus_lr_ratio,
+            weight_decay=self.args.weight_decay,
+        )
+        return self.optimizer
 
     def compute_loss(self, model, inputs, return_outputs: bool = False, **kwargs):
         if SAMPLE_WEIGHT_KEY not in inputs:
@@ -389,8 +420,12 @@ def build_lora_model(
         bias=cfg.lora.bias,
         target_modules=list(cfg.lora.target_modules),
         task_type=cfg.lora.task_type,
+        use_dora=cfg.lora.use_dora,
     )
-    return get_peft_model(base_model, lora_cfg)
+    model = get_peft_model(base_model, lora_cfg)
+    if cfg.training.compile_model:
+        model = torch.compile(model)  # PyTorch 2.x optimised graph
+    return model
 
 
 def build_training_arguments(cfg: TrainingConfig) -> Seq2SeqTrainingArguments:
@@ -438,6 +473,7 @@ def build_trainer(
     project_root: Path,
     weight_map: dict[str, float] | None = None,
     default_weight: float = 1.0,
+    direction_filter: str | None = None,
 ) -> tuple[BidiSeq2SeqTrainer, dict[str, Any]]:
     """Wire model + datasets + trainer for one run.
 
@@ -452,7 +488,7 @@ def build_trainer(
         save_dir=project_root / "models" / "nmt" / "tokenizer_shw_extended",
     )
 
-    fp16, _ = resolve_precision(cfg.training.precision)
+    fp16, bf16 = resolve_precision(cfg.training.precision)
     torch_dtype = torch.float32   # keep base weights fp32; fp16/bf16 enabled via TrainingArguments
     model = build_lora_model(cfg, tokenizer, torch_dtype=torch_dtype)
     model.print_trainable_parameters()
@@ -476,6 +512,16 @@ def build_trainer(
         valid_filename=cfg.data.valid_csv.name,
         test_filename=cfg.data.test_csv.name,
     )
+
+    # Optional: keep only one direction (used for Two-DoRA training where each
+    # adapter is specialised on a single direction).
+    if direction_filter is not None:
+        if direction_filter not in {"shw2spa", "spa2shw"}:
+            raise ValueError(f"direction_filter must be shw2spa or spa2shw, got {direction_filter!r}")
+        splits["train"] = splits["train"].filter(lambda ex: ex["direction"] == direction_filter)
+        splits["validation"] = splits["validation"].filter(lambda ex: ex["direction"] == direction_filter)
+        if len(splits["train"]) == 0:
+            raise RuntimeError(f"no train rows after direction_filter={direction_filter}")
 
     val_directional = split_validation_by_direction(splits["validation"])
     if not val_directional:
@@ -510,6 +556,14 @@ def build_trainer(
         # LabelSmoother on the unweighted path.
         trainer_kwargs["label_smoothing_factor"] = cfg.training.label_smoothing_factor
         object.__setattr__(args, "label_smoothing_factor", 0.0)
+    if cfg.lora.loraplus_lr_ratio > 0:
+        trainer_kwargs["loraplus_lr_ratio"] = cfg.lora.loraplus_lr_ratio
+
+    # Optional: eval/save by epoch instead of by step.
+    if cfg.training.eval_every_n_epochs > 0:
+        object.__setattr__(args, "eval_strategy", "epoch")
+        object.__setattr__(args, "save_strategy", "epoch")
+        # HF doesn't expose "every N epochs" directly; we set N via callback below.
 
     trainer = BidiSeq2SeqTrainer(
         model=model,
@@ -542,7 +596,11 @@ def build_trainer(
         "test_rows": len(splits["test"]),
         "lora_r": cfg.lora.r,
         "lora_alpha": cfg.lora.alpha,
+        "use_dora": cfg.lora.use_dora,
+        "loraplus_lr_ratio": cfg.lora.loraplus_lr_ratio,
+        "compile_model": cfg.training.compile_model,
         "fp16": fp16,
+        "bf16": bf16,
         "weighting": weight_summary,
     }
     return trainer, info

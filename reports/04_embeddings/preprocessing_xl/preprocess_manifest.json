@@ -1,0 +1,93 @@
+{
+  "pipeline": "preprocess_embeddings",
+  "variant": "xl",
+  "timestamp": "2026-05-10T16:40:44.633317+00:00",
+  "input_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\03_pre_embeddings\\dataset_pre_embeddings.csv",
+  "input_sha256": "b41d4af251506d1921190fbf5fb79b545ec6ca24e519b0866a14031900f3980c",
+  "seed": 42,
+  "ratios": {
+    "train": 0.8,
+    "valid": 0.1,
+    "test": 0.09999999999999995
+  },
+  "normalization": {
+    "unicode": "NFC",
+    "lowercase": true,
+    "collapse_spaces": true,
+    "normalize_apostrophes_to_ascii": true,
+    "preserve_internal_shiwilu_apostrophes": true,
+    "remove_double_quotes": true,
+    "remove_punctuation": false
+  },
+  "counts": {
+    "original": 4894,
+    "included": 4814,
+    "excluded_total": 80,
+    "excluded_by_reason": {
+      "empty_text": 0,
+      "exact_duplicate": 80
+    }
+  },
+  "groups": {
+    "groups": 4523,
+    "multi_pair_groups": 257,
+    "many_spanish_per_shiwilu": 233,
+    "many_shiwilu_per_spanish": 32
+  },
+  "splits": {
+    "train": {
+      "rows": 3923,
+      "groups": 3676,
+      "source_distribution": {
+        "flashcards2": 1796,
+        "pdf_textos": 769,
+        "fidel_lomas": 446,
+        "flashcards_oraciones": 526,
+        "vs_textos_narrativos": 18,
+        "el_principito": 11,
+        "extra": 313,
+        "cotidianas": 44
+      },
+      "audit_flagged_rows": 1639
+    },
+    "valid": {
+      "rows": 445,
+      "groups": 432,
+      "source_distribution": {
+        "flashcards_oraciones": 78,
+        "flashcards2": 213,
+        "fidel_lomas": 58,
+        "pdf_textos": 95,
+        "el_principito": 1
+      },
+      "audit_flagged_rows": 172
+    },
+    "test": {
+      "rows": 446,
+      "groups": 415,
+      "source_distribution": {
+        "pdf_textos": 92,
+        "flashcards2": 239,
+        "flashcards_oraciones": 64,
+        "fidel_lomas": 49,
+        "vs_textos_narrativos": 1,
+        "el_principito": 1
+      },
+      "audit_flagged_rows": 191
+    }
+  },
+  "artifacts": {
+    "canonical_jsonl": {
+      "train": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\train.jsonl",
+      "valid": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\valid.jsonl",
+      "test": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\test.jsonl"
+    },
+    "sentence_transformers_csv": {
+      "train": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\train.csv",
+      "valid": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\valid.csv",
+      "test": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\test.csv"
+    },
+    "sentencepiece_text": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits_xl\\all_text_for_sp.txt"
+  },
+  "elapsed_seconds": 0.090998
+}

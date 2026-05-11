@@ -13,7 +13,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
-from .config import RAW_CSV, REPORTS_PREPROCESSING_DIR, SPLITS_DIR
+from .config import (
+    RAW_CSV,
+    resolve_preprocessing_report_dir,
+    resolve_splits_dir,
+)
 
 
 TRAIN_RATIO = 0.8
@@ -177,6 +181,12 @@ def assign_group_ids(records: list[PairRecord]) -> list[PairRecord]:
     ]
 
 
+# Sources whose nature is vocabulary-level (word/short-phrase lookups, not
+# grammatical exercises). All their entries are forced to the train split with
+# downstream loss weighting in the NMT trainer; they never appear in valid/test.
+LEXICAL_SOURCES: frozenset[str] = frozenset({"extra", "cotidianas"})
+
+
 def split_by_group(
     records: list[PairRecord],
     *,
@@ -184,26 +194,46 @@ def split_by_group(
     train_ratio: float,
     valid_ratio: float,
 ) -> dict[str, list[PairRecord]]:
+    # Group records by group_id first. If ANY record in a group comes from a
+    # lexical source, the whole group is forced to train (preserving group
+    # integrity while keeping lexical entries out of valid/test). Pure
+    # non-lexical groups participate in the standard random 80/10/10 split.
     groups: dict[str, list[PairRecord]] = {}
     for record in records:
         groups.setdefault(record.group_id, []).append(record)
 
-    group_items = list(groups.items())
-    rng = random.Random(seed)
-    rng.shuffle(group_items)
+    lexical_groups: dict[str, list[PairRecord]] = {}
+    main_groups: dict[str, list[PairRecord]] = {}
+    for gid, group_records in groups.items():
+        if any(r.source in LEXICAL_SOURCES for r in group_records):
+            lexical_groups[gid] = group_records
+        else:
+            main_groups[gid] = group_records
 
-    total = len(records)
-    train_target = int(total * train_ratio)
-    valid_target = int(total * valid_ratio)
+    main_group_items = list(main_groups.items())
+    rng = random.Random(seed)
+    rng.shuffle(main_group_items)
+
+    # Targets calculated over the main (non-lexical) records so the
+    # split ratios reflect the evaluable corpus.
+    total_main = sum(len(g) for g in main_groups.values())
+    train_target = int(total_main * train_ratio)
+    valid_target = int(total_main * valid_ratio)
 
     splits: dict[str, list[PairRecord]] = {"train": [], "valid": [], "test": []}
-    for _, group_records in group_items:
+    for _, group_records in main_group_items:
         if len(splits["train"]) < train_target:
             splits["train"].extend(group_records)
         elif len(splits["valid"]) < valid_target:
             splits["valid"].extend(group_records)
         else:
             splits["test"].extend(group_records)
+
+    # Append all lexical groups (and any non-lexical pairs sharing their
+    # group_id) to train. This preserves group integrity for the canonical
+    # NMT pipeline while keeping the test set sentence-level only.
+    for _, group_records in lexical_groups.items():
+        splits["train"].extend(group_records)
 
     return splits
 
@@ -289,6 +319,8 @@ def group_stats(records: list[PairRecord]) -> dict[str, int]:
 def write_manifest(
     path: Path,
     *,
+    variant: str,
+    splits_dir: Path,
     input_path: Path,
     seed: int,
     original_count: int,
@@ -300,6 +332,7 @@ def write_manifest(
     elapsed = datetime.now(timezone.utc) - started_at
     manifest = {
         "pipeline": "preprocess_embeddings",
+        "variant": variant,
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "input_path": str(input_path),
         "input_sha256": stable_file_hash(input_path),
@@ -336,16 +369,16 @@ def write_manifest(
         },
         "artifacts": {
             "canonical_jsonl": {
-                "train": str(SPLITS_DIR / "train.jsonl"),
-                "valid": str(SPLITS_DIR / "valid.jsonl"),
-                "test": str(SPLITS_DIR / "test.jsonl"),
+                "train": str(splits_dir / "train.jsonl"),
+                "valid": str(splits_dir / "valid.jsonl"),
+                "test": str(splits_dir / "test.jsonl"),
             },
             "sentence_transformers_csv": {
-                "train": str(SPLITS_DIR / "train.csv"),
-                "valid": str(SPLITS_DIR / "valid.csv"),
-                "test": str(SPLITS_DIR / "test.csv"),
+                "train": str(splits_dir / "train.csv"),
+                "valid": str(splits_dir / "valid.csv"),
+                "test": str(splits_dir / "test.csv"),
             },
-            "sentencepiece_text": str(SPLITS_DIR / "all_text_for_sp.txt"),
+            "sentencepiece_text": str(splits_dir / "all_text_for_sp.txt"),
         },
         "elapsed_seconds": elapsed.total_seconds(),
     }
@@ -357,30 +390,35 @@ def save_outputs(
     splits: dict[str, list[PairRecord]],
     excluded: dict[str, list[PairRecord]],
     *,
+    variant: str,
+    splits_dir: Path,
+    reports_preprocessing_dir: Path,
     input_path: Path,
     seed: int,
     original_count: int,
     started_at: datetime,
 ) -> None:
-    SPLITS_DIR.mkdir(parents=True, exist_ok=True)
-    REPORTS_PREPROCESSING_DIR.mkdir(parents=True, exist_ok=True)
+    splits_dir.mkdir(parents=True, exist_ok=True)
+    reports_preprocessing_dir.mkdir(parents=True, exist_ok=True)
 
-    write_jsonl(SPLITS_DIR / "train.jsonl", splits["train"])
-    write_jsonl(SPLITS_DIR / "valid.jsonl", splits["valid"])
-    write_jsonl(SPLITS_DIR / "test.jsonl", splits["test"])
+    write_jsonl(splits_dir / "train.jsonl", splits["train"])
+    write_jsonl(splits_dir / "valid.jsonl", splits["valid"])
+    write_jsonl(splits_dir / "test.jsonl", splits["test"])
 
-    write_csv(SPLITS_DIR / "train.csv", splits["train"])
-    write_csv(SPLITS_DIR / "valid.csv", splits["valid"])
-    write_csv(SPLITS_DIR / "test.csv", splits["test"])
+    write_csv(splits_dir / "train.csv", splits["train"])
+    write_csv(splits_dir / "valid.csv", splits["valid"])
+    write_csv(splits_dir / "test.csv", splits["test"])
 
-    write_all_text(SPLITS_DIR / "all_text_for_sp.txt", splits["train"])
+    write_all_text(splits_dir / "all_text_for_sp.txt", splits["train"])
 
     for reason, records in excluded.items():
-        write_jsonl(SPLITS_DIR / f"excluded_{reason}.jsonl", records)
+        write_jsonl(splits_dir / f"excluded_{reason}.jsonl", records)
 
     included = splits["train"] + splits["valid"] + splits["test"]
     write_manifest(
-        REPORTS_PREPROCESSING_DIR / "preprocess_manifest.json",
+        reports_preprocessing_dir / "preprocess_manifest.json",
+        variant=variant,
+        splits_dir=splits_dir,
         input_path=input_path,
         seed=seed,
         original_count=original_count,
@@ -394,8 +432,11 @@ def save_outputs(
 def preprocess_embeddings(
     input_path: Path = RAW_CSV,
     *,
+    variant: str = "main",
     seed: int = DEFAULT_SEED,
 ) -> dict[str, list[PairRecord]]:
+    splits_dir = resolve_splits_dir(variant)
+    reports_preprocessing_dir = resolve_preprocessing_report_dir(variant)
     started_at = datetime.now(timezone.utc)
     records = load_records(input_path)
     non_empty, empty = split_empty_records(records)
@@ -410,6 +451,9 @@ def preprocess_embeddings(
     save_outputs(
         splits,
         excluded,
+        variant=variant,
+        splits_dir=splits_dir,
+        reports_preprocessing_dir=reports_preprocessing_dir,
         input_path=input_path,
         seed=seed,
         original_count=len(records),
@@ -422,19 +466,24 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Preprocesamiento canónico para embeddings Shiwlu-español.")
     parser.add_argument("--input", type=Path, default=RAW_CSV)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    parser.add_argument("--variant", choices=["main", "xl"], default="main")
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
-    splits = preprocess_embeddings(args.input, seed=args.seed)
+    splits = preprocess_embeddings(args.input, variant=args.variant, seed=args.seed)
     total = sum(len(rows) for rows in splits.values())
     print("Preprocesamiento canónico de embeddings completado.")
+    print(f"Variante: {args.variant}")
     print(f"Total incluido: {total}")
     print(f"Train: {len(splits['train'])}")
     print(f"Valid: {len(splits['valid'])}")
     print(f"Test: {len(splits['test'])}")
-    print(f"Manifiesto: {REPORTS_PREPROCESSING_DIR / 'preprocess_manifest.json'}")
+    print(
+        "Manifiesto: "
+        f"{resolve_preprocessing_report_dir(args.variant) / 'preprocess_manifest.json'}"
+    )
 
 
 if __name__ == "__main__":

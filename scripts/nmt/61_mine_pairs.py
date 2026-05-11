@@ -24,6 +24,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import pandas as pd  # noqa: E402
 
+from scripts.nmt._paths import resolve_paths  # noqa: E402
 from src.nmt.augmentation.embedding_mining import (  # noqa: E402
     MiningConfig,
     mine_external,
@@ -35,13 +36,10 @@ from src.nmt.preprocessing.semantic_filter import (  # noqa: E402
     load_embedding_model,
 )
 
-FILTERED_DIR = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered"
-AUGMENTED_DIR = PROJECT_ROOT / "data" / "processed" / "07_nmt_augmented"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "augmentation"
-
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
     p.add_argument("--min-ip", type=float, default=0.65)
     p.add_argument("--top-k", type=int, default=5)
     p.add_argument(
@@ -69,17 +67,24 @@ def _read_lines(paths: list[Path]) -> list[str]:
 
 def main() -> int:
     args = parse_args()
+    nmt = resolve_paths(PROJECT_ROOT, args.variant)
+    filtered_dir = nmt.filtered_dir
+    augmented_dir = nmt.augmented_dir
+    suffix = "_xl" if args.variant == "xl" else ""
+    reports_dir = PROJECT_ROOT / "reports" / "05_nmt" / f"augmentation{suffix}"
+
     cfg = MiningConfig(min_ip=args.min_ip, top_k=args.top_k, require_reciprocal=not args.no_reciprocal)
     filter_cfg = SemanticFilterConfig.from_yaml(PROJECT_ROOT / "config" / "nmt" / "filter.yaml", PROJECT_ROOT)
-    print(f"[phase7b] min_ip={cfg.min_ip} top_k={cfg.top_k} reciprocal={cfg.require_reciprocal}")
+    print(f"[phase7b] variant={args.variant} min_ip={cfg.min_ip} top_k={cfg.top_k} reciprocal={cfg.require_reciprocal}")
+    print(f"[phase7b] filtered_dir={filtered_dir.relative_to(PROJECT_ROOT)}")
 
-    AUGMENTED_DIR.mkdir(parents=True, exist_ok=True)
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    augmented_dir.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
 
     extra_spa = _read_lines([Path(p).resolve() for p in args.extra_spa_text])
     extra_shw = _read_lines([Path(p).resolve() for p in args.extra_shw_text])
 
-    mined_internal_df, info_internal = mine_internal(FILTERED_DIR, cfg, filter_cfg)
+    mined_internal_df, info_internal = mine_internal(filtered_dir, cfg, filter_cfg)
     print(f"[phase7b] internal candidates: {info_internal['raw_candidates']}")
 
     info_external = None
@@ -87,7 +92,7 @@ def main() -> int:
     if extra_spa or extra_shw:
         sbert = load_embedding_model(filter_cfg)
         mined_external_df, info_external = mine_external(
-            FILTERED_DIR, extra_spa, extra_shw, cfg, sbert, filter_cfg
+            filtered_dir, extra_spa, extra_shw, cfg, sbert, filter_cfg
         )
         print(f"[phase7b] external candidates: {info_external['raw_candidates']}")
 
@@ -109,13 +114,14 @@ def main() -> int:
         merged = pd.DataFrame(columns=cols)
 
     canonical = to_canonical_dataframe(merged)
-    out_csv = AUGMENTED_DIR / "train_mined.csv"
+    out_csv = augmented_dir / "train_mined.csv"
     canonical.to_csv(out_csv, index=False, encoding="utf-8-sig")
     print(f"[phase7b] wrote {out_csv.relative_to(PROJECT_ROOT)} ({len(canonical)} rows from {len(merged)} pairs)")
 
     report = {
         "phase": "7b",
         "step": "mine_pairs",
+        "variant": args.variant,
         "timestamp_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "internal": info_internal,
         "external": info_external,
@@ -127,7 +133,7 @@ def main() -> int:
             "max": float(merged["ip"].max()) if len(merged) else None,
         },
     }
-    out_path = REPORTS_DIR / "mining.json"
+    out_path = reports_dir / "mining.json"
     out_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[phase7b] report -> {out_path.relative_to(PROJECT_ROOT)}")
     return 0

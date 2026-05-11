@@ -1,0 +1,3 @@
+[phase8b] available prediction files: {'nllb_bidi_lora_v0_xl': True, 'nllb_bidi_lora_v0_xl_reranked': True, 'nllb_bidi_lora_v1_bt_xl': True, 'nllb_bidi_lora_v1_bt_xl_reranked': True}
+[phase8b] wrote reports\05_nmt\evaluation_xl\human_eval_template.csv (200 rows)
+[phase8b] wrote reports\05_nmt\evaluation_xl\human_eval_anon_key.json

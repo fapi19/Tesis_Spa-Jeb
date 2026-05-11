@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Personal\Desktop\Recopilatorio\Tesis\Desarrollo\scripts\generate_nmt_tables.py", line 18, in <module>
+    from scripts.nmt._paths import resolve_paths
+ModuleNotFoundError: No module named 'scripts.nmt'

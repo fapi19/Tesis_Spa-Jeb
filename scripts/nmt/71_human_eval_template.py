@@ -25,17 +25,16 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import pandas as pd  # noqa: E402
 
-EVAL_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "evaluation"
-RERANK_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "reranking"
-FILTERED_DIR = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered"
+from scripts.nmt._paths import resolve_paths  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
     p.add_argument("--per-direction", type=int, default=100)
     p.add_argument("--seed", type=int, default=2026)
-    p.add_argument("--v0", default="nllb_bidi_lora_v0")
-    p.add_argument("--v1", default="nllb_bidi_lora_v1_bt")
+    p.add_argument("--v0", default=None, help="Default: nllb_bidi_lora_v0[_xl]")
+    p.add_argument("--v1", default=None, help="Default: nllb_bidi_lora_v1_bt[_xl]")
     p.add_argument("--split", choices=["valid", "test"], default="test")
     return p.parse_args()
 
@@ -119,21 +118,27 @@ def _hypothesis_for(predictions: dict[str, dict], row_id: str) -> str:
 def main() -> int:
     args = parse_args()
     rng = random.Random(args.seed)
+    nmt = resolve_paths(PROJECT_ROOT, args.variant)
+    suffix = "_xl" if args.variant == "xl" else ""
+    eval_dir = PROJECT_ROOT / "reports" / "05_nmt" / f"evaluation{suffix}"
+    rerank_dir = PROJECT_ROOT / "reports" / "05_nmt" / f"reranking{suffix}"
+    v0_name = args.v0 or f"nllb_bidi_lora_v0{suffix}"
+    v1_name = args.v1 or f"nllb_bidi_lora_v1_bt{suffix}"
 
-    test_csv = FILTERED_DIR / f"{args.split}.csv"
+    test_csv = nmt.filtered_dir / f"{args.split}.csv"
     test_df = pd.read_csv(test_csv, encoding="utf-8-sig")
     test_df = test_df.dropna(subset=["source", "target"]).reset_index(drop=True)
 
-    v0_eval = _read_jsonl(EVAL_DIR / args.v0 / f"{args.split}_predictions.jsonl")
-    v0_rerank = _read_jsonl(RERANK_DIR / args.v0 / f"{args.split}_predictions_reranked.jsonl")
-    v1_eval = _read_jsonl(EVAL_DIR / args.v1 / f"{args.split}_predictions.jsonl")
-    v1_rerank = _read_jsonl(RERANK_DIR / args.v1 / f"{args.split}_predictions_reranked.jsonl")
+    v0_eval = _read_jsonl(eval_dir / v0_name / f"{args.split}_predictions.jsonl")
+    v0_rerank = _read_jsonl(rerank_dir / v0_name / f"{args.split}_predictions_reranked.jsonl")
+    v1_eval = _read_jsonl(eval_dir / v1_name / f"{args.split}_predictions.jsonl")
+    v1_rerank = _read_jsonl(rerank_dir / v1_name / f"{args.split}_predictions_reranked.jsonl")
 
     sources = {
-        "v0": v0_eval,
-        "v0_reranked": v0_rerank,
-        "v1_bt": v1_eval,
-        "v1_bt_reranked": v1_rerank,
+        v0_name: v0_eval,
+        f"{v0_name}_reranked": v0_rerank,
+        v1_name: v1_eval,
+        f"{v1_name}_reranked": v1_rerank,
     }
     available = {k: bool(v) for k, v in sources.items()}
     print(f"[phase8b] available prediction files: {available}")
@@ -180,7 +185,8 @@ def main() -> int:
         template_rows.append(item)
 
     template_df = pd.DataFrame(template_rows)
-    out_csv = EVAL_DIR / "human_eval_template.csv"
+    eval_dir.mkdir(parents=True, exist_ok=True)
+    out_csv = eval_dir / "human_eval_template.csv"
     template_df.to_csv(out_csv, index=False, encoding="utf-8-sig")
     print(f"[phase8b] wrote {out_csv.relative_to(PROJECT_ROOT)} ({len(template_df)} rows)")
 
@@ -202,7 +208,7 @@ def main() -> int:
         "sources_available": available,
         "stratification": "balanced by origin_source (flashcards vs pdf_textos) and length bucket (short<=5, medium<=12, long)",
     }
-    key_path = EVAL_DIR / "human_eval_anon_key.json"
+    key_path = eval_dir / "human_eval_anon_key.json"
     key_path.write_text(json.dumps(key, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[phase8b] wrote {key_path.relative_to(PROJECT_ROOT)}")
     return 0

@@ -102,6 +102,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Duplica pares de entrenamiento/evaluación como español->Shiwlu y Shiwlu->español"
     )
+    parser.add_argument(
+        "--splits-variant",
+        choices=["main", "xl"],
+        default="main",
+        help="Usar splits canónicos (main) o expandidos (xl).",
+    )
     return parser.parse_args()
 
 
@@ -113,6 +119,12 @@ def stage_model_dir(args: argparse.Namespace, default_dir: Path) -> Path:
     if args.output_name:
         return MODEL_DIR / args.output_name
     return default_dir
+
+
+def triplets_path(args: argparse.Namespace) -> Path:
+    if args.splits_variant == "xl":
+        return SPLITS_DIR / "train_triplets_xl.csv"
+    return TRIPLETS_PATH
 
 
 def build_pair_dataset(df: pd.DataFrame, *, bidirectional: bool = False) -> Dataset:
@@ -182,7 +194,7 @@ def run_baseline(args: argparse.Namespace) -> None:
     model = SentenceTransformer(args.model)
 
     print("  Cargando test split...")
-    test_df = load_split("test")
+    test_df = load_split("test", splits_variant=args.splits_variant)
     print(f"  Pares de test: {len(test_df):,}")
 
     print("\n  Evaluando retrieval...")
@@ -219,8 +231,8 @@ def run_v1(args: argparse.Namespace) -> None:
     model = SentenceTransformer(args.model)
 
     print("\n  Cargando splits...")
-    train_df = load_split("train")
-    valid_df = load_split("valid")
+    train_df = load_split("train", splits_variant=args.splits_variant)
+    valid_df = load_split("valid", splits_variant=args.splits_variant)
     print(f"  Train: {len(train_df):,} pares")
     print(f"  Valid: {len(valid_df):,} pares")
 
@@ -260,7 +272,7 @@ def run_v1(args: argparse.Namespace) -> None:
     model.save_pretrained(str(output_dir))
 
     print("\n  Evaluando v1 en test split...")
-    test_df = load_split("test")
+    test_df = load_split("test", splits_variant=args.splits_variant)
     metrics = evaluate_model(model, test_df, tag, str(output_dir), start_time)
 
     config = {
@@ -303,7 +315,7 @@ def run_mine_negatives(args: argparse.Namespace) -> None:
     model = SentenceTransformer(str(V1_DIR))
 
     print("  Cargando train split...")
-    train_df = load_split("train")
+    train_df = load_split("train", splits_variant=args.splits_variant)
     print(f"  Pares de entrenamiento: {len(train_df):,}")
 
     esp_texts = train_df["ESP_normalizado"].astype(str).tolist()
@@ -343,7 +355,8 @@ def run_mine_negatives(args: argparse.Namespace) -> None:
     })
 
     SPLITS_DIR.mkdir(parents=True, exist_ok=True)
-    triplets_df.to_csv(TRIPLETS_PATH, index=False, encoding="utf-8-sig")
+    output_triplets = triplets_path(args)
+    triplets_df.to_csv(output_triplets, index=False, encoding="utf-8-sig")
 
     elapsed = datetime.now(timezone.utc) - start_time
     pos_scores_arr = np.array(pos_scores)
@@ -396,7 +409,7 @@ def run_mine_negatives(args: argparse.Namespace) -> None:
     print()
     print("  SALIDAS:")
     print("  " + "-" * 50)
-    print(f"    Triplets:  {TRIPLETS_PATH}")
+    print(f"    Triplets:  {output_triplets}")
     print(f"    Reporte:   {legacy_v2_dir / 'mine_negatives_report.json'}")
     print("=" * 70)
 
@@ -419,9 +432,10 @@ def run_v2(args: argparse.Namespace) -> None:
             f"Modelo v1 no encontrado: {V1_DIR}\n"
             "Ejecuta primero: poetry run python src/embeddings/finetune_st.py --stage v1"
         )
-    if not TRIPLETS_PATH.exists():
+    input_triplets = triplets_path(args)
+    if not input_triplets.exists():
         raise FileNotFoundError(
-            f"Triplets no encontrados: {TRIPLETS_PATH}\n"
+            f"Triplets no encontrados: {input_triplets}\n"
             "Ejecuta primero: poetry run python src/embeddings/finetune_st.py --stage mine-negatives"
         )
 
@@ -434,7 +448,7 @@ def run_v2(args: argparse.Namespace) -> None:
     model = SentenceTransformer(str(V1_DIR))
 
     print("\n  Cargando triplets...")
-    triplets_df = pd.read_csv(TRIPLETS_PATH, encoding="utf-8-sig")
+    triplets_df = pd.read_csv(input_triplets, encoding="utf-8-sig")
     print(f"  Triplets: {len(triplets_df):,}")
 
     train_dataset = build_triplet_dataset(triplets_df)
@@ -468,7 +482,7 @@ def run_v2(args: argparse.Namespace) -> None:
     model.save_pretrained(str(V2_DIR))
 
     print("\n  Evaluando v2 en test split...")
-    test_df = load_split("test")
+    test_df = load_split("test", splits_variant=args.splits_variant)
     metrics = evaluate_model(model, test_df, "v2", str(V2_DIR), start_time)
 
     config = {

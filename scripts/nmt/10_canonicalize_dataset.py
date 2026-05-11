@@ -19,13 +19,12 @@ import csv
 import datetime as dt
 import hashlib
 import json
+import argparse
 import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-SPLITS_DIR = PROJECT_ROOT / "data" / "processed" / "04_splits"
-OUT_DIR = PROJECT_ROOT / "data" / "processed" / "05_nmt_canonical"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "preprocessing"
+from scripts.nmt._paths import resolve_paths
 
 SPLITS = ("train", "valid", "test")
 
@@ -110,12 +109,21 @@ def _write_csv(rows: list[dict], path: Path) -> None:
 
 
 def main() -> int:
-    print(f"[phase1] reading splits from {SPLITS_DIR}")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--variant", choices=["main", "xl"], default="main")
+    args = parser.parse_args()
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.variant)
+    splits_dir = nmt_paths.splits_dir
+    out_dir = nmt_paths.canonical_dir
+    reports_dir = nmt_paths.reports_preprocessing_dir
+
+    print(f"[phase1] variant={args.variant}")
+    print(f"[phase1] reading splits from {splits_dir}")
 
     per_split_input: dict[str, list[dict]] = {}
     input_sha: dict[str, str] = {}
     for split in SPLITS:
-        jsonl_path = SPLITS_DIR / f"{split}.jsonl"
+        jsonl_path = splits_dir / f"{split}.jsonl"
         if not jsonl_path.exists():
             print(f"[phase1] missing input split: {jsonl_path}", file=sys.stderr)
             return 1
@@ -137,7 +145,7 @@ def main() -> int:
                 return 2
             group_to_split[gid] = split
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     per_split_output: dict[str, list[dict]] = {}
     output_sha: dict[str, str] = {}
@@ -153,7 +161,7 @@ def main() -> int:
                 origin_counts[emitted["origin_source"]] = (
                     origin_counts.get(emitted["origin_source"], 0) + 1
                 )
-        out_path = OUT_DIR / f"{split}.csv"
+        out_path = out_dir / f"{split}.csv"
         _write_csv(out_rows, out_path)
         output_sha[split] = _sha256(out_path)
         per_split_output[split] = out_rows
@@ -171,14 +179,14 @@ def main() -> int:
         )
         return 3
 
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
     manifest = {
         "phase": 1,
         "step": "canonicalize_dataset",
         "timestamp_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "inputs": {
             split: {
-                "path": str((SPLITS_DIR / f"{split}.jsonl").relative_to(PROJECT_ROOT)),
+                "path": str((splits_dir / f"{split}.jsonl").relative_to(PROJECT_ROOT)),
                 "sha256": input_sha[split],
                 "row_count": len(per_split_input[split]),
             }
@@ -186,7 +194,7 @@ def main() -> int:
         },
         "outputs": {
             split: {
-                "path": str((OUT_DIR / f"{split}.csv").relative_to(PROJECT_ROOT)),
+                "path": str((out_dir / f"{split}.csv").relative_to(PROJECT_ROOT)),
                 "sha256": output_sha[split],
                 "row_count": len(per_split_output[split]),
             }
@@ -199,7 +207,7 @@ def main() -> int:
         "group_id_leakage": False,
         "schema": CSV_COLUMNS,
     }
-    manifest_path = REPORTS_DIR / "canonical_manifest.json"
+    manifest_path = reports_dir / "canonical_manifest.json"
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
     )

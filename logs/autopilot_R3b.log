@@ -1,0 +1,9 @@
+[phase2a] variant=xl, device=cuda, model=models\sentence_transformers\v3_iterative_hn_e5_base_bidirectional_xl
+[phase2a] thresholds: remove<0.45 flag<=0.6
+[phase2a] scoring TRAIN (data\processed\05_nmt_canonical_xl\train.csv)
+[phase2a]   train rows: accepted=7230 flagged=608 removed=8 (pairs=3923)
+[phase2a] scoring VALID (data\processed\05_nmt_canonical_xl\valid.csv)
+[phase2a]   valid mean=0.6198 std=0.1627 flagged_pairs=110 removed_pairs=68
+[phase2a] scoring TEST (data\processed\05_nmt_canonical_xl\test.csv)
+[phase2a]   test mean=0.6101 std=0.1678 flagged_pairs=133 removed_pairs=68
+[phase2a] report -> reports\05_nmt\preprocessing_xl\semantic_filter.json

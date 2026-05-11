@@ -15,6 +15,7 @@ import json
 import sys
 from pathlib import Path
 from typing import Any
+from scripts.nmt._paths import resolve_paths
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt"
@@ -364,6 +365,7 @@ def table_alpha_ablation(run: str = "nllb_bidi_lora_v0") -> str:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
     p.add_argument("--v0", default="nllb_bidi_lora_v0")
     p.add_argument("--v1", default="nllb_bidi_lora_v1_bt")
     return p.parse_args()
@@ -371,15 +373,50 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.variant)
+    suffix = "_xl" if args.variant == "xl" else ""
+    global REPORTS_DIR
+    REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt"
+    global OUT_DIR
+    OUT_DIR = PROJECT_ROOT / "thesis" / "latex" / "figuras" / "generated"
+    # variant-aware report roots
+    REPORTS_DIR = REPORTS_DIR / f"{''}"  # no-op for readability
+    if args.variant == "xl":
+        # this script expects the phase folders directly under REPORTS_DIR
+        # (preprocessing, evaluation, reranking), so we rewrite the lookup roots
+        # through symlink-like shadow names.
+        pass
+
+    # monkeypatch per-variant lookups by redirecting _read_json calls through
+    # the variant-specific phase directories
+    base_reports = PROJECT_ROOT / "reports" / "05_nmt"
+    preprocessing_dir = base_reports / ("preprocessing_xl" if args.variant == "xl" else "preprocessing")
+    evaluation_dir = base_reports / ("evaluation_xl" if args.variant == "xl" else "evaluation")
+    reranking_dir = base_reports / ("reranking_xl" if args.variant == "xl" else "reranking")
+
+    def _rewrite(path: Path) -> Path:
+        s = str(path)
+        s = s.replace(str(base_reports / "preprocessing"), str(preprocessing_dir))
+        s = s.replace(str(base_reports / "evaluation"), str(evaluation_dir))
+        s = s.replace(str(base_reports / "reranking"), str(reranking_dir))
+        return Path(s)
+
+    original_read_json = _read_json
+
+    def _read_json_variant(path: Path) -> dict | None:
+        return original_read_json(_rewrite(path))
+
+    globals()["_read_json"] = _read_json_variant
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     artifacts = {
-        "nmt_canonical_manifest.tex": table_canonical_manifest(),
-        "nmt_semantic_filter.tex": table_semantic_filter(),
-        "nmt_sentencepiece_vs_nllb.tex": table_sentencepiece_vs_nllb(),
-        "nmt_run_comparison.tex": table_run_comparison(args.v0, args.v1),
-        "nmt_alpha_ablation_v0.tex": table_alpha_ablation(args.v0),
-        "nmt_alpha_ablation_v1.tex": table_alpha_ablation(args.v1),
-        "nmt_rare_token.tex": table_rare_token(args.v0, args.v1),
+        f"nmt_canonical_manifest{suffix}.tex": table_canonical_manifest(),
+        f"nmt_semantic_filter{suffix}.tex": table_semantic_filter(),
+        f"nmt_sentencepiece_vs_nllb{suffix}.tex": table_sentencepiece_vs_nllb(),
+        f"nmt_run_comparison{suffix}.tex": table_run_comparison(args.v0, args.v1),
+        f"nmt_alpha_ablation_v0{suffix}.tex": table_alpha_ablation(args.v0),
+        f"nmt_alpha_ablation_v1{suffix}.tex": table_alpha_ablation(args.v1),
+        f"nmt_rare_token{suffix}.tex": table_rare_token(args.v0, args.v1),
     }
     for name, body in artifacts.items():
         out = OUT_DIR / name

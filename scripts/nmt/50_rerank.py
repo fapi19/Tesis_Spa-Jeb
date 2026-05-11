@@ -31,6 +31,7 @@ from src.nmt.reranking.semantic_reranker import (  # noqa: E402
     evaluate_rerank_ablation,
     rerank,
 )
+from scripts.nmt._paths import resolve_paths
 
 RERANK_CFG_PATH = PROJECT_ROOT / "config" / "nmt" / "reranker.yaml"
 EVAL_CFG_PATH = PROJECT_ROOT / "config" / "nmt" / "eval.yaml"
@@ -38,7 +39,11 @@ EVAL_CFG_PATH = PROJECT_ROOT / "config" / "nmt" / "eval.yaml"
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--checkpoint", type=str, required=True)
+    p.add_argument("--variant", choices=["main", "xl"], default="main")
+    p.add_argument("--checkpoint", type=str, default=None,
+                   help="Single checkpoint path. Mutually exclusive with --run-name (Two-DoRA case).")
+    p.add_argument("--run-name", type=str, default=None,
+                   help="Run name (e.g. 'v3_two_dora_xl'). Use when reranking a Two-DoRA combined eval that has no single checkpoint path.")
     p.add_argument("--split", choices=["valid", "test"], default="test")
     p.add_argument("--skip-bertscore", action="store_true")
     p.add_argument("--skip-comet", action="store_true")
@@ -69,19 +74,23 @@ def load_topk(path: Path) -> list[dict]:
 
 def main() -> int:
     args = parse_args()
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.variant)
 
-    checkpoint_path = Path(args.checkpoint).resolve()
-    run_name = checkpoint_path.name
+    if args.checkpoint is None and args.run_name is None:
+        print("[phase6] either --checkpoint or --run-name is required", file=sys.stderr)
+        return 2
+
+    if args.run_name is not None:
+        run_name = args.run_name
+        checkpoint_path = None
+        checkpoint_repr = f"<two_dora_run:{run_name}>"
+    else:
+        checkpoint_path = Path(args.checkpoint).resolve()
+        run_name = checkpoint_path.name
+        checkpoint_repr = str(checkpoint_path)
 
     if args.predictions is None:
-        predictions_path = (
-            PROJECT_ROOT
-            / "reports"
-            / "05_nmt"
-            / "evaluation"
-            / run_name
-            / f"{args.split}_predictions_topk.jsonl"
-        )
+        predictions_path = nmt_paths.reports_evaluation_dir / run_name / f"{args.split}_predictions_topk.jsonl"
     else:
         predictions_path = Path(args.predictions).resolve()
 
@@ -89,9 +98,7 @@ def main() -> int:
         print(f"[phase6] missing top-k predictions: {predictions_path}", file=sys.stderr)
         return 2
 
-    report_dir = (
-        Path(args.report) if args.report else PROJECT_ROOT / "reports" / "05_nmt" / "reranking" / run_name
-    )
+    report_dir = Path(args.report) if args.report else nmt_paths.reports_reranking_dir / run_name
     report_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"[phase6] loading {predictions_path.relative_to(PROJECT_ROOT)}")
@@ -100,10 +107,16 @@ def main() -> int:
           f"{len(predictions[0]['candidates']) if predictions else 0}")
 
     rcfg = RerankerConfig.from_yaml(RERANK_CFG_PATH, PROJECT_ROOT)
+    if args.variant == "xl":
+        object.__setattr__(
+            rcfg,
+            "embedding_path",
+            PROJECT_ROOT / "models" / "sentence_transformers" / "v3_iterative_hn_e5_base_bidirectional_xl",
+        )
     eval_cfg = MetricsConfig.from_yaml(EVAL_CFG_PATH)
     print(
-        f"[phase6] reranker weights: trans={rcfg.weight_translation}, sem={rcfg.weight_semantic}, "
-        f"alpha sweep={list(rcfg.ablation_alphas)}"
+        f"[phase6] variant={args.variant}, reranker weights: trans={rcfg.weight_translation}, "
+        f"sem={rcfg.weight_semantic}, alpha sweep={list(rcfg.ablation_alphas)}"
     )
 
     reranked = rerank(predictions, rcfg)
@@ -130,7 +143,7 @@ def main() -> int:
         "phase": 6,
         "run_name": run_name,
         "timestamp_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "checkpoint": str(checkpoint_path),
+        "checkpoint": checkpoint_repr,
         "split": args.split,
         "n_predictions": len(reranked),
         "alpha": rcfg.weight_translation,
@@ -150,7 +163,7 @@ def main() -> int:
         "timestamp_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "run_name": run_name,
         "split": args.split,
-        "checkpoint": str(checkpoint_path),
+        "checkpoint": checkpoint_repr,
     }
     ablation_path = report_dir / "ablation.json"
     ablation_path.write_text(json.dumps(ablation, indent=2, ensure_ascii=False), encoding="utf-8")

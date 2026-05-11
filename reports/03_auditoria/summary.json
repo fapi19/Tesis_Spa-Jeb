@@ -1,218 +1,218 @@
 {
   "pipeline": "03_auditar_dataset",
-  "timestamp": "2026-03-25T22:28:04.189270+00:00",
+  "timestamp": "2026-05-10T05:27:43.791801+00:00",
   "input_file": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\intermediate\\02_normalizado\\dataset_normalizado.csv",
-  "total_rows": 3207,
-  "rows_with_problems": 1295,
+  "total_rows": 4894,
+  "rows_with_problems": 2082,
   "problems_by_type": {
-    "exact_duplicate": 3,
-    "one_to_many_esp": 8,
-    "bidirectional_conflict": 2,
-    "many_to_one_shiwilu": 406,
-    "length_issue": 170,
-    "suspicious_content": 861
+    "exact_duplicate": 80,
+    "one_to_many_esp": 57,
+    "bidirectional_conflict": 9,
+    "many_to_one_shiwilu": 486,
+    "length_issue": 235,
+    "suspicious_content": 1449
   },
   "duplicate_stats": {
-    "total_duplicate_groups": 3,
-    "total_duplicate_rows": 3
+    "total_duplicate_groups": 69,
+    "total_duplicate_rows": 80
   },
   "length_stats": {
     "esp_words": {
       "min": 1,
       "max": 47,
-      "mean": 4.19,
-      "std": 4.64,
+      "mean": 4.63,
+      "std": 4.32,
       "median": 2
     },
     "shi_words": {
       "min": 1,
       "max": 24,
-      "mean": 2.64,
-      "std": 2.31,
+      "mean": 2.9,
+      "std": 2.2,
       "median": 2
     },
     "length_ratio": {
       "min": 0.08,
       "max": 10.5,
-      "mean": 1.51
+      "mean": 1.55
     }
   },
   "vocabulary_stats": {
     "ESP": {
-      "total_tokens": 13447,
-      "unique_tokens": 4631,
-      "type_token_ratio": 0.3444,
+      "total_tokens": 22651,
+      "unique_tokens": 6220,
+      "type_token_ratio": 0.2746,
       "top_20_words": [
         [
-          "a",
-          344
-        ],
-        [
-          "se",
-          268
-        ],
-        [
-          "que",
-          253
-        ],
-        [
-          "de",
-          234
-        ],
-        [
-          "los",
-          202
-        ],
-        [
           "la",
-          183
+          609
+        ],
+        [
+          "a",
+          587
         ],
         [
           "no",
-          179
-        ],
-        [
-          "y",
-          160
+          513
         ],
         [
           "el",
-          152
+          432
         ],
         [
-          "lo",
-          117
+          "de",
+          404
         ],
         [
-          "me",
-          114
+          "se",
+          393
+        ],
+        [
+          "que",
+          334
         ],
         [
           "en",
-          108
+          333
         ],
         [
-          "estoy",
-          105
+          "los",
+          329
         ],
         [
-          "ahora",
-          88
+          "y",
+          227
         ],
         [
-          "les",
-          83
+          "su",
+          187
         ],
         [
-          "tom",
-          79
+          "las",
+          178
         ],
         [
-          "es",
-          77
-        ],
-        [
-          "cuando",
-          77
-        ],
-        [
-          "soy",
-          72
+          "con",
+          161
         ],
         [
           "por",
-          70
+          147
+        ],
+        [
+          "me",
+          146
+        ],
+        [
+          "lo",
+          146
+        ],
+        [
+          "le",
+          133
+        ],
+        [
+          "cuando",
+          122
+        ],
+        [
+          "es",
+          117
+        ],
+        [
+          "una",
+          117
         ]
       ],
-      "hapax_legomena": 3252
+      "hapax_legomena": 4130
     },
     "SHIWILU": {
-      "total_tokens": 8460,
-      "unique_tokens": 4942,
-      "type_token_ratio": 0.5842,
+      "total_tokens": 14217,
+      "unique_tokens": 7412,
+      "type_token_ratio": 0.5213,
       "top_20_words": [
         [
           "nana",
-          156
+          397
+        ],
+        [
+          "ku'la",
+          193
         ],
         [
           "ima",
-          102
+          125
+        ],
+        [
+          "nanek",
+          110
+        ],
+        [
+          "wila",
+          100
+        ],
+        [
+          "kuda",
+          97
+        ],
+        [
+          "kua",
+          92
+        ],
+        [
+          "nawa'",
+          92
+        ],
+        [
+          "asu'",
+          89
+        ],
+        [
+          "asu’",
+          88
         ],
         [
           "tom",
           86
         ],
         [
-          "asu'",
-          80
+          "ala'sa'",
+          79
         ],
         [
-          "nanek",
-          65
-        ],
-        [
-          "asu’",
-          61
+          "kenma",
+          60
         ],
         [
           "ñapalek",
-          51
-        ],
-        [
-          "nuka'ka",
-          46
+          52
         ],
         [
           "nuka'a",
-          44
+          50
+        ],
+        [
+          "nuka'ka",
+          47
         ],
         [
           "asek",
-          43
-        ],
-        [
-          "-",
-          42
+          47
         ],
         [
           "ñi",
-          38
-        ],
-        [
-          "kua",
-          35
+          47
         ],
         [
           "ipa’la",
-          35
+          46
         ],
         [
-          "iñer",
-          31
-        ],
-        [
-          "ipa'la",
-          30
-        ],
-        [
-          "musu'",
-          28
-        ],
-        [
-          "arakayu",
-          27
-        ],
-        [
-          "ñapalli",
-          26
-        ],
-        [
-          "ñapala?",
-          26
+          "shiwilu",
+          42
         ]
       ],
-      "hapax_legomena": 3946
+      "hapax_legomena": 5742
     }
   }
 }

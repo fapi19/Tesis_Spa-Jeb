@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import argparse
 import sys
 from pathlib import Path
 
@@ -29,18 +30,30 @@ from src.nmt.preprocessing.semantic_filter import (  # noqa: E402
     load_embedding_model,
     resolve_device,
 )
+from scripts.nmt._paths import resolve_paths
 
 CONFIG_PATH = PROJECT_ROOT / "config" / "nmt" / "filter.yaml"
-FILTERED_DIR = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "preprocessing"
 
 
 def main() -> int:
-    cfg = SemanticFilterConfig.from_yaml(CONFIG_PATH, PROJECT_ROOT)
-    device = resolve_device(cfg.device)
-    print(f"[phase2b] device={device}")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--variant", choices=["main", "xl"], default="main")
+    args = parser.parse_args()
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.variant)
+    filtered_dir = nmt_paths.filtered_dir
+    reports_dir = nmt_paths.reports_preprocessing_dir
 
-    pairs = collect_pairs_for_indexing(FILTERED_DIR)
+    cfg = SemanticFilterConfig.from_yaml(CONFIG_PATH, PROJECT_ROOT)
+    if args.variant == "xl":
+        object.__setattr__(
+            cfg,
+            "model_path",
+            PROJECT_ROOT / "models" / "sentence_transformers" / "v3_iterative_hn_e5_base_bidirectional_xl",
+        )
+    device = resolve_device(cfg.device)
+    print(f"[phase2b] variant={args.variant}, device={device}")
+
+    pairs = collect_pairs_for_indexing(filtered_dir)
     print(f"[phase2b] indexing {len(pairs)} accepted pairs")
 
     model = load_embedding_model(cfg)
@@ -51,7 +64,7 @@ def main() -> int:
             pairs,
             side,
             model,
-            FILTERED_DIR,
+            filtered_dir,
             batch_size=cfg.batch_size,
             use_e5=cfg.use_e5_prefixes,
         )
@@ -67,7 +80,7 @@ def main() -> int:
         print(f"[phase2b] {artifact.side}: near-duplicate pairs (IP>=0.98) = {rep['flagged_count']}")
         near_dup_reports.append(rep)
 
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
     report = {
         "phase": "2b",
         "step": "build_faiss",
@@ -99,7 +112,7 @@ def main() -> int:
             for rep in near_dup_reports
         ],
     }
-    out_path = REPORTS_DIR / "faiss_index.json"
+    out_path = reports_dir / "faiss_index.json"
     out_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[phase2b] report -> {out_path.relative_to(PROJECT_ROOT)}")
     return 0

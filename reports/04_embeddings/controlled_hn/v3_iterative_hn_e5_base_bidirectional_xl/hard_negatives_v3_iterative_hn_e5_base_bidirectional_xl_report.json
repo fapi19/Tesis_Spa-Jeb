@@ -1,0 +1,64 @@
+{
+  "pipeline": "hard_negative_controlled",
+  "timestamp": "2026-05-10T16:57:19.696042+00:00",
+  "source_model": "models/sentence_transformers/v2_hn_controlled_e5_base_bidirectional_xl",
+  "top_k": 50,
+  "margin_rules": {
+    "hard": [
+      0.05,
+      0.15
+    ],
+    "medium": [
+      0.15,
+      0.3
+    ]
+  },
+  "counts": {
+    "total_anchors": 3923,
+    "anchors_with_negative": 3882,
+    "anchors_without_negative": 41,
+    "valid_anchor_ratio": 0.9895488146826409,
+    "total_negative_rows": 6287,
+    "difficulty_counts": {
+      "medium": 3866,
+      "hard": 2421
+    },
+    "same_group_discards": 564,
+    "duplicate_discards": 0,
+    "too_hard_discards": 2226,
+    "too_easy_discards": 106880
+  },
+  "similarity": {
+    "sim_positive": {
+      "mean": 0.7602742671283949,
+      "std": 0.07295964200295924,
+      "min": 0.4921801686286926,
+      "p50": 0.7643717527389526,
+      "max": 0.9353461861610413
+    },
+    "sim_negative": {
+      "mean": 0.611766836360507,
+      "std": 0.07770362309431357,
+      "min": 0.3305911421775818,
+      "p50": 0.6103565096855164,
+      "max": 0.8574090003967285
+    },
+    "margin": {
+      "mean": 0.14850743076788786,
+      "std": 0.05054638952512077,
+      "min": 0.050003230571746826,
+      "p50": 0.15532958507537842,
+      "max": 0.29980605840682983
+    }
+  },
+  "quality_gate": {
+    "auto_pass": true,
+    "reason": "Valid anchor ratio and margins are acceptable."
+  },
+  "artifacts": {
+    "negatives_csv": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\04_splits\\train_hard_negatives_v3_iterative_hn_e5_base_bidirectional_xl_xl.csv",
+    "sample_csv": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\reports\\04_embeddings\\controlled_hn\\v3_iterative_hn_e5_base_bidirectional_xl\\hard_negatives_v3_iterative_hn_e5_base_bidirectional_xl_sample.csv",
+    "report_json": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\reports\\04_embeddings\\controlled_hn\\v3_iterative_hn_e5_base_bidirectional_xl\\hard_negatives_v3_iterative_hn_e5_base_bidirectional_xl_report.json"
+  },
+  "elapsed_seconds": 7.486599
+}

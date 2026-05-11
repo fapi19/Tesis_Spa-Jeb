@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import argparse
 import sys
 from pathlib import Path
 
@@ -30,25 +31,37 @@ from src.nmt.preprocessing.semantic_filter import (  # noqa: E402
     score_split,
     write_partition,
 )
+from scripts.nmt._paths import resolve_paths
 
 CONFIG_PATH = PROJECT_ROOT / "config" / "nmt" / "filter.yaml"
-CANON_DIR = PROJECT_ROOT / "data" / "processed" / "05_nmt_canonical"
-OUT_DIR = PROJECT_ROOT / "data" / "processed" / "06_nmt_filtered"
-REPORTS_DIR = PROJECT_ROOT / "reports" / "05_nmt" / "preprocessing"
 HIST_BINS = [0.0, 0.1, 0.2, 0.3, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.01]
 TOPK_WORST = 25
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--variant", choices=["main", "xl"], default="main")
+    args = parser.parse_args()
+    nmt_paths = resolve_paths(PROJECT_ROOT, args.variant)
+    canon_dir = nmt_paths.canonical_dir
+    out_dir = nmt_paths.filtered_dir
+    reports_dir = nmt_paths.reports_preprocessing_dir
+
     cfg = SemanticFilterConfig.from_yaml(CONFIG_PATH, PROJECT_ROOT)
+    if args.variant == "xl":
+        object.__setattr__(
+            cfg,
+            "model_path",
+            PROJECT_ROOT / "models" / "sentence_transformers" / "v3_iterative_hn_e5_base_bidirectional_xl",
+        )
     device = resolve_device(cfg.device)
-    print(f"[phase2a] device={device}, model={cfg.model_path.relative_to(PROJECT_ROOT)}")
+    print(f"[phase2a] variant={args.variant}, device={device}, model={cfg.model_path.relative_to(PROJECT_ROOT)}")
     print(f"[phase2a] thresholds: remove<{cfg.thresholds.remove_below} flag<={cfg.thresholds.flag_upper}")
 
     model = load_embedding_model(cfg)
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    reports_dir.mkdir(parents=True, exist_ok=True)
 
     report: dict = {
         "phase": "2a",
@@ -68,7 +81,7 @@ def main() -> int:
     }
 
     # ---- TRAIN: filter into accepted/flagged/removed ---------------------
-    train_csv = CANON_DIR / "train.csv"
+    train_csv = canon_dir / "train.csv"
     print(f"[phase2a] scoring TRAIN ({train_csv.relative_to(PROJECT_ROOT)})")
     train_df, train_pairs = score_split(train_csv, model, cfg)
 
@@ -76,9 +89,9 @@ def main() -> int:
     flagged = train_df[train_df["label"] == "flagged_for_review"].copy()
     removed = train_df[train_df["label"] == "removed"].copy()
 
-    write_partition(accepted, OUT_DIR, "train")
-    write_partition(flagged, OUT_DIR, "train_flagged")
-    write_partition(removed, OUT_DIR, "train_removed")
+    write_partition(accepted, out_dir, "train")
+    write_partition(flagged, out_dir, "train_flagged")
+    write_partition(removed, out_dir, "train_removed")
 
     print(
         f"[phase2a]   train rows: accepted={len(accepted)} "
@@ -114,10 +127,10 @@ def main() -> int:
 
     # ---- VALID + TEST: passthrough with score column ---------------------
     for split in ("valid", "test"):
-        path = CANON_DIR / f"{split}.csv"
+        path = canon_dir / f"{split}.csv"
         print(f"[phase2a] scoring {split.upper()} ({path.relative_to(PROJECT_ROOT)})")
         df, pairs = score_split(path, model, cfg)
-        write_partition(df, OUT_DIR, split)
+        write_partition(df, out_dir, split)
         scores = pairs["score"].to_numpy()
         report["splits"][split] = {
             "input_pairs": int(len(pairs)),
@@ -141,7 +154,7 @@ def main() -> int:
             f"removed_pairs={int((pairs['label'] == 'removed').sum())}"
         )
 
-    out_path = REPORTS_DIR / "semantic_filter.json"
+    out_path = reports_dir / "semantic_filter.json"
     out_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[phase2a] report -> {out_path.relative_to(PROJECT_ROOT)}")
     return 0

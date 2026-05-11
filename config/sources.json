@@ -4,12 +4,12 @@
   
   "sources": [
     {
-      "name": "flashcards",
-      "description": "Vocabulario y frases de flashcards Anki",
-      "path": "data/intermediate/01_filtrado/dataset_filtrado.csv",
+      "name": "flashcards2",
+      "description": "Vocabulario y frases cortas de flashcards Anki (set legacy)",
+      "path": "data/raw/flashcards2.csv",
       "esp_column": "ESP",
       "shiwilu_column": "SHIWILU",
-      "pair_id_column": "pair_id",
+      "pair_id_column": "CODIGO",
       "enabled": true
     },
     {
@@ -23,6 +23,62 @@
         "column": "quality_flag",
         "keep": ["ok", "fallback_last_line_as_spanish"]
       },
+      "enabled": true
+    },
+    {
+      "name": "flashcards_oraciones",
+      "description": "Flashcards con oraciones completas",
+      "path": "data/raw/flashcards.csv",
+      "esp_column": "TEXTO_SPA",
+      "shiwilu_column": "TEXTO_SHI",
+      "pair_id_column": "CODIGO",
+      "enabled": true
+    },
+    {
+      "name": "fidel_lomas",
+      "description": "Narrativas fiel de lomas",
+      "path": "data/raw/fidel_lomas.csv",
+      "esp_column": "TEXTO_SPA",
+      "shiwilu_column": "TEXTO_SHI",
+      "pair_id_column": "CODIGO",
+      "enabled": true
+    },
+    {
+      "name": "vs_textos_narrativos",
+      "description": "VS textos 8-9 narrativos",
+      "path": "data/raw/VS_textos_8_9_completo.csv",
+      "esp_column": "español",
+      "shiwilu_column": "shiwilu",
+      "pair_id_column": "codigo",
+      "enabled": true
+    },
+    {
+      "name": "cotidianas",
+      "description": "Expresiones cotidianas (sin header)",
+      "path": "data/raw/cotidianas.csv",
+      "esp_column": "ESP",
+      "shiwilu_column": "SHIWILU",
+      "read_options": {
+        "header": null,
+        "names": ["ESP", "SHIWILU", "genero", "nota"]
+      },
+      "enabled": true
+    },
+    {
+      "name": "el_principito",
+      "description": "El principito bilingue parcial",
+      "path": "data/raw/el_principito.csv",
+      "esp_column": "TEXTO_SPA",
+      "shiwilu_column": "TEXTO_SHI",
+      "pair_id_column": "CODIGO",
+      "enabled": true
+    },
+    {
+      "name": "extra",
+      "description": "Vocabulario nivel-palabra (~364 entradas) validado con hablante nativo",
+      "path": "data/raw/extra.csv",
+      "esp_column": "spanish",
+      "shiwilu_column": "shiwilu",
       "enabled": true
     }
   ]
