@@ -94,14 +94,27 @@
 \usepackage{calc}
 \usepackage{multirow}
 \usepackage{caption}
-\captionsetup[figure]{name=Figura}
-\captionsetup[table]{name=Tabla}
+\captionsetup{
+  labelfont=bf,
+  textfont=normalfont,
+  labelsep=colon,
+  justification=raggedright,
+  singlelinecheck=false,
+  skip=6pt,
+}
+\captionsetup[figure]{name=Figura,position=top}
+\captionsetup[table]{name=Tabla,position=top}
 \captionsetup[longtable]{
   labelfont=bf,
   textfont=normalfont,
+  labelsep=colon,
+  justification=raggedright,
+  singlelinecheck=false,
   position=top,
   skip=6pt,
 }
+\renewcommand{\listfigurename}{\'{I}ndice de Figuras}
+\renewcommand{\listtablename}{\'{I}ndice de Tablas}
 \renewcommand{\arraystretch}{1.25}
 
 % --- Matematicas ---
@@ -201,6 +214,8 @@ Con ello, la tesis busca aportar un recurso tecnológico inicial y una ruta expe
 \clearpage
 \listoftables
 \clearpage
+\listoffigures
+\clearpage
 
 \chapter{Generalidades}\label{generalidades}
 
@@ -226,9 +241,9 @@ En la figura 1 se muestra un panorama claro para observar la problemática centr
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth,alt={Árbol de problemas del proyecto}]{media/image2.png}
 \caption{Árbol de Problemas}
 \label{fig:arbol-problemas}
+\includegraphics[width=\linewidth,alt={Árbol de problemas del proyecto}]{media/image2.png}
 \end{figure}
 
 \subsection{Causas}\label{causas}
@@ -365,11 +380,11 @@ Mejorar la capacidad de nuevos hablantes para aprender e interiorizar la lengua 
 
   \begin{itemize}
   \item
-    R6: Prototipo funcional ejecutable localmente que integre el modelo NMT y permita pruebas básicas.
+    R6: Prototipo funcional ejecutable localmente que integre el modelo NMT y permita pruebas básicas, pendiente de implementación posterior.
   \item
     R7: Documento de proceso para la validación con pruebas de experto.
   \item
-    R8: Ejecución del proceso de validación con expertos.
+    R8: Ejecución del proceso de validación con expertos, pendiente de realizar en la etapa posterior del proyecto.
   \end{itemize}
 \end{itemize}
 
@@ -418,19 +433,19 @@ IOV3: Entrenamientos completados en ambas direcciones.
 
 IOV4: Métricas BLEU/chrF presentadas.
 \end{minipage} \\
-O3: Definir un protocolo de validación que combine evaluación automática y participativa. & R4: Protocolo de validación documentado (métricas, instrumentos y rúbricas). & \begin{minipage}[t]{\linewidth}\raggedright
-MV5: Protocolo que prioriza la evaluación automática (métricas) e incluye una sesión acotada con hablantes.
+O3: Definir un protocolo de validación que combine evaluación automática y participativa. & R5: Protocolo de validación documentado (métricas, instrumentos y rúbricas). & \begin{minipage}[t]{\linewidth}\raggedright
+MV5: Protocolo documentado que integra evaluación automática, muestreo participativo, rúbrica y plantilla de revisión.
 \end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-IOV5: Métricas automáticas reportadas y muestra acotada con hablantes registrada.
+IOV5: Métricas automáticas reportadas y muestra acotada preparada para revisión con hablantes.
 \end{minipage} \\
-O4: Diseñar e implementar un prototipo funcional de traductor NMT que facilite su uso y prueba. & R5: Prototipo funcional ejecutable localmente que integre el modelo NMT y permita pruebas básicas.
+O4: Diseñar e implementar un prototipo funcional de traductor NMT que facilite su uso y prueba. & R6: Prototipo funcional ejecutable localmente que integre el modelo NMT y permita pruebas básicas, pendiente de implementación posterior.
 
 R7: Documento de proceso para pruebas de experto
 
-R8: Proceso de validación con expertos ejecutado. & \begin{minipage}[t]{\linewidth}\raggedright
-MV6: Prototipo operativo con guía breve de uso y video corto de demostración.
+R8: Proceso de validación con expertos planificado para ejecución posterior. & \begin{minipage}[t]{\linewidth}\raggedright
+MV6: Prototipo operativo con guía breve de uso y video corto de demostración, pendiente de generación.
 \end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-IOV6: Demostración de traducción de ejemplos y registro de casos de prueba ejecutada (expertos).
+IOV6: Demostración de traducción de ejemplos y registro de casos de prueba, pendiente de ejecución con expertos.
 \end{minipage} \\
 \end{longtable}
 
@@ -486,17 +501,17 @@ Se describirán las herramientas, métodos, enfoques y procedimientos para logra
 
 \textbf{M:} Rúbricas (adecuación, fluidez, pertinencia); muestreo.
 \end{minipage} \\
-\textbf{R6:} Prototipo local funcional (UI simple). & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{R6:} Prototipo local funcional pendiente (UI simple). & \begin{minipage}[t]{\linewidth}\raggedright
 \textbf{H:} Python, PyTorch/TensorFlow; Gradio/Streamlit; logs.
 
-\textbf{P:} UI$\rightarrow$cargar checkpoint$\rightarrow$traducir$\rightarrow$registrar.
+\textbf{P:} UI$\rightarrow$cargar checkpoint$\rightarrow$traducir$\rightarrow$registrar (fase posterior).
 \end{minipage} \\
 \textbf{R7:} Documento de proceso para pruebas de experto. & \begin{minipage}[t]{\linewidth}\raggedright
 \textbf{M:} Plantilla de acta y checklist; versionado.
 
 \textbf{P:} Formato$\rightarrow$checklist$\rightarrow$evidencias$\rightarrow$archivo.
 \end{minipage} \\
-\textbf{R8:} Validación con expertos ejecutada (actas). & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{R8:} Validación con expertos planificada para una etapa posterior (actas pendientes). & \begin{minipage}[t]{\linewidth}\raggedright
 \textbf{M:} Aplicación del protocolo; consolidación.
 
 \textbf{P:} Sesiones$\rightarrow$consolidado$\rightarrow$síntesis$\rightarrow$mejoras.
@@ -513,9 +528,9 @@ En la preparación del corpus (R1) se emplean expresiones regulares y un tokeniz
 
 El modelado NMT bidireccional (R3--R4) se realiza con PyTorch o TensorFlow (familia Transformers) y segmentación en subpalabras mediante SentencePiece, a fin de reducir OOV y estabilizar el vocabulario en ambas direcciones. El entrenamiento se conduce bajo control experimental (semillas, \emph{checkpoints} y configuraciones registradas) y se evalúa con métricas reproducibles (BLEU y chrF++), garantizando comparabilidad entre modelos y corridas.
 
-Para la verificación práctica (R6) se implementa un prototipo local con Gradio o Streamlit, con interfaz mínima de entrada, traducción y salida, y registro estructurado de entradas y salidas para análisis posterior. La validación participativa (R5, R7--R8) se instrumenta con formularios y hojas de cálculo, apoyada en rúbricas de adecuación, fluidez y pertinencia cultural, y consolidada mediante actas y resúmenes que facilitan la trazabilidad de hallazgos y acciones de mejora.
+Para la verificación práctica (R6) se prevé implementar un prototipo local con Gradio o Streamlit, con interfaz mínima de entrada, traducción y salida, y registro estructurado de entradas y salidas para análisis posterior. La validación participativa se define en R5 como protocolo, formularios y hojas de cálculo, apoyada en rúbricas de adecuación, fluidez y pertinencia cultural; su aplicación con expertos y la consolidación de actas asociadas a R7--R8 quedan planificadas para una etapa posterior.
 
-En conjunto, estas herramientas sostienen cuatro principios operativos: calidad de datos (regex, tokenizador, embeddings e índice), robustez del modelo (SentencePiece y marcos de Deep learning), evaluación reproducible (BLEU/chrF++) y transferencia a la práctica (prototipo local y validación experta).
+En conjunto, estas herramientas sostienen cuatro principios operativos: calidad de datos (regex, tokenizador, embeddings e índice), robustez del modelo (SentencePiece y marcos de Deep learning), evaluación reproducible (BLEU/chrF++) y transferencia futura a la práctica (prototipo local y validación experta).
 
 \subsection{Detalle}\label{detalle}
 
@@ -942,7 +957,13 @@ Este capítulo presenta la construcción del corpus paralelo shiwilu--castellano
 
 La organización del capítulo sigue la secuencia metodológica aplicada en el proyecto: primero se describen las fuentes lingüísticas incorporadas; luego se documenta el flujo de extracción, filtrado, unificación, normalización y auditoría; posteriormente se presentan las particiones canónicas; y finalmente se resume la preparación del modelo de \emph{embeddings}. El detalle operativo del pipeline, comandos, archivos y reportes se presenta en el \hyperref[anexo-documento-reproducible]{Anexo B}, entendido como documento reproducible del proceso y medio de verificación de los resultados asociados al objetivo.
 
-\section{Fuentes del corpus bilingüe}\label{fuentes-del-corpus-bilingue}
+\section{Resultados alcanzados}\label{corpus-resultados}
+
+Los resultados de este capítulo se agrupan en dos entregables verificables. El primero es el corpus paralelo depurado, alineado y particionado (R1); el segundo es el modelo de \emph{embeddings} bilingüe preparado y evaluado (R2). En ambos casos, la reproducción se apoya en scripts, archivos intermedios, manifiestos y reportes conservados en el repositorio, con el \hyperref[anexo-documento-reproducible]{Anexo B} como medio de verificación extensivo.
+
+\subsection{R1: corpus paralelo depurado, alineado y particionado}\label{r1-corpus-paralelo}
+
+\subsection{Fuentes del corpus bilingüe}\label{fuentes-del-corpus-bilingue}
 
 El corpus se construyó a partir de ocho fuentes complementarias. Pueden agruparse en tres grandes líneas: (i) materiales narrativos publicados o documentados por escrito; (ii) \emph{flashcards} shiwilu--castellano elaboradas y revisadas en colaboración directa con el señor Fidel Lomas Chota, hablante nativo shiwilu; y (iii) una lista de vocabulario nivel-palabra recogida originalmente en trabajo de campo lingüístico documental.
 
@@ -997,12 +1018,14 @@ La Tabla~\ref{tab:materiales-bilingues} resume la composición inicial validada 
 
 La combinación de fuentes responde a una necesidad propia de las lenguas de bajo recurso: aprovechar todo el material disponible sin homogeneizarlo de forma agresiva. Las flashcards y las cotidianas ofrecen control y validación directa; los relatos y los textos narrativos aportan diversidad estilística; \emph{el\_principito} agrega un contraste literario controlado. Por ello, el procesamiento posterior se diseñó para conservar trazabilidad por fuente y mantener acceso tanto a las versiones originales como a las normalizadas. Cada fuente atraviesa la etapa~01 de filtrado de forma independiente, lo que permite reportar inclusiones y exclusiones por origen y reproducir el pipeline de extremo a extremo.
 
-\section{Construcción, normalización y auditoría del corpus}\label{construccion-normalizacion-auditoria-corpus}
+\subsection{Construcción, normalización y auditoría del corpus}\label{construccion-normalizacion-auditoria-corpus}
 
 El proceso de preparación se organizó como un pipeline reproducible. Cada etapa generó un archivo de salida y un reporte asociado, de modo que las decisiones de limpieza, exclusión y partición pudieran ser auditadas posteriormente. La Figura~\ref{fig:pipeline-corpus} muestra el flujo general aplicado desde las fuentes originales hasta las particiones canónicas.
 
 \begin{figure}[htbp]
 \centering
+\caption{Flujo reproducible de construcción del corpus bilingüe}
+\label{fig:pipeline-corpus}
 \begin{tikzpicture}[
   stage/.style={
     draw,
@@ -1025,8 +1048,6 @@ El proceso de preparación se organizó como un pipeline reproducible. Cada etap
 \draw[arrow] (s02) -- (s03);
 \draw[arrow] (s03) -- (s04);
 \end{tikzpicture}
-\caption{Flujo reproducible de construcción del corpus bilingüe}
-\label{fig:pipeline-corpus}
 \end{figure}
 
 La extracción del PDF de \emph{VOCES SHIWILU: 400 años de resistencia lingüística en Jebero} se realizó con heurísticas conservadoras para identificar ítems numerados y separar segmentos bilingües. El resultado fue un conjunto de 956 pares exportados, de los cuales 867 fueron marcados como casos directos y 89 como casos recuperados mediante una regla de respaldo. Esta distinción permitió conservar información útil sin ocultar los casos que requirieron tratamiento especial.
@@ -1065,7 +1086,7 @@ La Tabla~\ref{tab:etapas-preprocesamiento} resume las etapas principales, sus sa
 04 & Partición & Generación de train, valid y test con semilla fija y grupos & 4814 pares incluidos & Manifiesto de preprocesamiento \\
 \end{longtable}
 
-\section{Caracterización del corpus preparado}\label{caracterizacion-del-corpus-preparado}
+\subsection{Caracterización del corpus preparado}\label{caracterizacion-del-corpus-preparado}
 
 La auditoría permitió describir el corpus tanto en términos cuantitativos como en términos de calidad. El corpus unificado contiene 4894 registros provenientes de las ocho fuentes habilitadas; de ellos, 80 fueron excluidos por duplicación exacta antes de generar las particiones canónicas. Por tanto, el corpus final utilizado para entrenamiento y evaluación de recursos intermedios quedó compuesto por 4814 pares paralelos.
 
@@ -1123,7 +1144,7 @@ Castellano & 22\,651 & 6220 & 0.2746 & 4130 \\
 Shiwilu & 14\,217 & 7412 & 0.5213 & 5742 \\
 \end{longtable}
 
-\section{Particiones reproducibles del corpus}\label{particiones-reproducibles-del-corpus}
+\subsection{Particiones reproducibles del corpus}\label{particiones-reproducibles-del-corpus}
 
 Para asegurar comparabilidad entre experimentos, el corpus final se dividió en particiones de entrenamiento, validación y prueba bajo una proporción 80/10/10 y con semilla fija igual a 42. La división no se realizó únicamente por filas, sino considerando grupos semánticos mediante \texttt{group\_id}. Esta decisión evita que variantes equivalentes o relaciones uno-a-muchos queden distribuidas entre entrenamiento y prueba, lo cual produciría una estimación artificialmente optimista del desempeño.
 
@@ -1162,6 +1183,8 @@ La Figura~\ref{fig:distribucion-fuentes-splits} muestra que las tres particiones
 
 \begin{figure}[htbp]
 \centering
+\caption{Distribución de fuentes por partición canónica (variante \texttt{xl})}
+\label{fig:distribucion-fuentes-splits}
 \begin{tikzpicture}[x=1cm,y=0.75cm]
 % Stacked bars: Flashcards (5 fuentes, gray!25) | VOCES SHIWILU (gray!55) | Pidir (gray!75) | Extra (gray!95)
 % Train  3852 = 2368 fc + 769 voces + 464 pidir + 251 extra  -> ratios .615, .200, .120, .065
@@ -1199,11 +1222,9 @@ La Figura~\ref{fig:distribucion-fuentes-splits} muestra que las tres particiones
 \draw[fill=gray!95] (5.0,-0.95) rectangle (5.45,-0.65);
 \node[anchor=west] at (5.55,-0.8) {Extra (vocabulario)};
 \end{tikzpicture}
-\caption{Distribución de fuentes por partición canónica (variante \texttt{xl})}
-\label{fig:distribucion-fuentes-splits}
 \end{figure}
 
-\section{Preparación del modelo de embeddings}\label{preparacion-del-modelo-de-embeddings}
+\subsection{R2: modelo de embeddings preparado y evaluado}\label{preparacion-del-modelo-de-embeddings}
 
 Además del corpus depurado y particionado, el primer objetivo específico contempla la preparación de un modelo de \emph{embeddings}. En esta tesis, los \emph{embeddings} cumplen una función intermedia: permiten representar pares shiwilu--castellano en un espacio semántico común, medir recuperación bilingüe y disponer de un recurso preparado para análisis posteriores vinculados al modelado de traducción automática neuronal.
 
@@ -1215,9 +1236,9 @@ La Figura~\ref{fig:embedding-evolution-r1-mrr} muestra esta progresión a partir
 
 \begin{center}
 \centering
-\includegraphics[width=0.90\linewidth,height=0.28\textheight,keepaspectratio]{generated/embedding_evolution_r1_mrr.pdf}
 \captionof{figure}{Evolución experimental de R@1 y MRR en los modelos de embeddings}
 \label{fig:embedding-evolution-r1-mrr}
+\includegraphics[width=0.90\linewidth,height=0.28\textheight,keepaspectratio]{generated/embedding_evolution_r1_mrr.pdf}
 \end{center}
 
 \begin{longtable}[]{@{}
@@ -1249,21 +1270,29 @@ La Figura~\ref{fig:embedding-v3-final-metrics} compara las métricas finales del
 
 \begin{center}
 \centering
-\includegraphics[width=0.72\linewidth,height=0.24\textheight,keepaspectratio]{generated/embedding_v3_final_metrics.pdf}
 \captionof{figure}{Métricas finales de recuperación del modelo de embeddings v3}
 \label{fig:embedding-v3-final-metrics}
+\includegraphics[width=0.72\linewidth,height=0.24\textheight,keepaspectratio]{generated/embedding_v3_final_metrics.pdf}
 \end{center}
 
 La Figura~\ref{fig:embedding-v3-rank-distribution} complementa esta lectura al mostrar la distribución de rangos. La mayor parte de las consultas se ubica en rank 1 y, cuando el primer resultado no coincide con la referencia esperada, el par correcto suele permanecer entre los primeros candidatos. Por ello, el modelo queda preparado como entregable de \emph{embeddings} y como insumo para las fases posteriores de integración y evaluación con NMT. Los reportes de entrenamiento, recuperación, minería de negativos y congelamiento del candidato se documentan en el \hyperref[anexo-documento-reproducible]{Anexo B}.
 
 \begin{center}
 \centering
-\includegraphics[width=0.74\linewidth,height=0.24\textheight,keepaspectratio]{generated/embedding_v3_rank_distribution.pdf}
 \captionof{figure}{Distribución de rangos del modelo de embeddings v3}
 \label{fig:embedding-v3-rank-distribution}
+\includegraphics[width=0.74\linewidth,height=0.24\textheight,keepaspectratio]{generated/embedding_v3_rank_distribution.pdf}
 \end{center}
 
-Como resultado de este capítulo, la tesis dispone de un corpus paralelo consolidado de 4814 pares útiles provenientes de ocho fuentes bilingües complementarias, particiones reproducibles para experimentación y un modelo de \emph{embeddings} bilingüe evaluado en ambas direcciones. Estos elementos constituyen la base empírica sobre la cual se apoyan las siguientes etapas de modelado y validación.
+\section{Discusión}\label{corpus-discusion}
+
+Los resultados del capítulo muestran que el primer obstáculo del par shiwilu--castellano no es solamente la escasez de datos, sino la necesidad de convertir fuentes heterogéneas en un recurso comparable, auditable y reutilizable. El corpus final de 4814 pares no elimina la condición de bajo recurso, pero establece una base empírica más estable que las colecciones dispersas iniciales: conserva trazabilidad por fuente, separa versiones originales y normalizadas, excluye duplicados exactos y fija particiones de entrenamiento, validación y prueba que pueden ser reutilizadas por experimentos posteriores.
+
+La caracterización léxica confirma además que el shiwilu presenta una densidad morfológica mayor que el castellano dentro del corpus, reflejada en una proporción más alta de tipos únicos y hapax. Esta observación justifica dos decisiones metodológicas: evitar una normalización destructiva que borre información morfológica, y preparar un modelo de \emph{embeddings} capaz de operar como recurso semántico auxiliar. En línea con la literatura de lenguas de bajo recurso, el valor principal del recurso no se limita al volumen absoluto, sino a su control, trazabilidad y posibilidad de comparación experimental.
+
+El modelo de \emph{embeddings} v3 ofrece una señal robusta para recuperación bilingüe en ambas direcciones, con R@1 cercano a ocho de cada diez consultas sobre oraciones completas. Este resultado cumple el IOV asociado a R2 porque el recurso no solo queda entrenado, sino medido con particiones fijas y reportes reproducibles. Sin embargo, su desempeño no debe interpretarse como validación semántica perfecta: los ítems de vocabulario atómico y las equivalencias culturalmente marcadas siguen siendo más difíciles que las oraciones completas, por lo que la verificación humana continúa siendo necesaria para usos finales.
+
+En conjunto, el capítulo cumple el OE1 mediante dos resultados verificables: R1, un corpus paralelo consolidado, depurado y particionado; y R2, un modelo de \emph{embeddings} bilingüe preparado y evaluado. El \hyperref[anexo-documento-reproducible]{Anexo B} contiene los medios de verificación que permiten reproducir el pipeline, revisar criterios de inclusión y normalización, consultar manifiestos de partición y auditar las métricas del modelo de representación.
 
 \chapter{Sistema de traducción neuronal SA-BiNLLB}\label{nmt-sa-binllb}
 
@@ -1273,15 +1302,101 @@ A partir del corpus paralelo shiwilu--castellano consolidado en el Capítulo~\re
 
 La organización del capítulo sigue el camino del sistema en producción: primero se presenta la arquitectura general; luego, los conjuntos de datos canónicos derivados del corpus; después, las dos etapas de filtrado y entrenamiento que producen el modelo \(v_0\); a continuación, la augmentación que produce el modelo \(v_{1bt}\); y finalmente los resultados experimentales y el protocolo de evaluación humana. Los detalles operativos de hiperparámetros, fórmulas, configuraciones, ablaciones completas y reportes auxiliares se presentan en el \hyperref[anexo-nmt-reproducible]{Anexo~C}, entendido como documento reproducible del sistema y medio de verificación de los resultados.
 
-\section{Arquitectura general}\label{nmt-arquitectura}
+\section{Resultados alcanzados}\label{nmt-resultados-alcanzados}
+
+Este capítulo reporta los resultados asociados al segundo objetivo específico: implementar y evaluar un sistema de traducción automática neuronal bidireccional para el par shiwilu--castellano. Los entregables centrales son R3, el sistema shiwilu\(\rightarrow\)castellano, y R4, el sistema castellano\(\rightarrow\)shiwilu, ambos implementados dentro de una arquitectura única SA-BiNLLB y medidos con el mismo protocolo automático sobre particiones fijas. El \hyperref[anexo-nmt-reproducible]{Anexo~C} funciona como medio de verificación reproducible de hiperparámetros, scripts, métricas, ablaciones, intervalos de confianza, análisis de rare-token y plantilla de evaluación humana preparada.
+
+\subsection{Arquitectura general}\label{nmt-arquitectura}
 
 El sistema se compone de tres bloques que operan secuencialmente. El primero es el \emph{backbone} de traducción: \texttt{facebook/nllb-200-distilled-600M}, un modelo NMT multilingüe que cubre más de 200 lenguas. NLLB-200 no incluye al shiwilu en su inventario, por lo que se extiende su \emph{tokenizer} para registrar la lengua como \texttt{shw\_Latn} y se inicializa la fila correspondiente de \emph{embeddings} desde tres lenguas indígenas sudamericanas tipológica y geográficamente cercanas (quechua de Ayacucho, aymara y guaraní); de esta manera el shiwilu parte con un sesgo morfológico y prosódico razonable en lugar de una inicialización aleatoria.
+
+\begin{figure}[htbp]
+\centering
+\caption{Arquitectura de entrenamiento e inferencia del modelo final SA-BiNLLB \(v_{2.1b}\)}
+\label{fig:nmt-arquitectura-sa-binllb}
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  data/.style={
+    draw,
+    rounded corners=2pt,
+    fill=gray!8,
+    align=center,
+    text width=2.45cm,
+    minimum height=1.05cm,
+    font=\scriptsize
+  },
+  process/.style={
+    draw,
+    rounded corners=2pt,
+    fill=gray!15,
+    align=center,
+    text width=2.65cm,
+    minimum height=1.1cm,
+    font=\scriptsize
+  },
+  model/.style={
+    draw,
+    very thick,
+    rounded corners=2pt,
+    fill=gray!22,
+    align=center,
+    text width=3.05cm,
+    minimum height=1.35cm,
+    font=\scriptsize
+  },
+  aux/.style={
+    draw,
+    dashed,
+    rounded corners=2pt,
+    fill=white,
+    align=center,
+    text width=2.45cm,
+    minimum height=0.95cm,
+    font=\scriptsize
+  },
+  arrow/.style={-{Latex[length=2.7mm]}, very thick, shorten >=1pt, shorten <=1pt},
+  softarrow/.style={-{Latex[length=2.7mm]}, dashed, very thick, shorten >=1pt, shorten <=1pt}
+]
+
+\draw[rounded corners=3pt, gray!60] (-0.7,0.95) rectangle (16.8,6.65);
+\node[anchor=west, font=\small\bfseries] at (-0.45,6.15) {Entrenamiento del modelo final};
+
+\draw[rounded corners=3pt, gray!60] (-0.7,-4.25) rectangle (16.8,0.35);
+\node[anchor=west, font=\small\bfseries] at (-0.45,-0.02) {Inferencia y selección de hipótesis};
+
+\node[data] (corpus) at (1.05,4.15) {\textbf{Corpus \texttt{xl}}\\4501 pares\\train/valid/test};
+\node[process] (filter) at (4.75,4.15) {\textbf{Filtro semántico}\\E5 bilingüe v3\\acepta / marca / descarta};
+\node[data] (aug) at (4.75,1.75) {\textbf{Datos sintéticos}\\BT, round-trip, minería\\filtrados por similitud};
+\node[process] (trainset) at (8.65,4.15) {\textbf{Train direccional}\\real + sintético\\shw$\to$spa / spa$\to$shw};
+\node[aux] (tokenizer) at (8.65,5.85) {\textbf{Tokenizer extendido}\\NLLB + \texttt{shw\_Latn}\\embedding inicializado};
+\node[model] (finalmodel) at (13.75,4.15) {\textbf{Modelo final \(v_{2.1b}\)}\\NLLB-200 distilled\\\textbf{congelado}\\adapter LoRA+\\\textbf{entrenable}};
+
+\node[data] (input) at (1.05,-1.25) {\textbf{Entrada}\\oración fuente\\shiwilu o castellano};
+\node[process] (decode) at (5.0,-1.25) {\textbf{Decodificación}\\SA-BiNLLB \(v_{2.1b}\)\\haz \(k=5\)};
+\node[data] (candidates) at (9.05,-1.25) {\textbf{Hipótesis}\\5 candidatos\\log-probabilidad};
+\node[process] (rerank) at (10.9,-3.15) {\textbf{Reranking}\\\(\alpha\log P+(1-\alpha)\cos(e_s,e_h)\)\\E5 v3, \(\alpha=0.7\)};
+\node[data] (output) at (14.9,-3.15) {\textbf{Salida final}\\traducción elegida\\confianza};
+
+\draw[arrow] (corpus) -- (filter);
+\draw[arrow] (filter) -- (trainset);
+\draw[arrow] (aug) -- (trainset);
+\draw[arrow] (trainset) -- (finalmodel);
+\draw[softarrow] (tokenizer) -- (finalmodel);
+\draw[softarrow] (filter) -- (aug);
+
+\draw[arrow] (input) -- (decode);
+\draw[arrow] (decode) -- (candidates);
+\draw[arrow] (candidates) -- (rerank);
+\draw[arrow] (rerank) -- (output);
+\end{tikzpicture}%
+}
+\end{figure}
 
 El segundo bloque es la adaptación al par. Sobre el \emph{backbone} congelado se entrena un único \emph{adapter} LoRA bidireccional, cuyas filas direccionales spa\(\rightarrow\)shw y shw\(\rightarrow\)spa se mezclan en el mismo conjunto de entrenamiento. Esta elección se justifica por la cantidad de datos disponibles: con un corpus de pocos miles de pares paralelos no se justifica entrenar dos adaptadores independientes ni desbloquear el \emph{backbone} completo; LoRA permite ajustar el dominio sin destruir las representaciones pre-entrenadas y manteniendo el costo computacional dentro del presupuesto de una sola GPU.
 
 El tercer bloque es el reutilizador semántico. El modelo de \emph{embeddings} bilingüe v3 congelado en el Capítulo~\ref{recopilaciuxf3n-y-preparaciuxf3n-inicial-del-corpus-bilinguxfce} se incorpora al sistema NMT en tres puntos: como filtro de calidad sobre el conjunto de entrenamiento (Sección~\ref{nmt-filtrado}), como filtro de consistencia sobre los pares sintéticos generados por backtranslation (Sección~\ref{nmt-aumentacion}) y como reranker de las hipótesis devueltas por la búsqueda en haz (Sección~\ref{nmt-resultados}). Es esta triple reutilización lo que justifica el nombre \emph{semantic-aware}: el sistema NMT no opera en aislamiento sino acoplado a un evaluador semántico independiente y reutilizable. Los hiperparámetros exactos de cada bloque (rangos, tasas, fórmulas, umbrales) se desarrollan en el \hyperref[anexo-nmt-reproducible]{Anexo~C}, secciones~\ref{anexo-nmt-hp} y~\ref{anexo-nmt-tokenizer}.
 
-\section{Datos canónicos para NMT}\label{nmt-datos}
+\subsection{Datos canónicos para NMT}\label{nmt-datos}
 
 Las particiones canónicas del corpus bilingüe (Capítulo~\ref{recopilaciuxf3n-y-preparaciuxf3n-inicial-del-corpus-bilinguxfce}) se reescriben en formato direccional para alimentar el entrenamiento bidireccional. Cada par paralelo del corpus se replica como dos filas: una con dirección shw\(\rightarrow\)spa y otra con dirección spa\(\rightarrow\)shw, cada una conservando su \(\text{pair\_id}\) y su \(\text{group\_id}\) originales. La preservación del \(\text{group\_id}\) garantiza que ninguna agrupación semántica cruce las fronteras de \emph{train}, \emph{valid} y \emph{test}; esta integridad evaluativa fue establecida en la fase previa y no se altera. La distribución resultante se muestra en el Cuadro~\ref{tab:nmt-canonical}: los 4501 pares de la variante \texttt{xl} producen 9002 filas direccionales, que conservan la proporción 80/10/10 del corpus original.
 
@@ -1292,7 +1407,7 @@ Las particiones canónicas del corpus bilingüe (Capítulo~\ref{recopilaciuxf3n-
 \input{figuras/generated/nmt_canonical_manifest_xl}
 \end{table}
 
-\section{Filtrado semántico de calidad}\label{nmt-filtrado}
+\subsection{Filtrado semántico de calidad}\label{nmt-filtrado}
 
 Antes de entrenar el modelo NMT, el conjunto de entrenamiento direccional pasa por un filtro semántico que descarta pares cuya correspondencia bilingüe no es plausible. El filtro utiliza el modelo de \emph{embeddings} v3 congelado para puntuar la similitud coseno entre la fuente y el destino de cada par; aquellos cuya similitud queda por debajo de un umbral inferior se descartan, los que caen entre dos umbrales se conservan pero quedan marcados para revisión, y los que superan el umbral superior se aceptan sin observaciones. La decisión se toma a nivel de \(\text{pair\_id}\) (no por dirección), de manera que las dos filas direccionales de un mismo par compartan etiqueta. Los conjuntos de validación y prueba se puntúan pero no se modifican, para preservar la base de comparación.
 
@@ -1305,13 +1420,13 @@ El Cuadro~\ref{tab:nmt-filter} muestra la distribución de pares aceptados, marc
 \input{figuras/generated/nmt_semantic_filter_xl}
 \end{table}
 
-\section{Entrenamiento del modelo \texorpdfstring{\(v_0\)}{v0}}\label{nmt-entrenamiento}
+\subsection{Entrenamiento del modelo \texorpdfstring{\(v_0\)}{v0}}\label{nmt-entrenamiento}
 
 El modelo base \(v_0\) se entrena sobre el conjunto direccional filtrado, con una única pasada de fine-tuning del \emph{adapter} LoRA bidireccional. La selección del mejor punto de control durante el entrenamiento se realiza sobre la métrica chrF++ promediada entre las dos direcciones (\(\textit{eval\_avg\_chrf}\)) calculada sobre el conjunto de validación al final de cada época; el sistema conserva el checkpoint con mejor desempeño y descarta los demás. El presupuesto de entrenamiento es de veinte épocas, suficiente para que el modelo alcance una meseta de validación con margen para el sobre-entrenamiento que la selección por mejor checkpoint absorbe automáticamente.
 
 La configuración exacta del optimizador, la tasa de aprendizaje, la programación, la precisión, el tamaño de \emph{batch} efectivo, las longitudes máximas de secuencia y los parámetros de generación se desarrollan en el Anexo~C, sección~\ref{anexo-nmt-hp}.
 
-\section{Augmentación de datos para \texorpdfstring{\(v_{1bt}\)}{v1bt}}\label{nmt-aumentacion}
+\subsection{Augmentación de datos para \texorpdfstring{\(v_{1bt}\)}{v1bt}}\label{nmt-aumentacion}
 
 Tras estabilizar \(v_0\), el sistema explora cuatro fuentes complementarias de datos sintéticos para producir un modelo aumentado \(v_{1bt}\). El criterio común a las cuatro es que la admisión de cualquier par sintético al conjunto de entrenamiento se decide a través del modelo de \emph{embeddings} v3 congelado, no del propio modelo NMT; esta separación evita la circularidad de que el modelo valide sus propios errores.
 
@@ -1324,7 +1439,7 @@ Tras estabilizar \(v_0\), el sistema explora cuatro fuentes complementarias de d
 
 El modelo aumentado \(v_{1bt}\) se entrena sobre la unión del conjunto paralelo filtrado con los conjuntos sintéticos aceptados de los ítems~1 a~3. Para reflejar la confiabilidad heterogénea de las distintas fuentes, la pérdida pondera cada fila según su origen (las filas reales pesan más que las sintéticas), y la capacidad del adaptador LoRA se incrementa moderadamente respecto de \(v_0\) para absorber el corpus ampliado sin saturarse. Las fórmulas matemáticas de cada fuente, los umbrales numéricos, el mapa de pesos por origen y la derivación de la pérdida ponderada se desarrollan en el Anexo~C, secciones~\ref{anexo-nmt-augmentacion} y~\ref{anexo-nmt-pesado}.
 
-\section{Resultados experimentales}\label{nmt-resultados}
+\subsection{Evaluación automática y ablaciones}\label{nmt-resultados}
 
 La evaluación final compara cuatro variantes del sistema sobre el conjunto de prueba: el modelo base \(v_0\) y el modelo aumentado \(v_{1bt}\), cada uno en sus variantes con \emph{baseline} (toma directamente la mejor hipótesis del decodificador) y con \emph{reranking} semántico (reordena las cinco mejores hipótesis combinando la probabilidad del modelo con la similitud coseno fuente--candidato producida por el modelo de \emph{embeddings} v3). Las métricas reportadas son BLEU, chrF++ y COMET, calculadas por dirección de traducción. Se adopta chrF++ como métrica primaria por su mayor robustez en lenguas morfológicamente ricas y de bajos recursos; BLEU se reporta como métrica secundaria estándar y COMET con el caveat explícito de que su entrenamiento subyacente no incluye al shiwilu, por lo cual sus valores absolutos son indicativos.
 
@@ -1343,45 +1458,101 @@ El Cuadro~\ref{tab:nmt-comparison} consolida los resultados. Tres lecturas resum
 
 \paragraph{Efecto de la augmentación.} El modelo \(v_{1bt}\), entrenado con el corpus paralelo más los pares sintéticos aceptados por el filtro semántico, supera consistentemente a \(v_0\) en ambas direcciones y en las tres métricas. La ganancia es más pronunciada en BLEU (porque la augmentación introduce variabilidad léxica que el modelo aprende a producir) y se mantiene tras el reranking, lo cual indica que ambos mecanismos aportan información complementaria.
 
-\paragraph{Ablaciones del optimizador y la arquitectura del adaptador.} Sobre el modelo \(v_{1bt}\) se ejecutaron cuatro ablaciones adicionales que aíslan la contribución de mejoras recientes en el espacio de adaptadores PEFT y de fuentes monolingües: \(v_{2.0}\) reemplaza LoRA por DoRA \parencite{liu2024dora} manteniendo el resto del pipeline, \(v_{2.1}\) suma LoRA+ \parencite{hayou2024loraplus} a DoRA, \(v_{2.1b}\) aplica LoRA+ sobre LoRA estándar (sin DoRA), y \(v_{2.2}\) toma a \(v_{2.1b}\) como modelo generador y le suma una ronda de \emph{round-trip backtranslation} con un \emph{pool} monolingüe español tomado de Wikipedia. El Cuadro~\ref{tab:nmt-leaderboard} consolida las seis variantes en una tabla única; el Cuadro~\ref{tab:nmt-bootstrap-ci} reporta los intervalos de confianza bootstrap del 95\,\% sobre las predicciones reranked (\(n=1000\) re-muestreos por dirección).
+\paragraph{Ablaciones del optimizador y la arquitectura del adaptador.} Sobre el modelo \(v_{1bt}\) se ejecutaron cuatro ablaciones adicionales que aíslan la contribución de mejoras recientes en el espacio de adaptadores PEFT y de fuentes monolingües: \(v_{2.0}\) reemplaza LoRA por DoRA \parencite{liu2024dora} manteniendo el resto del pipeline, \(v_{2.1}\) suma LoRA+ \parencite{hayou2024loraplus} a DoRA, \(v_{2.1b}\) aplica LoRA+ sobre LoRA estándar (sin DoRA), y \(v_{2.2}\) toma a \(v_{2.1b}\) como modelo generador y le suma una ronda de \emph{round-trip backtranslation} con un \emph{pool} monolingüe español tomado de Wikipedia. El Cuadro~\ref{tab:nmt-leaderboard} consolida las seis variantes en una tabla única con chrF++ como criterio primario y BLEU/COMET como señales complementarias; el Cuadro~\ref{tab:nmt-bootstrap-ci} reporta la incertidumbre bootstrap de chrF++ y conserva BLEU/COMET como puntos de contexto.
 
 \begin{table}[h]
 \centering
-\caption{\emph{Leaderboard} cerrado del ciclo de ablaciones sobre la variante \texttt{xl} (446 pares por dirección, 892 filas direccionales). chrF++ es la métrica primaria.}
+\caption{\emph{Leaderboard} cerrado del ciclo de ablaciones sobre la variante \texttt{xl} (446 pares por dirección, 892 filas direccionales). chrF++ es la métrica primaria; BLEU y COMET se reportan como métricas complementarias.}
 \label{tab:nmt-leaderboard}
 \resizebox{\linewidth}{!}{\input{figuras/generated/nmt_leaderboard_xl}}
 \end{table}
 
 \begin{table}[h]
 \centering
-\caption{Intervalos de confianza bootstrap del 95\,\% sobre chrF++ reranked, \(n=1000\) re-muestreos percentil por dirección. Las predicciones avg vuelven a re-muestrear cada dirección independientemente.}
+\caption{Intervalos de confianza bootstrap del 95\,\% sobre chrF++ reranked y métricas complementarias promedio. BLEU y COMET se muestran como puntos sin intervalo de confianza.}
 \label{tab:nmt-bootstrap-ci}
 \resizebox{\linewidth}{!}{\input{figuras/generated/nmt_bootstrap_ci_xl}}
 \end{table}
 
-Tres lecturas adicionales emergen del Cuadro~\ref{tab:nmt-leaderboard} y del Cuadro~\ref{tab:nmt-bootstrap-ci}. Primero, LoRA+ aislado (\(v_{2.1b}\)) es el ganador del ciclo con avg chrF++ reranked \(=44.99\) (IC 95\,\% \([43.17, 46.96]\)), un salto de \(\approx 12{,}8\) puntos chrF++ sobre \(v_{1bt}\); el incremento es estadísticamente claro porque los intervalos de confianza no se traslapan. Segundo, DoRA aislado (\(v_{2.0}\)) no se distingue estadísticamente de \(v_{1bt}\) (\(32{,}58\) vs \(32{,}14\), IC 95\,\% traslapados), y la combinación DoRA+LoRA+ (\(v_{2.1}\), \(44{,}30\)) cae dentro del IC del propio LoRA+ aislado, de modo que DoRA no paga su costo computacional adicional con este corpus. Tercero, \(v_{2.2}\) regresa el modelo a \(\approx 32\) chrF++: la \emph{backtranslation} desde Wikipedia (registro enciclopédico, vocabulario externo al corpus de \emph{flashcards} y narrativas comunitarias) introduce pares sintéticos cuya distribución de dominio inunda la señal limpia de LoRA+, confirmando empíricamente que en \emph{low-resource} la coincidencia de dominio prima sobre el volumen del pool monolingüe.
+Tres lecturas adicionales emergen del Cuadro~\ref{tab:nmt-leaderboard} y del Cuadro~\ref{tab:nmt-bootstrap-ci}. Primero, LoRA+ aislado (\(v_{2.1b}\)) es el ganador del ciclo con avg chrF++ reranked \(=44.99\) (IC 95\,\% \([43.17, 46.96]\)), BLEU promedio \(=18.46\) y COMET promedio \(=0.752\); el salto de \(\approx 12{,}8\) puntos chrF++ sobre \(v_{1bt}\) es estadísticamente claro porque los intervalos de confianza no se traslapan. Segundo, DoRA aislado (\(v_{2.0}\)) no se distingue estadísticamente de \(v_{1bt}\) (\(32{,}58\) vs \(32{,}14\), IC 95\,\% traslapados), y la combinación DoRA+LoRA+ (\(v_{2.1}\), \(44{,}30\)) cae dentro del IC del propio LoRA+ aislado, de modo que DoRA no paga su costo computacional adicional con este corpus. Tercero, \(v_{2.2}\) regresa el modelo a \(\approx 32\) chrF++ y también baja en BLEU/COMET respecto de \(v_{2.1b}\): la \emph{backtranslation} desde Wikipedia (registro enciclopédico, vocabulario externo al corpus de \emph{flashcards} y narrativas comunitarias) introduce pares sintéticos cuya distribución de dominio inunda la señal limpia de LoRA+, confirmando empíricamente que en \emph{low-resource} la coincidencia de dominio prima sobre el volumen del pool monolingüe.
 
 Por estas tres lecturas el ciclo de tesis cierra con \(v_{2.1b}\) LoRA+ como sistema enviado. Los detalles operativos de DoRA, LoRA+ y la generación del pool monolingüe iterativo se documentan en el Anexo~C, sección~\ref{anexo-nmt-ablaciones-peft}.
 
 Adicionalmente, un análisis morfológicamente sensible mide chrF++ sobre el subconjunto de oraciones cuya referencia contiene una alta proporción de palabras raras en el corpus de entrenamiento, así como la tasa de recuperación de palabras estrictamente \emph{out-of-vocabulary}. El reranking mantiene su ventaja sobre este régimen \emph{rare-heavy}, aunque la tasa de recuperación OOV es uniformemente baja, lo cual motiva una de las líneas de trabajo futuro (Sección~\ref{trabajos-futuros}). El detalle por bucket morfológico y la calibración de la capa de confiabilidad por predicción se desarrollan en el Anexo~C, secciones~\ref{anexo-nmt-rare-token} y~\ref{anexo-nmt-confidence}.
 
-\section{Evaluación humana}\label{nmt-eval-humana}
+\section{Discusión}\label{nmt-discusion}
 
-Adicionalmente al barrido cuantitativo, el sistema reproduce un protocolo de evaluación humana cuya plantilla se prepara automáticamente. El protocolo toma una muestra aleatoria estratificada de cien ítems por dirección balanceada por origen (qué fuente bilingüe del corpus generó el par) y por longitud de la fuente; las hipótesis de los cuatro sistemas (\(v_0\) y \(v_{1bt}\), cada uno en variantes \emph{baseline} y \emph{reranked}) se anonimizan con un mapeo aleatorio letra\(\rightarrow\)sistema persistido por separado, de manera que el revisor califica sin saber qué letra corresponde a qué configuración. Cada ítem recibe puntajes en una escala 1--5 sobre tres ejes: adecuación (preservación del sentido), fluidez (gramaticalidad y naturalidad) y pertinencia cultural (registro idiomáticamente correcto).
+Los resultados automáticos indican que la contribución más importante para el par shiwilu--castellano proviene de combinar transferencia multilingüe, adaptación eficiente y control semántico de los datos. NLLB aporta una base multilingüe razonable, LoRA permite ajustar el modelo sin entrenar todos los parámetros, y el modelo de \emph{embeddings} congelado actúa como verificador independiente para filtrar entrenamiento, admitir datos sintéticos y reordenar hipótesis. Esta composición es consistente con la literatura de NMT \emph{low-resource}: cuando el paralelo es limitado, la calidad del dato, el dominio y el control experimental suelen pesar tanto como la arquitectura.
 
-La planilla queda generada y lista para ser ejecutada por hablantes nativos del shiwilu. Los archivos producidos (la planilla en formato CSV y la clave de des-anonimización en formato JSON) y la especificación operativa del muestreo se documentan en el Anexo~C, sección~\ref{anexo-nmt-human-eval}.
+La comparación entre \(v_0\), \(v_{1bt}\) y las variantes posteriores muestra que la augmentación controlada mejora el sistema, pero también que el aumento de volumen no es suficiente por sí mismo. El retroceso de \(v_{2.2}\) al usar Wikipedia como pool monolingüe evidencia una limitación central: en lenguas de bajo recurso, un conjunto sintético grande pero alejado del dominio puede introducir ruido más rápido de lo que aporta cobertura. En cambio, LoRA+ sobre LoRA estándar produce la mejora más clara del ciclo, lo que sugiere que, dentro del presupuesto de datos disponible, la dinámica de optimización del adaptador fue más decisiva que aumentar la complejidad arquitectónica con DoRA.
+
+La evaluación automática cumple el IOV del OE2 porque reporta BLEU, chrF++ y COMET por dirección, compara variantes, incluye reranking, documenta ablaciones y agrega intervalos de confianza bootstrap para la métrica primaria. Estos resultados permiten cerrar la comparación técnica de los modelos NMT y seleccionar una variante ganadora bajo criterios reproducibles; la integración de estas métricas con un protocolo participativo se desarrolla por separado en el capítulo siguiente.
+
+La generalización del sistema debe formularse con prudencia. SA-BiNLLB muestra que un pipeline reproducible con corpus curado, embeddings bilingües, PEFT y reranking puede producir una línea base fuerte para una lengua originaria de muy bajo recurso. Sin embargo, sus resultados siguen condicionados por el tamaño del corpus, la concentración de dominio en flashcards y narrativas y la baja recuperación de términos OOV. El prototipo de uso final tampoco se documenta como implementado en esta etapa; queda como trabajo posterior una vez cerrada la verificación lingüística con hablantes.
 
 \section{Conclusión del capítulo}\label{nmt-conclusion-capitulo}
 
-El sistema SA-BiNLLB articula las tres decisiones de diseño anunciadas al inicio del capítulo: NLLB-200 distilled como \emph{backbone} multilingüe pre-entrenado, un único \emph{adapter} LoRA bidireccional que ajusta el modelo al par shiwilu--castellano, y la reutilización del modelo de \emph{embeddings} bilingüe v3 congelado como evaluador semántico independiente que filtra el corpus de entrenamiento, modera la admisión de pares sintéticos y reordena las hipótesis del decodificador. La evaluación cuantitativa muestra que la combinación de un corpus mayor (variante \texttt{xl}), una augmentación cuya admisión la decide el evaluador semántico (\(v_{1bt}\)), el optimizador LoRA+ con tasas de aprendizaje asimétricas \(B/A=16\) sobre LoRA estándar (\(v_{2.1b}\)) y el reranking semántico produce el campeón enviado del ciclo (avg chrF++ \(=44{,}99\), IC 95\,\% \([43{,}17, 46{,}96]\)) con un margen estadísticamente claro sobre \(v_{1bt}\). La evaluación humana queda preparada como entregable adicional para el cierre con hablantes nativos. El detalle operativo del sistema --- hiperparámetros, fórmulas, umbrales, ablaciones completas y desviaciones documentadas frente al plan original --- se consigna en el \hyperref[anexo-nmt-reproducible]{Anexo~C}.
+El sistema SA-BiNLLB articula las tres decisiones de diseño anunciadas al inicio del capítulo: NLLB-200 distilled como \emph{backbone} multilingüe pre-entrenado, un único \emph{adapter} LoRA bidireccional que ajusta el modelo al par shiwilu--castellano, y la reutilización del modelo de \emph{embeddings} bilingüe v3 congelado como evaluador semántico independiente que filtra el corpus de entrenamiento, modera la admisión de pares sintéticos y reordena las hipótesis del decodificador. La evaluación cuantitativa muestra que la combinación de un corpus mayor (variante \texttt{xl}), una augmentación cuya admisión la decide el evaluador semántico (\(v_{1bt}\)), el optimizador LoRA+ con tasas de aprendizaje asimétricas \(B/A=16\) sobre LoRA estándar (\(v_{2.1b}\)) y el reranking semántico produce el mejor sistema del ciclo (avg chrF++ \(=44{,}99\), IC 95\,\% \([43{,}17, 46{,}96]\)) con un margen estadísticamente claro sobre \(v_{1bt}\). Con ello se cumplen R3 y R4 como modelos bidireccionales implementados y evaluados automáticamente. El detalle operativo del sistema --- hiperparámetros, fórmulas, umbrales, ablaciones completas y desviaciones documentadas frente al plan original --- se consigna en el \hyperref[anexo-nmt-reproducible]{Anexo~C}.
+
+\chapter{Protocolo de validación automática y participativa}\label{protocolo-validacion-automatica-participativa}
+
+\section{Introducción}\label{protocolo-introduccion}
+
+Este capítulo desarrolla el objetivo específico 3: definir un protocolo de validación que combine evaluación automática y validación participativa con hablantes para medir adecuación lingüística y pertinencia cultural en el sistema shiwilu$\leftrightarrow$castellano. A diferencia del capítulo anterior, centrado en la implementación y evaluación automática del modelo NMT bidireccional, aquí el resultado principal es documental y operativo: dejar preparado un procedimiento reproducible para que las métricas automáticas se interpreten junto con juicios humanos estructurados.
+
+El alcance corresponde al resultado R5 y a sus medios de verificación MV5/IOV5. Por tanto, el capítulo no reporta una aplicación ya ejecutada con hablantes, ni presenta promedios humanos, actas de expertos o acuerdos interevaluador. Lo que se documenta es el protocolo, la muestra, la rúbrica, los artefactos generados y las condiciones necesarias para aplicar la validación participativa en una etapa posterior.
+
+\section{Resultados alcanzados}\label{nmt-eval-humana}
+
+El protocolo integra dos componentes. El primero es la evaluación automática ya ejecutada sobre el conjunto de prueba, con BLEU, chrF++ y COMET por dirección y por variante del sistema. La tabla de liderazgo del Cuadro~\ref{tab:nmt-leaderboard} y los intervalos bootstrap del Cuadro~\ref{tab:nmt-bootstrap-ci} funcionan como base cuantitativa: permiten identificar el sistema ganador, comparar el efecto del reranking y estimar la incertidumbre de chrF++ sobre 446 pares por dirección. Los reportes reproducibles asociados son \filepath{reports/05\_nmt/evaluation\_xl/leaderboard.md} y \filepath{reports/05\_nmt/evaluation\_xl/bootstrap\_ci\_summary.md}.
+
+El segundo componente es la plantilla de validación participativa preparada para revisión con hablantes. La muestra contiene 100 ítems por dirección, 200 en total, extraídos del conjunto de prueba mediante muestreo estratificado por fuente de origen y por longitud de la oración fuente. Esta decisión evita que la revisión se concentre únicamente en frases cortas o en una sola fuente del corpus, y mantiene trazabilidad con la distribución real de los datos evaluados automáticamente.
+
+La plantilla compara cuatro salidas del sistema: \(v_0\), \(v_0\) con reranking, \(v_{1bt}\) y \(v_{1bt}\) con reranking. Para reducir sesgo de evaluación, las hipótesis se presentan anonimizadas como A/B/C/D, mientras que la clave letra\(\rightarrow\)sistema se guarda por separado en \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_anon\_key.json}. La hoja de revisión queda disponible en \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_template.csv}; cada fila incluye la fuente, la referencia y las hipótesis anonimizadas. Además, el resumen operativo del protocolo queda exportado en \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_protocol.md} y el directorio cuenta con un \filepath{README.md} que ordena los artefactos automáticos y participativos.
+
+La rúbrica propuesta usa escala 1--5 en tres dimensiones:
+
+\begin{description}[leftmargin=*]
+  \item[Adecuación.] Evalúa si la hipótesis conserva el sentido de la referencia y evita omisiones, añadidos o cambios semánticos relevantes.
+  \item[Fluidez.] Evalúa gramaticalidad, naturalidad y legibilidad de la salida en la lengua destino.
+  \item[Pertinencia cultural.] Evalúa si la traducción conserva registro, usos idiomáticos y formulaciones culturalmente apropiadas para el shiwilu y el castellano.
+\end{description}
+
+El artefacto se reproduce con el siguiente comando desde la raíz del proyecto:
+
+\begin{quote}
+\texttt{.venv-nmt/Scripts/python -m scripts.nmt.71\_human\_eval\_template --variant xl --per-direction 100 --seed 2026 --split test}
+\end{quote}
+
+Con ello, R5 queda documentado como protocolo preparado: existen métricas automáticas reportadas, muestra participativa estratificada, rúbrica de evaluación, plantilla de captura, clave anónima separada y resumen Markdown reproducible. La ejecución con hablantes, el cálculo de promedios por sistema, el análisis cualitativo de comentarios y la medición de acuerdo entre evaluadores no forman parte de los resultados ejecutados de esta etapa.
+
+\section{Discusión}\label{protocolo-discusion}
+
+Contar con este protocolo resuelve una brecha metodológica importante para lenguas de muy bajo recurso: evita que la calidad del traductor se interprete únicamente desde indicadores automáticos y deja preparada una ruta para incorporar juicio lingüístico y cultural. BLEU permite mantener comparabilidad con literatura previa, chrF++ ofrece una señal más robusta ante variación morfológica y COMET aporta una estimación semántica complementaria; sin embargo, ninguna de estas métricas sustituye la revisión de hablantes. BLEU es sensible a coincidencias superficiales, chrF++ sigue dependiendo de cercanía de caracteres respecto de una referencia, y COMET no fue entrenado específicamente para shiwilu.
+
+La validación participativa propuesta responde a esa limitación porque separa tres criterios que las métricas tienden a mezclar: preservación del sentido, naturalidad de la salida y pertinencia cultural. Esta separación es especialmente relevante en traducción de lenguas originarias, donde una hipótesis puede aproximarse a la referencia en superficie pero fallar en registro, cortesía, uso idiomático o elección léxica culturalmente marcada. La anonimización A/B/C/D también fortalece el diseño, porque reduce la posibilidad de que el evaluador favorezca una variante por conocer su configuración técnica.
+
+El principal límite es que el protocolo aún no ha sido aplicado con hablantes. Por ello, el capítulo no permite afirmar que el sistema ya fue validado participativamente ni que existe acuerdo entre evaluadores. Su aporte es dejar el instrumento preparado y reproducible para que la aplicación posterior pueda realizarse sin modificar la muestra, la rúbrica ni la clave de anonimización. En términos de trazabilidad, el OE3 queda cumplido en su componente protocolar y documental, mientras que la ejecución de sesiones, consolidación de puntajes humanos y análisis de discrepancias se mantienen como trabajo futuro.
 
 \chapter{Conclusiones y trabajos futuros}\label{conclusiones-y-trabajos-futuros}
 
 \section{Conclusiones}\label{conclusiones-1}
 
+Esta tesis avanzó sobre tres componentes del sistema de traducción automática neuronal shiwilu--castellano: la construcción del corpus y recurso de representación semántica, la implementación del modelo NMT bidireccional SA-BiNLLB y la preparación de un protocolo de validación automática y participativa. El primer resultado fue un corpus paralelo consolidado de 4814 pares útiles, procedentes de ocho fuentes bilingües, con normalización no destructiva, auditoría de duplicados, trazabilidad por origen y particiones reproducibles. Este resultado responde al OE1 y queda verificado por las tablas, manifiestos y reportes del \hyperref[anexo-documento-reproducible]{Anexo B}.
+
+El segundo resultado del OE1 fue un modelo de \emph{embeddings} bilingüe preparado y evaluado. La variante v3 de E5-base bidireccional con minería iterativa de negativos alcanzó R@1 de 0{,}8080 en castellano\(\rightarrow\)shiwilu y 0{,}7857 en shiwilu\(\rightarrow\)castellano sobre oraciones completas de prueba, además de valores R@5 y R@10 superiores a 0{,}93 en ambas direcciones. Este recurso no se presentó como traductor final, sino como medio semántico auxiliar para recuperar equivalencias, filtrar pares y apoyar el pipeline NMT.
+
+Respecto del OE2, se implementó y evaluó un sistema NMT bidireccional basado en NLLB-200 distilled, adaptación LoRA, aumentación controlada, reranking semántico y ablaciones de optimización. El mejor resultado del ciclo fue \(v_{2.1b}\) con LoRA+ y reranking, que alcanzó avg chrF++ \(=44{,}99\) con IC 95\,\% \([43{,}17, 46{,}96]\). Las pruebas muestran que la mejora depende tanto del corpus \texttt{xl} como de la calidad de los datos sintéticos y del optimizador; también muestran que la backtranslation fuera de dominio puede degradar el modelo aun cuando aumente el volumen de entrenamiento.
+
+Respecto del OE3, se definió un protocolo que combina evaluación automática y validación participativa. El componente automático quedó respaldado por \emph{leaderboard}, métricas por dirección e intervalos bootstrap; el componente participativo quedó preparado mediante una muestra estratificada de 100 ítems por dirección, una rúbrica 1--5 de adecuación, fluidez y pertinencia cultural, una plantilla CSV y una clave anónima separada. Este resultado corresponde a R5 y debe interpretarse como protocolo documentado/preparado, no como validación con hablantes ya ejecutada.
+
+La investigación confirma que, para una lengua originaria de muy bajo recurso como el shiwilu, la contribución técnica más defendible es un pipeline reproducible y auditable antes que una afirmación de cobertura general. El sistema obtenido constituye una línea base fuerte para continuar el trabajo, pero sus resultados deben interpretarse dentro de sus límites: corpus pequeño, dominio concentrado en flashcards y narrativas, baja recuperación de tokens OOV, dependencia de métricas automáticas y validación participativa todavía pendiente.
+
+Por esa razón, la validación participativa completa y el prototipo funcional no se declaran como resultados ejecutados. En esta etapa queda preparada la plantilla de evaluación humana y documentado el protocolo, pero no se reportan juicios de hablantes, promedios humanos, acuerdos interevaluador ni actas de expertos. Del mismo modo, no se redacta un prototipo como resultado alcanzado, porque su implementación queda pendiente para la siguiente fase.
+
 \section{Trabajos futuros}\label{trabajos-futuros}
 
-Cinco líneas de mejora quedan documentadas como ampliación natural de SA-BiNLLB. Cada una se evaluó durante el ciclo actual y se descartó por costo--beneficio o por restricción de tiempo del cronograma de tesis, no por falta de viabilidad.
+Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB. Las primeras se derivan directamente de las ablaciones y análisis automáticos ejecutados; las últimas corresponden a los componentes planificados que todavía no deben presentarse como resultados alcanzados.
 
 \begin{description}[leftmargin=*]
   \item[Arquitectura \emph{Two-Adapter} LoRA+ con rangos asimétricos.] La opción más prometedora identificada al cierre del ciclo, y la que se cita explícitamente como continuación inmediata. Consiste en entrenar dos adaptadores LoRA+ independientes, uno por dirección, con rangos asimétricos: spa\(\rightarrow\)shw con \(r=64\) y \(\alpha=128\) (la dirección morfológicamente más difícil recibe más capacidad) y shw\(\rightarrow\)spa con \(r=32\) y \(\alpha=64\). El soporte de código está integrado (\texttt{30\_train\_lora.py --direction \{spa2shw,shw2spa\}}; \texttt{40\_evaluate.py --checkpoint-spa2shw \ldots --checkpoint-shw2spa \ldots}), de modo que la inversión adicional es exclusivamente computacional (\(\approx 5\)--\(6\)\,h sobre el hardware actual). La hipótesis a validar es que la separación por dirección reduce la interferencia entre ambas tareas y cierra la brecha residual entre las dos direcciones que se observa en el Cuadro~\ref{tab:nmt-leaderboard}.
@@ -1389,6 +1560,8 @@ Cinco líneas de mejora quedan documentadas como ampliación natural de SA-BiNLL
   \item[Iterative backtranslation con corpus monolingüe controlado por dominio.] La regresión observada en \(v_{2.2}\) (Wikipedia) confirma que en \emph{low-resource} la calidad del pool monolingüe se rige por la coincidencia de dominio, no por su tamaño. La línea futura es curar un pool combinado de Tatoeba, \emph{News-commentary} hispanoamericano y narrativas comunitarias (10--30\,k frases), filtrarlo con el SBERT \(v_3\) congelado contra el Shiwilu existente para preservar la distribución del corpus original, y aplicar iteraciones sucesivas de \emph{round-trip backtranslation} \parencite{edunov2018bt,hoang2018iterativebt} con criterio de detención sobre validación.
   \item[Corpus monolingüe español controlado por dominio.] El sistema actual omite la dirección \(\text{spa}\rightarrow\text{shw}\) en \emph{backtranslation} clásica precisamente para no contaminar el \emph{target} con Shiwilu sintético generado por un modelo aún imperfecto en esa dirección. Curar 10--30\,k frases en Español cercanas al dominio de \emph{flashcards} y textos comunitarios, filtrarlas con el SBERT \(v_3\) congelado contra el Shiwilu existente y usarlas como \emph{seeds} para BT \(\text{spa}\rightarrow\text{shw}\) con un \(v_{2.1b}\) ya estable es la línea natural complementaria a la iteración descrita arriba.
   \item[\emph{Focal loss} para preservación de \emph{rare-tokens}.] El análisis morfológicamente sensible documentado en el Anexo~C, sección~\ref{anexo-nmt-rare-token}, muestra que la \emph{OOV recovery rate} es uniformemente baja: el decoder casi no copia palabras shiwilu OOV cuando aparecen en la fuente. \emph{Focal loss} con \(\gamma\approx 2\) sobre los \emph{token-ids} más raros sesgaría al modelo a preservarlos. Es ortogonal al pesado por origen documentado en el Anexo~C, sección~\ref{anexo-nmt-pesado}, y se puede combinar con él, pero requiere reescribir \texttt{compute\_loss} para conocer la frecuencia de cada \emph{token-target} en \emph{train}.
+  \item[Ejecución de la validación participativa.] El protocolo y la planilla anonimizados ya están preparados, pero falta aplicarlos con hablantes nativos o revisores competentes. Esta etapa debe recoger puntajes de adecuación, fluidez y pertinencia cultural, analizar desacuerdos y contrastar los juicios humanos con chrF++ y las demás métricas automáticas.
+  \item[Implementación del prototipo funcional.] Una vez completada la revisión humana, el modelo seleccionado debe integrarse en una interfaz local o web ligera que permita traducir en ambas direcciones, registrar entradas y salidas, mostrar niveles de confianza y recopilar retroalimentación controlada. Este componente queda fuera de los resultados ejecutados de la presente versión.
 \end{description}
 
 % La bibliografia se genera automaticamente a partir de tesis.bib
@@ -1427,7 +1600,7 @@ Finalmente, desde una perspectiva económica y temporal, el proyecto resulta ple
 
 \subsection*{Alcance}
 
-El presente proyecto comprende el diseño, desarrollo y validación de un sistema de traducción automática neuronal bidireccional entre el idioma shiwilu y el castellano, orientado a fortalecer el aprendizaje y la preservación de la lengua. El trabajo abarca desde la recopilación y preparación de datos lingüísticos hasta la implementación de un prototipo funcional que permita realizar pruebas básicas de traducción. La ejecución se enmarca dentro del curso \emph{Proyecto de Fin de Carrera 1}, con una planificación que incluye actividades de gestión, modelado y validación lingüística en colaboración con hablantes nativos.
+El presente proyecto comprende el diseño, desarrollo y validación progresiva de un sistema de traducción automática neuronal bidireccional entre el idioma shiwilu y el castellano, orientado a fortalecer el aprendizaje y la preservación de la lengua. El trabajo abarca desde la recopilación y preparación de datos lingüísticos hasta la futura implementación de un prototipo funcional que permita realizar pruebas básicas de traducción. La ejecución se enmarca dentro del curso \emph{Proyecto de Fin de Carrera 1}, con una planificación que incluye actividades de gestión, modelado y validación lingüística en colaboración con hablantes nativos.
 
 El alcance técnico incluye la construcción de un corpus paralelo shiwilu--castellano alineado y depurado, el desarrollo de modelos neuronales de traducción bajo un esquema reproducible y la elaboración de un prototipo local ejecutable para la demostración del sistema. Asimismo, se contempla la definición de un protocolo de validación participativa, que combina métricas automáticas con la evaluación cualitativa de hablantes, asegurando tanto la calidad lingüística como la pertinencia cultural del modelo. Durante el proceso, se llevará a cabo también la recolección paralela de \emph{flashcards} junto al Grupo Chana y el señor Fidel Lomas Chota, con el fin de fortalecer el acervo léxico y los ejemplos de uso del idioma, sin que dicha actividad altere las particiones experimentales del corpus principal.
 
@@ -1540,9 +1713,12 @@ En la siguiente matriz se describen los riesgos identificados, sus síntomas, pr
 
 \subsection*{Estructura de descomposición del trabajo (EDT)}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
+\caption{Estructura de descomposición del trabajo}
+\label{fig:edt}
 \includegraphics[width=\linewidth,alt={Diagrama de la estructura de descomposición del trabajo}]{media/image3.png}
-\end{center}
+\end{figure}
 
 La Estructura de Descomposición del Trabajo (EDT) constituye una representación jerárquica que organiza las actividades del proyecto en componentes manejables y verificables. En el caso del presente trabajo, la EDT se divide en dos secciones principales: la Gestión del Proyecto, que comprende las tareas administrativas, académicas y de seguimiento vinculadas al curso de Proyecto de Fin de Carrera 1, y la Gestión del Producto, que abarca las fases técnicas orientadas al desarrollo del sistema de traducción automática neuronal bidireccional shiwilu--castellano.
 
@@ -1938,9 +2114,9 @@ El entrenamiento final partió del candidato anterior \filepath{models/sentence_
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.68\linewidth]{generated/embedding_v3_negative_mix.pdf}
 \caption{Composición de negativos usados en la iteración v3}
 \label{fig:anexo-negative-mix}
+\includegraphics[width=0.68\linewidth]{generated/embedding_v3_negative_mix.pdf}
 \end{figure}
 
 Las figuras anteriores representan la evolución del desempeño de recuperación entre candidatos ya entrenados. No corresponden a curvas internas de pérdida de entrenamiento, porque los experimentos de Sentence Transformers no conservaron una serie histórica de pérdida por época o paso. Para futuras corridas, se recomienda habilitar logging a TensorBoard o persistir un archivo CSV o \texttt{trainer\_state.json} con pérdida de entrenamiento y validación por época.
@@ -2154,9 +2330,15 @@ El \emph{tokenizer} de tiempo de ejecución es siempre el de NLLB. No obstante, 
 
 \subsection*{C.12 Protocolo de evaluación humana}\label{anexo-nmt-human-eval}
 
-El protocolo, implementado por \filepath{scripts/nmt/71\_human\_eval\_template.py}, se ejecuta con los parámetros: \texttt{--per-direction 100}, \texttt{--seed 2026}, comparando los cuatro sistemas (\(v_0\) y \(v_{1bt}\), cada uno en variantes \emph{baseline} y \emph{reranked}) sobre el conjunto de \emph{test}. El muestreo es estratificado por origen (\emph{flashcards} vs \emph{pdf\_textos} vs otras fuentes) y por \emph{bucket} de longitud (corto \(\leq 5\), medio \(\leq 12\), largo \(>12\) palabras).
+El protocolo, implementado por \filepath{scripts/nmt/71\_human\_eval\_template.py}, se reproduce con el comando:
 
-Las hipótesis se anonimizan con un mapeo aleatorio letra \(\to\) sistema (A, B, C, D), persistido en \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_anon\_key.json}. La planilla resultante \filepath{human\_eval\_template.csv} contiene, por fila, la fuente, la referencia, las cuatro hipótesis anonimizadas y tres celdas vacías para que el revisor consigne puntajes 1--5 en las dimensiones de adecuación, fluidez y pertinencia cultural.
+\begin{quote}
+\texttt{.venv-nmt/Scripts/python -m scripts.nmt.71\_human\_eval\_template --variant xl --per-direction 100 --seed 2026 --split test}
+\end{quote}
+
+La ejecución prepara una muestra de 100 ítems por dirección (200 en total), comparando cuatro sistemas (\(v_0\), \(v_0\) reranked, \(v_{1bt}\) y \(v_{1bt}\) reranked) sobre el conjunto de \emph{test}. El muestreo es estratificado por origen (\emph{flashcards} vs \emph{pdf\_textos} vs otras fuentes) y por \emph{bucket} de longitud (corto \(\leq 5\), medio \(\leq 12\), largo \(>12\) palabras).
+
+Las hipótesis se anonimizan con un mapeo aleatorio letra \(\to\) sistema (A, B, C, D), persistido en \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_anon\_key.json}. La planilla resultante \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_template.csv} contiene, por fila, la fuente, la referencia, las cuatro hipótesis anonimizadas y celdas vacías para que el revisor consigne puntajes 1--5 en las dimensiones de adecuación, fluidez y pertinencia cultural. El mismo script exporta además \filepath{reports/05\_nmt/evaluation\_xl/human\_eval\_protocol.md}, un resumen reproducible de alcance, muestra, rúbrica e instrucciones para revisores. Este anexo documenta el instrumento preparado; no incluye promedios humanos, acuerdos interevaluador ni comentarios consolidados porque la aplicación con hablantes no se ejecutó en esta etapa.
 
 \subsection*{C.13 Reproducibilidad y desviaciones documentadas}\label{anexo-nmt-deviations}
 

@@ -1,0 +1,317 @@
+{
+  "phase": "2a",
+  "step": "semantic_filter",
+  "timestamp_utc": "2026-05-09T07:08:54.998589+00:00",
+  "config": {
+    "model_path": "models\\sentence_transformers\\v3_iterative_hn_e5_base_bidirectional",
+    "use_e5_prefixes": false,
+    "batch_size": 32,
+    "device": "cuda",
+    "thresholds": {
+      "remove_below": 0.45,
+      "flag_upper": 0.6
+    }
+  },
+  "splits": {
+    "train": {
+      "input_pairs": 2563,
+      "directional_rows_in": 5126,
+      "directional_rows_accepted": 4944,
+      "directional_rows_flagged": 182,
+      "directional_rows_removed": 0,
+      "label_counts_pairs": {
+        "accepted": 2472,
+        "flagged_for_review": 91,
+        "removed": 0
+      },
+      "score_stats": {
+        "mean": 0.7382049560546875,
+        "std": 0.07594554871320724,
+        "min": 0.49691829085350037,
+        "max": 0.9499000906944275,
+        "p25": 0.6864762306213379,
+        "p50": 0.7385368347167969,
+        "p75": 0.7946972846984863
+      },
+      "histogram": {
+        "[0.00,0.10)": 0,
+        "[0.10,0.20)": 0,
+        "[0.20,0.30)": 0,
+        "[0.30,0.40)": 0,
+        "[0.40,0.45)": 0,
+        "[0.45,0.50)": 1,
+        "[0.50,0.55)": 17,
+        "[0.55,0.60)": 73,
+        "[0.60,0.65)": 250,
+        "[0.65,0.70)": 468,
+        "[0.70,0.75)": 614,
+        "[0.75,0.80)": 564,
+        "[0.80,0.85)": 393,
+        "[0.85,0.90)": 164,
+        "[0.90,0.95)": 19,
+        "[0.95,1.01)": 0
+      },
+      "per_origin": {
+        "flashcards": {
+          "count": 1791,
+          "mean": 0.7553461194038391,
+          "std": 0.0757284015417099,
+          "min": 0.49691829085350037,
+          "max": 0.9499000906944275
+        },
+        "pdf_textos": {
+          "count": 772,
+          "mean": 0.6984383463859558,
+          "std": 0.059842292219400406,
+          "min": 0.5177268981933594,
+          "max": 0.8893101811408997
+        }
+      },
+      "topk_worst": [
+        {
+          "pair_id": "U00792",
+          "shiwilu": "insek'dipersu' ñapi'nek",
+          "spanish": "necesito tiempo.",
+          "score": 0.49691829085350037,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01104",
+          "shiwilu": "apu'pi nuka'ka",
+          "spanish": "estoy divorciada.",
+          "score": 0.5080485939979553,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02115",
+          "shiwilu": "lliaka'uk enka'lina",
+          "spanish": "lo abofeteó.",
+          "score": 0.5081468224525452,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00172",
+          "shiwilu": "taserpiku'",
+          "spanish": "estoy viejo.",
+          "score": 0.5163984894752502,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02907",
+          "shiwilu": "¿den ilanma' a'cha yapa'etchunma'?",
+          "spanish": "¿quiénes de ustedes quisieran ir (a buscar a los otros hombres)?",
+          "score": 0.5177268981933594,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01010",
+          "shiwilu": "wek'ker' ipia'la",
+          "spanish": "ven enseguida.",
+          "score": 0.5195714235305786,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01124",
+          "shiwilu": "nudu'pi ñiwiñi",
+          "spanish": "fue repugnante.",
+          "score": 0.5245761871337891,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01725",
+          "shiwilu": "empu'duncha'",
+          "spanish": "odio planchar.",
+          "score": 0.5272940397262573,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02745",
+          "shiwilu": "enpinantek'unta'llina' dekshadeklusa',",
+          "spanish": "las cuencas de las quebradas se secaron,",
+          "score": 0.5305037498474121,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00352",
+          "shiwilu": "¿nu'la'lli?",
+          "spanish": "¿es grave?",
+          "score": 0.534997820854187,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01772",
+          "shiwilu": "inanpilechek",
+          "spanish": "me desnudo.",
+          "score": 0.5371328592300415,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02149",
+          "shiwilu": "u'chimuinchilusa' nuker'ka",
+          "spanish": "son especiales.",
+          "score": 0.5420204401016235,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U03176",
+          "shiwilu": "¿enkasu' a'cha santupen luwantula ña'su'? itullima.",
+          "spanish": "¿cuál quieres que sea tu santo? les preguntó.",
+          "score": 0.543604850769043,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00846",
+          "shiwilu": "pulunker' wanta'palli",
+          "spanish": "está nublado.",
+          "score": 0.5464603900909424,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02109",
+          "shiwilu": "¡u'chimu ñiñuduker!",
+          "spanish": "¡feliz navidad!",
+          "score": 0.5465776920318604,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02367",
+          "shiwilu": "nana a'duk ipa'linchi nanek upellek.",
+          "spanish": "se lo sienta y entonces ahí se vacea (el líquido para ser guardado).",
+          "score": 0.5469338297843933,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00217",
+          "shiwilu": "iñer' ñinchitapalek",
+          "spanish": "soy listo.",
+          "score": 0.5484683513641357,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02752",
+          "shiwilu": "pillek'an, tanan, dankumelli a'pinta' tanan.",
+          "spanish": "vengándose, el monte, se sumió más el monte.",
+          "score": 0.549435555934906,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01646",
+          "shiwilu": "¿wenche'chun?",
+          "spanish": "¿vendrás?",
+          "score": 0.5500521659851074,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01212",
+          "shiwilu": "saputek'lusa' nuker'ka",
+          "spanish": "son débiles.",
+          "score": 0.5505803823471069,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02107",
+          "shiwilu": "de'a'merker'",
+          "spanish": "achícalo.",
+          "score": 0.5563169717788696,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01373",
+          "shiwilu": "chimidekpi nuka'a",
+          "spanish": "es abogado.",
+          "score": 0.556705117225647,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U03059",
+          "shiwilu": "nakupila'ser yasaka'tanna' nana kaschilla lu'nsu'lek peklu'dek'an itudeklli:",
+          "spanish": "y cuando (los shawala) estaban pasando a trabajar con esos castellano-hablantes los llamó y les dijo:",
+          "score": 0.5570132732391357,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00207",
+          "shiwilu": "kulliker'wi'nek",
+          "spanish": "soy pobre.",
+          "score": 0.557530403137207,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02592",
+          "shiwilu": "nu'amudek i'na' ¡enchu lli'kunwa' nana den ipa' nanpipalli! tamudek pekpiwatukellillen itullini'ma.",
+          "spanish": "haciendo eso nosotros dijimos ¡vamos a ver quiénes son esos que viven! y vinimos a salir (del monte).",
+          "score": 0.5579065084457397,
+          "label": "flagged_for_review"
+        }
+      ]
+    },
+    "valid": {
+      "input_pairs": 320,
+      "directional_rows": 640,
+      "score_stats": {
+        "mean": 0.5963005423545837,
+        "std": 0.1838211566209793,
+        "min": -0.2848098874092102,
+        "max": 0.9089583158493042
+      },
+      "label_counts_pairs": {
+        "accepted": 177,
+        "flagged_for_review": 76,
+        "removed": 67
+      },
+      "histogram": {
+        "[0.00,0.10)": 0,
+        "[0.10,0.20)": 6,
+        "[0.20,0.30)": 13,
+        "[0.30,0.40)": 29,
+        "[0.40,0.45)": 17,
+        "[0.45,0.50)": 21,
+        "[0.50,0.55)": 30,
+        "[0.55,0.60)": 25,
+        "[0.60,0.65)": 41,
+        "[0.65,0.70)": 27,
+        "[0.70,0.75)": 37,
+        "[0.75,0.80)": 28,
+        "[0.80,0.85)": 29,
+        "[0.85,0.90)": 14,
+        "[0.90,0.95)": 1,
+        "[0.95,1.01)": 0
+      },
+      "note": "passthrough; gold splits never filtered, only scored for audit"
+    },
+    "test": {
+      "input_pairs": 321,
+      "directional_rows": 642,
+      "score_stats": {
+        "mean": 0.5954656600952148,
+        "std": 0.16308031976222992,
+        "min": 0.026352906599640846,
+        "max": 0.9393649697303772
+      },
+      "label_counts_pairs": {
+        "accepted": 176,
+        "flagged_for_review": 81,
+        "removed": 64
+      },
+      "histogram": {
+        "[0.00,0.10)": 2,
+        "[0.10,0.20)": 2,
+        "[0.20,0.30)": 13,
+        "[0.30,0.40)": 24,
+        "[0.40,0.45)": 23,
+        "[0.45,0.50)": 19,
+        "[0.50,0.55)": 27,
+        "[0.55,0.60)": 35,
+        "[0.60,0.65)": 38,
+        "[0.65,0.70)": 50,
+        "[0.70,0.75)": 40,
+        "[0.75,0.80)": 18,
+        "[0.80,0.85)": 19,
+        "[0.85,0.90)": 8,
+        "[0.90,0.95)": 3,
+        "[0.95,1.01)": 0
+      },
+      "note": "passthrough; gold splits never filtered, only scored for audit"
+    }
+  }
+}

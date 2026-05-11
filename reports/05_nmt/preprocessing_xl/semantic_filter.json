@@ -1,0 +1,359 @@
+{
+  "phase": "2a",
+  "step": "semantic_filter",
+  "timestamp_utc": "2026-05-10T17:03:16.696646+00:00",
+  "config": {
+    "model_path": "models\\sentence_transformers\\v3_iterative_hn_e5_base_bidirectional_xl",
+    "use_e5_prefixes": false,
+    "batch_size": 32,
+    "device": "cuda",
+    "thresholds": {
+      "remove_below": 0.45,
+      "flag_upper": 0.6
+    }
+  },
+  "splits": {
+    "train": {
+      "input_pairs": 3923,
+      "directional_rows_in": 7846,
+      "directional_rows_accepted": 7230,
+      "directional_rows_flagged": 608,
+      "directional_rows_removed": 8,
+      "label_counts_pairs": {
+        "accepted": 3615,
+        "flagged_for_review": 304,
+        "removed": 4
+      },
+      "score_stats": {
+        "mean": 0.721005916595459,
+        "std": 0.08458976447582245,
+        "min": 0.3901054561138153,
+        "max": 1.0000001192092896,
+        "p25": 0.6611016988754272,
+        "p50": 0.7224133014678955,
+        "p75": 0.7853821516036987
+      },
+      "histogram": {
+        "[0.00,0.10)": 0,
+        "[0.10,0.20)": 0,
+        "[0.20,0.30)": 0,
+        "[0.30,0.40)": 1,
+        "[0.40,0.45)": 3,
+        "[0.45,0.50)": 19,
+        "[0.50,0.55)": 71,
+        "[0.55,0.60)": 214,
+        "[0.60,0.65)": 517,
+        "[0.65,0.70)": 764,
+        "[0.70,0.75)": 809,
+        "[0.75,0.80)": 749,
+        "[0.80,0.85)": 569,
+        "[0.85,0.90)": 191,
+        "[0.90,0.95)": 15,
+        "[0.95,1.01)": 1
+      },
+      "per_origin": {
+        "cotidianas": {
+          "count": 44,
+          "mean": 0.6905457973480225,
+          "std": 0.07439608126878738,
+          "min": 0.5162575244903564,
+          "max": 0.848561704158783
+        },
+        "el_principito": {
+          "count": 11,
+          "mean": 0.6639771461486816,
+          "std": 0.046154920011758804,
+          "min": 0.5828891396522522,
+          "max": 0.7546594738960266
+        },
+        "extra": {
+          "count": 313,
+          "mean": 0.6487793326377869,
+          "std": 0.08552173525094986,
+          "min": 0.40639036893844604,
+          "max": 0.8838768005371094
+        },
+        "fidel_lomas": {
+          "count": 446,
+          "mean": 0.6851245760917664,
+          "std": 0.06933930516242981,
+          "min": 0.47842496633529663,
+          "max": 1.0000001192092896
+        },
+        "flashcards2": {
+          "count": 1796,
+          "mean": 0.7430353760719299,
+          "std": 0.07749419659376144,
+          "min": 0.4605206847190857,
+          "max": 0.9411749243736267
+        },
+        "flashcards_oraciones": {
+          "count": 526,
+          "mean": 0.7758570909500122,
+          "std": 0.07842410355806351,
+          "min": 0.3901054561138153,
+          "max": 0.9240427613258362
+        },
+        "pdf_textos": {
+          "count": 769,
+          "mean": 0.6864144802093506,
+          "std": 0.06718973070383072,
+          "min": 0.4704206585884094,
+          "max": 0.9175012111663818
+        },
+        "vs_textos_narrativos": {
+          "count": 18,
+          "mean": 0.6522138118743896,
+          "std": 0.08652131259441376,
+          "min": 0.4034535884857178,
+          "max": 0.7898934483528137
+        }
+      },
+      "topk_worst": [
+        {
+          "pair_id": "U03299",
+          "shiwilu": "tandulalusa' uklala'tullina'",
+          "spanish": "las estrellas brillan",
+          "score": 0.3901054561138153,
+          "label": "removed"
+        },
+        {
+          "pair_id": "U04449",
+          "shiwilu": "kikiteknen pekchitektusu'.",
+          "spanish": "mejillas templadas.",
+          "score": 0.4034535884857178,
+          "label": "removed"
+        },
+        {
+          "pair_id": "U04705",
+          "shiwilu": "ma'shia",
+          "spanish": "no",
+          "score": 0.40639036893844604,
+          "label": "removed"
+        },
+        {
+          "pair_id": "U04678",
+          "shiwilu": "lek'lun",
+          "spanish": "uña de la menstruación",
+          "score": 0.4178019165992737,
+          "label": "removed"
+        },
+        {
+          "pair_id": "U04666",
+          "shiwilu": "ala'tek'lun",
+          "spanish": "cinco",
+          "score": 0.45301353931427,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00217",
+          "shiwilu": "iñer' ñinchitapalek",
+          "spanish": "soy listo.",
+          "score": 0.4605206847190857,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01104",
+          "shiwilu": "apu'pi nuka'ka",
+          "spanish": "estoy divorciada.",
+          "score": 0.4620125889778137,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02580",
+          "shiwilu": "yuspainek'etchun, senñula'lusa'. muchas gracias, señoras.",
+          "spanish": "jeberos, julio 2007",
+          "score": 0.4704206585884094,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04626",
+          "shiwilu": "dek'kanan",
+          "spanish": "maíz",
+          "score": 0.47099822759628296,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04715",
+          "shiwilu": "mek'shi",
+          "spanish": "cuñado del hombre",
+          "score": 0.47597360610961914,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01622",
+          "shiwilu": "anapila",
+          "spanish": "hueles mal.",
+          "score": 0.4765583276748657,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04317",
+          "shiwilu": "ala'waranka iskun-pasak inkatu'- shunka' ekkilalak.",
+          "spanish": "en el año 1940.",
+          "score": 0.47842496633529663,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04747",
+          "shiwilu": "nerpi'la",
+          "spanish": "diferente",
+          "score": 0.48246434330940247,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04818",
+          "shiwilu": "sa'lek'",
+          "spanish": "guaba",
+          "score": 0.4832491874694824,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04892",
+          "shiwilu": "yulu'danku",
+          "spanish": "flor de santa rosa",
+          "score": 0.48363617062568665,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04807",
+          "shiwilu": "mur'",
+          "spanish": "lleno",
+          "score": 0.48520079255104065,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04531",
+          "shiwilu": "ananan",
+          "spanish": "fracaso",
+          "score": 0.485927939414978,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U01531",
+          "shiwilu": "¡dakuti'ñi!",
+          "spanish": "¡qué listo!",
+          "score": 0.4874339997768402,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04532",
+          "shiwilu": "dawan'",
+          "spanish": "opaco",
+          "score": 0.4883872866630554,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U02391",
+          "shiwilu": "uklu'pidekdinpunen ma'lusa' wa'danlusa' uwerkasu'pu'lli.",
+          "spanish": "la espuma de la chicha punta se parece a la bebida que toman los wiracochas (cerveza).",
+          "score": 0.48896798491477966,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04631",
+          "shiwilu": "ukeklli",
+          "spanish": "sangre que huele mal",
+          "score": 0.4921303689479828,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04688",
+          "shiwilu": "ikellala",
+          "spanish": "tipo de bagrecito; cunchi",
+          "score": 0.49569594860076904,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U03255",
+          "shiwilu": "tanamuda' luuktapalli tanan",
+          "spanish": "el espíritu cuida el bosque.",
+          "score": 0.49634498357772827,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U04257",
+          "shiwilu": "yayanlulenta'mapi'pu' wa'tentetchu wanersu',",
+          "spanish": "el día que te vas a mandar vacunar,.",
+          "score": 0.5006191730499268,
+          "label": "flagged_for_review"
+        },
+        {
+          "pair_id": "U00560",
+          "shiwilu": "iñer' luantulek wapu'",
+          "spanish": "soy codicioso.",
+          "score": 0.5017653107643127,
+          "label": "flagged_for_review"
+        }
+      ]
+    },
+    "valid": {
+      "input_pairs": 445,
+      "directional_rows": 890,
+      "score_stats": {
+        "mean": 0.6198185682296753,
+        "std": 0.16267070174217224,
+        "min": 0.006845493800938129,
+        "max": 1.0
+      },
+      "label_counts_pairs": {
+        "accepted": 267,
+        "flagged_for_review": 110,
+        "removed": 68
+      },
+      "histogram": {
+        "[0.00,0.10)": 2,
+        "[0.10,0.20)": 4,
+        "[0.20,0.30)": 9,
+        "[0.30,0.40)": 34,
+        "[0.40,0.45)": 19,
+        "[0.45,0.50)": 31,
+        "[0.50,0.55)": 32,
+        "[0.55,0.60)": 47,
+        "[0.60,0.65)": 62,
+        "[0.65,0.70)": 53,
+        "[0.70,0.75)": 47,
+        "[0.75,0.80)": 41,
+        "[0.80,0.85)": 43,
+        "[0.85,0.90)": 17,
+        "[0.90,0.95)": 3,
+        "[0.95,1.01)": 1
+      },
+      "note": "passthrough; gold splits never filtered, only scored for audit"
+    },
+    "test": {
+      "input_pairs": 446,
+      "directional_rows": 892,
+      "score_stats": {
+        "mean": 0.6101369857788086,
+        "std": 0.16777656972408295,
+        "min": -0.00667993351817131,
+        "max": 0.914139986038208
+      },
+      "label_counts_pairs": {
+        "accepted": 245,
+        "flagged_for_review": 133,
+        "removed": 68
+      },
+      "histogram": {
+        "[0.00,0.10)": 4,
+        "[0.10,0.20)": 5,
+        "[0.20,0.30)": 11,
+        "[0.30,0.40)": 25,
+        "[0.40,0.45)": 22,
+        "[0.45,0.50)": 33,
+        "[0.50,0.55)": 53,
+        "[0.55,0.60)": 47,
+        "[0.60,0.65)": 35,
+        "[0.65,0.70)": 59,
+        "[0.70,0.75)": 54,
+        "[0.75,0.80)": 45,
+        "[0.80,0.85)": 34,
+        "[0.85,0.90)": 14,
+        "[0.90,0.95)": 4,
+        "[0.95,1.01)": 0
+      },
+      "note": "passthrough; gold splits never filtered, only scored for audit"
+    }
+  }
+}

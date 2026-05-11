@@ -97,7 +97,7 @@ Desarrollo/
 │       ├── 62_morph_variants.py          # Phase 7c: OFF by default (needs linguist)
 │       ├── 63_train_with_augmented.py    # Phase 7d: train v1_bt with augmented data
 │       ├── 70_compare_runs.py            # Phase 8a: head-to-head v0/v1 pairwise comparison
-│       ├── 71_human_eval_template.py     # Phase 8b: anonymized rubric CSV
+│       ├── 71_human_eval_template.py     # Phase 8b: anonymized rubric CSV + protocol MD
 │       ├── 72_leaderboard.py             # Phase 5 (closing): N-way leaderboard.{md,json}
 │       ├── 73_bootstrap_ci.py            # Phase 6: percentile bootstrap CIs on chrF++
 │       └── 74_thesis_tables_phase6.py    # Phase 6: LaTeX fragments for thesis tables
@@ -312,6 +312,12 @@ up with Wikipedia + Tatoeba + News-commentary.
 # Phase 6: regenerate thesis LaTeX fragments (leaderboard + CI + rare-token full)
 .venv-nmt/Scripts/python -m scripts.nmt.74_thesis_tables_phase6 --variant xl
 # → thesis/latex/figuras/generated/nmt_{leaderboard,bootstrap_ci,rare_token_full}_xl.tex
+
+# OE3: prepared human-evaluation protocol (not executed with reviewers)
+.venv-nmt/Scripts/python -m scripts.nmt.71_human_eval_template --variant xl --per-direction 100 --seed 2026 --split test
+# → reports/05_nmt/evaluation_xl/human_eval_template.csv
+# → reports/05_nmt/evaluation_xl/human_eval_anon_key.json
+# → reports/05_nmt/evaluation_xl/human_eval_protocol.md
 
 # Rebuild thesis PDF (xelatex + biber via latexmk, ~1 min)
 cd thesis/latex && latexmk -xelatex -interaction=nonstopmode -outdir=build tesis.tex

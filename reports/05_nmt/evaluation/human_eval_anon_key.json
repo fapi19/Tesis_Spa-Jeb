@@ -1,0 +1,33 @@
+{
+  "phase": "8b",
+  "step": "human_eval_template",
+  "timestamp_utc": "2026-05-09T07:31:40.775943+00:00",
+  "seed": 2026,
+  "per_direction": 100,
+  "anonymization": {
+    "letter_to_source": {
+      "A": "v1_bt",
+      "B": "v1_bt_reranked",
+      "C": "v0_reranked",
+      "D": "v0"
+    },
+    "source_to_letter": {
+      "v1_bt": "A",
+      "v1_bt_reranked": "B",
+      "v0_reranked": "C",
+      "v0": "D"
+    }
+  },
+  "rubric": {
+    "adequacy_1_5": "5 = preserves all meaning, 1 = loses all meaning",
+    "fluency_1_5": "5 = native-speaker fluent, 1 = ungrammatical",
+    "cultural_relevance_1_5": "5 = idiomatically appropriate, 1 = jarring or wrong register"
+  },
+  "sources_available": {
+    "v0": false,
+    "v0_reranked": false,
+    "v1_bt": false,
+    "v1_bt_reranked": false
+  },
+  "stratification": "balanced by origin_source (flashcards vs pdf_textos) and length bucket (short<=5, medium<=12, long)"
+}

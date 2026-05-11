@@ -1,0 +1,31 @@
+{
+  "phase": 4,
+  "run_name": "nllb_bidi_lora_v0",
+  "timestamp_utc": "2026-05-09T09:33:51.251868+00:00",
+  "info": {
+    "tokenizer_lang_ids": {
+      "shw_Latn": 256204,
+      "quy_Latn": 256144,
+      "ayr_Latn": 256018,
+      "grn_Latn": 256063,
+      "spa_Latn": 256161
+    },
+    "train_rows": 4944,
+    "validation_rows_by_direction": {
+      "shw2spa": 320,
+      "spa2shw": 320
+    },
+    "test_rows": 642,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "fp16": true
+  },
+  "best_metric": 17.27529922748046,
+  "best_model_checkpoint": "models/nmt/nllb_bidi_lora_v0\\checkpoint-2500",
+  "global_step": 3100,
+  "num_train_epochs": 20.0,
+  "train_runtime_s": 4090.0906,
+  "train_samples_per_second": 24.176,
+  "metric_for_best_model": "eval_avg_chrf",
+  "fp16": true
+}

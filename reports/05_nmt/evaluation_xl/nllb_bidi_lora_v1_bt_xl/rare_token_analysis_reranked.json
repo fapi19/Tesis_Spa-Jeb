@@ -1,0 +1,190 @@
+{
+  "config": {
+    "rare_threshold": 5,
+    "buckets": [
+      {
+        "name": "0pct",
+        "lower": 0.0,
+        "upper": 1e-09
+      },
+      {
+        "name": "0_to_20pct",
+        "lower": 1e-09,
+        "upper": 0.2
+      },
+      {
+        "name": "20_to_50pct",
+        "lower": 0.2,
+        "upper": 0.5
+      },
+      {
+        "name": "50pct_or_more",
+        "lower": 0.5,
+        "upper": 1.000001
+      }
+    ],
+    "headline_bucket": "20pct_or_more"
+  },
+  "directions": {
+    "shw2spa": {
+      "target_lang": "spa",
+      "n": 451,
+      "rare_threshold": 5,
+      "buckets": {
+        "0pct": {
+          "n": 31,
+          "mean_rare_ratio": 0.0,
+          "bleu": 71.46354266899546,
+          "chrf_pp": 78.70290352335005
+        },
+        "0_to_20pct": {
+          "n": 20,
+          "mean_rare_ratio": 0.15791777666777668,
+          "bleu": 29.482661765113892,
+          "chrf_pp": 43.46791147742944
+        },
+        "20_to_50pct": {
+          "n": 117,
+          "mean_rare_ratio": 0.3220420414484478,
+          "bleu": 7.760075774126992,
+          "chrf_pp": 26.12639000992297
+        },
+        "50pct_or_more": {
+          "n": 283,
+          "mean_rare_ratio": 0.6652783710204204,
+          "bleu": 7.140972375373478,
+          "chrf_pp": 28.09876109497496
+        },
+        "20pct_or_more": {
+          "n": 400,
+          "mean_rare_ratio": 0.5648817446206185,
+          "bleu": 7.941849297455923,
+          "chrf_pp": 26.967485691558963
+        }
+      },
+      "oov": {
+        "recovered": 27,
+        "total": 437,
+        "recovery_rate": 0.06178489702517163
+      },
+      "by_origin_source": {
+        "flashcards2": {
+          "n": 240,
+          "bleu": 11.187406065163973,
+          "chrf_pp": 32.444129527922975
+        },
+        "flashcards_oraciones": {
+          "n": 61,
+          "bleu": 50.99955231769449,
+          "chrf_pp": 58.69881578020435
+        },
+        "pdf_textos": {
+          "n": 91,
+          "bleu": 5.657963767556236,
+          "chrf_pp": 24.76413215168687
+        },
+        "fidel_lomas": {
+          "n": 52,
+          "bleu": 6.937576440074335,
+          "chrf_pp": 25.387284843283343
+        },
+        "cotidianas": {
+          "n": 6,
+          "bleu": 0.0,
+          "chrf_pp": 6.0242518059855525
+        },
+        "el_principito": {
+          "n": 1,
+          "bleu": 0.0,
+          "chrf_pp": 9.160169275375987
+        }
+      }
+    },
+    "spa2shw": {
+      "target_lang": "shw",
+      "n": 451,
+      "rare_threshold": 5,
+      "buckets": {
+        "0pct": {
+          "n": 10,
+          "mean_rare_ratio": 0.0,
+          "bleu": 32.78670004396814,
+          "chrf_pp": 52.691824802140495
+        },
+        "0_to_20pct": {
+          "n": 3,
+          "mean_rare_ratio": 0.16666666666666666,
+          "bleu": 20.247469739337657,
+          "chrf_pp": 55.57116456191282
+        },
+        "20_to_50pct": {
+          "n": 50,
+          "mean_rare_ratio": 0.32855555555555555,
+          "bleu": 11.72524354550864,
+          "chrf_pp": 44.47851153036104
+        },
+        "50pct_or_more": {
+          "n": 388,
+          "mean_rare_ratio": 0.7812143030907038,
+          "bleu": 1.9249024127413756,
+          "chrf_pp": 30.962930193769072
+        },
+        "20pct_or_more": {
+          "n": 438,
+          "mean_rare_ratio": 0.7295409300844083,
+          "bleu": 4.525943818664616,
+          "chrf_pp": 33.33138541053725
+        }
+      },
+      "oov": {
+        "recovered": 19,
+        "total": 561,
+        "recovery_rate": 0.0338680926916221
+      },
+      "by_origin_source": {
+        "flashcards2": {
+          "n": 240,
+          "bleu": 8.31085896328453,
+          "chrf_pp": 35.50858245355743
+        },
+        "flashcards_oraciones": {
+          "n": 61,
+          "bleu": 19.46625242639402,
+          "chrf_pp": 55.11246834352141
+        },
+        "pdf_textos": {
+          "n": 91,
+          "bleu": 1.8709476466398358,
+          "chrf_pp": 26.27243876532915
+        },
+        "fidel_lomas": {
+          "n": 52,
+          "bleu": 2.2346166443743516,
+          "chrf_pp": 29.303598673049464
+        },
+        "cotidianas": {
+          "n": 6,
+          "bleu": 0.0,
+          "chrf_pp": 13.920268255218286
+        },
+        "el_principito": {
+          "n": 1,
+          "bleu": 7.809849842300641,
+          "chrf_pp": 25.113827102106928
+        }
+      }
+    }
+  },
+  "avg_rare_chrf_pp_20pct_or_more": 30.149435551048107,
+  "avg_oov_recovery_rate": 0.047826494858396865,
+  "meta": {
+    "phase": "5b",
+    "run_name": "nllb_bidi_lora_v1_bt_xl",
+    "split": "test",
+    "reranked": true,
+    "predictions_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\reports\\05_nmt\\reranking_xl\\nllb_bidi_lora_v1_bt_xl\\test_predictions_reranked.jsonl",
+    "train_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\06_nmt_filtered_xl\\train.csv",
+    "test_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\06_nmt_filtered_xl\\test.csv",
+    "timestamp_utc": "2026-05-10T00:31:11.542011+00:00"
+  }
+}

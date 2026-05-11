@@ -1,0 +1,405 @@
+{
+  "phase": "2b",
+  "step": "build_faiss",
+  "timestamp_utc": "2026-05-10T17:03:33.550501+00:00",
+  "config": {
+    "model_path": "models\\sentence_transformers\\v3_iterative_hn_e5_base_bidirectional_xl",
+    "use_e5_prefixes": false,
+    "batch_size": 32,
+    "device": "cuda"
+  },
+  "indices": [
+    {
+      "side": "shiwilu",
+      "index_path": "data\\processed\\06_nmt_filtered_xl\\faiss_shw.index",
+      "meta_path": "data\\processed\\06_nmt_filtered_xl\\faiss_shw_meta.parquet",
+      "n_vectors": 3615,
+      "dim": 768
+    },
+    {
+      "side": "spanish",
+      "index_path": "data\\processed\\06_nmt_filtered_xl\\faiss_spa.index",
+      "meta_path": "data\\processed\\06_nmt_filtered_xl\\faiss_spa_meta.parquet",
+      "n_vectors": 3615,
+      "dim": 768
+    }
+  ],
+  "near_duplicate_scan": [
+    {
+      "side": "shiwilu",
+      "ip_threshold": 0.98,
+      "flagged_count": 222,
+      "total_vectors": 3615,
+      "examples": [
+        {
+          "row_a": 4,
+          "row_b": 5,
+          "pair_id_a": "U01390",
+          "pair_id_b": "U01710",
+          "ip": 1.0,
+          "text_a": "latekllien",
+          "text_b": "latekllien"
+        },
+        {
+          "row_a": 5,
+          "row_b": 4,
+          "pair_id_a": "U01710",
+          "pair_id_b": "U01390",
+          "ip": 1.0,
+          "text_a": "latekllien",
+          "text_b": "latekllien"
+        },
+        {
+          "row_a": 49,
+          "row_b": 48,
+          "pair_id_a": "U00867",
+          "pair_id_b": "U00866",
+          "ip": 1.0,
+          "text_a": "ipa'la tupiter'",
+          "text_b": "ipa'la tupiter'"
+        },
+        {
+          "row_a": 50,
+          "row_b": 48,
+          "pair_id_a": "U00868",
+          "pair_id_b": "U00866",
+          "ip": 1.0,
+          "text_a": "ipa'la tupiter'",
+          "text_b": "ipa'la tupiter'"
+        },
+        {
+          "row_a": 62,
+          "row_b": 61,
+          "pair_id_a": "U01405",
+          "pair_id_b": "U01404",
+          "ip": 1.000000238418579,
+          "text_a": "luyulek wer'ak",
+          "text_b": "luyulek wer'ak"
+        },
+        {
+          "row_a": 81,
+          "row_b": 80,
+          "pair_id_a": "U00608",
+          "pair_id_b": "U00602",
+          "ip": 1.0000001192092896,
+          "text_a": "lun'awa'",
+          "text_b": "lun'awa'"
+        },
+        {
+          "row_a": 100,
+          "row_b": 99,
+          "pair_id_a": "U01687",
+          "pair_id_b": "U00477",
+          "ip": 1.0000001192092896,
+          "text_a": "enka'ker'",
+          "text_b": "enka'ker'"
+        },
+        {
+          "row_a": 101,
+          "row_b": 99,
+          "pair_id_a": "U01689",
+          "pair_id_b": "U00477",
+          "ip": 1.0000001192092896,
+          "text_a": "enka'ker'",
+          "text_b": "enka'ker'"
+        },
+        {
+          "row_a": 120,
+          "row_b": 119,
+          "pair_id_a": "U00054",
+          "pair_id_b": "U00053",
+          "ip": 1.0,
+          "text_a": "mukankan ñiker'",
+          "text_b": "mukankan ñiker'"
+        },
+        {
+          "row_a": 135,
+          "row_b": 134,
+          "pair_id_a": "U01639",
+          "pair_id_b": "U00977",
+          "ip": 1.0000001192092896,
+          "text_a": "inapiken nuka'ma",
+          "text_b": "inapiken nuka'ma"
+        },
+        {
+          "row_a": 153,
+          "row_b": 152,
+          "pair_id_a": "U01524",
+          "pair_id_b": "U01523",
+          "ip": 1.0,
+          "text_a": "lunker' lachek'ak",
+          "text_b": "lunker' lachek'ak"
+        },
+        {
+          "row_a": 242,
+          "row_b": 241,
+          "pair_id_a": "U02045",
+          "pair_id_b": "U02044",
+          "ip": 1.0,
+          "text_a": "panuerken",
+          "text_b": "panuerken"
+        },
+        {
+          "row_a": 300,
+          "row_b": 299,
+          "pair_id_a": "U03716",
+          "pair_id_b": "U03714",
+          "ip": 0.9999999403953552,
+          "text_a": "nawa' ku'la pinaner'i'ñina' ala'sa ukli mua'su'",
+          "text_b": "nawa' ku'la pinaner'i'ñina' ala'sa ukli mua'su'"
+        },
+        {
+          "row_a": 337,
+          "row_b": 336,
+          "pair_id_a": "U01377",
+          "pair_id_b": "U00073",
+          "ip": 1.0,
+          "text_a": "pilli'ter' ikersu'",
+          "text_b": "pilli'ter' ikersu'"
+        },
+        {
+          "row_a": 347,
+          "row_b": 346,
+          "pair_id_a": "U00071",
+          "pair_id_b": "U00070",
+          "ip": 0.9999999403953552,
+          "text_a": "¡pante'chek!",
+          "text_b": "¡pante'chek!"
+        },
+        {
+          "row_a": 348,
+          "row_b": 346,
+          "pair_id_a": "U01167",
+          "pair_id_b": "U00070",
+          "ip": 0.9999999403953552,
+          "text_a": "¡pante'chek!",
+          "text_b": "¡pante'chek!"
+        },
+        {
+          "row_a": 356,
+          "row_b": 355,
+          "pair_id_a": "U01310",
+          "pair_id_b": "U00717",
+          "ip": 1.0,
+          "text_a": "¿yusu' ñapala?",
+          "text_b": "¿yusu' ñapala?"
+        },
+        {
+          "row_a": 369,
+          "row_b": 368,
+          "pair_id_a": "U00045",
+          "pair_id_b": "U00044",
+          "ip": 1.0000001192092896,
+          "text_a": "¿tekinchi?",
+          "text_b": "¿tekinchi?"
+        },
+        {
+          "row_a": 381,
+          "row_b": 380,
+          "pair_id_a": "U00762",
+          "pair_id_b": "U00698",
+          "ip": 1.0,
+          "text_a": "asek ñapallidek",
+          "text_b": "asek ñapallidek"
+        },
+        {
+          "row_a": 382,
+          "row_b": 380,
+          "pair_id_a": "U00928",
+          "pair_id_b": "U00698",
+          "ip": 1.0,
+          "text_a": "asek ñapallidek",
+          "text_b": "asek ñapallidek"
+        }
+      ]
+    },
+    {
+      "side": "spanish",
+      "ip_threshold": 0.98,
+      "flagged_count": 72,
+      "total_vectors": 3615,
+      "examples": [
+        {
+          "row_a": 299,
+          "row_b": 300,
+          "pair_id_a": "U03714",
+          "pair_id_b": "U03716",
+          "ip": 0.9923011660575867,
+          "text_a": "ellas no olvidan una fecha importante.",
+          "text_b": "ellos no olvidan una fecha importante."
+        },
+        {
+          "row_a": 300,
+          "row_b": 299,
+          "pair_id_a": "U03716",
+          "pair_id_b": "U03714",
+          "ip": 0.9923011660575867,
+          "text_a": "ellos no olvidan una fecha importante.",
+          "text_b": "ellas no olvidan una fecha importante."
+        },
+        {
+          "row_a": 443,
+          "row_b": 1243,
+          "pair_id_a": "U03622",
+          "pair_id_b": "U03620",
+          "ip": 0.9898537993431091,
+          "text_a": "ellos nadan bajo la lluvia.",
+          "text_b": "ellas nadan bajo la lluvia."
+        },
+        {
+          "row_a": 473,
+          "row_b": 474,
+          "pair_id_a": "U03479",
+          "pair_id_b": "U03480",
+          "ip": 0.9855398535728455,
+          "text_a": "la niña no escucha música.",
+          "text_b": "la niña no escucha la música."
+        },
+        {
+          "row_a": 474,
+          "row_b": 473,
+          "pair_id_a": "U03480",
+          "pair_id_b": "U03479",
+          "ip": 0.9855398535728455,
+          "text_a": "la niña no escucha la música.",
+          "text_b": "la niña no escucha música."
+        },
+        {
+          "row_a": 489,
+          "row_b": 490,
+          "pair_id_a": "U03742",
+          "pair_id_b": "U03743",
+          "ip": 0.9810390472412109,
+          "text_a": "nosotras piensamos en su familia.",
+          "text_b": "nosotros piensamos en su familia."
+        },
+        {
+          "row_a": 490,
+          "row_b": 489,
+          "pair_id_a": "U03743",
+          "pair_id_b": "U03742",
+          "ip": 0.9810390472412109,
+          "text_a": "nosotros piensamos en su familia.",
+          "text_b": "nosotras piensamos en su familia."
+        },
+        {
+          "row_a": 525,
+          "row_b": 526,
+          "pair_id_a": "U01163",
+          "pair_id_b": "U01165",
+          "ip": 0.9849238395690918,
+          "text_a": "ponlo allí.",
+          "text_b": "ponlo ahí."
+        },
+        {
+          "row_a": 526,
+          "row_b": 525,
+          "pair_id_a": "U01165",
+          "pair_id_b": "U01163",
+          "ip": 0.9849238395690918,
+          "text_a": "ponlo ahí.",
+          "text_b": "ponlo allí."
+        },
+        {
+          "row_a": 602,
+          "row_b": 1818,
+          "pair_id_a": "U03409",
+          "pair_id_b": "U03407",
+          "ip": 0.9898449778556824,
+          "text_a": "ellos no cierran la puerta.",
+          "text_b": "ellas no cierran la puerta."
+        },
+        {
+          "row_a": 643,
+          "row_b": 642,
+          "pair_id_a": "U04437",
+          "pair_id_b": "U00047",
+          "ip": 1.0000001192092896,
+          "text_a": "gracias.",
+          "text_b": "gracias."
+        },
+        {
+          "row_a": 648,
+          "row_b": 2562,
+          "pair_id_a": "U03808",
+          "pair_id_b": "U03806",
+          "ip": 0.9903053045272827,
+          "text_a": "ellos no trabajan todos los días.",
+          "text_b": "ellas no trabajan todos los días."
+        },
+        {
+          "row_a": 649,
+          "row_b": 1677,
+          "pair_id_a": "U03726",
+          "pair_id_b": "U03727",
+          "ip": 0.9843540191650391,
+          "text_a": "tú olvidas su cuaderno.",
+          "text_b": "tú olvidas tu cuaderno."
+        },
+        {
+          "row_a": 662,
+          "row_b": 1766,
+          "pair_id_a": "U01345",
+          "pair_id_b": "U01511",
+          "ip": 0.9811015725135803,
+          "text_a": "hazlo rápidamente.",
+          "text_b": "hazlo rápido."
+        },
+        {
+          "row_a": 764,
+          "row_b": 765,
+          "pair_id_a": "U03764",
+          "pair_id_b": "U03767",
+          "ip": 0.9886705875396729,
+          "text_a": "ellas no recuerdan su nombre.",
+          "text_b": "ellos no recuerdan su nombre."
+        },
+        {
+          "row_a": 765,
+          "row_b": 764,
+          "pair_id_a": "U03767",
+          "pair_id_b": "U03764",
+          "ip": 0.9886705875396729,
+          "text_a": "ellos no recuerdan su nombre.",
+          "text_b": "ellas no recuerdan su nombre."
+        },
+        {
+          "row_a": 892,
+          "row_b": 2081,
+          "pair_id_a": "U01376",
+          "pair_id_b": "U01359",
+          "ip": 0.9906962513923645,
+          "text_a": "espera allí.",
+          "text_b": "espera ahí."
+        },
+        {
+          "row_a": 907,
+          "row_b": 982,
+          "pair_id_a": "U03332",
+          "pair_id_b": "U03330",
+          "ip": 0.9854550957679749,
+          "text_a": "ellos aman a su familia.",
+          "text_b": "ellas aman a su familia."
+        },
+        {
+          "row_a": 982,
+          "row_b": 907,
+          "pair_id_a": "U03330",
+          "pair_id_b": "U03332",
+          "ip": 0.9854550957679749,
+          "text_a": "ellas aman a su familia.",
+          "text_b": "ellos aman a su familia."
+        },
+        {
+          "row_a": 1020,
+          "row_b": 1021,
+          "pair_id_a": "U00443",
+          "pair_id_b": "U00444",
+          "ip": 0.9813692569732666,
+          "text_a": "espera aquí.",
+          "text_b": "aguarda aquí."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1775 @@
+{
+  "phase": 3,
+  "step": "train_sentencepiece",
+  "timestamp_utc": "2026-05-09T07:11:39.616606+00:00",
+  "config": {
+    "vocab_size": 8000,
+    "char_coverage": 1.0,
+    "model_type": "unigram"
+  },
+  "corpus": {
+    "path": "data\\processed\\05_nmt_canonical\\all_text_for_sp_nmt.txt",
+    "lines": 4944
+  },
+  "sentencepiece": {
+    "model_path": "models\\nmt\\sentencepiece\\sp_unigram_8k.model",
+    "vocab_path": "models\\nmt\\sentencepiece\\sp_unigram_8k.vocab",
+    "actual_vocab_size": 4149
+  },
+  "comparison": {
+    "nllb_base": "facebook/nllb-200-distilled-600M",
+    "sample_size": 50,
+    "sample_seed": 42,
+    "sp_unigram_avg_tokens": 9.68,
+    "nllb_avg_tokens": 12.24,
+    "examples": [
+      {
+        "sentence": "lauk'echen",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁lauk",
+            "'",
+            "e",
+            "chen"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁lauk",
+            "'",
+            "e",
+            "chen"
+          ],
+          "n": 4
+        }
+      },
+      {
+        "sentence": "luwanchi'ñina'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁luwanchi",
+            "'",
+            "ñina",
+            "'"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁lu",
+            "wan",
+            "chi",
+            "'",
+            "ñ",
+            "ina",
+            "'"
+          ],
+          "n": 7
+        }
+      },
+      {
+        "sentence": "¿yennitula wichi'a'mak?",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁¿",
+            "yennitula",
+            "▁wichi",
+            "'",
+            "a",
+            "'",
+            "mak",
+            "?"
+          ],
+          "n": 8
+        },
+        "nllb": {
+          "tokens": [
+            "▁¿",
+            "y",
+            "enn",
+            "it",
+            "ula",
+            "▁wi",
+            "chi",
+            "'",
+            "a",
+            "'",
+            "mak",
+            "?"
+          ],
+          "n": 12
+        }
+      },
+      {
+        "sentence": "nanekla, ipa'li'na iñer inapu'su' pa'akwa' luwetllekwa'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nanekla",
+            ",",
+            "▁ipa",
+            "'",
+            "li",
+            "'",
+            "na",
+            "▁iñer",
+            "▁in",
+            "apu",
+            "'",
+            "su",
+            "'",
+            "▁pa",
+            "'",
+            "ak",
+            "wa",
+            "'",
+            "▁luwet",
+            "llek",
+            "wa",
+            "'",
+            "."
+          ],
+          "n": 23
+        },
+        "nllb": {
+          "tokens": [
+            "▁nan",
+            "ekla",
+            ",",
+            "▁ipa",
+            "'",
+            "li",
+            "'",
+            "na",
+            "▁iñ",
+            "er",
+            "▁inap",
+            "u",
+            "'",
+            "su",
+            "'",
+            "▁pa",
+            "'",
+            "akwa",
+            "'",
+            "▁lu",
+            "wet",
+            "l",
+            "lekwa",
+            "'."
+          ],
+          "n": 24
+        }
+      },
+      {
+        "sentence": "nuka'kawa taserpilusa'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nuka",
+            "'",
+            "kawa",
+            "▁taserpi",
+            "lusa",
+            "'"
+          ],
+          "n": 6
+        },
+        "nllb": {
+          "tokens": [
+            "▁nuka",
+            "'",
+            "ka",
+            "wa",
+            "▁tas",
+            "er",
+            "pil",
+            "usa",
+            "'"
+          ],
+          "n": 9
+        }
+      },
+      {
+        "sentence": "chiminllinkekla nampilli",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁chimin",
+            "llinkek",
+            "la",
+            "▁nampi",
+            "lli"
+          ],
+          "n": 5
+        },
+        "nllb": {
+          "tokens": [
+            "▁ch",
+            "imin",
+            "ll",
+            "ink",
+            "ekla",
+            "▁namp",
+            "illi"
+          ],
+          "n": 7
+        }
+      },
+      {
+        "sentence": "katu'shunka' alei'teklun ekkilala ñisik ima, nana wa'anku'lusa' malallinalek lu'rnkasu' nawei'ma ipa' chimia'ser adankenñunta'llina'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁katu",
+            "'",
+            "shunk",
+            "a",
+            "'",
+            "▁",
+            "alei",
+            "'",
+            "teklun",
+            "▁ekkilala",
+            "▁ñi",
+            "sik",
+            "▁ima",
+            ",",
+            "▁nana",
+            "▁wa",
+            "'",
+            "an",
+            "ku",
+            "'",
+            "lusa",
+            "'",
+            "▁malallina",
+            "lek",
+            "▁lu",
+            "'",
+            "rnka",
+            "su",
+            "'",
+            "▁na",
+            "wei",
+            "'",
+            "ma",
+            "▁ipa",
+            "'",
+            "▁chimia",
+            "'",
+            "ser",
+            "▁adan",
+            "kenñ",
+            "unta",
+            "'",
+            "llina",
+            "'",
+            "."
+          ],
+          "n": 45
+        },
+        "nllb": {
+          "tokens": [
+            "▁katu",
+            "'",
+            "sh",
+            "unka",
+            "'",
+            "▁ale",
+            "i",
+            "'",
+            "tek",
+            "lun",
+            "▁ekki",
+            "lala",
+            "▁ñ",
+            "isik",
+            "▁ima",
+            ",",
+            "▁nana",
+            "▁wa",
+            "'",
+            "anku",
+            "'",
+            "l",
+            "usa",
+            "'",
+            "▁mala",
+            "ll",
+            "ina",
+            "lek",
+            "▁lu",
+            "'",
+            "rn",
+            "kas",
+            "u",
+            "'",
+            "▁na",
+            "wei",
+            "'",
+            "ma",
+            "▁ipa",
+            "'",
+            "▁chim",
+            "ia",
+            "'",
+            "ser",
+            "▁ad",
+            "anken",
+            "ñ",
+            "unta",
+            "'",
+            "ll",
+            "ina",
+            "'."
+          ],
+          "n": 52
+        }
+      },
+      {
+        "sentence": "ta'ser lauktulek papinkuku'lusa', amiku'lusa' luñina'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ta",
+            "'",
+            "ser",
+            "▁lauktulek",
+            "▁papinku",
+            "ku",
+            "'",
+            "lusa",
+            "'",
+            ",",
+            "▁ami",
+            "ku",
+            "'",
+            "lusa",
+            "'",
+            "▁lu",
+            "ñina",
+            "'",
+            "."
+          ],
+          "n": 19
+        },
+        "nllb": {
+          "tokens": [
+            "▁ta",
+            "'",
+            "ser",
+            "▁lauk",
+            "tu",
+            "lek",
+            "▁pap",
+            "ink",
+            "uku",
+            "'",
+            "l",
+            "usa",
+            "',",
+            "▁am",
+            "iku",
+            "'",
+            "l",
+            "usa",
+            "'",
+            "▁lu",
+            "ñ",
+            "ina",
+            "'."
+          ],
+          "n": 23
+        }
+      },
+      {
+        "sentence": "saka'tapalli",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁saka",
+            "'",
+            "tapalli"
+          ],
+          "n": 3
+        },
+        "nllb": {
+          "tokens": [
+            "▁saka",
+            "'",
+            "tap",
+            "alli"
+          ],
+          "n": 4
+        }
+      },
+      {
+        "sentence": "luwantulek ali'la",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁luwantulek",
+            "▁ali",
+            "'",
+            "la"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁lu",
+            "wan",
+            "tu",
+            "lek",
+            "▁ali",
+            "'",
+            "la"
+          ],
+          "n": 7
+        }
+      },
+      {
+        "sentence": "katu'pa'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁katu",
+            "'",
+            "pa",
+            "'"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁katu",
+            "'",
+            "pa",
+            "'"
+          ],
+          "n": 4
+        }
+      },
+      {
+        "sentence": "lauk'la tuna'ker'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁lauk",
+            "'",
+            "la",
+            "▁tu",
+            "na",
+            "'",
+            "ker",
+            "'"
+          ],
+          "n": 8
+        },
+        "nllb": {
+          "tokens": [
+            "▁lauk",
+            "'",
+            "la",
+            "▁tuna",
+            "'",
+            "ker",
+            "'"
+          ],
+          "n": 7
+        }
+      },
+      {
+        "sentence": "saka'tapalek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁saka",
+            "'",
+            "tapalek"
+          ],
+          "n": 3
+        },
+        "nllb": {
+          "tokens": [
+            "▁saka",
+            "'",
+            "tapa",
+            "lek"
+          ],
+          "n": 4
+        }
+      },
+      {
+        "sentence": "napi' ima wa'an yunsa'n luñi:",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁",
+            "napi",
+            "'",
+            "▁ima",
+            "▁wa",
+            "'",
+            "an",
+            "▁yunsa",
+            "'",
+            "n",
+            "▁luñi",
+            ":"
+          ],
+          "n": 12
+        },
+        "nllb": {
+          "tokens": [
+            "▁napi",
+            "'",
+            "▁ima",
+            "▁wa",
+            "'",
+            "an",
+            "▁y",
+            "unsa",
+            "'",
+            "n",
+            "▁lu",
+            "ñi",
+            ":"
+          ],
+          "n": 13
+        }
+      },
+      {
+        "sentence": "lachek'apilalek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁lachek",
+            "'",
+            "apilalek"
+          ],
+          "n": 3
+        },
+        "nllb": {
+          "tokens": [
+            "▁lach",
+            "ek",
+            "'",
+            "ap",
+            "ila",
+            "lek"
+          ],
+          "n": 6
+        }
+      },
+      {
+        "sentence": "¡enpi'pui'pa' nana nu'su' ña'su',",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁¡",
+            "enpi",
+            "'",
+            "pu",
+            "i",
+            "'",
+            "pa",
+            "'",
+            "▁nana",
+            "▁nu",
+            "'",
+            "su",
+            "'",
+            "▁ña",
+            "'",
+            "su",
+            "'",
+            ","
+          ],
+          "n": 18
+        },
+        "nllb": {
+          "tokens": [
+            "▁¡",
+            "en",
+            "pi",
+            "'",
+            "pui",
+            "'",
+            "pa",
+            "'",
+            "▁nana",
+            "▁nu",
+            "'",
+            "su",
+            "'",
+            "▁ña",
+            "'",
+            "su",
+            "',"
+          ],
+          "n": 17
+        }
+      },
+      {
+        "sentence": "¡u'chimu lli'inu!",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁¡",
+            "u",
+            "'",
+            "chimu",
+            "▁lli",
+            "'",
+            "inu",
+            "!"
+          ],
+          "n": 8
+        },
+        "nllb": {
+          "tokens": [
+            "▁¡",
+            "u",
+            "'",
+            "ch",
+            "imu",
+            "▁lli",
+            "'",
+            "inu",
+            "!"
+          ],
+          "n": 9
+        }
+      },
+      {
+        "sentence": "¡dinsuludekku', adanti'na'! itudekllima.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁¡",
+            "dinsulu",
+            "dekku",
+            "'",
+            ",",
+            "▁adant",
+            "i",
+            "'",
+            "na",
+            "'!",
+            "▁itudekllima",
+            "."
+          ],
+          "n": 12
+        },
+        "nllb": {
+          "tokens": [
+            "▁¡",
+            "d",
+            "ins",
+            "ulud",
+            "ekku",
+            "',",
+            "▁ad",
+            "anti",
+            "'",
+            "na",
+            "'!",
+            "▁itu",
+            "dek",
+            "l",
+            "lima",
+            "."
+          ],
+          "n": 16
+        }
+      },
+      {
+        "sentence": "nana chida'su'la'sui'mi'na ñi illi'inui'ñi winter'kasu'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nana",
+            "▁chi",
+            "da",
+            "'",
+            "su",
+            "'",
+            "la",
+            "'",
+            "sui",
+            "'",
+            "mi",
+            "'",
+            "na",
+            "▁ñi",
+            "▁illi",
+            "'",
+            "inui",
+            "'",
+            "ñi",
+            "▁winter",
+            "'",
+            "ka",
+            "su",
+            "'",
+            "."
+          ],
+          "n": 25
+        },
+        "nllb": {
+          "tokens": [
+            "▁nana",
+            "▁chida",
+            "'",
+            "su",
+            "'",
+            "la",
+            "'",
+            "s",
+            "ui",
+            "'",
+            "mi",
+            "'",
+            "na",
+            "▁ñi",
+            "▁illi",
+            "'",
+            "inui",
+            "'",
+            "ñi",
+            "▁winter",
+            "'",
+            "kas",
+            "u",
+            "'."
+          ],
+          "n": 24
+        }
+      },
+      {
+        "sentence": "mula'si'la u'chimusha teksusudeklek wilaweklusa', papinalek.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁mu",
+            "la",
+            "'",
+            "si",
+            "'",
+            "la",
+            "▁u",
+            "'",
+            "chimusha",
+            "▁teksusudeklek",
+            "▁wilawek",
+            "lusa",
+            "'",
+            ",",
+            "▁papinalek",
+            "."
+          ],
+          "n": 16
+        },
+        "nllb": {
+          "tokens": [
+            "▁mula",
+            "'",
+            "si",
+            "'",
+            "la",
+            "▁u",
+            "'",
+            "chim",
+            "usha",
+            "▁tek",
+            "sus",
+            "ud",
+            "ek",
+            "lek",
+            "▁wila",
+            "wek",
+            "l",
+            "usa",
+            "',",
+            "▁pap",
+            "ina",
+            "lek",
+            "."
+          ],
+          "n": 23
+        }
+      },
+      {
+        "sentence": "we'inutulidek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁we",
+            "'",
+            "inutu",
+            "lidek"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁we",
+            "'",
+            "in",
+            "utu",
+            "lid",
+            "ek"
+          ],
+          "n": 6
+        }
+      },
+      {
+        "sentence": "wilawi'nek'ipa' chiminpinek, uki'la di'tunansinku, kaluwi' uki'la di'tunansinku.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁wilaw",
+            "i",
+            "'",
+            "nek",
+            "'",
+            "ipa",
+            "'",
+            "▁chimin",
+            "pi",
+            "nek",
+            ",",
+            "▁uki",
+            "'",
+            "la",
+            "▁di",
+            "'",
+            "tunansinku",
+            ",",
+            "▁kaluwi",
+            "'",
+            "▁uki",
+            "'",
+            "la",
+            "▁di",
+            "'",
+            "tunansinku",
+            "."
+          ],
+          "n": 27
+        },
+        "nllb": {
+          "tokens": [
+            "▁wila",
+            "wi",
+            "'",
+            "nek",
+            "'",
+            "ipa",
+            "'",
+            "▁ch",
+            "imin",
+            "pin",
+            "ek",
+            ",",
+            "▁uki",
+            "'",
+            "la",
+            "▁di",
+            "'",
+            "tun",
+            "ans",
+            "inku",
+            ",",
+            "▁kalu",
+            "wi",
+            "'",
+            "▁uki",
+            "'",
+            "la",
+            "▁di",
+            "'",
+            "tun",
+            "ans",
+            "inku",
+            "."
+          ],
+          "n": 33
+        }
+      },
+      {
+        "sentence": "luwantullidek katu'pa'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁luwantullidek",
+            "▁katu",
+            "'",
+            "pa",
+            "'"
+          ],
+          "n": 5
+        },
+        "nllb": {
+          "tokens": [
+            "▁lu",
+            "want",
+            "ul",
+            "lid",
+            "ek",
+            "▁katu",
+            "'",
+            "pa",
+            "'"
+          ],
+          "n": 9
+        }
+      },
+      {
+        "sentence": "llia'llina'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁lli",
+            "a",
+            "'",
+            "llina",
+            "'"
+          ],
+          "n": 5
+        },
+        "nllb": {
+          "tokens": [
+            "▁l",
+            "lia",
+            "'",
+            "ll",
+            "ina",
+            "'"
+          ],
+          "n": 6
+        }
+      },
+      {
+        "sentence": "a'shupalekpi'la",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁a",
+            "'",
+            "shupalek",
+            "pi",
+            "'",
+            "la"
+          ],
+          "n": 6
+        },
+        "nllb": {
+          "tokens": [
+            "▁a",
+            "'",
+            "shu",
+            "pa",
+            "lek",
+            "pi",
+            "'",
+            "la"
+          ],
+          "n": 8
+        }
+      },
+      {
+        "sentence": "ipa'linchi nawa' ektu'na' palenñantullina', puñañin llisantullina'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ipa",
+            "'",
+            "linchi",
+            "▁nawa",
+            "'",
+            "▁ektu",
+            "'",
+            "na",
+            "'",
+            "▁pa",
+            "lenñant",
+            "ullina",
+            "'",
+            ",",
+            "▁pu",
+            "ña",
+            "ñin",
+            "▁llisan",
+            "tullina",
+            "'",
+            "."
+          ],
+          "n": 21
+        },
+        "nllb": {
+          "tokens": [
+            "▁ipa",
+            "'",
+            "lin",
+            "chi",
+            "▁nawa",
+            "'",
+            "▁ek",
+            "tu",
+            "'",
+            "na",
+            "'",
+            "▁pal",
+            "en",
+            "ñ",
+            "ant",
+            "ull",
+            "ina",
+            "',",
+            "▁pu",
+            "ña",
+            "ñ",
+            "in",
+            "▁l",
+            "lis",
+            "ant",
+            "ull",
+            "ina",
+            "'."
+          ],
+          "n": 28
+        }
+      },
+      {
+        "sentence": "nanadaper imaka lli'an malallina tulli asu' katu'ta' ishpaña la'la' lunlusa' a'ta' kenmu'wa' utetchinerkenmu'wa'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nanadaper",
+            "▁ima",
+            "ka",
+            "▁lli",
+            "'",
+            "an",
+            "▁malallina",
+            "▁tulli",
+            "▁asu",
+            "'",
+            "▁katu",
+            "'",
+            "ta",
+            "'",
+            "▁ishpaña",
+            "▁la",
+            "'",
+            "la",
+            "'",
+            "▁lun",
+            "lusa",
+            "'",
+            "▁a",
+            "'",
+            "ta",
+            "'",
+            "▁",
+            "kenmu",
+            "'",
+            "wa",
+            "'",
+            "▁",
+            "utetch",
+            "iner",
+            "kenmu",
+            "'",
+            "wa",
+            "'",
+            "."
+          ],
+          "n": 39
+        },
+        "nllb": {
+          "tokens": [
+            "▁nan",
+            "ad",
+            "aper",
+            "▁im",
+            "aka",
+            "▁lli",
+            "'",
+            "an",
+            "▁mala",
+            "ll",
+            "ina",
+            "▁tul",
+            "li",
+            "▁asu",
+            "'",
+            "▁katu",
+            "'",
+            "ta",
+            "'",
+            "▁ish",
+            "paña",
+            "▁la",
+            "'",
+            "la",
+            "'",
+            "▁lun",
+            "l",
+            "usa",
+            "'",
+            "▁a",
+            "'",
+            "ta",
+            "'",
+            "▁ken",
+            "mu",
+            "'",
+            "wa",
+            "'",
+            "▁ut",
+            "et",
+            "ch",
+            "iner",
+            "ken",
+            "mu",
+            "'",
+            "wa",
+            "'."
+          ],
+          "n": 47
+        }
+      },
+      {
+        "sentence": "yalli'tama",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ya",
+            "lli",
+            "'",
+            "tama"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁yal",
+            "li",
+            "'",
+            "tama"
+          ],
+          "n": 4
+        }
+      },
+      {
+        "sentence": "tom lachek'lli",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁tom",
+            "▁lachek",
+            "'",
+            "lli"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁tom",
+            "▁lach",
+            "ek",
+            "'",
+            "lli"
+          ],
+          "n": 5
+        }
+      },
+      {
+        "sentence": "yawelliekwinek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ya",
+            "welliek",
+            "winek"
+          ],
+          "n": 3
+        },
+        "nllb": {
+          "tokens": [
+            "▁ya",
+            "wel",
+            "liek",
+            "win",
+            "ek"
+          ],
+          "n": 5
+        }
+      },
+      {
+        "sentence": "nana usha'wañen muyunpa inchilala ekketcherka'su'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nana",
+            "▁",
+            "usha",
+            "'",
+            "wañen",
+            "▁muyunpa",
+            "▁inchilala",
+            "▁ekketch",
+            "erka",
+            "'",
+            "su",
+            "'",
+            "."
+          ],
+          "n": 13
+        },
+        "nllb": {
+          "tokens": [
+            "▁nana",
+            "▁us",
+            "ha",
+            "'",
+            "wa",
+            "ñen",
+            "▁muy",
+            "un",
+            "pa",
+            "▁in",
+            "chila",
+            "la",
+            "▁ek",
+            "ket",
+            "cher",
+            "ka",
+            "'",
+            "su",
+            "'."
+          ],
+          "n": 19
+        }
+      },
+      {
+        "sentence": "ku'la ñinchitapi'nek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ku",
+            "'",
+            "la",
+            "▁ñinchita",
+            "pi",
+            "'",
+            "nek"
+          ],
+          "n": 7
+        },
+        "nllb": {
+          "tokens": [
+            "▁ku",
+            "'",
+            "la",
+            "▁ñ",
+            "in",
+            "chit",
+            "api",
+            "'",
+            "nek"
+          ],
+          "n": 9
+        }
+      },
+      {
+        "sentence": "tekkinchima pa'llina'.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁tekkinchi",
+            "ma",
+            "▁pa",
+            "'",
+            "llina",
+            "'",
+            "."
+          ],
+          "n": 7
+        },
+        "nllb": {
+          "tokens": [
+            "▁tek",
+            "kin",
+            "ch",
+            "ima",
+            "▁pa",
+            "'",
+            "ll",
+            "ina",
+            "'."
+          ],
+          "n": 9
+        }
+      },
+      {
+        "sentence": "kerka' ñinchitapalek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁kerk",
+            "a",
+            "'",
+            "▁ñinchitapalek"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁ker",
+            "ka",
+            "'",
+            "▁ñ",
+            "in",
+            "chit",
+            "apa",
+            "lek"
+          ],
+          "n": 8
+        }
+      },
+      {
+        "sentence": "ku'la wicha'pi'ñi",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ku",
+            "'",
+            "la",
+            "▁wich",
+            "a",
+            "'",
+            "pi",
+            "'",
+            "ñi"
+          ],
+          "n": 9
+        },
+        "nllb": {
+          "tokens": [
+            "▁ku",
+            "'",
+            "la",
+            "▁wi",
+            "cha",
+            "'",
+            "pi",
+            "'",
+            "ñi"
+          ],
+          "n": 9
+        }
+      },
+      {
+        "sentence": "nananta' a'lek'apilallun.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nana",
+            "nta",
+            "'",
+            "▁a",
+            "'",
+            "lek",
+            "'",
+            "apilall",
+            "un",
+            "."
+          ],
+          "n": 10
+        },
+        "nllb": {
+          "tokens": [
+            "▁nan",
+            "anta",
+            "'",
+            "▁a",
+            "'",
+            "lek",
+            "'",
+            "ap",
+            "ila",
+            "llun",
+            "."
+          ],
+          "n": 11
+        }
+      },
+      {
+        "sentence": "luyulek pennu'ak",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁luyulek",
+            "▁penn",
+            "u",
+            "'",
+            "ak"
+          ],
+          "n": 5
+        },
+        "nllb": {
+          "tokens": [
+            "▁lu",
+            "yu",
+            "lek",
+            "▁p",
+            "ennu",
+            "'",
+            "ak"
+          ],
+          "n": 7
+        }
+      },
+      {
+        "sentence": "naneklima itulli:",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁naneklima",
+            "▁itulli",
+            ":"
+          ],
+          "n": 3
+        },
+        "nllb": {
+          "tokens": [
+            "▁nan",
+            "ek",
+            "lima",
+            "▁it",
+            "ulli",
+            ":"
+          ],
+          "n": 6
+        }
+      },
+      {
+        "sentence": "weipensu' ñapalek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁wei",
+            "pen",
+            "su",
+            "'",
+            "▁ñapalek"
+          ],
+          "n": 5
+        },
+        "nllb": {
+          "tokens": [
+            "▁we",
+            "ip",
+            "ensu",
+            "'",
+            "▁ñ",
+            "apa",
+            "lek"
+          ],
+          "n": 7
+        }
+      },
+      {
+        "sentence": "nanadaper iñer asu' senñula' yañinchitulli.",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nanadaper",
+            "▁iñer",
+            "▁asu",
+            "'",
+            "▁senñula",
+            "'",
+            "▁yañinchitulli",
+            "."
+          ],
+          "n": 8
+        },
+        "nllb": {
+          "tokens": [
+            "▁nan",
+            "ad",
+            "aper",
+            "▁iñ",
+            "er",
+            "▁asu",
+            "'",
+            "▁sen",
+            "ñ",
+            "ula",
+            "'",
+            "▁ya",
+            "ñ",
+            "in",
+            "chit",
+            "ulli",
+            "."
+          ],
+          "n": 17
+        }
+      },
+      {
+        "sentence": "ipa'la walek lauk'apallidek, lli'apallidek wa'dantek pekla'su',",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ipa",
+            "'",
+            "la",
+            "▁walek",
+            "▁lauk",
+            "'",
+            "apallidek",
+            ",",
+            "▁lli",
+            "'",
+            "apallidek",
+            "▁wa",
+            "'",
+            "dantek",
+            "▁pek",
+            "la",
+            "'",
+            "su",
+            "'",
+            ","
+          ],
+          "n": 20
+        },
+        "nllb": {
+          "tokens": [
+            "▁ipa",
+            "'",
+            "la",
+            "▁wa",
+            "lek",
+            "▁lauk",
+            "'",
+            "ap",
+            "al",
+            "lid",
+            "ek",
+            ",",
+            "▁lli",
+            "'",
+            "ap",
+            "al",
+            "lid",
+            "ek",
+            "▁wa",
+            "'",
+            "dant",
+            "ek",
+            "▁pek",
+            "la",
+            "'",
+            "su",
+            "',"
+          ],
+          "n": 27
+        }
+      },
+      {
+        "sentence": "yute'chek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁yu",
+            "te",
+            "'",
+            "chek"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁yu",
+            "te",
+            "'",
+            "ch",
+            "ek"
+          ],
+          "n": 5
+        }
+      },
+      {
+        "sentence": "ñi'inaka inlu'uktutek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ñi",
+            "'",
+            "ina",
+            "ka",
+            "▁inlu",
+            "'",
+            "uktutek"
+          ],
+          "n": 7
+        },
+        "nllb": {
+          "tokens": [
+            "▁ñi",
+            "'",
+            "inaka",
+            "▁in",
+            "lu",
+            "'",
+            "ukt",
+            "utek"
+          ],
+          "n": 8
+        }
+      },
+      {
+        "sentence": "maker'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁ma",
+            "ker",
+            "'"
+          ],
+          "n": 3
+        },
+        "nllb": {
+          "tokens": [
+            "▁mak",
+            "er",
+            "'"
+          ],
+          "n": 3
+        }
+      },
+      {
+        "sentence": "da'ker' kinekla",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁da",
+            "'",
+            "ker",
+            "'",
+            "▁kinekla"
+          ],
+          "n": 5
+        },
+        "nllb": {
+          "tokens": [
+            "▁da",
+            "'",
+            "ker",
+            "'",
+            "▁kin",
+            "ekla"
+          ],
+          "n": 6
+        }
+      },
+      {
+        "sentence": "insekdipersu' ñapaker'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁insekdiper",
+            "su",
+            "'",
+            "▁ñapa",
+            "ker",
+            "'"
+          ],
+          "n": 6
+        },
+        "nllb": {
+          "tokens": [
+            "▁ins",
+            "ek",
+            "di",
+            "per",
+            "su",
+            "'",
+            "▁ñ",
+            "apak",
+            "er",
+            "'"
+          ],
+          "n": 10
+        }
+      },
+      {
+        "sentence": "iker'lalak aku'llinerku",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁iker",
+            "'",
+            "lalak",
+            "▁aku",
+            "'",
+            "llinerku"
+          ],
+          "n": 6
+        },
+        "nllb": {
+          "tokens": [
+            "▁ik",
+            "er",
+            "'",
+            "la",
+            "lak",
+            "▁aku",
+            "'",
+            "ll",
+            "iner",
+            "ku"
+          ],
+          "n": 10
+        }
+      },
+      {
+        "sentence": "neriapalek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁neria",
+            "palek"
+          ],
+          "n": 2
+        },
+        "nllb": {
+          "tokens": [
+            "▁n",
+            "eria",
+            "pa",
+            "lek"
+          ],
+          "n": 4
+        }
+      },
+      {
+        "sentence": "kuakeksa' lli'inupalek",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁kua",
+            "kek",
+            "sa",
+            "'",
+            "▁lli",
+            "'",
+            "i",
+            "nupalek"
+          ],
+          "n": 8
+        },
+        "nllb": {
+          "tokens": [
+            "▁kuak",
+            "eksa",
+            "'",
+            "▁lli",
+            "'",
+            "inu",
+            "pa",
+            "lek"
+          ],
+          "n": 8
+        }
+      },
+      {
+        "sentence": "nu'tullina'",
+        "sp_unigram_8k": {
+          "tokens": [
+            "▁nu",
+            "'",
+            "tullina",
+            "'"
+          ],
+          "n": 4
+        },
+        "nllb": {
+          "tokens": [
+            "▁nu",
+            "'",
+            "t",
+            "ull",
+            "ina",
+            "'"
+          ],
+          "n": 6
+        }
+      }
+    ]
+  },
+  "rationale": "Plan.md sections 15-17 mandate SP Unigram for vocabulary / morphology analysis. NLLB ships its own tokenizer used in Phase 4; this artifact supports the agglutinative-friendly tokenization argument and serves as a comparison fixture, not the runtime tokenizer."
+}

@@ -1,0 +1,1066 @@
+﻿source_pair_id,shiwilu_original,shiwilu_variant,detected_suffix,swapped_with,spanish_kept,status,warning
+U02101,inlulen'awa',inlulen'awek,a',ek,curémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02101,inlulen'awa',inlulen'awu',a',u',curémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02101,inlulen'awa',inlulen'awna',a',na',curémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01102,lachek'ki'nek,lachek'ki'na',ek,a',estoy confuso.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01102,lachek'ki'nek,lachek'ki'nu',ek,u',estoy confuso.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01102,lachek'ki'nek,lachek'ki'nna',ek,na',estoy confuso.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01103,lachek'ki'nek,lachek'ki'na',ek,a',estoy confundido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01103,lachek'ki'nek,lachek'ki'nu',ek,u',estoy confundido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01103,lachek'ki'nek,lachek'ki'nna',ek,na',estoy confundido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01068,ñinchichi'nek,ñinchichi'na',ek,a',no sé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01068,ñinchichi'nek,ñinchichi'nu',ek,u',no sé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01068,ñinchichi'nek,ñinchichi'nna',ek,na',no sé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01267,kulliker'wanpala,kulliker'wanpaa',la,a',eres rico.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01267,kulliker'wanpala,kulliker'wanpaek,la,ek,eres rico.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01267,kulliker'wanpala,kulliker'wanpau',la,u',eres rico.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01065,indei'tulek,indei'tua',lek,a',me corté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01065,indei'tulek,indei'tuek,lek,ek,me corté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01065,indei'tulek,indei'tuu',lek,u',me corté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00561,yunsue'chek,yunsue'cha',ek,a',me mudaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00561,yunsue'chek,yunsue'chu',ek,u',me mudaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00561,yunsue'chek,yunsue'chna',ek,na',me mudaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02082,lataker'sa',lataker'sek,a',ek,solo pruébatela.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02082,lataker'sa',lataker'su',a',u',solo pruébatela.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02082,lataker'sa',lataker'sna',a',na',solo pruébatela.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01036,muuklli,muuka',lli,a',buenos días.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01036,muuklli,muukek,lli,ek,buenos días.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01036,muuklli,muuku',lli,u',buenos días.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00499,taitula'u'kudek,taitula'u'kuda',ek,a',perdónenos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00499,taitula'u'kudek,taitula'u'kudu',ek,u',perdónenos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00499,taitula'u'kudek,taitula'u'kudna',ek,na',perdónenos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00050,tekle'rier'chidek,tekle'rier'chida',ek,a',lo procuramos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00050,tekle'rier'chidek,tekle'rier'chidu',ek,u',lo procuramos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00050,tekle'rier'chidek,tekle'rier'chidna',ek,na',lo procuramos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00897,inmusha'llina',inmusha'lla',ina',a',se besaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00897,inmusha'llina',inmusha'llek,ina',ek,se besaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00897,inmusha'llina',inmusha'llu',ina',u',se besaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00098,mupalli,mupaa',lli,a',está bien.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00098,mupalli,mupaek,lli,ek,está bien.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00098,mupalli,mupau',lli,u',está bien.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00411,mupalli,mupaa',lli,a',está buena.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00411,mupalli,mupaek,lli,ek,está buena.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00411,mupalli,mupau',lli,u',está buena.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01127,mupalli,mupaa',lli,a',está perfecto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01127,mupalli,mupaek,lli,ek,está perfecto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01127,mupalli,mupau',lli,u',está perfecto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00690,teka'per'aterwa',teka'per'aterwek,a',ek,fracasaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00690,teka'per'aterwa',teka'per'aterwu',a',u',fracasaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00690,teka'per'aterwa',teka'per'aterwna',a',na',fracasaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00606,tuluner'awa',tuluner'awek,a',ek,cantemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00606,tuluner'awa',tuluner'awu',a',u',cantemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00606,tuluner'awa',tuluner'awna',a',na',cantemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02037,tekdiper'echek,tekdiper'echa',ek,a',lo arreglaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02037,tekdiper'echek,tekdiper'echu',ek,u',lo arreglaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02037,tekdiper'echek,tekdiper'echna',ek,na',lo arreglaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00540,tuwinek,tuwina',ek,a',prometí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00540,tuwinek,tuwinu',ek,u',prometí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00540,tuwinek,tuwinna',ek,na',prometí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00641,indek'llina',indek'lla',ina',a',lo intentaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00641,indek'llina',indek'llek,ina',ek,lo intentaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00641,indek'llina',indek'llu',ina',u',lo intentaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01589,lli'aterwa',lli'aterwek,a',ek,miramos,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01589,lli'aterwa',lli'aterwu',a',u',miramos,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01589,lli'aterwa',lli'aterwna',a',na',miramos,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00178,a'ñapalek,a'ñapaa',lek,a',lo tengo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00178,a'ñapalek,a'ñapaek,lek,ek,lo tengo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00178,a'ñapalek,a'ñapau',lek,u',lo tengo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00610,dek'kuntawa',dek'kuntawek,a',ek,caminemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00610,dek'kuntawa',dek'kuntawu',a',u',caminemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00610,dek'kuntawa',dek'kuntawna',a',na',caminemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02052,yunsu'pilalek,yunsu'pilaa',lek,a',voy saliendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02052,yunsu'pilalek,yunsu'pilaek,lek,ek,voy saliendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02052,yunsu'pilalek,yunsu'pilau',lek,u',voy saliendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02041,wa'tentapechek,wa'tentapecha',ek,a',estaré esperando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02041,wa'tentapechek,wa'tentapechu',ek,u',estaré esperando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02041,wa'tentapechek,wa'tentapechna',ek,na',estaré esperando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02035,tupiechek,tupiecha',ek,a',seguiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02035,tupiechek,tupiechu',ek,u',seguiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02035,tupiechek,tupiechna',ek,na',seguiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01887,si'lentapawiñidek,si'lentapawiñida',ek,a',estábamos bromeando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01887,si'lentapawiñidek,si'lentapawiñidu',ek,u',estábamos bromeando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01887,si'lentapawiñidek,si'lentapawiñidna',ek,na',estábamos bromeando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01750,yalun'nek,yalun'na',ek,a',quiero hablar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01750,yalun'nek,yalun'nu',ek,u',quiero hablar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01750,yalun'nek,yalun'nna',ek,na',quiero hablar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00609,dek'awa',dek'awek,a',ek,votemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00609,dek'awa',dek'awu',a',u',votemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00609,dek'awa',dek'awna',a',na',votemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00028,anu'lek,anu'a',lek,a',me caí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00028,anu'lek,anu'ek,lek,ek,me caí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00028,anu'lek,anu'u',lek,u',me caí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01583,pa'echidek,pa'echida',ek,a',nos vamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01583,pa'echidek,pa'echidu',ek,u',nos vamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01583,pa'echidek,pa'echidna',ek,na',nos vamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01564,uki'lallidek,uki'lallida',ek,a',tenemos hambre.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01564,uki'lallidek,uki'lallidu',ek,u',tenemos hambre.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01564,uki'lallidek,uki'lallidna',ek,na',tenemos hambre.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01746,yanampilek,yanampia',lek,a',quiero vivir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01746,yanampilek,yanampiek,lek,ek,quiero vivir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01746,yanampilek,yanampiu',lek,u',quiero vivir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00063,damula,damua',la,a',sal.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00063,damula,damuek,la,ek,sal.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00063,damula,damuu',la,u',sal.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01422,yawerannek,yaweranna',ek,a',quiero comer.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01422,yawerannek,yawerannu',ek,u',quiero comer.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01422,yawerannek,yawerannna',ek,na',quiero comer.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00527,katu'palek,katu'paa',lek,a',le ayudo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00527,katu'palek,katu'paek,lek,ek,le ayudo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00527,katu'palek,katu'pau',lek,u',le ayudo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00691,katu'pa'taterwa',katu'pa'taterwek,a',ek,ayudaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00691,katu'pa'taterwa',katu'pa'taterwu',a',u',ayudaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00691,katu'pa'taterwa',katu'pa'taterwna',a',na',ayudaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00039,lau'tuku',lau'tuka',u',a',escuchen.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00039,lau'tuku',lau'tukek,u',ek,escuchen.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00039,lau'tuku',lau'tukna',u',na',escuchen.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00899,yamerladallina',yamerladalla',ina',a',sonrieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00899,yamerladallina',yamerladallek,ina',ek,sonrieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00899,yamerladallina',yamerladallu',ina',u',sonrieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01297,tumu'pala,tumu'paa',la,a',estás mintiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01297,tumu'pala,tumu'paek,la,ek,estás mintiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01297,tumu'pala,tumu'pau',la,u',estás mintiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00938,lli'inutapallidek,lli'inutapallida',ek,a',nos recordamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00938,lli'inutapallidek,lli'inutapallidu',ek,u',nos recordamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00938,lli'inutapallidek,lli'inutapallidna',ek,na',nos recordamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02134,tenpu'llinerku',tenpu'llinerka',u',a',me ataron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02134,tenpu'llinerku',tenpu'llinerkek,u',ek,me ataron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02134,tenpu'llinerku',tenpu'llinerkna',u',na',me ataron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01411,tumu'tuleklek,tumu'tuleka',lek,a',les mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01411,tumu'tuleklek,tumu'tulekek,lek,ek,les mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01411,tumu'tuleklek,tumu'tuleku',lek,u',les mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02056,nanpi'palek'i'la,nanpi'palek'i'a',la,a',sigo vivo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02056,nanpi'palek'i'la,nanpi'palek'i'ek,la,ek,sigo vivo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02056,nanpi'palek'i'la,nanpi'palek'i'u',la,u',sigo vivo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00900,wa'tentullina',wa'tentulla',ina',a',esperaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00900,wa'tentullina',wa'tentullek,ina',ek,esperaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00900,wa'tentullina',wa'tentullu',ina',u',esperaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00807,lata'echek,lata'echa',ek,a',lo probaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00807,lata'echek,lata'echu',ek,u',lo probaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00807,lata'echek,lata'echna',ek,na',lo probaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00237,lli'ker'llia',lli'ker'lliek,a',ek,cuidado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00237,lli'ker'llia',lli'ker'lliu',a',u',cuidado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00237,lli'ker'llia',lli'ker'llina',a',na',cuidado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01208,pa'llina',pa'lla',ina',a',se fueron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01208,pa'llina',pa'llek,ina',ek,se fueron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01208,pa'llina',pa'llu',ina',u',se fueron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00079,katu'pa'udek,katu'pa'uda',ek,a',ayúdanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00079,katu'pa'udek,katu'pa'udu',ek,u',ayúdanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00079,katu'pa'udek,katu'pa'udna',ek,na',ayúdanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01324,katu'pa'udek,katu'pa'uda',ek,a',apóyanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01324,katu'pa'udek,katu'pa'udu',ek,u',apóyanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01324,katu'pa'udek,katu'pa'udna',ek,na',apóyanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01431,ta'itulekchek,ta'itulekcha',ek,a',lo permitiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01431,ta'itulekchek,ta'itulekchu',ek,u',lo permitiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01431,ta'itulekchek,ta'itulekchna',ek,na',lo permitiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01702,yapa'lli,yapa'a',lli,a',quiere ir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01702,yapa'lli,yapa'ek,lli,ek,quiere ir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01702,yapa'lli,yapa'u',lli,u',quiere ir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00856,da'awa',da'awek,a',ek,entremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00856,da'awa',da'awu',a',u',entremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00856,da'awa',da'awna',a',na',entremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01086,yapa'lek,yapa'a',lek,a',quiero ir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01086,yapa'lek,yapa'ek,lek,ek,quiero ir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01086,yapa'lek,yapa'u',lek,u',quiero ir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00490,yalunta',yaluntek,a',ek,no hables.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00490,yalunta',yaluntu',a',u',no hables.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00490,yalunta',yaluntna',a',na',no hables.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01575,lachek'apallidek,lachek'apallida',ek,a',lo entendemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01575,lachek'apallidek,lachek'apallidu',ek,u',lo entendemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01575,lachek'apallidek,lachek'apallidna',ek,na',lo entendemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01506,tupi'wa',tupi'wek,a',ek,mantengámoslo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01506,tupi'wa',tupi'wu',a',u',mantengámoslo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01506,tupi'wa',tupi'wna',a',na',mantengámoslo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01507,tupi'wa',tupi'wek,a',ek,prosigamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01507,tupi'wa',tupi'wu',a',u',prosigamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01507,tupi'wa',tupi'wna',a',na',prosigamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01842,pilli'tullina',pilli'tulla',ina',a',la cogieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01842,pilli'tullina',pilli'tullek,ina',ek,la cogieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01842,pilli'tullina',pilli'tullu',ina',u',la cogieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00548,enmu'lek,enmu'a',lek,a',vomité.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00548,enmu'lek,enmu'ek,lek,ek,vomité.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00548,enmu'lek,enmu'u',lek,u',vomité.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01391,latekdeklek,latekdeka',lek,a',les creo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01391,latekdeklek,latekdekek,lek,ek,les creo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01391,latekdeklek,latekdeku',lek,u',les creo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01540,chimin'er'kasu'ñapalli,chimin'er'kasu'ñapaa',lli,a',deben morir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01540,chimin'er'kasu'ñapalli,chimin'er'kasu'ñapaek,lli,ek,deben morir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01540,chimin'er'kasu'ñapalli,chimin'er'kasu'ñapau',lli,u',deben morir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00767,si'lentapalek,si'lentapaa',lek,a',estoy leseando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00767,si'lentapalek,si'lentapaek,lek,ek,estoy leseando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00767,si'lentapalek,si'lentapau',lek,u',estoy leseando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00922,wa'ten'u'kudek,wa'ten'u'kuda',ek,a',espéranos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00922,wa'ten'u'kudek,wa'ten'u'kudu',ek,u',espéranos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00922,wa'ten'u'kudek,wa'ten'u'kudna',ek,na',espéranos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00602,lun'awa',lun'awek,a',ek,charlemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00602,lun'awa',lun'awu',a',u',charlemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00602,lun'awa',lun'awna',a',na',charlemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00608,lun'awa',lun'awek,a',ek,conversemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00608,lun'awa',lun'awu',a',u',conversemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00608,lun'awa',lun'awna',a',na',conversemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00685,yamerlek'wa',yamerlek'wek,a',ek,nos reímos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00685,yamerlek'wa',yamerlek'wu',a',u',nos reímos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00685,yamerlek'wa',yamerlek'wna',a',na',nos reímos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00894,nu'tullina',nu'tulla',ina',a',lo hicieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00894,nu'tullina',nu'tullek,ina',ek,lo hicieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00894,nu'tullina',nu'tullu',ina',u',lo hicieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00895,nu'tullina',nu'tulla',ina',a',lo lograron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00895,nu'tullina',nu'tullek,ina',ek,lo lograron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00895,nu'tullina',nu'tullu',ina',u',lo lograron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01999,peklu'lek,peklu'a',lek,a',la llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01999,peklu'lek,peklu'ek,lek,ek,la llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01999,peklu'lek,peklu'u',lek,u',la llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00187,adencha'lek,adencha'a',lek,a',he vuelto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00187,adencha'lek,adencha'ek,lek,ek,he vuelto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00187,adencha'lek,adencha'u',lek,u',he vuelto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02009,adencha'lek,adencha'a',lek,a',volví.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02009,adencha'lek,adencha'ek,lek,ek,volví.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02009,adencha'lek,adencha'u',lek,u',volví.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01729,utrinwanpalek,utrinwanpaa',lek,a',tengo hermanas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01729,utrinwanpalek,utrinwanpaek,lek,ek,tengo hermanas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01729,utrinwanpalek,utrinwanpau',lek,u',tengo hermanas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01067,panwilekchi'nek,panwilekchi'na',ek,a',no pagué.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01067,panwilekchi'nek,panwilekchi'nu',ek,u',no pagué.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01067,panwilekchi'nek,panwilekchi'nna',ek,na',no pagué.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01765,yute'chek,yute'cha',ek,a',lo regañaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01765,yute'chek,yute'chu',ek,u',lo regañaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01765,yute'chek,yute'chna',ek,na',lo regañaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01766,yute'chek,yute'cha',ek,a',le reñiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01766,yute'chek,yute'chu',ek,u',le reñiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01766,yute'chek,yute'chna',ek,na',le reñiré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00163,musu'nakuku',musu'nakuka',u',a',pásenla bien.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00163,musu'nakuku',musu'nakukek,u',ek,pásenla bien.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00163,musu'nakuku',musu'nakukna',u',na',pásenla bien.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01541,lamapu'llina',lamapu'lla',ina',a',gritaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01541,lamapu'llina',lamapu'llek,ina',ek,gritaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01541,lamapu'llina',lamapu'llu',ina',u',gritaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02017,yada'lek,yada'a',lek,a',necesito entrar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02017,yada'lek,yada'ek,lek,ek,necesito entrar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02017,yada'lek,yada'u',lek,u',necesito entrar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00898,latektullina',latektulla',ina',a',obedecieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00898,latektullina',latektullek,ina',ek,obedecieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00898,latektullina',latektullu',ina',u',obedecieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01504,adanta'wa',adanta'wek,a',ek,volvamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01504,adanta'wa',adanta'wu',a',u',volvamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01504,adanta'wa',adanta'wna',a',na',volvamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01780,lli'dek'lek,lli'dek'a',lek,a',los vi.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01780,lli'dek'lek,lli'dek'ek,lek,ek,los vi.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01780,lli'dek'lek,lli'dek'u',lek,u',los vi.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00603,inmusha'wa',inmusha'wek,a',ek,besémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00603,inmusha'wa',inmusha'wu',a',u',besémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00603,inmusha'wa',inmusha'wna',a',na',besémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00254,uklli,uka',lli,a',dia.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00254,uklli,ukek,lli,ek,dia.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00254,uklli,uku',lli,u',dia.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00684,sakeklekwa',sakeklekwek,a',ek,nos divertimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00684,sakeklekwa',sakeklekwu',a',u',nos divertimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00684,sakeklekwa',sakeklekwna',a',na',nos divertimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01499,lek'kawa',lek'kawek,a',ek,preguntémosle.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01499,lek'kawa',lek'kawu',a',u',preguntémosle.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01499,lek'kawa',lek'kawna',a',na',preguntémosle.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00167,mulusa',mulusek,a',ek,buenas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00167,mulusa',mulusu',a',u',buenas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00167,mulusa',mulusna',a',na',buenas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02034,lauk'tapawinek,lauk'tapawina',ek,a',estaba escuchando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02034,lauk'tapawinek,lauk'tapawinu',ek,u',estaba escuchando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02034,lauk'tapawinek,lauk'tapawinna',ek,na',estaba escuchando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01095,inpalerichek,inpalericha',ek,a',me arriesgaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01095,inpalerichek,inpalerichu',ek,u',me arriesgaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01095,inpalerichek,inpalerichna',ek,na',me arriesgaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01561,welliek'apallidek,welliek'apallida',ek,a',estamos llorando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01561,welliek'apallidek,welliek'apallidu',ek,u',estamos llorando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01561,welliek'apallidek,welliek'apallidna',ek,na',estamos llorando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01194,da'pañina',da'paña',ina',a',se chocaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01194,da'pañina',da'pañek,ina',ek,se chocaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01194,da'pañina',da'pañu',ina',u',se chocaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01195,da'pañina',da'paña',ina',a',se estrellaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01195,da'pañina',da'pañek,ina',ek,se estrellaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01195,da'pañina',da'pañu',ina',u',se estrellaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01745,yakatupa'tulek,yakatupa'tua',lek,a',quiero ayudar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01745,yakatupa'tulek,yakatupa'tuek,lek,ek,quiero ayudar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01745,yakatupa'tulek,yakatupa'tuu',lek,u',quiero ayudar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00813,ñinchidinupalek,ñinchidinupaa',lek,a',tengo curiosidad.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00813,ñinchidinupalek,ñinchidinupaek,lek,ek,tengo curiosidad.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00813,ñinchidinupalek,ñinchidinupau',lek,u',tengo curiosidad.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02047,yamerlek,yamera',lek,a',me carcajeo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02047,yamerlek,yamerek,lek,ek,me carcajeo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02047,yamerlek,yameru',lek,u',me carcajeo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02175,lumpawiñidek,lumpawiñida',ek,a',estábamos hablando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02175,lumpawiñidek,lumpawiñidu',ek,u',estábamos hablando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02175,lumpawiñidek,lumpawiñidna',ek,na',estábamos hablando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00786,lu'wanwinek,lu'wanwina',ek,a',lo extrañaba.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00786,lu'wanwinek,lu'wanwinu',ek,u',lo extrañaba.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00786,lu'wanwinek,lu'wanwinna',ek,na',lo extrañaba.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00030,tumu'lek,tumu'a',lek,a',mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00030,tumu'lek,tumu'ek,lek,ek,mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00030,tumu'lek,tumu'u',lek,u',mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01720,pilli'tulliner'ku',pilli'tulliner'ka',u',a',me arrestaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01720,pilli'tulliner'ku',pilli'tulliner'kek,u',ek,me arrestaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01720,pilli'tulliner'ku',pilli'tulliner'kna',u',na',me arrestaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01865,panper'echuna',panper'echua',na',a',atacarán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01865,panper'echuna',panper'echuek,na',ek,atacarán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01865,panper'echuna',panper'echuu',na',u',atacarán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01064,indei'techek,indei'techa',ek,a',me corto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01064,indei'techek,indei'techu',ek,u',me corto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01064,indei'techek,indei'techna',ek,na',me corto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01747,yaintekllitulek,yaintekllitua',lek,a',quiero jugar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01747,yaintekllitulek,yaintekllituek,lek,ek,quiero jugar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01747,yaintekllitulek,yaintekllituu',lek,u',quiero jugar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01698,yutulli,yutua',lli,a',la increpó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01698,yutulli,yutuek,lli,ek,la increpó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01698,yutulli,yutuu',lli,u',la increpó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01534,saka'dek'inpu',saka'dek'inpa',u',a',es simple.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01534,saka'dek'inpu',saka'dek'inpek,u',ek,es simple.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01534,saka'dek'inpu',saka'dek'inpna',u',na',es simple.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01823,tupitawa',tupitawek,a',ek,continuemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01823,tupitawa',tupitawu',a',u',continuemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01823,tupitawa',tupitawna',a',na',continuemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00942,a'nañiechidek,a'nañiechida',ek,a',compartiremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00942,a'nañiechidek,a'nañiechidu',ek,u',compartiremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00942,a'nañiechidek,a'nañiechidna',ek,na',compartiremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02139,iyatechuna',iyatechua',na',a',les gustará.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02139,iyatechuna',iyatechuek,na',ek,les gustará.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02139,iyatechuna',iyatechuu',na',u',les gustará.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01642,yanu'tapala,yanu'tapaa',la,a',estás tratando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01642,yanu'tapala,yanu'tapaek,la,ek,estás tratando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01642,yanu'tapala,yanu'tapau',la,u',estás tratando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00771,lunnek,lunna',ek,a',confesé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00771,lunnek,lunnu',ek,u',confesé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00771,lunnek,lunnna',ek,na',confesé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01755,ellia'pawinek,ellia'pawina',ek,a',estaba sudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01755,ellia'pawinek,ellia'pawinu',ek,u',estaba sudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01755,ellia'pawinek,ellia'pawinna',ek,na',estaba sudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00360,analli,anaa',lli,a',apesta.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00360,analli,anaek,lli,ek,apesta.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00360,analli,anau',lli,u',apesta.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01123,kerpi'a'cha',kerpi'a'chek,a',ek,era negro.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01123,kerpi'a'cha',kerpi'a'chu',a',u',era negro.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01123,kerpi'a'cha',kerpi'a'chna',a',na',era negro.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01139,lun'aper'i'la,lun'aper'i'a',la,a',continuá hablando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01139,lun'aper'i'la,lun'aper'i'ek,la,ek,continuá hablando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01139,lun'aper'i'la,lun'aper'i'u',la,u',continuá hablando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00235,tai'tula'udek,tai'tula'uda',ek,a',déjanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00235,tai'tula'udek,tai'tula'udu',ek,u',déjanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00235,tai'tula'udek,tai'tula'udna',ek,na',déjanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00051,kana'llidek,kana'llida',ek,a',ganamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00051,kana'llidek,kana'llidu',ek,u',ganamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00051,kana'llidek,kana'llidna',ek,na',ganamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02182,sipuk'ñapallidek,sipuk'ñapallida',ek,a',somos prisioneros.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02182,sipuk'ñapallidek,sipuk'ñapallidu',ek,u',somos prisioneros.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02182,sipuk'ñapallidek,sipuk'ñapallidna',ek,na',somos prisioneros.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01091,yawichi'winek,yawichi'wina',ek,a',tenía sueño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01091,yawichi'winek,yawichi'winu',ek,u',tenía sueño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01091,yawichi'winek,yawichi'winna',ek,na',tenía sueño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01882,ta'itula'llidek,ta'itula'llida',ek,a',le perdonamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01882,ta'itula'llidek,ta'itula'llidu',ek,u',le perdonamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01882,ta'itula'llidek,ta'itula'llidna',ek,na',le perdonamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00064,yunsu'ku',yunsu'ka',u',a',salgan.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00064,yunsu'ku',yunsu'kek,u',ek,salgan.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00064,yunsu'ku',yunsu'kna',u',na',salgan.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00891,uker'llina',uker'lla',ina',a',se quemaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00891,uker'llina',uker'llek,ina',ek,se quemaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00891,uker'llina',uker'llu',ina',u',se quemaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02213,wa'latapala,wa'latapaa',la,a',estás soñando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02213,wa'latapala,wa'latapaek,la,ek,estás soñando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02213,wa'latapala,wa'latapau',la,u',estás soñando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00607,idunwa',idunwek,a',ek,nademos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00607,idunwa',idunwu',a',u',nademos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00607,idunwa',idunwna',a',na',nademos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01389,a'shupalek,a'shupaa',lek,a',estoy estornudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01389,a'shupalek,a'shupaek,lek,ek,estoy estornudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01389,a'shupalek,a'shupau',lek,u',estoy estornudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01728,ninchichi'nek,ninchichi'na',ek,a',ni idea.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01728,ninchichi'nek,ninchichi'nu',ek,u',ni idea.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01728,ninchichi'nek,ninchichi'nna',ek,na',ni idea.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00814,lansa'palek,lansa'paa',lek,a',estoy bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00814,lansa'palek,lansa'paek,lek,ek,estoy bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00814,lansa'palek,lansa'pau',lek,u',estoy bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00567,yawichi'lek,yawichi'a',lek,a',tengo sueño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00567,yawichi'lek,yawichi'ek,lek,ek,tengo sueño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00567,yawichi'lek,yawichi'u',lek,u',tengo sueño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01110,llinserchapalek,llinserchapaa',lek,a',estoy pintando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01110,llinserchapalek,llinserchapaek,lek,ek,estoy pintando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01110,llinserchapalek,llinserchapau',lek,u',estoy pintando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01392,peklu'deklek,peklu'deka',lek,a',los llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01392,peklu'deklek,peklu'dekek,lek,ek,los llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01392,peklu'deklek,peklu'deku',lek,u',los llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01149,lauk'tawa',lauk'tawek,a',ek,escuchemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01149,lauk'tawa',lauk'tawu',a',u',escuchemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01149,lauk'tawa',lauk'tawna',a',na',escuchemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01436,peclu'echek,peclu'echa',ek,a',lo llamaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01436,peclu'echek,peclu'echu',ek,u',lo llamaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01436,peclu'echek,peclu'echna',ek,na',lo llamaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00361,saka'tulli,saka'tua',lli,a',funcionó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00361,saka'tulli,saka'tuek,lli,ek,funcionó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00361,saka'tulli,saka'tuu',lli,u',funcionó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01255,wer'apallidek,wer'apallida',ek,a',estamos perdiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01255,wer'apallidek,wer'apallidu',ek,u',estamos perdiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01255,wer'apallidek,wer'apallidna',ek,na',estamos perdiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00695,saka'taterwa',saka'taterwek,a',ek,trabajaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00695,saka'taterwa',saka'taterwu',a',u',trabajaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00695,saka'taterwa',saka'taterwna',a',na',trabajaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00038,lau'tulek,lau'tua',lek,a',escuché.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00038,lau'tulek,lau'tuek,lek,ek,escuché.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00038,lau'tulek,lau'tuu',lek,u',escuché.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00893,lansa'llina',lansa'lla',ina',a',bailaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00893,lansa'llina',lansa'llek,ina',ek,bailaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00893,lansa'llina',lansa'llu',ina',u',bailaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02141,inyutapallina',inyutapalla',ina',a',están discutiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02141,inyutapallina',inyutapallek,ina',ek,están discutiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02141,inyutapallina',inyutapallu',ina',u',están discutiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01885,katu'pa'tuwinansu',katu'pa'tuwinana',su',a',deberíamos ayudar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01885,katu'pa'tuwinansu',katu'pa'tuwinanek,su',ek,deberíamos ayudar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01885,katu'pa'tuwinansu',katu'pa'tuwinanu',su',u',deberíamos ayudar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01080,pekklu'lek,pekklu'a',lek,a',lo llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01080,pekklu'lek,pekklu'ek,lek,ek,lo llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01080,pekklu'lek,pekklu'u',lek,u',lo llamé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01131,lansa'per'i'la,lansa'per'i'a',la,a',sigue bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01131,lansa'per'i'la,lansa'per'i'ek,la,ek,sigue bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01131,lansa'per'i'la,lansa'per'i'u',la,u',sigue bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01867,uk'apilellina',uk'apilella',ina',a',vienen.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01867,uk'apilellina',uk'apilellek,ina',ek,vienen.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01867,uk'apilellina',uk'apilellu',ina',u',vienen.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01424,yakana'lek,yakana'a',lek,a',quiero ganar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01424,yakana'lek,yakana'ek,lek,ek,quiero ganar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01424,yakana'lek,yakana'u',lek,u',quiero ganar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02151,saka'tapallina',saka'tapalla',ina',a',están trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02151,saka'tapallina',saka'tapallek,ina',ek,están trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02151,saka'tapallina',saka'tapallu',ina',u',están trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01199,luwanchi'ñina',luwanchi'ña',ina',a',se negaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01199,luwanchi'ñina',luwanchi'ñek,ina',ek,se negaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01199,luwanchi'ñina',luwanchi'ñu',ina',u',se negaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00085,wichi'lek,wichi'a',lek,a',dormí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00085,wichi'lek,wichi'ek,lek,ek,dormí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00085,wichi'lek,wichi'u',lek,u',dormí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01399,wichi'lek,wichi'a',lek,a',me dormí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01399,wichi'lek,wichi'ek,lek,ek,me dormí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01399,wichi'lek,wichi'u',lek,u',me dormí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00101,kuanta',kuantek,a',ek,"yo, también.",manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00101,kuanta',kuantu',a',u',"yo, también.",manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00101,kuanta',kuantna',a',na',"yo, también.",manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00303,tupi'tu'udek,tupi'tu'uda',ek,a',síguenos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00303,tupi'tu'udek,tupi'tu'udu',ek,u',síguenos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00303,tupi'tu'udek,tupi'tu'udna',ek,na',síguenos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01768,tenmiansu'palek,tenmiansu'paa',lek,a',soy principiante.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01768,tenmiansu'palek,tenmiansu'paek,lek,ek,soy principiante.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01768,tenmiansu'palek,tenmiansu'pau',lek,u',soy principiante.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00892,peklu'tullina',peklu'tulla',ina',a',llamaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00892,peklu'tullina',peklu'tullek,ina',ek,llamaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00892,peklu'tullina',peklu'tullu',ina',u',llamaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00193,a'ta'wantulek,a'ta'wantua',lek,a',he terminado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00193,a'ta'wantulek,a'ta'wantuek,lek,ek,he terminado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00193,a'ta'wantulek,a'ta'wantuu',lek,u',he terminado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00329,luantulek,luantua',lek,a',lo necesito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00329,luantulek,luantuek,lek,ek,lo necesito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00329,luantulek,luantuu',lek,u',lo necesito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01046,katu'pa',katu'pek,a',ek,la ayuda.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01046,katu'pa',katu'pu',a',u',la ayuda.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01046,katu'pa',katu'pna',a',na',la ayuda.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02244,ya'wencha'lli,ya'wencha'a',lli,a',quiere venir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02244,ya'wencha'lli,ya'wencha'ek,lli,ek,quiere venir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02244,ya'wencha'lli,ya'wencha'u',lli,u',quiere venir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00546,nampilek,nampia',lek,a',viví,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00546,nampilek,nampiek,lek,ek,viví,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00546,nampilek,nampiu',lek,u',viví,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00123,ñinchitapallidek,ñinchitapallida',ek,a',lo sabemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00123,ñinchitapallidek,ñinchitapallidu',ek,u',lo sabemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00123,ñinchitapallidek,ñinchitapallidna',ek,na',lo sabemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02030,yawelliekwinek,yawelliekwina',ek,a',quise llorar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02030,yawelliekwinek,yawelliekwinu',ek,u',quise llorar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02030,yawelliekwinek,yawelliekwinna',ek,na',quise llorar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01727,ilulek,ilua',lek,a',tengo tos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01727,ilulek,iluek,lek,ek,tengo tos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01727,ilulek,iluu',lek,u',tengo tos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02177,tu'nek'echidek,tu'nek'echida',ek,a',los detendremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02177,tu'nek'echidek,tu'nek'echidu',ek,u',los detendremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02177,tu'nek'echidek,tu'nek'echidna',ek,na',los detendremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00543,lamapu'lek,lamapu'a',lek,a',grité.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00543,lamapu'lek,lamapu'ek,lek,ek,grité.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00543,lamapu'lek,lamapu'u',lek,u',grité.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00298,yawellektama',yawellektamek,a',ek,no lloren.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00298,yawellektama',yawellektamu',a',u',no lloren.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00298,yawellektama',yawellektamna',a',na',no lloren.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00772,ka'api'nek,ka'api'na',ek,a',no como.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00772,ka'api'nek,ka'api'nu',ek,u',no como.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00772,ka'api'nek,ka'api'nna',ek,na',no como.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01444,epa'echek,epa'echa',ek,a',lo llevaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01444,epa'echek,epa'echu',ek,u',lo llevaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01444,epa'echek,epa'echna',ek,na',lo llevaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00782,luwer'chapadeklek,luwer'chapadeka',lek,a',los conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00782,luwer'chapadeklek,luwer'chapadekek,lek,ek,los conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00782,luwer'chapadeklek,luwer'chapadeku',lek,u',los conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02180,lauk'tapallidek,lauk'tapallida',ek,a',estamos escuchando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02180,lauk'tapallidek,lauk'tapallidu',ek,u',estamos escuchando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02180,lauk'tapallidek,lauk'tapallidna',ek,na',estamos escuchando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00040,lau'tullina',lau'tulla',ina',a',escucharon.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00040,lau'tullina',lau'tullek,ina',ek,escucharon.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00040,lau'tullina',lau'tullu',ina',u',escucharon.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01588,llia'terwa',llia'terwek,a',ek,nos quedamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01588,llia'terwa',llia'terwu',a',u',nos quedamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01588,llia'terwa',llia'terwna',a',na',nos quedamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01538,kanañina',kanaña',ina',a',lo encontraron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01538,kanañina',kanañek,ina',ek,lo encontraron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01538,kanañina',kanañu',ina',u',lo encontraron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00896,inwiperi'llina',inwiperi'lla',ina',a',se abrazaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00896,inwiperi'llina',inwiperi'llek,ina',ek,se abrazaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00896,inwiperi'llina',inwiperi'llu',ina',u',se abrazaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00768,mapa'lek,mapa'a',lek,a',lo compré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00768,mapa'lek,mapa'ek,lek,ek,lo compré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00768,mapa'lek,mapa'u',lek,u',lo compré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00775,sanek'wantuwinek,sanek'wantuwina',ek,a',tenía frío.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00775,sanek'wantuwinek,sanek'wantuwinu',ek,u',tenía frío.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00775,sanek'wantuwinek,sanek'wantuwinna',ek,na',tenía frío.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00830,wa'tentapalek,wa'tentapaa',lek,a',estoy esperando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00830,wa'tentapalek,wa'tentapaek,lek,ek,estoy esperando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00830,wa'tentapalek,wa'tentapau',lek,u',estoy esperando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00787,insek'kita'kasu'ñapalli,insek'kita'kasu'ñapaa',lli,a',debo esconderme.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00787,insek'kita'kasu'ñapalli,insek'kita'kasu'ñapaek,lli,ek,debo esconderme.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00787,insek'kita'kasu'ñapalli,insek'kita'kasu'ñapau',lli,u',debo esconderme.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01806,pada'sa'tapalli,pada'sa'tapaa',lli,a',está vibrando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01806,pada'sa'tapalli,pada'sa'tapaek,lli,ek,está vibrando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01806,pada'sa'tapalli,pada'sa'tapau',lli,u',está vibrando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02202,wa'danpilapilundek,wa'danpilapilunda',ek,a',nos traicionaste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02202,wa'danpilapilundek,wa'danpilapilundu',ek,u',nos traicionaste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02202,wa'danpilapilundek,wa'danpilapilundna',ek,na',nos traicionaste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00088,wichi'echek,wichi'echa',ek,a',voy a dormir,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00088,wichi'echek,wichi'echu',ek,u',voy a dormir,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00088,wichi'echek,wichi'echna',ek,na',voy a dormir,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00156,ekte'chechuna',ekte'chechua',na',a',se adelantarán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00156,ekte'chechuna',ekte'chechuek,na',ek,se adelantarán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00156,ekte'chechuna',ekte'chechuu',na',u',se adelantarán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00349,a'wer'lek,a'wer'a',lek,a',he perdido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00349,a'wer'lek,a'wer'ek,lek,ek,he perdido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00349,a'wer'lek,a'wer'u',lek,u',he perdido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01441,alli'echek,alli'echa',ek,a',lo demostraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01441,alli'echek,alli'echu',ek,u',lo demostraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01441,alli'echek,alli'echna',ek,na',lo demostraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01443,alli'echek,alli'echa',ek,a',le mostraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01443,alli'echek,alli'echu',ek,u',le mostraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01443,alli'echek,alli'echna',ek,na',le mostraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01129,saka'tapalli,saka'tapaa',lli,a',está funcionando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01129,saka'tapalli,saka'tapaek,lli,ek,está funcionando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01129,saka'tapalli,saka'tapau',lli,u',está funcionando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00388,lli'awa',lli'awek,a',ek,veamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00388,lli'awa',lli'awu',a',u',veamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00388,lli'awa',lli'awna',a',na',veamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01914,tumu'tulundek,tumu'tulunda',ek,a',nos mentiste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01914,tumu'tulundek,tumu'tulundu',ek,u',nos mentiste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01914,tumu'tulundek,tumu'tulundna',ek,na',nos mentiste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02203,tumu'tulundek,tumu'tulunda',ek,a',nos engañaste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02203,tumu'tulundek,tumu'tulundu',ek,u',nos engañaste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02203,tumu'tulundek,tumu'tulundna',ek,na',nos engañaste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01721,yanpu'lek,yanpu'a',lek,a',me divorcié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01721,yanpu'lek,yanpu'ek,lek,ek,me divorcié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01721,yanpu'lek,yanpu'u',lek,u',me divorcié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00980,kaluwi'pala,kaluwi'paa',la,a',estás enfermo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00980,kaluwi'pala,kaluwi'paek,la,ek,estás enfermo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00980,kaluwi'pala,kaluwi'pau',la,u',estás enfermo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01930,kaluwi'pala,kaluwi'paa',la,a',estás herida.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01930,kaluwi'pala,kaluwi'paek,la,ek,estás herida.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01930,kaluwi'pala,kaluwi'pau',la,u',estás herida.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00177,lachek'apalek,lachek'apaa',lek,a',lo entiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00177,lachek'apalek,lachek'apaek,lek,ek,lo entiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00177,lachek'apalek,lachek'apau',lek,u',lo entiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02050,lektapaleksa',lektapaleksek,a',ek,solo pregunto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02050,lektapaleksa',lektapaleksu',a',u',solo pregunto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02050,lektapaleksa',lektapaleksna',a',na',solo pregunto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01142,llinsecher'pi'la,llinsecher'pi'a',la,a',sigue escribiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01142,llinsecher'pi'la,llinsecher'pi'ek,la,ek,sigue escribiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01142,llinsecher'pi'la,llinsecher'pi'u',la,u',sigue escribiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02026,yalansa'lek,yalansa'a',lek,a',quiero bailar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02026,yalansa'lek,yalansa'ek,lek,ek,quiero bailar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02026,yalansa'lek,yalansa'u',lek,u',quiero bailar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01582,lansa'pallidek,lansa'pallida',ek,a',estamos bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01582,lansa'pallidek,lansa'pallidu',ek,u',estamos bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01582,lansa'pallidek,lansa'pallidna',ek,na',estamos bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00269,lli'dek'ku',lli'dek'ka',u',a',obsérvalos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00269,lli'dek'ku',lli'dek'kek,u',ek,obsérvalos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00269,lli'dek'ku',lli'dek'kna',u',na',obsérvalos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00590,tanluwatapalli,tanluwatapaa',lli,a',hace viento.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00590,tanluwatapalli,tanluwatapaek,lli,ek,hace viento.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00590,tanluwatapalli,tanluwatapau',lli,u',hace viento.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00845,tanluwatapalli,tanluwatapaa',lli,a',hace fresco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00845,tanluwatapalli,tanluwatapaek,lli,ek,hace fresco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00845,tanluwatapalli,tanluwatapau',lli,u',hace fresco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02186,a'wer'llidek,a'wer'llida',ek,a',los perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02186,a'wer'llidek,a'wer'llidu',ek,u',los perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02186,a'wer'llidek,a'wer'llidna',ek,na',los perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00903,da'llina',da'lla',ina',a',pasearon.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00903,da'llina',da'llek,ina',ek,pasearon.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00903,da'llina',da'llu',ina',u',pasearon.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01368,musha'lli,musha'a',lli,a',la besó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01368,musha'lli,musha'ek,lli,ek,la besó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01368,musha'lli,musha'u',lli,u',la besó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00501,chinku'lli,chinku'a',lli,a',tosió.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00501,chinku'lli,chinku'ek,lli,ek,tosió.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00501,chinku'lli,chinku'u',lli,u',tosió.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00946,we'inutulidek,we'inutulida',ek,a',lo sentimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00946,we'inutulidek,we'inutulidu',ek,u',lo sentimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00946,we'inutulidek,we'inutulidna',ek,na',lo sentimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01426,yupawinek,yupawina',ek,a',estaba furioso.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01426,yupawinek,yupawinu',ek,u',estaba furioso.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01426,yupawinek,yupawinna',ek,na',estaba furioso.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00358,a'aper'lli,a'aper'a',lli,a',fracasó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00358,a'aper'lli,a'aper'ek,lli,ek,fracasó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00358,a'aper'lli,a'aper'u',lli,u',fracasó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02083,yamerladaper'i'la,yamerladaper'i'a',la,a',sigue sonriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02083,yamerladaper'i'la,yamerladaper'i'ek,la,ek,sigue sonriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02083,yamerladaper'i'la,yamerladaper'i'u',la,u',sigue sonriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00857,pa'awa',pa'awek,a',ek,vayámonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00857,pa'awa',pa'awu',a',u',vayámonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00857,pa'awa',pa'awna',a',na',vayámonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01856,lek'kllina',lek'klla',ina',a',le preguntaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01856,lek'kllina',lek'kllek,ina',ek,le preguntaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01856,lek'kllina',lek'kllu',ina',u',le preguntaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02003,lauk'i'nek,lauk'i'na',ek,a',no escuché.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02003,lauk'i'nek,lauk'i'nu',ek,u',no escuché.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02003,lauk'i'nek,lauk'i'nna',ek,na',no escuché.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01592,kana'tapalekwa',kana'tapalekwek,a',ek,estamos ganando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01592,kana'tapalekwa',kana'tapalekwu',a',u',estamos ganando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01592,kana'tapalekwa',kana'tapalekwna',a',na',estamos ganando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01417,patenchulek,patenchua',lek,a',lo abofeteé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01417,patenchulek,patenchuek,lek,ek,lo abofeteé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01417,patenchulek,patenchuu',lek,u',lo abofeteé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00524,awer'lek,awer'a',lek,a',me perdí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00524,awer'lek,awer'ek,lek,ek,me perdí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00524,awer'lek,awer'u',lek,u',me perdí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00643,dekllina',deklla',ina',a',votaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00643,dekllina',dekllek,ina',ek,votaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00643,dekllina',dekllu',ina',u',votaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01854,mukankaninpu',mukankaninpa',u',a',qué malo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01854,mukankaninpu',mukankaninpek,u',ek,qué malo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01854,mukankaninpu',mukankaninpna',u',na',qué malo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02043,dunker'echek,dunker'echa',ek,a',lo buscaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02043,dunker'echek,dunker'echu',ek,u',lo buscaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02043,dunker'echek,dunker'echna',ek,na',lo buscaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01826,du'awa',du'awek,a',ek,sentémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01826,du'awa',du'awu',a',u',sentémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01826,du'awa',du'awna',a',na',sentémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01751,yasaka'tulek,yasaka'tua',lek,a',quiero trabajar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01751,yasaka'tulek,yasaka'tuek,lek,ek,quiero trabajar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01751,yasaka'tulek,yasaka'tuu',lek,u',quiero trabajar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01533,nanasa',nanasek,a',ek,es suficiente.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01533,nanasa',nanasu',a',u',es suficiente.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01533,nanasa',nanasna',a',na',es suficiente.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02059,nanasa',nanasek,a',ek,suficiente.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02059,nanasa',nanasu',a',u',suficiente.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02059,nanasa',nanasna',a',na',suficiente.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00975,luantapala,luantapaa',la,a',lo necesitas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00975,luantapala,luantapaek,la,ek,lo necesitas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00975,luantapala,luantapau',la,u',lo necesitas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00777,yulek,yua',lek,a',me enfadé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00777,yulek,yuek,lek,ek,me enfadé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00777,yulek,yuu',lek,u',me enfadé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01150,pa'inpu'wa',pa'inpu'wek,a',ek,no vayamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01150,pa'inpu'wa',pa'inpu'wu',a',u',no vayamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01150,pa'inpu'wa',pa'inpu'wna',a',na',no vayamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00826,lunpalek,lunpaa',lek,a',estoy leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00826,lunpalek,lunpaek,lek,ek,estoy leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00826,lunpalek,lunpau',lek,u',estoy leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01703,chimidek'tulli,chimidek'tua',lli,a',se ahogó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01703,chimidek'tulli,chimidek'tuek,lli,ek,se ahogó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01703,chimidek'tulli,chimidek'tuu',lli,u',se ahogó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00552,nu'techek,nu'techa',ek,a',lo haré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00552,nu'techek,nu'techu',ek,u',lo haré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00552,nu'techek,nu'techna',ek,na',lo haré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00817,weranpi'nek,weranpi'na',ek,a',estoy ayunando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00817,weranpi'nek,weranpi'nu',ek,u',estoy ayunando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00817,weranpi'nek,weranpi'nna',ek,na',estoy ayunando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00033,ta'itula'lek,ta'itula'a',lek,a',renuncié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00033,ta'itula'lek,ta'itula'ek,lek,ek,renuncié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00033,ta'itula'lek,ta'itula'u',lek,u',renuncié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02173,yadekllidek,yadekllida',ek,a',queremos votar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02173,yadekllidek,yadekllidu',ek,u',queremos votar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02173,yadekllidek,yadekllidna',ek,na',queremos votar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00410,dekundunlli,dekunduna',lli,a',anda.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00410,dekundunlli,dekundunek,lli,ek,anda.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00410,dekundunlli,dekundunu',lli,u',anda.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00639,llia'llina',llia'lla',ina',a',se quedaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00639,llia'llina',llia'llek,ina',ek,se quedaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00639,llia'llina',llia'llu',ina',u',se quedaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00640,llia'llina',llia'lla',ina',a',se mantuvieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00640,llia'llina',llia'llek,ina',ek,se mantuvieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00640,llia'llina',llia'llu',ina',u',se mantuvieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01774,wanerapalek,wanerapaa',lek,a',estoy parado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01774,wanerapalek,wanerapaek,lek,ek,estoy parado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01774,wanerapalek,wanerapau',lek,u',estoy parado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00541,lli'inutapalek,lli'inutapaa',lek,a',me acuerdo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00541,lli'inutapalek,lli'inutapaek,lek,ek,me acuerdo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00541,lli'inutapalek,lli'inutapau',lek,u',me acuerdo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01753,wa'latapawinek,wa'latapawina',ek,a',estaba soñando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01753,wa'latapawinek,wa'latapawinu',ek,u',estaba soñando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01753,wa'latapawinek,wa'latapawinna',ek,na',estaba soñando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00766,a'perchapalek,a'perchapaa',lek,a',estoy jodiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00766,a'perchapalek,a'perchapaek,lek,ek,estoy jodiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00766,a'perchapalek,a'perchapau',lek,u',estoy jodiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00446,aper'llidek,aper'llida',ek,a',fallamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00446,aper'llidek,aper'llidu',ek,u',fallamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00446,aper'llidek,aper'llidna',ek,na',fallamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00141,yalenmekta',yalenmektek,a',ek,estate quieto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00141,yalenmekta',yalenmektu',a',u',estate quieto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00141,yalenmekta',yalenmektna',a',na',estate quieto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00827,neriapalek,neriapaa',lek,a',estoy descansando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00827,neriapalek,neriapaek,lek,ek,estoy descansando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00827,neriapalek,neriapau',lek,u',estoy descansando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00547,nanalatekapalek,nanalatekapaa',lek,a',eso creo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00547,nanalatekapalek,nanalatekapaek,lek,ek,eso creo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00547,nanalatekapalek,nanalatekapau',lek,u',eso creo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02031,yapanwilek'tuwinek,yapanwilek'tuwina',ek,a',quise pagar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02031,yapanwilek'tuwinek,yapanwilek'tuwinu',ek,u',quise pagar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02031,yapanwilek'tuwinek,yapanwilek'tuwinna',ek,na',quise pagar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01509,ek'ker'chawa',ek'ker'chawek,a',ek,abrámoslo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01509,ek'ker'chawa',ek'ker'chawu',a',u',abrámoslo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01509,ek'ker'chawa',ek'ker'chawna',a',na',abrámoslo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01704,we'inutapalli,we'inutapaa',lli,a',está deprimido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01704,we'inutapalli,we'inutapaek,lli,ek,está deprimido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01704,we'inutapalli,we'inutapau',lli,u',está deprimido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00219,kana'tulek,kana'tua',lek,a',gané.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00219,kana'tulek,kana'tuek,lek,ek,gané.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00219,kana'tulek,kana'tuu',lek,u',gané.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00087,wichin'dek'chek,wichin'dek'cha',ek,a',me voy a dormir,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00087,wichin'dek'chek,wichin'dek'chu',ek,u',me voy a dormir,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00087,wichin'dek'chek,wichin'dek'chna',ek,na',me voy a dormir,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01060,mallia'palek,mallia'paa',lek,a',estoy rezando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01060,mallia'palek,mallia'paek,lek,ek,estoy rezando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01060,mallia'palek,mallia'pau',lek,u',estoy rezando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00513,yan'katektulek,yan'katektua',lek,a',lo admito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00513,yan'katektulek,yan'katektuek,lek,ek,lo admito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00513,yan'katektulek,yan'katektuu',lek,u',lo admito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01408,aper'lek,aper'a',lek,a',he pecado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01408,aper'lek,aper'ek,lek,ek,he pecado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01408,aper'lek,aper'u',lek,u',he pecado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01471,nupek'tulli,nupek'tua',lli,a',se quebró.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01471,nupek'tulli,nupek'tuek,lli,ek,se quebró.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01471,nupek'tulli,nupek'tuu',lli,u',se quebró.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00523,kananek,kanana',ek,a',lo encontré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00523,kananek,kananu',ek,u',lo encontré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00523,kananek,kananna',ek,na',lo encontré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01415,kananek,kanana',ek,a',la rescaté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01415,kananek,kananu',ek,u',la rescaté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01415,kananek,kananna',ek,na',la rescaté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01416,kananek,kanana',ek,a',lo rescaté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01416,kananek,kananu',ek,u',lo rescaté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01416,kananek,kananna',ek,na',lo rescaté.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01069,luver'chi'nek,luver'chi'na',ek,a',lo desconozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01069,luver'chi'nek,luver'chi'nu',ek,u',lo desconozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01069,luver'chi'nek,luver'chi'nna',ek,na',lo desconozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02046,lachek'apilalek,lachek'apilaa',lek,a',estoy comprendiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02046,lachek'apilalek,lachek'apilaek,lek,ek,estoy comprendiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02046,lachek'apilalek,lachek'apilau',lek,u',estoy comprendiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01715,lli'apalek,lli'apaa',lek,a',lo noto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01715,lli'apalek,lli'apaek,lek,ek,lo noto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01715,lli'apalek,lli'apau',lek,u',lo noto.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00447,pinaner'llidek,pinaner'llida',ek,a',nos olvidamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00447,pinaner'llidek,pinaner'llidu',ek,u',nos olvidamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00447,pinaner'llidek,pinaner'llidna',ek,na',nos olvidamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02172,yalunñidek,yalunñida',ek,a',queremos hablar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02172,yalunñidek,yalunñidu',ek,u',queremos hablar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02172,yalunñidek,yalunñidna',ek,na',queremos hablar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01135,luntaper'i'la,luntaper'i'a',la,a',siga leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01135,luntaper'i'la,luntaper'i'ek,la,ek,siga leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01135,luntaper'i'la,luntaper'i'u',la,u',siga leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01396,wa'tenchi'nek,wa'tenchi'na',ek,a',no esperé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01396,wa'tenchi'nek,wa'tenchi'nu',ek,u',no esperé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01396,wa'tenchi'nek,wa'tenchi'nna',ek,na',no esperé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00019,yamerku',yamerka',u',a',sonrían.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00019,yamerku',yamerkek,u',ek,sonrían.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00019,yamerku',yamerkna',u',na',sonrían.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02176,dei'techuner'kudek,dei'techuner'kuda',ek,a',seremos asesinados.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02176,dei'techuner'kudek,dei'techuner'kudu',ek,u',seremos asesinados.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02176,dei'techuner'kudek,dei'techuner'kudna',ek,na',seremos asesinados.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00694,wa'tentaterwa',wa'tentaterwek,a',ek,esperaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00694,wa'tentaterwa',wa'tentaterwu',a',u',esperaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00694,wa'tentaterwa',wa'tentaterwna',a',na',esperaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01472,nu'la'lli,nu'la'a',lli,a',empeora.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01472,nu'la'lli,nu'la'ek,lli,ek,empeora.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01472,nu'la'lli,nu'la'u',lli,u',empeora.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00363,sanek'apalli,sanek'apaa',lli,a',está frío.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00363,sanek'apalli,sanek'apaek,lli,ek,está frío.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00363,sanek'apalli,sanek'apau',lli,u',está frío.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01051,insek'lutenapalli,insek'lutenapaa',lli,a',está sufriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01051,insek'lutenapalli,insek'lutenapaek,lli,ek,está sufriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01051,insek'lutenapalli,insek'lutenapau',lli,u',está sufriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01137,teka'pa'ku'i'la,teka'pa'ku'i'a',la,a',sigan corriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01137,teka'pa'ku'i'la,teka'pa'ku'i'ek,la,ek,sigan corriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01137,teka'pa'ku'i'la,teka'pa'ku'i'u',la,u',sigan corriendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00179,luwanchi'nek,luwanchi'na',ek,a',me niego.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00179,luwanchi'nek,luwanchi'nu',ek,u',me niego.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00179,luwanchi'nek,luwanchi'nna',ek,na',me niego.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01568,aperlliner'kudek,aperlliner'kuda',ek,a',nos robaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01568,aperlliner'kudek,aperlliner'kudu',ek,u',nos robaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01568,aperlliner'kudek,aperlliner'kudna',ek,na',nos robaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00854,lansa'wa',lansa'wek,a',ek,bailemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00854,lansa'wa',lansa'wu',a',u',bailemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00854,lansa'wa',lansa'wna',a',na',bailemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01825,impaleriawa',impaleriawek,a',ek,practiquemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01825,impaleriawa',impaleriawu',a',u',practiquemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01825,impaleriawa',impaleriawna',a',na',practiquemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00689,tantenlek'wa',tantenlek'wek,a',ek,lo queremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00689,tantenlek'wa',tantenlek'wu',a',u',lo queremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00689,tantenlek'wa',tantenlek'wna',a',na',lo queremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01593,saka'tapalekwa',saka'tapalekwek,a',ek,estamos trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01593,saka'tapalekwa',saka'tapalekwu',a',u',estamos trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01593,saka'tapalekwa',saka'tapalekwna',a',na',estamos trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00221,ikerlli,ikera',lli,a',duele.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00221,ikerlli,ikerek,lli,ek,duele.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00221,ikerlli,ikeru',lli,u',duele.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00158,da'encha'ku',da'encha'ka',u',a',entren.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00158,da'encha'ku',da'encha'kek,u',ek,entren.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00158,da'encha'ku',da'encha'kna',u',na',entren.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01425,inlu'uktuwinek,inlu'uktuwina',ek,a',tuve cuidado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01425,inlu'uktuwinek,inlu'uktuwinu',ek,u',tuve cuidado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01425,inlu'uktuwinek,inlu'uktuwinna',ek,na',tuve cuidado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02027,yaekpa'lek,yaekpa'a',lek,a',quiero conducir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02027,yaekpa'lek,yaekpa'ek,lek,ek,quiero conducir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02027,yaekpa'lek,yaekpa'u',lek,u',quiero conducir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02028,yaekpa'lek,yaekpa'a',lek,a',quiero manejar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02028,yaekpa'lek,yaekpa'ek,lek,ek,quiero manejar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02028,yaekpa'lek,yaekpa'u',lek,u',quiero manejar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01446,lli'echek,lli'echa',ek,a',lo miraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01446,lli'echek,lli'echu',ek,u',lo miraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01446,lli'echek,lli'echna',ek,na',lo miraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01071,kanandeklek,kanandeka',lek,a',los encontré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01071,kanandeklek,kanandekek,lek,ek,los encontré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01071,kanandeklek,kanandeku',lek,u',los encontré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00356,uker'lli,uker'a',lli,a',se quemó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00356,uker'lli,uker'ek,lli,ek,se quemó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00356,uker'lli,uker'u',lli,u',se quemó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00034,saka'tapalek,saka'tapaa',lek,a',estoy trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00034,saka'tapalek,saka'tapaek,lek,ek,estoy trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00034,saka'tapalek,saka'tapau',lek,u',estoy trabajando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00224,wa'danpintek,wa'danpinta',ek,a',es divertido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00224,wa'danpintek,wa'danpintu',ek,u',es divertido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00224,wa'danpintek,wa'danpintna',ek,na',es divertido.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00086,wicha'palek,wicha'paa',lek,a',durmiendo,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00086,wicha'palek,wicha'paek,lek,ek,durmiendo,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00086,wicha'palek,wicha'pau',lek,u',durmiendo,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01132,iwa'taper'i'la,iwa'taper'i'a',la,a',sigue cavando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01132,iwa'taper'i'la,iwa'taper'i'ek,la,ek,sigue cavando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01132,iwa'taper'i'la,iwa'taper'i'u',la,u',sigue cavando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01748,yayunsu'lek,yayunsu'a',lek,a',quiero renunciar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01748,yayunsu'lek,yayunsu'ek,lek,ek,quiero renunciar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01748,yayunsu'lek,yayunsu'u',lek,u',quiero renunciar.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00790,luwantudek'lek,luwantudek'a',lek,a',los necesito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00790,luwantudek'lek,luwantudek'ek,lek,ek,los necesito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00790,luwantudek'lek,luwantudek'u',lek,u',los necesito.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01101,inapilante'ñapalek,inapilante'ñapaa',lek,a',estoy descalzo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01101,inapilante'ñapalek,inapilante'ñapaek,lek,ek,estoy descalzo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01101,inapilante'ñapalek,inapilante'ñapau',lek,u',estoy descalzo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00779,manennu'tapi'nek,manennu'tapi'na',ek,a',tengo tiempo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00779,manennu'tapi'nek,manennu'tapi'nu',ek,u',tengo tiempo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00779,manennu'tapi'nek,manennu'tapi'nna',ek,na',tengo tiempo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01771,wiuk'apalek,wiuk'apaa',lek,a',estoy apurado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01771,wiuk'apalek,wiuk'apaek,lek,ek,estoy apurado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01771,wiuk'apalek,wiuk'apau',lek,u',estoy apurado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00637,tumu'llina',tumu'lla',ina',a',engañaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00637,tumu'llina',tumu'llek,ina',ek,engañaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00637,tumu'llina',tumu'llu',ina',u',engañaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00969,tumu'llina',tumu'lla',ina',a',hicieron trampa.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00969,tumu'llina',tumu'llek,ina',ek,hicieron trampa.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00969,tumu'llina',tumu'llu',ina',u',hicieron trampa.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02010,a'shupalekpi'la,a'shupalekpi'a',la,a',sigo estornudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02010,a'shupalekpi'la,a'shupalekpi'ek,la,ek,sigo estornudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02010,a'shupalekpi'la,a'shupalekpi'u',la,u',sigo estornudando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01160,yamerladaku',yamerladaka',u',a',sonrian.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01160,yamerladaku',yamerladakek,u',ek,sonrian.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01160,yamerladaku',yamerladakna',u',na',sonrian.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00448,lunñidek,lunñida',ek,a',conversamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00448,lunñidek,lunñidu',ek,u',conversamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00448,lunñidek,lunñidna',ek,na',conversamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00332,pi'ser'katulek,pi'ser'katua',lek,a',me tropecé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00332,pi'ser'katulek,pi'ser'katuek,lek,ek,me tropecé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00332,pi'ser'katulek,pi'ser'katuu',lek,u',me tropecé.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00564,ku'aper'wi'nek,ku'aper'wi'na',ek,a',estoy soltero.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00564,ku'aper'wi'nek,ku'aper'wi'nu',ek,u',estoy soltero.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00564,ku'aper'wi'nek,ku'aper'wi'nna',ek,na',estoy soltero.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02128,werañina',weraña',ina',a',cenaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02128,werañina',werañek,ina',ek,cenaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02128,werañina',werañu',ina',u',cenaron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02020,luwer'chulek,luwer'chua',lek,a',lo reconozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02020,luwer'chulek,luwer'chuek,lek,ek,lo reconozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02020,luwer'chulek,luwer'chuu',lek,u',lo reconozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01890,llinserllidek,llinserllida',ek,a',lo pintaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01890,llinserllidek,llinserllidu',ek,u',lo pintaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01890,llinserllidek,llinserllidna',ek,na',lo pintaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00538,lu'wanek,lu'wana',ek,a',lo extraño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00538,lu'wanek,lu'wanu',ek,u',lo extraño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00538,lu'wanek,lu'wanna',ek,na',lo extraño.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00430,anu'llina',anu'lla',ina',a',cayeron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00430,anu'llina',anu'llek,ina',ek,cayeron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00430,anu'llina',anu'llu',ina',u',cayeron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01239,tanten'ñidek,tanten'ñida',ek,a',los amamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01239,tanten'ñidek,tanten'ñidu',ek,u',los amamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01239,tanten'ñidek,tanten'ñidna',ek,na',los amamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00431,kana'chi'ñina',kana'chi'ña',ina',a',perdieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00431,kana'chi'ñina',kana'chi'ñek,ina',ek,perdieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00431,kana'chi'ñina',kana'chi'ñu',ina',u',perdieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00370,ta'wan'tulli,ta'wan'tua',lli,a',se terminó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00370,ta'wan'tulli,ta'wan'tuek,lli,ek,se terminó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00370,ta'wan'tulli,ta'wan'tuu',lli,u',se terminó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02001,iluwinek,iluwina',ek,a',me resfrié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02001,iluwinek,iluwinu',ek,u',me resfrié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02001,iluwinek,iluwinna',ek,na',me resfrié.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00532,tantenwinek,tantenwina',ek,a',me gustó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00532,tantenwinek,tantenwinu',ek,u',me gustó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00532,tantenwinek,tantenwinna',ek,na',me gustó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00785,tantenwinek,tantenwina',ek,a',la amaba.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00785,tantenwinek,tantenwinu',ek,u',la amaba.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00785,tantenwinek,tantenwinna',ek,na',la amaba.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01066,tumui'nek,tumui'na',ek,a',no mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01066,tumui'nek,tumui'nu',ek,u',no mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01066,tumui'nek,tumui'nna',ek,na',no mentí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02074,yiennichi'nek,yiennichi'na',ek,a',es imposible.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02074,yiennichi'nek,yiennichi'nu',ek,u',es imposible.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02074,yiennichi'nek,yiennichi'nna',ek,na',es imposible.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01058,yañinchitulek,yañinchitua',lek,a',quiero saberlo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01058,yañinchitulek,yañinchituek,lek,ek,quiero saberlo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01058,yañinchitulek,yañinchituu',lek,u',quiero saberlo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02029,yañinchitulek,yañinchitua',lek,a',quiero aprender.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02029,yañinchitulek,yañinchituek,lek,ek,quiero aprender.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02029,yañinchitulek,yañinchituu',lek,u',quiero aprender.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01092,adenche'chek,adenche'cha',ek,a',volveré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01092,adenche'chek,adenche'chu',ek,u',volveré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01092,adenche'chek,adenche'chna',ek,na',volveré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00270,pa'aterwa',pa'aterwek,a',ek,iremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00270,pa'aterwa',pa'aterwu',a',u',iremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00270,pa'aterwa',pa'aterwna',a',na',iremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00687,nu'tulek'wa',nu'tulek'wek,a',ek,lo hicimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00687,nu'tulek'wa',nu'tulek'wu',a',u',lo hicimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00687,nu'tulek'wa',nu'tulek'wna',a',na',lo hicimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00697,a'ta'wantullidek,a'ta'wantullida',ek,a',terminamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00697,a'ta'wantullidek,a'ta'wantullidu',ek,u',terminamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00697,a'ta'wantullidek,a'ta'wantullidna',ek,na',terminamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00528,luwer'chapalek,luwer'chapaa',lek,a',la conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00528,luwer'chapalek,luwer'chapaek,lek,ek,la conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00528,luwer'chapalek,luwer'chapau',lek,u',la conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00529,luwer'chapalek,luwer'chapaa',lek,a',lo conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00529,luwer'chapalek,luwer'chapaek,lek,ek,lo conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00529,luwer'chapalek,luwer'chapau',lek,u',lo conozco.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02174,ekuanñiwiñidek,ekuanñiwiñida',ek,a',éramos amigos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02174,ekuanñiwiñidek,ekuanñiwiñidu',ek,u',éramos amigos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02174,ekuanñiwiñidek,ekuanñiwiñidna',ek,na',éramos amigos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01567,ape'chuwiñiner'kudek,ape'chuwiñiner'kuda',ek,a',fuimos robados.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01567,ape'chuwiñiner'kudek,ape'chuwiñiner'kudu',ek,u',fuimos robados.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01567,ape'chuwiñiner'kudek,ape'chuwiñiner'kudna',ek,na',fuimos robados.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02140,na'pitechuna',na'pitechua',na',a',responderán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02140,na'pitechuna',na'pitechuek,na',ek,responderán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02140,na'pitechuna',na'pitechuu',na',u',responderán.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00056,peklu'udek,peklu'uda',ek,a',llámanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00056,peklu'udek,peklu'udu',ek,u',llámanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00056,peklu'udek,peklu'udna',ek,na',llámanos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00585,nanpipalli,nanpipaa',lli,a',está vivo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00585,nanpipalli,nanpipaek,lli,ek,está vivo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00585,nanpipalli,nanpipau',lli,u',está vivo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01367,lunta'palli,lunta'paa',lli,a',está leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01367,lunta'palli,lunta'paek,lli,ek,está leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01367,lunta'palli,lunta'pau',lli,u',está leyendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01272,llipu'tula,llipu'tua',la,a',lo heriste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01272,llipu'tula,llipu'tuek,la,ek,lo heriste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01272,llipu'tula,llipu'tuu',la,u',lo heriste.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00559,werampalek,werampaa',lek,a',estoy comiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00559,werampalek,werampaek,lek,ek,estoy comiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00559,werampalek,werampau',lek,u',estoy comiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01247,yennichi'nek'wa',yennichi'nek'wek,a',ek,nos rendimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01247,yennichi'nek'wa',yennichi'nek'wu',a',u',nos rendimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01247,yennichi'nek'wa',yennichi'nek'wna',a',na',nos rendimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01413,kalutulek,kalutua',lek,a',preparé cena.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01413,kalutulek,kalutuek,lek,ek,preparé cena.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01413,kalutulek,kalutuu',lek,u',preparé cena.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00968,tumu'lli,tumu'a',lli,a',hizo trampa.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00968,tumu'lli,tumu'ek,lli,ek,hizo trampa.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00968,tumu'lli,tumu'u',lli,u',hizo trampa.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00133,kana'tula,kana'tua',la,a',has ganado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00133,kana'tula,kana'tuek,la,ek,has ganado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00133,kana'tula,kana'tuu',la,u',has ganado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01120,tenmiansu'lli,tenmiansu'a',lli,a',ha empezado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01120,tenmiansu'lli,tenmiansu'ek,lli,ek,ha empezado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01120,tenmiansu'lli,tenmiansu'u',lli,u',ha empezado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01121,tenmiansu'lli,tenmiansu'a',lli,a',empezó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01121,tenmiansu'lli,tenmiansu'ek,lli,ek,empezó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01121,tenmiansu'lli,tenmiansu'u',lli,u',empezó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01122,tenmiansu'lli,tenmiansu'a',lli,a',comenzó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01122,tenmiansu'lli,tenmiansu'ek,lli,ek,comenzó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01122,tenmiansu'lli,tenmiansu'u',lli,u',comenzó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01235,insek'diperlekwa',insek'diperlekwek,a',ek,nos preparamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01235,insek'diperlekwa',insek'diperlekwu',a',u',nos preparamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01235,insek'diperlekwa',insek'diperlekwna',a',na',nos preparamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01242,luwantullidek,luwantullida',ek,a',lo necesitamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01242,luwantullidek,luwantullidu',ek,u',lo necesitamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01242,luwantullidek,luwantullidna',ek,na',lo necesitamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00805,wa'tentechek,wa'tentecha',ek,a',esperaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00805,wa'tentechek,wa'tentechu',ek,u',esperaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00805,wa'tentechek,wa'tentechna',ek,na',esperaré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02100,luper'awa',luper'awek,a',ek,emborrachémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02100,luper'awa',luper'awu',a',u',emborrachémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02100,luper'awa',luper'awna',a',na',emborrachémonos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00314,yen'nichi'nek,yen'nichi'na',ek,a',estoy ocupada.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00314,yen'nichi'nek,yen'nichi'nu',ek,u',estoy ocupada.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00314,yen'nichi'nek,yen'nichi'nna',ek,na',estoy ocupada.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00315,yen'nichi'nek,yen'nichi'na',ek,a',estoy ocupado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00315,yen'nichi'nek,yen'nichi'nu',ek,u',estoy ocupado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00315,yen'nichi'nek,yen'nichi'nna',ek,na',estoy ocupado.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01701,wencha'winsu',wencha'wina',su',a',debería venir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01701,wencha'winsu',wencha'winek,su',ek,debería venir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01701,wencha'winsu',wencha'winu',su',u',debería venir.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01722,sakek'lek,sakek'a',lek,a',me divertí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01722,sakek'lek,sakek'ek,lek,ek,me divertí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01722,sakek'lek,sakek'u',lek,u',me divertí.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01438,dei'techek,dei'techa',ek,a',lo mataré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01438,dei'techek,dei'techu',ek,u',lo mataré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01438,dei'techek,dei'techna',ek,na',lo mataré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01439,dei'techek,dei'techa',ek,a',le mataré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01439,dei'techek,dei'techu',ek,u',le mataré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01439,dei'techek,dei'techna',ek,na',le mataré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01435,mape'chek,mape'cha',ek,a',lo compraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01435,mape'chek,mape'chu',ek,u',lo compraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01435,mape'chek,mape'chna',ek,na',lo compraré.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01694,apinta'a'tekalli,apinta'a'tekaa',lli,a',él aceleró.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01694,apinta'a'tekalli,apinta'a'tekaek,lli,ek,él aceleró.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01694,apinta'a'tekalli,apinta'a'tekau',lli,u',él aceleró.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02144,lansa'pallina',lansa'palla',ina',a',están bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02144,lansa'pallina',lansa'pallek,ina',ek,están bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02144,lansa'pallina',lansa'pallu',ina',u',están bailando.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01505,nuwanta'wa',nuwanta'wek,a',ek,vayamos abajo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01505,nuwanta'wa',nuwanta'wu',a',u',vayamos abajo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01505,nuwanta'wa',nuwanta'wna',a',na',vayamos abajo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01198,lumer'llina',lumer'lla',ina',a',rieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01198,lumer'llina',lumer'llek,ina',ek,rieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01198,lumer'llina',lumer'llu',ina',u',rieron.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00387,weranwa',weranwek,a',ek,comamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00387,weranwa',weranwu',a',u',comamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00387,weranwa',weranwna',a',na',comamos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00125,muwencha'ku',muwencha'ka',u',a',bienvenidos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00125,muwencha'ku',muwencha'kek,u',ek,bienvenidos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00125,muwencha'ku',muwencha'kna',u',na',bienvenidos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00126,muwencha'ku',muwencha'ka',u',a',bienvenidas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00126,muwencha'ku',muwencha'kek,u',ek,bienvenidas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00126,muwencha'ku',muwencha'kna',u',na',bienvenidas.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00124,wer'llidek,wer'llida',ek,a',perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00124,wer'llidek,wer'llidu',ek,u',perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00124,wer'llidek,wer'llidna',ek,na',perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00933,wer'llidek,wer'llida',ek,a',nos perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00933,wer'llidek,wer'llidu',ek,u',nos perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00933,wer'llidek,wer'llidna',ek,na',nos perdimos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01547,tumu'pallina',tumu'palla',ina',a',están mintiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01547,tumu'pallina',tumu'pallek,ina',ek,están mintiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01547,tumu'pallina',tumu'pallu',ina',u',están mintiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01256,a'ñapallidek,a'ñapallida',ek,a',lo tenemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01256,a'ñapallidek,a'ñapallidu',ek,u',lo tenemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01256,a'ñapallidek,a'ñapallidna',ek,na',lo tenemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02171,yañinchitullidek,yañinchitullida',ek,a',queremos saber.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02171,yañinchitullidek,yañinchitullidu',ek,u',queremos saber.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U02171,yañinchitullidek,yañinchitullidna',ek,na',queremos saber.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01897,a'ñapalekdekwa',a'ñapalekdekwek,a',ek,los tenemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01897,a'ñapalekdekwa',a'ñapalekdekwu',a',u',los tenemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01897,a'ñapalekdekwa',a'ñapalekdekwna',a',na',los tenemos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00701,perlli'llidek,perlli'llida',ek,a',estamos hartos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00701,perlli'llidek,perlli'llidu',ek,u',estamos hartos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00701,perlli'llidek,perlli'llidna',ek,na',estamos hartos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01754,wicha'pawinek,wicha'pawina',ek,a',estaba durmiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01754,wicha'pawinek,wicha'pawinu',ek,u',estaba durmiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U01754,wicha'pawinek,wicha'pawinna',ek,na',estaba durmiendo.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00693,tuluner'aterwa',tuluner'aterwek,a',ek,cantaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00693,tuluner'aterwa',tuluner'aterwu',a',u',cantaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00693,tuluner'aterwa',tuluner'aterwna',a',na',cantaremos.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00371,tekineklli,tekineka',lli,a',se acabó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00371,tekineklli,tekinekek,lli,ek,se acabó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision
+U00371,tekineklli,tekineku',lli,u',se acabó.,manual_review_required,morphological mapping not linguist-validated; do NOT add to training data without supervision

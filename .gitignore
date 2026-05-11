@@ -17,7 +17,6 @@ models/*
 data/processed/05_nmt_canonical/
 data/processed/06_nmt_filtered/
 data/processed/07_nmt_augmented/
-reports/05_nmt/
 
 # Keep .gitkeep markers so the structure is reproducible
 !data/processed/05_nmt_canonical/.gitkeep

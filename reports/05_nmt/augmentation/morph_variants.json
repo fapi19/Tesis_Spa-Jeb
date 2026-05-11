@@ -1,0 +1,16 @@
+{
+  "phase": "7c",
+  "step": "morph_variants",
+  "eligible_single_word_pairs": 777,
+  "with_detected_suffix": 355,
+  "variants_generated": 1065,
+  "default_emit_csv": false,
+  "rationale": "Plan section 37: morphological variants require linguist supervision to validate the suffix-swap mapping. Without it, the generated rows are pre-flagged manual_review_required and excluded from the v1_bt training set by default.",
+  "config": {
+    "top_n_suffixes": 10,
+    "max_variants_per_word": 3
+  },
+  "timestamp_utc": "2026-05-09T07:28:43.514427+00:00",
+  "review_csv": "reports\\05_nmt\\augmentation\\morph_variants_review.csv",
+  "wrote_train_morph_csv": null
+}

@@ -1,0 +1,21 @@
+{
+  "phase": "7b",
+  "step": "mine_pairs",
+  "timestamp_utc": "2026-05-09T07:26:53.597411+00:00",
+  "internal": {
+    "mode": "internal",
+    "min_ip": 0.65,
+    "top_k": 5,
+    "require_reciprocal": true,
+    "candidate_pool_size": 2472,
+    "raw_candidates": 1521
+  },
+  "external": null,
+  "after_dedup_pairs": 1338,
+  "directional_rows": 2676,
+  "ip_stats": {
+    "mean": 0.726702407425651,
+    "min": 0.6500903964042664,
+    "max": 0.9211178421974182
+  }
+}

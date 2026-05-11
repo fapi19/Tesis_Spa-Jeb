@@ -1,0 +1,108 @@
+{
+  "alphas": [
+    0.0,
+    0.3,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "by_alpha": {
+    "alpha_0.00": {
+      "alpha": 0.0,
+      "directions": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 20.2116119457202,
+          "chrf_pp": 39.31156633406015
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.777953811815024,
+          "chrf_pp": 46.66130739221533
+        }
+      },
+      "avg_chrf_pp": 42.98643686313774,
+      "avg_bleu": 16.494782878767612
+    },
+    "alpha_0.30": {
+      "alpha": 0.3,
+      "directions": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 22.220749020506847,
+          "chrf_pp": 40.56975673061874
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.556093465464564,
+          "chrf_pp": 46.86575271054947
+        }
+      },
+      "avg_chrf_pp": 43.71775472058411,
+      "avg_bleu": 17.388421242985707
+    },
+    "alpha_0.50": {
+      "alpha": 0.5,
+      "directions": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 22.85132711886069,
+          "chrf_pp": 40.99166654000425
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.687459469960977,
+          "chrf_pp": 47.199123184675386
+        }
+      },
+      "avg_chrf_pp": 44.095394862339816,
+      "avg_bleu": 17.769393294410833
+    },
+    "alpha_0.70": {
+      "alpha": 0.7,
+      "directions": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 23.230756327975445,
+          "chrf_pp": 41.05434555778427
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.760813940694424,
+          "chrf_pp": 47.53839057905382
+        }
+      },
+      "avg_chrf_pp": 44.29636806841904,
+      "avg_bleu": 17.995785134334934
+    },
+    "alpha_1.00": {
+      "alpha": 1.0,
+      "directions": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 23.48070212101298,
+          "chrf_pp": 40.68388568118353
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 11.879505095791984,
+          "chrf_pp": 46.961264921502575
+        }
+      },
+      "avg_chrf_pp": 43.82257530134305,
+      "avg_bleu": 17.680103608402483
+    }
+  },
+  "best": {
+    "alpha": 0.7,
+    "avg_chrf_pp": 44.29636806841904,
+    "avg_bleu": 17.995785134334934
+  },
+  "selection_metric": "avg_chrf_pp",
+  "meta": {
+    "timestamp_utc": "2026-05-11T05:10:29.367785+00:00",
+    "run_name": "nllb_bidi_lora_v2_1_dora_loraplus_xl",
+    "split": "test",
+    "checkpoint": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\models\\nmt\\nllb_bidi_lora_v2_1_dora_loraplus_xl"
+  }
+}

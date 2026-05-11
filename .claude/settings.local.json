@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(latexmk -xelatex -interaction=nonstopmode -outdir=build tesis.tex)",
+      "Bash(make latexmk *)",
+      "Bash(latexmk -xelatex -g -interaction=nonstopmode -outdir=build tesis.tex)",
+      "Bash(cp build/tesis.pdf pdf/tesis.pdf)",
+      "Bash(cp build/tesis.pdf tesis.pdf)"
+    ]
+  }
+}

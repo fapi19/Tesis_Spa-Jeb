@@ -1,0 +1,378 @@
+{
+  "phase": "2b",
+  "step": "build_faiss",
+  "timestamp_utc": "2026-05-09T07:10:13.168786+00:00",
+  "config": {
+    "model_path": "models\\sentence_transformers\\v3_iterative_hn_e5_base_bidirectional",
+    "use_e5_prefixes": false,
+    "batch_size": 32,
+    "device": "cuda"
+  },
+  "indices": [
+    {
+      "side": "shiwilu",
+      "index_path": "data\\processed\\06_nmt_filtered\\faiss_shw.index",
+      "meta_path": "data\\processed\\06_nmt_filtered\\faiss_shw_meta.parquet",
+      "n_vectors": 2472,
+      "dim": 768
+    },
+    {
+      "side": "spanish",
+      "index_path": "data\\processed\\06_nmt_filtered\\faiss_spa.index",
+      "meta_path": "data\\processed\\06_nmt_filtered\\faiss_spa_meta.parquet",
+      "n_vectors": 2472,
+      "dim": 768
+    }
+  ],
+  "near_duplicate_scan": [
+    {
+      "side": "shiwilu",
+      "ip_threshold": 0.98,
+      "flagged_count": 178,
+      "total_vectors": 2472,
+      "examples": [
+        {
+          "row_a": 5,
+          "row_b": 4,
+          "pair_id_a": "U01034",
+          "pair_id_b": "U00921",
+          "ip": 1.000000238418579,
+          "text_a": "wa'ten'u",
+          "text_b": "wa'ten'u"
+        },
+        {
+          "row_a": 10,
+          "row_b": 9,
+          "pair_id_a": "U01103",
+          "pair_id_b": "U01102",
+          "ip": 1.0,
+          "text_a": "lachek'ki'nek",
+          "text_b": "lachek'ki'nek"
+        },
+        {
+          "row_a": 39,
+          "row_b": 38,
+          "pair_id_a": "U01634",
+          "pair_id_b": "U01633",
+          "ip": 1.0000001192092896,
+          "text_a": "lli'echu",
+          "text_b": "lli'echu"
+        },
+        {
+          "row_a": 41,
+          "row_b": 40,
+          "pair_id_a": "U01667",
+          "pair_id_b": "U00024",
+          "ip": 0.9999999403953552,
+          "text_a": "¿lachek'la?",
+          "text_b": "¿lachek'la?"
+        },
+        {
+          "row_a": 48,
+          "row_b": 47,
+          "pair_id_a": "U00045",
+          "pair_id_b": "U00044",
+          "ip": 1.0,
+          "text_a": "¿tekinchi?",
+          "text_b": "¿tekinchi?"
+        },
+        {
+          "row_a": 70,
+          "row_b": 69,
+          "pair_id_a": "U00647",
+          "pair_id_b": "U00646",
+          "ip": 1.0,
+          "text_a": "asu' saka'tapalli",
+          "text_b": "asu' saka'tapalli"
+        },
+        {
+          "row_a": 82,
+          "row_b": 81,
+          "pair_id_a": "U00411",
+          "pair_id_b": "U00098",
+          "ip": 0.9999998807907104,
+          "text_a": "mupalli",
+          "text_b": "mupalli"
+        },
+        {
+          "row_a": 83,
+          "row_b": 81,
+          "pair_id_a": "U01127",
+          "pair_id_b": "U00098",
+          "ip": 0.9999998807907104,
+          "text_a": "mupalli",
+          "text_b": "mupalli"
+        },
+        {
+          "row_a": 117,
+          "row_b": 116,
+          "pair_id_a": "U01796",
+          "pair_id_b": "U01795",
+          "ip": 1.0,
+          "text_a": "u'chimu ñiwiñi",
+          "text_b": "u'chimu ñiwiñi"
+        },
+        {
+          "row_a": 124,
+          "row_b": 123,
+          "pair_id_a": "U00001",
+          "pair_id_b": "U00000",
+          "ip": 0.9999999403953552,
+          "text_a": "paker'",
+          "text_b": "paker'"
+        },
+        {
+          "row_a": 125,
+          "row_b": 123,
+          "pair_id_a": "U00002",
+          "pair_id_b": "U00000",
+          "ip": 0.9999999403953552,
+          "text_a": "paker'",
+          "text_b": "paker'"
+        },
+        {
+          "row_a": 131,
+          "row_b": 130,
+          "pair_id_a": "U01249",
+          "pair_id_b": "U01248",
+          "ip": 1.0000001192092896,
+          "text_a": "llipu'pi ñapawiñidek",
+          "text_b": "llipu'pi ñapawiñidek"
+        },
+        {
+          "row_a": 181,
+          "row_b": 180,
+          "pair_id_a": "U01563",
+          "pair_id_b": "U01562",
+          "ip": 1.0000001192092896,
+          "text_a": "nakusu' muin'su' ñapallidek",
+          "text_b": "nakusu' muin'su' ñapallidek"
+        },
+        {
+          "row_a": 186,
+          "row_b": 185,
+          "pair_id_a": "U00346",
+          "pair_id_b": "U00093",
+          "ip": 1.0000001192092896,
+          "text_a": "weilunsu' nuka'ka",
+          "text_b": "weilunsu' nuka'ka"
+        },
+        {
+          "row_a": 197,
+          "row_b": 2271,
+          "pair_id_a": "U00220",
+          "pair_id_b": "U00888",
+          "ip": 0.9813730716705322,
+          "text_a": "nana katu'patulli",
+          "text_b": "nana katu'pa'tulli"
+        },
+        {
+          "row_a": 201,
+          "row_b": 200,
+          "pair_id_a": "U02199",
+          "pair_id_b": "U02198",
+          "ip": 1.0000001192092896,
+          "text_a": "llinser'ker' asu'",
+          "text_b": "llinser'ker' asu'"
+        },
+        {
+          "row_a": 214,
+          "row_b": 213,
+          "pair_id_a": "U00612",
+          "pair_id_b": "U00021",
+          "ip": 0.9999998807907104,
+          "text_a": "usanker'",
+          "text_b": "usanker'"
+        },
+        {
+          "row_a": 220,
+          "row_b": 219,
+          "pair_id_a": "U01692",
+          "pair_id_b": "U01691",
+          "ip": 1.0,
+          "text_a": "¿werana?",
+          "text_b": "¿werana?"
+        },
+        {
+          "row_a": 236,
+          "row_b": 235,
+          "pair_id_a": "U00157",
+          "pair_id_b": "U00152",
+          "ip": 1.0000001192092896,
+          "text_a": "da'encher'",
+          "text_b": "da'encher'"
+        },
+        {
+          "row_a": 248,
+          "row_b": 247,
+          "pair_id_a": "U00268",
+          "pair_id_b": "U00266",
+          "ip": 1.0,
+          "text_a": "lli'u",
+          "text_b": "lli'u"
+        }
+      ]
+    },
+    {
+      "side": "spanish",
+      "ip_threshold": 0.98,
+      "flagged_count": 17,
+      "total_vectors": 2472,
+      "examples": [
+        {
+          "row_a": 206,
+          "row_b": 205,
+          "pair_id_a": "U00063",
+          "pair_id_b": "U00062",
+          "ip": 1.0000001192092896,
+          "text_a": "sal.",
+          "text_b": "sal."
+        },
+        {
+          "row_a": 301,
+          "row_b": 300,
+          "pair_id_a": "U00390",
+          "pair_id_b": "U00037",
+          "ip": 1.0,
+          "text_a": "escucha.",
+          "text_b": "escucha."
+        },
+        {
+          "row_a": 462,
+          "row_b": 463,
+          "pair_id_a": "U00081",
+          "pair_id_b": "U00082",
+          "ip": 0.9853798151016235,
+          "text_a": "resista.",
+          "text_b": "resiste."
+        },
+        {
+          "row_a": 463,
+          "row_b": 462,
+          "pair_id_a": "U00082",
+          "pair_id_b": "U00081",
+          "ip": 0.9853798151016235,
+          "text_a": "resiste.",
+          "text_b": "resista."
+        },
+        {
+          "row_a": 683,
+          "row_b": 684,
+          "pair_id_a": "U00384",
+          "pair_id_b": "U00385",
+          "ip": 0.9850986003875732,
+          "text_a": "déjame entrar.",
+          "text_b": "déjeme entrar."
+        },
+        {
+          "row_a": 684,
+          "row_b": 683,
+          "pair_id_a": "U00385",
+          "pair_id_b": "U00384",
+          "ip": 0.9850986003875732,
+          "text_a": "déjeme entrar.",
+          "text_b": "déjame entrar."
+        },
+        {
+          "row_a": 824,
+          "row_b": 1148,
+          "pair_id_a": "U01511",
+          "pair_id_b": "U01345",
+          "ip": 0.986312747001648,
+          "text_a": "hazlo rápido.",
+          "text_b": "hazlo rápidamente."
+        },
+        {
+          "row_a": 829,
+          "row_b": 830,
+          "pair_id_a": "U01656",
+          "pair_id_b": "U01657",
+          "ip": 0.9814830422401428,
+          "text_a": "¿podemos proseguir?",
+          "text_b": "¿podemos continuar?"
+        },
+        {
+          "row_a": 830,
+          "row_b": 829,
+          "pair_id_a": "U01657",
+          "pair_id_b": "U01656",
+          "ip": 0.9814830422401428,
+          "text_a": "¿podemos continuar?",
+          "text_b": "¿podemos proseguir?"
+        },
+        {
+          "row_a": 1148,
+          "row_b": 824,
+          "pair_id_a": "U01345",
+          "pair_id_b": "U01511",
+          "ip": 0.986312747001648,
+          "text_a": "hazlo rápidamente.",
+          "text_b": "hazlo rápido."
+        },
+        {
+          "row_a": 1217,
+          "row_b": 1218,
+          "pair_id_a": "U00426",
+          "pair_id_b": "U00427",
+          "ip": 0.9823514223098755,
+          "text_a": "toma esto.",
+          "text_b": "tome esto."
+        },
+        {
+          "row_a": 1218,
+          "row_b": 1217,
+          "pair_id_a": "U00427",
+          "pair_id_b": "U00426",
+          "ip": 0.9823514223098755,
+          "text_a": "tome esto.",
+          "text_b": "toma esto."
+        },
+        {
+          "row_a": 2269,
+          "row_b": 2268,
+          "pair_id_a": "U01352",
+          "pair_id_b": "U01041",
+          "ip": 1.0,
+          "text_a": "come algo.",
+          "text_b": "come algo."
+        },
+        {
+          "row_a": 2336,
+          "row_b": 2337,
+          "pair_id_a": "U01121",
+          "pair_id_b": "U01122",
+          "ip": 0.9898507595062256,
+          "text_a": "empezó.",
+          "text_b": "comenzó."
+        },
+        {
+          "row_a": 2337,
+          "row_b": 2336,
+          "pair_id_a": "U01122",
+          "pair_id_b": "U01121",
+          "ip": 0.9898507595062256,
+          "text_a": "comenzó.",
+          "text_b": "empezó."
+        },
+        {
+          "row_a": 2372,
+          "row_b": 2373,
+          "pair_id_a": "U01438",
+          "pair_id_b": "U01439",
+          "ip": 0.9817105531692505,
+          "text_a": "lo mataré.",
+          "text_b": "le mataré."
+        },
+        {
+          "row_a": 2373,
+          "row_b": 2372,
+          "pair_id_a": "U01439",
+          "pair_id_b": "U01438",
+          "ip": 0.9817105531692505,
+          "text_a": "le mataré.",
+          "text_b": "lo mataré."
+        }
+      ]
+    }
+  ]
+}

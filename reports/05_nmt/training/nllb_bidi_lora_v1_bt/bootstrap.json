@@ -1,0 +1,27 @@
+{
+  "phase": "7d",
+  "run_name": "nllb_bidi_lora_v1_bt",
+  "timestamp_utc": "2026-05-09T07:29:49.256115+00:00",
+  "mode": "dry_run",
+  "info": {
+    "tokenizer_lang_ids": {
+      "shw_Latn": 256204,
+      "quy_Latn": 256144,
+      "ayr_Latn": 256018,
+      "grn_Latn": 256063,
+      "spa_Latn": 256161
+    },
+    "train_rows": 7620,
+    "validation_rows_by_direction": {
+      "shw2spa": 320,
+      "spa2shw": 320
+    },
+    "test_rows": 642,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "fp16": true,
+    "augmented_csvs": [
+      "data\\processed\\07_nmt_augmented\\train_mined.csv"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "phase": "7d",
+  "run_name": "nllb_bidi_lora_v1_bt_xl",
+  "timestamp_utc": "2026-05-10T20:29:33.159771+00:00",
+  "info": {
+    "tokenizer_lang_ids": {
+      "shw_Latn": 256204,
+      "quy_Latn": 256144,
+      "ayr_Latn": 256018,
+      "grn_Latn": 256063,
+      "spa_Latn": 256161
+    },
+    "train_rows": 10710,
+    "validation_rows_by_direction": {
+      "shw2spa": 445,
+      "spa2shw": 445
+    },
+    "test_rows": 892,
+    "lora_r": 32,
+    "lora_alpha": 64,
+    "use_dora": false,
+    "loraplus_lr_ratio": 0.0,
+    "compile_model": false,
+    "fp16": true,
+    "bf16": false,
+    "weighting": {
+      "map": {
+        "flashcards": 1.0,
+        "flashcards2": 1.0,
+        "flashcards_oraciones": 1.0,
+        "pdf_textos": 1.0,
+        "fidel_lomas": 1.0,
+        "vs_textos_narrativos": 1.0,
+        "el_principito": 1.0,
+        "extra": 0.3,
+        "cotidianas": 0.3,
+        "mined_v3_sbert": 0.5,
+        "backtranslation_v0": 0.3,
+        "backtranslation_roundtrip_v0": 0.3,
+        "morphological_variant": 0.3
+      },
+      "default_weight": 1.0,
+      "n_rows": 10710,
+      "mean": 0.7990662931839403,
+      "min": 0.3,
+      "max": 1.0,
+      "label_smoothing_factor": 0.1
+    },
+    "augmented_csvs": [
+      "data\\processed\\07_nmt_augmented_xl\\train_mined.csv",
+      "data\\processed\\07_nmt_augmented_xl\\train_bt_roundtrip.csv"
+    ]
+  },
+  "best_metric": 30.147310900763223,
+  "best_model_checkpoint": "models/nmt/nllb_bidi_lora_v1_bt_xl\\checkpoint-6000",
+  "global_step": 6700,
+  "num_train_epochs": 20.0,
+  "train_runtime_s": 7025.1527,
+  "metric_for_best_model": "eval_avg_chrf",
+  "fp16": true,
+  "extra_train_csvs": [
+    "data\\processed\\07_nmt_augmented_xl\\train_mined.csv",
+    "data\\processed\\07_nmt_augmented_xl\\train_bt_roundtrip.csv"
+  ]
+}

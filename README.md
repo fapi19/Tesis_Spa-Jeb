@@ -22,6 +22,11 @@ NMT están entrenados, evaluados y documentados. El modelo enviado es
 `reports/05_nmt/evaluation_xl/leaderboard.md` y la Cuadro 5.4 / 5.5 del
 documento de tesis.
 
+El OE3 queda cerrado como protocolo documentado/preparado, no como validacion
+participativa ejecutada. Los artefactos estan en
+`reports/05_nmt/evaluation_xl/`: `human_eval_template.csv`,
+`human_eval_anon_key.json`, `human_eval_protocol.md` y `README.md`.
+
 La fase de preprocesamiento para embeddings Shiwlu-español está cerrada. El
 pipeline canónico quedó en `src/embeddings/preprocess_embeddings.py` y fue
 validado con `src/embeddings/audit_preprocessing.py`.
@@ -652,8 +657,12 @@ python -m scripts.nmt.63_train_with_augmented --config config/nmt/training.yaml 
 python -m scripts.nmt.40_evaluate --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
 python -m scripts.nmt.50_rerank   --checkpoint models/nmt/nllb_bidi_lora_v1_bt --split test
 python -m scripts.nmt.70_compare_runs
-python -m scripts.nmt.71_human_eval_template
+python -m scripts.nmt.71_human_eval_template --variant xl --per-direction 100 --seed 2026 --split test
 ```
+
+La fase `71_human_eval_template` genera por defecto la plantilla CSV, la clave
+anonima JSON y un resumen Markdown del protocolo. Use `--no-write-md` para
+omitir el Markdown o `--md-output <ruta>` para escribirlo en otra ubicacion.
 
 ### Modelo base y razones
 
@@ -842,6 +851,9 @@ Estos pares quedan en `data/processed/07_nmt_augmented/train_bt.csv` con
 8. ~~Phase 5/6 cierre: leaderboard 6-way, intervalos de confianza bootstrap,
    tablas LaTeX nuevas, secciones Anexo C.14 y futuro trabajo
    actualizado, PDF recompilado (111 páginas).~~ Hecho.
+9. ~~OE3 protocolo: plantilla humana ciega, clave anonima separada, protocolo
+   Markdown y README local en `reports/05_nmt/evaluation_xl/`.~~ Hecho. No
+   incluye respuestas humanas ni acuerdos interevaluador.
 
 ### Resultados finales (xl test, reranked, 892 filas direccionales)
 
@@ -857,6 +869,25 @@ Estos pares quedan en `data/processed/07_nmt_augmented/train_bt.csv` con
 Fuente: `reports/05_nmt/evaluation_xl/leaderboard.md` (Phase 5,
 `scripts/nmt/72_leaderboard.py`) y `bootstrap_ci_summary.md` (Phase 6,
 `scripts/nmt/73_bootstrap_ci.py`).
+
+### Protocolo OE3 preparado
+
+El protocolo de validacion automatica + participativa queda preparado en:
+
+- `reports/05_nmt/evaluation_xl/human_eval_template.csv`: 200 filas, 100 por
+  direccion, con hipotesis A/B/C/D y campos vacios de rubrica.
+- `reports/05_nmt/evaluation_xl/human_eval_anon_key.json`: clave separada para
+  desanonimizar los sistemas; no se entrega a revisores.
+- `reports/05_nmt/evaluation_xl/human_eval_protocol.md`: resumen reproducible
+  del protocolo, muestra, rubrica e instrucciones.
+- `reports/05_nmt/evaluation_xl/README.md`: indice operativo de los artefactos
+  automaticos y humanos preparados.
+
+Comando:
+
+```powershell
+.venv-nmt/Scripts/python -m scripts.nmt.71_human_eval_template --variant xl --per-direction 100 --seed 2026 --split test
+```
 
 ### Future work (no incluido en este ciclo)
 

@@ -1,0 +1,76 @@
+{
+  "primary_metric": "chrf_pp",
+  "directions": {
+    "shw2spa": {
+      "n": 446,
+      "bleu": 14.107046179362758,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_pp": 29.667692700043723,
+      "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "bertscore_p": 0.9175237794093487,
+      "bertscore_r": 0.9076986054935797,
+      "bertscore_f1": 0.9123959876763981,
+      "bertscore_model": "xlm-roberta-large",
+      "comet": 0.6441122260729828,
+      "comet_model": "Unbabel/wmt22-comet-da"
+    },
+    "spa2shw": {
+      "n": 446,
+      "bleu": 5.826546520661544,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_pp": 32.48243844854985,
+      "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "bertscore_p": 0.8876750224641621,
+      "bertscore_r": 0.8834262749539362,
+      "bertscore_f1": 0.8854149952864968,
+      "bertscore_model": "xlm-roberta-large",
+      "comet": 0.7057384377504143,
+      "comet_model": "Unbabel/wmt22-comet-da"
+    }
+  },
+  "caveats": {
+    "bertscore": "BERTScore uses xlm-roberta-large which has multilingual coverage but Shiwilu is OOD. Treat Shiwilu-side BERTScore as proxy only; prioritize chrF++ as the headline metric per plan section 31.",
+    "comet": "COMET (wmt22-comet-da) was not trained on Shiwilu data. Reported as indicative only; not a reliable absolute number on the Shiwilu side."
+  },
+  "avg_chrf_pp": 31.075065574296787,
+  "avg_bleu": 9.966796350012151,
+  "meta": {
+    "phase": 5,
+    "run_name": "nllb_bidi_lora_v2_2_bt_iter1_xl",
+    "timestamp_utc": "2026-05-11T08:40:39.000915+00:00",
+    "checkpoint": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\models\\nmt\\nllb_bidi_lora_v2_2_bt_iter1_xl",
+    "two_dora": false,
+    "split": "test",
+    "n_predictions": 892,
+    "generation": {
+      "num_beams": 5,
+      "length_penalty": 1.0,
+      "max_new_tokens": 128,
+      "num_return_sequences": 5
+    },
+    "confidence": {
+      "thresholds": {
+        "name": "baseline_exp_seq_score",
+        "low_to_med": 0.4,
+        "med_to_high": 0.55
+      },
+      "distribution": {
+        "overall": {
+          "low": 143,
+          "medium": 336,
+          "high": 413
+        },
+        "shw2spa": {
+          "low": 111,
+          "medium": 144,
+          "high": 191
+        },
+        "spa2shw": {
+          "low": 32,
+          "medium": 192,
+          "high": 222
+        }
+      }
+    }
+  }
+}

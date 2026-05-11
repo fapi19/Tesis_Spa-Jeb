@@ -1,0 +1,68 @@
+{
+  "phase": 1,
+  "step": "canonicalize_dataset",
+  "timestamp_utc": "2026-05-10T17:03:11.756250+00:00",
+  "inputs": {
+    "train": {
+      "path": "data\\processed\\04_splits_xl\\train.jsonl",
+      "sha256": "23033205a9b4cc10715454800debd10bfb8d361d7bf63ee91c9dc81082e04a32",
+      "row_count": 3923
+    },
+    "valid": {
+      "path": "data\\processed\\04_splits_xl\\valid.jsonl",
+      "sha256": "5c06a53ecb3478bcc6385f3ee5e81412a62ef60460959eaf76e1a611bc4b86ff",
+      "row_count": 445
+    },
+    "test": {
+      "path": "data\\processed\\04_splits_xl\\test.jsonl",
+      "sha256": "4951ffb77487b8e9b870ea32f9231f57e34d1f346e1a7ab66721bf07563a2308",
+      "row_count": 446
+    }
+  },
+  "outputs": {
+    "train": {
+      "path": "data\\processed\\05_nmt_canonical_xl\\train.csv",
+      "sha256": "d175aa2728da55d218d85963a26d25f59a1730e1ee8684217a91d6933ffa05ae",
+      "row_count": 7846
+    },
+    "valid": {
+      "path": "data\\processed\\05_nmt_canonical_xl\\valid.csv",
+      "sha256": "be7bc3c815b9b056c64a84f110811cd78cf7fb2dd04716f026ab357b060d33bd",
+      "row_count": 890
+    },
+    "test": {
+      "path": "data\\processed\\05_nmt_canonical_xl\\test.csv",
+      "sha256": "41a82712d11d3cdaf938306d5db2c9949df9931c9c9e5b332b432ff73a5f72e0",
+      "row_count": 892
+    }
+  },
+  "direction_counts": {
+    "shw2spa": 4814,
+    "spa2shw": 4814
+  },
+  "origin_counts": {
+    "flashcards2": 4496,
+    "pdf_textos": 1912,
+    "fidel_lomas": 1106,
+    "flashcards_oraciones": 1336,
+    "vs_textos_narrativos": 38,
+    "el_principito": 26,
+    "extra": 626,
+    "cotidianas": 88
+  },
+  "total_rows": 9628,
+  "expected_rows": 9628,
+  "group_id_leakage": false,
+  "schema": [
+    "id",
+    "pair_id",
+    "group_id",
+    "source",
+    "target",
+    "source_lang",
+    "target_lang",
+    "split",
+    "has_audit_flags",
+    "origin_source"
+  ]
+}

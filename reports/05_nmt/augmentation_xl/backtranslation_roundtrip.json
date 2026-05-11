@@ -1,0 +1,22 @@
+{
+  "phase": "7a-bis",
+  "step": "roundtrip_backtranslation",
+  "variant": "xl",
+  "timestamp_utc": "2026-05-11T05:47:57.306418+00:00",
+  "checkpoint": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\models\\nmt\\nllb_bidi_lora_v1_bt_xl",
+  "spanish_source_lines": 3000,
+  "accept_threshold": 0.7,
+  "cap_x_parallel": 2.0,
+  "parallel_train_size": 7230,
+  "pairs_accepted": 214,
+  "directional_rows_written": 428,
+  "score_stats": {
+    "mean": 0.29003390642581506,
+    "std": 0.23426474845034592,
+    "min": -0.22548788785934448,
+    "max": 1.000000238418579,
+    "p10": 0.029427860118448734,
+    "p50": 0.24109256267547607,
+    "p90": 0.6346264719963073
+  }
+}

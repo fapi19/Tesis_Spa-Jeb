@@ -1,0 +1,150 @@
+{
+  "config": {
+    "rare_threshold": 5,
+    "buckets": [
+      {
+        "name": "0pct",
+        "lower": 0.0,
+        "upper": 1e-09
+      },
+      {
+        "name": "0_to_20pct",
+        "lower": 1e-09,
+        "upper": 0.2
+      },
+      {
+        "name": "20_to_50pct",
+        "lower": 0.2,
+        "upper": 0.5
+      },
+      {
+        "name": "50pct_or_more",
+        "lower": 0.5,
+        "upper": 1.000001
+      }
+    ],
+    "headline_bucket": "20pct_or_more"
+  },
+  "directions": {
+    "shw2spa": {
+      "target_lang": "spa",
+      "n": 321,
+      "rare_threshold": 5,
+      "buckets": {
+        "0pct": {
+          "n": 3,
+          "mean_rare_ratio": 0.0,
+          "bleu": 10.159495705033605,
+          "chrf_pp": 23.903584267984517
+        },
+        "0_to_20pct": {
+          "n": 6,
+          "mean_rare_ratio": 0.15873015873015872,
+          "bleu": 3.209284271427222,
+          "chrf_pp": 16.39761863128938
+        },
+        "20_to_50pct": {
+          "n": 60,
+          "mean_rare_ratio": 0.32899384178486346,
+          "bleu": 3.3905497063199626,
+          "chrf_pp": 18.91158835105476
+        },
+        "50pct_or_more": {
+          "n": 252,
+          "mean_rare_ratio": 0.6776430829532333,
+          "bleu": 3.6924689758544416,
+          "chrf_pp": 18.457093534318133
+        },
+        "20pct_or_more": {
+          "n": 312,
+          "mean_rare_ratio": 0.610595151959316,
+          "bleu": 3.540704284511668,
+          "chrf_pp": 18.659734732155698
+        }
+      },
+      "oov": {
+        "recovered": 11,
+        "total": 365,
+        "recovery_rate": 0.030136986301369864
+      },
+      "by_origin_source": {
+        "flashcards": {
+          "n": 221,
+          "bleu": 6.769539788858734,
+          "chrf_pp": 21.832775228885946
+        },
+        "pdf_textos": {
+          "n": 100,
+          "bleu": 3.0050324039649543,
+          "chrf_pp": 17.037358506411284
+        }
+      }
+    },
+    "spa2shw": {
+      "target_lang": "shw",
+      "n": 321,
+      "rare_threshold": 5,
+      "buckets": {
+        "0pct": {
+          "n": 6,
+          "mean_rare_ratio": 0.0,
+          "bleu": 0.0,
+          "chrf_pp": 36.40521295302871
+        },
+        "0_to_20pct": {
+          "n": 0,
+          "mean_rare_ratio": NaN,
+          "bleu": NaN,
+          "chrf_pp": NaN
+        },
+        "20_to_50pct": {
+          "n": 13,
+          "mean_rare_ratio": 0.3355311355311355,
+          "bleu": 3.232503216252696,
+          "chrf_pp": 26.4245676780338
+        },
+        "50pct_or_more": {
+          "n": 302,
+          "mean_rare_ratio": 0.8058941426491095,
+          "bleu": 2.030785097172668,
+          "chrf_pp": 20.129936290655642
+        },
+        "20pct_or_more": {
+          "n": 315,
+          "mean_rare_ratio": 0.7864823360061455,
+          "bleu": 2.0315885859144625,
+          "chrf_pp": 20.505847982012256
+        }
+      },
+      "oov": {
+        "recovered": 6,
+        "total": 428,
+        "recovery_rate": 0.014018691588785047
+      },
+      "by_origin_source": {
+        "flashcards": {
+          "n": 221,
+          "bleu": 9.190075337568958,
+          "chrf_pp": 24.786844160850425
+        },
+        "pdf_textos": {
+          "n": 100,
+          "bleu": 1.8220836778900957,
+          "chrf_pp": 18.214278423105668
+        }
+      }
+    }
+  },
+  "avg_rare_chrf_pp_20pct_or_more": 19.582791357083977,
+  "avg_oov_recovery_rate": 0.022077838945077456,
+  "meta": {
+    "phase": "5b",
+    "run_name": "nllb_bidi_lora_v0",
+    "split": "test",
+    "reranked": false,
+    "predictions_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\reports\\05_nmt\\evaluation\\nllb_bidi_lora_v0\\test_predictions.jsonl",
+    "train_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\06_nmt_filtered\\train.csv",
+    "test_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\06_nmt_filtered\\test.csv",
+    "timestamp_utc": "2026-05-09T16:47:58.233358+00:00"
+  }
+}

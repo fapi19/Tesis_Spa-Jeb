@@ -1,0 +1,40 @@
+{
+  "phase": "8b",
+  "step": "human_eval_template",
+  "timestamp_utc": "2026-05-11T19:09:07.392319+00:00",
+  "variant": "xl",
+  "split": "test",
+  "seed": 2026,
+  "per_direction": 100,
+  "outputs": {
+    "template_csv": "reports/05_nmt/evaluation_xl/human_eval_template.csv",
+    "anonymous_key_json": "reports/05_nmt/evaluation_xl/human_eval_anon_key.json",
+    "protocol_markdown": "reports/05_nmt/evaluation_xl/human_eval_protocol.md"
+  },
+  "anonymization": {
+    "letter_to_source": {
+      "A": "nllb_bidi_lora_v1_bt_xl",
+      "B": "nllb_bidi_lora_v1_bt_xl_reranked",
+      "C": "nllb_bidi_lora_v0_xl_reranked",
+      "D": "nllb_bidi_lora_v0_xl"
+    },
+    "source_to_letter": {
+      "nllb_bidi_lora_v1_bt_xl": "A",
+      "nllb_bidi_lora_v1_bt_xl_reranked": "B",
+      "nllb_bidi_lora_v0_xl_reranked": "C",
+      "nllb_bidi_lora_v0_xl": "D"
+    }
+  },
+  "rubric": {
+    "adequacy_1_5": "5 = preserves all meaning, 1 = loses all meaning",
+    "fluency_1_5": "5 = native-speaker fluent, 1 = ungrammatical",
+    "cultural_relevance_1_5": "5 = idiomatically appropriate, 1 = jarring or wrong register"
+  },
+  "sources_available": {
+    "nllb_bidi_lora_v0_xl": true,
+    "nllb_bidi_lora_v0_xl_reranked": true,
+    "nllb_bidi_lora_v1_bt_xl": true,
+    "nllb_bidi_lora_v1_bt_xl_reranked": true
+  },
+  "stratification": "balanced by origin_source (flashcards vs pdf_textos) and length bucket (short<=5, medium<=12, long)"
+}

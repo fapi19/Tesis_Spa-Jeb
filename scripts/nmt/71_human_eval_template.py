@@ -8,6 +8,7 @@ cannot bias scores by knowing which system produced which text.
 Outputs:
     reports/05_nmt/evaluation/human_eval_template.csv
     reports/05_nmt/evaluation/human_eval_anon_key.json   (the secret mapping)
+    reports/05_nmt/evaluation/human_eval_protocol.md      (review protocol)
 """
 from __future__ import annotations
 
@@ -36,6 +37,18 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--v0", default=None, help="Default: nllb_bidi_lora_v0[_xl]")
     p.add_argument("--v1", default=None, help="Default: nllb_bidi_lora_v1_bt[_xl]")
     p.add_argument("--split", choices=["valid", "test"], default="test")
+    p.add_argument(
+        "--write-md",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Write a Markdown protocol summary next to the CSV/JSON outputs.",
+    )
+    p.add_argument(
+        "--md-output",
+        type=Path,
+        default=None,
+        help="Optional Markdown output path. Default: <evaluation_dir>/human_eval_protocol.md",
+    )
     return p.parse_args()
 
 
@@ -115,6 +128,136 @@ def _hypothesis_for(predictions: dict[str, dict], row_id: str) -> str:
     return str(rec.get("hypothesis", ""))
 
 
+def _rel(path: Path) -> str:
+    try:
+        return path.relative_to(PROJECT_ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
+def _markdown_table(rows: list[tuple[str, str]]) -> list[str]:
+    out = ["| Campo | Valor |", "|---|---|"]
+    for key, value in rows:
+        out.append(f"| {key} | {value} |")
+    return out
+
+
+def _build_protocol_markdown(
+    *,
+    args: argparse.Namespace,
+    template_df: pd.DataFrame,
+    out_csv: Path,
+    key_path: Path,
+    md_path: Path,
+    letter_to_source: dict[str, str],
+    available: dict[str, bool],
+) -> str:
+    direction_counts = template_df["direction"].value_counts().sort_index().to_dict()
+    origin_counts = template_df["origin_source"].value_counts().sort_index().to_dict()
+    hypothesis_columns = [c for c in template_df.columns if c.startswith("hypothesis_")]
+    generated_at = dt.datetime.now(dt.timezone.utc).isoformat()
+
+    lines: list[str] = [
+        "# Protocolo de Validacion Humana",
+        "",
+        "Este documento resume el protocolo de evaluacion humana preparado para el sistema NMT.",
+        "Documenta la muestra, rubrica, anonimizacion y comando reproducible; no contiene puntajes humanos.",
+        "",
+        "## Alcance",
+        "",
+        "- Objetivo: complementar los resultados automaticos del NMT con una revision participativa posterior por hablantes de shiwilu o revisores competentes.",
+        "- Estado: protocolo preparado, no ejecutado con revisores.",
+        "- Por ello, no se reportan promedios humanos, acuerdo interevaluador ni analisis cualitativo de respuestas.",
+        "",
+        "## Comando reproducible",
+        "",
+        "```powershell",
+        (
+            ".venv-nmt/Scripts/python -m scripts.nmt.71_human_eval_template "
+            f"--variant {args.variant} --per-direction {args.per_direction} "
+            f"--seed {args.seed} --split {args.split}"
+        ),
+        "```",
+        "",
+        "## Salidas",
+        "",
+        *_markdown_table(
+            [
+                ("Plantilla CSV", f"`{_rel(out_csv)}`"),
+                ("Clave anonima", f"`{_rel(key_path)}`"),
+                ("Protocolo Markdown", f"`{_rel(md_path)}`"),
+            ]
+        ),
+        "",
+        "La clave anonima debe mantenerse separada de los revisores. Los revisores solo deben recibir el CSV o un formulario derivado de el.",
+        "",
+        "## Muestra",
+        "",
+        *_markdown_table(
+            [
+                ("Generado en UTC", generated_at),
+                ("Variante", f"`{args.variant}`"),
+                ("Split", f"`{args.split}`"),
+                ("Items solicitados por direccion", str(args.per_direction)),
+                ("Filas generadas", str(len(template_df))),
+                ("Direcciones", ", ".join(f"`{k}`={v}" for k, v in direction_counts.items())),
+                ("Estratificacion", "`origin_source` y bucket de longitud fuente: short <= 5, medium <= 12, long > 12 palabras"),
+            ]
+        ),
+        "",
+        "### Distribucion por origen",
+        "",
+        "| origin_source | rows |",
+        "|---|---:|",
+    ]
+    lines.extend(f"| `{origin}` | {count} |" for origin, count in origin_counts.items())
+
+    lines.extend(
+        [
+            "",
+            "## Sistemas comparados",
+            "",
+            "| Columna anonima | Sistema fuente | Predicciones disponibles |",
+            "|---|---|---:|",
+        ]
+    )
+    for letter in sorted(letter_to_source):
+        source = letter_to_source[letter]
+        lines.append(f"| `hypothesis_{letter}` | oculto para el revisor | {available.get(source, False)} |")
+
+    lines.extend(
+        [
+            "",
+            "El mapeo oculto letra-sistema se guarda solo en el JSON de clave anonima.",
+            "Los sistemas comparados son v0, v0 reranked, v1_bt y v1_bt reranked.",
+            "",
+            "## Rubrica",
+            "",
+            "| Dimension | Escala | Criterio |",
+            "|---|---|---|",
+            "| adequacy_1_5 | 1-5 | Preservacion del sentido; penaliza omisiones, agregados y cambios semanticos. |",
+            "| fluency_1_5 | 1-5 | Gramaticalidad, naturalidad y legibilidad en la lengua destino. |",
+            "| cultural_relevance_1_5 | 1-5 | Registro idiomatico y elecciones lexicas culturalmente apropiadas. |",
+            "| notes | texto libre | Explicacion opcional de errores, dudas o casos culturalmente marcados. |",
+            "",
+            "## Instrucciones para revisores",
+            "",
+            "1. Leer la fuente y la referencia.",
+            "2. Puntuar cada hipotesis anonimizada de forma independiente en adecuacion, fluidez y pertinencia cultural.",
+            "3. Usar enteros de 1 a 5; dejar una nota cuando una baja puntuacion dependa de registro cultural, ambiguedad o falta de contexto.",
+            "4. No intentar inferir que sistema produjo cada hipotesis.",
+            "",
+            "## Columnas de la plantilla",
+            "",
+            ", ".join(f"`{c}`" for c in template_df.columns),
+            "",
+            "Columnas de hipotesis preparadas: " + ", ".join(f"`{c}`" for c in hypothesis_columns),
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
 def main() -> int:
     args = parse_args()
     rng = random.Random(args.seed)
@@ -190,12 +333,20 @@ def main() -> int:
     template_df.to_csv(out_csv, index=False, encoding="utf-8-sig")
     print(f"[phase8b] wrote {out_csv.relative_to(PROJECT_ROOT)} ({len(template_df)} rows)")
 
+    md_path = args.md_output or (eval_dir / "human_eval_protocol.md")
     key = {
         "phase": "8b",
         "step": "human_eval_template",
         "timestamp_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "variant": args.variant,
+        "split": args.split,
         "seed": args.seed,
         "per_direction": args.per_direction,
+        "outputs": {
+            "template_csv": _rel(out_csv),
+            "anonymous_key_json": _rel(eval_dir / "human_eval_anon_key.json"),
+            "protocol_markdown": _rel(md_path),
+        },
         "anonymization": {
             "letter_to_source": letter_to_source,
             "source_to_letter": source_to_letter,
@@ -211,6 +362,20 @@ def main() -> int:
     key_path = eval_dir / "human_eval_anon_key.json"
     key_path.write_text(json.dumps(key, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[phase8b] wrote {key_path.relative_to(PROJECT_ROOT)}")
+
+    if args.write_md:
+        md_path.parent.mkdir(parents=True, exist_ok=True)
+        md_text = _build_protocol_markdown(
+            args=args,
+            template_df=template_df,
+            out_csv=out_csv,
+            key_path=key_path,
+            md_path=md_path,
+            letter_to_source=letter_to_source,
+            available=available,
+        )
+        md_path.write_text(md_text, encoding="utf-8")
+        print(f"[phase8b] wrote {_rel(md_path)}")
     return 0
 
 

@@ -1,0 +1,71 @@
+{
+  "primary_metric": "chrf_pp",
+  "directions": {
+    "shw2spa": {
+      "n": 446,
+      "bleu": 23.230756327975445,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_pp": 41.05434555778427,
+      "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "bertscore_p": 0.9246706692627192,
+      "bertscore_r": 0.9200362664701692,
+      "bertscore_f1": 0.9221410206080553,
+      "bertscore_model": "xlm-roberta-large",
+      "comet": 0.7063162151740805,
+      "comet_model": "Unbabel/wmt22-comet-da"
+    },
+    "spa2shw": {
+      "n": 446,
+      "bleu": 12.760813940694424,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_pp": 47.53839057905382,
+      "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "bertscore_p": 0.9145905007963223,
+      "bertscore_r": 0.911387964080802,
+      "bertscore_f1": 0.9128879656171585,
+      "bertscore_model": "xlm-roberta-large",
+      "comet": 0.784173999265705,
+      "comet_model": "Unbabel/wmt22-comet-da"
+    }
+  },
+  "caveats": {
+    "bertscore": "BERTScore uses xlm-roberta-large which has multilingual coverage but Shiwilu is OOD. Treat Shiwilu-side BERTScore as proxy only; prioritize chrF++ as the headline metric per plan section 31.",
+    "comet": "COMET (wmt22-comet-da) was not trained on Shiwilu data. Reported as indicative only; not a reliable absolute number on the Shiwilu side."
+  },
+  "avg_chrf_pp": 44.29636806841904,
+  "avg_bleu": 17.995785134334934,
+  "meta": {
+    "phase": 6,
+    "run_name": "nllb_bidi_lora_v2_1_dora_loraplus_xl",
+    "timestamp_utc": "2026-05-11T05:09:56.340634+00:00",
+    "checkpoint": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\models\\nmt\\nllb_bidi_lora_v2_1_dora_loraplus_xl",
+    "split": "test",
+    "n_predictions": 892,
+    "alpha": 0.7,
+    "embedding_model": "models\\sentence_transformers\\v3_iterative_hn_e5_base_bidirectional_xl",
+    "confidence": {
+      "thresholds": {
+        "name": "reranked_alpha_0.70",
+        "low_to_med": 0.3,
+        "med_to_high": 0.4
+      },
+      "distribution": {
+        "overall": {
+          "low": 104,
+          "medium": 608,
+          "high": 180
+        },
+        "shw2spa": {
+          "low": 63,
+          "medium": 287,
+          "high": 96
+        },
+        "spa2shw": {
+          "low": 41,
+          "medium": 321,
+          "high": 84
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidates_total": 5126,
+  "kept": 76,
+  "skipped_in_parallel": 2476,
+  "skipped_looks_spanish": 1392,
+  "skipped_no_apostrophe": 1181,
+  "require_apostrophe": true,
+  "out_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\07_nmt_augmented\\mono_shw.txt",
+  "timestamp_utc": "2026-05-09T07:25:04.739461+00:00",
+  "mode": "extract_mono"
+}

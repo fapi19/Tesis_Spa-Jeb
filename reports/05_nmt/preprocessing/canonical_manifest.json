@@ -1,0 +1,62 @@
+{
+  "phase": 1,
+  "step": "canonicalize_dataset",
+  "timestamp_utc": "2026-05-09T07:07:45.089654+00:00",
+  "inputs": {
+    "train": {
+      "path": "data\\processed\\04_splits\\train.jsonl",
+      "sha256": "2a15958a50c81d5e5e0a12e784c4f59ea976c677ac52b19427619e0c8fe8e773",
+      "row_count": 2563
+    },
+    "valid": {
+      "path": "data\\processed\\04_splits\\valid.jsonl",
+      "sha256": "c77db266b0b1e231fc197b02698f33ed26170988e8a206b0052708995889bff4",
+      "row_count": 320
+    },
+    "test": {
+      "path": "data\\processed\\04_splits\\test.jsonl",
+      "sha256": "4dda4492c4ffff3a2d9f286ca6c857538855fe0c4e212b334441885e9e85d9bf",
+      "row_count": 321
+    }
+  },
+  "outputs": {
+    "train": {
+      "path": "data\\processed\\05_nmt_canonical\\train.csv",
+      "sha256": "5625024fde94e7e471f93ce8d7979255fbced8caa773fcffa944ef381b0bfc18",
+      "row_count": 5126
+    },
+    "valid": {
+      "path": "data\\processed\\05_nmt_canonical\\valid.csv",
+      "sha256": "e0728a90c0d9abc44e5a19ac726dae4a8531f548d3b1dfa194bbf9ebbf65d633",
+      "row_count": 640
+    },
+    "test": {
+      "path": "data\\processed\\05_nmt_canonical\\test.csv",
+      "sha256": "1b8deb5ca43f80a04628b1d7ea9ab6243186c5c5827946b7d80e53b1fcee0e93",
+      "row_count": 642
+    }
+  },
+  "direction_counts": {
+    "shw2spa": 3204,
+    "spa2shw": 3204
+  },
+  "origin_counts": {
+    "flashcards": 4496,
+    "pdf_textos": 1912
+  },
+  "total_rows": 6408,
+  "expected_rows": 6408,
+  "group_id_leakage": false,
+  "schema": [
+    "id",
+    "pair_id",
+    "group_id",
+    "source",
+    "target",
+    "source_lang",
+    "target_lang",
+    "split",
+    "has_audit_flags",
+    "origin_source"
+  ]
+}

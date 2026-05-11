@@ -1,0 +1,403 @@
+{
+  "split": "test",
+  "variant": "xl",
+  "generated_utc": "2026-05-11T14:32:18Z",
+  "rows": [
+    {
+      "run": "nllb_bidi_lora_v0_xl",
+      "label": "v0_xl (baseline LoRA r=16)",
+      "baseline": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 8.499361527406815,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 23.580605202607437,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9084804108859178,
+          "bertscore_r": 0.8971220610387657,
+          "bertscore_f1": 0.9025540163431467,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.601659549057751,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 4.471132224836114,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 26.43594989661331,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8767576053270845,
+          "bertscore_r": 0.8695823776080469,
+          "bertscore_f1": 0.8730212047762935,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6643722313936515,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 25.008277549610373,
+        "avg_bleu": 6.485246876121465
+      },
+      "reranked": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 9.727090201830901,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 25.1563214325028,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9080788840627456,
+          "bertscore_r": 0.8996847034035242,
+          "bertscore_f1": 0.9036623712612375,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6122836792682853,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 4.606481225688692,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 28.05523900308944,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8825409754509349,
+          "bertscore_r": 0.8764142041249126,
+          "bertscore_f1": 0.879349935348793,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6844452105696426,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 26.60578021779612,
+        "avg_bleu": 7.166785713759797,
+        "best_alpha": null
+      },
+      "ablation_best_alpha": 0.7
+    },
+    {
+      "run": "nllb_bidi_lora_v1_bt_xl",
+      "label": "v1_bt_xl (+BT OPUS-100, LoRA r=32)",
+      "baseline": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 12.031833422390784,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 29.014089555547894,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9135490103954692,
+          "bertscore_r": 0.9052831406283272,
+          "bertscore_f1": 0.9091786874516663,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6355192451466359,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 5.565253293672903,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 32.688797311690706,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8870527673462582,
+          "bertscore_r": 0.8821937973723818,
+          "bertscore_f1": 0.8844957912983916,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6997139145841513,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 30.851443433619302,
+        "avg_bleu": 8.798543358031843
+      },
+      "reranked": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 12.44625931115064,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 29.91038029085567,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9134003393051335,
+          "bertscore_r": 0.9067116783338812,
+          "bertscore_f1": 0.90982504315975,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6483890270572072,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 6.689935206722658,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 34.360094020810294,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8927815358734986,
+          "bertscore_r": 0.8890796529605249,
+          "bertscore_f1": 0.890823749683363,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7175793768044545,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 32.13523715583298,
+        "avg_bleu": 9.56809725893665,
+        "best_alpha": null
+      },
+      "ablation_best_alpha": 0.3
+    },
+    {
+      "run": "nllb_bidi_lora_v2_0_dora_xl",
+      "label": "v2.0 DoRA",
+      "baseline": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 13.62177137434889,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 29.372004993898837,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9147686870108805,
+          "bertscore_r": 0.9059038028588744,
+          "bertscore_f1": 0.9101231993581147,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6363109044830896,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 5.790241526194384,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 33.299771289045225,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8915770537650104,
+          "bertscore_r": 0.8860426685467964,
+          "bertscore_f1": 0.8886809385143588,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7128932352424202,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 31.335888141472033,
+        "avg_bleu": 9.706006450271637
+      },
+      "reranked": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 14.545671628739733,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 30.815833963643996,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9140006426738516,
+          "bertscore_r": 0.906610963857762,
+          "bertscore_f1": 0.9100877335253318,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.651056420108128,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 6.4649936717799585,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 34.3536686922506,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.894653364147306,
+          "bertscore_r": 0.8894235974202777,
+          "bertscore_f1": 0.8919314617800606,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7245238933862592,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 32.5847513279473,
+        "avg_bleu": 10.505332650259845,
+        "best_alpha": null
+      },
+      "ablation_best_alpha": 0.7
+    },
+    {
+      "run": "nllb_bidi_lora_v2_1_dora_loraplus_xl",
+      "label": "v2.1 DoRA + LoRA+",
+      "baseline": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 23.48070212101298,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 40.68388568118353,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.92304366920561,
+          "bertscore_r": 0.9183993510601232,
+          "bertscore_f1": 0.9205308826514959,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6970028079411374,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 11.879505095791984,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 46.961264921502575,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9131617558109386,
+          "bertscore_r": 0.9093474658882671,
+          "bertscore_f1": 0.9111456734717159,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7794220778974182,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 43.82257530134305,
+        "avg_bleu": 17.680103608402483
+      },
+      "reranked": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 23.230756327975445,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 41.05434555778427,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9246706692627192,
+          "bertscore_r": 0.9200362664701692,
+          "bertscore_f1": 0.9221410206080553,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7063162151740805,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.760813940694424,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 47.53839057905382,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9145905007963223,
+          "bertscore_r": 0.911387964080802,
+          "bertscore_f1": 0.9128879656171585,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.784173999265705,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 44.29636806841904,
+        "avg_bleu": 17.995785134334934,
+        "best_alpha": null
+      },
+      "ablation_best_alpha": 0.7
+    },
+    {
+      "run": "nllb_bidi_lora_v2_1b_loraplus_xl",
+      "label": "v2.1b LoRA+ (champion)",
+      "baseline": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 22.79639857577969,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 40.34056270851366,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.924271946797991,
+          "bertscore_r": 0.9195555853469489,
+          "bertscore_f1": 0.9217346830485648,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7025334725465475,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.596600316304144,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 46.742623221527175,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9131734511510139,
+          "bertscore_r": 0.9083390219863755,
+          "bertscore_f1": 0.9106458225057799,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7784043758973948,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 43.54159296502041,
+        "avg_bleu": 17.69649944604192
+      },
+      "reranked": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 24.483309399052647,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 42.41939885936621,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9282674163980869,
+          "bertscore_r": 0.9219683533024895,
+          "bertscore_f1": 0.9249222765054403,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7178325572890552,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 12.445778053008988,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 47.55956953881808,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9159426131857885,
+          "bertscore_r": 0.9115840955700041,
+          "bertscore_f1": 0.9136579019339095,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7863555907401268,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 44.989484199092146,
+        "avg_bleu": 18.46454372603082,
+        "best_alpha": null
+      },
+      "ablation_best_alpha": 0.7
+    },
+    {
+      "run": "nllb_bidi_lora_v2_2_bt_iter1_xl",
+      "label": "v2.2 +BT iter1 Wikipedia (regression)",
+      "baseline": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 14.107046179362758,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 29.667692700043723,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9175237794093487,
+          "bertscore_r": 0.9076986054935797,
+          "bertscore_f1": 0.9123959876763981,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6441122260729828,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 5.826546520661544,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 32.48243844854985,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8876750224641621,
+          "bertscore_r": 0.8834262749539362,
+          "bertscore_f1": 0.8854149952864968,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7057384377504143,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 31.075065574296787,
+        "avg_bleu": 9.966796350012151
+      },
+      "reranked": {
+        "shw2spa": {
+          "n": 446,
+          "bleu": 14.755630773658696,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 30.717635585722945,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.9177376851105369,
+          "bertscore_r": 0.9082234018052106,
+          "bertscore_f1": 0.912746721319019,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.6512081693239811,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "spa2shw": {
+          "n": 446,
+          "bleu": 5.901490277361714,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "chrf_pp": 33.93744942006566,
+          "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bertscore_p": 0.8925040155782827,
+          "bertscore_r": 0.8876492613634186,
+          "bertscore_f1": 0.889956145543154,
+          "bertscore_model": "xlm-roberta-large",
+          "comet": 0.7233840302635202,
+          "comet_model": "Unbabel/wmt22-comet-da"
+        },
+        "avg_chrf_pp": 32.3275425028943,
+        "avg_bleu": 10.328560525510206,
+        "best_alpha": null
+      },
+      "ablation_best_alpha": 0.3
+    }
+  ]
+}

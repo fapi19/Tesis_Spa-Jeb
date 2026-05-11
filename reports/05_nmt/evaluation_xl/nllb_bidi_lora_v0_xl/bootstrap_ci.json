@@ -1,0 +1,37 @@
+{
+  "run": "nllb_bidi_lora_v0_xl",
+  "label": "v0_xl",
+  "prediction_source": "reranked",
+  "prediction_path": "reports\\05_nmt\\reranking_xl\\nllb_bidi_lora_v0_xl\\test_predictions_reranked.jsonl",
+  "n_boot": 1000,
+  "seed": 20260511,
+  "directions": {
+    "shw2spa": {
+      "n": 446,
+      "point": 25.1563214325028,
+      "mean": 25.15363149043675,
+      "std": 1.0795994805492146,
+      "ci95_lo": 23.06677909220287,
+      "ci95_hi": 27.47499767977434,
+      "ci95_halfwidth": 2.2041092937857343
+    },
+    "spa2shw": {
+      "n": 446,
+      "point": 28.05523900308944,
+      "mean": 28.125742085195846,
+      "std": 0.8150705148622446,
+      "ci95_lo": 26.55816188703289,
+      "ci95_hi": 29.73932079436255,
+      "ci95_halfwidth": 1.5905794536648283
+    },
+    "avg": {
+      "n": 892,
+      "point": 26.60578021779612,
+      "mean": 26.60770954613828,
+      "std": 0.6681077034128222,
+      "ci95_lo": 25.326103003965894,
+      "ci95_hi": 27.87730659553704,
+      "ci95_halfwidth": 1.2756017957855725
+    }
+  }
+}

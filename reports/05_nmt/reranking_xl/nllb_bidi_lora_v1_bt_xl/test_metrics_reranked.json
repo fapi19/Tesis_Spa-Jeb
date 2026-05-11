@@ -1,0 +1,71 @@
+{
+  "primary_metric": "chrf_pp",
+  "directions": {
+    "shw2spa": {
+      "n": 446,
+      "bleu": 12.44625931115064,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_pp": 29.91038029085567,
+      "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "bertscore_p": 0.9134003393051335,
+      "bertscore_r": 0.9067116783338812,
+      "bertscore_f1": 0.90982504315975,
+      "bertscore_model": "xlm-roberta-large",
+      "comet": 0.6483890270572072,
+      "comet_model": "Unbabel/wmt22-comet-da"
+    },
+    "spa2shw": {
+      "n": 446,
+      "bleu": 6.689935206722658,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_pp": 34.360094020810294,
+      "chrf_pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "bertscore_p": 0.8927815358734986,
+      "bertscore_r": 0.8890796529605249,
+      "bertscore_f1": 0.890823749683363,
+      "bertscore_model": "xlm-roberta-large",
+      "comet": 0.7175793768044545,
+      "comet_model": "Unbabel/wmt22-comet-da"
+    }
+  },
+  "caveats": {
+    "bertscore": "BERTScore uses xlm-roberta-large which has multilingual coverage but Shiwilu is OOD. Treat Shiwilu-side BERTScore as proxy only; prioritize chrF++ as the headline metric per plan section 31.",
+    "comet": "COMET (wmt22-comet-da) was not trained on Shiwilu data. Reported as indicative only; not a reliable absolute number on the Shiwilu side."
+  },
+  "avg_chrf_pp": 32.13523715583298,
+  "avg_bleu": 9.56809725893665,
+  "meta": {
+    "phase": 6,
+    "run_name": "nllb_bidi_lora_v1_bt_xl",
+    "timestamp_utc": "2026-05-10T20:33:47.579877+00:00",
+    "checkpoint": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\models\\nmt\\nllb_bidi_lora_v1_bt_xl",
+    "split": "test",
+    "n_predictions": 892,
+    "alpha": 0.7,
+    "embedding_model": "models\\sentence_transformers\\v3_iterative_hn_e5_base_bidirectional_xl",
+    "confidence": {
+      "thresholds": {
+        "name": "reranked_alpha_0.70",
+        "low_to_med": 0.3,
+        "med_to_high": 0.4
+      },
+      "distribution": {
+        "overall": {
+          "low": 305,
+          "medium": 498,
+          "high": 89
+        },
+        "shw2spa": {
+          "low": 148,
+          "medium": 246,
+          "high": 52
+        },
+        "spa2shw": {
+          "low": 157,
+          "medium": 252,
+          "high": 37
+        }
+      }
+    }
+  }
+}
