@@ -13,8 +13,8 @@ generación de embeddings bilingües y entrenamiento de modelos neuronales.
 
 ## Estado actual
 
-**Ciclo de tesis cerrado.** Tanto el subsistema de embeddings como el sistema
-NMT están entrenados, evaluados y documentados. El modelo enviado es
+**Fase experimental cerrada.** Tanto el subsistema de embeddings como el sistema
+NMT están entrenados, evaluados y documentados. El modelo seleccionado es
 `v2.1b LoRA+` (NLLB-200 + LoRA `r=32, α=64` + optimizador LoRA+ con
 `lr_B = 16·lr_A`, sobre la variante `xl` del corpus de 4501 pares) con
 **avg chrF++ reranked = 44.99** (IC 95\% `[43.17, 46.96]`, bootstrap
@@ -664,6 +664,30 @@ La fase `71_human_eval_template` genera por defecto la plantilla CSV, la clave
 anonima JSON y un resumen Markdown del protocolo. Use `--no-write-md` para
 omitir el Markdown o `--md-output <ruta>` para escribirlo en otra ubicacion.
 
+### Probar el mejor modelo interactivo
+
+La forma recomendada para probar la version mas potente del sistema es usar el
+lanzador de Windows:
+
+```powershell
+.\probar_modelo.bat
+```
+
+Tambien se puede usar el lanzador de PowerShell:
+
+```powershell
+.\probar_modelo.ps1
+```
+
+Ese comando carga `models/nmt/nllb_bidi_lora_v2_1b_loraplus_xl` con reranking
+semantico activado. Dentro del prompt use `spa: texto` para traducir de
+castellano a shiwilu, `shw: texto` para traducir de shiwilu a castellano y
+`/quit` para salir. Para una prueba mas rapida sin reranking:
+
+```powershell
+.\probar_modelo.ps1 -SinRerank
+```
+
 ### Modelo base y razones
 
 - Backbone NMT: `facebook/nllb-200-distilled-600M` (multilingual NMT pre-entrenado).
@@ -868,7 +892,10 @@ Estos pares quedan en `data/processed/07_nmt_augmented/train_bt.csv` con
 
 Fuente: `reports/05_nmt/evaluation_xl/leaderboard.md` (Phase 5,
 `scripts/nmt/72_leaderboard.py`) y `bootstrap_ci_summary.md` (Phase 6,
-`scripts/nmt/73_bootstrap_ci.py`).
+`scripts/nmt/73_bootstrap_ci.py`). La tesis tambien incluye el desglose
+reproducible por direccion en
+`thesis/latex/figuras/generated/nmt_directional_metrics_xl.tex`, generado por
+`scripts/nmt/74_thesis_tables_phase6.py`.
 
 ### Protocolo OE3 preparado
 
@@ -924,7 +951,7 @@ trabajo futuro:
   `40_evaluate.py --checkpoint-spa2shw … --checkpoint-shw2spa …
   --run-name nllb_two_loraplus_xl`. El soporte de código está listo
   (scripts 40/50 ya aceptan `--checkpoint-spa2shw`/`--checkpoint-shw2spa`);
-  queda como trabajo futuro porque el ciclo de tesis cierra con el
+  queda como trabajo futuro porque esta fase experimental cierra con el
   campeón bidireccional v2.1b LoRA+ (avg chrF++ = 44.99). Hipótesis a
   validar: separar direcciones permite que cada adapter se especialice
   y cierre el gap residual entre shw→spa y spa→shw.

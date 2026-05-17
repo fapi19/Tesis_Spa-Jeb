@@ -14,10 +14,13 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "reports" / "04_embeddings"
 OUTPUT = ROOT / "thesis" / "latex" / "figuras" / "generated"
+SPLIT_XL_TEST = ROOT / "data" / "processed" / "04_splits_xl" / "test.csv"
+V3_XL_MODEL = ROOT / "models" / "sentence_transformers" / "v3_iterative_hn_e5_base_bidirectional_xl"
 
 
 @dataclass(frozen=True)
@@ -360,6 +363,87 @@ def plot_negative_mix() -> None:
     save_current("embedding_v3_negative_mix")
 
 
+def test_parallel_rows() -> list[dict[str, str]]:
+    with SPLIT_XL_TEST.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+
+    complete_rows = [
+        row
+        for row in rows
+        if row["ESP_normalizado"].strip() and row["SHIWILU_normalizado"].strip()
+    ]
+    return sorted(complete_rows, key=lambda item: (item.get("source", ""), item["group_id"], item["pair_id"]))
+
+
+def plot_v3_embedding_space() -> None:
+    from sentence_transformers import SentenceTransformer
+
+    rows = test_parallel_rows()
+    spanish_texts = [f"query: {row['ESP_normalizado']}" for row in rows]
+    shiwilu_texts = [f"passage: {row['SHIWILU_normalizado']}" for row in rows]
+
+    model = SentenceTransformer(str(V3_XL_MODEL))
+    spanish_embeddings = model.encode(
+        spanish_texts,
+        batch_size=64,
+        convert_to_numpy=True,
+        normalize_embeddings=True,
+        show_progress_bar=False,
+    )
+    shiwilu_embeddings = model.encode(
+        shiwilu_texts,
+        batch_size=64,
+        convert_to_numpy=True,
+        normalize_embeddings=True,
+        show_progress_bar=False,
+    )
+
+    projection = PCA(n_components=2, random_state=42).fit_transform(
+        list(spanish_embeddings) + list(shiwilu_embeddings)
+    )
+    spanish_points = projection[: len(rows)]
+    shiwilu_points = projection[len(rows) :]
+
+    plt.figure(figsize=(7.8, 5.0))
+    for esp_point, shi_point in zip(spanish_points, shiwilu_points):
+        plt.plot(
+            [esp_point[0], shi_point[0]],
+            [esp_point[1], shi_point[1]],
+            color="#b8bcc2",
+            linewidth=0.32,
+            alpha=0.24,
+            zorder=1,
+        )
+
+    plt.scatter(
+        spanish_points[:, 0],
+        spanish_points[:, 1],
+        s=9,
+        marker="o",
+        color="#1f77b4",
+        alpha=0.68,
+        label="Castellano",
+        zorder=2,
+    )
+    plt.scatter(
+        shiwilu_points[:, 0],
+        shiwilu_points[:, 1],
+        s=11,
+        marker="^",
+        color="#d62728",
+        alpha=0.68,
+        label="Shiwilu",
+        zorder=3,
+    )
+
+    plt.xlabel("PC1")
+    plt.ylabel("PC2")
+    plt.title(f"Proyeccion PCA del espacio bilingue v3 ({len(rows)} pares)")
+    plt.grid(alpha=0.18)
+    plt.legend(fontsize=8, loc="best")
+    save_current("embedding_v3_space_pca")
+
+
 def main() -> None:
     rows = metric_rows()
     write_csv(rows)
@@ -367,6 +451,7 @@ def main() -> None:
     plot_final_recall(rows)
     plot_rank_distribution(rows)
     plot_negative_mix()
+    plot_v3_embedding_space()
 
 
 if __name__ == "__main__":

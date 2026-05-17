@@ -52,6 +52,7 @@ faiss-cpu==1.11.0
 # --- Glue libs (loose, do not affect model/metric behavior) ---
 numpy>=1.26,<2          # upper bound required by unbabel-comet 2.2.4
 pandas>=2.2,<3
+openpyxl>=3.1,<4
 scikit-learn>=1.6,<2
 tqdm>=4.67
 pyyaml>=6.0

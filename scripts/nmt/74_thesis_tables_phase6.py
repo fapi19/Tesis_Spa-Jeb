@@ -2,6 +2,7 @@
 
 Emits:
     thesis/latex/figuras/generated/nmt_leaderboard_xl.tex
+    thesis/latex/figuras/generated/nmt_directional_metrics_xl.tex
     thesis/latex/figuras/generated/nmt_bootstrap_ci_xl.tex
     thesis/latex/figuras/generated/nmt_rare_token_full_xl.tex
 
@@ -121,9 +122,51 @@ def table_leaderboard(runs: list[str], variant: str) -> str:
         r"% chrF++ y BLEU son promedios simples entre shw->spa y spa->shw.",
         r"% COMET y BERT-F1 son promedios simples de ambas direcciones; son",
         r"% indicativos porque sus modelos subyacentes no fueron entrenados con shiwilu.",
-        r"% $\bigstar$ = campeon enviado del ciclo de tesis.",
+        r"% $\bigstar$ = variante final seleccionada.",
     ]
     return _wrap(f"leaderboard{suffix} ({len(runs)} runs)", body)
+
+
+def table_directional_metrics(runs: list[str], variant: str) -> str:
+    suffix = "_xl" if variant == "xl" else ""
+    rerank_dir = PROJECT_ROOT / "reports" / "05_nmt" / f"reranking{suffix}"
+
+    body = [
+        r"\begin{tabular}{lcccc}",
+        r"\toprule",
+        r"\multirow{2}{*}{Variante (reranked)} & "
+        r"\multicolumn{2}{c}{shw$\to$spa} & "
+        r"\multicolumn{2}{c}{spa$\to$shw} \\",
+        r"\cmidrule(lr){2-3}\cmidrule(lr){4-5}",
+        r" & chrF++ & BLEU & chrF++ & BLEU \\",
+        r"\midrule",
+    ]
+    for run in runs:
+        rer = _load(rerank_dir / run / "test_metrics_reranked.json") or {}
+        dirs = rer.get("directions", {})
+        shw2spa = dirs.get("shw2spa", {})
+        spa2shw = dirs.get("spa2shw", {})
+        body.append(
+            " & ".join(
+                [
+                    LABELS.get(run, run),
+                    _fmt(shw2spa.get("chrf_pp")),
+                    _fmt(shw2spa.get("bleu")),
+                    _fmt(spa2shw.get("chrf_pp")),
+                    _fmt(spa2shw.get("bleu")),
+                ]
+            )
+            + r" \\"
+        )
+    body += [
+        r"\bottomrule",
+        r"\end{tabular}",
+        "",
+        r"% Metricas por direccion sobre las salidas reranked del test set.",
+        r"% Esta tabla complementa el leaderboard promedio para evitar ocultar",
+        r"% asimetrias entre traduccion hacia castellano y hacia shiwilu.",
+    ]
+    return _wrap(f"directional_metrics{suffix} ({len(runs)} runs)", body)
 
 
 def table_bootstrap_ci(runs: list[str], variant: str) -> str:
@@ -233,6 +276,7 @@ def main() -> int:
 
     artifacts = {
         f"nmt_leaderboard{suffix}.tex": table_leaderboard(runs, args.variant),
+        f"nmt_directional_metrics{suffix}.tex": table_directional_metrics(runs, args.variant),
         f"nmt_bootstrap_ci{suffix}.tex": table_bootstrap_ci(runs, args.variant),
         f"nmt_rare_token_full{suffix}.tex": table_rare_token_full(runs, args.variant),
     }

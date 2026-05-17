@@ -40,6 +40,23 @@ project (file moved, new convention, recurring bug).
 the original poetry-managed env but its torch is CPU-only, so a 10-epoch
 fine-tune that takes 11 min on GPU takes 4-8 h on CPU.
 
+### Quick manual test
+
+Use the Windows launcher for the strongest available NMT system:
+
+```powershell
+.\probar_modelo.bat
+```
+
+PowerShell alternative:
+
+```powershell
+.\probar_modelo.ps1
+```
+
+It loads `models/nmt/nllb_bidi_lora_v2_1b_loraplus_xl` with semantic reranking.
+Use `.\probar_modelo.ps1 -SinRerank` for a faster baseline-only interactive run.
+
 ### Things that DO NOT work on this Windows machine
 
 - `torch.compile` — needs Triton (Linux-only). Don't add `--compile` flag to
@@ -309,9 +326,9 @@ up with Wikipedia + Tatoeba + News-commentary.
 # → reports/05_nmt/evaluation_xl/<run>/bootstrap_ci.json
 # → reports/05_nmt/evaluation_xl/bootstrap_ci_summary.md
 
-# Phase 6: regenerate thesis LaTeX fragments (leaderboard + CI + rare-token full)
+# Phase 6: regenerate thesis LaTeX fragments (leaderboard + directional + CI + rare-token full)
 .venv-nmt/Scripts/python -m scripts.nmt.74_thesis_tables_phase6 --variant xl
-# → thesis/latex/figuras/generated/nmt_{leaderboard,bootstrap_ci,rare_token_full}_xl.tex
+# → thesis/latex/figuras/generated/nmt_{leaderboard,directional_metrics,bootstrap_ci,rare_token_full}_xl.tex
 
 # OE3: prepared human-evaluation protocol (not executed with reviewers)
 .venv-nmt/Scripts/python -m scripts.nmt.71_human_eval_template --variant xl --per-direction 100 --seed 2026 --split test
@@ -464,7 +481,7 @@ Phase 2 ablations are **closed**. Final reranked-test leaderboard (xl, 892 rows)
   only 89 high-quality pairs at threshold 0.70. **Lesson: domain match
   beats volume in low-resource BT.**
 
-**Deferred to future work** (code is wired, skipped in this thesis cycle):
+**Deferred to future work** (code is wired, skipped in the closed experimental phase):
 
 - **Two-Adapter LoRA+** (asymmetric ranks). One LoRA+ adapter per
   direction: spa→shw r=64 α=128, shw→spa r=32 α=64. Use `--direction
@@ -483,7 +500,7 @@ Phase 2 ablations are **closed**. Final reranked-test leaderboard (xl, 892 rows)
 The user prefers **architectural solutions over loss-weighting hacks** —
 they explicitly rejected direction-weighted loss in favor of Two-Adapter.
 
-**This thesis cycle closes on v2.1b LoRA+ as the shipped champion.**
+**The closed experimental phase selects v2.1b LoRA+ as the final champion.**
 Remaining work: Phase 5 (full eval suite — BLEU + chrF++ + BERTScore +
 COMET on all survivors) and Phase 6 (bootstrap CIs + rare-token + morph
 buckets + thesis tables/PDF rebuild).

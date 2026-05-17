@@ -1,0 +1,44 @@
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Resultados esperados (mapeo de objetivos, MV e IOV)}}{18}{table.1.1}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Herramientas, métodos y procedimientos a utilizar}}{20}{table.1.2}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Resultados de búsqueda de las cadenas}}{37}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Resultados luego de aplicar criterios de exclusión}}{37}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Formulario de extracción de datos}}{38}{table.3.3}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Fuentes bilingües incorporadas al corpus}}{51}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Etapas reproducibles de preparación del corpus}}{53}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Resumen del corpus consolidado y auditado}}{54}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Estadísticas léxicas del corpus auditado}}{55}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Particiones canónicas del corpus bilingüe (variante \texttt {xl}, semilla~42)}}{56}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Métricas del modelo de embeddings preparado}}{58}{table.4.6}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Distribución del corpus canónico bidireccional para entrenamiento NMT (variante \texttt {xl}).}}{65}{table.caption.16}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Distribución de pares en el conjunto de entrenamiento tras el filtro semántico (variante \texttt {xl}).}}{66}{table.caption.17}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Comparación de variantes del sistema sobre el conjunto de prueba (variante \texttt {xl}, 451 pares por dirección). chrF++ es la métrica primaria.}}{68}{table.caption.18}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces \emph {Leaderboard} final de ablaciones sobre la variante \texttt {xl} (446 pares por dirección, 892 filas direccionales). chrF++ es la métrica primaria; BLEU y COMET se reportan como métricas complementarias.}}{69}{table.caption.23}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Métricas reranked por dirección sobre el conjunto de prueba de la variante \texttt {xl}. La separación evita que el promedio oculte diferencias entre traducir hacia castellano y traducir hacia shiwilu.}}{70}{table.caption.24}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Intervalos de confianza bootstrap del 95\,\% sobre chrF++ reranked y métricas complementarias promedio. BLEU y COMET se muestran como puntos sin intervalo de confianza.}}{71}{table.caption.25}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Estado de los componentes del protocolo de validación.}}{77}{table.caption.27}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Limitaciones del proyecto}}{96}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Umbral de riesgo (probabilidad e impacto)}}{97}{table.A.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Matriz de riesgos del proyecto}}{97}{table.A.3}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Lista de tareas (EDT)}}{100}{table.A.4}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Cronograma del proyecto}}{102}{table.A.5}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Presupuesto del proyecto}}{106}{table.A.6}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces Artefactos reproducibles de construcción del corpus}}{108}{table.A.7}%
+\contentsline {table}{\numberline {A.8}{\ignorespaces Criterios documentados para selección y normalización}}{109}{table.A.8}%
+\contentsline {table}{\numberline {A.9}{\ignorespaces Archivos canónicos de partición}}{109}{table.A.9}%
+\contentsline {table}{\numberline {A.10}{\ignorespaces Evolución experimental del modelo de embeddings}}{110}{table.A.10}%
+\contentsline {table}{\numberline {A.11}{\ignorespaces Reportes del modelo de embeddings preparado}}{112}{table.A.11}%
+\contentsline {table}{\numberline {A.12}{\ignorespaces Hiperparámetros del adaptador LoRA y del entrenamiento.}}{114}{table.A.12}%
+\contentsline {table}{\numberline {A.13}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Ablación de \(\alpha \) en el \emph {reranker} semántico (modelos \(v_0\) y \(v_{1bt}\), variante \texttt {xl}, conjunto de \emph {test}, métrica de selección: chrF++ promedio).}}{116}{table.caption.32}%
+\contentsline {table}{\numberline {A.14}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Ablación de \(\alpha \) para el modelo aumentado \(v_{1bt}\) (variante \texttt {xl}).}}{116}{table.caption.33}%
+\contentsline {table}{\numberline {A.15}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Análisis rare-token / OOV sobre el bucket de referencias con \(\geq 20\%\) palabras raras para las variantes reranked (variante \texttt {xl}).}}{120}{table.caption.38}%
+\contentsline {table}{\numberline {A.16}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Tokens promedio por oración de shiwilu: SP Unigram entrenado en este trabajo vs. el \emph {tokenizer} multilingüe de NLLB-200 (variante \texttt {xl}).}}{121}{table.caption.39}%
+\contentsline {table}{\numberline {A.17}{\ignorespaces Artefactos técnicos del protocolo de evaluación humana preparado}}{121}{table.A.17}%
+\contentsline {table}{\numberline {A.18}{\ignorespaces Pipeline reproducible del sistema NMT SA-BiNLLB.}}{125}{table.A.18}%

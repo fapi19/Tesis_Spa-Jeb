@@ -1,0 +1,20 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Árbol de Problemas}}{14}{figure.caption.5}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Flujo reproducible de construcción del corpus bilingüe}}{52}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Distribución de fuentes por partición canónica (variante \texttt {xl})}}{57}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Evolución experimental de R@1 y MRR en los modelos de embeddings}}{58}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Métricas finales de recuperación del modelo de embeddings v3}}{59}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Proyección PCA del espacio vectorial bilingüe del modelo de embeddings v3}}{59}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Distribución de rangos del modelo de embeddings v3}}{60}{figure.4.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Arquitectura de entrenamiento e inferencia del modelo final SA-BiNLLB \(v_{2.1b}\)}}{64}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Evolución del entrenamiento de \(v_{2.1b}\) LoRA+ en la variante \texttt {xl}: pérdida de entrenamiento, pérdida de validación y chrF++ de validación por dirección.}}{72}{figure.caption.26}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Estructura de descomposición del trabajo}}{99}{figure.caption.29}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Composición de negativos usados en la iteración v3}}{112}{figure.caption.31}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Comparación de chrF++ promedio en validación durante el entrenamiento de \(v_0\), \(v_{1bt}\) y \(v_{2.1b}\) LoRA+.}}{124}{figure.caption.43}%

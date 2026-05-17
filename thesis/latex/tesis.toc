@@ -1,0 +1,99 @@
+\xpg@aux {}{spanish}
+\contentsline {chapter}{Resumen}{1}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Generalidades}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problemática}{11}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Árbol de Problemas}{14}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Causas}{14}{subsection.1.1.2}%
+\contentsline {paragraph}{Inexistencia de un corpus paralelo shiwilu--castellano adecuado.}{14}{paragraph*.6}%
+\contentsline {paragraph}{Investigación limitada y falta de baselines adaptados al par shiwilu--castellano.}{14}{paragraph*.7}%
+\contentsline {paragraph}{Falta de métodos comparativos en línea para probar y contrastar modelos NMT.}{15}{paragraph*.8}%
+\contentsline {paragraph}{Protocolos combinados de validación automatizada y participativa insuficientes.}{15}{paragraph*.9}%
+\contentsline {subsection}{\numberline {1.1.3}Consecuencias}{15}{subsection.1.1.3}%
+\contentsline {paragraph}{Modelos con precisión insuficiente en usos reales.}{15}{paragraph*.10}%
+\contentsline {paragraph}{Escasez de materiales bilingües para enseñanza y uso práctico.}{15}{paragraph*.11}%
+\contentsline {paragraph}{Menor visibilidad digital y dificultad en la revitalización.}{15}{paragraph*.12}%
+\contentsline {subsection}{\numberline {1.1.4}Problema seleccionado}{16}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Objetivos}{16}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo general}{16}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos específicos }{16}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Resultados esperados}{17}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Mapeo de objetivos, resultados y verificación}{18}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Métodos y Procedimientos}{19}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Herramientas:}{20}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Justificación}{20}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Detalle}{21}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Métodos}{22}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Procedimientos}{23}{subsection.1.3.5}%
+\contentsline {chapter}{\numberline {2}Marco Conceptual}{24}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introducción}{24}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Desarrollo del marco}{24}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Procesamiento de Lenguaje Natural (NLP)}{24}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Lenguas de bajo recursos (LRL)}{25}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Alineación oración a oración}{25}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Preprocesamiento y tokenización sub-palabra}{26}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Aumento de datos (\emph {data augmentation})}{27}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Transfer learning y modelos multilingües }{28}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Adaptación eficiente (adapters/LoRA)}{29}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Representaciones vectoriales (embeddings) y minería/filtrado}{29}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.9}BLEU (Bilingual Evaluation Understudy)}{30}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}chrF (carácter n-gram F-score)}{30}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.11}BERTScore y COMET}{30}{subsection.2.2.11}%
+\contentsline {chapter}{\numberline {3}Estado del Arte}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Objetivos de revisión}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Preguntas de revisión}{33}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Estrategia de búsqueda}{33}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Motores de búsqueda a usar}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Cadenas de búsqueda a usar}{34}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Documentos encontrados}{37}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Criterios de inclusión/exclusión}{37}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Formulario de extracción de datos}{38}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Resultados de la revisión}{39}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}¿Qué técnicas de generación y ampliación de datos (back-translation, mutación semántica, paraphrasing, pivoting, filtrado por embeddings, etc.) producen mejoras reproducibles en NMT para pares de muy bajos recursos?}{39}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}¿Qué arquitecturas y estrategias de entrenamiento (multilingüe, transfer learning, fine-tuning bidireccional, adapters, few/zero-shot) ofrecen el mejor balance entre rendimiento y coste computacional para un modelo shiwilu$\leftrightarrow $castellano, y qué baselines son apropiados para la comparación?}{42}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}¿Qué métricas automáticas (BLEU, ChrF++, TER, ¿etc.) y procedimientos de validación combinada (evaluación automática + pruebas participativas con hablantes) son más adecuados y fiables para medir adecuación lingüística y pertinencia cultural en traducciones de lenguas originarias con corpus escaso?}{45}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Conclusiones}{47}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Recopilación y preparación inicial del corpus bilingüe}{48}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción}{48}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Resultados alcanzados}{48}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}R1: corpus paralelo depurado, alineado y particionado}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Fuentes del corpus bilingüe}{49}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Construcción, normalización y auditoría del corpus}{52}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Caracterización del corpus preparado}{54}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Particiones reproducibles del corpus}{55}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}R2: recurso de embeddings bilingüe preparado y evaluado}{57}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Discusión}{60}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Sistema de traducción neuronal SA-BiNLLB}{62}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introducción}{62}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Resultados alcanzados}{63}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Arquitectura general}{63}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Datos canónicos para NMT}{64}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Filtrado semántico de calidad}{65}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Entrenamiento del modelo \(v_0\)}{66}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Augmentación de datos para \(v_{1bt}\)}{66}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Evaluación automática y ablaciones}{68}{subsection.5.2.6}%
+\contentsline {paragraph}{Efecto del corpus.}{68}{paragraph*.19}%
+\contentsline {paragraph}{Efecto del reranking semántico.}{68}{paragraph*.20}%
+\contentsline {paragraph}{Efecto de la augmentación.}{69}{paragraph*.21}%
+\contentsline {paragraph}{Ablaciones del optimizador y la arquitectura del adaptador.}{69}{paragraph*.22}%
+\contentsline {section}{\numberline {5.3}Discusión}{72}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Conclusión del capítulo}{73}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Protocolo de validación automática y participativa}{75}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introducción}{75}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Resultados alcanzados}{76}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Discusión}{78}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Conclusión del capítulo}{79}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{80}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusiones}{80}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Trabajos futuros}{81}{section.7.2}%
+\contentsline {chapter}{Referencias}{84}{chapter*.28}%
+\contentsline {chapter}{\numberline {A}Anexos}{91}{appendix.A}%
+\contentsline {section}{Anexo B: Documento reproducible del proceso de corpus y embeddings}{107}{section*.30}%
+\contentsline {section}{Anexo C: Documento reproducible del sistema NMT SA-BiNLLB}{113}{table.A.11}%
+\contentsline {paragraph}{(1) Backtranslation desde monolingüe Shiwilu.}{117}{paragraph*.34}%
+\contentsline {paragraph}{(2) Round-trip backtranslation desde monolingüe Español.}{117}{paragraph*.35}%
+\contentsline {paragraph}{(3) Minería bilingüe basada en embeddings.}{117}{paragraph*.36}%
+\contentsline {paragraph}{(4) Variantes morfológicas controladas.}{117}{paragraph*.37}%
+\contentsline {paragraph}{DoRA (\emph {Decomposed Low-Rank Adaptation}).}{123}{paragraph*.40}%
+\contentsline {paragraph}{LoRA+.}{123}{paragraph*.41}%
+\contentsline {paragraph}{\emph {Round-trip backtranslation} iterativa (iter 1).}{124}{paragraph*.42}%

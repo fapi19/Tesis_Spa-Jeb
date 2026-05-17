@@ -4,7 +4,7 @@ Loads a trained NMT checkpoint and lets you type sentences to translate.
 
 Usage:
     .venv-nmt/Scripts/python -m scripts.translate_interactive
-    .venv-nmt/Scripts/python -m scripts.translate_interactive --checkpoint models/nmt/nllb_bidi_lora_v1_bt_xl
+    .venv-nmt/Scripts/python -m scripts.translate_interactive --checkpoint models/nmt/nllb_bidi_lora_v2_1b_loraplus_xl
     .venv-nmt/Scripts/python -m scripts.translate_interactive --rerank
 
 Commands inside the prompt:
@@ -39,8 +39,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--checkpoint",
         type=str,
-        default="models/nmt/nllb_bidi_lora_v1_bt_xl",
-        help="Path to NMT checkpoint (default: latest v1_bt_xl)",
+        default="models/nmt/nllb_bidi_lora_v2_1b_loraplus_xl",
+        help="Path to NMT checkpoint (default: best v2.1b LoRA+ xl)",
     )
     p.add_argument(
         "--rerank",

@@ -207,7 +207,7 @@ def table_sentencepiece_vs_nllb() -> str:
         f"NLLB-200 & {_fmt(cmp.get('nllb_avg_tokens'))} & "
         f"{_fmt(nllb_per_word)} & 256\\,000 & {nllb_short}/{sample_size} \\\\",
         r"\midrule",
-        f"Empate & {DASH} & {DASH} & {DASH} & {equal}/{sample_size} \\\\",
+        f"Empate & \\multicolumn{{3}}{{c}}{{No aplica}} & {equal}/{sample_size} \\\\",
         r"\bottomrule",
         r"\end{tabular}",
         "",
