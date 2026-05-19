@@ -582,6 +582,50 @@
       \field{type}{Tesis de maestría}
       \field{year}{2017}
     \endentry
+    \entry{gale1993alignment}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2347dfd9dcf20ea2a38d78f8e6c8e8ab}{%
+           family={Gale},
+           familyi={G\bibinitperiod},
+           given={William\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1b3e71c2df8581a083b57279436fb9}{%
+           family={Church},
+           familyi={C\bibinitperiod},
+           given={Kenneth\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{fullhash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{fullhashraw}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{bibnamehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authorbibnamehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authornamehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authorfullhash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authorfullhashraw}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Linguistics}
+      \field{number}{1}
+      \field{title}{A Program for Aligning Sentences in Bilingual Corpora}
+      \field{volume}{19}
+      \field{year}{1993}
+      \field{pages}{75\bibrangedash 102}
+      \range{pages}{28}
+      \verb{urlraw}
+      \verb https://aclanthology.org/J93-1004/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/J93-1004/
+      \endverb
+    \endentry
     \entry{hayou2024loraplus}{misc}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=844502476673c5e553a9701af966135f}{%
@@ -2351,6 +2395,54 @@
       \verb 10.48550/arXiv.2009.09025
       \endverb
     \endentry
+    \entry{reimers2019sbert}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da9947b27b0d1c4c912e2b391426d443}{%
+           family={Reimers},
+           familyi={R\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea70b44be1920f6e8c379706bc7d047a}{%
+           family={Gurevych},
+           familyi={G\bibinitperiod},
+           given={Iryna},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{fullhash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{fullhashraw}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{bibnamehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authorbibnamehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authornamehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authorfullhash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authorfullhashraw}{2466af6376c9c5e3658dcc6692351f3e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing}
+      \field{title}{Sentence-{BERT}: Sentence Embeddings using Siamese {BERT}-Networks}
+      \field{year}{2019}
+      \field{pages}{3982\bibrangedash 3992}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/D19-1410
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/D19-1410/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/D19-1410/
+      \endverb
+    \endentry
     \entry{rios2019}{thesis}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2486f95e292b739ea913ca43f1a24174}{%
@@ -2741,33 +2833,6 @@
       \verb https://aclanthology.org/N13-4001/
       \endverb
     \endentry
-    \entry{sun2025}{misc}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ef6572e4cd58bb39a3f4e82fc64fe9f0}{%
-           family={Sun},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{fullhash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{fullhashraw}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{bibnamehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authorbibnamehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authornamehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authorfullhash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authorfullhashraw}{cfc984803e035359e387feb5e39d7c5c}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Referencia citada en el cuerpo; pendiente de verificacion bibliografica}
-      \field{title}{Bilingual Transformer Training from Scratch in Low-Resource Settings (referencia por verificar)}
-      \field{year}{2025}
-    \endentry
     \entry{talwar2025}{misc}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=92bf6607115838bfabdc92836b4510aa}{%
@@ -2954,12 +3019,12 @@
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=556c8050264b7b80ed069c35bcbbfdd7}{%
+        {{un=1,uniquepart=given,hash=556c8050264b7b80ed069c35bcbbfdd7}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Jiayi},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=878a14b5961891e2bb23bc152b2f802c}{%
            family={Adelani},
            familyi={A\bibinitperiod},
@@ -3000,12 +3065,90 @@
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2024), Long Papers}
       \field{title}{{AfriMTE} and {AfriCOMET}: Enhancing {COMET} to Embrace Under-Resourced {African} Languages}
       \field{year}{2024}
+    \endentry
+    \entry{wang2022e5}{misc}{}{}
+      \name{author}{8}{}{%
+        {{un=1,uniquepart=given,hash=cce05cab2c437e9c128f853684ee3137}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=a44174a97a52d8b64289ef831cb1ac37}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=026d1f57876191243f47c0ec47352891}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xiaolong},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4004dbf348d942ab3cd1859ce702127f}{%
+           family={Jiao},
+           familyi={J\bibinitperiod},
+           given={Binxing},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=312f531e29a4681ac2abc9a6ebcde92a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Linjun},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fffb2e1d40009032d73404c4f8e287ec}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Daxin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91d8356734700015f7c8f8a7303609f3}{%
+           family={Majumder},
+           familyi={M\bibinitperiod},
+           given={Rangan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5bfd490d91c5d1b935092ce3132a083}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Furu},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9012e3e3adcfce14161e542a312bb44}
+      \strng{fullhash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{fullhashraw}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{bibnamehash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{authorbibnamehash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{authornamehash}{e9012e3e3adcfce14161e542a312bb44}
+      \strng{authorfullhash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{authorfullhashraw}{b5e540a233ffb4679ee19ed42a818ac4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Text Embeddings by Weakly-Supervised Contrastive Pre-training}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2212.03533
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2212.03533
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2212.03533
+      \endverb
     \endentry
     \entry{wei2019eda}{article}{}{}
       \name{author}{2}{}{%
@@ -3846,6 +3989,50 @@
       \field{type}{Tesis de maestría}
       \field{year}{2017}
     \endentry
+    \entry{gale1993alignment}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2347dfd9dcf20ea2a38d78f8e6c8e8ab}{%
+           family={Gale},
+           familyi={G\bibinitperiod},
+           given={William\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1b3e71c2df8581a083b57279436fb9}{%
+           family={Church},
+           familyi={C\bibinitperiod},
+           given={Kenneth\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{fullhash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{fullhashraw}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{bibnamehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authorbibnamehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authornamehash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authorfullhash}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \strng{authorfullhashraw}{9eac4384edc9bf4cffff4f6e05e085d2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Linguistics}
+      \field{number}{1}
+      \field{title}{A Program for Aligning Sentences in Bilingual Corpora}
+      \field{volume}{19}
+      \field{year}{1993}
+      \field{pages}{75\bibrangedash 102}
+      \range{pages}{28}
+      \verb{urlraw}
+      \verb https://aclanthology.org/J93-1004/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/J93-1004/
+      \endverb
+    \endentry
     \entry{hayou2024loraplus}{misc}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=844502476673c5e553a9701af966135f}{%
@@ -5615,6 +5802,54 @@
       \verb 10.48550/arXiv.2009.09025
       \endverb
     \endentry
+    \entry{reimers2019sbert}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da9947b27b0d1c4c912e2b391426d443}{%
+           family={Reimers},
+           familyi={R\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea70b44be1920f6e8c379706bc7d047a}{%
+           family={Gurevych},
+           familyi={G\bibinitperiod},
+           given={Iryna},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{fullhash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{fullhashraw}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{bibnamehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authorbibnamehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authornamehash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authorfullhash}{2466af6376c9c5e3658dcc6692351f3e}
+      \strng{authorfullhashraw}{2466af6376c9c5e3658dcc6692351f3e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing}
+      \field{title}{Sentence-{BERT}: Sentence Embeddings using Siamese {BERT}-Networks}
+      \field{year}{2019}
+      \field{pages}{3982\bibrangedash 3992}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/D19-1410
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/D19-1410/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/D19-1410/
+      \endverb
+    \endentry
     \entry{rios2019}{thesis}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2486f95e292b739ea913ca43f1a24174}{%
@@ -6005,33 +6240,6 @@
       \verb https://aclanthology.org/N13-4001/
       \endverb
     \endentry
-    \entry{sun2025}{misc}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ef6572e4cd58bb39a3f4e82fc64fe9f0}{%
-           family={Sun},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{fullhash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{fullhashraw}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{bibnamehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authorbibnamehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authornamehash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authorfullhash}{cfc984803e035359e387feb5e39d7c5c}
-      \strng{authorfullhashraw}{cfc984803e035359e387feb5e39d7c5c}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Referencia citada en el cuerpo; pendiente de verificacion bibliografica}
-      \field{title}{Bilingual Transformer Training from Scratch in Low-Resource Settings (referencia por verificar)}
-      \field{year}{2025}
-    \endentry
     \entry{talwar2025}{misc}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=92bf6607115838bfabdc92836b4510aa}{%
@@ -6218,12 +6426,12 @@
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=556c8050264b7b80ed069c35bcbbfdd7}{%
+        {{un=1,uniquepart=given,hash=556c8050264b7b80ed069c35bcbbfdd7}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Jiayi},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=878a14b5961891e2bb23bc152b2f802c}{%
            family={Adelani},
            familyi={A\bibinitperiod},
@@ -6264,12 +6472,90 @@
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2024), Long Papers}
       \field{title}{{AfriMTE} and {AfriCOMET}: Enhancing {COMET} to Embrace Under-Resourced {African} Languages}
       \field{year}{2024}
+    \endentry
+    \entry{wang2022e5}{misc}{}{}
+      \name{author}{8}{}{%
+        {{un=1,uniquepart=given,hash=cce05cab2c437e9c128f853684ee3137}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=a44174a97a52d8b64289ef831cb1ac37}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=026d1f57876191243f47c0ec47352891}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xiaolong},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4004dbf348d942ab3cd1859ce702127f}{%
+           family={Jiao},
+           familyi={J\bibinitperiod},
+           given={Binxing},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=312f531e29a4681ac2abc9a6ebcde92a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Linjun},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fffb2e1d40009032d73404c4f8e287ec}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Daxin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91d8356734700015f7c8f8a7303609f3}{%
+           family={Majumder},
+           familyi={M\bibinitperiod},
+           given={Rangan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5bfd490d91c5d1b935092ce3132a083}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Furu},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9012e3e3adcfce14161e542a312bb44}
+      \strng{fullhash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{fullhashraw}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{bibnamehash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{authorbibnamehash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{authornamehash}{e9012e3e3adcfce14161e542a312bb44}
+      \strng{authorfullhash}{b5e540a233ffb4679ee19ed42a818ac4}
+      \strng{authorfullhashraw}{b5e540a233ffb4679ee19ed42a818ac4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Text Embeddings by Weakly-Supervised Contrastive Pre-training}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2212.03533
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2212.03533
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2212.03533
+      \endverb
     \endentry
     \entry{wei2019eda}{article}{}{}
       \name{author}{2}{}{%

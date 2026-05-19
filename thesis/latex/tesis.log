@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.5.11)  16 MAY 2026 21:13
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.5.11)  18 MAY 2026 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,81 +1434,73 @@ Capítulo 1.
 ] [12]
 File: figuras/media/image2.png Graphic file (type bmp)
 <figuras/media/image2.png>
- [13] [14] [15] [16] [17]
-ignored error: Infinite glue shrinkage found in box being split [18] [19]
-[20] [21] [22] [23]
+ [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
 Capítulo 2.
-[24
+[25
 
-] [25] [26] [27] [28] [29] [30] [31]
+] [26] [27] [28] [29] [30] [31] [32]
 Capítulo 3.
-[32
+[33
 
-] [33]
-Overfull \hbox (5.57971pt too wide) in paragraph at lines 746--747
+] [34]
+Overfull \hbox (5.57971pt too wide) in paragraph at lines 748--749
 []\TU/TimesNewRoman(0)/m/n/12 TITLE-ABS-KEY((”data augmentation” OR ”synthetic 
 data” OR ”back-translation”
  []
 
-[34]
-Overfull \hbox (10.50665pt too wide) in paragraph at lines 760--761
+[35]
+Overfull \hbox (10.50665pt too wide) in paragraph at lines 762--763
 []\TU/TimesNewRoman(0)/m/n/12 TITLE-ABS-KEY((”transfer learning” OR ”fine-tunin
 g” OR ”fine tuning” OR ”adap-
  []
 
 
-Overfull \hbox (34.15059pt too wide) in paragraph at lines 760--761
+Overfull \hbox (34.15059pt too wide) in paragraph at lines 762--763
 \TU/TimesNewRoman(0)/m/n/12 ”speech”) AND (PUBYEAR > 2018 AND PUBYEAR < 2026) A
 ND SUBJAREA(COMP) 
  []
 
-[35]
-Overfull \hbox (6.51424pt too wide) in paragraph at lines 774--775
+[36]
+Overfull \hbox (6.51424pt too wide) in paragraph at lines 776--777
 []\TU/TimesNewRoman(0)/m/n/12 TITLE-ABS-KEY ((”BLEU” OR ”ChrF” OR ”ChrF++” OR ”
 TER” OR ”METEOR”
  []
 
-[36] [37]
-ignored error: Infinite glue shrinkage found in box being split [38]
-Overfull \hbox (3.21715pt too wide) in paragraph at lines 896--896
+[37] [38]
+ignored error: Infinite glue shrinkage found in box being split [39]
+Overfull \hbox (3.21715pt too wide) in paragraph at lines 898--898
 |[]\TU/TimesNewRoman(0)/b/n/14.4 ¿Qué técnicas de generación y ampliación de da
 tos (back-translation,
  []
 
-[39] [40] [41]
-Overfull \hbox (12.44792pt too wide) in paragraph at lines 914--914
+[40] [41] [42]
+Overfull \hbox (12.44792pt too wide) in paragraph at lines 916--916
 |[]\TU/TimesNewRoman(0)/b/n/14.4 ¿Qué arquitecturas y estrategias de entrenamie
 nto (multilingüe, trans-
  []
 
-[42] [43] [44] [45] [46] [47]
+[43] [44] [45] [46] [47] [48]
 Capítulo 4.
-[48
+[49
 
-] [49]
-Overfull \hbox (7.71707pt too wide) in paragraph at lines 1012--1012
+] [50]
+Overfull \hbox (7.71707pt too wide) in paragraph at lines 1014--1014
 []|\TU/TimesNewRoman(0)/m/it/12 flashcards_oraciones|  
  []
 
 
-Overfull \hbox (4.82254pt too wide) in paragraph at lines 1014--1014
+Overfull \hbox (4.82254pt too wide) in paragraph at lines 1016--1016
 []|\TU/TimesNewRoman(0)/m/it/12 vs_textos_narrativos|  
  []
 
-[50] [51] [52]
-ignored error: Infinite glue shrinkage found in box being split [53]
-ignored error: Infinite glue shrinkage found in box being split [54]
-Overfull \hbox (11.99362pt too wide) in alignment at lines 1132--1137
+[51] [52] [53]
+ignored error: Infinite glue shrinkage found in box being split [54] [55]
+Overfull \hbox (11.99362pt too wide) in alignment at lines 1134--1139
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.99362pt too wide) in alignment at lines 1137--1142
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (11.99362pt too wide) in alignment at lines 1142--1144
+Overfull \hbox (11.99362pt too wide) in alignment at lines 1139--1144
  [] [] [] [] [] 
  []
 
@@ -1518,32 +1510,32 @@ Overfull \hbox (11.99362pt too wide) in alignment at lines 1144--1146
  []
 
 
-Overfull \hbox (11.99362pt too wide) in alignment at lines 1146--1149
+Overfull \hbox (11.99362pt too wide) in alignment at lines 1146--1148
  [] [] [] [] [] 
  []
 
-[55]
-Overfull \hbox (3.35611pt too wide) in paragraph at lines 1166--1166
+
+Overfull \hbox (11.99362pt too wide) in alignment at lines 1148--1151
+ [] [] [] [] [] 
+ []
+
+[56]
+Overfull \hbox (3.35611pt too wide) in paragraph at lines 1168--1168
  []|\TU/TimesNewRoman(0)/b/n/12 Flashcards 
  []
 
 
-Overfull \hbox (35.99994pt too wide) in alignment at lines 1163--1168
+Overfull \hbox (35.99994pt too wide) in alignment at lines 1165--1170
  [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.35611pt too wide) in paragraph at lines 1171--1171
+Overfull \hbox (3.35611pt too wide) in paragraph at lines 1173--1173
  []|\TU/TimesNewRoman(0)/b/n/12 Flashcards 
  []
 
 
-Overfull \hbox (35.99994pt too wide) in alignment at lines 1168--1173
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (35.99994pt too wide) in alignment at lines 1173--1175
+Overfull \hbox (35.99994pt too wide) in alignment at lines 1170--1175
  [] [] [] [] [] [] [] [] 
  []
 
@@ -1553,17 +1545,22 @@ Overfull \hbox (35.99994pt too wide) in alignment at lines 1175--1177
  []
 
 
-Overfull \hbox (9.89792pt too wide) in paragraph at lines 1178--1178
-[]|\TU/TimesNewRoman(0)/m/n/12 Entrenamiento|  
- []
-
-
-Overfull \hbox (35.99994pt too wide) in alignment at lines 1177--1182
+Overfull \hbox (35.99994pt too wide) in alignment at lines 1177--1179
  [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.81146pt too wide) in paragraph at lines 1184--1185
+Overfull \hbox (9.89792pt too wide) in paragraph at lines 1180--1180
+[]|\TU/TimesNewRoman(0)/m/n/12 Entrenamiento|  
+ []
+
+
+Overfull \hbox (35.99994pt too wide) in alignment at lines 1179--1184
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (9.81146pt too wide) in paragraph at lines 1186--1187
 []\TU/TimesNewRoman(0)/m/n/12 La columna \TU/TimesNewRoman(0)/m/it/12 Flashcard
 s (5 fuentes) \TU/TimesNewRoman(0)/m/n/12 suma \TU/TimesNewRoman(0)/m/it/12 fla
 shcards2\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/it/12 flashcards_o
@@ -1571,26 +1568,21 @@ raciones\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/it/12 vs_textos_na
 rrativos\TU/TimesNewRoman(0)/m/n/12 ,
  []
 
-[56] [57]
+[57] [58]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1245.
+(caption)                particular \caption on input line 1247.
 See the caption package documentation for explanation.
 
 File: figuras/generated/embedding_evolution_r1_mrr.pdf Graphic file (type pdf)
 <use figuras/generated/embedding_evolution_r1_mrr.pdf>
 
-Overfull \hbox (12.00615pt too wide) in alignment at lines 1256--1261
+Overfull \hbox (12.00615pt too wide) in alignment at lines 1258--1263
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.00615pt too wide) in alignment at lines 1261--1266
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.00615pt too wide) in alignment at lines 1266--1268
+Overfull \hbox (12.00615pt too wide) in alignment at lines 1263--1268
  [] [] [] [] [] [] 
  []
 
@@ -1600,53 +1592,58 @@ Overfull \hbox (12.00615pt too wide) in alignment at lines 1268--1270
  []
 
 
-Overfull \hbox (12.00615pt too wide) in alignment at lines 1270--1273
+Overfull \hbox (12.00615pt too wide) in alignment at lines 1270--1272
  [] [] [] [] [] [] 
  []
 
-[58]
+
+Overfull \hbox (12.00615pt too wide) in alignment at lines 1272--1275
+ [] [] [] [] [] [] 
+ []
+
+[59]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1279.
+(caption)                particular \caption on input line 1281.
 See the caption package documentation for explanation.
 
 File: figuras/generated/embedding_v3_final_metrics.pdf Graphic file (type pdf)
 <use figuras/generated/embedding_v3_final_metrics.pdf>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1288.
+(caption)                particular \caption on input line 1290.
 See the caption package documentation for explanation.
 
 File: figuras/generated/embedding_v3_space_pca.pdf Graphic file (type pdf)
 <use figuras/generated/embedding_v3_space_pca.pdf>
-[59]
+[60]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1297.
+(caption)                particular \caption on input line 1299.
 See the caption package documentation for explanation.
 
 File: figuras/generated/embedding_v3_rank_distribution.pdf Graphic file (type p
 df)
 <use figuras/generated/embedding_v3_rank_distribution.pdf>
-[60] [61]
+[61] [62] [63]
 Capítulo 5.
-[62
+[64
 
 ]
-Overfull \hbox (27.42776pt too wide) in paragraph at lines 1322--1323
+Overfull \hbox (27.42776pt too wide) in paragraph at lines 1324--1325
 \TU/TimesNewRoman(0)/m/n/12 Los entregables centrales son R3, el sistema shiwil
 u$\OMS/cmsy/m/n/12 !$\TU/TimesNewRoman(0)/m/n/12 castellano, y R4, el sistema c
 astellano$\OMS/cmsy/m/n/12 !$\TU/TimesNewRoman(0)/m/n/12 shiwilu,
  []
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <8> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1407.
-[63] [64] (figuras/generated/nmt_canonical_manifest_xl.tex)
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1409.
+[65] [66] (figuras/generated/nmt_canonical_manifest_xl.tex)
 (figuras/generated/nmt_semantic_filter_xl.tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65] [66] [67] (figuras/generated/nmt_run_comparison_xl.tex) [68]
+[67] [68] [69] (figuras/generated/nmt_run_comparison_xl.tex) [70]
 (figuras/generated/nmt_leaderboard_xl.tex)
 (figuras/generated/nmt_directional_metrics_xl.tex)
 
@@ -1661,124 +1658,124 @@ File: figuras/generated/nmt_training_curve_v21b_xl.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[69] [70] [71] [72] [73] [74]
+[71] [72] [73] [74] [75] [76]
 Capítulo 6.
-[75
+[77
 
 ]
-Underfull \hbox (badness 1552) in paragraph at lines 1559--1559
+Underfull \hbox (badness 1552) in paragraph at lines 1561--1561
 []|\TU/TimesNewRoman(0)/m/n/12 Métricas BLEU, chrF++,
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 1559--1559
+Underfull \hbox (badness 6825) in paragraph at lines 1561--1561
 \TU/TimesNewRoman(0)/m/n/12 COMET, resultados por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1559
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1561
 \TU/TimesNewRoman(0)/m/n/12 dirección e intervalos
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 1559--1559
+Underfull \hbox (badness 1226) in paragraph at lines 1561--1561
 \TU/TimesNewRoman(0)/m/n/12 visables a hablan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1559
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1561
 []|\TU/TimesNewRoman(0)/m/n/12 Registrar juicios
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1559
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1561
 \TU/TimesNewRoman(0)/m/n/12 lingüísticos y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1559
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1561
 []|\TU/TimesNewRoman(0)/m/n/12 Archivo $[][][][][] []
  []
 
-[76]
+[78]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 1568.
+(enumitem)                sense, on input line 1570.
 
-[77] [78] [79]
+[79] [80] [81]
 Capítulo 7.
 
-Overfull \hbox (1.02351pt too wide) in paragraph at lines 1596--1597
+Overfull \hbox (1.02351pt too wide) in paragraph at lines 1598--1599
 []\TU/TimesNewRoman(0)/m/n/12 Esta tesis avanzó sobre tres componentes del sist
 ema de traducción automática neuronal shiwilu–
  []
 
-[80
+[82
 
 ]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 1612.
+(enumitem)                sense, on input line 1614.
 
 
-Overfull \hbox (7.2703pt too wide) in paragraph at lines 1613--1614
+Overfull \hbox (7.2703pt too wide) in paragraph at lines 1615--1616
 []\TU/TimesNewRoman(0)/m/n/12 La opción más prometedora iden-
  []
 
 
-Overfull \hbox (56.23619pt too wide) in paragraph at lines 1613--1614
+Overfull \hbox (56.23619pt too wide) in paragraph at lines 1615--1616
 \TU/TimesNewRoman(0)/m/n/12 (\TU/lmtt/m/n/12 30_train_lora.py --direction {spa2
 shw,shw2spa}\TU/TimesNewRoman(0)/m/n/12 ; \TU/lmtt/m/n/12 40_evaluate.py --chec
 kpoint-spa2shw
  []
 
-[81]
-Overfull \hbox (4.78787pt too wide) in paragraph at lines 1615--1616
+[83]
+Overfull \hbox (4.78787pt too wide) in paragraph at lines 1617--1618
 []\TU/TimesNewRoman(0)/m/n/12 La regresión ob-
  []
 
 
-Overfull \hbox (4.06522pt too wide) in paragraph at lines 1617--1618
+Overfull \hbox (4.06522pt too wide) in paragraph at lines 1619--1620
 []\TU/TimesNewRoman(0)/m/n/12 El análisis morfológicamente sensible documen-
  []
 
-[82] [83] [84
+[84] [85] [86
 
 ]
-Overfull \hbox (17.19528pt too wide) in paragraph at lines 1625--1625
+Overfull \hbox (17.19528pt too wide) in paragraph at lines 1627--1627
 \TU/TimesNewRoman(0)/m/it/12 Conference on Uncertainty in Artificial Intelligen
 ce (UAI)\TU/TimesNewRoman(0)/m/n/12 . [][]$[][][][] [] [] [] [][][][] [] [][][]
  [] [][][][][][][] [] [][][][][][][][][][][] []
  []
 
-[85] [86] [87] [88] [89] [90]
+[87] [88] [89] [90] [91] [92]
 Apéndice A.
-[91
+[93
 
-] [92] [93] [94] [95] [96]
-ignored error: Infinite glue shrinkage found in box being split [97]
+] [94] [95] [96] [97] [98]
+ignored error: Infinite glue shrinkage found in box being split [99]
 File: figuras/media/image3.png Graphic file (type bmp)
 <figuras/media/image3.png>
- [98]
-[99]
-ignored error: Infinite glue shrinkage found in box being split [100] [101]
-ignored error: Infinite glue shrinkage found in box being split [102]
-ignored error: Infinite glue shrinkage found in box being split [103] [104]
-Overfull \hbox (4.95122pt too wide) in paragraph at lines 2002--2002
+ [100]
+[101]
+ignored error: Infinite glue shrinkage found in box being split [102] [103]
+ignored error: Infinite glue shrinkage found in box being split [104]
+ignored error: Infinite glue shrinkage found in box being split [105] [106]
+Overfull \hbox (4.95122pt too wide) in paragraph at lines 2004--2004
 []|\TU/TimesNewRoman(0)/b/n/12 Equipamiento 
  []
 
-[105] [106] [107
+[107] [108] [109
 
-] [108]
-Overfull \hbox (2.14412pt too wide) in paragraph at lines 2096--2097
+] [110]
+Overfull \hbox (2.14412pt too wide) in paragraph at lines 2098--2099
 []\TU/lmtt/m/n/12 1f6f8f252c47addd44d47eee96570c3db2199dc94522dd04f2e8cb8807565
 4a9 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [109]
-ignored error: Infinite glue shrinkage found in box being split [110]
-Overfull \hbox (28.26804pt too wide) in paragraph at lines 2166--2167
+ignored error: Infinite glue shrinkage found in box being split [111]
+ignored error: Infinite glue shrinkage found in box being split [112]
+Overfull \hbox (28.26804pt too wide) in paragraph at lines 2168--2169
 []\TU/TimesNewRoman(0)/m/n/12 El entrenamiento final partió del candidato anter
 ior $[][][][][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [] [][] [] []
 [] [] [][][][][][][][][][] []
@@ -1786,96 +1783,84 @@ ior $[][][][][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [] [][] [] []
 
 File: figuras/generated/embedding_v3_negative_mix.pdf Graphic file (type pdf)
 <use figuras/generated/embedding_v3_negative_mix.pdf>
-[111]
-ignored error: Infinite glue shrinkage found in box being split [112]
-Overfull \hbox (19.6685pt too wide) in paragraph at lines 2205--2205
+[113]
+ignored error: Infinite glue shrinkage found in box being split [114]
+Overfull \hbox (19.6685pt too wide) in paragraph at lines 2207--2207
 |\TU/TimesNewRoman(0)/b/n/17.28 Anexo C: Documento reproducible del sistema NMT
  SA-BiNLLB| 
  []
 
 
-Overfull \hbox (21.68245pt too wide) in paragraph at lines 2212--2213
+Overfull \hbox (21.68245pt too wide) in paragraph at lines 2214--2215
 []\TU/TimesNewRoman(0)/m/n/12 El modelo base es \TU/lmtt/m/n/12 facebook/nllb-2
 00-distilled-600M\TU/TimesNewRoman(0)/m/n/12 . La adaptación al par shiwilu–cas
 tellano
  []
 
-[113]
-Overfull \hbox (43.60944pt too wide) in paragraph at lines 2257--2258
-\TU/lmtt/m/n/12 shw_Latn \TU/TimesNewRoman(0)/m/n/12 como un \TU/TimesNewRoman(
-0)/m/it/12 special token \TU/TimesNewRoman(0)/m/n/12 adicional, actualiza los m
-apas \TU/lmtt/m/n/12 lang_code_to_id \TU/TimesNewRoman(0)/m/n/12 e \TU/lmtt/m/n
-/12 id_to_lang_code\TU/TimesNewRoman(0)/m/n/12 ,
- []
-
-[114]
-Overfull \hbox (57.5939pt too wide) in paragraph at lines 2259--2260
+[115] [116]
+Overfull \hbox (57.5939pt too wide) in paragraph at lines 2261--2262
 []\TU/TimesNewRoman(0)/m/n/12 La actualización se realiza in-place sobre el mod
 elo redimensionado (\TU/lmtt/m/n/12 model.resize_token_embeddings\TU/TimesNewRo
 man(0)/m/n/12 ),
  []
 
 
-Overfull \hbox (15.49577pt too wide) in paragraph at lines 2263--2264
+Overfull \hbox (15.49577pt too wide) in paragraph at lines 2265--2266
 []\TU/TimesNewRoman(0)/m/n/12 El filtro semántico utiliza el modelo congelado \
 TU/lmtt/m/n/12 v3_iterative_hn_e5_base_bidirectional_xl
  []
 
 
-Overfull \hbox (29.38913pt too wide) in paragraph at lines 2269--2270
+Overfull \hbox (29.38913pt too wide) in paragraph at lines 2271--2272
 []\TU/TimesNewRoman(0)/m/n/12 Sobre los pares aceptados se construyen dos índic
 es FAISS ([]Johnson et al., [][]2019[][]) de tipo \TU/lmtt/m/n/12 IndexFlatIP
  []
 
-[115] (figuras/generated/nmt_alpha_ablation_v0_xl.tex)
-(figuras/generated/nmt_alpha_ablation_v1_xl.tex) [116]
-Overfull \hbox (8.2569pt too wide) in paragraph at lines 2310--2311
+[117] (figuras/generated/nmt_alpha_ablation_v0_xl.tex)
+(figuras/generated/nmt_alpha_ablation_v1_xl.tex) [118]
+Overfull \hbox (8.2569pt too wide) in paragraph at lines 2312--2313
 \TU/TimesNewRoman(0)/m/n/12 sión por lingüista. Sin validación humana, estas fi
 las se marcan como \TU/lmtt/m/n/12 manual_review_required
  []
 
 
-Overfull \hbox (21.90018pt too wide) in paragraph at lines 2310--2311
+Overfull \hbox (21.90018pt too wide) in paragraph at lines 2312--2313
 \TU/TimesNewRoman(0)/m/n/12 y se mantienen fuera del entrenamiento por defecto.
  La activación es opcional vía \TU/lmtt/m/n/12 --include-morph
  []
 
-[117] [118]
-Overfull \hbox (15.40933pt too wide) in paragraph at lines 2353--2354
+[119] [120]
+Overfull \hbox (15.40933pt too wide) in paragraph at lines 2355--2356
 []\TU/TimesNewRoman(0)/m/n/12 Cada predicción persiste tres campos adicionales 
 en \TU/lmtt/m/n/12 *_predictions.jsonl\TU/TimesNewRoman(0)/m/n/12 : \TU/lmtt/m/
 n/12 confidence_score\TU/TimesNewRoman(0)/m/n/12 ,
  []
 
-[119] (figuras/generated/nmt_rare_token_full_xl.tex)
+[121] (figuras/generated/nmt_rare_token_full_xl.tex)
 (figuras/generated/nmt_sentencepiece_vs_nllb_xl.tex
 Overfull \hbox (34.3271pt too wide) in paragraph at lines 4--14
  [][] 
  []
 
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[120]
-Overfull \hbox (26.9601pt too wide) in paragraph at lines 2391--2392
+) [122]
+Overfull \hbox (26.9601pt too wide) in paragraph at lines 2393--2394
 []\TU/lmtt/m/n/12 .venv-nmt/Scripts/python -m scripts.nmt.75_human_validation_w
 orkbook 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [121] [122]
-Overfull \hbox (131.0032pt too wide) in paragraph at lines 2443--2444
+[123] [124]
+Overfull \hbox (131.0032pt too wide) in paragraph at lines 2445--2446
 \TU/TimesNewRoman(0)/m/n/12 rante demasiados pasos. Implementación: optimizador
  construido vía \TU/lmtt/m/n/12 peft.optimizers.create_loraplus_optimizer\TU/Ti
 mesNewRoman(0)/m/n/12 ;
  []
 
-[123]
+[125]
 File: figuras/generated/nmt_training_chrf_variants_xl.pdf Graphic file (type pd
 f)
 <use figuras/generated/nmt_training_chrf_variants_xl.pdf>
-
-Overfull \hbox (13.79192pt too wide) in paragraph at lines 2460--2461
+ [126]
+Overfull \hbox (13.79192pt too wide) in paragraph at lines 2462--2463
 []\TU/TimesNewRoman(0)/b/n/12 DoRA aislado no se distingue de $\OML/cmm/m/it/12
  v[]$\TU/TimesNewRoman(0)/b/n/12 . $\OML/cmm/m/it/12 v[]$ \TU/TimesNewRoman(0)/
 m/n/12 reporta avg chrF++ $\OT1/cmr/m/n/12 = 32[]58$ \TU/TimesNewRoman(0)/m/n/1
@@ -1883,8 +1868,8 @@ m/n/12 reporta avg chrF++ $\OT1/cmr/m/n/12 = 32[]58$ \TU/TimesNewRoman(0)/m/n/1
 /TimesNewRoman(0)/m/n/12 ,
  []
 
-[124]
-Overfull \hbox (4.25885pt too wide) in paragraph at lines 2461--2462
+
+Overfull \hbox (4.25885pt too wide) in paragraph at lines 2463--2464
 []\TU/TimesNewRoman(0)/b/n/12 DoRA+LoRA+ no mejora sobre LoRA+ aislado. $\OML/c
 mm/m/it/12 v[]$ \TU/TimesNewRoman(0)/m/n/12 reporta $\OT1/cmr/m/n/12 44[]30$ \T
 U/TimesNewRoman(0)/m/n/12 con IC $\OT1/cmr/m/n/12 [42[]49\OML/cmm/m/it/12 ; \OT
@@ -1892,14 +1877,14 @@ U/TimesNewRoman(0)/m/n/12 con IC $\OT1/cmr/m/n/12 [42[]49\OML/cmm/m/it/12 ; \OT
  []
 
 
-Overfull \hbox (52.23822pt too wide) in paragraph at lines 2465--2466
+Overfull \hbox (52.23822pt too wide) in paragraph at lines 2467--2468
 \TU/TimesNewRoman(0)/m/n/12 cias respecto del entrenamiento de $\OML/cmm/m/it/1
 2 v[]$\TU/TimesNewRoman(0)/m/n/12 : (i) el optimizador es construido vía \TU/lm
 tt/m/n/12 create_loraplus_optimizer
  []
 
-ignored error: Infinite glue shrinkage found in box being split [125]
-ignored error: Infinite glue shrinkage found in box being split [126] [127]
+[127]
+ignored error: Infinite glue shrinkage found in box being split [128] [129]
 (tesis.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -1912,12 +1897,12 @@ Package logreq Info: Writing requests to 'tesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36983 strings out of 402987
- 751203 string characters out of 5447903
- 1797098 words of memory out of 5000000
- 65167 multiletter control sequences out of 15000+600000
+ 37036 strings out of 402987
+ 752041 string characters out of 5447903
+ 1797437 words of memory out of 5000000
+ 65220 multiletter control sequences out of 15000+600000
  636595 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,13n,104p,1801b,5496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on tesis.pdf (128 pages).
+Output written on tesis.pdf (130 pages).
