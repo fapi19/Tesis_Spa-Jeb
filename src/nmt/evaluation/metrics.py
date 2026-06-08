@@ -63,6 +63,27 @@ def compute_bleu_chrf(hypotheses: list[str], references: list[str], cfg: Metrics
     }
 
 
+def sentence_bleu(hypothesis: str, reference: str, cfg: MetricsConfig) -> float:
+    """Per-sentence BLEU (sacrebleu, same tokenization as :func:`compute_bleu_chrf`).
+
+    Sentence-level BLEU is intentionally harsh on short hypotheses; the expert's
+    "noise floor" reading (BLEU <= 10 is mostly frequent/short tokens) relies on
+    this behaviour, so we keep the corpus tokenizer/smoothing and do not soften it.
+    """
+    metric = sacrebleu.metrics.BLEU(tokenize=cfg.bleu_tokenize, effective_order=True)
+    return float(metric.sentence_score(hypothesis, [reference]).score)
+
+
+def sentence_chrf_pp(hypothesis: str, reference: str, cfg: MetricsConfig) -> float:
+    """Per-sentence chrF++ (character n-grams + word_order, same config as corpus)."""
+    metric = sacrebleu.metrics.CHRF(
+        word_order=cfg.chrf_word_order,
+        char_order=cfg.chrf_char_order,
+        beta=cfg.chrf_beta,
+    )
+    return float(metric.sentence_score(hypothesis, [reference]).score)
+
+
 def compute_bertscore(
     hypotheses: list[str],
     references: list[str],

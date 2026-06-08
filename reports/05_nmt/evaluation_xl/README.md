@@ -16,7 +16,35 @@ system.
 
 The thesis uses chrF++ as the primary automatic metric and reports BLEU/COMET
 as complementary signals. COMET is treated as indicative because it was not
-trained on Shiwilu.
+trained on Shiwilu. Per the MT-evaluation expert's advice, each direction is
+also read with its most informative headline metric: BLEU for `shw2spa`
+(Spanish output) and chrF++ for `spa2shw` (Shiwilu output).
+
+## Stratified Qualitative Analysis
+
+| File | Purpose |
+|---|---|
+| `<run>/qualitative/bucket_summary.json` | Per-sentence score distribution by direction; buckets `shw2spa` by BLEU (<10 / 10-20 / >20) and `spa2shw` by chrF++ (<20 / 20-40 / >40). |
+| `<run>/qualitative/sampled_examples.csv` | Seeded stratified sample of source/reference/hypothesis per bucket. |
+| `<run>/qualitative/qualitative_report.md` | Human-readable narrative used in thesis section `nmt-cualitativo`. |
+
+```powershell
+.venv-nmt/Scripts/python -m scripts.nmt.42_qualitative_analysis --variant xl
+```
+
+## Pairwise Forced-Choice Preference
+
+| File | Purpose |
+|---|---|
+| `pairwise_preference.xlsx` | Blind A/B workbook: reference + two anonymized system outputs, randomized order, ties allowed. Default `shw2spa`, 60 pairs. |
+| `pairwise_preference_anon_key.json` | Per-row A/B-to-system mapping. Keep private; do not distribute to reviewers. |
+
+```powershell
+.venv-nmt/Scripts/python -m scripts.nmt.76_pairwise_preference --variant xl
+```
+
+By default it compares `v2.1b` (champion) vs `v2.1` (DoRA+LoRA+) to resolve the
+statistically tied selection. Override with `--run-a` / `--run-b`.
 
 ## Human-Evaluation Protocol
 

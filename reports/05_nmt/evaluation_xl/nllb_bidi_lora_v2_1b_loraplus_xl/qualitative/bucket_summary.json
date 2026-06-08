@@ -1,0 +1,363 @@
+{
+  "config": {
+    "samples_per_bucket": 5,
+    "seed": 2026,
+    "direction_metric": {
+      "shw2spa": "bleu",
+      "spa2shw": "chrf_pp"
+    }
+  },
+  "directions": {
+    "shw2spa": {
+      "metric": "bleu",
+      "n": 446,
+      "mean_score": 40.39920722456813,
+      "buckets": {
+        "bleu_0_10": {
+          "n": 77,
+          "lower": 0.0,
+          "upper": 10.0,
+          "pct": 0.1726457399103139,
+          "mean_score": 5.941483328786072
+        },
+        "bleu_10_20": {
+          "n": 57,
+          "lower": 10.0,
+          "upper": 20.0,
+          "pct": 0.12780269058295965,
+          "mean_score": 14.21122366050583
+        },
+        "bleu_20_plus": {
+          "n": 312,
+          "lower": 20.0,
+          "upper": null,
+          "pct": 0.6995515695067265,
+          "mean_score": 53.68753992689752
+        }
+      },
+      "samples": {
+        "bleu_0_10": [
+          {
+            "id": "U00563__shw2spa",
+            "pair_id": "U00563",
+            "origin_source": "flashcards2",
+            "sentence_score": 0.0,
+            "source": "imanan",
+            "reference": "susto.",
+            "hypothesis": "panza"
+          },
+          {
+            "id": "U02682__shw2spa",
+            "pair_id": "U02682",
+            "origin_source": "pdf_textos",
+            "sentence_score": 8.13,
+            "source": "nanapa yunsu'i kenmu'wa'kinsa' ñii asu' samer,",
+            "reference": "para que salgan para nosotros nomás, para que sean para nosotros nomás estos peces,",
+            "hypothesis": "por eso saliendo nosotros somos estos peces,"
+          },
+          {
+            "id": "U04392__shw2spa",
+            "pair_id": "U04392",
+            "origin_source": "fidel_lomas",
+            "sentence_score": 9.65,
+            "source": "a'ñapalek sukta-shunka' iskun ekkilala.",
+            "reference": "tengo sesentinueve años.",
+            "hypothesis": "tengo doscientos metros de altura."
+          },
+          {
+            "id": "U03194__shw2spa",
+            "pair_id": "U03194",
+            "origin_source": "pdf_textos",
+            "sentence_score": 9.65,
+            "source": "kenmu'wei'na ipa' ñinchillintekwa'.",
+            "reference": "ahora nosotros conocemos los nombres.",
+            "hypothesis": "nosotros ya lo hemos aprendido."
+          },
+          {
+            "id": "U03215__shw2spa",
+            "pair_id": "U03215",
+            "origin_source": "flashcards_oraciones",
+            "sentence_score": 9.69,
+            "source": "iyatulek' wayupi mer'cha'su'",
+            "reference": "me gusta la fruta madura.",
+            "hypothesis": "detesto beber limpio."
+          }
+        ],
+        "bleu_10_20": [
+          {
+            "id": "U04242__shw2spa",
+            "pair_id": "U04242",
+            "origin_source": "fidel_lomas",
+            "sentence_score": 10.55,
+            "source": "yalli'lusa' pa'ter'kasu'nta' chimiñina',",
+            "reference": "los señores importantes murieron,",
+            "hypothesis": "los hermanos que iban a ir también murieron,"
+          },
+          {
+            "id": "U03211__shw2spa",
+            "pair_id": "U03211",
+            "origin_source": "flashcards_oraciones",
+            "sentence_score": 12.44,
+            "source": "ipa'la nakusu' ukawañi'",
+            "reference": "hoy hace mucho calor.",
+            "hypothesis": "ahora está frío."
+          },
+          {
+            "id": "U02422__shw2spa",
+            "pair_id": "U02422",
+            "origin_source": "pdf_textos",
+            "sentence_score": 13.22,
+            "source": "kui'na kaluwi'mu innichi'nek ñi enñupa' pa'a'kasu'.",
+            "reference": "en cambio yo por estar enferma no puedo ir a ninguna parte.",
+            "hypothesis": "pero yo con mi enfermedad no puedo ir donde quiera."
+          },
+          {
+            "id": "U02370__shw2spa",
+            "pair_id": "U02370",
+            "origin_source": "pdf_textos",
+            "sentence_score": 17.54,
+            "source": "nu'sik upetchununta'lek deklek.",
+            "reference": "luego se vuelve a agregar agua.",
+            "hypothesis": "después se vuelve a levantar el agua con el agua."
+          },
+          {
+            "id": "U01287__shw2spa",
+            "pair_id": "U01287",
+            "origin_source": "flashcards2",
+            "sentence_score": 19.0,
+            "source": "kenma chiminllinkekla nampila",
+            "reference": "tú sobreviviste.",
+            "hypothesis": "tú desapareces temprano."
+          }
+        ],
+        "bleu_20_plus": [
+          {
+            "id": "U00393__shw2spa",
+            "pair_id": "U00393",
+            "origin_source": "flashcards2",
+            "sentence_score": 50.0,
+            "source": "apu'ker'",
+            "reference": "aflójala.",
+            "hypothesis": "párale."
+          },
+          {
+            "id": "U00412__shw2spa",
+            "pair_id": "U00412",
+            "origin_source": "flashcards2",
+            "sentence_score": 55.03,
+            "source": "linsercher' asek",
+            "reference": "firme aquí.",
+            "hypothesis": "anota aquí."
+          },
+          {
+            "id": "U01130__shw2spa",
+            "pair_id": "U01130",
+            "origin_source": "flashcards2",
+            "sentence_score": 60.65,
+            "source": "wa'tenker'la",
+            "reference": "sólo espera.",
+            "hypothesis": "espera."
+          },
+          {
+            "id": "U00372__shw2spa",
+            "pair_id": "U00372",
+            "origin_source": "flashcards2",
+            "sentence_score": 100.0,
+            "source": "¡tekkinchi nuka'a!",
+            "reference": "¡es verdad!",
+            "hypothesis": "¡es verdad!"
+          },
+          {
+            "id": "U03221__shw2spa",
+            "pair_id": "U03221",
+            "origin_source": "flashcards_oraciones",
+            "sentence_score": 100.0,
+            "source": "¿eñupi'na pidek'pen?",
+            "reference": "¿dónde está tu casa?",
+            "hypothesis": "¿dónde está tu casa?"
+          }
+        ]
+      }
+    },
+    "spa2shw": {
+      "metric": "chrf_pp",
+      "n": 446,
+      "mean_score": 49.07215874135037,
+      "buckets": {
+        "chrf_0_20": {
+          "n": 51,
+          "lower": 0.0,
+          "upper": 20.0,
+          "pct": 0.11434977578475336,
+          "mean_score": 13.547901684054896
+        },
+        "chrf_20_40": {
+          "n": 149,
+          "lower": 20.0,
+          "upper": 40.0,
+          "pct": 0.33408071748878926,
+          "mean_score": 30.950147058844184
+        },
+        "chrf_40_plus": {
+          "n": 246,
+          "lower": 40.0,
+          "upper": null,
+          "pct": 0.5515695067264574,
+          "mean_score": 67.41328415035643
+        }
+      },
+      "samples": {
+        "chrf_0_20": [
+          {
+            "id": "U00972__spa2shw",
+            "pair_id": "U00972",
+            "origin_source": "flashcards2",
+            "sentence_score": 8.85,
+            "source": "se desmayó.",
+            "reference": "muisu' kankatulli",
+            "hypothesis": "chi'yek'lli"
+          },
+          {
+            "id": "U00744__spa2shw",
+            "pair_id": "U00744",
+            "origin_source": "flashcards2",
+            "sentence_score": 12.36,
+            "source": "no sonrías.",
+            "reference": "yayamerladata",
+            "hypothesis": "yawellektama'"
+          },
+          {
+            "id": "U02931__spa2shw",
+            "pair_id": "U02931",
+            "origin_source": "pdf_textos",
+            "sentence_score": 16.02,
+            "source": "¡ahí está, la candela agarren!",
+            "reference": "- ¡ma'ata'na pen maku'!",
+            "hypothesis": "¡nanek ñapalli, pen pilli'ter'!"
+          },
+          {
+            "id": "U03054__spa2shw",
+            "pair_id": "U03054",
+            "origin_source": "pdf_textos",
+            "sentence_score": 16.19,
+            "source": "ahora les voy a contar cómo quiza cuando vivían los antiguos indios shawala pelearon contra los que vinieron de otro pueblo, los catellano- hablantes.",
+            "reference": "ipa'la' winterkenma' ma'pu'si'pa' napi' shawala kenma' ñapanna'pi'la idenmalli'na' asu' nerñinalukla uklusa'lek, kaschilla lunlusa'.",
+            "hypothesis": "ipa'la wintetchenma' ma'pu'si'pa' nanpi'pa' nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana …"
+          },
+          {
+            "id": "U02589__spa2shw",
+            "pair_id": "U02589",
+            "origin_source": "pdf_textos",
+            "sentence_score": 17.95,
+            "source": "nosotros abriendo trocha en el monte estamos cazando,",
+            "reference": "- sekllintamudek asu' tanak yunek'amudekpu'su',",
+            "hypothesis": "kenmu'wa' ek'ker'apallidek mutupik pa'apallidek,"
+          }
+        ],
+        "chrf_20_40": [
+          {
+            "id": "U00016__spa2shw",
+            "pair_id": "U00016",
+            "origin_source": "flashcards2",
+            "sentence_score": 20.82,
+            "source": "¡oh, no! (masculino)",
+            "reference": "¡shaw!",
+            "hypothesis": "¡oh, ma'sha!"
+          },
+          {
+            "id": "U02940__spa2shw",
+            "pair_id": "U02940",
+            "origin_source": "pdf_textos",
+            "sentence_score": 25.55,
+            "source": "después se escondieron.",
+            "reference": "nu'anna' insekkitullina'.",
+            "hypothesis": "nanekla indaperllina'."
+          },
+          {
+            "id": "U04047__spa2shw",
+            "pair_id": "U04047",
+            "origin_source": "fidel_lomas",
+            "sentence_score": 28.36,
+            "source": "la sachavaca es un lindo animal.",
+            "reference": "panwali'na u'chimu añimar nuka'a.",
+            "hypothesis": "panwala nuka'a ala'sa' musenpi."
+          },
+          {
+            "id": "U01885__spa2shw",
+            "pair_id": "U01885",
+            "origin_source": "flashcards2",
+            "sentence_score": 35.52,
+            "source": "deberíamos ayudar.",
+            "reference": "katu'pa'tuwinansu'",
+            "hypothesis": "katu'pa'a'kawa'su' ñapalli"
+          },
+          {
+            "id": "U03176__spa2shw",
+            "pair_id": "U03176",
+            "origin_source": "pdf_textos",
+            "sentence_score": 39.66,
+            "source": "¿cuál quieres que sea tu santo? les preguntó.",
+            "reference": "¿enkasu' a'cha santupen luwantula ña'su'? itullima.",
+            "hypothesis": "¿ma'nen luwantula santupen? itudeklli."
+          }
+        ],
+        "chrf_40_plus": [
+          {
+            "id": "U01112__spa2shw",
+            "pair_id": "U01112",
+            "origin_source": "flashcards2",
+            "sentence_score": 44.12,
+            "source": "estoy preparado.",
+            "reference": "ñapalek insekdipersu'",
+            "hypothesis": "insek'diperpi ñapalek"
+          },
+          {
+            "id": "U01144__spa2shw",
+            "pair_id": "U01144",
+            "origin_source": "flashcards2",
+            "sentence_score": 70.06,
+            "source": "déjame ir.",
+            "reference": "ta'itula'u pa'ak",
+            "hypothesis": "ta'itula'u pa'i"
+          },
+          {
+            "id": "U03584__spa2shw",
+            "pair_id": "U03584",
+            "origin_source": "flashcards_oraciones",
+            "sentence_score": 85.1,
+            "source": "ellas leen una revista.",
+            "reference": "nawa' luntullina' ala'sa' kerka'",
+            "hypothesis": "nawa' luntullina' alasa' kerka'"
+          },
+          {
+            "id": "U01227__spa2shw",
+            "pair_id": "U01227",
+            "origin_source": "flashcards2",
+            "sentence_score": 100.0,
+            "source": "tom hablará.",
+            "reference": "tom lun'echu",
+            "hypothesis": "tom lun'echu"
+          },
+          {
+            "id": "U03817__spa2shw",
+            "pair_id": "U03817",
+            "origin_source": "flashcards_oraciones",
+            "sentence_score": 100.0,
+            "source": "nosotros no trabajamos en la casa.",
+            "reference": "kuda ku'la saka'tapi'ñidek pidek'kek",
+            "hypothesis": "kuda ku'la saka'tapi'ñidek pidek'kek"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "phase": "5c",
+    "run_name": "nllb_bidi_lora_v2_1b_loraplus_xl",
+    "split": "test",
+    "reranked": true,
+    "predictions_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\reports\\05_nmt\\reranking_xl\\nllb_bidi_lora_v2_1b_loraplus_xl\\test_predictions_reranked.jsonl",
+    "test_path": "C:\\Users\\Personal\\Desktop\\Recopilatorio\\Tesis\\Desarrollo\\data\\processed\\06_nmt_filtered_xl\\test.csv",
+    "timestamp_utc": "2026-06-07T02:17:48.239164+00:00"
+  }
+}

@@ -106,6 +106,7 @@ Desarrollo/
 │       ├── 30_train_lora.py              # Phase 4: train v0 NMT
 │       ├── 40_evaluate.py                # Phase 5: full eval (BLEU, chrF, BERTScore, COMET)
 │       ├── 41_rare_token_eval.py         # Phase 5b: rare-token bucket analysis
+│       ├── 42_qualitative_analysis.py    # Phase 5c: stratified per-sentence qualitative analysis (NEW)
 │       ├── 50_rerank.py                  # Phase 6: semantic reranking
 │       ├── 60_backtranslate.py           # Phase 7a: classical BT from mono Shiwilu
 │       ├── 60b_roundtrip_bt.py           # Phase 7a-bis: round-trip BT from Spanish
@@ -117,7 +118,9 @@ Desarrollo/
 │       ├── 71_human_eval_template.py     # Phase 8b: anonymized rubric CSV + protocol MD
 │       ├── 72_leaderboard.py             # Phase 5 (closing): N-way leaderboard.{md,json}
 │       ├── 73_bootstrap_ci.py            # Phase 6: percentile bootstrap CIs on chrF++
-│       └── 74_thesis_tables_phase6.py    # Phase 6: LaTeX fragments for thesis tables
+│       ├── 74_thesis_tables_phase6.py    # Phase 6: LaTeX fragments (incl. nmt_qualitative_buckets_xl)
+│       ├── 75_human_validation_workbook.py # Phase 8c: 100-item speaker xlsx (absolute rubric)
+│       └── 76_pairwise_preference.py     # Phase 8d: blind forced-choice A/B preference xlsx (NEW)
 ├── src/
 │   ├── embeddings/
 │   │   ├── config.py                     # SPLITS_DIR, MODELS_DIR, REPORTS_DIR, resolve_splits_dir(variant)
@@ -452,6 +455,13 @@ spa→shw chrF (33.85) is actually HIGHER than shw→spa chrF (31.20).
 6. **Never amend commits** unless explicitly asked. Never push without
    explicit approval. Never use `--no-verify`.
 7. **Default to chrF++ for spa→shw discussion**, BLEU is misleading.
+   Per MT-expert feedback, read each direction with its headline metric:
+   **BLEU for shw→spa (Spanish output), chrF++ for spa→shw (Shiwilu output)**;
+   chrF++ stays the single overall selection criterion. Noise-floor heuristic
+   (expert "ojo de experto", not a rule): BLEU ≤ 10 / chrF++ ≤ 20 ≈ noise.
+   Sentence-level scoring lives in `src/nmt/evaluation/metrics.py`
+   (`sentence_bleu`, `sentence_chrf_pp`); bucketing/sampling in
+   `src/nmt/evaluation/qualitative.py` (run via `42_qualitative_analysis`).
 8. **Background long training jobs** with `run_in_background=True` and
    monitor via task notifications rather than polling. Each NMT train run
    is ~2-3.5h on the xl dataset.

@@ -1,0 +1,31 @@
+﻿direction,metric,bucket,sentence_score,origin_source,id,pair_id,source,reference,hypothesis
+shw2spa,bleu,bleu_0_10,0.0,flashcards2,U00563__shw2spa,U00563,imanan,susto.,panza
+shw2spa,bleu,bleu_0_10,8.13,pdf_textos,U02682__shw2spa,U02682,"nanapa yunsu'i kenmu'wa'kinsa' ñii asu' samer,","para que salgan para nosotros nomás, para que sean para nosotros nomás estos peces,","por eso saliendo nosotros somos estos peces,"
+shw2spa,bleu,bleu_0_10,9.65,fidel_lomas,U04392__shw2spa,U04392,a'ñapalek sukta-shunka' iskun ekkilala.,tengo sesentinueve años.,tengo doscientos metros de altura.
+shw2spa,bleu,bleu_0_10,9.65,pdf_textos,U03194__shw2spa,U03194,kenmu'wei'na ipa' ñinchillintekwa'.,ahora nosotros conocemos los nombres.,nosotros ya lo hemos aprendido.
+shw2spa,bleu,bleu_0_10,9.69,flashcards_oraciones,U03215__shw2spa,U03215,iyatulek' wayupi mer'cha'su',me gusta la fruta madura.,detesto beber limpio.
+shw2spa,bleu,bleu_10_20,10.55,fidel_lomas,U04242__shw2spa,U04242,"yalli'lusa' pa'ter'kasu'nta' chimiñina',","los señores importantes murieron,","los hermanos que iban a ir también murieron,"
+shw2spa,bleu,bleu_10_20,12.44,flashcards_oraciones,U03211__shw2spa,U03211,ipa'la nakusu' ukawañi',hoy hace mucho calor.,ahora está frío.
+shw2spa,bleu,bleu_10_20,13.22,pdf_textos,U02422__shw2spa,U02422,kui'na kaluwi'mu innichi'nek ñi enñupa' pa'a'kasu'.,en cambio yo por estar enferma no puedo ir a ninguna parte.,pero yo con mi enfermedad no puedo ir donde quiera.
+shw2spa,bleu,bleu_10_20,17.54,pdf_textos,U02370__shw2spa,U02370,nu'sik upetchununta'lek deklek.,luego se vuelve a agregar agua.,después se vuelve a levantar el agua con el agua.
+shw2spa,bleu,bleu_10_20,19.0,flashcards2,U01287__shw2spa,U01287,kenma chiminllinkekla nampila,tú sobreviviste.,tú desapareces temprano.
+shw2spa,bleu,bleu_20_plus,50.0,flashcards2,U00393__shw2spa,U00393,apu'ker',aflójala.,párale.
+shw2spa,bleu,bleu_20_plus,55.03,flashcards2,U00412__shw2spa,U00412,linsercher' asek,firme aquí.,anota aquí.
+shw2spa,bleu,bleu_20_plus,60.65,flashcards2,U01130__shw2spa,U01130,wa'tenker'la,sólo espera.,espera.
+shw2spa,bleu,bleu_20_plus,100.0,flashcards2,U00372__shw2spa,U00372,¡tekkinchi nuka'a!,¡es verdad!,¡es verdad!
+shw2spa,bleu,bleu_20_plus,100.0,flashcards_oraciones,U03221__shw2spa,U03221,¿eñupi'na pidek'pen?,¿dónde está tu casa?,¿dónde está tu casa?
+spa2shw,chrf_pp,chrf_0_20,8.85,flashcards2,U00972__spa2shw,U00972,se desmayó.,muisu' kankatulli,chi'yek'lli
+spa2shw,chrf_pp,chrf_0_20,12.36,flashcards2,U00744__spa2shw,U00744,no sonrías.,yayamerladata,yawellektama'
+spa2shw,chrf_pp,chrf_0_20,16.02,pdf_textos,U02931__spa2shw,U02931,"¡ahí está, la candela agarren!",- ¡ma'ata'na pen maku'!,"¡nanek ñapalli, pen pilli'ter'!"
+spa2shw,chrf_pp,chrf_0_20,16.19,pdf_textos,U03054__spa2shw,U03054,"ahora les voy a contar cómo quiza cuando vivían los antiguos indios shawala pelearon contra los que vinieron de otro pueblo, los catellano- hablantes.","ipa'la' winterkenma' ma'pu'si'pa' napi' shawala kenma' ñapanna'pi'la idenmalli'na' asu' nerñinalukla uklusa'lek, kaschilla lunlusa'.",ipa'la wintetchenma' ma'pu'si'pa' nanpi'pa' nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana nana …
+spa2shw,chrf_pp,chrf_0_20,17.95,pdf_textos,U02589__spa2shw,U02589,"nosotros abriendo trocha en el monte estamos cazando,","- sekllintamudek asu' tanak yunek'amudekpu'su',","kenmu'wa' ek'ker'apallidek mutupik pa'apallidek,"
+spa2shw,chrf_pp,chrf_20_40,20.82,flashcards2,U00016__spa2shw,U00016,"¡oh, no! (masculino)",¡shaw!,"¡oh, ma'sha!"
+spa2shw,chrf_pp,chrf_20_40,25.55,pdf_textos,U02940__spa2shw,U02940,después se escondieron.,nu'anna' insekkitullina'.,nanekla indaperllina'.
+spa2shw,chrf_pp,chrf_20_40,28.36,fidel_lomas,U04047__spa2shw,U04047,la sachavaca es un lindo animal.,panwali'na u'chimu añimar nuka'a.,panwala nuka'a ala'sa' musenpi.
+spa2shw,chrf_pp,chrf_20_40,35.52,flashcards2,U01885__spa2shw,U01885,deberíamos ayudar.,katu'pa'tuwinansu',katu'pa'a'kawa'su' ñapalli
+spa2shw,chrf_pp,chrf_20_40,39.66,pdf_textos,U03176__spa2shw,U03176,¿cuál quieres que sea tu santo? les preguntó.,¿enkasu' a'cha santupen luwantula ña'su'? itullima.,¿ma'nen luwantula santupen? itudeklli.
+spa2shw,chrf_pp,chrf_40_plus,44.12,flashcards2,U01112__spa2shw,U01112,estoy preparado.,ñapalek insekdipersu',insek'diperpi ñapalek
+spa2shw,chrf_pp,chrf_40_plus,70.06,flashcards2,U01144__spa2shw,U01144,déjame ir.,ta'itula'u pa'ak,ta'itula'u pa'i
+spa2shw,chrf_pp,chrf_40_plus,85.1,flashcards_oraciones,U03584__spa2shw,U03584,ellas leen una revista.,nawa' luntullina' ala'sa' kerka',nawa' luntullina' alasa' kerka'
+spa2shw,chrf_pp,chrf_40_plus,100.0,flashcards2,U01227__spa2shw,U01227,tom hablará.,tom lun'echu,tom lun'echu
+spa2shw,chrf_pp,chrf_40_plus,100.0,flashcards_oraciones,U03817__spa2shw,U03817,nosotros no trabajamos en la casa.,kuda ku'la saka'tapi'ñidek pidek'kek,kuda ku'la saka'tapi'ñidek pidek'kek

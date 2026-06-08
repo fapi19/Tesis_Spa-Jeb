@@ -259,10 +259,80 @@ def table_rare_token_full(runs: list[str], variant: str) -> str:
     return _wrap(f"rare_token_full{suffix} ({len(runs)} runs)", body)
 
 
+QUAL_BUCKET_LABELS = {
+    "bleu_0_10": r"BLEU $<10$",
+    "bleu_10_20": r"$10\le$ BLEU $<20$",
+    "bleu_20_plus": r"BLEU $\ge 20$",
+    "chrf_0_20": r"chrF++ $<20$",
+    "chrf_20_40": r"$20\le$ chrF++ $<40$",
+    "chrf_40_plus": r"chrF++ $\ge 40$",
+}
+
+QUAL_DIR_LABELS = {
+    "shw2spa": r"shw$\to$spa (BLEU)",
+    "spa2shw": r"spa$\to$shw (chrF++)",
+}
+
+
+def table_qualitative_buckets(variant: str, run: str) -> str:
+    suffix = "_xl" if variant == "xl" else ""
+    summary_path = (
+        PROJECT_ROOT / "reports" / "05_nmt" / f"evaluation{suffix}"
+        / run / "qualitative" / "bucket_summary.json"
+    )
+    data = _load(summary_path) or {}
+    directions = data.get("directions", {})
+
+    body = [
+        r"\begin{tabular}{llccc}",
+        r"\toprule",
+        r"Dirección (métrica) & Banda & n & \% & media \\",
+        r"\midrule",
+    ]
+    ordered = [d for d in ("shw2spa", "spa2shw") if d in directions]
+    for di, direction in enumerate(ordered):
+        buckets = directions[direction].get("buckets", {})
+        items = list(buckets.items())
+        for bi, (name, st) in enumerate(items):
+            head = (
+                rf"\multirow{{{len(items)}}}{{*}}{{{QUAL_DIR_LABELS.get(direction, direction)}}}"
+                if bi == 0
+                else ""
+            )
+            pct = st.get("pct")
+            pct_cell = DASH if pct is None else _fmt(100 * float(pct), ".1f")
+            body.append(
+                " & ".join([
+                    head,
+                    QUAL_BUCKET_LABELS.get(name, name),
+                    str(st.get("n", DASH)),
+                    pct_cell,
+                    _fmt(st.get("mean_score")),
+                ]) + r" \\"
+            )
+        if di != len(ordered) - 1:
+            body.append(r"\midrule")
+    body += [
+        r"\bottomrule",
+        r"\end{tabular}",
+        "",
+        r"% Distribucion por banda de puntaje por oracion del modelo campeon reranked.",
+        r"% shw->spa se puntua con BLEU por oracion; spa->shw con chrF++ por oracion.",
+        r"% Cortes segun el umbral de ruido (BLEU<=10 / chrF++<=20). 'media' es el",
+        r"% promedio del puntaje por oracion dentro de la banda.",
+    ]
+    return _wrap(f"qualitative_buckets{suffix} ({run})", body)
+
+
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--variant", choices=["main", "xl"], default="xl")
     p.add_argument("--runs", nargs="+", default=None)
+    p.add_argument(
+        "--qualitative-run",
+        default="nllb_bidi_lora_v2_1b_loraplus_xl",
+        help="Run whose qualitative bucket_summary.json feeds the qualitative table.",
+    )
     return p.parse_args()
 
 
@@ -279,6 +349,9 @@ def main() -> int:
         f"nmt_directional_metrics{suffix}.tex": table_directional_metrics(runs, args.variant),
         f"nmt_bootstrap_ci{suffix}.tex": table_bootstrap_ci(runs, args.variant),
         f"nmt_rare_token_full{suffix}.tex": table_rare_token_full(runs, args.variant),
+        f"nmt_qualitative_buckets{suffix}.tex": table_qualitative_buckets(
+            args.variant, args.qualitative_run
+        ),
     }
     for name, body in artifacts.items():
         out = out_dir / name
