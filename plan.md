@@ -299,3 +299,23 @@ Recorded deviations from the original plan §6-§7
 - `torch` bumped 2.5.1 → 2.7.1, `transformers` 4.52.4 → 4.55.0, `accelerate` 1.7.0 → 1.8.1, `peft` 0.15.2 → 0.16.0. Reason: training will run on an RTX 5060 Ti (Blackwell, sm_120). Torch 2.5.1 has no prebuilt CUDA kernels for sm_120; torch 2.7 added sm_120 support.
 - `sentence-transformers` bumped 4.1.0 → `>=5.4.1,<6`. Reason: the frozen `v3_iterative_hn_e5_base_bidirectional` checkpoint was saved with sentence-transformers 5.4.1 and uses the new module paths (`sentence_transformers.base.modules.transformer.Transformer` plus `transformer_task` / `modality_config` / `include_prompt` kwargs). 4.1.0 cannot load it; 5.4.1+ is required. Verified working on this Windows host.
 - Glue libs (`numpy`, `pandas`, `scikit-learn`, `tqdm`, `pyyaml`, `pyarrow`, `matplotlib`) use `>=` ranges instead of exact pins (resolver brittleness vs. reproducibility trade-off; recorded in `requirements/nmt.txt`).
+
+---
+
+Phase 9 — Functional prototype (OE4 / R6) — DONE
+
+- [x] `app.py`: Gradio web app that loads the champion `nllb_bidi_lora_v2_1b_loraplus_xl` + the `_xl` reranker **once at startup** (`RUNTIME` dict via `_build_runtime`), reusing `load_checkpoint` / `generate_for_direction` from `src/nmt/inference/generate.py`. No model code or training involved. Reranking identical to the pipeline (`final = α·softmax(seq_scores) + (1−α)·cos(src,cand)`, α=0.7, beam k=5).
+- [x] UI: bidirectional translator (two panes, swap, copy, suggestion chips), auto-translate-while-typing (off by default), light/dark (light by default), advanced options (reranking toggle + α slider), examples. Spanish-readable labels.
+- [x] Structured registry: every translation appended as one JSONL line to `reports/05_nmt/frontend_logs/session_<fecha>.jsonl` (`timestamp, direction, source_text, output_text, rerank_on, alpha, candidates[{hypothesis, final_score}], latency_ms`).
+- [x] Launchers `lanzar_frontend.ps1` / `.bat` (flags `-SinEnlace/--no-share`, `-SinRerank/--no-rerank`, `-Puerto/--port`). Serves at `127.0.0.1:7860` + optional temporary `*.gradio.live` link. `gradio>=5,<6` added to `requirements/nmt.txt`.
+
+Phase 10 — Thesis chapter for the prototype — DONE
+
+- [x] New Cap. 7 "Prototipo funcional del traductor automático" (`\label{nmt-prototipo}`) before Conclusiones, plus reproducible Anexo D (`\label{anexo-prototipo}`, D.1–D.6), mirroring the Cap. 5 / Anexo C pattern.
+- [x] Coherence reconciliation: OE4/R6 and its MV6/IOV6, the Métodos table, Conclusiones and Trabajos futuros were updated so the prototype reads as **achieved** (only the speaker/expert validation, R8, stays pending).
+- [x] Cap. 7 demo table (`tab:prototipo-demostracion`) uses **test-set pairs verified against the gold** and actually run through `app.translate` (exact-match output + real latency). The earlier arbitrary-input examples were wrong (e.g. `kua a'nadalek` = "yo exageré", not "yo juego"; gallina = `wa'dantek`, not `wa'dan`) and were replaced.
+- [x] Figure: `thesis/latex/figuras/media/prototipo_interfaz.png` (real UI screenshot, "Dame eso" → "enka'u nana"). PDF rebuilt clean (0 undefined refs), `build/tesis.pdf` copied to `pdf/tesis.pdf`.
+
+Thesis writing-style rules the user gave (apply going forward):
+- No em-dash (raya `—`) as a parenthetical aside (anglicism); use commas/parentheses. Compound en-dash `shiwilu--castellano` is fine.
+- Keep file/script/path/port names out of chapter bodies; put literal artifacts in the reproducible anexo.

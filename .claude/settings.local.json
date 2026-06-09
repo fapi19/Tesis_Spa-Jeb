@@ -11,7 +11,11 @@
       "Bash(grep -v \"^\\\\+$\")",
       "Bash(grep -v \"^\\\\+\\\\\\\\\\\\\\\\[a-zA-Z]\")",
       "Bash(grep -v \"^\\\\+\\\\s*$\")",
-      "Bash(awk ' *)"
+      "Bash(awk ' *)",
+      "Bash(.venv-nmt/Scripts/python -c \"import docx; print\\(docx.__version__\\)\")",
+      "Bash(.venv-nmt/Scripts/pip install *)",
+      "Bash(.venv-nmt/Scripts/python -m scripts.generate_expert_validation_doc)",
+      "Bash(start *)"
     ]
   }
 }

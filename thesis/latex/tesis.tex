@@ -209,7 +209,7 @@
 
 El shiwilu, también conocido como jebero, es una lengua amazónica peruana en situación crítica de amenaza, cuya presencia digital y disponibilidad de recursos bilingües siguen siendo limitadas. Esta tesis aborda dicho problema mediante la propuesta de un sistema de traducción automática neuronal bidireccional entre shiwilu y castellano, orientado a apoyar la documentación, el aprendizaje y el uso cotidiano de la lengua en contextos educativos y comunitarios.
 
-El trabajo se centra en la construcción de una base metodológica y técnica para desarrollar el sistema: recopilación y alineación de un corpus paralelo, definición de criterios de selección y normalización, preparación de recursos de representación semántica, diseño de modelos de traducción y planteamiento de un protocolo de evaluación que combine métricas automáticas con validación participativa. La investigación adopta un enfoque reproducible, trazable y sensible a las particularidades lingüísticas del shiwilu, considerando los desafíos propios de las lenguas de bajo recurso.
+El trabajo se centra en la construcción de una base metodológica y técnica para desarrollar el sistema: recopilación y alineación de un corpus paralelo, definición de criterios de selección y normalización, preparación de recursos de representación semántica, diseño de modelos de traducción, planteamiento de un protocolo de evaluación que combine métricas automáticas con validación participativa e implementación de un prototipo funcional ejecutable que integra el modelo entrenado. La investigación adopta un enfoque reproducible, trazable y sensible a las particularidades lingüísticas del shiwilu, considerando los desafíos propios de las lenguas de bajo recurso.
 
 Con ello, la tesis busca aportar un recurso tecnológico inicial y una ruta experimental documentada para futuras investigaciones en traducción automática de lenguas originarias.
 
@@ -386,7 +386,7 @@ Mejorar la capacidad de nuevos hablantes para aprender e interiorizar la lengua 
 
   \begin{itemize}
   \item
-    R6: Prototipo funcional ejecutable localmente que integre el modelo NMT y permita pruebas básicas, pendiente de implementación posterior.
+    R6: Prototipo funcional ejecutable localmente que integra el modelo NMT y permite pruebas básicas con registro estructurado de entradas y salidas.
   \item
     R7: Documento de proceso para la validación con pruebas de experto.
   \item
@@ -444,14 +444,14 @@ MV5: Protocolo documentado que integra evaluación automática, muestreo partici
 \end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
 IOV5: Métricas automáticas reportadas y muestra acotada preparada para revisión con hablantes.
 \end{minipage} \\
-O4: Diseñar e implementar un prototipo funcional de traductor NMT que facilite su uso y prueba. & R6: Prototipo funcional ejecutable localmente que integre el modelo NMT y permita pruebas básicas, pendiente de implementación posterior.
+O4: Diseñar e implementar un prototipo funcional de traductor NMT que facilite su uso y prueba. & R6: Prototipo funcional ejecutable localmente que integra el modelo NMT y permite pruebas básicas con registro estructurado de entradas y salidas.
 
 R7: Documento de proceso para pruebas de experto
 
 R8: Proceso de validación con expertos planificado para ejecución posterior. & \begin{minipage}[t]{\linewidth}\raggedright
-MV6: Prototipo operativo con guía breve de uso y video corto de demostración, pendiente de generación.
+MV6: Prototipo operativo (interfaz web ejecutable localmente) con guía breve de uso y registro estructurado de uso.
 \end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-IOV6: Demostración de traducción de ejemplos y registro de casos de prueba, pendiente de ejecución con expertos.
+IOV6: Demostración de traducción de ejemplos en ambas direcciones y registro de casos de prueba ejecutado; la validación con expertos queda pendiente de ejecución (R8).
 \end{minipage} \\
 \end{longtable}
 
@@ -507,10 +507,10 @@ A continuación se describen las herramientas, métodos, enfoques y procedimient
 
 \textbf{M:} Rúbricas (adecuación, fluidez, pertinencia); muestreo.
 \end{minipage} \\
-\textbf{R6:} Prototipo local funcional pendiente (UI simple). & \begin{minipage}[t]{\linewidth}\raggedright
-\textbf{H:} Python, PyTorch/TensorFlow; Gradio/Streamlit; logs.
+\textbf{R6:} Prototipo local funcional implementado (UI simple). & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{H:} Python, PyTorch; Gradio; logs.
 
-\textbf{P:} UI$\rightarrow$cargar checkpoint$\rightarrow$traducir$\rightarrow$registrar (fase posterior).
+\textbf{P:} UI$\rightarrow$cargar checkpoint$\rightarrow$traducir$\rightarrow$registrar.
 \end{minipage} \\
 \textbf{R7:} Documento de proceso para pruebas de experto. & \begin{minipage}[t]{\linewidth}\raggedright
 \textbf{M:} Plantilla de acta y checklist; versionado.
@@ -1633,6 +1633,197 @@ El capítulo establece el protocolo de validación automática y participativa a
 
 Con ello, R5 queda cerrado como protocolo documentado y preparado. La validación participativa con hablantes, los promedios humanos, el acuerdo interevaluador y el análisis de comentarios quedan programados para la siguiente etapa del trabajo.
 
+\chapter{Prototipo funcional del traductor automático}\label{nmt-prototipo}
+
+\section{Introducción}\label{prototipo-introduccion}
+
+Los capítulos anteriores dejaron seleccionado un modelo de traducción bajo criterios cuantitativos reproducibles (Capítulo~\ref{nmt-sa-binllb}) y un protocolo para contrastar esas métricas con el juicio de hablantes (Capítulo~\ref{protocolo-validacion-automatica-participativa}). Sin embargo, mientras el sistema solo pueda ejecutarse desde la línea de comandos del entorno de experimentación, su uso queda restringido al propio desarrollo y no resulta accesible para docentes, miembros de la comunidad ni evaluadores no técnicos. Este capítulo desarrolla el cuarto objetivo específico: diseñar e implementar un prototipo funcional de traductor automático neuronal que integre el modelo entrenado y facilite su uso y prueba.
+
+El resultado de este capítulo es un componente de software, no un nuevo modelo. El prototipo no reentrena ni modifica el sistema SA-BiNLLB; reutiliza el modelo campeón \(v_{2.1b}\) LoRA+ y el modelo de \emph{embeddings} v3 ya congelados, y los orquesta detrás de una interfaz web sencilla que permite escribir una oración, elegir la dirección de traducción y obtener la salida en ambos sentidos. El alcance corresponde a R6 y a sus medios de verificación MV6/IOV6: un prototipo operativo ejecutable localmente, una guía breve de uso, la demostración de traducción de ejemplos y un registro estructurado de los casos de prueba. La organización del capítulo sigue el mismo orden que los enunciados del objetivo: primero la arquitectura que reutiliza el modelo, luego la funcionalidad de la interfaz, después el registro de uso y la integración ejecutable, y finalmente la demostración con casos reales. Los detalles operativos de rutas, comandos y formato de registro se desarrollan en el \hyperref[anexo-prototipo]{Anexo~D}, entendido como documento reproducible del prototipo.
+
+\section{Resultados alcanzados}\label{prototipo-resultados-alcanzados}
+
+Este capítulo reporta el resultado asociado al cuarto objetivo específico: un prototipo funcional que integra el sistema NMT y habilita su uso y prueba. El entregable central es R6, el prototipo ejecutable localmente, acompañado de su guía de uso y de un registro estructurado de entradas y salidas que sustenta el medio de verificación. El \hyperref[anexo-prototipo]{Anexo~D} funciona como medio de verificación reproducible de los componentes, las rutas, los comandos de ejecución y el esquema del registro.
+
+\subsection{Arquitectura del prototipo}\label{prototipo-arquitectura}
+
+El prototipo se implementa como una aplicación web ligera construida sobre la biblioteca Gradio, que expone la interfaz en el navegador sin requerir que el usuario interactúe con la línea de comandos. Su diseño reutiliza, sin alterarlos, los tres bloques del sistema SA-BiNLLB descritos en el Capítulo~\ref{nmt-sa-binllb}, de modo que el prototipo actúa como una capa de orquestación e interacción por encima de artefactos ya validados.
+
+\begin{figure}[htbp]
+\centering
+\caption{Arquitectura del prototipo funcional: capa de interfaz sobre el sistema SA-BiNLLB \(v_{2.1b}\) congelado.}
+\label{fig:prototipo-arquitectura}
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  data/.style={
+    draw,
+    rounded corners=2pt,
+    fill=gray!8,
+    align=center,
+    text width=2.55cm,
+    minimum height=1.05cm,
+    font=\scriptsize
+  },
+  process/.style={
+    draw,
+    rounded corners=2pt,
+    fill=gray!15,
+    align=center,
+    text width=2.75cm,
+    minimum height=1.1cm,
+    font=\scriptsize
+  },
+  model/.style={
+    draw,
+    very thick,
+    rounded corners=2pt,
+    fill=gray!22,
+    align=center,
+    text width=3.05cm,
+    minimum height=1.35cm,
+    font=\scriptsize
+  },
+  aux/.style={
+    draw,
+    dashed,
+    rounded corners=2pt,
+    fill=white,
+    align=center,
+    text width=2.55cm,
+    minimum height=0.95cm,
+    font=\scriptsize
+  },
+  arrow/.style={-{Latex[length=2.7mm]}, very thick, shorten >=1pt, shorten <=1pt},
+  softarrow/.style={-{Latex[length=2.7mm]}, dashed, very thick, shorten >=1pt, shorten <=1pt}
+]
+
+\draw[rounded corners=3pt, gray!60] (-0.7,-1.05) rectangle (16.8,2.25);
+\node[anchor=west, font=\small\bfseries] at (-0.45,1.85) {Carga única en el arranque (entorno aislado, GPU)};
+
+\node[model] (model) at (3.0,0.55) {\textbf{Modelo campeón}\\SA-BiNLLB \(v_{2.1b}\)\\NLLB-200 + LoRA+\\\textbf{congelado}};
+\node[model] (sbert) at (8.4,0.55) {\textbf{Reranker}\\E5 bilingüe v3\\\textbf{congelado}};
+\node[aux] (runtime) at (13.7,0.55) {\textbf{Estado en memoria}\\tokenizer, configuración\\de generación};
+
+\node[data] (user) at (1.05,-3.35) {\textbf{Usuario}\\oración fuente\\dirección elegida};
+\node[process] (ui) at (4.75,-3.35) {\textbf{Interfaz web}\\Gradio\\entrada / opciones};
+\node[process] (decode) at (8.4,-3.35) {\textbf{Decodificación}\\haz \(k=5\)\\5 hipótesis};
+\node[process] (rerank) at (12.0,-3.35) {\textbf{Reranking}\\mezcla \(\alpha=0{,}7\)\\(Anexo~C.5)};
+\node[data] (output) at (15.55,-3.35) {\textbf{Salida}\\traducción + \\alternativas};
+\node[data] (log) at (8.4,-5.25) {\textbf{Registro de uso}\\bitácora por sesión};
+
+\draw[arrow] (user) -- (ui);
+\draw[arrow] (ui) -- (decode);
+\draw[arrow] (decode) -- (rerank);
+\draw[arrow] (rerank) -- (output);
+\draw[softarrow] (model) -- (decode);
+\draw[softarrow] (sbert) -- (rerank);
+\draw[softarrow] (runtime) to[out=-90,in=20] (rerank);
+\draw[arrow] (output) to[out=-150,in=0] (log);
+\end{tikzpicture}%
+}
+\end{figure}
+
+El primer bloque es el modelo de traducción: el prototipo carga una sola vez, al arrancar, el \emph{checkpoint} del modelo seleccionado \(v_{2.1b}\) LoRA+ junto con su \emph{tokenizer} extendido y su configuración de generación. La carga única en memoria evita reinicializar el modelo en cada solicitud y mantiene la latencia de cada traducción dentro de un rango interactivo. El segundo bloque es el componente de apoyo semántico: el mismo modelo de \emph{embeddings} bilingüe v3 congelado en el Capítulo~\ref{recopilaciuxf3n-y-preparaciuxf3n-inicial-del-corpus-bilinguxfce}, que el prototipo emplea para reordenar las hipótesis del decodificador. El reordenamiento usa exactamente la combinación lineal definida en el Capítulo~\ref{nmt-sa-binllb} y detallada en el Anexo~C, sección~C.5: una mezcla convexa entre la probabilidad de traducción del decodificador y la similitud coseno fuente--candidato del modelo de \emph{embeddings}, con el coeficiente \(\alpha=0{,}7\) que resultó óptimo para el modelo campeón. El tercer bloque es la propia capa de interfaz, que recibe la oración del usuario, dispara la decodificación por búsqueda en haz (\(k=5\)), aplica el reranking semántico cuando está activado y devuelve la traducción elegida junto con sus alternativas.
+
+Conviene subrayar que el prototipo no introduce ningún parámetro entrenable nuevo ni vuelve a ejecutar el \emph{pipeline} de entrenamiento: reutiliza las mismas funciones de inferencia y reranking validadas en el Capítulo~\ref{nmt-sa-binllb}, de modo que la calidad de las traducciones es, por construcción, la del modelo campeón ya evaluado. Las rutas exactas de los artefactos y la mecánica de carga se desarrollan en el Anexo~D, secciones~D.1 y~D.2.
+
+\subsection{Funcionalidad de la interfaz}\label{prototipo-funcionalidad}
+
+La interfaz se diseñó priorizando la funcionalidad mínima exigida por el objetivo, es decir, el ingreso de texto y la visualización de resultados de forma simple y accesible, y siguiendo convenciones de uso ampliamente conocidas en traductores en línea, de manera que un usuario no técnico pueda operarla sin instrucciones extensas. La vista principal presenta dos áreas de texto contiguas: a la izquierda, el cuadro donde el usuario escribe la oración fuente; a la derecha, el cuadro donde aparece la traducción. Entre ambas, un control de intercambio (\(\rightleftarrows\)) invierte la dirección de traducción y reutiliza la salida previa como nueva entrada, lo que facilita comparar ambos sentidos. La salida incluye un botón para copiar el resultado y un conjunto de sugerencias con las siguientes mejores hipótesis del modelo, que el usuario puede seleccionar con un clic para reemplazar la traducción mostrada.
+
+\begin{figure}[htbp]
+\centering
+\caption{Interfaz del prototipo funcional: traducción castellano\(\rightarrow\)shiwilu con el modelo \(v_{2.1b}\) y reranking semántico.}
+\label{fig:prototipo-interfaz}
+\includegraphics[width=\linewidth,alt={Captura de pantalla de la interfaz web del prototipo de traductor castellano-shiwilu}]{media/prototipo_interfaz.png}
+\end{figure}
+
+Las opciones más técnicas se mantienen ocultas tras un panel de \emph{Opciones avanzadas} para no recargar la vista de un usuario ocasional, siguiendo un criterio de divulgación progresiva: allí se exponen el interruptor del reranking semántico, el control del coeficiente \(\alpha\) y la tabla completa de hipótesis con sus puntajes. Por defecto, la aplicación arranca en modo claro, con el reranking activado y con la traducción automática mientras se escribe desactivada, de modo que cada traducción responde a una acción explícita del usuario. La interfaz incluye además ejemplos cargables con un clic, etiquetas en castellano legible (\emph{Castellano} y \emph{Shiwilu} en lugar de los códigos internos del modelo) y un conmutador de modo claro u oscuro. Con ello, la funcionalidad mínima del objetivo queda cubierta y ampliada con comodidades que no comprometen la simplicidad de la vista principal.
+
+\subsection{Registro estructurado de uso}\label{prototipo-registro}
+
+Para habilitar el análisis posterior de las pruebas, cada traducción se registra en un archivo de bitácora con formato JSON por líneas, en el que cada línea es un objeto independiente que documenta una traducción completa. El registro guarda la marca temporal, la dirección, el texto fuente, la salida elegida, si el reranking estuvo activo, el valor de \(\alpha\), la lista de hipótesis candidatas con su puntaje final y la latencia de la operación en milisegundos. El Cuadro~\ref{tab:prototipo-jsonl} resume la información que se conserva en cada traducción; la ubicación del archivo y los nombres exactos de los campos se documentan en el Anexo~D, sección~D.4.
+
+\begin{table}[h]
+\centering
+\caption{Información que el prototipo conserva en el registro de uso por cada traducción.}
+\label{tab:prototipo-jsonl}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.30\linewidth}p{0.62\linewidth}}
+\toprule
+\textbf{Información registrada} & \textbf{Contenido} \\
+\midrule
+Marca temporal & Fecha y hora de la traducción \\
+Dirección & Sentido de la traducción (castellano\(\rightarrow\)shiwilu o shiwilu\(\rightarrow\)castellano) \\
+Texto fuente & Oración ingresada por el usuario \\
+Traducción & Salida finalmente mostrada \\
+Reranking & Si el reordenamiento semántico estuvo activo y con qué coeficiente \(\alpha\) \\
+Candidatos & Lista de hipótesis del decodificador con su puntaje final \\
+Latencia & Tiempo de cómputo de la traducción en milisegundos \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Este registro responde directamente al medio de verificación del objetivo, que exige habilitar pruebas básicas y un registro estructurado de entradas y salidas para análisis. La bitácora permite, por ejemplo, recuperar los casos efectivamente probados, comparar latencias por dirección o auditar qué hipótesis alternativas ofreció el sistema en cada consulta. El esquema completo del registro se desarrolla en el Anexo~D, sección~D.4.
+
+\subsection{Integración y despliegue}\label{prototipo-despliegue}
+
+El prototipo se empaqueta dentro del mismo entorno aislado que el resto del sistema NMT, de modo que no introduce dependencias nuevas más allá de la biblioteca de interfaz, y se ejecuta sobre la GPU disponible. Para facilitar su puesta en marcha sin conocimientos técnicos, se proveen dos lanzadores equivalentes para Windows que verifican el entorno y abren la aplicación con un doble clic. Por defecto, la interfaz queda disponible de forma local en el navegador y, de forma opcional, genera un enlace público temporal que permite compartir la demostración con colaboradores remotos durante una sesión, sin desplegar un servidor permanente. Esta última posibilidad es coherente con el alcance del proyecto, que reserva el despliegue web de acceso público como trabajo futuro y delimita el entregable a un prototipo local de demostración. Los lanzadores, los comandos de ejecución y sus opciones se desarrollan en el Anexo~D, sección~D.5.
+
+\subsection{Demostración y casos de prueba}\label{prototipo-demostracion}
+
+Para verificar el funcionamiento de extremo a extremo se ejecutaron, a través de la interfaz, traducciones de demostración en ambas direcciones tomadas del conjunto de prueba, cuya traducción de referencia es conocida. El Cuadro~\ref{tab:prototipo-demostracion} reúne una muestra de casos en los que la salida del prototipo coincide con esa referencia, registrados además en la bitácora del prototipo. Las traducciones reproducen el comportamiento del modelo campeón evaluado en el Capítulo~\ref{nmt-sa-binllb}: oraciones cortas y frecuentes se resuelven de forma directa, y la latencia se mantiene en el rango interactivo (del orden de décimas de segundo por traducción), lo que confirma que la carga única del modelo es suficiente para un uso fluido.
+
+\begin{table}[h]
+\centering
+\caption{Casos de prueba de demostración en ambas direcciones, tomados del conjunto de prueba de la variante \texttt{xl}, en los que la salida del prototipo coincide con la traducción de referencia (modelo \(v_{2.1b}\) con reranking, \(\alpha=0{,}7\)).}
+\label{tab:prototipo-demostracion}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.16\linewidth}p{0.30\linewidth}p{0.30\linewidth}p{0.12\linewidth}}
+\toprule
+\textbf{Dirección} & \textbf{Texto fuente} & \textbf{Traducción del prototipo} & \textbf{Latencia} \\
+\midrule
+shw\(\rightarrow\)spa & werampalek & estoy comiendo. & \(\approx\)\,0,14\,s \\
+shw\(\rightarrow\)spa & yakana'lek & quiero ganar. & \(\approx\)\,0,08\,s \\
+shw\(\rightarrow\)spa & enka'u nana & dame eso. & \(\approx\)\,0,27\,s \\
+spa\(\rightarrow\)shw & dame eso. & enka'u nana & \(\approx\)\,0,25\,s \\
+spa\(\rightarrow\)shw & olvídenlo. & pinaner'ku' & \(\approx\)\,0,27\,s \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Conviene señalar una limitación operativa observada durante las pruebas: cuando se activa la opción de traducir mientras se escribe, el sistema produce traducciones de oraciones aún incompletas, que pueden resultar erráticas hasta que la frase se termina. Por ese motivo dicha opción permanece desactivada por defecto y la traducción responde, salvo que el usuario indique lo contrario, a una acción explícita. El Cuadro~\ref{tab:prototipo-estado} resume el estado de los componentes del prototipo y la evidencia que respalda cada uno.
+
+\begin{table}[h]
+\centering
+\caption{Estado de los componentes del prototipo funcional.}
+\label{tab:prototipo-estado}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.24\linewidth}p{0.16\linewidth}p{0.34\linewidth}p{0.22\linewidth}}
+\toprule
+\textbf{Componente} & \textbf{Estado} & \textbf{Evidencia generada} & \textbf{Uso previsto} \\
+\midrule
+Interfaz web & Implementada & Aplicación web (Gradio) con entrada bidireccional y opciones avanzadas & Traducir y probar el modelo sin línea de comandos \\
+Integración del modelo & Operativa & Carga única del campeón \(v_{2.1b}\) y del reranker v3 congelados & Reutilizar el sistema evaluado sin reentrenarlo \\
+Registro de uso & Generado & Bitácora por sesión con entradas, salidas y latencias & Auditar y analizar los casos probados \\
+Lanzadores & Provistos & Dos lanzadores para Windows & Ejecutar el prototipo en local \\
+Despliegue público & Acotado & Enlace temporal opcional por sesión & Demostración remota puntual \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Con ello, R6 queda cumplido como prototipo funcional ejecutable localmente: existe una interfaz operativa que integra el modelo seleccionado, una guía breve de uso y unos lanzadores que simplifican su puesta en marcha, una demostración de traducción de ejemplos en ambas direcciones y un registro estructurado de los casos de prueba.
+
+\section{Discusión}\label{prototipo-discusion}
+
+El prototipo cierra el recorrido técnico de la tesis al convertir un sistema que hasta ahora solo vivía en el entorno de experimentación en una herramienta que cualquier usuario puede operar desde el navegador. Su aporte no es un avance de calidad de traducción, que quedó fijada y medida en el Capítulo~\ref{nmt-sa-binllb}, sino de accesibilidad y verificabilidad: hace tangible el resultado del proyecto, habilita pruebas por parte de personas ajenas al desarrollo y produce un registro que documenta cómo se comporta el sistema ante entradas reales. En el contexto de una lengua de muy bajo recurso, contar con una interfaz sencilla y un mecanismo de registro es relevante porque facilita la futura recolección de retroalimentación de hablantes y docentes sobre casos de uso concretos.
+
+La lectura del alcance debe ser prudente. El prototipo es deliberadamente local y de demostración: no constituye un servicio web de acceso público ni una aplicación móvil, opciones que el propio alcance del proyecto reserva como trabajo futuro. Su calidad de traducción está acotada por la del modelo subyacente, con las asimetrías por dirección y las limitaciones de cobertura de vocabulario ya discutidas; la opción de traducción en tiempo real evidencia esa frontera al exponer salidas parciales sobre frases incompletas. Finalmente, el prototipo habilita la prueba del sistema, pero la valoración lingüística y cultural de sus salidas corresponde al protocolo participativo del Capítulo~\ref{protocolo-validacion-automatica-participativa}, cuya ejecución con hablantes queda programada para la siguiente etapa. En conjunto, el prototipo satisface el objetivo de facilitar el uso y la prueba del modelo sin sobrepasar el alcance académico definido para esta versión del trabajo.
+
+\section{Conclusión del capítulo}\label{prototipo-conclusion-capitulo}
+
+El capítulo cumple el cuarto objetivo específico al entregar un prototipo funcional que integra el modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico y lo expone a través de una interfaz web sencilla, ejecutable localmente y acompañada de lanzadores para su puesta en marcha. El prototipo reutiliza los artefactos congelados del sistema SA-BiNLLB sin reentrenarlos, ofrece traducción bidireccional con visualización clara y opciones avanzadas opcionales, y persiste un registro estructurado de cada traducción que sirve como medio de verificación de las pruebas. Con ello, R6 queda cumplido como prototipo funcional ejecutable localmente que integra el modelo NMT y permite pruebas básicas con registro estructurado de entradas y salidas. El detalle operativo del prototipo, que abarca componentes, rutas, mecánica de carga, esquema del registro y comandos de ejecución, se consigna en el \hyperref[anexo-prototipo]{Anexo~D}.
+
 \chapter{Conclusiones y trabajos futuros}\label{conclusiones-y-trabajos-futuros}
 
 \section{Conclusiones}\label{conclusiones-1}
@@ -1645,9 +1836,11 @@ Respecto del OE2, se implementó y evaluó un sistema NMT bidireccional basado e
 
 Respecto del OE3, se definió un protocolo que combina evaluación automática y validación participativa. El componente automático quedó respaldado por \emph{leaderboard}, métricas por dirección, reranking, análisis bootstrap y comparación de variantes sobre el conjunto de prueba. El componente participativo quedó preparado mediante una muestra balanceada de 100 ítems en total, 50 por dirección, organizada en una planilla orientada a hablantes con campos legibles para evaluar sentido, naturalidad, decisión y comentarios. Este resultado corresponde a R5 como protocolo documentado y preparado para su aplicación participativa.
 
+Respecto del OE4, se diseñó e implementó un prototipo funcional que integra el modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico en una interfaz web sencilla, ejecutable localmente y acompañada de lanzadores para su puesta en marcha. El prototipo reutiliza los artefactos congelados del sistema SA-BiNLLB sin reentrenarlos, ofrece traducción bidireccional con visualización clara y opciones avanzadas opcionales, y persiste un registro estructurado de cada traducción. Este resultado corresponde a R6 como prototipo funcional ejecutable localmente que permite pruebas básicas con registro estructurado de entradas y salidas, y queda documentado en el Capítulo~\ref{nmt-prototipo} y en el \hyperref[anexo-prototipo]{Anexo~D}.
+
 La investigación confirma que, para una lengua originaria de muy bajo recurso como el shiwilu, la contribución técnica más defendible es un pipeline reproducible y auditable antes que una afirmación de cobertura general. El sistema obtenido constituye un baseline sólido para continuar el trabajo y sus resultados deben leerse dentro del marco experimental definido: corpus pequeño, dominio concentrado en flashcards y narrativas, baja recuperación de tokens OOV y uso de métricas automáticas complementadas por un protocolo participativo.
 
-En esta etapa queda preparada la planilla de evaluación humana y documentado el protocolo. La recolección de juicios de hablantes, promedios humanos, acuerdos interevaluador y actas de expertos queda delimitada por dicho instrumento. Del mismo modo, el prototipo funcional se conserva como actividad planificada para la siguiente fase.
+En esta etapa queda preparada la planilla de evaluación humana y documentado el protocolo. La recolección de juicios de hablantes, promedios humanos, acuerdos interevaluador y actas de expertos queda delimitada por dicho instrumento. El prototipo funcional, en cambio, ya quedó implementado y operativo; su uso por hablantes para recoger retroalimentación sobre casos concretos se articula con la aplicación posterior del protocolo participativo.
 
 \section{Trabajos futuros}\label{trabajos-futuros}
 
@@ -1660,7 +1853,7 @@ Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB
   \item[Corpus monolingüe español controlado por dominio.] El sistema actual omite la dirección \(\text{spa}\rightarrow\text{shw}\) en \emph{backtranslation} clásica precisamente para no contaminar el \emph{target} con Shiwilu sintético generado por un modelo aún imperfecto en esa dirección. Curar 10--30\,k frases en Español cercanas al dominio de \emph{flashcards} y textos comunitarios, filtrarlas con el SBERT \(v_3\) congelado contra el Shiwilu existente y usarlas como \emph{seeds} para BT \(\text{spa}\rightarrow\text{shw}\) con un \(v_{2.1b}\) ya estable es la línea natural complementaria a la iteración descrita arriba.
   \item[\emph{Focal loss} para preservación de \emph{rare-tokens}.] El análisis morfológicamente sensible documentado en el Anexo~C, sección~\ref{anexo-nmt-rare-token}, muestra que la \emph{OOV recovery rate} es uniformemente baja: el decoder casi no copia palabras shiwilu OOV cuando aparecen en la fuente. \emph{Focal loss} con \(\gamma\approx 2\) sobre los \emph{token-ids} más raros sesgaría al modelo a preservarlos. Es ortogonal al pesado por origen documentado en el Anexo~C, sección~\ref{anexo-nmt-pesado}, y se puede combinar con él, pero requiere reescribir \texttt{compute\_loss} para conocer la frecuencia de cada \emph{token-target} en \emph{train}.
   \item[Ejecución de la validación participativa.] El protocolo y la planilla para hablantes ya están preparados. La siguiente fase aplicará el instrumento con hablantes nativos o revisores competentes para recoger puntajes de sentido y naturalidad, decisiones de aceptar/corregir/rechazar, comentarios cualitativos, análisis de desacuerdos y contraste entre juicios humanos y métricas automáticas.
-  \item[Implementación del prototipo funcional.] Una vez completada la revisión humana, el modelo seleccionado debe integrarse en una interfaz local o web ligera que permita traducir en ambas direcciones, registrar entradas y salidas, mostrar niveles de confianza y recopilar retroalimentación controlada. Este componente queda fuera de los resultados ejecutados de la presente versión.
+  \item[Evolución del prototipo funcional hacia un servicio de acceso público.] El prototipo local ya fue implementado y se documenta en el Capítulo~\ref{nmt-prototipo}: integra el modelo seleccionado, traduce en ambas direcciones y registra entradas y salidas de forma estructurada. Su continuación natural, explícitamente fuera del alcance de la presente versión, es desplegarlo como servicio web de acceso público o aplicación móvil, incorporar la recolección controlada de retroalimentación de hablantes desde la propia interfaz y exponer de manera más visible los niveles de confianza por predicción ya calculados en el sistema (Anexo~C, sección~C.9).
 \end{description}
 
 % La bibliografia se genera automaticamente a partir de tesis.bib
@@ -1671,7 +1864,7 @@ Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB
 \appendix
 \chapter{Anexos}
 
-Los anexos reúnen información complementaria citada desde el cuerpo de la tesis. El Anexo~A presenta el plan de proyecto, el Anexo~B documenta aspectos adicionales del sistema de embeddings bilingües y el Anexo~C consolida la evidencia reproducible del sistema de traducción automática neuronal.
+Los anexos reúnen información complementaria citada desde el cuerpo de la tesis. El Anexo~A presenta el plan de proyecto, el Anexo~B documenta aspectos adicionales del sistema de embeddings bilingües, el Anexo~C consolida la evidencia reproducible del sistema de traducción automática neuronal y el Anexo~D documenta la reproducción técnica del prototipo funcional.
 
 \section*{Anexo A: Plan de Proyecto}
 
@@ -2556,5 +2749,66 @@ El Cuadro~\ref{tab:anexo-nmt-pipeline} enumera los scripts del pipeline NMT, las
 76 & \filepath{scripts/nmt/76\_pairwise\_preference.py} & \filepath{reports/05\_nmt/evaluation[\_xl]/pairwise\_preference.xlsx} & \filepath{pairwise\_preference\_anon\_key.json} \\
 — & \filepath{scripts/generate\_nmt\_tables.py} & \filepath{thesis/latex/figuras/generated/nmt\_*.tex} & — \\
 \end{longtable}
+
+\section*{Anexo D: Documento reproducible del prototipo funcional}\label{anexo-prototipo}
+
+Este anexo documenta la reproducción técnica del prototipo descrito en el Capítulo~\ref{nmt-prototipo}. El prototipo no reentrena ni modifica el sistema SA-BiNLLB; reutiliza el modelo campeón \(v_{2.1b}\) LoRA+ y el modelo de \emph{embeddings} v3 congelados, y los orquesta detrás de una interfaz web. El \emph{stack} se ejecuta en el mismo entorno aislado \texttt{.venv-nmt} del sistema NMT.
+
+\subsection*{D.1 Componentes y rutas de artefactos}\label{anexo-prototipo-componentes}
+
+El Cuadro~\ref{tab:anexo-prototipo-artifacts} enumera los artefactos que componen el prototipo y su función.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2700}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3100}}@{}}
+\caption{Artefactos técnicos del prototipo funcional}\label{tab:anexo-prototipo-artifacts}\\
+\toprule
+\textbf{Artefacto} & \textbf{Ruta} & \textbf{Función} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Artefacto} & \textbf{Ruta} & \textbf{Función} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Aplicación web & \filepath{app.py} & Carga los modelos, define la interfaz Gradio y expone la traducción bidireccional. \\
+Modelo campeón & \filepath{models/nmt/nllb\_bidi\_lora\_v2\_1b\_loraplus\_xl/} & \emph{Checkpoint} del modelo seleccionado \(v_{2.1b}\) LoRA+ (variante \texttt{xl}). \\
+Reranker semántico & \filepath{models/sentence\_transformers/v3\_iterative\_hn\_e5\_base\_bidirectional\_xl/} & Modelo de \emph{embeddings} bilingüe v3 usado para reordenar hipótesis. \\
+Funciones de inferencia & \filepath{src/nmt/inference/generate.py} & \texttt{load\_checkpoint}, \texttt{generate\_for\_direction}, \texttt{GenerationConfig} reutilizadas sin cambios. \\
+Configuración de generación & \filepath{config/nmt/inference.yaml} & Parámetros de búsqueda en haz y generación (idénticos a los del Anexo~C.8). \\
+Lanzadores & \filepath{lanzar\_frontend.bat}, \filepath{lanzar\_frontend.ps1} & Verifican el entorno \texttt{.venv-nmt} y abren la aplicación en Windows. \\
+Registro de uso & \filepath{reports/05\_nmt/frontend\_logs/session\_<fecha>.jsonl} & Bitácora estructurada de entradas, salidas, hipótesis y latencias. \\
+\end{longtable}
+
+\subsection*{D.2 Carga única en el arranque}\label{anexo-prototipo-carga}
+
+Al iniciarse, la aplicación carga una sola vez el modelo campeón con \texttt{load\_checkpoint}, su \emph{tokenizer} extendido y la configuración de generación (\texttt{GenerationConfig}), y los conserva en un estado en memoria (\texttt{RUNTIME}). El modelo de \emph{embeddings} v3 se carga de forma perezosa la primera vez que se activa el reranking. Esta carga única evita reinicializar los modelos en cada solicitud y mantiene la latencia de cada traducción en el rango interactivo. La inferencia se realiza sobre la GPU disponible cuando existe (\texttt{device = cuda}).
+
+\subsection*{D.3 Reranking en la interfaz}\label{anexo-prototipo-rerank}
+
+El reordenamiento de hipótesis usa la misma combinación lineal documentada en el Anexo~C, sección~C.5: se generan cinco hipótesis por búsqueda en haz (\(k=5\)), se normaliza la probabilidad de traducción del decodificador con \emph{softmax} sobre los \emph{sequence scores}, se calcula la similitud coseno entre la fuente y cada candidato con el modelo de \emph{embeddings} v3, y se combina ambos términos con \(\alpha=0{,}7\) (el valor óptimo del modelo campeón). La hipótesis con mayor puntaje final se muestra como traducción y las restantes se ofrecen como alternativas. Cuando el reranking está desactivado, el prototipo devuelve directamente la mejor hipótesis del decodificador.
+
+\subsection*{D.4 Esquema del registro estructurado}\label{anexo-prototipo-registro}
+
+Cada traducción persiste una línea JSON en \filepath{reports/05\_nmt/frontend\_logs/session\_<fecha>.jsonl} con los campos \texttt{timestamp} (ISO-8601 UTC), \texttt{direction} (\texttt{spa2shw} o \texttt{shw2spa}), \texttt{source\_text}, \texttt{output\_text}, \texttt{rerank\_on}, \texttt{alpha}, \texttt{candidates} (lista de objetos \texttt{\{hypothesis, final\_score\}}) y \texttt{latency\_ms}. El formato por líneas permite acumular sesiones sucesivas en un mismo archivo y procesarlas con herramientas estándar. El Cuadro~\ref{tab:prototipo-jsonl} del Capítulo~\ref{nmt-prototipo} resume estos campos.
+
+\subsection*{D.5 Ejecución y despliegue}\label{anexo-prototipo-ejecucion}
+
+El prototipo se ejecuta con:
+
+\begin{quote}
+\small\filepath{.venv-nmt/Scripts/python app.py}
+\end{quote}
+
+que abre la interfaz en \filepath{127.0.0.1:7860} y genera un enlace público temporal opcional. Las opciones disponibles son \texttt{--no-share} (solo local, sin enlace público), \texttt{--no-rerank} (arranca con el reranking apagado) y \texttt{--port N} (cambia el puerto). Los lanzadores \filepath{lanzar\_frontend.bat} y \filepath{lanzar\_frontend.ps1} envuelven esa invocación; el segundo acepta los conmutadores equivalentes \texttt{-SinEnlace}, \texttt{-SinRerank} y \texttt{-Puerto}. El prototipo es local por diseño: el enlace temporal sirve para demostraciones puntuales y no constituye un despliegue permanente, en línea con el alcance del proyecto.
+
+\subsection*{D.6 Casos de prueba registrados}\label{anexo-prototipo-casos}
+
+Las traducciones de demostración resumidas en el Cuadro~\ref{tab:prototipo-demostracion} provienen de la bitácora del prototipo. Cada ejecución acumula sus casos en el archivo de sesión correspondiente, de modo que el registro puede auditarse para recuperar las entradas probadas, las salidas devueltas, las hipótesis alternativas y las latencias por dirección. Esta evidencia respalda el medio de verificación del cuarto objetivo específico (demostración de traducción de ejemplos y registro de casos de prueba).
 
 \end{document}

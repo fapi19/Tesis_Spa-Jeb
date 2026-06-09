@@ -59,6 +59,10 @@ pyyaml>=6.0
 pyarrow>=16
 matplotlib>=3.9
 
+# --- Frontend (OE3 prototipo funcional) ---
+# Gradio sirve la interfaz web local + enlace publico temporal (app.py).
+gradio>=5,<6
+
 # --- Build/runtime shim ---
 # setuptools 81+ removes pkg_resources, which torchmetrics (transitive dep of
 # unbabel-comet via pytorch_lightning) still imports. Pin under 81.

@@ -15,10 +15,12 @@ project (file moved, new convention, recurring bug).
   + round-trip backtranslation. Reranked at inference with a fine-tuned
   multilingual sentence-transformer (E5-base bidirectional + iterative hard
   negatives).
-- **Stage**: Both pipelines (embeddings + NMT) are functional. Best models
-  shipped under `models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional_xl/`
-  and `models/nmt/nllb_bidi_lora_v1_bt_xl/`. Currently mid-ablation studies
-  (DoRA, LoRA+, iterative BT, Two DoRAs).
+- **Stage**: Both pipelines (embeddings + NMT) are functional and the ablation
+  phase is **closed**. Champion NMT = `models/nmt/nllb_bidi_lora_v2_1b_loraplus_xl`
+  (LoRA+, avg chrF++ 44.99); best embeddings =
+  `models/sentence_transformers/v3_iterative_hn_e5_base_bidirectional_xl/`. A
+  **functional web prototype (`app.py`, OE4/R6) is shipped** and the thesis now
+  has its chapter (Cap. 7 "Prototipo funcional del traductor automático" + Anexo D).
 
 ## Hardware + environment
 
@@ -56,6 +58,36 @@ PowerShell alternative:
 
 It loads `models/nmt/nllb_bidi_lora_v2_1b_loraplus_xl` with semantic reranking.
 Use `.\probar_modelo.ps1 -SinRerank` for a faster baseline-only interactive run.
+
+### Web prototype (OE4 / R6) — `app.py`
+
+The functional prototype is a Gradio web app that loads the champion model +
+the `_xl` reranker **once at startup** and serves a translator-style UI
+(bidirectional input, swap, copy, suggestion chips, advanced options for
+reranking/alpha). It reuses `load_checkpoint` / `generate_for_direction` from
+`src/nmt/inference/generate.py` — **no model code or training is involved**.
+Reranking is the same as the NMT pipeline: `final = α·softmax(seq_scores) +
+(1−α)·cos(src,cand)`, α=0.7.
+
+```powershell
+.\lanzar_frontend.ps1            # local + temporary public *.gradio.live link
+.\lanzar_frontend.ps1 -SinEnlace # local only (127.0.0.1:7860)
+.\lanzar_frontend.ps1 -SinRerank # start with reranking off
+# direct: .venv-nmt/Scripts/python app.py [--no-share|--no-rerank|--port N]
+```
+
+- Serves at **http://127.0.0.1:7860/**. If the port is busy, an instance is
+  already running.
+- Every translation is logged as JSONL to
+  `reports/05_nmt/frontend_logs/session_<fecha>.jsonl` (timestamp, direction,
+  source, output, rerank_on, alpha, candidates, latency_ms) — the OE4/R6
+  structured registry.
+- **Thesis demo examples must be verified against the corpus gold** (test set /
+  `dataset_pre_embeddings.csv`), not pasted from arbitrary UI runs. The Cap. 7
+  demo table uses test-set pairs run through `app.translate` whose output
+  matches the reference.
+- Screenshot for the thesis lives at
+  `thesis/latex/figuras/media/prototipo_interfaz.png`.
 
 ### Things that DO NOT work on this Windows machine
 
@@ -467,6 +499,21 @@ spa→shw chrF (33.85) is actually HIGHER than shw→spa chrF (31.20).
    is ~2-3.5h on the xl dataset.
 9. **Log everything to `logs/pipeline_stepXX_*.log`** with consistent
    naming so the user can grep history.
+10. **Thesis writing style (`thesis/latex/tesis.tex`)**: student-academic
+    Spanish, chapter skeleton *Introducción → Resultados alcanzados → Discusión
+    → Conclusión del capítulo*, each results-chapter maps to one OE and closes
+    its Rn. Two hard style rules the user gave:
+    - **No em-dash (raya `—`) as a parenthetical aside** — it's an anglicism in
+      their view. Use commas/parentheses/`es decir`. (The compound en-dash in
+      `shiwilu--castellano` / `fuente--candidato` is fine.)
+    - **Keep file/script/path/port names out of chapter bodies** (`app.py`,
+      `.ps1`, routes, `127.0.0.1:7860`). Describe them conceptually in the
+      chapter; put the literal artifacts in the reproducible anexo. Same for
+      tables: natural-language field names in the chapter, literal names in the
+      anexo.
+    Rebuild with `cd thesis/latex && latexmk -xelatex -interaction=nonstopmode
+    -outdir=build tesis.tex`, then copy `build/tesis.pdf` to `pdf/tesis.pdf`.
+    Check the `.log` for 0 undefined references.
 
 ## Future-work backlog
 
