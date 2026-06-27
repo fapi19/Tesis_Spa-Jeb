@@ -15,7 +15,11 @@
       "Bash(.venv-nmt/Scripts/python -c \"import docx; print\\(docx.__version__\\)\")",
       "Bash(.venv-nmt/Scripts/pip install *)",
       "Bash(.venv-nmt/Scripts/python -m scripts.generate_expert_validation_doc)",
-      "Bash(start *)"
+      "Bash(start *)",
+      "Skill(run)",
+      "PowerShell(.\\\\lanzar_frontend.ps1 -SinEnlace)",
+      "PowerShell($env:HF_HUB_DISABLE_SYMLINKS_WARNING = \"1\"; Start-Process -FilePath \".venv-nmt\\\\Scripts\\\\python.exe\" -ArgumentList \"app.py\",\"--port\",\"7860\",\"--no-share\" -RedirectStandardOutput \"C:\\\\Users\\\\Personal\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\frontend_stdout.log\" -RedirectStandardError \"C:\\\\Users\\\\Personal\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\frontend_stderr.log\" -NoNewWindow -PassThru | Select-Object Id)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:7860/\" -TimeoutSec 10 -UseBasicParsing; Write-Host \"HTTP $\\($r.StatusCode\\) OK\"; $r.Content.Substring\\(0, 200\\) } catch { $_.Exception.Message })"
     ]
   }
 }

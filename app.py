@@ -259,7 +259,7 @@ CUSTOM_CSS = """
 #lang-bar {align-items: center; margin-bottom: -8px;}
 .lang-pill {text-align: center; font-weight: 600; font-size: 1.05rem; padding: 8px 0;}
 .pane-col {position: relative;}
-#char-count {position: absolute; bottom: 8px; right: 14px; margin: 0; z-index: 2; pointer-events: none;}
+#char-count {position: absolute; bottom: 8px; right: 0; left: 0; padding-right: 14px; text-align: right; margin: 0; z-index: 2; pointer-events: none;}
 .char-count {font-size: 0.78rem; color: var(--body-text-color-subdued);}
 #alt-label {font-size: 0.8rem; font-weight: 600; color: var(--body-text-color-subdued); margin: 2px 0 0 4px;}
 #swap-btn {min-width: 44px !important; max-width: 56px; border-radius: 999px !important; font-size: 1.2rem; padding: 0;}
@@ -424,9 +424,19 @@ def build_demo(default_rerank: bool) -> gr.Blocks:
         theme_btn.click(fn=None, inputs=None, outputs=None, js="() => { document.body.classList.toggle('dark'); }")
 
         swap_btn.click(
-            _swap_direction,
+            fn=None,
             inputs=[direction, text_in, text_out],
             outputs=[direction, src_lbl, tgt_lbl, text_in, text_out, char_count],
+            js="""(dir, inVal, outVal) => {
+                const newDir = dir === 'spa2shw' ? 'shw2spa' : 'spa2shw';
+                const newIn = (outVal || '').trim() ? outVal : inVal;
+                const src = newDir === 'spa2shw' ? 'Castellano' : 'Shiwilu';
+                const tgt = newDir === 'spa2shw' ? 'Shiwilu' : 'Castellano';
+                const pill = n => `<div class='lang-pill'>${n}</div>`;
+                const count = (newIn || '').length;
+                const cc = count ? `<div class='char-count'>${count}</div>` : "<div class='char-count'></div>";
+                return [newDir, pill(src), pill(tgt), newIn, '', cc];
+            }""",
         )
 
         clear_btn.click(
