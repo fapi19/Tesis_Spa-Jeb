@@ -1,145 +1,94 @@
-# Hallazgos — Enhancements a partir de la consulta al experto en evaluación de MT
+# Hallazgos de evaluación del sistema NMT
 
-> Documento interno de consolidación. Resume, en un solo lugar, **qué nos
-> aconsejó el experto en evaluación de traducción automática**, **qué hicimos**
-> con ese consejo y **qué descubrimos** al aplicarlo sobre el modelo campeón.
-> No es el acta de validación ni la respuesta al experto: es la base ordenada
-> para armar ese paquete cuando se decida.
->
-> Modelo analizado: `nllb_bidi_lora_v2_1b_loraplus_xl` (campeón, LoRA+),
-> variante `xl`, conjunto de prueba (446 oraciones por dirección), salidas
-> reranked.
+Documento interno de consolidación para la variante `nllb_bidi_lora_v2_1b_loraplus_xl` sobre `xl`. Resume la evidencia automática, cualitativa y participativa disponible.
 
-## 1. Qué pidió el experto (y qué quería decir de fondo)
+## 1. Evaluación automática
 
-El experto revisó el proyecto sin haber leído aún el documento completo y envió
-consejos de método. Reinterpretados en su intención de fondo:
+El modelo campeón es `v2.1b` LoRA+ con reranking semántico. Su métrica global principal fue:
 
-1. **No mirar una sola métrica ni un solo número global.** Las dos direcciones
-   no son comparables: al traducir **hacia el castellano** (shw→spa) BLEU es
-   informativo; al traducir **hacia el shiwilu** (spa→shw) BLEU subestima la
-   calidad porque la lengua es aglutinante y penaliza cada palabra mal formada
-   aunque el sentido sea correcto. Ahí manda chrF++.
-2. **Distinguir cuándo un número es ruido.** Como referencia práctica (ojo de
-   experto, no regla formal), un BLEU por debajo de ~10 o un chrF++ por debajo
-   de ~20 suele indicar salidas dominadas por palabras frecuentes y cortas,
-   cercanas al ruido.
-3. **Demostrar que el modelo traduce, no solo reportar agregados.** Pidió un
-   análisis cualitativo que abra las traducciones, las separe por calidad y
-   muestre con ejemplos dónde acierta y dónde falla.
-4. **No inventar un ganador con decimales cuando dos modelos empatan.** Propuso
-   una comparación ciega A/B: mostrar la referencia y dos traducciones sin
-   revelar el sistema, y elegir cuál se acerca más a la referencia.
+- avg chrF++ = 44.99
+- IC 95% = [43.17, 46.96]
+- BLEU promedio = 18.46
+- COMET promedio = 0.752
 
-**En una frase:** no quedarse en la tabla de métricas; demostrar con evidencia
-cualitativa que el sistema realmente traduce, y ser honesto cuando los números
-no alcanzan para decidir.
+La lectura por dirección sigue siendo necesaria:
 
-## 2. Qué hicimos (mapa consejo → entrega)
+- shw->spa: BLEU es más informativo porque la salida está en castellano.
+- spa->shw: chrF++ es más fiable porque BLEU penaliza con dureza la morfología aglutinante del shiwilu.
 
-| Consejo | Entrega | Ubicación |
-|---|---|---|
-| Métrica por dirección (BLEU shw→spa, chrF++ spa→shw); chrF++ sigue siendo el criterio global | Lectura por dirección añadida a la redacción | tesis §2 (chrF), §5 (evaluación), §6 |
-| Umbral de ruido como heurística interpretativa | Párrafo de interpretación v0 vs. campeón | tesis §5 (`nmt-resultados`) |
-| Análisis cualitativo estratificado | Nueva subsección + tabla + script | tesis §5.2.7 (`nmt-cualitativo`), `42_qualitative_analysis.py` |
-| Justificar la selección ante empate estadístico | Párrafo de parsimonia (v2.1b sobre v2.1) | tesis §5 |
-| Preferencia pareada ciega | Nueva subsección + instrumento Excel ciego | tesis §6.2.1 (`protocolo-preferencia-pareada`), `76_pairwise_preference.py` |
+El modelo base `v0` estaba cerca del ruido en BLEU; el campeón supera ese umbral con claridad y produce traducciones informativas.
 
-Ya estaba implementado de antes (el experto lo recomendaba y no hubo que
-tocarlo): chrF++ como métrica primaria, reporte de ambas direcciones,
-intervalos de confianza bootstrap, honestidad sobre el empate v2.1≈v2.1b y el
-protocolo de evaluación participativa preparado.
+## 2. Análisis cualitativo
 
-## 3. Qué descubrimos al aplicarlo
+La banda alta confirma que el sistema traduce con contenido, no solo reproduce palabras frecuentes. En shw->spa, una proporción mayor de salidas cae en rangos altos de BLEU. En spa->shw, chrF++ muestra coincidencias parciales útiles incluso cuando BLEU subestima la calidad por cambios morfológicos.
 
-### 3.1 El sistema traduce de verdad: no es ruido
+Los errores más visibles son:
 
-Distribución de las salidas del campeón por banda de puntaje por oración:
+- pérdida o cambio de sentido en frases largas;
+- errores de persona, número o dirección argumental;
+- selección léxica imprecisa;
+- formas shiwilu incompletas o poco naturales en spa->shw.
 
-**shw→spa (BLEU por oración, n=446, media 40.40)**
+## 3. Validación participativa ejecutada
 
-| Banda | n | % | media |
-|---|---:|---:|---:|
-| BLEU < 10 (ruido) | 77 | 17.3 % | 5.94 |
-| BLEU 10–20 | 57 | 12.8 % | 14.21 |
-| BLEU ≥ 20 | 312 | 70.0 % | 53.69 |
+La primera ejecución completa del protocolo se realizó con Fidel Lomas Chota, hablante/revisor competente y uno de los principales exponentes y preservadores contemporáneos del shiwilu vinculados al proyecto.
 
-**spa→shw (chrF++ por oración, n=446, media 49.07)**
+Archivo completo:
 
-| Banda | n | % | media |
-|---|---:|---:|---:|
-| chrF++ < 20 (ruido) | 51 | 11.4 % | 13.55 |
-| chrF++ 20–40 | 149 | 33.4 % | 30.95 |
-| chrF++ ≥ 40 | 246 | 55.2 % | 67.41 |
+- `reports/05_nmt/evaluation_xl/validacion_participativa_100.xlsx`
+- Enlace externo: https://docs.google.com/spreadsheets/d/1dYJ_4qstg76dHtDs6qaIICG5aBeiG7kL/edit?usp=sharing&ouid=110915706047387486036&rtpof=true&sd=true
 
-→ El 70 % de las salidas hacia el castellano y el 55 % de las salidas hacia el
-shiwilu caen en la banda alta. Solo el 17 % / 11 % queda en la banda de ruido.
-La salida es mayoritariamente traducción informativa, no ruido.
+Muestra:
 
-### 3.2 El modelo base (v0) sí estaba en el ruido; el campeón lo deja atrás
+- 100 traducciones revisadas.
+- 50 shiwilu->castellano.
+- 50 castellano->shiwilu.
+- Modelo evaluado: `v2.1b` LoRA+ con reranking semántico.
 
-Se confirma el umbral del experto: v0 daba BLEU 9.73 (shw→spa) y 4.61
-(spa→shw), es decir, en el umbral de ruido o por debajo. El campeón lo supera
-con holgura: BLEU 24.48 en shw→spa y chrF++ de 42 a 48 en ambas direcciones
-(muy por encima de 20). **El salto no es cosmético: separa un sistema apenas
-distinguible del ruido de uno que produce traducción con contenido.**
+Resultados agregados:
 
-### 3.3 Los errores de la banda baja son pérdidas reales de sentido
+| Dirección | n | Sentido prom. | Naturalidad prom. | Aceptar | Corregir | Rechazar |
+|---|---:|---:|---:|---:|---:|---:|
+| shw->spa | 50 | 4.74 | 4.76 | 41 (82%) | 9 (18%) | 0 (0%) |
+| spa->shw | 50 | 4.58 | 4.68 | 39 (78%) | 11 (22%) | 0 (0%) |
+| Global | 100 | 4.66 | 4.72 | 80 (80%) | 20 (20%) | 0 (0%) |
 
-Esto valida usar las métricas: un BLEU bajo no penaliza paráfrasis válidas,
-señala errores genuinos. El sistema suele conservar el marco sintáctico pero
-yerra el contenido. Ejemplos reales:
+Validación programática del Excel:
 
-- `a'ñapalek sukta-shunka' iskun ekkilala` → *tengo doscientos metros de altura*
-  (referencia: *tengo sesentinueve años*). La estructura *tengo + cantidad* es
-  correcta, aunque el valor numérico no se preserva.
-- `iyatulek' wayupi mer'cha'su'` (*me gusta la fruta madura*) → *detesto beber
-  limpio* (error de polaridad y de léxico).
+- 50 filas por dirección.
+- Puntajes 1-5 completos.
+- Decisiones normalizables.
+- Comentarios presentes en todos los casos corregibles.
 
-### 3.4 La asimetría entre direcciones, ahora explicada
+## 4. Interpretación
 
-Hacia el shiwilu el modelo acierta los lexemas pero a veces no completa la forma
-plena de la palabra (morfología aglutinante). Por eso chrF++ es la métrica justa
-en esa dirección: captura las coincidencias parciales de caracteres que BLEU
-descarta. La banda baja de spa→shw se concentra, de forma previsible, en
-oraciones largas y con alta proporción de términos fuera de vocabulario,
-coherente con la baja recuperación OOV ya documentada.
+La validación humana confirma la asimetría vista en las métricas automáticas. Traducir desde shiwilu hacia castellano resultó más estable: mayor promedio de sentido, mayor naturalidad y mayor porcentaje de aceptación. Traducir desde castellano hacia shiwilu también fue favorable, pero concentró más correcciones por morfología, concordancia y selección léxica.
 
-### 3.5 El empate v2.1 ≈ v2.1b es real y honesto
+No hubo rechazos. Esto es importante: los errores detectados no fueron salidas inutilizables, sino casos recuperables mediante correcciones puntuales.
 
-v2.1 (DoRA+LoRA+) y v2.1b (LoRA+ solo) son estadísticamente indistinguibles
-(intervalos de confianza traslapados). La selección se resuelve por parsimonia:
-v2.1b alcanza el mismo nivel con un adaptador más simple. El instrumento de
-preferencia pareada es exactamente la herramienta para desempatar estos casos
-sin recurrir a más decimales. Métrica global del campeón: avg chrF++ = 44.99
-(IC 95 % [43.17, 46.96]).
+Para una lengua con muy pocos hablantes disponibles, una revisión completa de 100 ítems por un revisor de la trayectoria de Fidel Lomas Chota aporta evidencia valiosa, trazable y metodológicamente pertinente. El mismo instrumento podría repetirse con más revisores si la disponibilidad de hablantes lo permite, reutilizando la muestra y la rúbrica para calcular acuerdo interevaluador. Esa ampliación se entiende como fortalecimiento opcional, no como una carencia de la primera ejecución.
 
-## 4. Conclusión
+## 5. Estado de artefactos
 
-Al seguir el consejo del experto pasamos de *"el modelo da estos números"* a
-*"el modelo traduce con sentido; esto es lo que hace bien, esto lo que le
-cuesta, y aquí está la evidencia"*. Es precisamente el tipo de evidencia que un
-evaluador necesita para validar el trabajo.
+| Artefacto | Estado |
+|---|---|
+| Métricas automáticas por dirección | Ejecutadas |
+| Bootstrap CI | Ejecutado |
+| Análisis cualitativo estratificado | Ejecutado |
+| Instrumento de preferencia pareada | Generado |
+| Protocolo de validación humana | Documentado |
+| Validación participativa 100 ítems | Ejecutada |
+| Ampliación opcional multi-revisor | Posible extensión futura |
 
-## 5. Pendiente (a propósito)
-
-- **Evaluación participativa con hablantes**: preparada (rúbrica + preferencia
-  pareada) pero **no ejecutada**. Declarada como trabajo futuro en el Cap. 6.
-- **Acta de validación del experto** (documento firmable): no iniciada; es el
-  último paso.
-- **Respuesta al experto**: no redactada hasta cerrar todo lo anterior.
-
-## 6. Reproducir los artefactos
+## 6. Reproducción
 
 ```powershell
 # Análisis cualitativo estratificado
 .venv-nmt/Scripts/python -m scripts.nmt.42_qualitative_analysis --variant xl
 
-# Instrumento de preferencia pareada ciega (v2.1b vs v2.1)
+# Instrumento de preferencia pareada ciega
 .venv-nmt/Scripts/python -m scripts.nmt.76_pairwise_preference --variant xl
+
+# Plantilla de validación humana
+.venv-nmt/Scripts/python -m scripts.nmt.75_human_validation_workbook
 ```
-
-Salidas asociadas:
-
-- `nllb_bidi_lora_v2_1b_loraplus_xl/qualitative/{bucket_summary.json, sampled_examples.csv, qualitative_report.md}`
-- `pairwise_preference.xlsx` + `pairwise_preference_anon_key.json` (clave anónima: mantener privada)

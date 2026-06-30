@@ -1,81 +1,73 @@
-# Protocolo de Validacion Humana
+# Protocolo de validación humana
 
-Este documento resume el protocolo de evaluacion humana preparado para el sistema NMT.
-Documenta la muestra, rubrica, anonimizacion y comando reproducible; no contiene puntajes humanos.
+Este documento resume el protocolo de validación humana del sistema NMT y su primera ejecución participativa.
 
 ## Alcance
 
-- Objetivo: complementar los resultados automaticos del NMT con una revision participativa posterior por hablantes de shiwilu o revisores competentes.
-- Estado: protocolo preparado, no ejecutado con revisores.
-- Por ello, no se reportan promedios humanos, acuerdo interevaluador ni analisis cualitativo de respuestas.
+- Objetivo: complementar los resultados automáticos del NMT con revisión participativa por hablantes de shiwilu o revisores competentes.
+- Estado: protocolo documentado y primera ejecución completada.
+- Revisor de la primera ejecución: Fidel Lomas Chota, hablante/revisor competente y uno de los principales exponentes y preservadores contemporáneos del shiwilu vinculados al proyecto.
+- Muestra revisada: 100 ítems, 50 shiwilu->castellano y 50 castellano->shiwilu.
+- Archivo completo revisado: `reports/05_nmt/evaluation_xl/validacion_participativa_100.xlsx`.
+- Enlace externo de consulta: https://docs.google.com/spreadsheets/d/1dYJ_4qstg76dHtDs6qaIICG5aBeiG7kL/edit?usp=sharing&ouid=110915706047387486036&rtpof=true&sd=true
+- Constancia oral del revisor: https://drive.google.com/file/d/1vmpMNzfUMuKzzUV1f3pqhYOJWmvLWiV1/view?usp=sharing
+- Registro complementario de interaccion: `thesis/latex/anexos_digitales/Anexo_E_registro_interaccion_validacion.png` / https://drive.google.com/file/d/1OBcgrEWWMM6FFewm5_iqtCb2o9z1tIZV/view?usp=sharing
+- Constancia visual de conformidad: `thesis/latex/anexos_digitales/Anexo_E_constancia_conformidad_validacion.png` / https://drive.google.com/file/d/1gN4nYax5ZVNwlFRW_ZjlZgUSPKMlZAMj/view?usp=sharing
+- Nota: estos registros son respaldos complementarios; no se reproducen como figuras principales por contener elementos de comunicacion privada.
 
-## Comando reproducible
+La primera ejecución aporta evidencia humana trazable y especialmente valiosa por la trayectoria del revisor. El instrumento puede repetirse con más hablantes si la disponibilidad lo permite; en ese caso, conviene reutilizar la misma muestra y rúbrica para calcular acuerdo interevaluador. Esta ampliación se plantea como fortalecimiento opcional, no como una carencia de la validación realizada.
+
+## Instrumento reproducible
+
+Plantilla base:
 
 ```powershell
-.venv-nmt/Scripts/python -m scripts.nmt.71_human_eval_template --variant xl --per-direction 100 --seed 2026 --split test
+.venv-nmt/Scripts/python -m scripts.nmt.75_human_validation_workbook
 ```
 
-## Salidas
+Archivo generado originalmente:
 
 | Campo | Valor |
 |---|---|
-| Plantilla CSV | `reports/05_nmt/evaluation_xl/human_eval_template.csv` |
-| Clave anonima | `reports/05_nmt/evaluation_xl/human_eval_anon_key.json` |
-| Protocolo Markdown | `reports/05_nmt/evaluation_xl/human_eval_protocol.md` |
+| Plantilla Excel | `reports/05_nmt/evaluation_xl/human_validation_100.xlsx` |
+| Ejecución completada | `reports/05_nmt/evaluation_xl/validacion_participativa_100.xlsx` |
+| Predicciones fuente | `reports/05_nmt/reranking_xl/nllb_bidi_lora_v2_1b_loraplus_xl/test_predictions_reranked.jsonl` |
 
-La clave anonima debe mantenerse separada de los revisores. Los revisores solo deben recibir el CSV o un formulario derivado de el.
+## Estructura
 
-## Muestra
+El libro contiene una hoja de instrucciones y dos hojas de revisión:
 
-| Campo | Valor |
-|---|---|
-| Generado en UTC | 2026-05-11T19:09:07.394317+00:00 |
-| Variante | `xl` |
-| Split | `test` |
-| Items solicitados por direccion | 100 |
-| Filas generadas | 200 |
-| Direcciones | `shw2spa`=100, `spa2shw`=100 |
-| Estratificacion | `origin_source` y bucket de longitud fuente: short <= 5, medium <= 12, long > 12 palabras |
+| Hoja | Filas | Dirección |
+|---|---:|---|
+| `shw2spa` | 50 | shiwilu->castellano |
+| `spa2shw` | 50 | castellano->shiwilu |
 
-### Distribucion por origen
+Columnas visibles: `N`, `Texto fuente`, `Traducción del modelo`, `Sentido (1-5)`, `Naturalidad (1-5)`, `Decisión`, `Comentarios`.
 
-| origin_source | rows |
-|---|---:|
-| `fidel_lomas` | 23 |
-| `flashcards2` | 108 |
-| `flashcards_oraciones` | 28 |
-| `pdf_textos` | 41 |
+## Rúbrica
 
-## Sistemas comparados
-
-| Columna anonima | Sistema fuente | Predicciones disponibles |
-|---|---|---:|
-| `hypothesis_A` | oculto para el revisor | True |
-| `hypothesis_B` | oculto para el revisor | True |
-| `hypothesis_C` | oculto para el revisor | True |
-| `hypothesis_D` | oculto para el revisor | True |
-
-El mapeo oculto letra-sistema se guarda solo en el JSON de clave anonima.
-Los sistemas comparados son v0, v0 reranked, v1_bt y v1_bt reranked.
-
-## Rubrica
-
-| Dimension | Escala | Criterio |
+| Dimensión | Escala | Criterio |
 |---|---|---|
-| adequacy_1_5 | 1-5 | Preservacion del sentido; penaliza omisiones, agregados y cambios semanticos. |
-| fluency_1_5 | 1-5 | Gramaticalidad, naturalidad y legibilidad en la lengua destino. |
-| cultural_relevance_1_5 | 1-5 | Registro idiomatico y elecciones lexicas culturalmente apropiadas. |
-| notes | texto libre | Explicacion opcional de errores, dudas o casos culturalmente marcados. |
+| Sentido | 1-5 | Preservación del significado; penaliza omisiones, agregados y cambios semánticos. |
+| Naturalidad | 1-5 | Gramaticalidad, naturalidad y legibilidad en la lengua destino. |
+| Decisión | aceptar/corregir/rechazar | Juicio práctico sobre si la salida puede usarse, requiere edición puntual o debe descartarse. |
+| Comentarios | texto libre | Correcciones, explicación de errores o dudas lingüísticas. |
 
-## Instrucciones para revisores
+## Resultados de la primera ejecución
 
-1. Leer la fuente y la referencia.
-2. Puntuar cada hipotesis anonimizada de forma independiente en adecuacion, fluidez y pertinencia cultural.
-3. Usar enteros de 1 a 5; dejar una nota cuando una baja puntuacion dependa de registro cultural, ambiguedad o falta de contexto.
-4. No intentar inferir que sistema produjo cada hipotesis.
+| Dirección | n | Sentido prom. | Naturalidad prom. | Aceptar | Corregir | Rechazar |
+|---|---:|---:|---:|---:|---:|---:|
+| shw->spa | 50 | 4.74 | 4.76 | 41 (82%) | 9 (18%) | 0 (0%) |
+| spa->shw | 50 | 4.58 | 4.68 | 39 (78%) | 11 (22%) | 0 (0%) |
+| Global | 100 | 4.66 | 4.72 | 80 (80%) | 20 (20%) | 0 (0%) |
 
-## Columnas de la plantilla
+Validación programática:
 
-`id`, `pair_id`, `direction`, `origin_source`, `source`, `reference`, `hypothesis_A`, `hypothesis_B`, `hypothesis_C`, `hypothesis_D`, `adequacy_1_5`, `fluency_1_5`, `cultural_relevance_1_5`, `notes`
+- 50 filas por dirección.
+- Puntajes 1-5 completos.
+- Decisiones normalizables a `aceptar`, `corregir`, `rechazar`.
+- Todos los casos corregibles tienen comentario.
 
-Columnas de hipotesis preparadas: `hypothesis_A`, `hypothesis_B`, `hypothesis_C`, `hypothesis_D`
+## Lectura
+
+La revisión confirma una asimetría coherente con la evaluación automática: shiwilu->castellano es más estable, mientras castellano->shiwilu exige mayor control morfológico, concordancia y selección léxica. No hubo rechazos; los errores observados fueron recuperables mediante correcciones puntuales.

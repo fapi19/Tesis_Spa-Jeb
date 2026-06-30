@@ -209,9 +209,9 @@
 
 El shiwilu, también conocido como jebero, es una lengua amazónica peruana en situación crítica de amenaza, cuya presencia digital y disponibilidad de recursos bilingües siguen siendo limitadas. Esta tesis aborda dicho problema mediante la propuesta de un sistema de traducción automática neuronal bidireccional entre shiwilu y castellano, orientado a apoyar la documentación, el aprendizaje y el uso cotidiano de la lengua en contextos educativos y comunitarios.
 
-El trabajo se centra en la construcción de una base metodológica y técnica para desarrollar el sistema: recopilación y alineación de un corpus paralelo, definición de criterios de selección y normalización, preparación de recursos de representación semántica, diseño de modelos de traducción, planteamiento de un protocolo de evaluación que combine métricas automáticas con validación participativa e implementación de un prototipo funcional ejecutable que integra el modelo entrenado. La investigación adopta un enfoque reproducible, trazable y sensible a las particularidades lingüísticas del shiwilu, considerando los desafíos propios de las lenguas de bajo recurso.
+El trabajo se centra en la construcción de una base metodológica y técnica para desarrollar el sistema: recopilación y alineación de un corpus paralelo, definición de criterios de selección y normalización, preparación de recursos de representación semántica, diseño de modelos de traducción, aplicación de un protocolo de evaluación que combina métricas automáticas con validación participativa e implementación de un prototipo funcional ejecutable que integra el modelo entrenado. La investigación adopta un enfoque reproducible, trazable y sensible a las particularidades lingüísticas del shiwilu, considerando los desafíos propios de las lenguas de bajo recurso.
 
-Con ello, la tesis busca aportar un recurso tecnológico inicial y una ruta experimental documentada para futuras investigaciones en traducción automática de lenguas originarias.
+La primera ejecución participativa se realizó con Fidel Lomas Chota, uno de los principales exponentes y preservadores contemporáneos del shiwilu vinculados al proyecto, sobre 100 traducciones balanceadas por dirección. Los resultados humanos fueron favorables: 80\,\% de traducciones aceptadas, 20\,\% corregibles y 0\,\% rechazadas. Con ello, la tesis aporta un recurso tecnológico inicial, una evidencia humana trazable y una ruta experimental documentada para futuras investigaciones en traducción automática de lenguas originarias.
 
 \clearpage
 \tableofcontents
@@ -231,7 +231,7 @@ En este escenario, un sistema de traducción automática neuronal entre shiwilu 
 
 El problema no se limita al volumen del corpus; también involucra la calidad y la representatividad de los datos. En ausencia de textos variados, el material disponible tiende a concentrarse en narrativas tradicionales o léxico especializado, lo que sesga el dominio temático y deja fuera construcciones frecuentes del uso cotidiano. Con pocos ejemplos, los modelos neuronales tienden a sobreajustar y generalizar mal, fenómeno documentado en lenguas indígenas con corpus de apenas miles de oraciones \parencite{mager2018}. A ello se suma la distancia tipológica entre shiwilu y castellano: la morfología aglutinante, ciertos patrones estructurales y los alineamientos semánticos no uno a uno complican la alineación y la traducción literal de términos culturalmente marcados. En varios casos no hay equivalencias directas, por lo que se requiere curación cuidadosa y verificación contextual de las parejas de oración \parencite{ministeriodecultura2016}. Incluso si se reúne un primer conjunto paralelo, la calidad del dato y su adecuación semántica y cultural siguen siendo el desafío central.
 
-La dimensión sociolingüística también es central, porque la construcción de recursos depende del trabajo con hablantes. Dada la escala de la comunidad y la edad de sus miembros, la obtención y validación de paralelos requiere colaboración cercana. En este proyecto, el Grupo Chana ha articulado la recolección de materiales con apoyo del señor Fidel Lomas Chota, hablante competente y autor de relatos en shiwilu, quien ha contribuido con traducciones y validaciones. Su participación aporta datos de primera mano y criterio cultural para juzgar la aceptabilidad de equivalencias, un aspecto que las métricas automáticas no capturan por sí solas \parencite{unesco2023}. La experiencia comparada en náhuatl y guaraní sugiere, además, que sin esta mediación humana los modelos tienden a aprender artefactos del corpus y fallan en variedades o géneros no cubiertos por los datos de entrenamiento \parencite{rios2019,baladon2024}.
+La dimensión sociolingüística también es central, porque la construcción de recursos depende del trabajo con hablantes. Dada la escala de la comunidad y la edad de sus miembros, la obtención y validación de paralelos requiere colaboración cercana. En este proyecto, el Grupo Chana ha articulado la recolección de materiales con apoyo del señor Fidel Lomas Chota, hablante competente, autor de relatos y uno de los principales preservadores contemporáneos del shiwilu vinculados al proyecto, quien ha contribuido con traducciones y validaciones. Su participación aporta datos de primera mano y criterio cultural para juzgar la aceptabilidad de equivalencias, un aspecto que las métricas automáticas no capturan por sí solas \parencite{unesco2023}. La experiencia comparada en náhuatl y guaraní sugiere, además, que sin esta mediación humana los modelos tienden a aprender artefactos del corpus y fallan en variedades o géneros no cubiertos por los datos de entrenamiento \parencite{rios2019,baladon2024}.
 
 El panorama regional confirma que la base del problema en lenguas de muy bajos recursos es doble: escasez de corpus y ausencia de referencias evaluativas. En quechua sureño, la creación de nuevos conjuntos bilingües a partir de fuentes dispersas fue condición previa para evaluar con métricas estándar y establecer comparaciones significativas; sin ese piso de datos, no era posible justificar avances ni orientar mejoras \parencite{chuquimamani2021}. En shipibo--español, un esfuerzo temprano desde el enfoque estadístico mostró el mismo patrón: antes de buscar la mejor arquitectura, era imprescindible contar con un corpus alineado utilizable y un procedimiento reproducible para entrenar y medir \parencite{galarreta2017}. Estas lecciones sugieren que, en shiwilu, no hay atajos de ingeniería: sin un primer corpus paralelo confiable y criterios de evaluación claros, cualquier intento de traducción neuronal carecerá de base metodológica y relevancia práctica \parencite{meque2023}.
 
@@ -322,7 +322,7 @@ Mejorar la capacidad de nuevos hablantes para aprender e interiorizar la lengua 
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \item
-  \textbf{Definir un protocolo de validación que combine evaluación automática y validación participativa con hablantes para medir adecuación lingüística y pertinencia cultural.}
+  \textbf{Definir y aplicar una primera ejecución de un protocolo de validación que combine evaluación automática y validación participativa con hablantes para medir adecuación lingüística y pertinencia cultural.}
 \end{enumerate}
 
 \begin{itemize}
@@ -358,7 +358,7 @@ Mejorar la capacidad de nuevos hablantes para aprender e interiorizar la lengua 
 
   \begin{itemize}
   \item
-    R1: Corpus paralelo shiwilu--castello ambos correctamente preprocesado y con las características relevantes cantidad de palabras, de sustantivos, etc.
+    R1: Corpus paralelo shiwilu--castellano depurado, alineado, caracterizado y particionado reproduciblemente.
   \item
     R2: Modelo de \emph{embeddings} preparado.
   \end{itemize}
@@ -379,7 +379,7 @@ Mejorar la capacidad de nuevos hablantes para aprender e interiorizar la lengua 
 
   \begin{itemize}
   \item
-    R5: Protocolo de validación documentado (métricas automáticas, instrumentos y rúbricas para hablantes).
+    R5: Protocolo de validación documentado y aplicado en una primera ejecución participativa (métricas automáticas, instrumentos, rúbricas y resultados humanos agregados).
   \end{itemize}
 \item
   O4:
@@ -390,7 +390,7 @@ Mejorar la capacidad de nuevos hablantes para aprender e interiorizar la lengua 
   \item
     R7: Documento de proceso para la validación con pruebas de experto.
   \item
-    R8: Ejecución del proceso de validación con expertos, pendiente de realizar en la etapa posterior del proyecto.
+    R8: Ejecución inicial del proceso de validación con revisor competente y consolidación de resultados humanos agregados.
   \end{itemize}
 \end{itemize}
 
@@ -439,19 +439,19 @@ IOV3: Entrenamientos completados en ambas direcciones.
 
 IOV4: Métricas BLEU/chrF presentadas.
 \end{minipage} \\
-O3: Definir un protocolo de validación que combine evaluación automática y participativa. & R5: Protocolo de validación documentado (métricas, instrumentos y rúbricas). & \begin{minipage}[t]{\linewidth}\raggedright
-MV5: Protocolo documentado que integra evaluación automática, muestreo participativo, rúbrica y plantilla de revisión.
+O3: Definir y aplicar una primera ejecución de un protocolo de validación que combine evaluación automática y participativa. & R5: Protocolo de validación documentado y aplicado en una primera ejecución participativa (métricas, instrumentos, rúbricas y resultados humanos agregados). & \begin{minipage}[t]{\linewidth}\raggedright
+MV5: Protocolo documentado que integra evaluación automática, muestreo participativo, rúbrica, plantilla de revisión y resultados humanos consolidados.
 \end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-IOV5: Métricas automáticas reportadas y muestra acotada preparada para revisión con hablantes.
+IOV5: Métricas automáticas reportadas, muestra acotada revisada y promedios humanos por dirección consolidados.
 \end{minipage} \\
 O4: Diseñar e implementar un prototipo funcional de traductor NMT que facilite su uso y prueba. & R6: Prototipo funcional ejecutable localmente que integra el modelo NMT y permite pruebas básicas con registro estructurado de entradas y salidas.
 
 R7: Documento de proceso para pruebas de experto
 
-R8: Proceso de validación con expertos planificado para ejecución posterior. & \begin{minipage}[t]{\linewidth}\raggedright
+R8: Proceso de validación con experto ejecutado inicialmente y documentado como evidencia reproducible. & \begin{minipage}[t]{\linewidth}\raggedright
 MV6: Prototipo operativo (interfaz web ejecutable localmente) con guía breve de uso y registro estructurado de uso.
 \end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-IOV6: Demostración de traducción de ejemplos en ambas direcciones y registro de casos de prueba ejecutado; la validación con expertos queda pendiente de ejecución (R8).
+IOV6: Demostración de traducción de ejemplos en ambas direcciones, registro de casos de prueba ejecutado y evidencia de la primera validación participativa.
 \end{minipage} \\
 \end{longtable}
 
@@ -502,10 +502,10 @@ A continuación se describen las herramientas, métodos, enfoques y procedimient
 
 \textbf{P:} Repetir pipeline$\rightarrow$consolidar métricas.
 \end{minipage} \\
-\textbf{R5:} Protocolo de validación documentado. & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{R5:} Protocolo de validación documentado y aplicado inicialmente. & \begin{minipage}[t]{\linewidth}\raggedright
 \textbf{H:} Procesador de texto; formularios/hojas.
 
-\textbf{M:} Rúbricas (adecuación, fluidez, pertinencia); muestreo.
+\textbf{M:} Rúbricas (sentido, naturalidad, decisión); muestreo balanceado; consolidación de resultados.
 \end{minipage} \\
 \textbf{R6:} Prototipo local funcional implementado (UI simple). & \begin{minipage}[t]{\linewidth}\raggedright
 \textbf{H:} Python, PyTorch; Gradio; logs.
@@ -517,10 +517,10 @@ A continuación se describen las herramientas, métodos, enfoques y procedimient
 
 \textbf{P:} Formato$\rightarrow$checklist$\rightarrow$evidencias$\rightarrow$archivo.
 \end{minipage} \\
-\textbf{R8:} Validación con expertos planificada para una etapa posterior (actas pendientes). & \begin{minipage}[t]{\linewidth}\raggedright
-\textbf{M:} Aplicación del protocolo; consolidación.
+\textbf{R8:} Validación con experto ejecutada inicialmente. & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{M:} Aplicación del protocolo; consolidación de puntajes y observaciones.
 
-\textbf{P:} Sesiones$\rightarrow$consolidado$\rightarrow$síntesis$\rightarrow$mejoras.
+\textbf{P:} Revisión$\rightarrow$consolidado$\rightarrow$síntesis$\rightarrow$mejoras.
 \end{minipage} \\
 \end{longtable}
 
@@ -534,7 +534,7 @@ En la preparación del corpus (R1) se emplean expresiones regulares y un tokeniz
 
 El modelado NMT bidireccional (R3--R4) se realiza con marcos de aprendizaje profundo de la familia Transformers y segmentación en subpalabras mediante SentencePiece, con el objetivo de reducir OOV y estabilizar el vocabulario en ambas direcciones \parencite{kudo2018sentencepiece}. El entrenamiento se conduce bajo control experimental (semillas, \emph{checkpoints} y configuraciones registradas) y se evalúa con métricas reproducibles (BLEU y chrF++), de modo que los modelos y corridas puedan compararse de forma consistente \parencite{papineni2002bleu,popovic2015chrf}.
 
-Para la verificación práctica (R6) se prevé implementar un prototipo local con Gradio o Streamlit, con interfaz mínima de entrada, traducción y salida, y registro estructurado de entradas y salidas para análisis posterior. La validación participativa se define en R5 como protocolo, formularios y hojas de cálculo, apoyada en rúbricas de adecuación, fluidez y pertinencia cultural; su aplicación con expertos y la consolidación de actas asociadas a R7--R8 quedan planificadas para una etapa posterior.
+Para la verificación práctica (R6) se implementó un prototipo local con Gradio, con interfaz mínima de entrada, traducción y salida, y registro estructurado de entradas y salidas para análisis posterior. La validación participativa se define en R5 como protocolo, formularios y hojas de cálculo, apoyada en rúbricas de sentido, naturalidad y decisión; su primera ejecución con revisor competente y la consolidación de resultados asociados a R7--R8 quedan incorporadas como evidencia del proyecto.
 
 En conjunto, estas herramientas sostienen cuatro principios operativos: calidad de datos (regex, tokenizador, embeddings e índice), robustez del modelo (SentencePiece y marcos de aprendizaje profundo), evaluación reproducible (BLEU/chrF++) y proyección práctica del sistema (prototipo local y validación experta).
 
@@ -969,11 +969,11 @@ Para la tesis se derivan implicaciones metodológicas claras. En primer lugar, r
 
 Este capítulo presenta la construcción del corpus paralelo shiwilu--castellano utilizado en la investigación y la preparación del recurso de \emph{embeddings} que se emplea como soporte semántico para el modelado posterior. El trabajo descrito responde al primer objetivo específico, orientado a recopilar y alinear un corpus paralelo, producir particiones reproducibles para entrenamiento, validación y prueba, y dejar preparado un recurso de representación semántica como entregable intermedio. Por ello, el capítulo se concentra en los insumos verificables sobre los que se construye y evalúa el modelo de traducción.
 
-La organización del capítulo sigue la secuencia metodológica aplicada en el proyecto: primero se describen las fuentes lingüísticas incorporadas; luego se documenta el flujo de extracción, filtrado, unificación, normalización y auditoría; posteriormente se presentan las particiones canónicas; y finalmente se resume la preparación del modelo de \emph{embeddings}. El detalle operativo del proceso, comandos, archivos y reportes se presenta en el \hyperref[anexo-documento-reproducible]{Anexo B}, entendido como documento reproducible y medio de verificación de los resultados asociados al objetivo.
+La organización del capítulo sigue la secuencia metodológica aplicada en el proyecto: primero se describen las fuentes lingüísticas incorporadas; luego se documenta el flujo de extracción, filtrado, unificación, normalización y auditoría; posteriormente se presentan las particiones canónicas; y finalmente se resume la preparación del modelo de \emph{embeddings}. La evidencia documental y la trazabilidad técnica del proceso se presentan en el \hyperref[anexo-documento-reproducible]{Anexo B}, entendido como medio de verificación de los resultados asociados al objetivo.
 
 \section{Resultados alcanzados}\label{corpus-resultados}
 
-Los resultados de este capítulo se agrupan en dos entregables verificables. El primero es el corpus paralelo depurado, alineado y particionado (R1); el segundo es el recurso de \emph{embeddings} bilingüe preparado y evaluado (R2). En ambos casos, la reproducción se apoya en scripts, archivos intermedios, manifiestos y reportes conservados en el repositorio, con el \hyperref[anexo-documento-reproducible]{Anexo B} como medio de verificación extensivo.
+Los resultados de este capítulo se agrupan en dos entregables verificables. El primero es el corpus paralelo depurado, alineado y particionado (R1); el segundo es el recurso de \emph{embeddings} bilingüe preparado y evaluado (R2). En ambos casos, el \hyperref[anexo-documento-reproducible]{Anexo B} explica qué evidencia sostiene cada entregable y conserva, en segundo plano, las referencias técnicas necesarias para auditar o reproducir el proceso.
 
 \subsection{R1: corpus paralelo depurado, alineado y particionado}\label{r1-corpus-paralelo}
 
@@ -1072,7 +1072,7 @@ En paralelo, el filtrado se aplicó por separado a cada una de las ocho fuentes 
 
 A continuación, las ocho fuentes se integraron en un único dataset de 4894 registros con trazabilidad de origen. Sobre este corpus unificado se aplicó una normalización no destructiva: las columnas originales se conservaron, mientras que las versiones normalizadas se generaron en columnas separadas. Las reglas aplicadas incluyeron normalización Unicode NFC, eliminación de espacios redundantes, ajuste de espacios junto a comas, conversión a minúsculas y eliminación de comillas dobles. Esta estrategia evita perder información lingüística potencialmente relevante, especialmente en una lengua con rasgos morfológicos complejos como el shiwilu.
 
-La Tabla~\ref{tab:etapas-preprocesamiento} resume las etapas principales, sus salidas y los reportes que permiten reproducir o auditar cada paso. El listado completo de rutas se desarrolla en el \hyperref[anexo-documento-reproducible]{Anexo B}.
+La Tabla~\ref{tab:etapas-preprocesamiento} resume las etapas principales, sus salidas y los reportes que permiten reproducir o auditar cada paso. El \hyperref[anexo-documento-reproducible]{Anexo B} presenta esa trazabilidad como respaldo documental del corpus, no como requisito para comprender el resultado.
 
 \begin{longtable}[]{@{}
   >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.0900}}
@@ -1564,9 +1564,9 @@ El sistema SA-BiNLLB articula las tres decisiones de diseño anunciadas al inici
 
 \section{Introducción}\label{protocolo-introduccion}
 
-Este capítulo desarrolla el objetivo específico 3: definir un protocolo de validación que combine evaluación automática y validación participativa con hablantes para medir adecuación lingüística y pertinencia cultural en el sistema shiwilu$\leftrightarrow$castellano. El capítulo anterior permitió seleccionar una variante NMT bajo criterios cuantitativos reproducibles; sin embargo, en traducción de lenguas originarias esa evidencia no basta por sí sola para afirmar que una salida será aceptable para la comunidad de uso. Por ello, este capítulo organiza el paso siguiente: un instrumento de revisión que permita contrastar las métricas automáticas con juicios humanos sobre sentido, naturalidad y pertinencia cultural.
+Este capítulo desarrolla el objetivo específico 3: definir y aplicar una primera ejecución de un protocolo de validación que combine evaluación automática y validación participativa con hablantes para medir adecuación lingüística y pertinencia cultural en el sistema shiwilu$\leftrightarrow$castellano. El capítulo anterior permitió seleccionar una variante NMT bajo criterios cuantitativos reproducibles; sin embargo, en traducción de lenguas originarias esa evidencia no basta por sí sola para afirmar que una salida será aceptable para la comunidad de uso. Por ello, este capítulo contrasta las métricas automáticas con juicios humanos sobre sentido, naturalidad y decisión práctica de uso.
 
-El resultado de este capítulo es metodológico y operativo: se deja definido un protocolo aplicable al sistema evaluado y se prepara el instrumento de revisión participativa. La aplicación con hablantes queda programada como siguiente etapa del cronograma, de modo que aquí no se reportan puntajes humanos ni comentarios consolidados. El alcance corresponde a R5 y a sus medios de verificación MV5/IOV5: métricas automáticas reportadas, muestra acotada preparada, rúbrica de revisión y planilla de captura para hablantes. Los detalles operativos de reproducción, incluyendo comando, archivo generado y estructura de la planilla, se consignan en el \hyperref[anexo-nmt-human-eval]{Anexo~C.12}. En el cuerpo principal se privilegia la justificación del diseño y la interpretación de su alcance.
+El resultado de este capítulo es metodológico, operativo y empírico: se define el protocolo, se documenta el instrumento de revisión y se reporta su primera ejecución completa. Dicha ejecución se realizó con Fidel Lomas Chota, uno de los principales exponentes y preservadores contemporáneos del shiwilu vinculados al proyecto, sobre una muestra balanceada de 100 traducciones del modelo seleccionado. El alcance corresponde a R5 y a sus medios de verificación MV5/IOV5: métricas automáticas reportadas, muestra acotada revisada, rúbrica de evaluación, planilla de captura completada y resultados humanos agregados. Los detalles técnicos del instrumento se consignan en el \hyperref[anexo-nmt-human-eval]{Anexo~C.12}; la síntesis metodológica y los resultados de la ejecución participativa se presentan como \hyperref[anexo-validacion-participativa]{Anexo~E}.
 
 \section{Resultados alcanzados}\label{nmt-eval-humana}
 
@@ -1574,7 +1574,7 @@ El protocolo alcanzado articula dos niveles de evidencia. El primero es la evalu
 
 La validación automática no se limita a una tabla agregada. Primero, las métricas se reportan por dirección para evitar que el promedio oculte diferencias entre traducir hacia castellano y traducir hacia shiwilu. Segundo, se compara el modelo base, el modelo aumentado y las ablaciones posteriores bajo el mismo conjunto de prueba. Tercero, se estiman intervalos bootstrap para chrF++, lo que permite interpretar si las diferencias observadas son consistentes y no solo variación muestral. Esta base cuantitativa permite seleccionar una variante candidata bajo criterios reproducibles; en este caso, \(v_{2.1b}\) LoRA+ con reranking semántico. Los resultados se observan en los Cuadros~\ref{tab:nmt-leaderboard}, \ref{tab:nmt-directional-metrics} y~\ref{tab:nmt-bootstrap-ci}.
 
-El segundo nivel es la validación participativa preparada para revisión con hablantes o evaluadores competentes. La muestra propuesta contiene 100 ítems en total: 50 en la dirección shiwilu\(\rightarrow\)castellano y 50 en la dirección castellano\(\rightarrow\)shiwilu, extraídos del conjunto de prueba del modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico. La selección se plantea como una muestra dirigida y balanceada por dirección, apoyada en criterios automáticos de calidad y usabilidad. Además, se buscó que la muestra incluyera traducciones con distintos niveles de desempeño: algunas claramente logradas, otras razonables pero revisables, y otras con errores visibles. Esta variedad permite que el hablante no evalúe solo casos favorables, sino un repertorio amplio del comportamiento real del traductor, manteniendo al mismo tiempo una carga de trabajo razonable.
+El segundo nivel es la validación participativa aplicada con un revisor competente. La muestra contiene 100 ítems en total: 50 en la dirección shiwilu\(\rightarrow\)castellano y 50 en la dirección castellano\(\rightarrow\)shiwilu, extraídos del conjunto de prueba del modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico. La selección se planteó como una muestra dirigida y balanceada por dirección, apoyada en criterios automáticos de calidad y usabilidad. Además, se buscó que la muestra incluyera traducciones con distintos niveles de desempeño: algunas claramente logradas, otras razonables pero revisables, y otras con errores visibles. Esta variedad permite que el revisor no evalúe solo casos favorables, sino un repertorio amplio del comportamiento real del traductor, manteniendo al mismo tiempo una carga de trabajo razonable.
 
 \begin{table}[h]
 \centering
@@ -1587,15 +1587,16 @@ El segundo nivel es la validación participativa preparada para revisión con ha
 \midrule
 Evaluación automática & Ejecutada & Métricas BLEU, chrF++, COMET, resultados por dirección e intervalos bootstrap & Seleccionar el modelo de referencia \\
 Modelo para revisión & Seleccionado & Variante \(v_{2.1b}\) LoRA+ con reranking semántico & Generar la muestra participativa \\
-Muestra de revisión & Preparada & 100 ítems balanceados: 50 por dirección & Presentar casos revisables a hablantes \\
+Muestra de revisión & Aplicada & 100 ítems balanceados: 50 por dirección & Presentar casos revisables a hablantes \\
 Rúbrica & Definida & Sentido, naturalidad, decisión y comentarios & Registrar juicios lingüísticos y culturales \\
-Planilla de captura & Generada & Archivo \filepath{human\_validation\_100.xlsx} & Recoger puntajes y observaciones \\
+Planilla de captura & Completada & Archivo \filepath{validacion\_participativa\_100.xlsx} & Recoger puntajes y observaciones \\
+Resultados humanos & Consolidados & Promedios por dirección, decisiones y comentarios de corrección & Contrastar métricas automáticas con juicio experto \\
 Preferencia pareada & Generada & Archivo \filepath{pairwise\_preference.xlsx} con clave anónima aparte & Elegir el modelo cuando las métricas empatan \\
 \bottomrule
 \end{tabular}}
 \end{table}
 
-La construcción del archivo sigue un flujo reproducible. Primero, el script toma las predicciones reranked del modelo seleccionado. Segundo, calcula indicadores automáticos de calidad para ordenar y controlar la muestra dentro del conjunto de prueba. Tercero, descarta automáticamente casos no aptos para revisión, como salidas vacías, texto con codificación defectuosa o repeticiones severas. Cuarto, selecciona la cuota de ejemplos por dirección. Quinto, genera un libro Excel único, \filepath{reports/05\_nmt/evaluation\_xl/human\_validation\_100.xlsx}, con una hoja de instrucciones y dos hojas de revisión. Finalmente, el mismo script valida que el libro pueda abrirse, que cada dirección tenga exactamente 50 filas y que los campos visibles para hablantes no estén vacíos.
+La construcción del archivo sigue un flujo reproducible. Primero, el script toma las predicciones reranked del modelo seleccionado. Segundo, calcula indicadores automáticos de calidad para ordenar y controlar la muestra dentro del conjunto de prueba. Tercero, descarta automáticamente casos no aptos para revisión, como salidas vacías, texto con codificación defectuosa o repeticiones severas. Cuarto, selecciona la cuota de ejemplos por dirección. Quinto, genera un libro Excel único, \filepath{reports/05\_nmt/evaluation\_xl/human\_validation\_100.xlsx}, con una hoja de instrucciones y dos hojas de revisión. La ejecución completada queda preservada como anexo digital externo en \url{https://docs.google.com/spreadsheets/d/1dYJ_4qstg76dHtDs6qaIICG5aBeiG7kL/edit?usp=sharing&ouid=110915706047387486036&rtpof=true&sd=true}, como anexo local de entrega en \filepath{anexos\_digitales/Anexo\_E\_validacion\_participativa\_100.xlsx} y como copia reproducible del repositorio en \filepath{reports/05\_nmt/evaluation\_xl/validacion\_participativa\_100.xlsx}. Finalmente, la validación programática confirma que cada dirección tiene exactamente 50 filas, que los puntajes 1--5 están completos, que las decisiones se normalizan en aceptar/corregir/rechazar y que todos los casos marcados como corregibles incluyen comentario.
 
 La planilla se diseña como un instrumento simple de revisión por hablantes. Cada fila presenta el texto fuente y la traducción generada por el modelo, junto con campos vacíos para registrar puntajes y observaciones. El archivo contiene una hoja de instrucciones y dos hojas de evaluación, una por dirección. Los encabezados son deliberadamente legibles para usuarios no técnicos: \emph{N}, \emph{Texto fuente}, \emph{Traducción del modelo}, \emph{Sentido (1--5)}, \emph{Naturalidad (1--5)}, \emph{Decisión} y \emph{Comentarios}. Con ello, el instrumento prioriza la comprensión del hablante y evita exponer metadatos internos del experimento.
 
@@ -1607,7 +1608,52 @@ La rúbrica propuesta usa escala 1--5 en dos dimensiones principales, más una d
   \item[Decisión.] Permite clasificar cada caso como \emph{aceptar}, \emph{corregir} o \emph{rechazar}, acompañado opcionalmente de comentarios.
 \end{description}
 
-Estas dimensiones responden a criterios que las métricas automáticas no separan por sí solas. El sentido se vincula con la preservación del contenido; la naturalidad, con la aceptabilidad lingüística de la salida; y la decisión global permite distinguir traducciones listas para uso de aquellas que requieren corrección o rechazo. Con ello, R5 queda documentado como protocolo preparado: existe una base automática de comparación, una muestra participativa acotada, una rúbrica de evaluación y una planilla de captura.
+Estas dimensiones responden a criterios que las métricas automáticas no separan por sí solas. El sentido se vincula con la preservación del contenido; la naturalidad, con la aceptabilidad lingüística de la salida; y la decisión global permite distinguir traducciones listas para uso de aquellas que requieren corrección o rechazo. Con ello, R5 queda documentado y aplicado en una primera ronda: existe una base automática de comparación, una muestra participativa acotada, una rúbrica de evaluación, una planilla de captura completada y resultados humanos agregados.
+
+\subsection{Primera ejecución de la validación participativa}\label{validacion-participativa-ejecucion}
+
+La primera ejecución se realizó con Fidel Lomas Chota, hablante/revisor competente y actor central en la preservación del shiwilu dentro del trabajo con el Grupo Chana. Su participación no se trata como una revisión menor o preliminar, sino como una evaluación lingüística especialmente calificada por su dominio del idioma, su producción de relatos y su colaboración directa en la documentación de materiales. El mismo instrumento podría aplicarse a nuevos revisores sin cambiar la muestra, la rúbrica ni el formato de captura; sin embargo, en una lengua con disponibilidad muy restringida de hablantes, esa ampliación depende de condiciones logísticas y comunitarias complejas. Por ello, la posibilidad de repetir la validación se plantea como una vía de ampliación metodológica, no como una debilidad de la evidencia obtenida.
+
+El Cuadro~\ref{tab:validacion-humana-resultados} resume los resultados agregados. La dirección shiwilu\(\rightarrow\)castellano fue la más sólida: obtuvo promedio de Sentido \(=4{,}74\), Naturalidad \(=4{,}76\) y 82\,\% de traducciones aceptadas. La dirección castellano\(\rightarrow\)shiwilu también fue favorable, con Sentido \(=4{,}58\), Naturalidad \(=4{,}68\) y 78\,\% de aceptadas, aunque concentró más correcciones. En conjunto, el 80\,\% de las traducciones fue aceptado, el 20\,\% fue marcado como corregible y no hubo rechazos.
+
+\begin{table}[h]
+\centering
+\caption{Resultados agregados de la primera validación participativa.}
+\label{tab:validacion-humana-resultados}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.18\linewidth}rrrrr}
+\toprule
+\textbf{Dirección} & \textbf{n} & \textbf{Sentido} & \textbf{Naturalidad} & \textbf{Aceptar} & \textbf{Corregir / Rechazar} \\
+\midrule
+shw\(\rightarrow\)spa & 50 & 4{,}74 & 4{,}76 & 41 (82\,\%) & 9 (18\,\%) / 0 (0\,\%) \\
+spa\(\rightarrow\)shw & 50 & 4{,}58 & 4{,}68 & 39 (78\,\%) & 11 (22\,\%) / 0 (0\,\%) \\
+\textbf{Global} & \textbf{100} & \textbf{4{,}66} & \textbf{4{,}72} & \textbf{80 (80\,\%)} & \textbf{20 (20\,\%) / 0 (0\,\%)} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Los comentarios del revisor indican que los errores detectados fueron recuperables mediante correcciones puntuales. En shiwilu\(\rightarrow\)castellano predominan ajustes de precisión semántica, como distinguir ``quiero ganar'' de ``quiero ganarle'', corregir persona o número, o evitar agregados léxicos. En castellano\(\rightarrow\)shiwilu aparecen con mayor frecuencia problemas de selección léxica, concordancia y forma morfológica, por ejemplo al traducir imperativos, plurales o expresiones largas. El Cuadro~\ref{tab:validacion-humana-ejemplos} muestra ejemplos representativos; el Excel anexo conserva la revisión completa.
+
+\begin{table}[h]
+\centering
+\caption{Ejemplos representativos de correcciones en la validación participativa.}
+\label{tab:validacion-humana-ejemplos}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.13\linewidth}p{0.23\linewidth}p{0.26\linewidth}p{0.30\linewidth}}
+\toprule
+\textbf{Dirección} & \textbf{Fuente} & \textbf{Traducción del modelo} & \textbf{Observación del revisor} \\
+\midrule
+shw\(\rightarrow\)spa & \emph{yakana'lek} & quiero ganar. & Más precisamente dice ``quiero ganarle''. \\
+shw\(\rightarrow\)spa & \emph{dei'techek} & me mataré. & La forma esperada es ``lo mataré''. \\
+shw\(\rightarrow\)spa & \emph{¿luwer'chapadekla?} & ¿me conoces? & Más preciso: ``¿los conoces?''. \\
+spa\(\rightarrow\)shw & te mostraré. & \emph{alli'echek} & \emph{A'lli'echen} corresponde a ``te mostraré''; \emph{a'lli'echek} a ``le mostraré''. \\
+spa\(\rightarrow\)shw & lean esto. & \emph{luntuker' asu'} & La oración en castellano está en plural; debería ser \emph{luntuku'}. \\
+spa\(\rightarrow\)shw & ¿estás cansado? & \emph{¿iker'su' ñapala?} & Se propone \emph{Saka'tusu' ñapala?}. \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+La lectura académica de estos resultados confirma la asimetría observada en la evaluación automática. Traducir desde shiwilu hacia castellano resultó más estable porque el sistema produce una lengua destino de mayor cobertura en los modelos multilingües y con menor exigencia morfológica generativa. La dirección castellano\(\rightarrow\)shiwilu, aun con promedios altos, exige mayor control de morfología, concordancia y selección léxica; por ello acumula más comentarios de corrección. El hecho de que no haya rechazos es metodológicamente relevante: la muestra revisada no revela salidas inutilizables, sino traducciones mayoritariamente aceptables o corregibles.
 
 \subsection{Instrumento complementario de preferencia pareada}\label{protocolo-preferencia-pareada}
 
@@ -1617,21 +1663,21 @@ El diseño sigue tres principios. Primero, es ciego: el orden A/B se aleatoriza 
 
 El instrumento se generó como un libro de cálculo con 60 pares, extraídos de las salidas reranked y limitados a los casos en que ambos sistemas difieren (cuando coinciden no hay preferencia que expresar). Su uso previsto es doble: permitir una decisión de selección entre modelos empatados y, más adelante, recoger preferencias de hablantes de forma sencilla. Los detalles de reproducción se consignan en el Anexo~C, sección~\ref{anexo-nmt-human-eval}.
 
-Cuando se aplique la revisión participativa, los puntajes de sentido y naturalidad podrán resumirse por dirección y por tipo de decisión. Las respuestas \emph{aceptar}, \emph{corregir} y \emph{rechazar} permitirán estimar qué proporción de salidas puede considerarse utilizable sin edición, qué proporción requiere intervención y qué casos revelan errores fuertes. Los comentarios abiertos servirán para identificar patrones que las métricas no muestran directamente, como problemas de registro, elección léxica, omisiones, exceso de literalidad o formulaciones poco naturales.
+La revisión participativa aplicada permite resumir los puntajes de sentido y naturalidad por dirección y por tipo de decisión. Las respuestas \emph{aceptar}, \emph{corregir} y \emph{rechazar} estiman qué proporción de salidas puede considerarse utilizable sin edición, qué proporción requiere intervención y qué casos revelarían errores fuertes. Los comentarios abiertos identifican patrones que las métricas no muestran directamente, como problemas de registro, elección léxica, omisiones, exceso de literalidad o formulaciones poco naturales.
 
 \section{Discusión}\label{protocolo-discusion}
 
-Contar con este protocolo resuelve una brecha metodológica importante para lenguas de muy bajo recurso: evita que la calidad del traductor se interprete únicamente desde indicadores automáticos y deja preparada una ruta para incorporar juicio lingüístico y cultural. BLEU permite mantener comparabilidad con literatura previa, chrF++ ofrece una señal más robusta ante variación morfológica y COMET aporta una estimación semántica complementaria; sin embargo, ninguna de estas métricas sustituye la revisión de hablantes. BLEU es sensible a coincidencias superficiales, chrF++ captura semejanza formal sin agotar el juicio lingüístico, y COMET no fue entrenado específicamente para shiwilu.
+Contar con este protocolo y con una primera ejecución resuelve una brecha metodológica importante para lenguas de muy bajo recurso: evita que la calidad del traductor se interprete únicamente desde indicadores automáticos e incorpora juicio lingüístico y cultural. BLEU permite mantener comparabilidad con literatura previa, chrF++ ofrece una señal más robusta ante variación morfológica y COMET aporta una estimación semántica complementaria; sin embargo, ninguna de estas métricas sustituye la revisión de hablantes. BLEU es sensible a coincidencias superficiales, chrF++ captura semejanza formal sin agotar el juicio lingüístico, y COMET no fue entrenado específicamente para shiwilu.
 
-La validación participativa propuesta complementa esa base automática porque separa criterios que las métricas tienden a mezclar: preservación del sentido, naturalidad de la salida y decisión práctica de aceptación, corrección o rechazo. Esta separación es especialmente relevante en traducción de lenguas originarias, donde una salida puede parecer cercana formalmente pero fallar en registro, cortesía, uso idiomático o elección léxica culturalmente marcada. La planilla también fortalece el diseño al presentar solo los campos necesarios para el juicio del hablante, sin sobrecargar la revisión con metadatos técnicos.
+La validación participativa aplicada complementa esa base automática porque separa criterios que las métricas tienden a mezclar: preservación del sentido, naturalidad de la salida y decisión práctica de aceptación, corrección o rechazo. Esta separación es especialmente relevante en traducción de lenguas originarias, donde una salida puede parecer cercana formalmente pero fallar en registro, cortesía, uso idiomático o elección léxica culturalmente marcada. La planilla también fortalece el diseño al presentar solo los campos necesarios para el juicio del hablante, sin sobrecargar la revisión con metadatos técnicos.
 
-La aplicación con hablantes corresponde a la siguiente etapa del cronograma. En esta fase se deja el instrumento preparado y reproducible para que las sesiones puedan realizarse sin redefinir la muestra ni la rúbrica. En términos de trazabilidad, el OE3 queda cumplido en su componente protocolar y documental, mientras que la ejecución de sesiones, consolidación de puntajes humanos y análisis de discrepancias corresponde a la actividad participativa posterior.
+El tamaño de la validación debe interpretarse desde las condiciones sociolingüísticas del shiwilu. En una lengua con muy pocos hablantes disponibles, una revisión completa de 100 ítems por un revisor de la trayectoria de Fidel Lomas Chota aporta evidencia valiosa, trazable y metodológicamente pertinente, especialmente porque cubre ambas direcciones y conserva comentarios cualitativos en los casos corregibles. Si en el futuro se logra coordinar con más hablantes, el instrumento permitiría calcular acuerdo interevaluador y contrastar discrepancias; no obstante, esa ampliación debe entenderse como fortalecimiento adicional y no como requisito para reconocer el valor de la validación ya ejecutada. En términos de trazabilidad, el OE3 queda cumplido en su componente protocolar, documental y de primera ejecución participativa.
 
 \section{Conclusión del capítulo}\label{protocolo-conclusion-capitulo}
 
-El capítulo establece el protocolo de validación automática y participativa asociado al OE3. La contribución no consiste en presentar resultados humanos ya obtenidos, sino en fijar una ruta de evaluación que permita interpretar las métricas automáticas junto con juicios lingüísticos y culturales. Esta distinción es metodológicamente necesaria: en un par de muy bajo recurso como shiwilu--castellano, las métricas automáticas permiten comparar modelos, pero la aceptabilidad final de las traducciones requiere revisión por hablantes o evaluadores competentes.
+El capítulo establece y aplica el protocolo de validación automática y participativa asociado al OE3. La contribución consiste en fijar una ruta de evaluación y ejecutar una primera revisión completa que permite interpretar las métricas automáticas junto con juicios lingüísticos y culturales. Esta combinación es metodológicamente necesaria: en un par de muy bajo recurso como shiwilu--castellano, las métricas automáticas permiten comparar modelos, pero la aceptabilidad final de las traducciones requiere revisión por hablantes o evaluadores competentes.
 
-Con ello, R5 queda cerrado como protocolo documentado y preparado. La validación participativa con hablantes, los promedios humanos, el acuerdo interevaluador y el análisis de comentarios quedan programados para la siguiente etapa del trabajo.
+Con ello, R5 queda cerrado como protocolo documentado y aplicado inicialmente, y R8 queda respaldado por una primera ejecución participativa con resultados agregados: 80\,\% de traducciones aceptadas, 20\,\% corregibles y 0\,\% rechazadas. La aplicación del mismo instrumento con más revisores, si las condiciones de disponibilidad de hablantes lo permiten, queda como una continuidad metodológica posible para ampliar el análisis, calcular acuerdo interevaluador y estudiar discrepancias entre juicios humanos.
 
 \chapter{Prototipo funcional del traductor automático}\label{nmt-prototipo}
 
@@ -1639,11 +1685,11 @@ Con ello, R5 queda cerrado como protocolo documentado y preparado. La validació
 
 Los capítulos anteriores dejaron seleccionado un modelo de traducción bajo criterios cuantitativos reproducibles (Capítulo~\ref{nmt-sa-binllb}) y un protocolo para contrastar esas métricas con el juicio de hablantes (Capítulo~\ref{protocolo-validacion-automatica-participativa}). Sin embargo, mientras el sistema solo pueda ejecutarse desde la línea de comandos del entorno de experimentación, su uso queda restringido al propio desarrollo y no resulta accesible para docentes, miembros de la comunidad ni evaluadores no técnicos. Este capítulo desarrolla el cuarto objetivo específico: diseñar e implementar un prototipo funcional de traductor automático neuronal que integre el modelo entrenado y facilite su uso y prueba.
 
-El resultado de este capítulo es un componente de software, no un nuevo modelo. El prototipo no reentrena ni modifica el sistema SA-BiNLLB; reutiliza el modelo campeón \(v_{2.1b}\) LoRA+ y el modelo de \emph{embeddings} v3 ya congelados, y los orquesta detrás de una interfaz web sencilla que permite escribir una oración, elegir la dirección de traducción y obtener la salida en ambos sentidos. El alcance corresponde a R6 y a sus medios de verificación MV6/IOV6: un prototipo operativo ejecutable localmente, una guía breve de uso, la demostración de traducción de ejemplos y un registro estructurado de los casos de prueba. La organización del capítulo sigue el mismo orden que los enunciados del objetivo: primero la arquitectura que reutiliza el modelo, luego la funcionalidad de la interfaz, después el registro de uso y la integración ejecutable, y finalmente la demostración con casos reales. Los detalles operativos de rutas, comandos y formato de registro se desarrollan en el \hyperref[anexo-prototipo]{Anexo~D}, entendido como documento reproducible del prototipo.
+El resultado de este capítulo es un componente de software, no un nuevo modelo. El prototipo no reentrena ni modifica el sistema SA-BiNLLB; reutiliza el modelo campeón \(v_{2.1b}\) LoRA+ y el modelo de \emph{embeddings} v3 ya congelados, y los orquesta detrás de una interfaz web sencilla que permite escribir una oración, elegir la dirección de traducción y obtener la salida en ambos sentidos. El alcance corresponde a R6 y a sus medios de verificación MV6/IOV6: un prototipo operativo ejecutable localmente, una guía breve de uso, la demostración de traducción de ejemplos y un registro estructurado de los casos de prueba. La organización del capítulo sigue el mismo orden que los enunciados del objetivo: primero la arquitectura que reutiliza el modelo, luego la funcionalidad de la interfaz, después el registro de uso y la integración ejecutable, y finalmente la demostración con casos reales. El \hyperref[anexo-prototipo]{Anexo~D} reúne la evidencia funcional del prototipo y deja la trazabilidad técnica como respaldo.
 
 \section{Resultados alcanzados}\label{prototipo-resultados-alcanzados}
 
-Este capítulo reporta el resultado asociado al cuarto objetivo específico: un prototipo funcional que integra el sistema NMT y habilita su uso y prueba. El entregable central es R6, el prototipo ejecutable localmente, acompañado de su guía de uso y de un registro estructurado de entradas y salidas que sustenta el medio de verificación. El \hyperref[anexo-prototipo]{Anexo~D} funciona como medio de verificación reproducible de los componentes, las rutas, los comandos de ejecución y el esquema del registro.
+Este capítulo reporta el resultado asociado al cuarto objetivo específico: un prototipo funcional que integra el sistema NMT y habilita su uso y prueba. El entregable central es R6, el prototipo ejecutable localmente, acompañado de su guía de uso y de un registro estructurado de entradas y salidas que sustenta el medio de verificación. El \hyperref[anexo-prototipo]{Anexo~D} funciona como medio de verificación de la funcionalidad, los casos registrados y la trazabilidad técnica mínima.
 
 \subsection{Arquitectura del prototipo}\label{prototipo-arquitectura}
 
@@ -1725,7 +1771,7 @@ El prototipo se implementa como una aplicación web ligera construida sobre la b
 
 El primer bloque es el modelo de traducción: el prototipo carga una sola vez, al arrancar, el \emph{checkpoint} del modelo seleccionado \(v_{2.1b}\) LoRA+ junto con su \emph{tokenizer} extendido y su configuración de generación. La carga única en memoria evita reinicializar el modelo en cada solicitud y mantiene la latencia de cada traducción dentro de un rango interactivo. El segundo bloque es el componente de apoyo semántico: el mismo modelo de \emph{embeddings} bilingüe v3 congelado en el Capítulo~\ref{recopilaciuxf3n-y-preparaciuxf3n-inicial-del-corpus-bilinguxfce}, que el prototipo emplea para reordenar las hipótesis del decodificador. El reordenamiento usa exactamente la combinación lineal definida en el Capítulo~\ref{nmt-sa-binllb} y detallada en el Anexo~C, sección~C.5: una mezcla convexa entre la probabilidad de traducción del decodificador y la similitud coseno fuente--candidato del modelo de \emph{embeddings}, con el coeficiente \(\alpha=0{,}7\) que resultó óptimo para el modelo campeón. El tercer bloque es la propia capa de interfaz, que recibe la oración del usuario, dispara la decodificación por búsqueda en haz (\(k=5\)), aplica el reranking semántico cuando está activado y devuelve la traducción elegida junto con sus alternativas.
 
-Conviene subrayar que el prototipo no introduce ningún parámetro entrenable nuevo ni vuelve a ejecutar el \emph{pipeline} de entrenamiento: reutiliza las mismas funciones de inferencia y reranking validadas en el Capítulo~\ref{nmt-sa-binllb}, de modo que la calidad de las traducciones es, por construcción, la del modelo campeón ya evaluado. Las rutas exactas de los artefactos y la mecánica de carga se desarrollan en el Anexo~D, secciones~D.1 y~D.2.
+Conviene subrayar que el prototipo no introduce ningún parámetro entrenable nuevo ni vuelve a ejecutar el \emph{pipeline} de entrenamiento: reutiliza las mismas funciones de inferencia y reranking validadas en el Capítulo~\ref{nmt-sa-binllb}, de modo que la calidad de las traducciones es, por construcción, la del modelo campeón ya evaluado. La evidencia funcional y la mecánica general de carga se resumen en el Anexo~D.
 
 \subsection{Funcionalidad de la interfaz}\label{prototipo-funcionalidad}
 
@@ -1768,7 +1814,7 @@ Este registro responde directamente al medio de verificación del objetivo, que 
 
 \subsection{Integración y despliegue}\label{prototipo-despliegue}
 
-El prototipo se empaqueta dentro del mismo entorno aislado que el resto del sistema NMT, de modo que no introduce dependencias nuevas más allá de la biblioteca de interfaz, y se ejecuta sobre la GPU disponible. Para facilitar su puesta en marcha sin conocimientos técnicos, se proveen dos lanzadores equivalentes para Windows que verifican el entorno y abren la aplicación con un doble clic. Por defecto, la interfaz queda disponible de forma local en el navegador y, de forma opcional, genera un enlace público temporal que permite compartir la demostración con colaboradores remotos durante una sesión, sin desplegar un servidor permanente. Esta última posibilidad es coherente con el alcance del proyecto, que reserva el despliegue web de acceso público como trabajo futuro y delimita el entregable a un prototipo local de demostración. Los lanzadores, los comandos de ejecución y sus opciones se desarrollan en el Anexo~D, sección~D.5.
+El prototipo se empaqueta junto con el resto del sistema NMT, de modo que no introduce dependencias nuevas más allá de la biblioteca de interfaz, y se ejecuta sobre la GPU disponible. Para facilitar su puesta en marcha sin conocimientos técnicos, se proveen dos lanzadores equivalentes para Windows que abren la aplicación con un doble clic. Por defecto, la interfaz queda disponible de forma local en el navegador y, de forma opcional, genera un enlace público temporal que permite compartir la demostración con colaboradores remotos durante una sesión, sin desplegar un servidor permanente. Esta última posibilidad es coherente con el alcance del proyecto, que reserva el despliegue web de acceso público como trabajo futuro y delimita el entregable a un prototipo local de demostración. La forma de uso y la trazabilidad mínima se resumen en el Anexo~D.
 
 \subsection{Demostración y casos de prueba}\label{prototipo-demostracion}
 
@@ -1818,33 +1864,33 @@ Con ello, R6 queda cumplido como prototipo funcional ejecutable localmente: exis
 
 El prototipo cierra el recorrido técnico de la tesis al convertir un sistema que hasta ahora solo vivía en el entorno de experimentación en una herramienta que cualquier usuario puede operar desde el navegador. Su aporte no es un avance de calidad de traducción, que quedó fijada y medida en el Capítulo~\ref{nmt-sa-binllb}, sino de accesibilidad y verificabilidad: hace tangible el resultado del proyecto, habilita pruebas por parte de personas ajenas al desarrollo y produce un registro que documenta cómo se comporta el sistema ante entradas reales. En el contexto de una lengua de muy bajo recurso, contar con una interfaz sencilla y un mecanismo de registro es relevante porque facilita la futura recolección de retroalimentación de hablantes y docentes sobre casos de uso concretos.
 
-La lectura del alcance debe ser prudente. El prototipo es deliberadamente local y de demostración: no constituye un servicio web de acceso público ni una aplicación móvil, opciones que el propio alcance del proyecto reserva como trabajo futuro. Su calidad de traducción está acotada por la del modelo subyacente, con las asimetrías por dirección y las limitaciones de cobertura de vocabulario ya discutidas; la opción de traducción en tiempo real evidencia esa frontera al exponer salidas parciales sobre frases incompletas. Finalmente, el prototipo habilita la prueba del sistema, pero la valoración lingüística y cultural de sus salidas corresponde al protocolo participativo del Capítulo~\ref{protocolo-validacion-automatica-participativa}, cuya ejecución con hablantes queda programada para la siguiente etapa. En conjunto, el prototipo satisface el objetivo de facilitar el uso y la prueba del modelo sin sobrepasar el alcance académico definido para esta versión del trabajo.
+La lectura del alcance debe ser prudente. El prototipo es deliberadamente local y de demostración: no constituye un servicio web de acceso público ni una aplicación móvil, opciones que el propio alcance del proyecto reserva como trabajo futuro. Su calidad de traducción está acotada por la del modelo subyacente, con las asimetrías por dirección y las limitaciones de cobertura de vocabulario ya discutidas; la opción de traducción en tiempo real evidencia esa frontera al exponer salidas parciales sobre frases incompletas. Finalmente, el prototipo habilita la prueba del sistema, mientras que la valoración lingüística y cultural de sus salidas se articula con el protocolo participativo del Capítulo~\ref{protocolo-validacion-automatica-participativa}, cuya primera ejecución ya fue aplicada sobre 100 ítems. En conjunto, el prototipo satisface el objetivo de facilitar el uso y la prueba del modelo sin sobrepasar el alcance académico definido para esta versión del trabajo.
 
 \section{Conclusión del capítulo}\label{prototipo-conclusion-capitulo}
 
-El capítulo cumple el cuarto objetivo específico al entregar un prototipo funcional que integra el modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico y lo expone a través de una interfaz web sencilla, ejecutable localmente y acompañada de lanzadores para su puesta en marcha. El prototipo reutiliza los artefactos congelados del sistema SA-BiNLLB sin reentrenarlos, ofrece traducción bidireccional con visualización clara y opciones avanzadas opcionales, y persiste un registro estructurado de cada traducción que sirve como medio de verificación de las pruebas. Con ello, R6 queda cumplido como prototipo funcional ejecutable localmente que integra el modelo NMT y permite pruebas básicas con registro estructurado de entradas y salidas. El detalle operativo del prototipo, que abarca componentes, rutas, mecánica de carga, esquema del registro y comandos de ejecución, se consigna en el \hyperref[anexo-prototipo]{Anexo~D}.
+El capítulo cumple el cuarto objetivo específico al entregar un prototipo funcional que integra el modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico y lo expone a través de una interfaz web sencilla, ejecutable localmente y acompañada de lanzadores para su puesta en marcha. El prototipo reutiliza los artefactos congelados del sistema SA-BiNLLB sin reentrenarlos, ofrece traducción bidireccional con visualización clara y opciones avanzadas opcionales, y persiste un registro estructurado de cada traducción que sirve como medio de verificación de las pruebas. Con ello, R6 queda cumplido como prototipo funcional ejecutable localmente que integra el modelo NMT y permite pruebas básicas con registro estructurado de entradas y salidas. La evidencia funcional y la trazabilidad mínima del prototipo se consignan en el \hyperref[anexo-prototipo]{Anexo~D}.
 
 \chapter{Conclusiones y trabajos futuros}\label{conclusiones-y-trabajos-futuros}
 
 \section{Conclusiones}\label{conclusiones-1}
 
-Esta tesis avanzó sobre tres componentes del sistema de traducción automática neuronal shiwilu--castellano: la construcción del corpus y recurso de representación semántica, la implementación del modelo NMT bidireccional SA-BiNLLB y la preparación de un protocolo de validación automática y participativa. El primer resultado fue un corpus paralelo consolidado de 4814 pares útiles, procedentes de ocho fuentes bilingües, con normalización no destructiva, auditoría de duplicados, trazabilidad por origen y particiones reproducibles. Este resultado responde al OE1 y queda verificado por las tablas, manifiestos y reportes del \hyperref[anexo-documento-reproducible]{Anexo B}.
+Esta tesis avanzó sobre cuatro componentes del sistema de traducción automática neuronal shiwilu--castellano: la construcción del corpus y recurso de representación semántica, la implementación del modelo NMT bidireccional SA-BiNLLB, la validación automática y participativa, y la integración de un prototipo funcional. El primer resultado fue un corpus paralelo consolidado de 4814 pares útiles, procedentes de ocho fuentes bilingües, con normalización no destructiva, auditoría de duplicados, trazabilidad por origen y particiones reproducibles. Este resultado responde al OE1 y queda verificado por las tablas, manifiestos y reportes del \hyperref[anexo-documento-reproducible]{Anexo B}.
 
 El segundo resultado del OE1 fue un modelo de \emph{embeddings} bilingüe preparado y evaluado. La variante v3 de E5-base bidireccional con minería iterativa de negativos alcanzó R@1 de 0{,}8080 en castellano\(\rightarrow\)shiwilu y 0{,}7857 en shiwilu\(\rightarrow\)castellano sobre oraciones completas de prueba, además de valores R@5 y R@10 superiores a 0{,}93 en ambas direcciones. Este recurso no se presentó como traductor final, sino como medio semántico auxiliar para recuperar equivalencias, filtrar pares y apoyar el pipeline NMT.
 
 Respecto del OE2, se implementó y evaluó un sistema NMT bidireccional basado en NLLB-200 distilled, adaptación LoRA, aumentación controlada, reranking semántico y ablaciones de optimización. El mejor resultado fue \(v_{2.1b}\) con LoRA+ y reranking, que alcanzó avg chrF++ \(=44{,}99\) con IC 95\,\% \([43{,}17, 46{,}96]\). Para una lengua de muy bajo recurso, con corpus reducido y alta complejidad morfológica, este resultado constituye un baseline sólido para continuar el desarrollo. Las pruebas muestran que la mejora depende tanto del corpus \texttt{xl} como de la calidad de los datos sintéticos y del optimizador; también muestran que la backtranslation fuera de dominio puede degradar el modelo aun cuando aumente el volumen de entrenamiento.
 
-Respecto del OE3, se definió un protocolo que combina evaluación automática y validación participativa. El componente automático quedó respaldado por \emph{leaderboard}, métricas por dirección, reranking, análisis bootstrap y comparación de variantes sobre el conjunto de prueba. El componente participativo quedó preparado mediante una muestra balanceada de 100 ítems en total, 50 por dirección, organizada en una planilla orientada a hablantes con campos legibles para evaluar sentido, naturalidad, decisión y comentarios. Este resultado corresponde a R5 como protocolo documentado y preparado para su aplicación participativa.
+Respecto del OE3, se definió y aplicó una primera ejecución de un protocolo que combina evaluación automática y validación participativa. El componente automático quedó respaldado por \emph{leaderboard}, métricas por dirección, reranking, análisis bootstrap y comparación de variantes sobre el conjunto de prueba. El componente participativo se aplicó sobre una muestra balanceada de 100 ítems, 50 por dirección, organizada en una planilla orientada a hablantes con campos legibles para evaluar sentido, naturalidad, decisión y comentarios. La revisión con Fidel Lomas Chota produjo promedios altos en ambas direcciones: shiwilu\(\rightarrow\)castellano alcanzó Sentido \(=4{,}74\), Naturalidad \(=4{,}76\) y 82\,\% de aceptadas; castellano\(\rightarrow\)shiwilu alcanzó Sentido \(=4{,}58\), Naturalidad \(=4{,}68\) y 78\,\% de aceptadas. Globalmente, el 80\,\% de las traducciones fue aceptado, el 20\,\% quedó como corregible y no hubo rechazos. Este resultado corresponde a R5 como protocolo documentado y aplicado inicialmente, y a R8 como primera validación participativa ejecutada.
 
 Respecto del OE4, se diseñó e implementó un prototipo funcional que integra el modelo seleccionado \(v_{2.1b}\) LoRA+ con reranking semántico en una interfaz web sencilla, ejecutable localmente y acompañada de lanzadores para su puesta en marcha. El prototipo reutiliza los artefactos congelados del sistema SA-BiNLLB sin reentrenarlos, ofrece traducción bidireccional con visualización clara y opciones avanzadas opcionales, y persiste un registro estructurado de cada traducción. Este resultado corresponde a R6 como prototipo funcional ejecutable localmente que permite pruebas básicas con registro estructurado de entradas y salidas, y queda documentado en el Capítulo~\ref{nmt-prototipo} y en el \hyperref[anexo-prototipo]{Anexo~D}.
 
-La investigación confirma que, para una lengua originaria de muy bajo recurso como el shiwilu, la contribución técnica más defendible es un pipeline reproducible y auditable antes que una afirmación de cobertura general. El sistema obtenido constituye un baseline sólido para continuar el trabajo y sus resultados deben leerse dentro del marco experimental definido: corpus pequeño, dominio concentrado en flashcards y narrativas, baja recuperación de tokens OOV y uso de métricas automáticas complementadas por un protocolo participativo.
+La investigación confirma que, para una lengua originaria de muy bajo recurso como el shiwilu, la contribución técnica más defendible es un pipeline reproducible y auditable antes que una afirmación de cobertura general. El sistema obtenido constituye un baseline sólido para continuar el trabajo y sus resultados deben leerse dentro del marco experimental definido: corpus pequeño, dominio concentrado en flashcards y narrativas, baja recuperación de tokens OOV y uso de métricas automáticas complementadas por una primera validación participativa.
 
-En esta etapa queda preparada la planilla de evaluación humana y documentado el protocolo. La recolección de juicios de hablantes, promedios humanos, acuerdos interevaluador y actas de expertos queda delimitada por dicho instrumento. El prototipo funcional, en cambio, ya quedó implementado y operativo; su uso por hablantes para recoger retroalimentación sobre casos concretos se articula con la aplicación posterior del protocolo participativo.
+La planilla de evaluación humana queda preservada como instrumento reproducible y como evidencia digital de la primera ejecución. La ausencia de rechazos sugiere que los errores observados son corregibles mediante ajustes puntuales, no fallas irreparables del sistema. Además, la revisión fue realizada por un hablante/revisor de alta relevancia para la preservación del shiwilu, lo que fortalece su valor cualitativo. Si más adelante se cuenta con disponibilidad de otros hablantes, el mismo instrumento podría ampliarse para estimar acuerdo interevaluador y analizar discrepancias, aunque dicha ampliación es compleja por la escasez real de hablantes.
 
 \section{Trabajos futuros}\label{trabajos-futuros}
 
-Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB. Las primeras se derivan directamente de las ablaciones y análisis automáticos ejecutados; las últimas corresponden a los componentes planificados que todavía no deben presentarse como resultados alcanzados.
+Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB. Las primeras se derivan directamente de las ablaciones, el análisis automático y la primera validación participativa ejecutada; las últimas corresponden a mejoras de alcance que no forman parte de esta versión del sistema.
 
 \begin{description}[leftmargin=*]
   \item[Arquitectura \emph{Two-Adapter} LoRA+ con rangos asimétricos.] La opción más prometedora identificada después de las ablaciones, y la que se cita explícitamente como continuación inmediata. Consiste en entrenar dos adaptadores LoRA+ independientes, uno por dirección, con rangos asimétricos: spa\(\rightarrow\)shw con \(r=64\) y \(\alpha=128\) (la dirección morfológicamente más difícil recibe más capacidad) y shw\(\rightarrow\)spa con \(r=32\) y \(\alpha=64\). El soporte de código está integrado (\texttt{30\_train\_lora.py --direction \{spa2shw,shw2spa\}}; \texttt{40\_evaluate.py --checkpoint-spa2shw \ldots --checkpoint-shw2spa \ldots}), de modo que la inversión adicional es exclusivamente computacional (\(\approx 5\)--\(6\)\,h sobre el hardware actual). La hipótesis a validar es que la separación por dirección reduce la interferencia entre ambas tareas y cierra la brecha residual entre las dos direcciones que se observa en el Cuadro~\ref{tab:nmt-leaderboard}; su fundamento técnico se apoya en la adaptación eficiente por adaptadores y LoRA \parencite{houlsby2019,hu2022lora}, mientras que la asimetría de tasas sigue la mejora propuesta por LoRA+ \parencite{hayou2024loraplus}.
@@ -1852,7 +1898,7 @@ Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB
   \item[Iterative backtranslation con corpus monolingüe controlado por dominio.] La regresión observada en \(v_{2.2}\) (Wikipedia) confirma que en \emph{low-resource} la calidad del pool monolingüe se rige por la coincidencia de dominio, no por su tamaño. La línea futura es curar un pool combinado de Tatoeba, \emph{News-commentary} hispanoamericano y narrativas comunitarias (10--30\,k frases), filtrarlo con el SBERT \(v_3\) congelado contra el Shiwilu existente para preservar la distribución del corpus original, y aplicar iteraciones sucesivas de \emph{round-trip backtranslation} \parencite{edunov2018bt,hoang2018iterativebt} con criterio de detención sobre validación.
   \item[Corpus monolingüe español controlado por dominio.] El sistema actual omite la dirección \(\text{spa}\rightarrow\text{shw}\) en \emph{backtranslation} clásica precisamente para no contaminar el \emph{target} con Shiwilu sintético generado por un modelo aún imperfecto en esa dirección. Curar 10--30\,k frases en Español cercanas al dominio de \emph{flashcards} y textos comunitarios, filtrarlas con el SBERT \(v_3\) congelado contra el Shiwilu existente y usarlas como \emph{seeds} para BT \(\text{spa}\rightarrow\text{shw}\) con un \(v_{2.1b}\) ya estable es la línea natural complementaria a la iteración descrita arriba.
   \item[\emph{Focal loss} para preservación de \emph{rare-tokens}.] El análisis morfológicamente sensible documentado en el Anexo~C, sección~\ref{anexo-nmt-rare-token}, muestra que la \emph{OOV recovery rate} es uniformemente baja: el decoder casi no copia palabras shiwilu OOV cuando aparecen en la fuente. \emph{Focal loss} con \(\gamma\approx 2\) sobre los \emph{token-ids} más raros sesgaría al modelo a preservarlos. Es ortogonal al pesado por origen documentado en el Anexo~C, sección~\ref{anexo-nmt-pesado}, y se puede combinar con él, pero requiere reescribir \texttt{compute\_loss} para conocer la frecuencia de cada \emph{token-target} en \emph{train}.
-  \item[Ejecución de la validación participativa.] El protocolo y la planilla para hablantes ya están preparados. La siguiente fase aplicará el instrumento con hablantes nativos o revisores competentes para recoger puntajes de sentido y naturalidad, decisiones de aceptar/corregir/rechazar, comentarios cualitativos, análisis de desacuerdos y contraste entre juicios humanos y métricas automáticas.
+  \item[Ampliación opcional multi-revisor de la validación participativa.] La primera ejecución del instrumento ya fue completada con 100 ítems revisados por un hablante/revisor especialmente calificado. Si la disponibilidad de hablantes lo permite, el mismo instrumento podría aplicarse a más hablantes nativos o revisores competentes, sin cambiar muestra ni rúbrica, para calcular acuerdo interevaluador, analizar desacuerdos y contrastar con mayor detalle los juicios humanos frente a las métricas automáticas. Esta línea se plantea como extensión deseable, no como requisito para considerar válida la primera ejecución.
   \item[Evolución del prototipo funcional hacia un servicio de acceso público.] El prototipo local ya fue implementado y se documenta en el Capítulo~\ref{nmt-prototipo}: integra el modelo seleccionado, traduce en ambas direcciones y registra entradas y salidas de forma estructurada. Su continuación natural, explícitamente fuera del alcance de la presente versión, es desplegarlo como servicio web de acceso público o aplicación móvil, incorporar la recolección controlada de retroalimentación de hablantes desde la propia interfaz y exponer de manera más visible los niveles de confianza por predicción ya calculados en el sistema (Anexo~C, sección~C.9).
 \end{description}
 
@@ -1864,7 +1910,7 @@ Las siguientes líneas quedan documentadas como ampliación natural de SA-BiNLLB
 \appendix
 \chapter{Anexos}
 
-Los anexos reúnen información complementaria citada desde el cuerpo de la tesis. El Anexo~A presenta el plan de proyecto, el Anexo~B documenta aspectos adicionales del sistema de embeddings bilingües, el Anexo~C consolida la evidencia reproducible del sistema de traducción automática neuronal y el Anexo~D documenta la reproducción técnica del prototipo funcional.
+Los anexos reúnen información complementaria citada desde el cuerpo de la tesis. El Anexo~A presenta el plan de proyecto, el Anexo~B documenta aspectos adicionales del sistema de embeddings bilingües, el Anexo~C consolida la evidencia reproducible del sistema de traducción automática neuronal, el Anexo~D documenta la reproducción técnica del prototipo funcional y el Anexo~E sintetiza la primera validación participativa del sistema.
 
 \section*{Anexo A: Plan de Proyecto}
 
@@ -1886,13 +1932,13 @@ En el plano metodológico, la investigación sigue un enfoque estructurado que c
 
 La viabilidad institucional del proyecto se ve reforzada por su alineación con las competencias formativas del programa de Ingeniería Informática y con los lineamientos de investigación aplicada de la Facultad de Ciencias e Ingeniería. Además, cuenta con la guía de un asesor especializado en inteligencia artificial y procesamiento de lenguaje natural, y con acompañamiento metodológico institucional. A ello se suma el apoyo del Grupo Chana, comprometido con la revitalización del idioma shiwilu, y del señor Fidel Lomas Chota, hablante nativo y colaborador en proyectos lingüísticos, cuya participación garantiza la pertinencia cultural y la autenticidad del enfoque. La colaboración entre el conocimiento técnico y la sabiduría viva de la lengua convierte este proyecto en un puente entre la academia y la comunidad.
 
-Finalmente, desde una perspectiva económica y temporal, el proyecto resulta plenamente realizable dentro del periodo académico establecido. El uso exclusivo de software libre elimina costos por licencias, y los requerimientos de equipamiento se limitan a equipos personales de desarrollo. Los gastos asociados a la validación lingüística son mínimos y responden a la logística de coordinación con los colaboradores. El cronograma propuesto contempla tiempos razonables y mecanismos de control de avance que aseguran el cumplimiento integral de los objetivos en el marco del semestre. En conjunto, todos estos factores confirman que la propuesta no solo es viable en teoría, sino también en práctica: un ejemplo concreto de cómo la tecnología, bien dirigida, puede ponerse al servicio del conocimiento y la preservación cultural.
+Finalmente, desde una perspectiva económica y temporal, el proyecto resulta plenamente realizable dentro del periodo académico establecido. El software principal empleado en el pipeline es libre o de código abierto, mientras que los servicios auxiliares y herramientas de oficina usados para cómputo, documentación y validación se valorizan como costos operativos atribuibles al proyecto. Los requerimientos de equipamiento se cubren con equipos personales de desarrollo, cuyo costo se reconoce por depreciación durante el periodo de uso. Los gastos asociados a la validación lingüística son acotados y responden a la logística de coordinación con los colaboradores. El cronograma actualizado contempla tiempos razonables y mecanismos de control de avance que aseguran el cumplimiento integral de los objetivos. En conjunto, todos estos factores confirman que la propuesta no solo es viable en teoría, sino también en práctica: un ejemplo concreto de cómo la tecnología, bien dirigida, puede ponerse al servicio del conocimiento y la preservación cultural.
 
 \subsection*{Alcance}
 
-El presente proyecto comprende el diseño, desarrollo y validación progresiva de un sistema de traducción automática neuronal bidireccional entre el idioma shiwilu y el castellano, orientado a fortalecer el aprendizaje y la preservación de la lengua. El trabajo abarca desde la recopilación y preparación de datos lingüísticos hasta la futura implementación de un prototipo funcional que permita realizar pruebas básicas de traducción. La ejecución se enmarca dentro del curso \emph{Proyecto de Fin de Carrera 1}, con una planificación que incluye actividades de gestión, modelado y validación lingüística en colaboración con hablantes nativos.
+El presente proyecto comprende el diseño, desarrollo y validación progresiva de un sistema de traducción automática neuronal bidireccional entre el idioma shiwilu y el castellano, orientado a fortalecer el aprendizaje y la preservación de la lengua. El trabajo abarca desde la recopilación y preparación de datos lingüísticos hasta la implementación de un prototipo funcional que permite realizar pruebas básicas de traducción. Esta versión del plan recoge la formulación inicial del curso \emph{Proyecto de Fin de Carrera 1} y la actualiza con las actividades efectivamente ejecutadas de gestión, modelado y validación lingüística en colaboración con hablantes nativos.
 
-El alcance técnico incluye la construcción de un corpus paralelo shiwilu--castellano alineado y depurado, el desarrollo de modelos neuronales de traducción bajo un esquema reproducible y la elaboración de un prototipo local ejecutable para la demostración del sistema. Asimismo, se contempla la definición de un protocolo de validación participativa, que combina métricas automáticas con la evaluación cualitativa de hablantes, asegurando tanto la calidad lingüística como la pertinencia cultural del modelo. Durante el proceso, se llevará a cabo también la recolección paralela de \emph{flashcards} junto al Grupo Chana y el señor Fidel Lomas Chota, con el fin de fortalecer el acervo léxico y los ejemplos de uso del idioma, sin que dicha actividad altere las particiones experimentales del corpus principal.
+El alcance técnico incluye la construcción de un corpus paralelo shiwilu--castellano alineado y depurado, el desarrollo de modelos neuronales de traducción bajo un esquema reproducible y la elaboración de un prototipo local ejecutable para la demostración del sistema. Asimismo, incluye la definición y primera ejecución de un protocolo de validación participativa, que combina métricas automáticas con la evaluación cualitativa de hablantes, asegurando tanto la calidad lingüística como la pertinencia cultural del modelo. Durante el proceso, también se incorporó la recolección paralela de \emph{flashcards} junto al Grupo Chana y el señor Fidel Lomas Chota, con el fin de fortalecer el acervo léxico y los ejemplos de uso del idioma, sin que dicha actividad altere las particiones experimentales del corpus principal.
 
 Quedan fuera del alcance del presente proyecto la implementación de una interfaz web o aplicación móvil de acceso público, la integración con servicios en línea de traducción, el entrenamiento de modelos multilingües a gran escala y la evaluación extendida en dominios distintos al educativo y comunitario. Estos aspectos se consideran líneas futuras de trabajo, una vez concluida la validación del prototipo y la consolidación del corpus paralelo.
 
@@ -1906,7 +1952,7 @@ Asimismo, se identifican \textbf{limitaciones técnicas y de recursos} vinculada
 
 En cuanto a los \textbf{datos disponibles}, el corpus paralelo shiwilu--castellano presenta un tamaño moderado y una diversidad temática acotada, derivada de la limitada disponibilidad de materiales bilingües y de la complejidad del proceso de alineación. Esto condiciona la generalización del modelo a dominios no representados y refuerza la necesidad de considerar esta versión como una base inicial susceptible de ampliación en futuros trabajos.
 
-El proyecto también enfrenta \textbf{limitaciones de alcance funcional}, dado que el producto final consistirá en un prototipo ejecutable localmente, orientado a la demostración de la viabilidad técnica y lingüística del sistema. No se contempla el despliegue web ni la integración con plataformas externas, ya que el objetivo principal es validar la factibilidad del enfoque propuesto. De igual modo, las limitaciones de validación participativa derivan de la disponibilidad restringida de hablantes shiwilu; si bien se cuenta con la colaboración del Grupo Chana y del señor Fidel Lomas Chota, hablante nativo, la muestra para la evaluación lingüística será representativa pero acotada, centrada en garantizar pertinencia cultural más que amplitud estadística.
+El proyecto también enfrenta \textbf{limitaciones de alcance funcional}, dado que el producto final consiste en un prototipo ejecutable localmente, orientado a la demostración de la viabilidad técnica y lingüística del sistema. No se contempla el despliegue web ni la integración con plataformas externas, ya que el objetivo principal es validar la factibilidad del enfoque propuesto. De igual modo, las limitaciones de validación participativa derivan de la disponibilidad restringida de hablantes shiwilu; aunque se contó con la revisión de Fidel Lomas Chota, hablante/revisor competente, la muestra de evaluación lingüística es representativa pero acotada, centrada en garantizar pertinencia cultural más que amplitud estadística.
 
 Estas limitaciones, resumidas en la tabla siguiente, no comprometen la validez del proyecto, sino que definen su marco operativo y orientan las posibilidades de mejora y expansión futura.
 
@@ -1933,7 +1979,7 @@ Estas limitaciones, resumidas en la tabla siguiente, no comprometen la validez d
 \textbf{Corpus} & El corpus paralelo shiwilu--castellano posee volumen y variedad temática limitados, dependientes de fuentes disponibles y validación lingüística. & Restricción en la capacidad del modelo para generalizar a otros dominios o estilos discursivos. \\
 \textbf{Herramientas} & Se emplean únicamente librerías y herramientas de código abierto, sin uso de software comercial especializado. & Limitación en la integración con sistemas avanzados de evaluación o despliegue profesional. \\
 \textbf{Alcance funcional} & El entregable final es un prototipo local de traducción automática, sin despliegue web ni integración con servicios externos. & Enfoca los resultados en validación académica, no en uso público o masivo. \\
-\textbf{Validación participativa} & La evaluación lingüística depende de la disponibilidad del Grupo Chana y del señor Fidel Lomas Chota, hablante nativo colaborador. & Muestra limitada de validación, centrada en la adecuación cultural más que en la cobertura estadística. \\
+\textbf{Validación participativa} & La evaluación lingüística depende de la disponibilidad de hablantes shiwilu y se apoya en la revisión cualificada del señor Fidel Lomas Chota. & Muestra acotada pero altamente cualificada, centrada en la adecuación cultural y lingüística más que en la cobertura estadística amplia. \\
 \end{longtable}
 
 \subsection*{Identificación de los riesgos del proyecto}
@@ -2012,7 +2058,7 @@ En la siguiente matriz se describen los riesgos identificados, sus síntomas, pr
 
 La Estructura de Descomposición del Trabajo (EDT) constituye una representación jerárquica que organiza las actividades del proyecto en componentes manejables y verificables. En el caso del presente trabajo, la EDT se divide en dos secciones principales: la Gestión del Proyecto, que comprende las tareas administrativas, académicas y de seguimiento vinculadas al curso de Proyecto de Fin de Carrera 1, y la Gestión del Producto, que abarca las fases técnicas orientadas al desarrollo del sistema de traducción automática neuronal bidireccional shiwilu--castellano.
 
-La primera sección contempla los entregables establecidos en el curso (E1, E2 y E3), las reuniones periódicas con el asesor, el control de riesgos y avances, así como la composición final del documento de tesis. Por su parte, la gestión del producto comprende la recolección y preparación del corpus bilingüe, el modelado y entrenamiento del sistema de traducción, la validación lingüística participativa con hablantes nativos y el desarrollo del prototipo funcional. De manera complementaria, se incluye la recolección paralela de \emph{flashcards} junto al señor Fidel Lomas, orientada al fortalecimiento del vocabulario y la base de datos lingüística.
+La primera sección contempla los entregables establecidos en el curso (E1, E2 y E3), las reuniones periódicas con el asesor, el control de riesgos y avances, así como la composición final del documento de tesis. Por su parte, la gestión del producto comprende la recolección y preparación del corpus bilingüe, el modelado y entrenamiento del sistema de traducción, la validación lingüística participativa con hablantes nativos y el desarrollo del prototipo funcional. De manera complementaria, se incluye la recolección paralela de \emph{flashcards} junto al señor Fidel Lomas Chota, orientada al fortalecimiento del vocabulario y la base de datos lingüística.
 
 El EDT permite visualizar de forma clara la relación entre los objetivos específicos, las fases técnicas y los entregables académicos del proyecto, garantizando la trazabilidad entre las actividades, el cronograma y los resultados esperados.
 
@@ -2141,7 +2187,7 @@ El EDT permite visualizar de forma clara la relación entre los objetivos espec�
 
       \begin{itemize}
       \item
-        Las actividades a realizar el proyecto en el proyecto de fin de carrera se encuentran dentro del ámbito de la Ingeniería Informática y están respaldadas por los conocimientos adquiridas en cursos electivos de la especialización en Inteligencia Artificial. No se requiere capacitación adicional, aunque se reforzará el aprendizaje autodirigido mediante la revisión bibliográfica técnica actualizada sobre NMT.
+        Las actividades realizadas en el proyecto de fin de carrera se encuentran dentro del ámbito de la Ingeniería Informática y están respaldadas por los conocimientos adquiridos en cursos electivos de la especialización en Inteligencia Artificial. No se requiere capacitación adicional, aunque se reforzó el aprendizaje autodirigido mediante la revisión bibliográfica técnica actualizada sobre NMT.
       \end{itemize}
     \end{itemize}
   \item
@@ -2189,20 +2235,11 @@ El EDT permite visualizar de forma clara la relación entre los objetivos espec�
   Costeo del Proyecto
 \end{itemize}
 
-\textless\textless{} Debe desarrollar un análisis de costos que incluya siempre:
+El presupuesto se formula como valorización económica del proyecto, no únicamente como registro de desembolsos. En este sentido, el costo representa el valor de los recursos consumidos o asignados para ejecutar la investigación, aunque parte de ellos no haya implicado un pago directo durante el periodo; el gasto, en cambio, corresponde al desembolso efectivo realizado. Por ello, las horas del tesista, del asesor y del colaborador lingüístico se valorizan como costo de equipo humano; el equipamiento personal se reconoce por depreciación atribuible al periodo de uso del proyecto; y el software o los servicios auxiliares se registran según su costo operativo, TCO o amortización aplicable.
 
-\begin{itemize}
-\item
-  costos por el equipo humano
-\item
-  costos por utilización de equipamiento (usar el concepto de depreciación)
-\item
-  costos por utilización de software, usar el concepto de TCO (Total cost of ownership) o amortización
-\item
-  Debe tener claro que costo es un concepto distinto al de gasto
-\end{itemize}
+El software principal del pipeline técnico (Python, PyTorch, Hugging Face Transformers, SentencePiece, FAISS y librerías asociadas) es libre o de código abierto, por lo que no genera licencias directas. No obstante, Google Colab Pro se mantiene como costo operativo de cómputo cuando fue utilizado para acelerar entrenamientos o pruebas, y Microsoft Office se considera herramienta auxiliar para documentación, revisión y manejo de planillas. En el caso de la computadora personal, no se imputa el valor total de compra, sino la depreciación lineal correspondiente a nueve meses de uso sobre una vida útil referencial de cuarenta y ocho meses.
 
-A continuación, se presenta una plantilla mínima genérica que puede ser usada de base para establecer un presupuesto. Para los proyectos de curso es suficiente un solo nivel de partida.
+A continuación, se presenta el presupuesto actualizado del proyecto con partidas de equipo humano, materiales, servicios operativos, equipamiento y herramientas auxiliares.
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0692}}
@@ -2226,7 +2263,7 @@ A continuación, se presenta una plantilla mínima genérica que puede ser usada
 \endfoot
 \bottomrule
 \endlastfoot
-\textbf{0} & \textbf{Costo total del proyecto} & - & - & - & - & \textbf{13665.00} \\
+\textbf{0} & \textbf{Costo total del proyecto} & - & - & - & - & \textbf{9602.50} \\
 \textbf{1} & \textbf{Tesista} & - & - & - & - & \textbf{4600.00} \\
 1.1 & Fabian Prado Infanson & Hora & 460 & 10 & 4600 & - \\
 \textbf{2} & \textbf{Otros participantes} & - & - & - & - & \textbf{2240.00} \\
@@ -2236,8 +2273,8 @@ A continuación, se presenta una plantilla mínima genérica que puede ser usada
 3.1 & Electricidad & Mes & 9 & 25 & 225 & - \\
 3.2 & Servicio de internet & Mes & 9 & 100 & 900 & - \\
 3.3 & Google Colab Pro & Mes & 5 & 100 & 500 & \\
-\textbf{4} & \textbf{Equipamiento y software} & - & - & - & - & \textbf{5200.00} \\
-4.1 & Computadora personal & Unidad & 1 & 5000 & 5000 & - \\
+\textbf{4} & \textbf{Equipamiento y software} & - & - & - & - & \textbf{1137.50} \\
+4.1 & Computadora personal (depreciación atribuible: 9/48 de S/. 5000) & Mes & 9 & 104.17 & 937.50 & - \\
 4.2 & Microsoft Office Suite & Anual & 1 & 200 & 200 & - \\
 \end{longtable}
 
@@ -2263,35 +2300,36 @@ La fuente de verdad para los conteos y decisiones corresponde a los archivos gen
 
 \subsection*{B.2 Pipeline reproducible del corpus}
 
-La Tabla~\ref{tab:anexo-pipeline-corpus} resume las etapas ejecutadas, los scripts base, las salidas y los reportes de verificación. Las rutas se presentan de forma relativa al directorio raíz del proyecto.
+La Tabla~\ref{tab:anexo-pipeline-corpus} resume el proceso por decisiones documentales: qué se hizo, qué evidencia deja y por qué esa etapa era necesaria. Las rutas internas se mantienen después de la tabla como respaldo técnico, no como lectura principal.
 
 \begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.0800}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2400}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2200}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2300}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2300}}@{}}
-\caption{Artefactos reproducibles de construcción del corpus}\label{tab:anexo-pipeline-corpus}\\
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2400}}@{}}
+\caption{Evidencia documental de construcción del corpus}\label{tab:anexo-pipeline-corpus}\\
 \toprule
-\textbf{Etapa} & \textbf{Script base} & \textbf{Entrada principal} & \textbf{Salida principal} & \textbf{Reporte} \\
+\textbf{Etapa} & \textbf{Qué se hizo} & \textbf{Evidencia que deja} & \textbf{Uso en la tesis} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Etapa} & \textbf{Script base} & \textbf{Entrada principal} & \textbf{Salida principal} & \textbf{Reporte} \\
+\textbf{Etapa} & \textbf{Qué se hizo} & \textbf{Evidencia que deja} & \textbf{Uso en la tesis} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-00 & \filepath{scripts/00_extraer_dataset_pdf.py} & \filepath{data/raw/II_TEXTOS_SHIWILU.pdf} & \filepath{data/intermediate/00_pdf/dataset_extraido_pdf.csv} & \filepath{reports/00_pdf/summary.json} \\
-01 & \filepath{scripts/01_filtrar_dataset.py} & \filepath{data/raw/flashcards2.csv} & \filepath{data/intermediate/01_filtrado/dataset_filtrado.csv} & \filepath{reports/01_filtrado/rows_removed.csv} \\
-01b & \filepath{scripts/01b_unificar_fuentes.py} & \filepath{config/sources.json} & \filepath{data/intermediate/01b_unificado/dataset_unificado.csv} & \filepath{reports/01b_unificado/summary.json} \\
-02 & \filepath{scripts/02_depurar_dataset.py} & \filepath{data/intermediate/01b_unificado/dataset_unificado.csv} & \filepath{data/intermediate/02_normalizado/dataset_normalizado.csv} & \filepath{reports/02_normalizacion/summary.json} \\
-03 & \filepath{scripts/03_auditar_dataset.py} & \filepath{data/intermediate/02_normalizado/dataset_normalizado.csv} & \filepath{data/processed/03_pre_embeddings/dataset_pre_embeddings.csv} & \filepath{reports/03_auditoria/summary.json} \\
-04 & \filepath{src/embeddings/preprocess_embeddings.py} & \filepath{data/processed/03_pre_embeddings/dataset_pre_embeddings.csv} & \filepath{data/processed/04_splits/} & \filepath{reports/04_embeddings/preprocessing/preprocess_manifest.json} \\
+00 & Se extrajeron pares bilingües desde el material narrativo en PDF & Resumen de extracción y pares recuperados & Incorporar la fuente narrativa publicada \\
+01 & Se filtraron registros incompletos o no utilizables por fuente & Listado de exclusiones y conteo de filas conservadas & Evitar ejemplos incompletos en el corpus \\
+01b & Se unificaron las ocho fuentes habilitadas & Corpus integrado con metadatos de procedencia & Mantener trazabilidad por origen \\
+02 & Se aplicó normalización no destructiva & Versiones originales y normalizadas de cada par & Reducir ruido sin perder forma original \\
+03 & Se auditó el corpus normalizado & Reporte de duplicados, alertas y casos revisables & Controlar calidad antes de modelar \\
+04 & Se generaron particiones reproducibles & Separación estable de entrenamiento, validación y prueba & Entrenar y evaluar sin fuga de datos \\
 \end{longtable}
+
+Para auditoría, estas etapas se respaldan en los scripts \filepath{scripts/00\_extraer\_dataset\_pdf.py}, \filepath{scripts/01\_filtrar\_dataset.py}, \filepath{scripts/01b\_unificar\_fuentes.py}, \filepath{scripts/02\_depurar\_dataset.py}, \filepath{scripts/03\_auditar\_dataset.py} y \filepath{src/embeddings/preprocess\_embeddings.py}, junto con sus reportes en los directorios \filepath{reports/00\_pdf}, \filepath{reports/01\_filtrado}, \filepath{reports/01b\_unificado}, \filepath{reports/02\_normalizacion}, \filepath{reports/03\_auditoria} y \filepath{reports/04\_embeddings/preprocessing}.
 
 \subsection*{B.3 Criterios de selección y normalización}
 
@@ -2327,37 +2365,36 @@ Agrupación por \texttt{group\_id} & Se agruparon variantes equivalentes antes d
 
 \subsection*{B.4 Particiones canónicas}
 
-El archivo \filepath{reports/04_embeddings/preprocessing/preprocess_manifest.json} registra la semilla, las proporciones y los conteos finales. La semilla usada fue 42 y las proporciones fueron 80\% entrenamiento, 10\% validación y 10\% prueba. El hash SHA-256 del archivo de entrada canónico fue:
+Las particiones canónicas separan el corpus en entrenamiento, validación y prueba con una semilla fija. Esta decisión evita que ejemplos equivalentes aparezcan simultáneamente en entrenamiento y evaluación, y permite que los resultados del modelo se comparen sobre la misma base. La semilla usada fue 42 y las proporciones fueron 80\% entrenamiento, 10\% validación y 10\% prueba. El hash SHA-256 del insumo canónico fue:
 
 \begin{quote}
 \scriptsize\texttt{1f6f8f252c47addd44d47eee96570c3db2199dc94522dd04f2e8cb88075654a9}
 \end{quote}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2200}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2600}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2600}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2600}}@{}}
-\caption{Archivos canónicos de partición}\label{tab:anexo-archivos-splits}\\
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3800}}@{}}
+\caption{Función de las particiones canónicas}\label{tab:anexo-archivos-splits}\\
 \toprule
-\textbf{Partición} & \textbf{JSONL} & \textbf{CSV} & \textbf{Uso} \\
+\textbf{Partición} & \textbf{Función} & \textbf{Qué permite verificar} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Partición} & \textbf{JSONL} & \textbf{CSV} & \textbf{Uso} \\
+\textbf{Partición} & \textbf{Función} & \textbf{Qué permite verificar} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-Entrenamiento & \filepath{data/processed/04_splits/train.jsonl} & \filepath{data/processed/04_splits/train.csv} & Ajuste de modelos \\
-Validación & \filepath{data/processed/04_splits/valid.jsonl} & \filepath{data/processed/04_splits/valid.csv} & Selección y control \\
-Prueba & \filepath{data/processed/04_splits/test.jsonl} & \filepath{data/processed/04_splits/test.csv} & Evaluación final \\
+Entrenamiento & Ajustar modelos y aprender patrones del corpus disponible & Que el modelo se entrena solo con datos permitidos para aprendizaje \\
+Validación & Seleccionar configuraciones e identificar sobreajuste durante el desarrollo & Que las decisiones de ajuste no usan el conjunto de prueba \\
+Prueba & Medir el rendimiento final y comparar variantes & Que las métricas finales se calculan sobre ejemplos no usados para entrenar \\
 \end{longtable}
 
-También se generó \filepath{data/processed/04_splits/all_text_for_sp.txt}, usado como corpus textual consolidado para procesos posteriores de tokenización o segmentación sub-palabra.
+Para auditoría técnica, las particiones se conservan en formatos tabulares y JSONL bajo \filepath{data/processed/04\_splits/}. También se generó un corpus textual consolidado para procesos posteriores de tokenización o segmentación sub-palabra.
 
 \subsection*{B.5 Entregable del modelo de embeddings}
 
@@ -2620,47 +2657,43 @@ El \emph{tokenizer} de tiempo de ejecución es siempre el de NLLB. No obstante, 
 
 \subsection*{C.12 Protocolo de evaluación humana}\label{anexo-nmt-human-eval}
 
-Esta sección documenta la reproducción técnica del protocolo descrito en el Capítulo~\ref{protocolo-validacion-automatica-participativa}. El instrumento prepara la muestra, la planilla de captura y las instrucciones operativas; la recolección de respuestas humanas se organiza de acuerdo con el cronograma.
+Esta sección documenta el instrumento usado para pasar de la evaluación automática a una revisión lingüística comprensible para un hablante/revisor. La evidencia principal no es el nombre del archivo ni el comando usado para generarlo, sino la existencia de una muestra balanceada, una rúbrica clara, una planilla completada y resultados humanos agregados que permiten contrastar las métricas automáticas con juicio lingüístico.
 
-El protocolo se implementa en \filepath{scripts/nmt/75\_human\_validation\_workbook.py} y se reproduce con el comando:
-
-\begin{quote}
-\small\filepath{.venv-nmt/Scripts/python -m scripts.nmt.75_human_validation_workbook}
-\end{quote}
-
-La ejecución prepara una muestra de 100 ítems en total sobre el conjunto de \emph{test}: 50 para shiwilu\(\rightarrow\)castellano y 50 para castellano\(\rightarrow\)shiwilu. La muestra se toma de las predicciones reranked del modelo seleccionado \(v_{2.1b}\) LoRA+ y se balancea por dirección. Operativamente, el script calcula indicadores automáticos de calidad, aplica filtros de usabilidad, selecciona la cuota correspondiente por dirección, escribe el libro Excel y ejecuta validaciones automáticas sobre la estructura final.
+La muestra contiene 100 traducciones del modelo seleccionado: 50 en la dirección shiwilu\(\rightarrow\)castellano y 50 en la dirección castellano\(\rightarrow\)shiwilu. La selección se balanceó por dirección y se controló para evitar casos no revisables, como salidas vacías, texto con codificación defectuosa o repeticiones severas. Cada fila presenta únicamente la información necesaria para la revisión: texto fuente, traducción del modelo, puntajes de sentido y naturalidad, decisión global y comentarios.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2700}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4200}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3100}}@{}}
-\caption{Artefactos técnicos del protocolo de evaluación humana preparado}\label{tab:anexo-human-eval-artifacts}\\
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3400}}@{}}
+\caption{Evidencias del protocolo de evaluación humana}\label{tab:anexo-human-eval-artifacts}\\
 \toprule
-\textbf{Artefacto} & \textbf{Ruta} & \textbf{Función} \\
+\textbf{Evidencia} & \textbf{Qué demuestra} & \textbf{Contenido verificable} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Artefacto} & \textbf{Ruta} & \textbf{Función} \\
+\textbf{Evidencia} & \textbf{Qué demuestra} & \textbf{Contenido verificable} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-Planilla de revisión & \filepath{reports/05\_nmt/evaluation\_xl/human\_validation\_100.xlsx} & Libro Excel con hojas \texttt{instrucciones}, \texttt{shw2spa} y \texttt{spa2shw}; contiene campos para sentido, naturalidad, decisión y comentarios. \\
-Script generador & \filepath{scripts/nmt/75\_human\_validation\_workbook.py} & Construye la muestra balanceada, genera el libro Excel y valida filas, columnas y distribución por niveles. \\
-Predicciones usadas & \filepath{reports/05\_nmt/reranking\_xl/nllb\_bidi\_lora\_v2\_1b\_loraplus\_xl/test\_predictions\_reranked.jsonl} & Contiene las traducciones reranked del modelo seleccionado usadas para armar la planilla. \\
-Índice del directorio & \filepath{reports/05\_nmt/evaluation\_xl/README.md} & Ordena los artefactos automáticos y participativos disponibles para auditoría. \\
+Plantilla de revisión & Que el instrumento fue preparado antes de la revisión humana & 100 ítems balanceados por dirección, instrucciones y campos de evaluación \\
+Planilla completada & Que la primera ejecución participativa fue realizada & Puntajes de sentido y naturalidad, decisiones aceptar/corregir/rechazar y comentarios \\
+Resultados agregados & Que la revisión produjo evidencia interpretable & Promedios por dirección, proporciones de aceptación y ejemplos de corrección \\
+Constancias complementarias & Que la interacción con el revisor quedó respaldada & Registro oral y capturas de coordinación/conformidad disponibles como anexos digitales \\
 \end{longtable}
 
-La planilla resultante contiene, por fila, el texto fuente, la traducción del modelo y celdas vacías para que el revisor consigne puntajes en las dimensiones \emph{Sentido (1--5)} y \emph{Naturalidad (1--5)}, además de una \emph{Decisión} (\emph{aceptar}, \emph{corregir} o \emph{rechazar}) y \emph{Comentarios}. Este anexo documenta el instrumento preparado y los campos necesarios para consolidar promedios humanos, acuerdos interevaluador y comentarios cualitativos.
+La planilla contiene, por fila, el texto fuente, la traducción del modelo y campos para que el revisor consigne puntajes en las dimensiones \emph{Sentido (1--5)} y \emph{Naturalidad (1--5)}, además de una \emph{Decisión} (\emph{aceptar}, \emph{corregir} o \emph{rechazar}) y \emph{Comentarios}. En la primera ejecución se completaron 50 filas por dirección; los promedios humanos, decisiones y ejemplos de corrección se sintetizan en el \hyperref[anexo-validacion-participativa]{Anexo~E}. La aplicación a revisores adicionales puede reutilizar la misma muestra y rúbrica para calcular acuerdo interevaluador.
 
-De forma complementaria se prepararon dos instrumentos adicionales. El análisis cualitativo estratificado (sección~\ref{nmt-cualitativo}) se reproduce con \filepath{.venv-nmt/Scripts/python -m scripts.nmt.42_qualitative_analysis --variant xl}, que escribe \filepath{bucket\_summary.json}, \filepath{sampled\_examples.csv} y \filepath{qualitative\_report.md} bajo \filepath{reports/05\_nmt/evaluation\_xl/<run>/qualitative/}. El instrumento de preferencia pareada (sección~\ref{protocolo-preferencia-pareada}) se genera con \filepath{.venv-nmt/Scripts/python -m scripts.nmt.76_pairwise_preference --variant xl}, que produce \filepath{pairwise\_preference.xlsx} y la clave anónima \filepath{pairwise\_preference\_anon\_key.json}; por defecto compara \(v_{2.1b}\) frente a \(v_{2.1}\) sobre la dirección shw\(\rightarrow\)spa, con el orden A/B aleatorizado por fila.
+Como instrumentos complementarios, se conservan un análisis cualitativo estratificado y una plantilla de preferencia pareada. El primero organiza ejemplos por niveles de calidad para interpretar los tipos de acierto y error; el segundo permite comparar dos variantes de modelo cuando las métricas automáticas resultan cercanas. Estos instrumentos no sustituyen la validación participativa completada, sino que amplían la capacidad de auditoría del sistema.
+
+Para fines de reproducción técnica, la plantilla base se conserva en \filepath{reports/05\_nmt/evaluation\_xl/human\_validation\_100.xlsx}; la ejecución completada se conserva como anexo digital en \filepath{anexos\_digitales/Anexo\_E\_validacion\_participativa\_100.xlsx} y como copia interna en \filepath{reports/05\_nmt/evaluation\_xl/validacion\_participativa\_100.xlsx}. El generador reproducible del instrumento es \filepath{scripts/nmt/75\_human\_validation\_workbook.py}; las predicciones usadas para armar la muestra provienen del modelo \(v_{2.1b}\) con reranking semántico.
 
 \subsection*{C.13 Reproducibilidad y desviaciones documentadas}\label{anexo-nmt-deviations}
 
-El \emph{stack} de NMT vive en un entorno aislado \texttt{.venv-nmt} con los pines exactos de \filepath{requirements/nmt.txt}. Las desviaciones formales respecto del plan original son:
+Para reproducibilidad técnica, las dependencias del sistema NMT quedaron fijadas en un entorno controlado y documentadas en \filepath{requirements/nmt.txt}. Las desviaciones formales respecto del plan original son:
 
 \begin{itemize}
   \item Python 3.12 (no 3.11) para alinearse con \texttt{pyproject.toml}.
@@ -2750,39 +2783,37 @@ El Cuadro~\ref{tab:anexo-nmt-pipeline} enumera los scripts del pipeline NMT, las
 — & \filepath{scripts/generate\_nmt\_tables.py} & \filepath{thesis/latex/figuras/generated/nmt\_*.tex} & — \\
 \end{longtable}
 
-\section*{Anexo D: Documento reproducible del prototipo funcional}\label{anexo-prototipo}
+\section*{Anexo D: Prototipo funcional de traducción}\label{anexo-prototipo}
+\addcontentsline{toc}{section}{Anexo D: Prototipo funcional de traducción}
 
-Este anexo documenta la reproducción técnica del prototipo descrito en el Capítulo~\ref{nmt-prototipo}. El prototipo no reentrena ni modifica el sistema SA-BiNLLB; reutiliza el modelo campeón \(v_{2.1b}\) LoRA+ y el modelo de \emph{embeddings} v3 congelados, y los orquesta detrás de una interfaz web. El \emph{stack} se ejecuta en el mismo entorno aislado \texttt{.venv-nmt} del sistema NMT.
+Este anexo documenta el prototipo descrito en el Capítulo~\ref{nmt-prototipo} como evidencia funcional del sistema. Su propósito es mostrar que el modelo seleccionado puede usarse desde una interfaz local, recibir texto en cualquiera de las dos direcciones, devolver una traducción y registrar cada prueba para revisión posterior. El prototipo no reentrena ni modifica SA-BiNLLB; reutiliza el modelo campeón \(v_{2.1b}\) LoRA+ y el modelo de \emph{embeddings} v3 para ofrecer una demostración operativa del sistema.
 
-\subsection*{D.1 Componentes y rutas de artefactos}\label{anexo-prototipo-componentes}
+\subsection*{D.1 Componentes funcionales}\label{anexo-prototipo-componentes}
 
-El Cuadro~\ref{tab:anexo-prototipo-artifacts} enumera los artefactos que componen el prototipo y su función.
+El Cuadro~\ref{tab:anexo-prototipo-artifacts} resume los componentes del prototipo desde el punto de vista del lector: qué parte del sistema existe, qué función cumple y qué evidencia deja.
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2700}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4200}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3100}}@{}}
-\caption{Artefactos técnicos del prototipo funcional}\label{tab:anexo-prototipo-artifacts}\\
+\caption{Componentes funcionales del prototipo}\label{tab:anexo-prototipo-artifacts}\\
 \toprule
-\textbf{Artefacto} & \textbf{Ruta} & \textbf{Función} \\
+\textbf{Componente} & \textbf{Función en el prototipo} & \textbf{Evidencia que aporta} \\
 \midrule
 \endfirsthead
 \caption*{\tablename~\thetable\ (continuación)}\\
 \toprule
-\textbf{Artefacto} & \textbf{Ruta} & \textbf{Función} \\
+\textbf{Componente} & \textbf{Función en el prototipo} & \textbf{Evidencia que aporta} \\
 \midrule
 \endhead
 \midrule
 \endfoot
 \bottomrule
 \endlastfoot
-Aplicación web & \filepath{app.py} & Carga los modelos, define la interfaz Gradio y expone la traducción bidireccional. \\
-Modelo campeón & \filepath{models/nmt/nllb\_bidi\_lora\_v2\_1b\_loraplus\_xl/} & \emph{Checkpoint} del modelo seleccionado \(v_{2.1b}\) LoRA+ (variante \texttt{xl}). \\
-Reranker semántico & \filepath{models/sentence\_transformers/v3\_iterative\_hn\_e5\_base\_bidirectional\_xl/} & Modelo de \emph{embeddings} bilingüe v3 usado para reordenar hipótesis. \\
-Funciones de inferencia & \filepath{src/nmt/inference/generate.py} & \texttt{load\_checkpoint}, \texttt{generate\_for\_direction}, \texttt{GenerationConfig} reutilizadas sin cambios. \\
-Configuración de generación & \filepath{config/nmt/inference.yaml} & Parámetros de búsqueda en haz y generación (idénticos a los del Anexo~C.8). \\
-Lanzadores & \filepath{lanzar\_frontend.bat}, \filepath{lanzar\_frontend.ps1} & Verifican el entorno \texttt{.venv-nmt} y abren la aplicación en Windows. \\
-Registro de uso & \filepath{reports/05\_nmt/frontend\_logs/session\_<fecha>.jsonl} & Bitácora estructurada de entradas, salidas, hipótesis y latencias. \\
+Interfaz local & Permite escribir texto, elegir dirección de traducción y visualizar la salida & Captura de pantalla y demostraciones de uso en ambas direcciones \\
+Modelo de traducción & Genera traducciones shiwilu\(\leftrightarrow\)castellano con el modelo seleccionado & Salidas observables en la interfaz y casos de prueba registrados \\
+Reordenamiento semántico & Reevalúa las hipótesis candidatas con una señal semántica auxiliar & Traducción final y alternativas comparables cuando se activa el reranking \\
+Registro de uso & Guarda cada prueba realizada con entrada, salida, configuración y latencia & Bitácora auditable de los casos ejecutados durante la demostración \\
 \end{longtable}
 
 \subsection*{D.2 Carga única en el arranque}\label{anexo-prototipo-carga}
@@ -2795,20 +2826,124 @@ El reordenamiento de hipótesis usa la misma combinación lineal documentada en 
 
 \subsection*{D.4 Esquema del registro estructurado}\label{anexo-prototipo-registro}
 
-Cada traducción persiste una línea JSON en \filepath{reports/05\_nmt/frontend\_logs/session\_<fecha>.jsonl} con los campos \texttt{timestamp} (ISO-8601 UTC), \texttt{direction} (\texttt{spa2shw} o \texttt{shw2spa}), \texttt{source\_text}, \texttt{output\_text}, \texttt{rerank\_on}, \texttt{alpha}, \texttt{candidates} (lista de objetos \texttt{\{hypothesis, final\_score\}}) y \texttt{latency\_ms}. El formato por líneas permite acumular sesiones sucesivas en un mismo archivo y procesarlas con herramientas estándar. El Cuadro~\ref{tab:prototipo-jsonl} del Capítulo~\ref{nmt-prototipo} resume estos campos.
+Cada traducción queda registrada en una bitácora estructurada. El registro conserva la fecha y hora de la prueba, la dirección de traducción, el texto ingresado, la salida elegida, si se usó reranking, las hipótesis candidatas y la latencia de respuesta. Esta información permite reconstruir una sesión de prueba sin depender de memoria del evaluador ni de capturas aisladas. El Cuadro~\ref{tab:prototipo-jsonl} del Capítulo~\ref{nmt-prototipo} resume estos campos.
 
 \subsection*{D.5 Ejecución y despliegue}\label{anexo-prototipo-ejecucion}
 
-El prototipo se ejecuta con:
-
-\begin{quote}
-\small\filepath{.venv-nmt/Scripts/python app.py}
-\end{quote}
-
-que abre la interfaz en \filepath{127.0.0.1:7860} y genera un enlace público temporal opcional. Las opciones disponibles son \texttt{--no-share} (solo local, sin enlace público), \texttt{--no-rerank} (arranca con el reranking apagado) y \texttt{--port N} (cambia el puerto). Los lanzadores \filepath{lanzar\_frontend.bat} y \filepath{lanzar\_frontend.ps1} envuelven esa invocación; el segundo acepta los conmutadores equivalentes \texttt{-SinEnlace}, \texttt{-SinRerank} y \texttt{-Puerto}. El prototipo es local por diseño: el enlace temporal sirve para demostraciones puntuales y no constituye un despliegue permanente, en línea con el alcance del proyecto.
+El prototipo se ejecuta localmente y abre una interfaz web en el navegador del equipo de prueba. Por diseño, no constituye un despliegue público ni una aplicación móvil: su función es demostrar la integración del modelo, habilitar pruebas controladas y registrar los casos usados en la evaluación. Puede habilitarse un enlace temporal para demostraciones puntuales, pero ese enlace no forma parte del producto final ni cambia el alcance local del sistema.
 
 \subsection*{D.6 Casos de prueba registrados}\label{anexo-prototipo-casos}
 
 Las traducciones de demostración resumidas en el Cuadro~\ref{tab:prototipo-demostracion} provienen de la bitácora del prototipo. Cada ejecución acumula sus casos en el archivo de sesión correspondiente, de modo que el registro puede auditarse para recuperar las entradas probadas, las salidas devueltas, las hipótesis alternativas y las latencias por dirección. Esta evidencia respalda el medio de verificación del cuarto objetivo específico (demostración de traducción de ejemplos y registro de casos de prueba).
+
+\subsection*{D.7 Trazabilidad técnica}
+
+Para reproducir o auditar la implementación, los componentes técnicos se conservan en el repositorio del proyecto. La aplicación principal está en \filepath{app.py}; el modelo campeón en \filepath{models/nmt/nllb\_bidi\_lora\_v2\_1b\_loraplus\_xl/}; el modelo de \emph{embeddings} para reranking en \filepath{models/sentence\_transformers/v3\_iterative\_hn\_e5\_base\_bidirectional\_xl/}; las funciones de inferencia en \filepath{src/nmt/inference/generate.py}; la configuración de generación en \filepath{config/nmt/inference.yaml}; y las bitácoras de prueba en \filepath{reports/05\_nmt/frontend\_logs/session\_<fecha>.jsonl}. Esta información se incluye solo como respaldo reproducible; la evidencia principal del anexo es la funcionalidad demostrada y los casos registrados.
+
+\clearpage
+\phantomsection
+\section*{Anexo E: Validación participativa del sistema}\label{anexo-validacion-participativa}
+\addcontentsline{toc}{section}{Anexo E: Validación participativa del sistema}
+
+Este anexo documenta la primera ejecución completa del protocolo de validación participativa aplicado al sistema SA-BiNLLB. Su objetivo es dejar evidencia entendible y trazable de la revisión humana de una muestra balanceada de traducciones, sin obligar al lector a revisar archivos internos del repositorio ni duplicar las 100 filas completas dentro del PDF.
+
+\subsection*{E.1 Objetivo y alcance}
+
+La validación busca contrastar las métricas automáticas con juicio lingüístico sobre dos dimensiones: preservación del sentido y naturalidad de la salida. La muestra contiene 100 traducciones: 50 shiwilu\(\rightarrow\)castellano y 50 castellano\(\rightarrow\)shiwilu. La primera ejecución se realizó con Fidel Lomas Chota, hablante/revisor competente y uno de los principales exponentes y preservadores contemporáneos del shiwilu vinculados al proyecto. Este alcance aporta evidencia humana valiosa y trazable para una lengua con disponibilidad muy limitada de hablantes. El instrumento podría repetirse con otros revisores si las condiciones comunitarias lo permiten, pero esa ampliación se entiende como una posibilidad de fortalecimiento, no como una carencia de la revisión realizada.
+
+La evidencia principal del anexo es la planilla de validación completada: allí se encuentran los 100 ítems revisados, los puntajes, las decisiones y los comentarios del revisor. Como respaldo complementario se conserva una constancia oral del revisor y dos registros visuales de coordinación/conformidad. Por contener elementos identificables propios de una comunicación privada, estos respaldos no se reproducen como figuras dentro del PDF; su función es acreditar la trazabilidad del proceso, mientras que la evidencia sustantiva permanece en la matriz de validación y en los resultados agregados.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3500}}@{}}
+\caption{Evidencias digitales de la validación participativa}\label{tab:anexo-validacion-evidencias}\\
+\toprule
+\textbf{Evidencia} & \textbf{Qué demuestra} & \textbf{Disponibilidad para consulta} \\
+\midrule
+\endfirsthead
+\caption*{\tablename~\thetable\ (continuación)}\\
+\toprule
+\textbf{Evidencia} & \textbf{Qué demuestra} & \textbf{Disponibilidad para consulta} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Planilla de validación completada & Revisión de 100 traducciones con puntajes, decisiones y comentarios & Anexo digital local y hoja de cálculo externa indicada en E.2 \\
+Constancia oral del revisor & Confirmación de que el revisor revisó las traducciones y entregó observaciones & Enlace externo complementario \\
+Registro de interacción & Respaldo visual de la coordinación de la revisión & Enlace externo complementario \\
+Constancia visual de conformidad & Respaldo complementario posterior a la revisión & Enlace externo complementario \\
+\end{longtable}
+
+Los enlaces externos complementarios son:
+
+\begin{quote}
+\small \href{https://drive.google.com/file/d/1vmpMNzfUMuKzzUV1f3pqhYOJWmvLWiV1/view?usp=sharing}{Constancia oral del revisor}
+
+\small \href{https://drive.google.com/file/d/1OBcgrEWWMM6FFewm5_iqtCb2o9z1tIZV/view?usp=sharing}{Registro de interacción de la revisión}
+
+\small \href{https://drive.google.com/file/d/1gN4nYax5ZVNwlFRW_ZjlZgUSPKMlZAMj/view?usp=sharing}{Constancia visual de conformidad}
+\end{quote}
+
+\subsection*{E.2 Estructura del instrumento}
+
+La planilla de revisión contiene una hoja de instrucciones y dos hojas de evaluación, una por dirección de traducción. Cada fila incluye \emph{N}, \emph{Texto fuente}, \emph{Traducción del modelo}, \emph{Sentido (1--5)}, \emph{Naturalidad (1--5)}, \emph{Decisión} y \emph{Comentarios}. El archivo completo no se inserta en el PDF para evitar duplicar las 100 filas en papel. Para lectores externos, se encuentra disponible en:
+
+\begin{quote}
+\small\href{https://docs.google.com/spreadsheets/d/1dYJ_4qstg76dHtDs6qaIICG5aBeiG7kL/edit?usp=sharing&ouid=110915706047387486036&rtpof=true&sd=true}{Planilla completa de validación participativa}
+\end{quote}
+
+La rúbrica interpreta \emph{Sentido} como conservación del significado de la fuente y \emph{Naturalidad} como aceptabilidad lingüística en la lengua destino. La \emph{Decisión} clasifica cada salida como \emph{aceptar}, \emph{corregir} o \emph{rechazar}. Antes de consolidar los resultados se verificó que hubiera 50 filas por dirección, que los puntajes estuvieran completos en escala 1--5, que las decisiones fueran interpretables y que todos los casos corregibles incluyeran comentario.
+
+\subsection*{E.3 Resultados agregados}
+
+\begin{table}[h]
+\centering
+\caption{Síntesis de la validación participativa del sistema.}
+\label{tab:anexo-validacion-resultados}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.18\linewidth}rrrrr}
+\toprule
+\textbf{Dirección} & \textbf{n} & \textbf{Sentido} & \textbf{Naturalidad} & \textbf{Aceptar} & \textbf{Corregir / Rechazar} \\
+\midrule
+shw\(\rightarrow\)spa & 50 & 4{,}74 & 4{,}76 & 41 (82\,\%) & 9 (18\,\%) / 0 (0\,\%) \\
+spa\(\rightarrow\)shw & 50 & 4{,}58 & 4{,}68 & 39 (78\,\%) & 11 (22\,\%) / 0 (0\,\%) \\
+\textbf{Global} & \textbf{100} & \textbf{4{,}66} & \textbf{4{,}72} & \textbf{80 (80\,\%)} & \textbf{20 (20\,\%) / 0 (0\,\%)} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Los resultados respaldan al modelo en ambas direcciones. La dirección shiwilu\(\rightarrow\)castellano aparece como la más estable, tanto en promedios como en proporción de aceptación. La dirección castellano\(\rightarrow\)shiwilu mantiene evaluación favorable, pero concentra más correcciones por exigencias de morfología, concordancia y selección léxica. La ausencia de rechazos indica que los errores observados fueron recuperables mediante edición puntual.
+
+\subsection*{E.4 Ejemplos representativos}
+
+\begin{table}[h]
+\centering
+\caption{Correcciones representativas registradas por el revisor.}
+\label{tab:anexo-validacion-ejemplos}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.13\linewidth}p{0.23\linewidth}p{0.26\linewidth}p{0.30\linewidth}}
+\toprule
+\textbf{Dirección} & \textbf{Fuente} & \textbf{Traducción del modelo} & \textbf{Corrección u observación} \\
+\midrule
+shw\(\rightarrow\)spa & \emph{yakana'lek} & quiero ganar. & Más precisamente dice ``quiero ganarle''. \\
+shw\(\rightarrow\)spa & \emph{dei'techek} & me mataré. & La forma esperada es ``lo mataré''. \\
+shw\(\rightarrow\)spa & \emph{shiwilu la'la'wek napi' mudinupawiñi} & mi lengua shiwilu antiguamente era barro & El revisor propone ``mi lengua shiwilu antiguamente estaba sano''. \\
+spa\(\rightarrow\)shw & te mostraré. & \emph{alli'echek} & \emph{A'lli'echen} corresponde a ``te mostraré''; \emph{a'lli'echek} a ``le mostraré''. \\
+spa\(\rightarrow\)shw & lean esto. & \emph{luntuker' asu'} & La oración en castellano está en plural; debería ser \emph{luntuku'}. \\
+spa\(\rightarrow\)shw & eres nervioso. & \emph{watensu' nuka'ma} & El revisor indica ``eres duro''. \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection*{E.5 Uso futuro del instrumento}
+
+El valor metodológico del instrumento es que puede repetirse sin alterar la muestra, la rúbrica ni el formato. Una ampliación con más hablantes permitiría calcular acuerdo interevaluador y revisar discrepancias por dirección, siempre que la disponibilidad real de hablantes haga viable esa coordinación. En el contexto del shiwilu, esta posibilidad no debe leerse como una falta del estudio, sino como una ruta de ampliación para un instrumento que ya produjo una primera evidencia humana sólida y reproducible.
+
+\subsection*{E.6 Trazabilidad técnica}
+
+Para auditoría interna, la planilla completada se entrega como anexo digital local en \filepath{anexos\_digitales/Anexo\_E\_validacion\_participativa\_100.xlsx}. También se conserva una copia reproducible en \filepath{reports/05\_nmt/evaluation\_xl/validacion\_participativa\_100.xlsx}. La plantilla base usada para preparar la revisión está en \filepath{reports/05\_nmt/evaluation\_xl/human\_validation\_100.xlsx}. Estas rutas no son necesarias para comprender los resultados del anexo; se incluyen para permitir auditoría y reproducción del proceso.
 
 \end{document}
